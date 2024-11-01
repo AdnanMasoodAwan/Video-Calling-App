@@ -1,0 +1,134 @@
+\hypertarget{classagora_1_1rtc_1_1_i_extension_control}{}\doxysection{agora\+::rtc\+::I\+Extension\+Control Class Reference}
+\label{classagora_1_1rtc_1_1_i_extension_control}\index{agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Extension\+Control.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_extension_control_1_1_capabilities}{Capabilities}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_control_a4963ef79485d0c1faa86c83d1394c977}{get\+Capabilities}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_i_extension_control_1_1_capabilities}{Capabilities}} \&capabilities)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_control_a147ac274aa24f682f35657c63d5d5279}{recycle\+Video\+Cache}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_control_a5ea5dcb25e0a6d1b625511b93dbcb1db}{dump\+Video\+Frame}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} $>$ frame, const char $\ast$file)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_control_a8d4f05e937c77898b36993dbf75b3bcd}{log}} (commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL level, const char $\ast$message)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_control_ae4e07afc457b56c8aa6cafcb543eb0a2}{fire\+Event}} (const char $\ast$provider, const char $\ast$extension, const char $\ast$event\+\_\+key, const char $\ast$value)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_control_ad13e06840b4a6eae3b55aa139f2c54cf}{register\+Provider}} (const char $\ast$provider, \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_provider}{I\+Extension\+Provider}} $>$ instance)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for handling agora extensions. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_control_a4963ef79485d0c1faa86c83d1394c977}\label{classagora_1_1rtc_1_1_i_extension_control_a4963ef79485d0c1faa86c83d1394c977}} 
+\index{agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}!getCapabilities@{getCapabilities}}
+\index{getCapabilities@{getCapabilities}!agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}}
+\doxysubsubsection{\texorpdfstring{getCapabilities()}{getCapabilities()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Extension\+Control\+::get\+Capabilities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_i_extension_control_1_1_capabilities}{Capabilities}} \&}]{capabilities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the capabilities of agora extensions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capabilities} & Supported extension capabilities. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_control_a147ac274aa24f682f35657c63d5d5279}\label{classagora_1_1rtc_1_1_i_extension_control_a147ac274aa24f682f35657c63d5d5279}} 
+\index{agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}!recycleVideoCache@{recycleVideoCache}}
+\index{recycleVideoCache@{recycleVideoCache}!agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}}
+\doxysubsubsection{\texorpdfstring{recycleVideoCache()}{recycleVideoCache()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Extension\+Control\+::recycle\+Video\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Recycles internal frame memory with a specified Video frame type.
+
+The S\+DK automatically recycles deprecated video frames. However, you can still call this method to perform an immediate memory recycle. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Frame type to be recycled. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_control_a5ea5dcb25e0a6d1b625511b93dbcb1db}\label{classagora_1_1rtc_1_1_i_extension_control_a5ea5dcb25e0a6d1b625511b93dbcb1db}} 
+\index{agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}!dumpVideoFrame@{dumpVideoFrame}}
+\index{dumpVideoFrame@{dumpVideoFrame}!agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}}
+\doxysubsubsection{\texorpdfstring{dumpVideoFrame()}{dumpVideoFrame()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Extension\+Control\+::dump\+Video\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} $>$}]{frame,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This method dumps the content of the video frame to the specified file.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: The method call succeeds.
+\item $<$0\+: The method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_control_a8d4f05e937c77898b36993dbf75b3bcd}\label{classagora_1_1rtc_1_1_i_extension_control_a8d4f05e937c77898b36993dbf75b3bcd}} 
+\index{agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}!log@{log}}
+\index{log@{log}!agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Extension\+Control\+::log (\begin{DoxyParamCaption}\item[{commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL}]{level,  }\item[{const char $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets log file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Logging level. See \#commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL. \\
+\hline
+{\em message} & Message to add to the log file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: The method call succeeds.
+\item $<$0\+: The method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_control_ae4e07afc457b56c8aa6cafcb543eb0a2}\label{classagora_1_1rtc_1_1_i_extension_control_ae4e07afc457b56c8aa6cafcb543eb0a2}} 
+\index{agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}!fireEvent@{fireEvent}}
+\index{fireEvent@{fireEvent}!agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}}
+\doxysubsubsection{\texorpdfstring{fireEvent()}{fireEvent()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Extension\+Control\+::fire\+Event (\begin{DoxyParamCaption}\item[{const char $\ast$}]{provider,  }\item[{const char $\ast$}]{extension,  }\item[{const char $\ast$}]{event\+\_\+key,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Post extension events to S\+DK.
+
+
+\begin{DoxyParams}{Parameters}
+{\em provider} & name of the provider \\
+\hline
+{\em extension} & name of the extension \\
+\hline
+{\em event\+\_\+key} & key of the extension event \\
+\hline
+{\em event\+\_\+json\+\_\+str} & string of the extension event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: The method call succeeds.
+\item $<$0\+: The method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_control_ad13e06840b4a6eae3b55aa139f2c54cf}\label{classagora_1_1rtc_1_1_i_extension_control_ad13e06840b4a6eae3b55aa139f2c54cf}} 
+\index{agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}!registerProvider@{registerProvider}}
+\index{registerProvider@{registerProvider}!agora::rtc::IExtensionControl@{agora::rtc::IExtensionControl}}
+\doxysubsubsection{\texorpdfstring{registerProvider()}{registerProvider()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Extension\+Control\+::register\+Provider (\begin{DoxyParamCaption}\item[{const char $\ast$}]{provider,  }\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_provider}{I\+Extension\+Provider}} $>$}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Register provider to the S\+DK 
+\begin{DoxyParams}{Parameters}
+{\em provider} & name of the provider \\
+\hline
+{\em instance} & instance of the provider \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,52 @@
+\hypertarget{classagora_1_1rtc_1_1_i_video_beauty_filter}{}\doxysection{agora\+::rtc\+::I\+Video\+Beauty\+Filter Class Reference}
+\label{classagora_1_1rtc_1_1_i_video_beauty_filter}\index{agora::rtc::IVideoBeautyFilter@{agora::rtc::IVideoBeautyFilter}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Video\+Beauty\+Filter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classagora_1_1rtc_1_1_i_video_beauty_filter}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_video_beauty_filter_1_1_beauty_options}{Beauty\+Options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_beauty_filter_a24cc6b2219a776bf3f8a168a253b2b18}{set\+Beauty\+Effect\+Options}} (bool enabled, \mbox{\hyperlink{structagora_1_1rtc_1_1_i_video_beauty_filter_1_1_beauty_options}{Beauty\+Options}} options)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_beauty_filter}{I\+Video\+Beauty\+Filter}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_beauty_filter_a24cc6b2219a776bf3f8a168a253b2b18}\label{classagora_1_1rtc_1_1_i_video_beauty_filter_a24cc6b2219a776bf3f8a168a253b2b18}} 
+\index{agora::rtc::IVideoBeautyFilter@{agora::rtc::IVideoBeautyFilter}!setBeautyEffectOptions@{setBeautyEffectOptions}}
+\index{setBeautyEffectOptions@{setBeautyEffectOptions}!agora::rtc::IVideoBeautyFilter@{agora::rtc::IVideoBeautyFilter}}
+\doxysubsubsection{\texorpdfstring{setBeautyEffectOptions()}{setBeautyEffectOptions()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Beauty\+Filter\+::set\+Beauty\+Effect\+Options (\begin{DoxyParamCaption}\item[{bool}]{enabled,  }\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_i_video_beauty_filter_1_1_beauty_options}{Beauty\+Options}}}]{options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the image enhancement options. 
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether to enable image enhancement.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Enable image enhancement.
+\item {\ttfamily false}\+: Do not enable image enhancement. 
+\end{DoxyItemize}\\
+\hline
+{\em options} & The image enhancement options\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_i_video_beauty_filter_1_1_beauty_options}{Beauty\+Options}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

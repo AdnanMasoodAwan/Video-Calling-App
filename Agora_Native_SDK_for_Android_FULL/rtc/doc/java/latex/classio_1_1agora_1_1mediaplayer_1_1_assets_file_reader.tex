@@ -1,0 +1,45 @@
+\hypertarget{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader}{}\doxysection{io.\+agora.\+mediaplayer.\+Assets\+File\+Reader Class Reference}
+\label{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader}\index{io.agora.mediaplayer.AssetsFileReader@{io.agora.mediaplayer.AssetsFileReader}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_a89bf30c21553e3fc4cd79cca96a35d3a}\label{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_a89bf30c21553e3fc4cd79cca96a35d3a}} 
+int {\bfseries open} (String asset\+File\+Path)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_a796765b8d1152067fe76668af9697fd2}\label{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_a796765b8d1152067fe76668af9697fd2}} 
+long {\bfseries get\+File\+Size} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_adf308ac5edf5578b4bf55188514da3cf}\label{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_adf308ac5edf5578b4bf55188514da3cf}} 
+long {\bfseries seek} (long pos)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_ad372065755a350b0aa685153c947c1ec}\label{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_ad372065755a350b0aa685153c947c1ec}} 
+void {\bfseries close\+File} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_a3437886407e056b60b611b900e65c102}{read}} (Byte\+Buffer read\+Byte\+Buffer)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_af007fde16f9bf565a8f4d37a8d265f11}\label{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_af007fde16f9bf565a8f4d37a8d265f11}} 
+long {\bfseries get\+Current\+Position} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_a5a4536dbaca442a15d47b87fa01e1052}\label{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_a5a4536dbaca442a15d47b87fa01e1052}} 
+static final String {\bfseries P\+R\+E\+F\+I\+X\+\_\+\+A\+S\+S\+E\+TS} = \char`\"{}/assets/\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_a3437886407e056b60b611b900e65c102}\label{classio_1_1agora_1_1mediaplayer_1_1_assets_file_reader_a3437886407e056b60b611b900e65c102}} 
+\index{io.agora.mediaplayer.AssetsFileReader@{io.agora.mediaplayer.AssetsFileReader}!read@{read}}
+\index{read@{read}!io.agora.mediaplayer.AssetsFileReader@{io.agora.mediaplayer.AssetsFileReader}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+Assets\+File\+Reader.\+read (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{read\+Byte\+Buffer }\end{DoxyParamCaption})}
+
+Read file content to Byte\+Buffer 
+\begin{DoxyParams}{Parameters}
+{\em read\+Byte\+Buffer} & The buffer into which bytes are to be transferred \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of bytes read, possibly zero, or -\/1 if the channel has reached end-\/of-\/stream, or -\/2 if other errors 
+\end{DoxyReturn}

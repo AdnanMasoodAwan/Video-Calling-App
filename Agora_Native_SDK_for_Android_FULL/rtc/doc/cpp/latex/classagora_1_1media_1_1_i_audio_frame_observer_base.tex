@@ -1,0 +1,290 @@
+\hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base}{}\doxysection{agora\+::media\+::I\+Audio\+Frame\+Observer\+Base Class Reference}
+\label{classagora_1_1media_1_1_i_audio_frame_observer_base}\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Base.\+h$>$}
+
+Inheritance diagram for agora\+::media\+::I\+Audio\+Frame\+Observer\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1media_1_1_i_audio_frame_observer_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}}
+\item 
+struct \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aa0e2b429cd1e9e55f60614adffa01dac}{A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aa0e2b429cd1e9e55f60614adffa01daca434ef108ae62459f31354c79a4ee8d48}{F\+R\+A\+M\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+C\+M16}} = 0
+ \}
+\item 
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aa84b1377f60ae28150bfbd337ea2076b}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aa84b1377f60ae28150bfbd337ea2076b}} 
+enum \{ {\bfseries M\+A\+X\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+C\+NT} = 10
+ \}
+\item 
+enum \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92}{A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON}} \{ \newline
+{\bfseries A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+N\+O\+NE} = 0x0000, 
+\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92a5a17c9dba2127ec59b80f58b631a53a0}{A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+L\+A\+Y\+B\+A\+CK}} = 0x0001, 
+\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92a4ab55e89702612471a63fa722b6cc80a}{A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+R\+E\+C\+O\+RD}} = 0x0002, 
+\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92ab5413fc70cda2b62b290be8c9e27d52b}{A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+M\+I\+X\+ED}} = 0x0004, 
+\newline
+\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92a2af303c3cc92ed4d8da5fa5f7a858665}{A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+M\+I\+X\+I\+NG}} = 0x0008, 
+\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92af2ee078f7ced9d4c9354eaf44e802ced}{A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+E\+A\+R\+\_\+\+M\+O\+N\+I\+T\+O\+R\+I\+NG}} = 0x0010
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aba6a8259228745183105c71efbab86c0}{on\+Record\+Audio\+Frame}} (const char $\ast$channel\+Id, \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&audio\+Frame)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_a4687657aed2d1702b07455aa7bdb19d7}{on\+Playback\+Audio\+Frame}} (const char $\ast$channel\+Id, \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&audio\+Frame)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aeef4ee74bbec4a46c1c67c3c07a70e6d}{on\+Mixed\+Audio\+Frame}} (const char $\ast$channel\+Id, \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&audio\+Frame)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_a8595cdf8384578b3a87973f913185bb0}{on\+Ear\+Monitoring\+Audio\+Frame}} (\mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&audio\+Frame)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_af9f96e0fb16217950c8045b54a970d90}{on\+Playback\+Audio\+Frame\+Before\+Mixing}} (const char $\ast$channel\+Id, base\+::user\+\_\+id\+\_\+t user\+Id, \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&audio\+Frame)
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_a0407cfd7ed343fde152ab0512448bc22}{get\+Observed\+Audio\+Frame\+Position}} ()=0
+\item 
+virtual \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}} \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_abbc13600d21c34d6c808cbdaf1b3b267}{get\+Playback\+Audio\+Params}} ()=0
+\item 
+virtual \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}} \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aedbd590f38bcdc3b4e1b15ffd2790083}{get\+Record\+Audio\+Params}} ()=0
+\item 
+virtual \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}} \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_ac933d83e266b3d7550f4e448e2816bb6}{get\+Mixed\+Audio\+Params}} ()=0
+\item 
+virtual \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}} \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aca4d4ca2919dacb546d75d117025463a}{get\+Ear\+Monitoring\+Audio\+Params}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base}{I\+Audio\+Frame\+Observer\+Base}} class. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aa0e2b429cd1e9e55f60614adffa01dac}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aa0e2b429cd1e9e55f60614adffa01dac}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!AUDIO\_FRAME\_TYPE@{AUDIO\_FRAME\_TYPE}}
+\index{AUDIO\_FRAME\_TYPE@{AUDIO\_FRAME\_TYPE}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{AUDIO\_FRAME\_TYPE}{AUDIO\_FRAME\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aa0e2b429cd1e9e55f60614adffa01dac}{agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+T\+Y\+PE}}}
+
+Audio frame types. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FRAME\_TYPE\_PCM16@{FRAME\_TYPE\_PCM16}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!FRAME\_TYPE\_PCM16@{FRAME\_TYPE\_PCM16}}}\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aa0e2b429cd1e9e55f60614adffa01daca434ef108ae62459f31354c79a4ee8d48}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aa0e2b429cd1e9e55f60614adffa01daca434ef108ae62459f31354c79a4ee8d48}} 
+F\+R\+A\+M\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+C\+M16&0\+: 16-\/bit P\+CM. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!AUDIO\_FRAME\_POSITION@{AUDIO\_FRAME\_POSITION}}
+\index{AUDIO\_FRAME\_POSITION@{AUDIO\_FRAME\_POSITION}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{AUDIO\_FRAME\_POSITION}{AUDIO\_FRAME\_POSITION}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92}{agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AUDIO\_FRAME\_POSITION\_PLAYBACK@{AUDIO\_FRAME\_POSITION\_PLAYBACK}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!AUDIO\_FRAME\_POSITION\_PLAYBACK@{AUDIO\_FRAME\_POSITION\_PLAYBACK}}}\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92a5a17c9dba2127ec59b80f58b631a53a0}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92a5a17c9dba2127ec59b80f58b631a53a0}} 
+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+L\+A\+Y\+B\+A\+CK&The position for observing the playback audio of all remote users after mixing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AUDIO\_FRAME\_POSITION\_RECORD@{AUDIO\_FRAME\_POSITION\_RECORD}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!AUDIO\_FRAME\_POSITION\_RECORD@{AUDIO\_FRAME\_POSITION\_RECORD}}}\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92a4ab55e89702612471a63fa722b6cc80a}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92a4ab55e89702612471a63fa722b6cc80a}} 
+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+R\+E\+C\+O\+RD&The position for observing the recorded audio of the local user \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AUDIO\_FRAME\_POSITION\_MIXED@{AUDIO\_FRAME\_POSITION\_MIXED}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!AUDIO\_FRAME\_POSITION\_MIXED@{AUDIO\_FRAME\_POSITION\_MIXED}}}\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92ab5413fc70cda2b62b290be8c9e27d52b}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92ab5413fc70cda2b62b290be8c9e27d52b}} 
+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+M\+I\+X\+ED&The position for observing the mixed audio of the local user and all remote users \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AUDIO\_FRAME\_POSITION\_BEFORE\_MIXING@{AUDIO\_FRAME\_POSITION\_BEFORE\_MIXING}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!AUDIO\_FRAME\_POSITION\_BEFORE\_MIXING@{AUDIO\_FRAME\_POSITION\_BEFORE\_MIXING}}}\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92a2af303c3cc92ed4d8da5fa5f7a858665}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92a2af303c3cc92ed4d8da5fa5f7a858665}} 
+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+M\+I\+X\+I\+NG&The position for observing the audio of a single remote user before mixing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AUDIO\_FRAME\_POSITION\_EAR\_MONITORING@{AUDIO\_FRAME\_POSITION\_EAR\_MONITORING}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!AUDIO\_FRAME\_POSITION\_EAR\_MONITORING@{AUDIO\_FRAME\_POSITION\_EAR\_MONITORING}}}\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92af2ee078f7ced9d4c9354eaf44e802ced}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aed3c9b8d1fc7a220e592d706bbbeaa92af2ee078f7ced9d4c9354eaf44e802ced}} 
+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+E\+A\+R\+\_\+\+M\+O\+N\+I\+T\+O\+R\+I\+NG&The position for observing the ear monitoring audio of the local user \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aba6a8259228745183105c71efbab86c0}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aba6a8259228745183105c71efbab86c0}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!onRecordAudioFrame@{onRecordAudioFrame}}
+\index{onRecordAudioFrame@{onRecordAudioFrame}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{onRecordAudioFrame()}{onRecordAudioFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::on\+Record\+Audio\+Frame (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel\+Id,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&}]{audio\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the recorded audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name \\
+\hline
+{\em audio\+Frame} & The reference to the audio frame\+: \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The recorded audio frame is valid and is encoded and sent.
+\item false\+: The recorded audio frame is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_a4687657aed2d1702b07455aa7bdb19d7}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_a4687657aed2d1702b07455aa7bdb19d7}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!onPlaybackAudioFrame@{onPlaybackAudioFrame}}
+\index{onPlaybackAudioFrame@{onPlaybackAudioFrame}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{onPlaybackAudioFrame()}{onPlaybackAudioFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::on\+Playback\+Audio\+Frame (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel\+Id,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&}]{audio\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the playback audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name \\
+\hline
+{\em audio\+Frame} & The reference to the audio frame\+: \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The playback audio frame is valid and is encoded and sent.
+\item false\+: The playback audio frame is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aeef4ee74bbec4a46c1c67c3c07a70e6d}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aeef4ee74bbec4a46c1c67c3c07a70e6d}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!onMixedAudioFrame@{onMixedAudioFrame}}
+\index{onMixedAudioFrame@{onMixedAudioFrame}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{onMixedAudioFrame()}{onMixedAudioFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::on\+Mixed\+Audio\+Frame (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel\+Id,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&}]{audio\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the mixed audio data is received. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name \\
+\hline
+{\em audio\+Frame} & The reference to the audio frame\+: \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The mixed audio data is valid and is encoded and sent.
+\item false\+: The mixed audio data is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_a8595cdf8384578b3a87973f913185bb0}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_a8595cdf8384578b3a87973f913185bb0}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!onEarMonitoringAudioFrame@{onEarMonitoringAudioFrame}}
+\index{onEarMonitoringAudioFrame@{onEarMonitoringAudioFrame}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{onEarMonitoringAudioFrame()}{onEarMonitoringAudioFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::on\+Ear\+Monitoring\+Audio\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&}]{audio\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the ear monitoring audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em audio\+Frame} & The reference to the audio frame\+: \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The ear monitoring audio data is valid and is encoded and sent.
+\item false\+: The ear monitoring audio data is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_af9f96e0fb16217950c8045b54a970d90}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_af9f96e0fb16217950c8045b54a970d90}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!onPlaybackAudioFrameBeforeMixing@{onPlaybackAudioFrameBeforeMixing}}
+\index{onPlaybackAudioFrameBeforeMixing@{onPlaybackAudioFrameBeforeMixing}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{onPlaybackAudioFrameBeforeMixing()}{onPlaybackAudioFrameBeforeMixing()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::on\+Playback\+Audio\+Frame\+Before\+Mixing (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel\+Id,  }\item[{base\+::user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&}]{audio\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the before-\/mixing playback audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name \\
+\hline
+{\em user\+Id} & ID of the remote user. \\
+\hline
+{\em audio\+Frame} & The reference to the audio frame\+: \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The before-\/mixing playback audio frame is valid and is encoded and sent.
+\item false\+: The before-\/mixing playback audio frame is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_a0407cfd7ed343fde152ab0512448bc22}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_a0407cfd7ed343fde152ab0512448bc22}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!getObservedAudioFramePosition@{getObservedAudioFramePosition}}
+\index{getObservedAudioFramePosition@{getObservedAudioFramePosition}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{getObservedAudioFramePosition()}{getObservedAudioFramePosition()}}
+{\footnotesize\ttfamily virtual int agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::get\+Observed\+Audio\+Frame\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the frame position for the audio observer. \begin{DoxyReturn}{Returns}
+A bit mask that controls the frame position of the audio observer. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+-\/ Use \textquotesingle{}$\vert$\textquotesingle{} (the OR operator) to observe multiple frame positions. 
+\end{DoxyNote}
+After you successfully register the audio observer, the S\+DK triggers this callback each time it receives a audio frame. You can determine which position to observe by setting the return value. The S\+DK provides 4 positions for observer. Each position corresponds to a callback function\+:
+\begin{DoxyItemize}
+\item {\ttfamily A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+L\+A\+Y\+B\+A\+CK (1 $<$$<$ 0)}\+: The position for playback audio frame is received, which corresponds to the on\+Playback\+Frame callback.
+\item {\ttfamily A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+R\+E\+C\+O\+RD (1 $<$$<$ 1)}\+: The position for record audio frame is received, which corresponds to the on\+Record\+Frame callback.
+\item {\ttfamily A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+M\+I\+X\+ED (1 $<$$<$ 2)}\+: The position for mixed audio frame is received, which corresponds to the on\+Mixed\+Frame callback.
+\item {\ttfamily A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+M\+I\+X\+I\+NG (1 $<$$<$ 3)}\+: The position for playback audio frame before mixing is received, which corresponds to the on\+Playback\+Frame\+Before\+Mixing callback. \begin{DoxyReturn}{Returns}
+The bit mask that controls the audio observation positions. See A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_abbc13600d21c34d6c808cbdaf1b3b267}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_abbc13600d21c34d6c808cbdaf1b3b267}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!getPlaybackAudioParams@{getPlaybackAudioParams}}
+\index{getPlaybackAudioParams@{getPlaybackAudioParams}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{getPlaybackAudioParams()}{getPlaybackAudioParams()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}} agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::get\+Playback\+Audio\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the audio playback format Note$\ast$$\ast$\+:
+
+
+\begin{DoxyItemize}
+\item The S\+DK calculates the sample interval according to the {\ttfamily \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}}} you set in the return value of this callback and triggers the {\ttfamily on\+Playback\+Audio\+Frame} callback at the calculated sample interval. Sample interval (seconds) = {\ttfamily samples\+Per\+Call}/({\ttfamily sample\+Rate} × {\ttfamily channel}). Ensure that the value of sample interval is equal to or greater than 0.\+01.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Sets the audio format. See Agora\+Audio\+Params. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aedbd590f38bcdc3b4e1b15ffd2790083}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aedbd590f38bcdc3b4e1b15ffd2790083}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!getRecordAudioParams@{getRecordAudioParams}}
+\index{getRecordAudioParams@{getRecordAudioParams}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{getRecordAudioParams()}{getRecordAudioParams()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}} agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::get\+Record\+Audio\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the audio recording format Note$\ast$$\ast$\+:
+\begin{DoxyItemize}
+\item The S\+DK calculates the sample interval according to the {\ttfamily \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}}} you set in the return value of this callback and triggers the {\ttfamily on\+Record\+Audio\+Frame} callback at the calculated sample interval. Sample interval (seconds) = {\ttfamily samples\+Per\+Call}/({\ttfamily sample\+Rate} × {\ttfamily channel}). Ensure that the value of sample interval is equal to or greater than 0.\+01.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Sets the audio format. See Agora\+Audio\+Params. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_ac933d83e266b3d7550f4e448e2816bb6}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_ac933d83e266b3d7550f4e448e2816bb6}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!getMixedAudioParams@{getMixedAudioParams}}
+\index{getMixedAudioParams@{getMixedAudioParams}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{getMixedAudioParams()}{getMixedAudioParams()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}} agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::get\+Mixed\+Audio\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the audio mixing format Note$\ast$$\ast$\+:
+\begin{DoxyItemize}
+\item The S\+DK calculates the sample interval according to the {\ttfamily \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}}} you set in the return value of this callback and triggers the {\ttfamily on\+Mixed\+Audio\+Frame} callback at the calculated sample interval. Sample interval (seconds) = {\ttfamily samples\+Per\+Call}/({\ttfamily sample\+Rate} × {\ttfamily channel}). Ensure that the value of sample interval is equal to or greater than 0.\+01.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Sets the audio format. See Agora\+Audio\+Params. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_base_aca4d4ca2919dacb546d75d117025463a}\label{classagora_1_1media_1_1_i_audio_frame_observer_base_aca4d4ca2919dacb546d75d117025463a}} 
+\index{agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}!getEarMonitoringAudioParams@{getEarMonitoringAudioParams}}
+\index{getEarMonitoringAudioParams@{getEarMonitoringAudioParams}!agora::media::IAudioFrameObserverBase@{agora::media::IAudioFrameObserverBase}}
+\doxysubsubsection{\texorpdfstring{getEarMonitoringAudioParams()}{getEarMonitoringAudioParams()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}} agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::get\+Ear\+Monitoring\+Audio\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the ear monitoring audio format Note$\ast$$\ast$\+:
+\begin{DoxyItemize}
+\item The S\+DK calculates the sample interval according to the {\ttfamily \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{Audio\+Params}}} you set in the return value of this callback and triggers the {\ttfamily on\+Ear\+Monitoring\+Audio\+Frame} callback at the calculated sample interval. Sample interval (seconds) = {\ttfamily samples\+Per\+Call}/({\ttfamily sample\+Rate} × {\ttfamily channel}). Ensure that the value of sample interval is equal to or greater than 0.\+01.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Sets the audio format. See Agora\+Audio\+Params. 
+\end{DoxyReturn}

@@ -1,0 +1,241 @@
+\hypertarget{classagora_1_1rtc_1_1_i_video_track}{}\doxysection{agora\+::rtc\+::I\+Video\+Track Class Reference}
+\label{classagora_1_1rtc_1_1_i_video_track}\index{agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Video\+Track.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Video\+Track\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classagora_1_1rtc_1_1_i_video_track}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_ab0f5288ead2e809dd6d6bd37001dc257}{add\+Video\+Filter}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_filter}{I\+Video\+Filter}} $>$ filter, media\+::base\+::\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON position=media\+::base\+::\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+S\+T\+\_\+\+C\+A\+P\+T\+U\+R\+ER, const char $\ast$id=N\+U\+LL, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_aa99f34743ed387c875aee89ceea19e63}{remove\+Video\+Filter}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_filter}{I\+Video\+Filter}} $>$ filter, media\+::base\+::\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON position=media\+::base\+::\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+S\+T\+\_\+\+C\+A\+P\+T\+U\+R\+ER, const char $\ast$id=N\+U\+LL, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_a47823c67216de66cd88a1a016b868821}{has\+Video\+Filter}} (const char $\ast$id, media\+::base\+::\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON position=media\+::base\+::\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+S\+T\+\_\+\+C\+A\+P\+T\+U\+R\+ER)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_a790f34e2f3a304599468b7ba7f705507}{add\+Renderer}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_sink_base}{I\+Video\+Sink\+Base}} $>$ video\+Renderer, media\+::base\+::\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON position, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_a91aab1cb54598025f7622ab6e3f97f12}{remove\+Renderer}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_sink_base}{I\+Video\+Sink\+Base}} $>$ video\+Renderer, media\+::base\+::\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON position, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual Video\+Track\+Type \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_a7b7a35053b6b3aea7ad9cec08a6f0033}{get\+Type}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_a95b104ee9757d9698c037f68d01e0ba8}{enable\+Video\+Filter}} (const char $\ast$id, bool enable, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_ae89b480096c6bef547acea5aba67e6ef}{set\+Filter\+Property}} (const char $\ast$id, const char $\ast$key, const char $\ast$json\+\_\+value, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_aaf31d436590e75d68bd3aa0c9ef9a3f7}{get\+Filter\+Property}} (const char $\ast$id, const char $\ast$key, char $\ast$json\+\_\+value, size\+\_\+t buf\+\_\+size, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track}{I\+Video\+Track}}} class defines the behavior and status of a video track. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_track_ab0f5288ead2e809dd6d6bd37001dc257}\label{classagora_1_1rtc_1_1_i_video_track_ab0f5288ead2e809dd6d6bd37001dc257}} 
+\index{agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}!addVideoFilter@{addVideoFilter}}
+\index{addVideoFilter@{addVideoFilter}!agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}}
+\doxysubsubsection{\texorpdfstring{addVideoFilter()}{addVideoFilter()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Video\+Track\+::add\+Video\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_filter}{I\+Video\+Filter}} $>$}]{filter,  }\item[{media\+::base\+::\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON}]{position = {\ttfamily media\+:\+:base\+:\+:POSITION\+\_\+POST\+\_\+CAPTURER},  }\item[{const char $\ast$}]{id = {\ttfamily NULL},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adds a video filter to the video track.
+
+Add a video filter in either of the following ways\+:
+\begin{DoxyItemize}
+\item Use the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_node_factory}{I\+Media\+Node\+Factory}} object to create a built-\/in video filter.
+\item Use a custom video filter by implementing the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_filter}{I\+Video\+Filter}} class.
+\end{DoxyItemize}
+
+To add multiple filters, call this method multiple times. The order of the added filters depends on when the app successfully adds the filter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filter} & The video filter that you want to add to the video track. \\
+\hline
+{\em position} & The position where the filter is added. \\
+\hline
+{\em id} & id of the filter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: The video filter is added successfully.
+\item {\ttfamily false}\+: The video filter fails to be added. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_track_aa99f34743ed387c875aee89ceea19e63}\label{classagora_1_1rtc_1_1_i_video_track_aa99f34743ed387c875aee89ceea19e63}} 
+\index{agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}!removeVideoFilter@{removeVideoFilter}}
+\index{removeVideoFilter@{removeVideoFilter}!agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}}
+\doxysubsubsection{\texorpdfstring{removeVideoFilter()}{removeVideoFilter()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Video\+Track\+::remove\+Video\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_filter}{I\+Video\+Filter}} $>$}]{filter,  }\item[{media\+::base\+::\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON}]{position = {\ttfamily media\+:\+:base\+:\+:POSITION\+\_\+POST\+\_\+CAPTURER},  }\item[{const char $\ast$}]{id = {\ttfamily NULL},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Removes the video filter added by {\ttfamily add\+Video\+Filter} from the video track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filter} & The video filter that you want to remove\+: {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_filter}{I\+Video\+Filter}}}. \\
+\hline
+{\em position} & The position of the filter. @id id of the filter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: The video filter is removed successfully.
+\item {\ttfamily false}\+: The video filter fails to be removed. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_track_a47823c67216de66cd88a1a016b868821}\label{classagora_1_1rtc_1_1_i_video_track_a47823c67216de66cd88a1a016b868821}} 
+\index{agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}!hasVideoFilter@{hasVideoFilter}}
+\index{hasVideoFilter@{hasVideoFilter}!agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}}
+\doxysubsubsection{\texorpdfstring{hasVideoFilter()}{hasVideoFilter()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Video\+Track\+::has\+Video\+Filter (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{media\+::base\+::\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON}]{position = {\ttfamily media\+:\+:base\+:\+:POSITION\+\_\+POST\+\_\+CAPTURER} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Whether a video filter exists 
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the filter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: exist
+\item false\+: not exist 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_track_a790f34e2f3a304599468b7ba7f705507}\label{classagora_1_1rtc_1_1_i_video_track_a790f34e2f3a304599468b7ba7f705507}} 
+\index{agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}!addRenderer@{addRenderer}}
+\index{addRenderer@{addRenderer}!agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}}
+\doxysubsubsection{\texorpdfstring{addRenderer()}{addRenderer()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Video\+Track\+::add\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_sink_base}{I\+Video\+Sink\+Base}} $>$}]{video\+Renderer,  }\item[{media\+::base\+::\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON}]{position,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adds a video renderer to the video track.
+
+Add a video renderer in either of the following ways\+:
+\begin{DoxyItemize}
+\item Use the built-\/in video renderer by implementing the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_renderer}{I\+Video\+Renderer}}} in the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_node_factory}{I\+Media\+Node\+Factory}}} class.
+\item Use a custom video renderer by implementing the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_sink_base}{I\+Video\+Sink\+Base}}} class.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Renderer} & The video renderer that you want to add\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_sink_base}{I\+Video\+Sink\+Base}}. \\
+\hline
+{\em position} & The position where the renderer is added.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: The video renderer is added successfully.
+\item {\ttfamily false}\+: The video renderer fails to be added. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_track_a91aab1cb54598025f7622ab6e3f97f12}\label{classagora_1_1rtc_1_1_i_video_track_a91aab1cb54598025f7622ab6e3f97f12}} 
+\index{agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}!removeRenderer@{removeRenderer}}
+\index{removeRenderer@{removeRenderer}!agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}}
+\doxysubsubsection{\texorpdfstring{removeRenderer()}{removeRenderer()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Video\+Track\+::remove\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_sink_base}{I\+Video\+Sink\+Base}} $>$}]{video\+Renderer,  }\item[{media\+::base\+::\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON}]{position,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Removes the video renderer added by {\ttfamily add\+Renderer} from the video track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Renderer} & The video renderer that you want to remove\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_sink_base}{I\+Video\+Sink\+Base}}. \\
+\hline
+{\em position} & The position where the renderer is removed\+: V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: The video renderer is removed successfully.
+\item {\ttfamily false}\+: The video renderer fails to be removed. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_track_a7b7a35053b6b3aea7ad9cec08a6f0033}\label{classagora_1_1rtc_1_1_i_video_track_a7b7a35053b6b3aea7ad9cec08a6f0033}} 
+\index{agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}!getType@{getType}}
+\index{getType@{getType}!agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual Video\+Track\+Type agora\+::rtc\+::\+I\+Video\+Track\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get the track type of the video track \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Video\+Track\+Type 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track_a20b1ee88bf542565fc343a067f197fab}{agora\+::rtc\+::\+I\+Remote\+Video\+Track}}, and \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track_a596814302f4b579a91d547d5ee9f1597}{agora\+::rtc\+::\+I\+Local\+Video\+Track}}.
+
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_track_a95b104ee9757d9698c037f68d01e0ba8}\label{classagora_1_1rtc_1_1_i_video_track_a95b104ee9757d9698c037f68d01e0ba8}} 
+\index{agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}!enableVideoFilter@{enableVideoFilter}}
+\index{enableVideoFilter@{enableVideoFilter}!agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}}
+\doxysubsubsection{\texorpdfstring{enableVideoFilter()}{enableVideoFilter()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Track\+::enable\+Video\+Filter (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{bool}]{enable,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Enable / Disable specified video filter 
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the filter \\
+\hline
+{\em enable} & enable / disable the filter with given id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: success
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_track_ae89b480096c6bef547acea5aba67e6ef}\label{classagora_1_1rtc_1_1_i_video_track_ae89b480096c6bef547acea5aba67e6ef}} 
+\index{agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}!setFilterProperty@{setFilterProperty}}
+\index{setFilterProperty@{setFilterProperty}!agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}}
+\doxysubsubsection{\texorpdfstring{setFilterProperty()}{setFilterProperty()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Track\+::set\+Filter\+Property (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{const char $\ast$}]{key,  }\item[{const char $\ast$}]{json\+\_\+value,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+set the properties of the specified video filter 
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the filter \\
+\hline
+{\em key} & key of the property \\
+\hline
+{\em json\+\_\+value} & json str value of the property \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: success
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_track_aaf31d436590e75d68bd3aa0c9ef9a3f7}\label{classagora_1_1rtc_1_1_i_video_track_aaf31d436590e75d68bd3aa0c9ef9a3f7}} 
+\index{agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}!getFilterProperty@{getFilterProperty}}
+\index{getFilterProperty@{getFilterProperty}!agora::rtc::IVideoTrack@{agora::rtc::IVideoTrack}}
+\doxysubsubsection{\texorpdfstring{getFilterProperty()}{getFilterProperty()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Track\+::get\+Filter\+Property (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{const char $\ast$}]{key,  }\item[{char $\ast$}]{json\+\_\+value,  }\item[{size\+\_\+t}]{buf\+\_\+size,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+get the properties of the specified video filter 
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the filter \\
+\hline
+{\em key} & key of the property \\
+\hline
+{\em json\+\_\+value} & json str value of the property \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: success
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}

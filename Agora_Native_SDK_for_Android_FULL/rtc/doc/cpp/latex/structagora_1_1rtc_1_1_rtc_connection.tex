@@ -1,0 +1,45 @@
+\hypertarget{structagora_1_1rtc_1_1_rtc_connection}{}\doxysection{agora\+::rtc\+::Rtc\+Connection Struct Reference}
+\label{structagora_1_1rtc_1_1_rtc_connection}\index{agora::rtc::RtcConnection@{agora::rtc::RtcConnection}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine\+Ex.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_a87b67eac4fd68ad5bfc670b5c73fd615}\label{structagora_1_1rtc_1_1_rtc_connection_a87b67eac4fd68ad5bfc670b5c73fd615}} 
+{\bfseries Rtc\+Connection} (const char $\ast$channel\+\_\+id, uid\+\_\+t local\+\_\+uid)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_afb9ad09d62acc4d3448523bf49c79cfd}{channel\+Id}}
+\item 
+uid\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_ae5ff2bf1815b566adcd8d7ca70779ee2}{local\+Uid}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rtc Connection. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_afb9ad09d62acc4d3448523bf49c79cfd}\label{structagora_1_1rtc_1_1_rtc_connection_afb9ad09d62acc4d3448523bf49c79cfd}} 
+\index{agora::rtc::RtcConnection@{agora::rtc::RtcConnection}!channelId@{channelId}}
+\index{channelId@{channelId}!agora::rtc::RtcConnection@{agora::rtc::RtcConnection}}
+\doxysubsubsection{\texorpdfstring{channelId}{channelId}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+Rtc\+Connection\+::channel\+Id}
+
+The unique channel name for the Agora\+R\+TC session in the string format. The string length must be less than 64 bytes. Supported character scopes are\+:
+\begin{DoxyItemize}
+\item All lowercase English letters\+: a to z.
+\item All uppercase English letters\+: A to Z.
+\item All numeric characters\+: 0 to 9.
+\item The space character.
+\item Punctuation characters and other symbols, including\+: \char`\"{}!\char`\"{}, \char`\"{}\#\char`\"{}, \char`\"{}\$\char`\"{}, \char`\"{}\%\char`\"{}, \char`\"{}\&\char`\"{}, \char`\"{}(\char`\"{}, \char`\"{})\char`\"{}, \char`\"{}+\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}\+:\char`\"{}, \char`\"{};\char`\"{}, \char`\"{}$<$\char`\"{}, \char`\"{}=\char`\"{}, \char`\"{}.\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}?\char`\"{}, \char`\"{}@\char`\"{}, \char`\"{}\mbox{[}\char`\"{}, \char`\"{}\mbox{]}\char`\"{}, \char`\"{}$^\wedge$\char`\"{}, \char`\"{}\+\_\+\char`\"{}, \char`\"{} \{\char`\"{}, \char`\"{}\}\char`\"{}, \char`\"{}$\vert$\char`\"{}, \char`\"{}$\sim$\char`\"{}, \char`\"{},\char`\"{}. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_ae5ff2bf1815b566adcd8d7ca70779ee2}\label{structagora_1_1rtc_1_1_rtc_connection_ae5ff2bf1815b566adcd8d7ca70779ee2}} 
+\index{agora::rtc::RtcConnection@{agora::rtc::RtcConnection}!localUid@{localUid}}
+\index{localUid@{localUid}!agora::rtc::RtcConnection@{agora::rtc::RtcConnection}}
+\doxysubsubsection{\texorpdfstring{localUid}{localUid}}
+{\footnotesize\ttfamily uid\+\_\+t agora\+::rtc\+::\+Rtc\+Connection\+::local\+Uid}
+
+User ID\+: A 32-\/bit unsigned integer ranging from 1 to (2$^\wedge$32-\/1). It must be unique. 

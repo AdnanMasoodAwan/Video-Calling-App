@@ -1,0 +1,528 @@
+\hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer}{}\doxysection{agora\+::rtc\+::I\+Rtc\+Connection\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_rtc_connection_observer}\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Rtc\+Connection.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1df408778b1886055df47cd7d0ff8e5c}{on\+Connected}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&connection\+Info, C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE reason)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae62590c268ad2904583dc9c62c337056}{on\+Disconnected}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&connection\+Info, C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE reason)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_afc0e547898322612da27bc697d4f2806}{on\+Connecting}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&connection\+Info, C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE reason)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a5eb8ab1144ac6487708e744a7e579ceb}{on\+Reconnecting}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&connection\+Info, C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE reason)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_add052ea23819bb31e7b0c403cca90d4e}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_add052ea23819bb31e7b0c403cca90d4e}} 
+virtual void {\bfseries on\+Reconnected} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&connection\+Info, C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE reason)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a11829011671bc54cf1483288421687ce}{on\+Connection\+Lost}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&connection\+Info)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a255ffd92a1b67201f04d018e163118fc}{on\+Lastmile\+Quality}} (const Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE quality)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a91037dcd860c1000e31a3d0eecb1889a}{on\+Lastmile\+Probe\+Result}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_result}{Lastmile\+Probe\+Result}} \&result)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a27ee9184ccaba5855389412846f6949f}{on\+Token\+Privilege\+Will\+Expire}} (const char $\ast$token)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_adf8fa47e6d34fdd75b90b42f68ea35f7}{on\+Token\+Privilege\+Did\+Expire}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a33d46c9db2a0cbff4a24aa790a69eec3}{on\+Connection\+Failure}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&connection\+Info, C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE reason)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae5daa5e5f14febe188bc79f29cd3697a}{on\+User\+Joined}} (user\+\_\+id\+\_\+t user\+Id)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a037693bddc8c6a8b36e5199e5085cea9}{on\+User\+Left}} (user\+\_\+id\+\_\+t user\+Id, U\+S\+E\+R\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE reason)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_aabcc0d7016f685e132fc38b0a2d0d27f}{on\+Transport\+Stats}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}} \&stats)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_aa7e00e4b74e281072eb346cf97ea2e5a}{on\+Change\+Role\+Success}} (C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE old\+Role, C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE new\+Role, const \mbox{\hyperlink{structagora_1_1rtc_1_1_client_role_options}{Client\+Role\+Options}} \&new\+Role\+Options)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a7c4b7ec0e3854211f85e1ac885b05b67}{on\+Change\+Role\+Failure}} (C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+R\+E\+A\+S\+ON reason, C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE current\+Role)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a682f52712211354e1f671201af8d61b7}{on\+License\+Validation\+Failure}} (L\+I\+C\+E\+N\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE error)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_adbeb932227fa99295d70bced528114c1}{on\+User\+Network\+Quality}} (user\+\_\+id\+\_\+t user\+Id, Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE tx\+Quality, Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE rx\+Quality)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1dbc1dca6205d5bdb4b4c98095edc451}{on\+Network\+Type\+Changed}} (N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+Y\+PE type)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a8ac023a161840dad851902cc0bcf040c}{on\+Content\+Inspect\+Result}} (media\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+I\+N\+S\+P\+E\+C\+T\+\_\+\+R\+E\+S\+U\+LT result)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a28a92b4a038d2392b1b6335835ce6897}{on\+Snapshot\+Taken}} (user\+\_\+id\+\_\+t user\+Id, const char $\ast$file\+Path, int width, int height, int err\+Code)
+\begin{DoxyCompactList}\small\item\em snapshot taken callback \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a4d98ce7536aa49f929c4763fe9525c06}{on\+Error}} (E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE error, const char $\ast$msg)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a0112bc3e6b3773125facd0c55d11f318}{on\+Channel\+Media\+Relay\+State\+Changed}} (int state, int code)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a9648481a29acb43e5a924fa5f0db5d22}{on\+Local\+User\+Registered}} (uid\+\_\+t uid, const char $\ast$user\+Account)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a6cd17c45fc349a2c772ad093b6cab0c0}{on\+User\+Account\+Updated}} (uid\+\_\+t uid, const char $\ast$user\+Account)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_aec5bb3c8a7df136bc1f383cbe8d57900}{on\+Stream\+Message\+Error}} (user\+\_\+id\+\_\+t user\+Id, int stream\+Id, int code, int missed, int cached)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1e58b7c899c5482c69c85502d36c4554}{on\+Encryption\+Error}} (E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE error\+Type)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae20e0658fc8cb8723e76f9da8c60d384}{on\+Upload\+Log\+Result}} (const char $\ast$request\+Id, bool success, U\+P\+L\+O\+A\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+S\+ON reason)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_ad50bf728f1e165e0faefa5152c9e5087}{on\+Set\+Rtm\+Flag\+Result}} (int code)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae4ca526d71c7379d80771c663fb2769c}{on\+Wl\+Acc\+Message}} (W\+L\+A\+C\+C\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+A\+S\+ON reason, W\+L\+A\+C\+C\+\_\+\+S\+U\+G\+G\+E\+S\+T\+\_\+\+A\+C\+T\+I\+ON action, const char $\ast$wl\+Acc\+Msg)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a0237712af0fbb65b8a57f53b6474aa3d}{on\+Wl\+Acc\+Stats}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_wl_acc_stats}{Wl\+Acc\+Stats}} \&current\+Stats, const \mbox{\hyperlink{structagora_1_1rtc_1_1_wl_acc_stats}{Wl\+Acc\+Stats}} \&average\+Stats)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer}{I\+Rtc\+Connection\+Observer}} class, which observes the connection state of the S\+DK. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1df408778b1886055df47cd7d0ff8e5c}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1df408778b1886055df47cd7d0ff8e5c}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onConnected@{onConnected}}
+\index{onConnected@{onConnected}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onConnected()}{onConnected()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Connected (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&}]{connection\+Info,  }\item[{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the connection state between the S\+DK and the Agora channel changes to {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D(3)}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Info} & The information of the connection. See \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}}. \\
+\hline
+{\em reason} & The reason of the connection state change. See \#\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae62590c268ad2904583dc9c62c337056}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae62590c268ad2904583dc9c62c337056}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onDisconnected@{onDisconnected}}
+\index{onDisconnected@{onDisconnected}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onDisconnected()}{onDisconnected()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Disconnected (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&}]{connection\+Info,  }\item[{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the connection state between the S\+DK and the Agora channel changes to {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D(1)}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Info} & The information of the connection. See \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}}. \\
+\hline
+{\em reason} & The reason of the connection state change. See \#\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_afc0e547898322612da27bc697d4f2806}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_afc0e547898322612da27bc697d4f2806}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onConnecting@{onConnecting}}
+\index{onConnecting@{onConnecting}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onConnecting()}{onConnecting()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Connecting (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&}]{connection\+Info,  }\item[{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the connection state between the S\+DK and the Agora channel changes to {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+N\+G(2)}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Info} & The information of the connection. See \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}}. \\
+\hline
+{\em reason} & The reason of the connection state change. See \#\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a5eb8ab1144ac6487708e744a7e579ceb}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a5eb8ab1144ac6487708e744a7e579ceb}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onReconnecting@{onReconnecting}}
+\index{onReconnecting@{onReconnecting}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onReconnecting()}{onReconnecting()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Reconnecting (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&}]{connection\+Info,  }\item[{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the connection state between the S\+DK and the Agora channel changes to {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+I\+N\+G(4)}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Info} & The information of the connection. See \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}}. \\
+\hline
+{\em reason} & The reason of the connection state change. See \#\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a11829011671bc54cf1483288421687ce}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a11829011671bc54cf1483288421687ce}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onConnectionLost@{onConnectionLost}}
+\index{onConnectionLost@{onConnectionLost}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onConnectionLost()}{onConnectionLost()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Connection\+Lost (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&}]{connection\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the S\+DK loses connection with the Agora channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Info} & The information of the connection. See \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a255ffd92a1b67201f04d018e163118fc}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a255ffd92a1b67201f04d018e163118fc}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onLastmileQuality@{onLastmileQuality}}
+\index{onLastmileQuality@{onLastmileQuality}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onLastmileQuality()}{onLastmileQuality()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Lastmile\+Quality (\begin{DoxyParamCaption}\item[{const Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE}]{quality }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reports the quality of the last-\/mile network.
+
+The S\+DK triggers this callback within two seconds after the app calls \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a3fa98edb2c0560223125bd1230f21722}{start\+Lastmile\+Probe\+Test}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quality} & Quality of the last-\/mile network\+: \#\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a91037dcd860c1000e31a3d0eecb1889a}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a91037dcd860c1000e31a3d0eecb1889a}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onLastmileProbeResult@{onLastmileProbeResult}}
+\index{onLastmileProbeResult@{onLastmileProbeResult}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onLastmileProbeResult()}{onLastmileProbeResult()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Lastmile\+Probe\+Result (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_result}{Lastmile\+Probe\+Result}} \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reports the result of the last-\/mile network probe test.
+
+The S\+DK triggers this callback within 30 seconds after the app calls \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a3fa98edb2c0560223125bd1230f21722}{start\+Lastmile\+Probe\+Test}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The result of the last-\/mile network probe test\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_result}{Lastmile\+Probe\+Result}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a27ee9184ccaba5855389412846f6949f}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a27ee9184ccaba5855389412846f6949f}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onTokenPrivilegeWillExpire@{onTokenPrivilegeWillExpire}}
+\index{onTokenPrivilegeWillExpire@{onTokenPrivilegeWillExpire}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onTokenPrivilegeWillExpire()}{onTokenPrivilegeWillExpire()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Token\+Privilege\+Will\+Expire (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the token expires in 30 seconds.
+
+The S\+DK triggers this callback to remind the app to get a new token before the token privilege expires.
+
+Upon receiving this callback, you must generate a new token on your server and call \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a83dbfc421cd3ae4399260fef5679e13d}{renew\+Token}} to pass the new token to the S\+DK.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The pointer to the token that expires in 30 seconds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_adf8fa47e6d34fdd75b90b42f68ea35f7}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_adf8fa47e6d34fdd75b90b42f68ea35f7}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onTokenPrivilegeDidExpire@{onTokenPrivilegeDidExpire}}
+\index{onTokenPrivilegeDidExpire@{onTokenPrivilegeDidExpire}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onTokenPrivilegeDidExpire()}{onTokenPrivilegeDidExpire()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Token\+Privilege\+Did\+Expire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the token has expired.
+
+Upon receiving this callback, you must generate a new token on your server and call \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a83dbfc421cd3ae4399260fef5679e13d}{renew\+Token}} to pass the new token to the S\+DK. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a33d46c9db2a0cbff4a24aa790a69eec3}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a33d46c9db2a0cbff4a24aa790a69eec3}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onConnectionFailure@{onConnectionFailure}}
+\index{onConnectionFailure@{onConnectionFailure}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onConnectionFailure()}{onConnectionFailure()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Connection\+Failure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \&}]{connection\+Info,  }\item[{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the connection state between the S\+DK and the Agora channel changes to {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+A\+I\+L\+E\+D(5)}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Info} & The connection information\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}}. \\
+\hline
+{\em reason} & The reason of the connection state change\+: \#\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae5daa5e5f14febe188bc79f29cd3697a}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae5daa5e5f14febe188bc79f29cd3697a}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onUserJoined@{onUserJoined}}
+\index{onUserJoined@{onUserJoined}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onUserJoined()}{onUserJoined()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+User\+Joined (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when a remote user joins the channel.
+
+You can get the ID of the remote user in this callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the remote user who joins the channel. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a037693bddc8c6a8b36e5199e5085cea9}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a037693bddc8c6a8b36e5199e5085cea9}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onUserLeft@{onUserLeft}}
+\index{onUserLeft@{onUserLeft}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onUserLeft()}{onUserLeft()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+User\+Left (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{U\+S\+E\+R\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when a remote user leaves the channel.
+
+You can know why the user leaves the channel through the {\ttfamily reason} parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the user who leaves the channel. \\
+\hline
+{\em reason} & The reason why the remote user leaves the channel\+: \#\+U\+S\+E\+R\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_aabcc0d7016f685e132fc38b0a2d0d27f}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_aabcc0d7016f685e132fc38b0a2d0d27f}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onTransportStats@{onTransportStats}}
+\index{onTransportStats@{onTransportStats}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onTransportStats()}{onTransportStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Transport\+Stats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reports the transport statistics of the connection.
+
+The S\+DK triggers this callback once every two seconds when the connection state is {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & The pointer to \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_aa7e00e4b74e281072eb346cf97ea2e5a}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_aa7e00e4b74e281072eb346cf97ea2e5a}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onChangeRoleSuccess@{onChangeRoleSuccess}}
+\index{onChangeRoleSuccess@{onChangeRoleSuccess}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onChangeRoleSuccess()}{onChangeRoleSuccess()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Change\+Role\+Success (\begin{DoxyParamCaption}\item[{C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE}]{old\+Role,  }\item[{C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE}]{new\+Role,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_client_role_options}{Client\+Role\+Options}} \&}]{new\+Role\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the role of the local user changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em old\+Role} & The previous role of the local user\+: C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em new\+Role} & The current role of the local user\+: C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em new\+Role\+Options} & The client role options of the current role of the local user\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_client_role_options}{Client\+Role\+Options}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a7c4b7ec0e3854211f85e1ac885b05b67}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a7c4b7ec0e3854211f85e1ac885b05b67}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onChangeRoleFailure@{onChangeRoleFailure}}
+\index{onChangeRoleFailure@{onChangeRoleFailure}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onChangeRoleFailure()}{onChangeRoleFailure()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Change\+Role\+Failure (\begin{DoxyParamCaption}\item[{C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+R\+E\+A\+S\+ON}]{reason,  }\item[{C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE}]{current\+Role }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user fails to change the user role. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a682f52712211354e1f671201af8d61b7}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a682f52712211354e1f671201af8d61b7}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onLicenseValidationFailure@{onLicenseValidationFailure}}
+\index{onLicenseValidationFailure@{onLicenseValidationFailure}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onLicenseValidationFailure()}{onLicenseValidationFailure()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+License\+Validation\+Failure (\begin{DoxyParamCaption}\item[{L\+I\+C\+E\+N\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when connection license verification fails
+
+You can know the reason accordding to error code 
+\begin{DoxyParams}{Parameters}
+{\em error} & verify fail reason \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_adbeb932227fa99295d70bced528114c1}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_adbeb932227fa99295d70bced528114c1}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onUserNetworkQuality@{onUserNetworkQuality}}
+\index{onUserNetworkQuality@{onUserNetworkQuality}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onUserNetworkQuality()}{onUserNetworkQuality()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+User\+Network\+Quality (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE}]{tx\+Quality,  }\item[{Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE}]{rx\+Quality }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the network quality of each user.
+
+The S\+DK triggers this callback once every two seconds to report the uplink and downlink network conditions of each user in the channel, including the local user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the user. If {\ttfamily user\+Id} is empty, this callback reports the network quality of the local user. \\
+\hline
+{\em tx\+Quality} & The uplink network quality\+: \#\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em rx\+Quality} & The downlink network quality\+: \#\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1dbc1dca6205d5bdb4b4c98095edc451}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1dbc1dca6205d5bdb4b4c98095edc451}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onNetworkTypeChanged@{onNetworkTypeChanged}}
+\index{onNetworkTypeChanged@{onNetworkTypeChanged}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onNetworkTypeChanged()}{onNetworkTypeChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Network\+Type\+Changed (\begin{DoxyParamCaption}\item[{N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+Y\+PE}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the network type is changed. 
+\begin{DoxyParams}{Parameters}
+{\em type} & The current network type. See \#\+N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a8ac023a161840dad851902cc0bcf040c}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a8ac023a161840dad851902cc0bcf040c}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onContentInspectResult@{onContentInspectResult}}
+\index{onContentInspectResult@{onContentInspectResult}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onContentInspectResult()}{onContentInspectResult()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Content\+Inspect\+Result (\begin{DoxyParamCaption}\item[{media\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+I\+N\+S\+P\+E\+C\+T\+\_\+\+R\+E\+S\+U\+LT}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports result of Content Inspect \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a28a92b4a038d2392b1b6335835ce6897}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a28a92b4a038d2392b1b6335835ce6897}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onSnapshotTaken@{onSnapshotTaken}}
+\index{onSnapshotTaken@{onSnapshotTaken}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onSnapshotTaken()}{onSnapshotTaken()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Snapshot\+Taken (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{const char $\ast$}]{file\+Path,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{err\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+snapshot taken callback 
+
+Occurs when take\+Snapshot A\+PI result is obtained
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & channel name \\
+\hline
+{\em uid} & user id \\
+\hline
+{\em file\+Path} & image is saveed file path \\
+\hline
+{\em width} & image width \\
+\hline
+{\em height} & image height \\
+\hline
+{\em err\+Code} & 0 is ok negative is error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a4d98ce7536aa49f929c4763fe9525c06}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a4d98ce7536aa49f929c4763fe9525c06}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onError@{onError}}
+\index{onError@{onError}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onError()}{onError()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Error (\begin{DoxyParamCaption}\item[{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE}]{error,  }\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the error code and error message. 
+\begin{DoxyParams}{Parameters}
+{\em error} & The error code\+: \#\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em msg} & The error message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a0112bc3e6b3773125facd0c55d11f318}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a0112bc3e6b3773125facd0c55d11f318}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onChannelMediaRelayStateChanged@{onChannelMediaRelayStateChanged}}
+\index{onChannelMediaRelayStateChanged@{onChannelMediaRelayStateChanged}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onChannelMediaRelayStateChanged()}{onChannelMediaRelayStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Channel\+Media\+Relay\+State\+Changed (\begin{DoxyParamCaption}\item[{int}]{state,  }\item[{int}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the state of the channel media relay changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The state code\+:
+\begin{DoxyItemize}
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E(0)}\+: The S\+DK is initializing.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+N\+G(1)}\+: The S\+DK tries to relay the media stream to the destination channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+U\+N\+N\+I\+N\+G(2)}\+: The S\+DK successfully relays the media stream to the destination channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+A\+I\+L\+U\+R\+E(3)}\+: A failure occurs. See the details in {\ttfamily code}. 
+\end{DoxyItemize}\\
+\hline
+{\em code} & The error code\+:
+\begin{DoxyItemize}
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+O\+K(0)}\+: The state is normal.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E(1)}\+: An error occurs in the server response.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+N\+O\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E(2)}\+: No server response. You can call the leave\+Channel method to leave the channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E(3)}\+: The S\+DK fails to access the service, probably due to limited resources of the server.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+J\+O\+I\+N\+\_\+\+S\+R\+C(4)}\+: Fails to send the relay request.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+J\+O\+I\+N\+\_\+\+D\+E\+S\+T(5)}\+: Fails to accept the relay request.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+F\+R\+O\+M\+\_\+\+S\+R\+C(6)}\+: The server fails to receive the media stream.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+E\+N\+T\+\_\+\+T\+O\+\_\+\+D\+E\+S\+T(7)}\+: The server fails to send the media stream.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+L\+O\+S\+T(8)}\+: The S\+DK disconnects from the server due to poor network connections. You can call the leave\+Channel method to leave the channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+O\+R(9)}\+: An internal error occurs in the server.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+R\+C\+\_\+\+T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+E\+D(10)}\+: The token of the source channel has expired.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+E\+S\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+E\+D(11)}\+: The token of the destination channel has expired. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a9648481a29acb43e5a924fa5f0db5d22}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a9648481a29acb43e5a924fa5f0db5d22}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onLocalUserRegistered@{onLocalUserRegistered}}
+\index{onLocalUserRegistered@{onLocalUserRegistered}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onLocalUserRegistered()}{onLocalUserRegistered()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Local\+User\+Registered (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{const char $\ast$}]{user\+Account }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user successfully registers a user account by calling the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a14f8c308c6c57c55653552b939a8527a}{join\+Channel\+With\+User\+Account}} method.\+This callback reports the user ID and user account of the local user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & The ID of the local user. \\
+\hline
+{\em user\+Account} & The user account of the local user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a6cd17c45fc349a2c772ad093b6cab0c0}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a6cd17c45fc349a2c772ad093b6cab0c0}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onUserAccountUpdated@{onUserAccountUpdated}}
+\index{onUserAccountUpdated@{onUserAccountUpdated}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onUserAccountUpdated()}{onUserAccountUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+User\+Account\+Updated (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{const char $\ast$}]{user\+Account }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Technical Preview, please do not depend on this event. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_aec5bb3c8a7df136bc1f383cbe8d57900}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_aec5bb3c8a7df136bc1f383cbe8d57900}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onStreamMessageError@{onStreamMessageError}}
+\index{onStreamMessageError@{onStreamMessageError}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onStreamMessageError()}{onStreamMessageError()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Stream\+Message\+Error (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{int}]{stream\+Id,  }\item[{int}]{code,  }\item[{int}]{missed,  }\item[{int}]{cached }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the error that occurs when receiving data stream messages.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the user sending the data stream. \\
+\hline
+{\em stream\+Id} & the ID of the sent data stream, returned in the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a53f87120cf152e9a80a64de9f0144ede}{create\+Data\+Stream}} method. \\
+\hline
+{\em code} & The error code. \\
+\hline
+{\em missed} & The number of lost messages. \\
+\hline
+{\em cached} & The number of incoming cached messages when the data stream is interrupted. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1e58b7c899c5482c69c85502d36c4554}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1e58b7c899c5482c69c85502d36c4554}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onEncryptionError@{onEncryptionError}}
+\index{onEncryptionError@{onEncryptionError}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onEncryptionError()}{onEncryptionError()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Encryption\+Error (\begin{DoxyParamCaption}\item[{E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE}]{error\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the error type of encryption. 
+\begin{DoxyParams}{Parameters}
+{\em type} & See \#\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae20e0658fc8cb8723e76f9da8c60d384}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae20e0658fc8cb8723e76f9da8c60d384}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onUploadLogResult@{onUploadLogResult}}
+\index{onUploadLogResult@{onUploadLogResult}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onUploadLogResult()}{onUploadLogResult()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Upload\+Log\+Result (\begin{DoxyParamCaption}\item[{const char $\ast$}]{request\+Id,  }\item[{bool}]{success,  }\item[{U\+P\+L\+O\+A\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+S\+ON}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the user log upload result 
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & Request\+Id of the upload \\
+\hline
+{\em success} & Is upload success \\
+\hline
+{\em reason} & Reason of the upload, 0\+: OK, 1 Network Error, 2 Server Error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_ad50bf728f1e165e0faefa5152c9e5087}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_ad50bf728f1e165e0faefa5152c9e5087}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onSetRtmFlagResult@{onSetRtmFlagResult}}
+\index{onSetRtmFlagResult@{onSetRtmFlagResult}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onSetRtmFlagResult()}{onSetRtmFlagResult()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Set\+Rtm\+Flag\+Result (\begin{DoxyParamCaption}\item[{int}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when receive use rtm response.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The error code\+: \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae4ca526d71c7379d80771c663fb2769c}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae4ca526d71c7379d80771c663fb2769c}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onWlAccMessage@{onWlAccMessage}}
+\index{onWlAccMessage@{onWlAccMessage}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onWlAccMessage()}{onWlAccMessage()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Wl\+Acc\+Message (\begin{DoxyParamCaption}\item[{W\+L\+A\+C\+C\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+A\+S\+ON}]{reason,  }\item[{W\+L\+A\+C\+C\+\_\+\+S\+U\+G\+G\+E\+S\+T\+\_\+\+A\+C\+T\+I\+ON}]{action,  }\item[{const char $\ast$}]{wl\+Acc\+Msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the W\+I\+FI message need be sent to the user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & The reason of notifying the user of a message. \\
+\hline
+{\em action} & Suggest an action for the user. \\
+\hline
+{\em wl\+Acc\+Msg} & The message content of notifying the user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_observer_a0237712af0fbb65b8a57f53b6474aa3d}\label{classagora_1_1rtc_1_1_i_rtc_connection_observer_a0237712af0fbb65b8a57f53b6474aa3d}} 
+\index{agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}!onWlAccStats@{onWlAccStats}}
+\index{onWlAccStats@{onWlAccStats}!agora::rtc::IRtcConnectionObserver@{agora::rtc::IRtcConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onWlAccStats()}{onWlAccStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Connection\+Observer\+::on\+Wl\+Acc\+Stats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_wl_acc_stats}{Wl\+Acc\+Stats}} \&}]{current\+Stats,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_wl_acc_stats}{Wl\+Acc\+Stats}} \&}]{average\+Stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when S\+DK statistics wifi acceleration optimization effect.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Stats} & Instantaneous value of optimization effect. \\
+\hline
+{\em average\+Stats} & Average value of cumulative optimization effect. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,178 @@
+\hypertarget{classagora_1_1rtc_1_1_i_remote_video_track}{}\doxysection{agora\+::rtc\+::I\+Remote\+Video\+Track Class Reference}
+\label{classagora_1_1rtc_1_1_i_remote_video_track}\index{agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Video\+Track.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Remote\+Video\+Track\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classagora_1_1rtc_1_1_i_remote_video_track}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track_aea7a83b6554e74c363969eb80495ecb9}{get\+Statistics}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_track_stats}{Remote\+Video\+Track\+Stats}} \&stats)=0
+\item 
+virtual R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+TE \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track_a9198277c30a29b82237876d7bd63fb63}{get\+State}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track_aae079a7139538bc5e9980b1259534c2e}{get\+Track\+Info}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info}{Video\+Track\+Info}} \&info)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track_a47d3f4593d38c9894f1352e31e214414}{register\+Video\+Encoded\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$encoded\+Observer, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track_a1f3a4cf708efccb511a84e60898b4627}{unregister\+Video\+Encoded\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$encoded\+Observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track_acb8019868cc3b7003d80bf7ab848e14b}{register\+Media\+Packet\+Receiver}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}} $\ast$video\+Receiver, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track_a9cae283cc9c891d49570b7494bf808ff}{unregister\+Media\+Packet\+Receiver}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}} $\ast$video\+Receiver)=0
+\item 
+virtual Video\+Track\+Type \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track_a20b1ee88bf542565fc343a067f197fab}{get\+Type}} () O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track}{I\+Remote\+Video\+Track}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_video_track_aea7a83b6554e74c363969eb80495ecb9}\label{classagora_1_1rtc_1_1_i_remote_video_track_aea7a83b6554e74c363969eb80495ecb9}} 
+\index{agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}!getStatistics@{getStatistics}}
+\index{getStatistics@{getStatistics}!agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}}
+\doxysubsubsection{\texorpdfstring{getStatistics()}{getStatistics()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Remote\+Video\+Track\+::get\+Statistics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_track_stats}{Remote\+Video\+Track\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the statistics of the remote video track. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em stats} & The reference to the statistics of the remote video track. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_video_track_a9198277c30a29b82237876d7bd63fb63}\label{classagora_1_1rtc_1_1_i_remote_video_track_a9198277c30a29b82237876d7bd63fb63}} 
+\index{agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}!getState@{getState}}
+\index{getState@{getState}!agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily virtual R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+TE agora\+::rtc\+::\+I\+Remote\+Video\+Track\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the state of the remote video track. \begin{DoxyReturn}{Returns}
+The state of the remote video track. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_video_track_aae079a7139538bc5e9980b1259534c2e}\label{classagora_1_1rtc_1_1_i_remote_video_track_aae079a7139538bc5e9980b1259534c2e}} 
+\index{agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}!getTrackInfo@{getTrackInfo}}
+\index{getTrackInfo@{getTrackInfo}!agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}}
+\doxysubsubsection{\texorpdfstring{getTrackInfo()}{getTrackInfo()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Remote\+Video\+Track\+::get\+Track\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info}{Video\+Track\+Info}} \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the information of the remote video track. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em info} & The reference to the information of the remote video track. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_video_track_a47d3f4593d38c9894f1352e31e214414}\label{classagora_1_1rtc_1_1_i_remote_video_track_a47d3f4593d38c9894f1352e31e214414}} 
+\index{agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}!registerVideoEncodedFrameObserver@{registerVideoEncodedFrameObserver}}
+\index{registerVideoEncodedFrameObserver@{registerVideoEncodedFrameObserver}!agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}}
+\doxysubsubsection{\texorpdfstring{registerVideoEncodedFrameObserver()}{registerVideoEncodedFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Video\+Track\+::register\+Video\+Encoded\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$}]{encoded\+Observer,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an \mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{I\+Video\+Encoded\+Frame\+Observer}} object.
+
+You need to implement the {\ttfamily I\+Video\+Encoded\+Frame\+Observer} class in this method. Once you successfully register the encoded image receiver, the S\+DK triggers the on\+Encoded\+Video\+Frame\+Received callback when it receives the encoded video image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em encoded\+Observer} & The pointer to the {\ttfamily I\+Video\+Encoded\+Frame\+Observer} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_video_track_a1f3a4cf708efccb511a84e60898b4627}\label{classagora_1_1rtc_1_1_i_remote_video_track_a1f3a4cf708efccb511a84e60898b4627}} 
+\index{agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}!unregisterVideoEncodedFrameObserver@{unregisterVideoEncodedFrameObserver}}
+\index{unregisterVideoEncodedFrameObserver@{unregisterVideoEncodedFrameObserver}!agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}}
+\doxysubsubsection{\texorpdfstring{unregisterVideoEncodedFrameObserver()}{unregisterVideoEncodedFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Video\+Track\+::unregister\+Video\+Encoded\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$}]{encoded\+Observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{I\+Video\+Encoded\+Frame\+Observer}} object. 
+\begin{DoxyParams}{Parameters}
+{\em encoded\+Observer} & The pointer to the {\ttfamily I\+Video\+Encoded\+Frame\+Observer} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_video_track_acb8019868cc3b7003d80bf7ab848e14b}\label{classagora_1_1rtc_1_1_i_remote_video_track_acb8019868cc3b7003d80bf7ab848e14b}} 
+\index{agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}!registerMediaPacketReceiver@{registerMediaPacketReceiver}}
+\index{registerMediaPacketReceiver@{registerMediaPacketReceiver}!agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}}
+\doxysubsubsection{\texorpdfstring{registerMediaPacketReceiver()}{registerMediaPacketReceiver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Video\+Track\+::register\+Media\+Packet\+Receiver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}} $\ast$}]{video\+Receiver,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}} object.
+
+You need to implement the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}}} class in this method. Once you successfully register the media packet receiver, the S\+DK triggers the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver_a3c85d8b9a58bd7da6d974b1972b34de3}{on\+Media\+Packet\+Received}} callback when it receives the video packet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Receiver} & The pointer to the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_video_track_a9cae283cc9c891d49570b7494bf808ff}\label{classagora_1_1rtc_1_1_i_remote_video_track_a9cae283cc9c891d49570b7494bf808ff}} 
+\index{agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}!unregisterMediaPacketReceiver@{unregisterMediaPacketReceiver}}
+\index{unregisterMediaPacketReceiver@{unregisterMediaPacketReceiver}!agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}}
+\doxysubsubsection{\texorpdfstring{unregisterMediaPacketReceiver()}{unregisterMediaPacketReceiver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Video\+Track\+::unregister\+Media\+Packet\+Receiver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}} $\ast$}]{video\+Receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}} object. 
+\begin{DoxyParams}{Parameters}
+{\em video\+Receiver} & The pointer to the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_video_track_a20b1ee88bf542565fc343a067f197fab}\label{classagora_1_1rtc_1_1_i_remote_video_track_a20b1ee88bf542565fc343a067f197fab}} 
+\index{agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}!getType@{getType}}
+\index{getType@{getType}!agora::rtc::IRemoteVideoTrack@{agora::rtc::IRemoteVideoTrack}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual Video\+Track\+Type agora\+::rtc\+::\+I\+Remote\+Video\+Track\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the track type of the video track \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Video\+Track\+Type 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_a7b7a35053b6b3aea7ad9cec08a6f0033}{agora\+::rtc\+::\+I\+Video\+Track}}.
+

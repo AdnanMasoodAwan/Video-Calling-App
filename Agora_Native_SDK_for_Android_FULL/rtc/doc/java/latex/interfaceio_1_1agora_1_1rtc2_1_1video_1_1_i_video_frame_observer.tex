@@ -1,0 +1,319 @@
+\hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer}{}\doxysection{io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer Interface Reference}
+\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer}\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a9a115083a5246f01d3abcb609ff0b1ae}{on\+Capture\+Video\+Frame}} (int source\+Type, \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}} video\+Frame)
+\item 
+boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_ab697551dcdd837900d64746f5b3a6161}{on\+Pre\+Encode\+Video\+Frame}} (int source\+Type, \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}} video\+Frame)
+\item 
+boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_abb402bb2c8e85725b001f7393e28a486}{on\+Media\+Player\+Video\+Frame}} (\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}} video\+Frame, int media\+Player\+Id)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a98e92390c7d50a854aa7868b5a97d817}{get\+Video\+Frame\+Process\+Mode}} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a46a874d8e269454e84580b1023a26c70}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a46a874d8e269454e84580b1023a26c70}} 
+int {\bfseries get\+Video\+Format\+Preference} ()
+\item 
+boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a77ee79557acb9ade1943882fafff8918}{get\+Rotation\+Applied}} ()
+\item 
+boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_afc2ee39691b615d951f137a9a870a39b}{get\+Mirror\+Applied}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a7f71e65d31650e8993d29c8a4c77bd17}{get\+Observed\+Frame\+Position}} ()
+\item 
+boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a474ba4331a77ec324f07c4ebf4f41668}{on\+Render\+Video\+Frame}} (String channel\+Id, int uid, \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}} video\+Frame)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_af1fdfd8cac0cd23f7936779cf7549104}{P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+O\+N\+LY}} = 0
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_ace94b692f7cffd39a8931a8c0a174976}{P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+TE}} = 1
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a05a4e325a7526333a1ff31336872558d}{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+S\+T\+\_\+\+C\+A\+P\+T\+U\+R\+ER}} = 1
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_abb3b92026361e39e094cfa8d92d9d741}{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+R\+E\+\_\+\+R\+E\+N\+D\+E\+R\+ER}} = 1 $<$$<$ 1
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_addc7f03c3354cbb434f13f06c7ff3777}{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+R\+E\+\_\+\+E\+N\+C\+O\+D\+ER}} = 1 $<$$<$ 2
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a4297c1564a0e59ba64cbb3be5668ae9f}{V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT}} = 0
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a1496f8865cb6e038526b73ee945e5a7d}{V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+I420}} = 1
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a1a643ba72d4ca877d3037fd5c253848b}{V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+B\+G\+RA}} = 2
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_acc49f5257f09f5fe70eb8a1301ac4e1c}{V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+N\+V21}} = 3
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a4a2b5b5bc3d448b2aa4929895741f9ac}{V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+R\+G\+BA}} = 4
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_adfa8784a7099839e8b7725c2a59f5119}{V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+N\+V12}} = 8
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a0e9239ed95fccb02418a9847aaf81484}{V\+I\+D\+E\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2D}} = 10
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a957aa1024d4fcff2569d78f04ed2292c}{V\+I\+D\+E\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+O\+ES}} = 11
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a971a417ad8b65ed16bde2fce0bc38743}{V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+I422}} = 16
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a9a115083a5246f01d3abcb609ff0b1ae}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a9a115083a5246f01d3abcb609ff0b1ae}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!onCaptureVideoFrame@{onCaptureVideoFrame}}
+\index{onCaptureVideoFrame@{onCaptureVideoFrame}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onCaptureVideoFrame()}{onCaptureVideoFrame()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+on\+Capture\+Video\+Frame (\begin{DoxyParamCaption}\item[{int}]{source\+Type,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}}}]{video\+Frame }\end{DoxyParamCaption})}
+
+Occurs each time the S\+DK receives a video frame captured by the local camera.
+
+After you successfully register the video frame observer, the S\+DK triggers this callback each time a video frame is received. In this callback, you can get the video data captured by the local camera. You can then pre-\/process the data according to your scenarios.
+
+After pre-\/processing, you can send the processed video data back to the S\+DK by setting the {\ttfamily video\+Frame} parameter in this callback.
+
+\begin{DoxyNote}{Note}
+This callback does not support sending processed R\+G\+BA video data back to the S\+DK.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Type} & -\/ The video source type. \\
+\hline
+{\em video\+Frame} & A pointer to the video frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Determines whether to ignore the current video frame if the pre-\/processing fails\+:
+\begin{DoxyItemize}
+\item true\+: Do not ignore.
+\item false\+: Ignore, in which case this method does not send the current video frame to the S\+DK. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_ab697551dcdd837900d64746f5b3a6161}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_ab697551dcdd837900d64746f5b3a6161}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!onPreEncodeVideoFrame@{onPreEncodeVideoFrame}}
+\index{onPreEncodeVideoFrame@{onPreEncodeVideoFrame}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onPreEncodeVideoFrame()}{onPreEncodeVideoFrame()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+on\+Pre\+Encode\+Video\+Frame (\begin{DoxyParamCaption}\item[{int}]{source\+Type,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}}}]{video\+Frame }\end{DoxyParamCaption})}
+
+Occurs each time the S\+DK receives a video frame before encoding.
+
+After you successfully register the video frame observer, the S\+DK triggers this callback each time when it receives a video frame. In this callback, you can get the video data before encoding. You can then process the data according to your particular scenarios.
+
+After processing, you can send the processed video data back to the S\+DK by setting the {\ttfamily video\+Frame} parameter in this callback.
+
+The video data that this callback gets has been pre-\/processed, with its content cropped, rotated, and the image enhanced.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Type} & -\/ The video source type. \\
+\hline
+{\em video\+Frame} & A pointer to the video frame\+: Video\+Frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Determines whether to ignore the current video frame if the pre-\/processing fails\+:
+\begin{DoxyItemize}
+\item true\+: Do not ignore.
+\item false\+: Ignore, in which case this method does not sent the current video frame to the S\+DK. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_abb402bb2c8e85725b001f7393e28a486}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_abb402bb2c8e85725b001f7393e28a486}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!onMediaPlayerVideoFrame@{onMediaPlayerVideoFrame}}
+\index{onMediaPlayerVideoFrame@{onMediaPlayerVideoFrame}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onMediaPlayerVideoFrame()}{onMediaPlayerVideoFrame()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+on\+Media\+Player\+Video\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}}}]{video\+Frame,  }\item[{int}]{media\+Player\+Id }\end{DoxyParamCaption})}
+
+Occurs each time the S\+DK receives a video frame decoded by the Media\+Player.
+
+After you successfully register the video frame observer, the S\+DK triggers this callback each time a video frame is decoded. In this callback, you can get the video data decoded by the Media\+Player. You can then pre-\/process the data according to your scenarios.
+
+After pre-\/processing, you can send the processed video data back to the S\+DK by setting the {\ttfamily video\+Frame} parameter in this callback.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item This callback will not be affected by the return values of \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a98e92390c7d50a854aa7868b5a97d817}{get\+Video\+Frame\+Process\+Mode}}, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a77ee79557acb9ade1943882fafff8918}{get\+Rotation\+Applied}}, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_afc2ee39691b615d951f137a9a870a39b}{get\+Mirror\+Applied}}, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a7f71e65d31650e8993d29c8a4c77bd17}{get\+Observed\+Frame\+Position}}.
+\item On Android, this callback is not affected by the return value of get\+Video\+Format\+Preference
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Frame} & A pointer to the video frame\+: Video\+Frame \\
+\hline
+{\em media\+Player\+Id} & of the media\+Player. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Determines whether to ignore the current video frame if the pre-\/processing fails\+:
+\begin{DoxyItemize}
+\item true\+: Do not ignore.
+\item false\+: Ignore, in which case this method does not sent the current video frame to the S\+DK. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a98e92390c7d50a854aa7868b5a97d817}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a98e92390c7d50a854aa7868b5a97d817}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!getVideoFrameProcessMode@{getVideoFrameProcessMode}}
+\index{getVideoFrameProcessMode@{getVideoFrameProcessMode}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getVideoFrameProcessMode()}{getVideoFrameProcessMode()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+get\+Video\+Frame\+Process\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Indicate the video frame mode of the observer. \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_af1fdfd8cac0cd23f7936779cf7549104}{P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+O\+N\+LY}} or \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_ace94b692f7cffd39a8931a8c0a174976}{P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+TE}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a77ee79557acb9ade1943882fafff8918}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a77ee79557acb9ade1943882fafff8918}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!getRotationApplied@{getRotationApplied}}
+\index{getRotationApplied@{getRotationApplied}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getRotationApplied()}{getRotationApplied()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+get\+Rotation\+Applied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Occurs each time needs to get rotation angle.
+
+\begin{DoxyReturn}{Returns}
+rotation angle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_afc2ee39691b615d951f137a9a870a39b}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_afc2ee39691b615d951f137a9a870a39b}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!getMirrorApplied@{getMirrorApplied}}
+\index{getMirrorApplied@{getMirrorApplied}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getMirrorApplied()}{getMirrorApplied()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+get\+Mirror\+Applied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Occurs each time needs to get whether mirror is applied or not.
+
+\begin{DoxyReturn}{Returns}
+Determines whether to mirror.
+\begin{DoxyItemize}
+\item true\+: need to mirror.
+\item false\+: no mirror. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a7f71e65d31650e8993d29c8a4c77bd17}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a7f71e65d31650e8993d29c8a4c77bd17}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!getObservedFramePosition@{getObservedFramePosition}}
+\index{getObservedFramePosition@{getObservedFramePosition}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getObservedFramePosition()}{getObservedFramePosition()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+get\+Observed\+Frame\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the frame position for the video observer.
+
+After you successfully register the video observer, the S\+DK triggers this callback each time it receives a video frame. You can determine which position to observe by setting the return value. The S\+DK provides 3 positions for observer. Each position corresponds to a callback function\+:
+
+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+S\+T\+\_\+\+C\+A\+P\+T\+U\+R\+E\+R(1 $<$$<$ 0)\+: The position after capturing the video data, which corresponds to the on\+Capture\+Video\+Frame callback. P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+R\+E\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R(1 $<$$<$ 1)\+: The position before receiving the remote video data, which corresponds to the on\+Render\+Video\+Frame callback. P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+R\+E\+\_\+\+E\+N\+C\+O\+D\+E\+R(1 $<$$<$ 2)\+: The position before encoding the video data, which corresponds to the on\+Pre\+Encode\+Video\+Frame callback.
+
+To observe multiple frame positions, use \textquotesingle{}$\vert$\textquotesingle{} (the OR operator). This callback observes P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+S\+T\+\_\+\+C\+A\+P\+T\+U\+R\+E\+R(1 $<$$<$ 0) and P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+R\+E\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R(1 $<$$<$ 1) by default. To conserve the system consumption, you can reduce the number of frame positions that you want to observe.
+
+\begin{DoxyReturn}{Returns}
+A bit mask that controls the frame position of the video observer\+: V\+I\+D\+E\+O\+\_\+\+O\+B\+S\+E\+R\+V\+E\+R\+\_\+\+P\+O\+S\+I\+T\+I\+ON. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a474ba4331a77ec324f07c4ebf4f41668}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a474ba4331a77ec324f07c4ebf4f41668}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!onRenderVideoFrame@{onRenderVideoFrame}}
+\index{onRenderVideoFrame@{onRenderVideoFrame}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onRenderVideoFrame()}{onRenderVideoFrame()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+on\+Render\+Video\+Frame (\begin{DoxyParamCaption}\item[{String}]{channel\+Id,  }\item[{int}]{uid,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}}}]{video\+Frame }\end{DoxyParamCaption})}
+
+Occurs each time the S\+DK receives a video frame sent by the remote user.
+
+After you successfully register the video frame observer, the S\+DK triggers this callback each time a video frame is received. In this callback, you can get the video data sent by the remote user. You can then post-\/process the data according to your scenarios.
+
+After post-\/processing, you can send the processed data back to the S\+DK by setting the {\ttfamily video\+Frame} parameter in this callback.
+
+\begin{DoxyNote}{Note}
+This callback does not support sending processed R\+G\+BA video data back to the S\+DK.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & Channel name. \\
+\hline
+{\em uid} & ID of the remote user who sends the current video frame. \\
+\hline
+{\em video\+Frame} & A pointer to the video frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Determines whether to ignore the current video frame if the post-\/processing fails\+:
+\begin{DoxyItemize}
+\item true\+: Do not ignore.
+\item false\+: Ignore, in which case this method does not send the current video frame to the S\+DK. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_af1fdfd8cac0cd23f7936779cf7549104}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_af1fdfd8cac0cd23f7936779cf7549104}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!PROCESS\_MODE\_READ\_ONLY@{PROCESS\_MODE\_READ\_ONLY}}
+\index{PROCESS\_MODE\_READ\_ONLY@{PROCESS\_MODE\_READ\_ONLY}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{PROCESS\_MODE\_READ\_ONLY}{PROCESS\_MODE\_READ\_ONLY}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+O\+N\+LY = 0}
+
+Observer works as a pure renderer and will not modify the original frame. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_ace94b692f7cffd39a8931a8c0a174976}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_ace94b692f7cffd39a8931a8c0a174976}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!PROCESS\_MODE\_READ\_WRITE@{PROCESS\_MODE\_READ\_WRITE}}
+\index{PROCESS\_MODE\_READ\_WRITE@{PROCESS\_MODE\_READ\_WRITE}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{PROCESS\_MODE\_READ\_WRITE}{PROCESS\_MODE\_READ\_WRITE}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+TE = 1}
+
+Observer works as a filter that will process the video frame and affect the following frame processing in S\+DK. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a05a4e325a7526333a1ff31336872558d}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a05a4e325a7526333a1ff31336872558d}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!POSITION\_POST\_CAPTURER@{POSITION\_POST\_CAPTURER}}
+\index{POSITION\_POST\_CAPTURER@{POSITION\_POST\_CAPTURER}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{POSITION\_POST\_CAPTURER}{POSITION\_POST\_CAPTURER}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+S\+T\+\_\+\+C\+A\+P\+T\+U\+R\+ER = 1}
+
+The position after capturing the video data, which corresponds to the on\+Capture\+Video\+Frame callback. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_abb3b92026361e39e094cfa8d92d9d741}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_abb3b92026361e39e094cfa8d92d9d741}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!POSITION\_PRE\_RENDERER@{POSITION\_PRE\_RENDERER}}
+\index{POSITION\_PRE\_RENDERER@{POSITION\_PRE\_RENDERER}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{POSITION\_PRE\_RENDERER}{POSITION\_PRE\_RENDERER}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+R\+E\+\_\+\+R\+E\+N\+D\+E\+R\+ER = 1 $<$$<$ 1}
+
+The position before receiving the remote video data, which corresponds to the on\+Render\+Video\+Frame callback. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_addc7f03c3354cbb434f13f06c7ff3777}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_addc7f03c3354cbb434f13f06c7ff3777}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!POSITION\_PRE\_ENCODER@{POSITION\_PRE\_ENCODER}}
+\index{POSITION\_PRE\_ENCODER@{POSITION\_PRE\_ENCODER}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{POSITION\_PRE\_ENCODER}{POSITION\_PRE\_ENCODER}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+R\+E\+\_\+\+E\+N\+C\+O\+D\+ER = 1 $<$$<$ 2}
+
+The position before encoding the video data, which corresponds to the on\+Pre\+Encode\+Video\+Frame callback. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a4297c1564a0e59ba64cbb3be5668ae9f}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a4297c1564a0e59ba64cbb3be5668ae9f}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!VIDEO\_PIXEL\_DEFAULT@{VIDEO\_PIXEL\_DEFAULT}}
+\index{VIDEO\_PIXEL\_DEFAULT@{VIDEO\_PIXEL\_DEFAULT}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{VIDEO\_PIXEL\_DEFAULT}{VIDEO\_PIXEL\_DEFAULT}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT = 0}
+
+0\+: Default format. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a1496f8865cb6e038526b73ee945e5a7d}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a1496f8865cb6e038526b73ee945e5a7d}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!VIDEO\_PIXEL\_I420@{VIDEO\_PIXEL\_I420}}
+\index{VIDEO\_PIXEL\_I420@{VIDEO\_PIXEL\_I420}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{VIDEO\_PIXEL\_I420}{VIDEO\_PIXEL\_I420}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+I420 = 1}
+
+1\+: I420. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a1a643ba72d4ca877d3037fd5c253848b}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a1a643ba72d4ca877d3037fd5c253848b}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!VIDEO\_PIXEL\_BGRA@{VIDEO\_PIXEL\_BGRA}}
+\index{VIDEO\_PIXEL\_BGRA@{VIDEO\_PIXEL\_BGRA}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{VIDEO\_PIXEL\_BGRA}{VIDEO\_PIXEL\_BGRA}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+B\+G\+RA = 2}
+
+2\+: B\+G\+RA. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_acc49f5257f09f5fe70eb8a1301ac4e1c}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_acc49f5257f09f5fe70eb8a1301ac4e1c}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!VIDEO\_PIXEL\_NV21@{VIDEO\_PIXEL\_NV21}}
+\index{VIDEO\_PIXEL\_NV21@{VIDEO\_PIXEL\_NV21}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{VIDEO\_PIXEL\_NV21}{VIDEO\_PIXEL\_NV21}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+N\+V21 = 3}
+
+3\+: N\+V21. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a4a2b5b5bc3d448b2aa4929895741f9ac}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a4a2b5b5bc3d448b2aa4929895741f9ac}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!VIDEO\_PIXEL\_RGBA@{VIDEO\_PIXEL\_RGBA}}
+\index{VIDEO\_PIXEL\_RGBA@{VIDEO\_PIXEL\_RGBA}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{VIDEO\_PIXEL\_RGBA}{VIDEO\_PIXEL\_RGBA}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+R\+G\+BA = 4}
+
+4\+: R\+G\+BA. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_adfa8784a7099839e8b7725c2a59f5119}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_adfa8784a7099839e8b7725c2a59f5119}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!VIDEO\_PIXEL\_NV12@{VIDEO\_PIXEL\_NV12}}
+\index{VIDEO\_PIXEL\_NV12@{VIDEO\_PIXEL\_NV12}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{VIDEO\_PIXEL\_NV12}{VIDEO\_PIXEL\_NV12}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+N\+V12 = 8}
+
+8\+: N\+V12. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a0e9239ed95fccb02418a9847aaf81484}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a0e9239ed95fccb02418a9847aaf81484}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!VIDEO\_TEXTURE\_2D@{VIDEO\_TEXTURE\_2D}}
+\index{VIDEO\_TEXTURE\_2D@{VIDEO\_TEXTURE\_2D}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{VIDEO\_TEXTURE\_2D}{VIDEO\_TEXTURE\_2D}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+V\+I\+D\+E\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2D = 10}
+
+10\+: G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2D \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a957aa1024d4fcff2569d78f04ed2292c}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a957aa1024d4fcff2569d78f04ed2292c}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!VIDEO\_TEXTURE\_OES@{VIDEO\_TEXTURE\_OES}}
+\index{VIDEO\_TEXTURE\_OES@{VIDEO\_TEXTURE\_OES}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{VIDEO\_TEXTURE\_OES}{VIDEO\_TEXTURE\_OES}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+V\+I\+D\+E\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+O\+ES = 11}
+
+11\+: G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+O\+ES \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a971a417ad8b65ed16bde2fce0bc38743}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_frame_observer_a971a417ad8b65ed16bde2fce0bc38743}} 
+\index{io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}!VIDEO\_PIXEL\_I422@{VIDEO\_PIXEL\_I422}}
+\index{VIDEO\_PIXEL\_I422@{VIDEO\_PIXEL\_I422}!io.agora.rtc2.video.IVideoFrameObserver@{io.agora.rtc2.video.IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{VIDEO\_PIXEL\_I422}{VIDEO\_PIXEL\_I422}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+video.\+I\+Video\+Frame\+Observer.\+V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+I422 = 16}
+
+16\+: I422. 

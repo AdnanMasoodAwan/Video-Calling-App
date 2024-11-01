@@ -1,0 +1,35 @@
+\hypertarget{classagora_1_1rtc_1_1_i_direct_cdn_streaming_event_handler}{}\doxysection{agora\+::rtc\+::I\+Direct\+Cdn\+Streaming\+Event\+Handler Class Reference}
+\label{classagora_1_1rtc_1_1_i_direct_cdn_streaming_event_handler}\index{agora::rtc::IDirectCdnStreamingEventHandler@{agora::rtc::IDirectCdnStreamingEventHandler}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_direct_cdn_streaming_event_handler_a9bf882aa0de4295e93d663017fdcc30a}{on\+Direct\+Cdn\+Streaming\+State\+Changed}} (D\+I\+R\+E\+C\+T\+\_\+\+C\+D\+N\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+T\+A\+TE state, D\+I\+R\+E\+C\+T\+\_\+\+C\+D\+N\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+R\+E\+A\+S\+ON reason, const char $\ast$message)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_direct_cdn_streaming_event_handler_a3bb16942afa82ef4337281a25d96417a}\label{classagora_1_1rtc_1_1_i_direct_cdn_streaming_event_handler_a3bb16942afa82ef4337281a25d96417a}} 
+virtual void {\bfseries on\+Direct\+Cdn\+Streaming\+Stats} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_stats}{Direct\+Cdn\+Streaming\+Stats}} \&stats)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The event handler for direct cdn streaming 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_direct_cdn_streaming_event_handler_a9bf882aa0de4295e93d663017fdcc30a}\label{classagora_1_1rtc_1_1_i_direct_cdn_streaming_event_handler_a9bf882aa0de4295e93d663017fdcc30a}} 
+\index{agora::rtc::IDirectCdnStreamingEventHandler@{agora::rtc::IDirectCdnStreamingEventHandler}!onDirectCdnStreamingStateChanged@{onDirectCdnStreamingStateChanged}}
+\index{onDirectCdnStreamingStateChanged@{onDirectCdnStreamingStateChanged}!agora::rtc::IDirectCdnStreamingEventHandler@{agora::rtc::IDirectCdnStreamingEventHandler}}
+\doxysubsubsection{\texorpdfstring{onDirectCdnStreamingStateChanged()}{onDirectCdnStreamingStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Direct\+Cdn\+Streaming\+Event\+Handler\+::on\+Direct\+Cdn\+Streaming\+State\+Changed (\begin{DoxyParamCaption}\item[{D\+I\+R\+E\+C\+T\+\_\+\+C\+D\+N\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{D\+I\+R\+E\+C\+T\+\_\+\+C\+D\+N\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+R\+E\+A\+S\+ON}]{reason,  }\item[{const char $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Event callback of direct cdn streaming 
+\begin{DoxyParams}{Parameters}
+{\em state} & Current status \\
+\hline
+{\em reason} & Reason Code \\
+\hline
+{\em message} & Message \\
+\hline
+\end{DoxyParams}

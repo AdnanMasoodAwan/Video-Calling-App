@@ -1,0 +1,81 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_filter_base}{}\doxysection{agora\+::rtc\+::I\+Audio\+Filter\+Base Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_filter_base}\index{agora::rtc::IAudioFilterBase@{agora::rtc::IAudioFilterBase}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Audio\+Filter\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classagora_1_1rtc_1_1_i_audio_filter_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_base_a669a920041dd38d7c2dbc47d9598e1ed}{adapt\+Audio\+Frame}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{media\+::base\+::\+Audio\+Pcm\+Frame}} \&in\+Audio\+Frame, \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{media\+::base\+::\+Audio\+Pcm\+Frame}} \&adapted\+Frame)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_base_a5956d605573e39b77bbf5a8417c1b0f5}{get\+Preferred\+Sample\+Rate}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_base_a94c24e65223ad1a8de2d0e8c0577273b}{get\+Preferred\+Channel\+Numbers}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_base}{I\+Audio\+Filter\+Base}}} class is the base class for audio filters. You can use this class to implement your own filter and add it to an audio track. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_base_a669a920041dd38d7c2dbc47d9598e1ed}\label{classagora_1_1rtc_1_1_i_audio_filter_base_a669a920041dd38d7c2dbc47d9598e1ed}} 
+\index{agora::rtc::IAudioFilterBase@{agora::rtc::IAudioFilterBase}!adaptAudioFrame@{adaptAudioFrame}}
+\index{adaptAudioFrame@{adaptAudioFrame}!agora::rtc::IAudioFilterBase@{agora::rtc::IAudioFilterBase}}
+\doxysubsubsection{\texorpdfstring{adaptAudioFrame()}{adaptAudioFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Audio\+Filter\+Base\+::adapt\+Audio\+Frame (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{media\+::base\+::\+Audio\+Pcm\+Frame}} \&}]{in\+Audio\+Frame,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{media\+::base\+::\+Audio\+Pcm\+Frame}} \&}]{adapted\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adapts the audio frame. 
+\begin{DoxyParams}{Parameters}
+{\em in\+Audio\+Frame} & The reference to the audio frame that you want to adapt. \\
+\hline
+{\em adapted\+Frame} & The reference to the adapted audio frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. For example, the I\+Audiofilter object drops the audio frame. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_base_a5956d605573e39b77bbf5a8417c1b0f5}\label{classagora_1_1rtc_1_1_i_audio_filter_base_a5956d605573e39b77bbf5a8417c1b0f5}} 
+\index{agora::rtc::IAudioFilterBase@{agora::rtc::IAudioFilterBase}!getPreferredSampleRate@{getPreferredSampleRate}}
+\index{getPreferredSampleRate@{getPreferredSampleRate}!agora::rtc::IAudioFilterBase@{agora::rtc::IAudioFilterBase}}
+\doxysubsubsection{\texorpdfstring{getPreferredSampleRate()}{getPreferredSampleRate()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Filter\+Base\+::get\+Preferred\+Sample\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get the sample rate supported by the audio filter, the framework will resample the audio data and then pass it to the audio filter. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Audio data will not be resampled.
+\item $>$ 0\+: Audio data will be resampled to this sample rate. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_a1973b8fe4744f05f192a90c55f3773e4}{agora\+::rtc\+::\+I\+Audio\+Filter}}.
+
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_base_a94c24e65223ad1a8de2d0e8c0577273b}\label{classagora_1_1rtc_1_1_i_audio_filter_base_a94c24e65223ad1a8de2d0e8c0577273b}} 
+\index{agora::rtc::IAudioFilterBase@{agora::rtc::IAudioFilterBase}!getPreferredChannelNumbers@{getPreferredChannelNumbers}}
+\index{getPreferredChannelNumbers@{getPreferredChannelNumbers}!agora::rtc::IAudioFilterBase@{agora::rtc::IAudioFilterBase}}
+\doxysubsubsection{\texorpdfstring{getPreferredChannelNumbers()}{getPreferredChannelNumbers()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Filter\+Base\+::get\+Preferred\+Channel\+Numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get the channel number supported by the audio filter, the framework will resample the audio data and then pass it to the audio filter. If the user does not overwrite, resampling will not be done by default. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Audio data will not be resampled.
+\item $>$ 0\+: Audio data will be resampled to this sample rate. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_a340f9ee3b2bc655afbe9aac286b646e2}{agora\+::rtc\+::\+I\+Audio\+Filter}}.
+

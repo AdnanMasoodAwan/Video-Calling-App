@@ -1,0 +1,201 @@
+\hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager}{}\doxysection{io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager Interface Reference}
+\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager}\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a97bc0b38b189e4e9fb6e3926b3b039a1}{remove\+All\+Caches}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a525593b18311e04e2b8520f5403b5d59}{remove\+Old\+Cache}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a122155ac37d8912fa8f96926f2808189}{remove\+Cache\+By\+Uri}} (String uri)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a9ad82ea01e916a8e9a7b1195f43585f3}{set\+Cache\+Dir}} (String path)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_adc9637cd85285dcc6c4cbfcde8d64db6}{set\+Max\+Cache\+File\+Count}} (int count)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_ae0e09e72be9c7773dd35deb852c6cbb9}{set\+Max\+Cache\+File\+Size}} (long cache\+Size)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_ac532eaf4dbe0e5699ab26fd771cc22bc}{enable\+Auto\+Remove\+Cache}} (boolean enable)
+\item 
+String \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_ab13ced9d92d7b5716828495da2179401}{get\+Cache\+Dir}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_afd0f9434e2012180058ba4f87207a239}{get\+Max\+Cache\+File\+Count}} ()
+\item 
+long \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a87d31b8f369a482cffe425d457702ee1}{get\+Max\+Cache\+File\+Size}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a451e42202def7cb341ea16a8e2cb087f}{get\+Cache\+File\+Count}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a97bc0b38b189e4e9fb6e3926b3b039a1}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a97bc0b38b189e4e9fb6e3926b3b039a1}} 
+\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}!removeAllCaches@{removeAllCaches}}
+\index{removeAllCaches@{removeAllCaches}!io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsubsection{\texorpdfstring{removeAllCaches()}{removeAllCaches()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager.\+remove\+All\+Caches (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Remove all media resource cache files. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a525593b18311e04e2b8520f5403b5d59}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a525593b18311e04e2b8520f5403b5d59}} 
+\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}!removeOldCache@{removeOldCache}}
+\index{removeOldCache@{removeOldCache}!io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsubsection{\texorpdfstring{removeOldCache()}{removeOldCache()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager.\+remove\+Old\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Remove the latest media resource cache file. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a122155ac37d8912fa8f96926f2808189}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a122155ac37d8912fa8f96926f2808189}} 
+\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}!removeCacheByUri@{removeCacheByUri}}
+\index{removeCacheByUri@{removeCacheByUri}!io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsubsection{\texorpdfstring{removeCacheByUri()}{removeCacheByUri()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager.\+remove\+Cache\+By\+Uri (\begin{DoxyParamCaption}\item[{String}]{uri }\end{DoxyParamCaption})}
+
+Remove the cache file by uri, setting by Media\+Source. 
+\begin{DoxyParams}{Parameters}
+{\em uri} & U\+R\+I，identify the uniqueness of the property, Set from {\ttfamily Meida\+Source} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a9ad82ea01e916a8e9a7b1195f43585f3}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a9ad82ea01e916a8e9a7b1195f43585f3}} 
+\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}!setCacheDir@{setCacheDir}}
+\index{setCacheDir@{setCacheDir}!io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsubsection{\texorpdfstring{setCacheDir()}{setCacheDir()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager.\+set\+Cache\+Dir (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})}
+
+Set cache file path that files will be saved to. 
+\begin{DoxyParams}{Parameters}
+{\em path} & file path. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_adc9637cd85285dcc6c4cbfcde8d64db6}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_adc9637cd85285dcc6c4cbfcde8d64db6}} 
+\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}!setMaxCacheFileCount@{setMaxCacheFileCount}}
+\index{setMaxCacheFileCount@{setMaxCacheFileCount}!io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsubsection{\texorpdfstring{setMaxCacheFileCount()}{setMaxCacheFileCount()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager.\+set\+Max\+Cache\+File\+Count (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+Set the maximum number of cached files. 
+\begin{DoxyParams}{Parameters}
+{\em count} & maximum number of cached files. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_ae0e09e72be9c7773dd35deb852c6cbb9}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_ae0e09e72be9c7773dd35deb852c6cbb9}} 
+\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}!setMaxCacheFileSize@{setMaxCacheFileSize}}
+\index{setMaxCacheFileSize@{setMaxCacheFileSize}!io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsubsection{\texorpdfstring{setMaxCacheFileSize()}{setMaxCacheFileSize()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager.\+set\+Max\+Cache\+File\+Size (\begin{DoxyParamCaption}\item[{long}]{cache\+Size }\end{DoxyParamCaption})}
+
+Set the total size of the largest cache file. 
+\begin{DoxyParams}{Parameters}
+{\em cache\+Size} & total size of the largest cache file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_ac532eaf4dbe0e5699ab26fd771cc22bc}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_ac532eaf4dbe0e5699ab26fd771cc22bc}} 
+\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}!enableAutoRemoveCache@{enableAutoRemoveCache}}
+\index{enableAutoRemoveCache@{enableAutoRemoveCache}!io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsubsection{\texorpdfstring{enableAutoRemoveCache()}{enableAutoRemoveCache()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager.\+enable\+Auto\+Remove\+Cache (\begin{DoxyParamCaption}\item[{boolean}]{enable }\end{DoxyParamCaption})}
+
+Set whether the player will clean up the cache in the order of resource usage. 
+\begin{DoxyParams}{Parameters}
+{\em enable} & enable the player to automatically clear the cache. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_ab13ced9d92d7b5716828495da2179401}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_ab13ced9d92d7b5716828495da2179401}} 
+\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}!getCacheDir@{getCacheDir}}
+\index{getCacheDir@{getCacheDir}!io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsubsection{\texorpdfstring{getCacheDir()}{getCacheDir()}}
+{\footnotesize\ttfamily String io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager.\+get\+Cache\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the cache directory. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item not null\+: Success.
+\item null\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_afd0f9434e2012180058ba4f87207a239}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_afd0f9434e2012180058ba4f87207a239}} 
+\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}!getMaxCacheFileCount@{getMaxCacheFileCount}}
+\index{getMaxCacheFileCount@{getMaxCacheFileCount}!io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsubsection{\texorpdfstring{getMaxCacheFileCount()}{getMaxCacheFileCount()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager.\+get\+Max\+Cache\+File\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the maximum number of cached files. \begin{DoxyReturn}{Returns}
+\begin{quote}
+0\+: file count. \end{quote}
+
+\begin{DoxyItemize}
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a87d31b8f369a482cffe425d457702ee1}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a87d31b8f369a482cffe425d457702ee1}} 
+\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}!getMaxCacheFileSize@{getMaxCacheFileSize}}
+\index{getMaxCacheFileSize@{getMaxCacheFileSize}!io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsubsection{\texorpdfstring{getMaxCacheFileSize()}{getMaxCacheFileSize()}}
+{\footnotesize\ttfamily long io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager.\+get\+Max\+Cache\+File\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the total size of the largest cache file \begin{DoxyReturn}{Returns}
+\begin{quote}
+0\+: file size. \end{quote}
+
+\begin{DoxyItemize}
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a451e42202def7cb341ea16a8e2cb087f}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_cache_manager_a451e42202def7cb341ea16a8e2cb087f}} 
+\index{io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}!getCacheFileCount@{getCacheFileCount}}
+\index{getCacheFileCount@{getCacheFileCount}!io.agora.mediaplayer.IMediaPlayerCacheManager@{io.agora.mediaplayer.IMediaPlayerCacheManager}}
+\doxysubsubsection{\texorpdfstring{getCacheFileCount()}{getCacheFileCount()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Cache\+Manager.\+get\+Cache\+File\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the number of all cache files. \begin{DoxyReturn}{Returns}
+\begin{quote}
+0\+: file count. \end{quote}
+
+\begin{DoxyItemize}
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

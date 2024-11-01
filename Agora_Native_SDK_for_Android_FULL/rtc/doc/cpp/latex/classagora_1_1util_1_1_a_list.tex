@@ -1,0 +1,50 @@
+\hypertarget{classagora_1_1util_1_1_a_list}{}\doxysection{agora\+::util\+::A\+List$<$ T $>$ Class Template Reference}
+\label{classagora_1_1util_1_1_a_list}\index{agora::util::AList$<$ T $>$@{agora::util::AList$<$ T $>$}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_ab3687fb54a4f875afb5d396a87b1c35a}\label{classagora_1_1util_1_1_a_list_ab3687fb54a4f875afb5d396a87b1c35a}} 
+typedef T {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_a79d2bffadae572eb396ebf31e0ebd75c}\label{classagora_1_1util_1_1_a_list_a79d2bffadae572eb396ebf31e0ebd75c}} 
+typedef value\+\_\+type \& {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_afb0958f5ec77f7433cc23bc16ed597e4}\label{classagora_1_1util_1_1_a_list_afb0958f5ec77f7433cc23bc16ed597e4}} 
+typedef const value\+\_\+type \& {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_a29dad44bdadfa61b0aaab63b1769cf36}\label{classagora_1_1util_1_1_a_list_a29dad44bdadfa61b0aaab63b1769cf36}} 
+typedef value\+\_\+type $\ast$ {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_acbb058cb0e58274da38969184e1a4e29}\label{classagora_1_1util_1_1_a_list_acbb058cb0e58274da38969184e1a4e29}} 
+typedef const value\+\_\+type $\ast$ {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_ae259777c7a30c4e69132e873b90ecf13}\label{classagora_1_1util_1_1_a_list_ae259777c7a30c4e69132e873b90ecf13}} 
+typedef size\+\_\+t {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_a30874c7224774687cb6d64522334f4d3}\label{classagora_1_1util_1_1_a_list_a30874c7224774687cb6d64522334f4d3}} 
+typedef \mbox{\hyperlink{classagora_1_1util_1_1_a_output_iterator}{A\+Output\+Iterator}}$<$ value\+\_\+type $>$ {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_a27f1068ad14661cc13437abef7865de1}\label{classagora_1_1util_1_1_a_list_a27f1068ad14661cc13437abef7865de1}} 
+typedef const \mbox{\hyperlink{classagora_1_1util_1_1_a_output_iterator}{A\+Output\+Iterator}}$<$ value\+\_\+type $>$ {\bfseries const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_a111e3f898626d0608d1e9f2b32fe88e7}\label{classagora_1_1util_1_1_a_list_a111e3f898626d0608d1e9f2b32fe88e7}} 
+{\bfseries A\+List} (\mbox{\hyperlink{classagora_1_1util_1_1_i_container}{I\+Container}} $\ast$c, bool take\+\_\+ownership)
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_ae9fb4bdd849a9193be07caf52c3846bb}\label{classagora_1_1util_1_1_a_list_ae9fb4bdd849a9193be07caf52c3846bb}} 
+void {\bfseries reset} (\mbox{\hyperlink{classagora_1_1util_1_1_i_container}{I\+Container}} $\ast$c=O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR, bool take\+\_\+ownership=false)
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_a0b328999f15a515e8e693d06c3c6a2ba}\label{classagora_1_1util_1_1_a_list_a0b328999f15a515e8e693d06c3c6a2ba}} 
+\mbox{\hyperlink{classagora_1_1util_1_1_a_output_iterator}{iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_a5544da98e6e333f111b85c0c97da976d}\label{classagora_1_1util_1_1_a_list_a5544da98e6e333f111b85c0c97da976d}} 
+\mbox{\hyperlink{classagora_1_1util_1_1_a_output_iterator}{iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_aedb0be5a53d34449cdb9c7f20f9237fd}\label{classagora_1_1util_1_1_a_list_aedb0be5a53d34449cdb9c7f20f9237fd}} 
+size\+\_\+type {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classagora_1_1util_1_1_a_list_ac8121e3cbeee02e7612889b2df4aa5b2}\label{classagora_1_1util_1_1_a_list_ac8121e3cbeee02e7612889b2df4aa5b2}} 
+bool {\bfseries empty} () const
+\end{DoxyCompactItemize}

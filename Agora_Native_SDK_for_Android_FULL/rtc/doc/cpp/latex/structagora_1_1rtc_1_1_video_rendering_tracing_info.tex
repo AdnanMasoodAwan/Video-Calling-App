@@ -1,0 +1,82 @@
+\hypertarget{structagora_1_1rtc_1_1_video_rendering_tracing_info}{}\doxysection{agora\+::rtc\+::Video\+Rendering\+Tracing\+Info Struct Reference}
+\label{structagora_1_1rtc_1_1_video_rendering_tracing_info}\index{agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_video_rendering_tracing_info_af5923ce0f2df0ebd78c8b5883edea1d6}{elapsed\+Time}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_video_rendering_tracing_info_adef97e2b71d144414b851320b31fb56b}{start2\+Join\+Channel}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_video_rendering_tracing_info_af9b1ec63c981af7111c98b45563ab058}{join2\+Join\+Success}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_video_rendering_tracing_info_a20d6e6907890b9241d2ef8a797094c4e}{join\+Success2\+Remote\+Joined}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_video_rendering_tracing_info_af56155b67228bdc1cb2ffa9193154dcc}{remote\+Joined2\+Set\+View}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_video_rendering_tracing_info_a688192e95fc6906b4b1efb9efa146d61}{remote\+Joined2\+Unmute\+Video}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_video_rendering_tracing_info_a1e76db654d0ea4b1128ff9692fa18f13}{remote\+Joined2\+Packet\+Received}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The video rendering tracing result 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_rendering_tracing_info_af5923ce0f2df0ebd78c8b5883edea1d6}\label{structagora_1_1rtc_1_1_video_rendering_tracing_info_af5923ce0f2df0ebd78c8b5883edea1d6}} 
+\index{agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}!elapsedTime@{elapsedTime}}
+\index{elapsedTime@{elapsedTime}!agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}}
+\doxysubsubsection{\texorpdfstring{elapsedTime}{elapsedTime}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Video\+Rendering\+Tracing\+Info\+::elapsed\+Time}
+
+Elapsed time from the start tracing time to the time when the tracing event occurred. \mbox{\Hypertarget{structagora_1_1rtc_1_1_video_rendering_tracing_info_adef97e2b71d144414b851320b31fb56b}\label{structagora_1_1rtc_1_1_video_rendering_tracing_info_adef97e2b71d144414b851320b31fb56b}} 
+\index{agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}!start2JoinChannel@{start2JoinChannel}}
+\index{start2JoinChannel@{start2JoinChannel}!agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}}
+\doxysubsubsection{\texorpdfstring{start2JoinChannel}{start2JoinChannel}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Video\+Rendering\+Tracing\+Info\+::start2\+Join\+Channel}
+
+Elapsed time from the start tracing time to the time when join channel.
+
+{\bfseries{Note}} If the start tracing time is behind the time when join channel, this value will be negative. \mbox{\Hypertarget{structagora_1_1rtc_1_1_video_rendering_tracing_info_af9b1ec63c981af7111c98b45563ab058}\label{structagora_1_1rtc_1_1_video_rendering_tracing_info_af9b1ec63c981af7111c98b45563ab058}} 
+\index{agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}!join2JoinSuccess@{join2JoinSuccess}}
+\index{join2JoinSuccess@{join2JoinSuccess}!agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}}
+\doxysubsubsection{\texorpdfstring{join2JoinSuccess}{join2JoinSuccess}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Video\+Rendering\+Tracing\+Info\+::join2\+Join\+Success}
+
+Elapsed time from joining channel to finishing joining channel. \mbox{\Hypertarget{structagora_1_1rtc_1_1_video_rendering_tracing_info_a20d6e6907890b9241d2ef8a797094c4e}\label{structagora_1_1rtc_1_1_video_rendering_tracing_info_a20d6e6907890b9241d2ef8a797094c4e}} 
+\index{agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}!joinSuccess2RemoteJoined@{joinSuccess2RemoteJoined}}
+\index{joinSuccess2RemoteJoined@{joinSuccess2RemoteJoined}!agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}}
+\doxysubsubsection{\texorpdfstring{joinSuccess2RemoteJoined}{joinSuccess2RemoteJoined}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Video\+Rendering\+Tracing\+Info\+::join\+Success2\+Remote\+Joined}
+
+Elapsed time from finishing joining channel to remote user joined.
+
+{\bfseries{Note}} If the start tracing time is after the time finishing join channel, this value will be the elapsed time from the start tracing time to remote user joined. The minimum value is 0. \mbox{\Hypertarget{structagora_1_1rtc_1_1_video_rendering_tracing_info_af56155b67228bdc1cb2ffa9193154dcc}\label{structagora_1_1rtc_1_1_video_rendering_tracing_info_af56155b67228bdc1cb2ffa9193154dcc}} 
+\index{agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}!remoteJoined2SetView@{remoteJoined2SetView}}
+\index{remoteJoined2SetView@{remoteJoined2SetView}!agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}}
+\doxysubsubsection{\texorpdfstring{remoteJoined2SetView}{remoteJoined2SetView}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Video\+Rendering\+Tracing\+Info\+::remote\+Joined2\+Set\+View}
+
+Elapsed time from remote user joined to set the view.
+
+{\bfseries{Note}} If the start tracing time is after the time when remote user joined, this value will be the elapsed time from the start tracing time to set the view. The minimum value is 0. \mbox{\Hypertarget{structagora_1_1rtc_1_1_video_rendering_tracing_info_a688192e95fc6906b4b1efb9efa146d61}\label{structagora_1_1rtc_1_1_video_rendering_tracing_info_a688192e95fc6906b4b1efb9efa146d61}} 
+\index{agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}!remoteJoined2UnmuteVideo@{remoteJoined2UnmuteVideo}}
+\index{remoteJoined2UnmuteVideo@{remoteJoined2UnmuteVideo}!agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}}
+\doxysubsubsection{\texorpdfstring{remoteJoined2UnmuteVideo}{remoteJoined2UnmuteVideo}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Video\+Rendering\+Tracing\+Info\+::remote\+Joined2\+Unmute\+Video}
+
+Elapsed time from remote user joined to the time subscribing remote video stream.
+
+{\bfseries{Note}} If the start tracing time is after the time when remote user joined, this value will be the elapsed time from the start tracing time to the time subscribing remote video stream. The minimum value is 0. \mbox{\Hypertarget{structagora_1_1rtc_1_1_video_rendering_tracing_info_a1e76db654d0ea4b1128ff9692fa18f13}\label{structagora_1_1rtc_1_1_video_rendering_tracing_info_a1e76db654d0ea4b1128ff9692fa18f13}} 
+\index{agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}!remoteJoined2PacketReceived@{remoteJoined2PacketReceived}}
+\index{remoteJoined2PacketReceived@{remoteJoined2PacketReceived}!agora::rtc::VideoRenderingTracingInfo@{agora::rtc::VideoRenderingTracingInfo}}
+\doxysubsubsection{\texorpdfstring{remoteJoined2PacketReceived}{remoteJoined2PacketReceived}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Video\+Rendering\+Tracing\+Info\+::remote\+Joined2\+Packet\+Received}
+
+Elapsed time from remote user joined to the remote video packet received.
+
+{\bfseries{Note}} If the start tracing time is after the time when remote user joined, this value will be the elapsed time from the start tracing time to the time subscribing remote video stream. The minimum value is 0. 

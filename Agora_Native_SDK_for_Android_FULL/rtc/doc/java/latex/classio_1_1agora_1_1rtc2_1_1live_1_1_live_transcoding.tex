@@ -1,0 +1,537 @@
+\hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding}{}\doxysection{io.\+agora.\+rtc2.\+live.\+Live\+Transcoding Class Reference}
+\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding}\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_audio_codec_profile_type}{Audio\+Codec\+Profile\+Type}}
+\item 
+enum \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_audio_sample_rate_type}{Audio\+Sample\+Rate\+Type}}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_transcoding_user}{Transcoding\+User}}
+\item 
+enum \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_video_codec_profile_type}{Video\+Codec\+Profile\+Type}}
+\item 
+enum \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_video_codec_type}{Video\+Codec\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a8b934a9299cd5f6afffe15bb215f08f3}{add\+Watermark}} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}} watermark)
+\item 
+boolean \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af011449e5bf63fa1a1ad47ae17aa7b22}{remove\+Watermark}} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}} watermark)
+\item 
+Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}} $>$ \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af09f7681c5d354f17e48ce759c735024}{get\+Watermark\+List}} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a90d871df9d9cdf70c95859d0c6759a67}{add\+Background\+Image}} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}} background\+Image)
+\item 
+boolean \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af8b8c41eb11294cdd863d4f412d863b3}{remove\+Background\+Image}} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}} background\+Image)
+\item 
+Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}} $>$ \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ab069c6f0e809580b9469245b9928eeee}{get\+Background\+Image\+List}} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a4805c3958238751b8de2e034a5f53664}{set\+Advanced\+Features}} (String feature\+Name, Boolean opened)
+\item 
+Map$<$ String, Boolean $>$ \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ac70ef37a10e3c0f92d468197129002e6}{get\+Advanced\+Features}} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_adbf5cf514bc4115eb3b049e327db9855}{add\+User}} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_transcoding_user}{Transcoding\+User}} user)
+\item 
+final Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_transcoding_user}{Transcoding\+User}} $>$ \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_aac38453a5eaab55a4d265cfc82aa4c52}{get\+Users}} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a1ccf302f7e83c5ef0f16ad295a96111d}{set\+Users}} (Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_transcoding_user}{Transcoding\+User}} $>$ users)
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a07b05810ac90d245a90537fcece1aaf1}{set\+Users}} (Map$<$ Integer, \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_transcoding_user}{Transcoding\+User}} $>$ users)
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a7503eec5547579629bff5d020adf8ec3}{remove\+User}} (int uid)
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ab94d9541f1d6d5e563960d4d879b822a}{get\+User\+Count}} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a81954a0caddceaefc3a66f567732b3bd}{get\+Background\+Color}} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a57390ba1060f75e64d3ca31504fbcad6}{set\+Background\+Color}} (int color)
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ac89cdaf38f502d53be73a5e3239d5e5d}{set\+Background\+Color}} (int red, int green, int blue)
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a3f92b1f1b6007105fab74e063c55e683}{get\+Red}} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_aa11f0cdf16601b1428f668da64a66829}{get\+Green}} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a282a5dddec2c647f434750369115865c}{get\+Blue}} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a3e5fc6c2235720028d1b15ee58bfa11a}{set\+Red}} (int red)
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a175bbe665a0d50ac192e615512b126db}{set\+Green}} (int green)
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_aa92c543675d78a2aea35d91a2022ce2d}{set\+Blue}} (int blue)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a661f501ceb72ac229867acdd3cbda8b0}{width}}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a6516550d8923da8e75bf34721d34e7fb}{height}}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a751e211c56f5a7b25578b6846f083bb6}{video\+Bitrate}}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a05eef3bf3171b3b52442f71d79093946}{video\+Framerate}}
+\item 
+boolean \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a20aec79d70091c9d487d4c21988e59c6}{low\+Latency}}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a7e379875dfe4394802c242bfacce1b2a}{video\+Gop}}
+\item 
+\mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_audio_sample_rate_type}{Audio\+Sample\+Rate\+Type}} \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a3176fa9392a370f53dce4a1678dcae6a}{audio\+Sample\+Rate}}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a5de13c9aa27bf2f5fef8c195c609630f}{audio\+Bitrate}}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a1018cc4035c99d80b4e73caa356f59d3}{audio\+Channels}}
+\item 
+\mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_audio_codec_profile_type}{Audio\+Codec\+Profile\+Type}} \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ab38a479a8f291fc77ddf5bcd8608e1e5}{audio\+Codec\+Profile}}
+\item 
+\mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_video_codec_profile_type}{Video\+Codec\+Profile\+Type}} \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af39bce623d935837fefdf5d974ef71fa}{video\+Codec\+Profile}}
+\item 
+\mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_video_codec_type}{Video\+Codec\+Type}} \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af1b6bdefbc9faefaf1b32fde0f8071df}{video\+Codec\+Type}}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a602fd601a752e54b776c6743b28a1614}{user\+Count}}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a51735c6155b2f1fc4ce66f7af52236b7}{background\+Color}}
+\item 
+String \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a77a72365db7a0e37ae9eabb67321f4e5}{user\+Config\+Extra\+Info}}
+\item 
+String \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ad367607cff8d247128f0e561ff231344}{metadata}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for managing user-\/specific C\+DN live audio/video transcoding settings. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a8b934a9299cd5f6afffe15bb215f08f3}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a8b934a9299cd5f6afffe15bb215f08f3}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!addWatermark@{addWatermark}}
+\index{addWatermark@{addWatermark}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{addWatermark()}{addWatermark()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+add\+Watermark (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}}}]{watermark }\end{DoxyParamCaption})}
+
+add watermark to list
+
+
+\begin{DoxyParams}{Parameters}
+{\em watermark} & you want to add watermark. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af011449e5bf63fa1a1ad47ae17aa7b22}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af011449e5bf63fa1a1ad47ae17aa7b22}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!removeWatermark@{removeWatermark}}
+\index{removeWatermark@{removeWatermark}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{removeWatermark()}{removeWatermark()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+remove\+Watermark (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}}}]{watermark }\end{DoxyParamCaption})}
+
+remove watermark from list
+
+
+\begin{DoxyParams}{Parameters}
+{\em watermark} & you want to remove object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if success, will return true. Otherwise, will return false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af09f7681c5d354f17e48ce759c735024}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af09f7681c5d354f17e48ce759c735024}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!getWatermarkList@{getWatermarkList}}
+\index{getWatermarkList@{getWatermarkList}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{getWatermarkList()}{getWatermarkList()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}}$>$ io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+get\+Watermark\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get object attribute of watermark\+List
+
+\begin{DoxyReturn}{Returns}
+watermark list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a90d871df9d9cdf70c95859d0c6759a67}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a90d871df9d9cdf70c95859d0c6759a67}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!addBackgroundImage@{addBackgroundImage}}
+\index{addBackgroundImage@{addBackgroundImage}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{addBackgroundImage()}{addBackgroundImage()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+add\+Background\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}}}]{background\+Image }\end{DoxyParamCaption})}
+
+add background image to background\+Image\+List
+
+
+\begin{DoxyParams}{Parameters}
+{\em background\+Image} & you want to add background to list. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af8b8c41eb11294cdd863d4f412d863b3}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af8b8c41eb11294cdd863d4f412d863b3}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!removeBackgroundImage@{removeBackgroundImage}}
+\index{removeBackgroundImage@{removeBackgroundImage}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{removeBackgroundImage()}{removeBackgroundImage()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+remove\+Background\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}}}]{background\+Image }\end{DoxyParamCaption})}
+
+remove background from background image list
+
+
+\begin{DoxyParams}{Parameters}
+{\em background\+Image} & you want to remove background image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if success to remove, will return true. Otherwise, will return false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ab069c6f0e809580b9469245b9928eeee}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ab069c6f0e809580b9469245b9928eeee}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!getBackgroundImageList@{getBackgroundImageList}}
+\index{getBackgroundImageList@{getBackgroundImageList}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{getBackgroundImageList()}{getBackgroundImageList()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_image}{Agora\+Image}}$>$ io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+get\+Background\+Image\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get object attribute of background\+Image\+List
+
+\begin{DoxyReturn}{Returns}
+background\+Image list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a4805c3958238751b8de2e034a5f53664}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a4805c3958238751b8de2e034a5f53664}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!setAdvancedFeatures@{setAdvancedFeatures}}
+\index{setAdvancedFeatures@{setAdvancedFeatures}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{setAdvancedFeatures()}{setAdvancedFeatures()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+set\+Advanced\+Features (\begin{DoxyParamCaption}\item[{String}]{feature\+Name,  }\item[{Boolean}]{opened }\end{DoxyParamCaption})}
+
+Enables/\+Disables advanced features of the R\+T\+MP or R\+T\+M\+PS streaming with transcoding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em feature\+Name} & The name of the advanced feature. It contains L\+B\+HQ and V\+EO. \\
+\hline
+{\em opened} & Whether to enable the advanced feature\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Enable the advanced feature.
+\item {\ttfamily false}\+: (Default) Disable the advanced feature. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ac70ef37a10e3c0f92d468197129002e6}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ac70ef37a10e3c0f92d468197129002e6}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!getAdvancedFeatures@{getAdvancedFeatures}}
+\index{getAdvancedFeatures@{getAdvancedFeatures}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{getAdvancedFeatures()}{getAdvancedFeatures()}}
+{\footnotesize\ttfamily Map$<$String, Boolean$>$ io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+get\+Advanced\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks whether advanced features of the R\+T\+MP or R\+T\+M\+PS streaming with transcoding are enabled.
+
+\begin{DoxyReturn}{Returns}
+The name of each advanced feature and whether the advanced feature is enabled. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_adbf5cf514bc4115eb3b049e327db9855}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_adbf5cf514bc4115eb3b049e327db9855}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!addUser@{addUser}}
+\index{addUser@{addUser}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+add\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_transcoding_user}{Transcoding\+User}}}]{user }\end{DoxyParamCaption})}
+
+Adds a user displaying the video in C\+DN live.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_transcoding_user}{transcoding\+User}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success. 
+\item $<$0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_aac38453a5eaab55a4d265cfc82aa4c52}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_aac38453a5eaab55a4d265cfc82aa4c52}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!getUsers@{getUsers}}
+\index{getUsers@{getUsers}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{getUsers()}{getUsers()}}
+{\footnotesize\ttfamily final Array\+List$<$\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_transcoding_user}{Transcoding\+User}}$>$ io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+get\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the user list in C\+DN live.
+
+This method retrieves all users in C\+DN live. The user list returned by this method is read-\/only and should not be modified.
+
+\begin{DoxyReturn}{Returns}
+User list in a array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a1ccf302f7e83c5ef0f16ad295a96111d}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a1ccf302f7e83c5ef0f16ad295a96111d}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!setUsers@{setUsers}}
+\index{setUsers@{setUsers}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{setUsers()}{setUsers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+set\+Users (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_transcoding_user}{Transcoding\+User}} $>$}]{users }\end{DoxyParamCaption})}
+
+Sets the users in batches in C\+DN live.
+
+This method sets all users involved in the C\+DN live stream. This method replaces the old user data with the new user data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em users} & All users involved in C\+DN live. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a07b05810ac90d245a90537fcece1aaf1}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a07b05810ac90d245a90537fcece1aaf1}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!setUsers@{setUsers}}
+\index{setUsers@{setUsers}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{setUsers()}{setUsers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+set\+Users (\begin{DoxyParamCaption}\item[{Map$<$ Integer, \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_transcoding_user}{Transcoding\+User}} $>$}]{users }\end{DoxyParamCaption})}
+
+Sets the users in batches in C\+DN live. This method sets all users involved in C\+DN live. This method replaces the old user data with the the new user data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em users} & All users involved in C\+DN live. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a7503eec5547579629bff5d020adf8ec3}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a7503eec5547579629bff5d020adf8ec3}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!removeUser@{removeUser}}
+\index{removeUser@{removeUser}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{removeUser()}{removeUser()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+remove\+User (\begin{DoxyParamCaption}\item[{int}]{uid }\end{DoxyParamCaption})}
+
+Removes a user from C\+DN live.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & User ID of the user to remove from C\+DN live. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success. 
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ab94d9541f1d6d5e563960d4d879b822a}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ab94d9541f1d6d5e563960d4d879b822a}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!getUserCount@{getUserCount}}
+\index{getUserCount@{getUserCount}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{getUserCount()}{getUserCount()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+get\+User\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the number of users transcoded in C\+DN live.
+
+\begin{DoxyReturn}{Returns}
+Number of users transcoded in C\+DN live. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a81954a0caddceaefc3a66f567732b3bd}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a81954a0caddceaefc3a66f567732b3bd}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!getBackgroundColor@{getBackgroundColor}}
+\index{getBackgroundColor@{getBackgroundColor}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{getBackgroundColor()}{getBackgroundColor()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+get\+Background\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the background color in hex.
+
+\begin{DoxyReturn}{Returns}
+Background color to set in R\+GB hex value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a57390ba1060f75e64d3ca31504fbcad6}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a57390ba1060f75e64d3ca31504fbcad6}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!setBackgroundColor@{setBackgroundColor}}
+\index{setBackgroundColor@{setBackgroundColor}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{setBackgroundColor()}{setBackgroundColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+set\+Background\+Color (\begin{DoxyParamCaption}\item[{int}]{color }\end{DoxyParamCaption})}
+
+Sets the background color of the C\+DN live stream in the format of R\+GB hex.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Background color to set in R\+GB hex value. Value only, do not include a \#. For example, 0x\+F\+F\+B6\+C1 (light pink). The default value is 0x000000 (black). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ac89cdaf38f502d53be73a5e3239d5e5d}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ac89cdaf38f502d53be73a5e3239d5e5d}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!setBackgroundColor@{setBackgroundColor}}
+\index{setBackgroundColor@{setBackgroundColor}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{setBackgroundColor()}{setBackgroundColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+set\+Background\+Color (\begin{DoxyParamCaption}\item[{int}]{red,  }\item[{int}]{green,  }\item[{int}]{blue }\end{DoxyParamCaption})}
+
+Sets the background color in R\+GB format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em red} & Red component. \\
+\hline
+{\em green} & Green component. \\
+\hline
+{\em blue} & Blue component. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a3f92b1f1b6007105fab74e063c55e683}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a3f92b1f1b6007105fab74e063c55e683}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!getRed@{getRed}}
+\index{getRed@{getRed}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{getRed()}{getRed()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+get\+Red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000015}{Deprecated}}]Gets the background color\textquotesingle{}s red component.\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{Returns}
+Background color\textquotesingle{}s red component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_aa11f0cdf16601b1428f668da64a66829}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_aa11f0cdf16601b1428f668da64a66829}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!getGreen@{getGreen}}
+\index{getGreen@{getGreen}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{getGreen()}{getGreen()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+get\+Green (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000016}{Deprecated}}]Gets the background color\textquotesingle{}s green component.\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{Returns}
+Background color\textquotesingle{}s green component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a282a5dddec2c647f434750369115865c}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a282a5dddec2c647f434750369115865c}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!getBlue@{getBlue}}
+\index{getBlue@{getBlue}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{getBlue()}{getBlue()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+get\+Blue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000017}{Deprecated}}]Gets the background color\textquotesingle{}s blue component.\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{Returns}
+Background color\textquotesingle{}s blue component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a3e5fc6c2235720028d1b15ee58bfa11a}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a3e5fc6c2235720028d1b15ee58bfa11a}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!setRed@{setRed}}
+\index{setRed@{setRed}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{setRed()}{setRed()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+set\+Red (\begin{DoxyParamCaption}\item[{int}]{red }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000018}{Deprecated}}]Sets the background color\textquotesingle{}s red component. \end{DoxyRefDesc}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a175bbe665a0d50ac192e615512b126db}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a175bbe665a0d50ac192e615512b126db}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!setGreen@{setGreen}}
+\index{setGreen@{setGreen}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{setGreen()}{setGreen()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+set\+Green (\begin{DoxyParamCaption}\item[{int}]{green }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000019}{Deprecated}}]Sets the background color\textquotesingle{}s green component.\end{DoxyRefDesc}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_aa92c543675d78a2aea35d91a2022ce2d}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_aa92c543675d78a2aea35d91a2022ce2d}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!setBlue@{setBlue}}
+\index{setBlue@{setBlue}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{setBlue()}{setBlue()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+set\+Blue (\begin{DoxyParamCaption}\item[{int}]{blue }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000020}{Deprecated}}]Sets the background color\textquotesingle{}s blue component.\end{DoxyRefDesc}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a661f501ceb72ac229867acdd3cbda8b0}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a661f501ceb72ac229867acdd3cbda8b0}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!width@{width}}
+\index{width@{width}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+width}
+
+The width of the video in pixels. The default value is 360.
+\begin{DoxyItemize}
+\item When pushing video streams to the C\+DN, the value range of {\ttfamily width} is \mbox{[}64,1920\mbox{]}. If the value is less than 64, Agora server automatically adjusts it to 64; if the value is greater than 1920, Agora server automatically adjusts it to 1920.
+\item When pushing audio streams to the C\+DN, set {\ttfamily width} and {\ttfamily height} as 0. 
+\end{DoxyItemize}\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a6516550d8923da8e75bf34721d34e7fb}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a6516550d8923da8e75bf34721d34e7fb}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!height@{height}}
+\index{height@{height}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+height}
+
+The height of the video in pixels. The default value is 640.
+\begin{DoxyItemize}
+\item When pushing video streams to the C\+DN, the value range of {\ttfamily height} is \mbox{[}64,1080\mbox{]}. If the value is less than 64, Agora server automatically adjusts it to 64; if the value is greater than 1080, Agora server automatically adjusts it to 1080.
+\item When pushing audio streams to the C\+DN, set {\ttfamily width} and {\ttfamily height} as 0. 
+\end{DoxyItemize}\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a751e211c56f5a7b25578b6846f083bb6}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a751e211c56f5a7b25578b6846f083bb6}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!videoBitrate@{videoBitrate}}
+\index{videoBitrate@{videoBitrate}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{videoBitrate}{videoBitrate}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+video\+Bitrate}
+
+The bitrate (Kbps) of the video. The default value is 400. Set this parameter according to the \mbox{\hyperlink{}{Video Bitrate Table}}. If you set a bitrate beyond the proper range, the S\+DK automatically adapts it to a value within the range. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a05eef3bf3171b3b52442f71d79093946}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a05eef3bf3171b3b52442f71d79093946}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!videoFramerate@{videoFramerate}}
+\index{videoFramerate@{videoFramerate}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{videoFramerate}{videoFramerate}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+video\+Framerate}
+
+The frame rate (fps) of the video. The value range is (0, 30\mbox{]}. The default value is 15. The Agora server adjusts any value over 30 to 30. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a20aec79d70091c9d487d4c21988e59c6}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a20aec79d70091c9d487d4c21988e59c6}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!lowLatency@{lowLatency}}
+\index{lowLatency@{lowLatency}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{lowLatency}{lowLatency}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+low\+Latency}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000011}{Deprecated}}]Deprecated as of v2.\+8.\+0. Agora does not recommend using this parameter. Latency mode\+: \end{DoxyRefDesc}
+
+\begin{DoxyItemize}
+\item true\+: Low latency with unassured quality. 
+\item false\+: (Default) High latency with assured quality. 
+\end{DoxyItemize}\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a7e379875dfe4394802c242bfacce1b2a}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a7e379875dfe4394802c242bfacce1b2a}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!videoGop@{videoGop}}
+\index{videoGop@{videoGop}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{videoGop}{videoGop}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+video\+Gop}
+
+Gop of the video frames in the C\+DN live stream. The default value is 30 fps. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a3176fa9392a370f53dce4a1678dcae6a}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a3176fa9392a370f53dce4a1678dcae6a}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!audioSampleRate@{audioSampleRate}}
+\index{audioSampleRate@{audioSampleRate}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{audioSampleRate}{audioSampleRate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_audio_sample_rate_type}{Audio\+Sample\+Rate\+Type}} io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+audio\+Sample\+Rate}
+
+Self-\/defined audio-\/sample rate\+: \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_audio_sample_rate_type}{Audio\+Sample\+Rate\+Type}}. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a5de13c9aa27bf2f5fef8c195c609630f}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a5de13c9aa27bf2f5fef8c195c609630f}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!audioBitrate@{audioBitrate}}
+\index{audioBitrate@{audioBitrate}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{audioBitrate}{audioBitrate}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+audio\+Bitrate}
+
+Bitrate (Kbps) of the C\+DN live audio output stream. The default value is 48 and the highest value is 128. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a1018cc4035c99d80b4e73caa356f59d3}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a1018cc4035c99d80b4e73caa356f59d3}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!audioChannels@{audioChannels}}
+\index{audioChannels@{audioChannels}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{audioChannels}{audioChannels}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+audio\+Channels}
+
+The number of audio channels for the C\+DN live stream. Agora recommends choosing 1 (mono), or 2 (stereo) audio channels. Special players are required if you choose 3, 4, or 5.
+\begin{DoxyItemize}
+\item 1\+: (Default) Mono
+\item 2\+: Stereo
+\item 3\+: Three audio channels
+\item 4\+: Four audio channels
+\item 5\+: Five audio channels 
+\end{DoxyItemize}\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ab38a479a8f291fc77ddf5bcd8608e1e5}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ab38a479a8f291fc77ddf5bcd8608e1e5}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!audioCodecProfile@{audioCodecProfile}}
+\index{audioCodecProfile@{audioCodecProfile}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{audioCodecProfile}{audioCodecProfile}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_audio_codec_profile_type}{Audio\+Codec\+Profile\+Type}} io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+audio\+Codec\+Profile}
+
+Audio codec profile type\+: \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_audio_codec_profile_type}{Audio\+Codec\+Profile\+Type}}. Set it as L\+C-\/\+A\+AC or H\+E-\/\+A\+AC. The default value is L\+C-\/\+A\+AC. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af39bce623d935837fefdf5d974ef71fa}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af39bce623d935837fefdf5d974ef71fa}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!videoCodecProfile@{videoCodecProfile}}
+\index{videoCodecProfile@{videoCodecProfile}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{videoCodecProfile}{videoCodecProfile}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_video_codec_profile_type}{Video\+Codec\+Profile\+Type}} io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+video\+Codec\+Profile}
+
+Video codec profile type\+: \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_video_codec_profile_type}{Video\+Codec\+Profile\+Type}}. Set it as B\+A\+S\+E\+L\+I\+NE, M\+A\+IN, or H\+I\+GH (default). If you set this parameter to other values, Agora adjusts it to the default value H\+I\+GH. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af1b6bdefbc9faefaf1b32fde0f8071df}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_af1b6bdefbc9faefaf1b32fde0f8071df}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!videoCodecType@{videoCodecType}}
+\index{videoCodecType@{videoCodecType}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{videoCodecType}{videoCodecType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_video_codec_type}{Video\+Codec\+Type}} io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+video\+Codec\+Type}
+
+The video codec type of the output video stream. See \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_video_codec_type}{Video\+Codec\+Type}}. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a602fd601a752e54b776c6743b28a1614}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a602fd601a752e54b776c6743b28a1614}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!userCount@{userCount}}
+\index{userCount@{userCount}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{userCount}{userCount}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+user\+Count}
+
+Number of users in the live broadcast. \begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000012}{Deprecated}}]This parameter is deprecated. We recommend using the \{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ab94d9541f1d6d5e563960d4d879b822a}{get\+User\+Count\} method. }}\end{DoxyRefDesc}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a51735c6155b2f1fc4ce66f7af52236b7}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a51735c6155b2f1fc4ce66f7af52236b7}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!backgroundColor@{backgroundColor}}
+\index{backgroundColor@{backgroundColor}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{backgroundColor}{backgroundColor}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+background\+Color}
+
+The background color in R\+GB hex. Value only. Do not include a preceding \#. For example, 0x\+F\+F\+B6\+C1 (light pink). The default value is 0x000000 (black). \begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000013}{Deprecated}}]This parameter is deprecated. We recommend using the \{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a57390ba1060f75e64d3ca31504fbcad6}{set\+Background\+Color\} method to set the background color. }}\end{DoxyRefDesc}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a77a72365db7a0e37ae9eabb67321f4e5}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_a77a72365db7a0e37ae9eabb67321f4e5}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!userConfigExtraInfo@{userConfigExtraInfo}}
+\index{userConfigExtraInfo@{userConfigExtraInfo}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{userConfigExtraInfo}{userConfigExtraInfo}}
+{\footnotesize\ttfamily String io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+user\+Config\+Extra\+Info}
+
+Reserved property. Extra user-\/defined information to send the Supplemental Enhancement Information (S\+EI) for the H.\+264/H.265 video stream to the C\+DN live client. Maximum length\+: 4096 Bytes. For more information on S\+EI frames, see \href{https://docs.agora.io/en/faq/sei}{\texttt{ S\+E\+I-\/related questions}}. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ad367607cff8d247128f0e561ff231344}\label{classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_ad367607cff8d247128f0e561ff231344}} 
+\index{io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}!metadata@{metadata}}
+\index{metadata@{metadata}!io.agora.rtc2.live.LiveTranscoding@{io.agora.rtc2.live.LiveTranscoding}}
+\doxysubsubsection{\texorpdfstring{metadata}{metadata}}
+{\footnotesize\ttfamily String io.\+agora.\+rtc2.\+live.\+Live\+Transcoding.\+metadata}
+
+The metadata sent to the C\+DN live client. \begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000014}{Deprecated}}]This parameter is deprecated. \end{DoxyRefDesc}

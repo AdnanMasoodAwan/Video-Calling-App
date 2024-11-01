@@ -1,0 +1,49 @@
+\hypertarget{classagora_1_1rtc_1_1_i_media_packet_sender}{}\doxysection{agora\+::rtc\+::I\+Media\+Packet\+Sender Class Reference}
+\label{classagora_1_1rtc_1_1_i_media_packet_sender}\index{agora::rtc::IMediaPacketSender@{agora::rtc::IMediaPacketSender}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Media\+Packet\+Sender\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_media_packet_sender}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_sender_a2668cc6153fdb4b2ac3ac506657bcbb4}{send\+Media\+Packet}} (const uint8\+\_\+t $\ast$packet, size\+\_\+t length, const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_packet_options}{media\+::base\+::\+Packet\+Options}} \&options, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_sender}{I\+Media\+Packet\+Sender}}} class.
+
+You can use the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_sender}{I\+Media\+Packet\+Sender}}} class to create a Local\+Video\+Track or Local\+Audio\+Track, and then send media packets directly to the track. The media packets are R\+T\+P/\+U\+DP packets that contain media payload. If the track is disabled, the packets will be automatically discarded. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_packet_sender_a2668cc6153fdb4b2ac3ac506657bcbb4}\label{classagora_1_1rtc_1_1_i_media_packet_sender_a2668cc6153fdb4b2ac3ac506657bcbb4}} 
+\index{agora::rtc::IMediaPacketSender@{agora::rtc::IMediaPacketSender}!sendMediaPacket@{sendMediaPacket}}
+\index{sendMediaPacket@{sendMediaPacket}!agora::rtc::IMediaPacketSender@{agora::rtc::IMediaPacketSender}}
+\doxysubsubsection{\texorpdfstring{sendMediaPacket()}{sendMediaPacket()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Packet\+Sender\+::send\+Media\+Packet (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{packet,  }\item[{size\+\_\+t}]{length,  }\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_packet_options}{media\+::base\+::\+Packet\+Options}} \&}]{options,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends the frame packet to the local track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & The pointer to the packet. \\
+\hline
+{\em length} & The packet size. \\
+\hline
+{\em options} & The packet information\+: \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_packet_options}{Packet\+Options}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

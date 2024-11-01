@@ -1,0 +1,49 @@
+\hypertarget{classagora_1_1rtc_1_1_i_video_filter_base}{}\doxysection{agora\+::rtc\+::I\+Video\+Filter\+Base Class Reference}
+\label{classagora_1_1rtc_1_1_i_video_filter_base}\index{agora::rtc::IVideoFilterBase@{agora::rtc::IVideoFilterBase}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Video\+Filter\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classagora_1_1rtc_1_1_i_video_filter_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_filter_base_acbefe549175d0eaaa0eac47082849769}{adapt\+Video\+Frame}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{media\+::base\+::\+Video\+Frame}} \&captured\+Frame, \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{media\+::base\+::\+Video\+Frame}} \&adapted\+Frame)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_filter_base}{I\+Video\+Filter\+Base}}} class is the base class for video filters. You can use this class to implement your own filter and add the filter to a video track. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_filter_base_acbefe549175d0eaaa0eac47082849769}\label{classagora_1_1rtc_1_1_i_video_filter_base_acbefe549175d0eaaa0eac47082849769}} 
+\index{agora::rtc::IVideoFilterBase@{agora::rtc::IVideoFilterBase}!adaptVideoFrame@{adaptVideoFrame}}
+\index{adaptVideoFrame@{adaptVideoFrame}!agora::rtc::IVideoFilterBase@{agora::rtc::IVideoFilterBase}}
+\doxysubsubsection{\texorpdfstring{adaptVideoFrame()}{adaptVideoFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Video\+Filter\+Base\+::adapt\+Video\+Frame (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{media\+::base\+::\+Video\+Frame}} \&}]{captured\+Frame,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{media\+::base\+::\+Video\+Frame}} \&}]{adapted\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adapts the video frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em captured\+Frame} & The reference to the captured video frame that you want to adapt. \\
+\hline
+{\em adapted\+Frame} & The reference to the adapted video frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure, if, for example, the {\ttfamily I\+Videofilter} object drops the video frame. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_a07cf2b3f8af6057f51b0125e598780a5}{agora\+::rtc\+::\+I\+Extension\+Video\+Filter}}.
+

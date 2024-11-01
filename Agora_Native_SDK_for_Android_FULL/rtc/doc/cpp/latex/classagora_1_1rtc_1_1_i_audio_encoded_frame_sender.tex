@@ -1,0 +1,49 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender}{}\doxysection{agora\+::rtc\+::I\+Audio\+Encoded\+Frame\+Sender Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender}\index{agora::rtc::IAudioEncodedFrameSender@{agora::rtc::IAudioEncodedFrameSender}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Audio\+Encoded\+Frame\+Sender\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender_a922bbc9eadb666ffd0f8560164a4fbe3}{send\+Encoded\+Audio\+Frame}} (const uint8\+\_\+t $\ast$payload\+\_\+data, size\+\_\+t payload\+\_\+size, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&audio\+Frame\+Info, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender}{I\+Audio\+Encoded\+Frame\+Sender}}} class.
+
+In scenarios involving custom audio source, you can use the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender}{I\+Audio\+Encoded\+Frame\+Sender}}} class to send encoded audio data directly to the audio track. If the track is disabled, the sent audio data will be automatically discarded. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender_a922bbc9eadb666ffd0f8560164a4fbe3}\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender_a922bbc9eadb666ffd0f8560164a4fbe3}} 
+\index{agora::rtc::IAudioEncodedFrameSender@{agora::rtc::IAudioEncodedFrameSender}!sendEncodedAudioFrame@{sendEncodedAudioFrame}}
+\index{sendEncodedAudioFrame@{sendEncodedAudioFrame}!agora::rtc::IAudioEncodedFrameSender@{agora::rtc::IAudioEncodedFrameSender}}
+\doxysubsubsection{\texorpdfstring{sendEncodedAudioFrame()}{sendEncodedAudioFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Audio\+Encoded\+Frame\+Sender\+::send\+Encoded\+Audio\+Frame (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{payload\+\_\+data,  }\item[{size\+\_\+t}]{payload\+\_\+size,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&}]{audio\+Frame\+Info,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends the encoded audio frame to the local audio track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload\+\_\+data} & The pointer to the payload data. \\
+\hline
+{\em payload\+\_\+size} & The payload size. \\
+\hline
+{\em audio\+Frame\+Info} & The reference to the information of the audio frame\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

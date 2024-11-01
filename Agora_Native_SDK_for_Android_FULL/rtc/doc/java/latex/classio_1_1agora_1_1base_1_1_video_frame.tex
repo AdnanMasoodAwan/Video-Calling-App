@@ -1,0 +1,175 @@
+\hypertarget{classio_1_1agora_1_1base_1_1_video_frame}{}\doxysection{io.\+agora.\+base.\+Video\+Frame Class Reference}
+\label{classio_1_1agora_1_1base_1_1_video_frame}\index{io.agora.base.VideoFrame@{io.agora.base.VideoFrame}}
+Inheritance diagram for io.\+agora.\+base.\+Video\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classio_1_1agora_1_1base_1_1_video_frame}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer}{Buffer}}
+\item 
+interface \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_color_space}{Color\+Space}}
+\item 
+interface \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_hdr_metadata}{Hdr\+Metadata}}
+\item 
+interface \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_i420_buffer}{I420\+Buffer}}
+\item 
+interface \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_i422_buffer}{I422\+Buffer}}
+\item 
+interface \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_rgba_buffer}{Rgba\+Buffer}}
+\item 
+enum \mbox{\hyperlink{enumio_1_1agora_1_1base_1_1_video_frame_1_1_source_type}{Source\+Type}}
+\item 
+interface \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer}{Texture\+Buffer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame_a7ad03e260f21c84cbca07ab75df3257e}{Video\+Frame}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer}{Buffer}} buffer, int rotation, long timestamp\+Ns)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a45ff2b1936e29b09709dd04f451cdfcf}\label{classio_1_1agora_1_1base_1_1_video_frame_a45ff2b1936e29b09709dd04f451cdfcf}} 
+{\bfseries Video\+Frame} (\mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer}{Buffer}} buffer, int rotation, long timestamp\+Ns, \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_color_space}{Color\+Space}} color\+Space, Byte\+Buffer alpha\+Buffer, long native\+Alpha\+Buffer, float sample\+Aspect\+Ratio, int source\+Type)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_abd7f12a27434f9883e167f8deb03c50b}\label{classio_1_1agora_1_1base_1_1_video_frame_abd7f12a27434f9883e167f8deb03c50b}} 
+\mbox{\hyperlink{enumio_1_1agora_1_1base_1_1_video_frame_1_1_source_type}{Source\+Type}} {\bfseries get\+Source\+Type} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a09104763f41f95d57b8149f24334e762}\label{classio_1_1agora_1_1base_1_1_video_frame_a09104763f41f95d57b8149f24334e762}} 
+float {\bfseries get\+Sample\+Aspect\+Ratio} ()
+\item 
+\mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer}{Buffer}} \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame_ac05dd9efc8822883cae5006584a277b5}{get\+Buffer}} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame_a3f94015893a1cadcee523aed78ac6e22}{get\+Rotation}} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a69c624ab36292191f3759dcedcce94dd}\label{classio_1_1agora_1_1base_1_1_video_frame_a69c624ab36292191f3759dcedcce94dd}} 
+int {\bfseries get\+Alpha\+Stitch\+Mode} ()
+\item 
+long \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame_a53c2c1728f35948e24a1750c73b26fc8}{get\+Timestamp\+Ns}} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a9f9f60c57e84642c22e2cdf0c9a6d940}\label{classio_1_1agora_1_1base_1_1_video_frame_a9f9f60c57e84642c22e2cdf0c9a6d940}} 
+\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame_meta_info}{Video\+Frame\+Meta\+Info}} {\bfseries get\+Meta\+Info} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame_acceddd0284717d8c14676b4b98e5aaeb}{get\+Rotated\+Width}} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame_a7f1616172af774654f0740ec5a0c7afa}{get\+Rotated\+Height}} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame_a46eca37a2fcfa7d6e140ab40c88f1bf5}{replace\+Buffer}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer}{Buffer}} buffer, int rotation, long timestamp\+Ns)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a2732ade7a20e74c2c9f1e88a4b19a0c6}\label{classio_1_1agora_1_1base_1_1_video_frame_a2732ade7a20e74c2c9f1e88a4b19a0c6}} 
+\mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_color_space}{Color\+Space}} {\bfseries get\+Color\+Space} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a0decca72ea59467064d450034769401d}\label{classio_1_1agora_1_1base_1_1_video_frame_a0decca72ea59467064d450034769401d}} 
+Byte\+Buffer {\bfseries get\+Alpha\+Buffer} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a1a4719ab0298208acf29c1670d193171}\label{classio_1_1agora_1_1base_1_1_video_frame_a1a4719ab0298208acf29c1670d193171}} 
+void {\bfseries retain\+Alpha\+Buffer} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_aed3223fa378dbfd6f0bd85ab25a3c1ac}\label{classio_1_1agora_1_1base_1_1_video_frame_aed3223fa378dbfd6f0bd85ab25a3c1ac}} 
+void {\bfseries release\+Alpha\+Buffer} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_adce14c8e6d340dcf107dc1a102396ebb}\label{classio_1_1agora_1_1base_1_1_video_frame_adce14c8e6d340dcf107dc1a102396ebb}} 
+void {\bfseries fill\+Alpha\+Data} (Byte\+Buffer buffer)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a085c6dfc9de59767e5a5c16536d9de4c}\label{classio_1_1agora_1_1base_1_1_video_frame_a085c6dfc9de59767e5a5c16536d9de4c}} 
+void {\bfseries set\+Alpha\+Stitch\+Mode} (int mode)
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame_a51f9ab6379ab6fe6855f5fe3924f7871}{retain}} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame_acc135467070ffce6bc4fb74a170c9cba}{release}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Java version of webrtc\+::\+Video\+Frame and webrtc\+::\+Video\+Frame\+Buffer. A difference from the C++ version is that no explicit tag is used, and clients are expected to use \textquotesingle{}instanceof\textquotesingle{} to find the right subclass of the buffer. This allows clients to create custom \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer}{Video\+Frame.\+Buffer}} in arbitrary format in their custom Video\+Sources, and then cast it back to the correct subclass in their custom Video\+Sinks. All implementations must also implement the to\+I420() function, converting from the underlying representation if necessary. I420 is the most widely accepted format and serves as a fallback for video sinks that can only handle I420, e.\+g. the internal Web\+R\+TC software encoders. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a7ad03e260f21c84cbca07ab75df3257e}\label{classio_1_1agora_1_1base_1_1_video_frame_a7ad03e260f21c84cbca07ab75df3257e}} 
+\index{io.agora.base.VideoFrame@{io.agora.base.VideoFrame}!VideoFrame@{VideoFrame}}
+\index{VideoFrame@{VideoFrame}!io.agora.base.VideoFrame@{io.agora.base.VideoFrame}}
+\doxysubsubsection{\texorpdfstring{VideoFrame()}{VideoFrame()}}
+{\footnotesize\ttfamily io.\+agora.\+base.\+Video\+Frame.\+Video\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer}{Buffer}}}]{buffer,  }\item[{int}]{rotation,  }\item[{long}]{timestamp\+Ns }\end{DoxyParamCaption})}
+
+Constructs a new \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}} backed by the given
+\begin{DoxyCode}{0}
+\DoxyCodeLine{buffer }
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & not allowed to be null, otherwise exception will throw \\
+\hline
+{\em rotation} & must be a multiple of 90, otherwise exception will throw \\
+\hline
+{\em timestamp\+Ns} & in nanosecond, otherwise video frame may not been sent\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Ownership of the buffer object is tranferred to the new \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}}. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_ac05dd9efc8822883cae5006584a277b5}\label{classio_1_1agora_1_1base_1_1_video_frame_ac05dd9efc8822883cae5006584a277b5}} 
+\index{io.agora.base.VideoFrame@{io.agora.base.VideoFrame}!getBuffer@{getBuffer}}
+\index{getBuffer@{getBuffer}!io.agora.base.VideoFrame@{io.agora.base.VideoFrame}}
+\doxysubsubsection{\texorpdfstring{getBuffer()}{getBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer}{Buffer}} io.\+agora.\+base.\+Video\+Frame.\+get\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the inner buffer \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer}{Buffer}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a3f94015893a1cadcee523aed78ac6e22}\label{classio_1_1agora_1_1base_1_1_video_frame_a3f94015893a1cadcee523aed78ac6e22}} 
+\index{io.agora.base.VideoFrame@{io.agora.base.VideoFrame}!getRotation@{getRotation}}
+\index{getRotation@{getRotation}!io.agora.base.VideoFrame@{io.agora.base.VideoFrame}}
+\doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
+{\footnotesize\ttfamily int io.\+agora.\+base.\+Video\+Frame.\+get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Rotation of the frame in degrees. \mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a53c2c1728f35948e24a1750c73b26fc8}\label{classio_1_1agora_1_1base_1_1_video_frame_a53c2c1728f35948e24a1750c73b26fc8}} 
+\index{io.agora.base.VideoFrame@{io.agora.base.VideoFrame}!getTimestampNs@{getTimestampNs}}
+\index{getTimestampNs@{getTimestampNs}!io.agora.base.VideoFrame@{io.agora.base.VideoFrame}}
+\doxysubsubsection{\texorpdfstring{getTimestampNs()}{getTimestampNs()}}
+{\footnotesize\ttfamily long io.\+agora.\+base.\+Video\+Frame.\+get\+Timestamp\+Ns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Timestamp of the frame in nano seconds. \mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_acceddd0284717d8c14676b4b98e5aaeb}\label{classio_1_1agora_1_1base_1_1_video_frame_acceddd0284717d8c14676b4b98e5aaeb}} 
+\index{io.agora.base.VideoFrame@{io.agora.base.VideoFrame}!getRotatedWidth@{getRotatedWidth}}
+\index{getRotatedWidth@{getRotatedWidth}!io.agora.base.VideoFrame@{io.agora.base.VideoFrame}}
+\doxysubsubsection{\texorpdfstring{getRotatedWidth()}{getRotatedWidth()}}
+{\footnotesize\ttfamily int io.\+agora.\+base.\+Video\+Frame.\+get\+Rotated\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+rotated width. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a7f1616172af774654f0740ec5a0c7afa}\label{classio_1_1agora_1_1base_1_1_video_frame_a7f1616172af774654f0740ec5a0c7afa}} 
+\index{io.agora.base.VideoFrame@{io.agora.base.VideoFrame}!getRotatedHeight@{getRotatedHeight}}
+\index{getRotatedHeight@{getRotatedHeight}!io.agora.base.VideoFrame@{io.agora.base.VideoFrame}}
+\doxysubsubsection{\texorpdfstring{getRotatedHeight()}{getRotatedHeight()}}
+{\footnotesize\ttfamily int io.\+agora.\+base.\+Video\+Frame.\+get\+Rotated\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+rotated height. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a46eca37a2fcfa7d6e140ab40c88f1bf5}\label{classio_1_1agora_1_1base_1_1_video_frame_a46eca37a2fcfa7d6e140ab40c88f1bf5}} 
+\index{io.agora.base.VideoFrame@{io.agora.base.VideoFrame}!replaceBuffer@{replaceBuffer}}
+\index{replaceBuffer@{replaceBuffer}!io.agora.base.VideoFrame@{io.agora.base.VideoFrame}}
+\doxysubsubsection{\texorpdfstring{replaceBuffer()}{replaceBuffer()}}
+{\footnotesize\ttfamily void io.\+agora.\+base.\+Video\+Frame.\+replace\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer}{Buffer}}}]{buffer,  }\item[{int}]{rotation,  }\item[{long}]{timestamp\+Ns }\end{DoxyParamCaption})}
+
+replace \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}} content.
+
+\begin{DoxyNote}{Note}
+Ownership of the buffer object is tranferred to the \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_a51f9ab6379ab6fe6855f5fe3924f7871}\label{classio_1_1agora_1_1base_1_1_video_frame_a51f9ab6379ab6fe6855f5fe3924f7871}} 
+\index{io.agora.base.VideoFrame@{io.agora.base.VideoFrame}!retain@{retain}}
+\index{retain@{retain}!io.agora.base.VideoFrame@{io.agora.base.VideoFrame}}
+\doxysubsubsection{\texorpdfstring{retain()}{retain()}}
+{\footnotesize\ttfamily void io.\+agora.\+base.\+Video\+Frame.\+retain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increases inner buffer\textquotesingle{}s ref count by one. \mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_video_frame_acc135467070ffce6bc4fb74a170c9cba}\label{classio_1_1agora_1_1base_1_1_video_frame_acc135467070ffce6bc4fb74a170c9cba}} 
+\index{io.agora.base.VideoFrame@{io.agora.base.VideoFrame}!release@{release}}
+\index{release@{release}!io.agora.base.VideoFrame@{io.agora.base.VideoFrame}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void io.\+agora.\+base.\+Video\+Frame.\+release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Decreases inner buffer\textquotesingle{}s ref count by one. When the ref count reaches zero, resources related to the inner buffer will be freed. 

@@ -1,0 +1,265 @@
+\hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel}{}\doxysection{io.\+agora.\+rtm.\+Stream\+Channel Class Reference}
+\label{classio_1_1agora_1_1rtm_1_1_stream_channel}\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a8ada1c4d00c3219dd9a74fea8197f3c7}{release}} ()
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a7f0e9c817b02ba55ae17132ae0e3da8e}{join}} (\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_join_channel_options}{Join\+Channel\+Options}} options, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a6d770cf70003a3d0397e66d5a8ef0d4d}{renew\+Token}} (String token, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a25fdab1c97b37873f1dbea08129a5a51}{leave}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract String \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a9275a949a0a10dd0cf2b7bb056652dcf}{get\+Channel\+Name}} ()
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a22a65b3297d4a3361af920f127a6d482}{join\+Topic}} (String topic\+Name, \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_join_topic_options}{Join\+Topic\+Options}} options, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a42106f8533be2ca2595f7f8bfcd7ca5c}{publish\+Topic\+Message}} (String topic\+Name, byte\mbox{[}$\,$\mbox{]} message, \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_topic_message_options}{Topic\+Message\+Options}} options, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a11fc1db66a2ca2bf4675390be5d7c153}{publish\+Topic\+Message}} (String topic\+Name, String message, \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_topic_message_options}{Topic\+Message\+Options}} options, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a4a9c3ee9cded7f3391a5a3e6ffa27b4f}{leave\+Topic}} (String topic\+Name, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a69bbf23bb52521334ce14b7579f57e0b}{subscribe\+Topic}} (String topic\+Name, \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_topic_options}{Topic\+Options}} options, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_subscribe_topic_result}{Subscribe\+Topic\+Result}} $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a636ca5685deaa64858bf3523900b3ba1}{unsubscribe\+Topic}} (String topic\+Name, \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_topic_options}{Topic\+Options}} options, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel_a7606a40b31df49a5a305d84af96b5bab}{get\+Subscribed\+User\+List}} (String topic\+Name, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Array\+List$<$ String $>$$>$ result\+Callback)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel}{Stream\+Channel}} class.
+
+This class provides the stream channel methods that can be invoked by your app. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a8ada1c4d00c3219dd9a74fea8197f3c7}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a8ada1c4d00c3219dd9a74fea8197f3c7}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!release@{release}}
+\index{release@{release}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} io.\+agora.\+rtm.\+Stream\+Channel.\+release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Release the stream channel instance.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RtmErrorCode }
+\end{DoxyCode}
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a7f0e9c817b02ba55ae17132ae0e3da8e}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a7f0e9c817b02ba55ae17132ae0e3da8e}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!join@{join}}
+\index{join@{join}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Stream\+Channel.\+join (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_join_channel_options}{Join\+Channel\+Options}}}]{options,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Join the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & join channel options. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a6d770cf70003a3d0397e66d5a8ef0d4d}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a6d770cf70003a3d0397e66d5a8ef0d4d}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!renewToken@{renewToken}}
+\index{renewToken@{renewToken}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{renewToken()}{renewToken()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Stream\+Channel.\+renew\+Token (\begin{DoxyParamCaption}\item[{String}]{token,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Renews the token. Once a token is enabled and used, it expires after a certain period of time. You should generate a new token on your server, call this method to renew it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & Token used renew. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a25fdab1c97b37873f1dbea08129a5a51}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a25fdab1c97b37873f1dbea08129a5a51}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!leave@{leave}}
+\index{leave@{leave}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{leave()}{leave()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Stream\+Channel.\+leave (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Leave the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a9275a949a0a10dd0cf2b7bb056652dcf}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a9275a949a0a10dd0cf2b7bb056652dcf}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!getChannelName@{getChannelName}}
+\index{getChannelName@{getChannelName}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{getChannelName()}{getChannelName()}}
+{\footnotesize\ttfamily abstract String io.\+agora.\+rtm.\+Stream\+Channel.\+get\+Channel\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Return the channel name of this stream channel.
+
+\begin{DoxyReturn}{Returns}
+The channel name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a22a65b3297d4a3361af920f127a6d482}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a22a65b3297d4a3361af920f127a6d482}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!joinTopic@{joinTopic}}
+\index{joinTopic@{joinTopic}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{joinTopic()}{joinTopic()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Stream\+Channel.\+join\+Topic (\begin{DoxyParamCaption}\item[{String}]{topic\+Name,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_join_topic_options}{Join\+Topic\+Options}}}]{options,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Join a topic.
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic\+Name} & The name of the topic. \\
+\hline
+{\em options} & The options of the topic. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a42106f8533be2ca2595f7f8bfcd7ca5c}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a42106f8533be2ca2595f7f8bfcd7ca5c}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!publishTopicMessage@{publishTopicMessage}}
+\index{publishTopicMessage@{publishTopicMessage}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{publishTopicMessage()}{publishTopicMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Stream\+Channel.\+publish\+Topic\+Message (\begin{DoxyParamCaption}\item[{String}]{topic\+Name,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{message,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_topic_message_options}{Topic\+Message\+Options}}}]{options,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Publish a binary message in the topic.
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic\+Name} & The name of the topic. \\
+\hline
+{\em message} & The content of the message. \\
+\hline
+{\em options} & The options of the message. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a11fc1db66a2ca2bf4675390be5d7c153}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a11fc1db66a2ca2bf4675390be5d7c153}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!publishTopicMessage@{publishTopicMessage}}
+\index{publishTopicMessage@{publishTopicMessage}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{publishTopicMessage()}{publishTopicMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Stream\+Channel.\+publish\+Topic\+Message (\begin{DoxyParamCaption}\item[{String}]{topic\+Name,  }\item[{String}]{message,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_topic_message_options}{Topic\+Message\+Options}}}]{options,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Publish a string message in the topic.
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic\+Name} & The name of the topic. \\
+\hline
+{\em message} & The content of the message. \\
+\hline
+{\em options} & The options of the message. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a4a9c3ee9cded7f3391a5a3e6ffa27b4f}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a4a9c3ee9cded7f3391a5a3e6ffa27b4f}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!leaveTopic@{leaveTopic}}
+\index{leaveTopic@{leaveTopic}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{leaveTopic()}{leaveTopic()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Stream\+Channel.\+leave\+Topic (\begin{DoxyParamCaption}\item[{String}]{topic\+Name,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Leave the topic.
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic\+Name} & The name of the topic. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a69bbf23bb52521334ce14b7579f57e0b}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a69bbf23bb52521334ce14b7579f57e0b}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!subscribeTopic@{subscribeTopic}}
+\index{subscribeTopic@{subscribeTopic}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{subscribeTopic()}{subscribeTopic()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Stream\+Channel.\+subscribe\+Topic (\begin{DoxyParamCaption}\item[{String}]{topic\+Name,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_topic_options}{Topic\+Options}}}]{options,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_subscribe_topic_result}{Subscribe\+Topic\+Result}} $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Subscribe a topic.
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic\+Name} & The name of the topic. \\
+\hline
+{\em options} & The options of subscribe the topic. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a636ca5685deaa64858bf3523900b3ba1}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a636ca5685deaa64858bf3523900b3ba1}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!unsubscribeTopic@{unsubscribeTopic}}
+\index{unsubscribeTopic@{unsubscribeTopic}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{unsubscribeTopic()}{unsubscribeTopic()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Stream\+Channel.\+unsubscribe\+Topic (\begin{DoxyParamCaption}\item[{String}]{topic\+Name,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_topic_options}{Topic\+Options}}}]{options,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Unsubscribe a topic.
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic\+Name} & The name of the topic. \\
+\hline
+{\em options} & The options of unsubscribe the topic. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_stream_channel_a7606a40b31df49a5a305d84af96b5bab}\label{classio_1_1agora_1_1rtm_1_1_stream_channel_a7606a40b31df49a5a305d84af96b5bab}} 
+\index{io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}!getSubscribedUserList@{getSubscribedUserList}}
+\index{getSubscribedUserList@{getSubscribedUserList}!io.agora.rtm.StreamChannel@{io.agora.rtm.StreamChannel}}
+\doxysubsubsection{\texorpdfstring{getSubscribedUserList()}{getSubscribedUserList()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Stream\+Channel.\+get\+Subscribed\+User\+List (\begin{DoxyParamCaption}\item[{String}]{topic\+Name,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Array\+List$<$ String $>$$>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get subscribed user list
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic\+Name} & The name of the topic. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,123 @@
+\hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder}{}\doxysection{io.\+agora.\+rtc2.\+I\+H265\+Transcoder Interface Reference}
+\label{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder}\index{io.agora.rtc2.IH265Transcoder@{io.agora.rtc2.IH265Transcoder}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a8b90fd00e106e1cb18ba046889bbf1db}{register\+Transcoder\+Observer}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer}{I\+H265\+Transcoder\+Observer}} observer)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a3c761aef21d18928cebca4c5b1ee713f}{unregister\+Transcoder\+Observer}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer}{I\+H265\+Transcoder\+Observer}} observer)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_ad8e184229e1c859bd4951c283973e4f8}{enable\+Transcode}} (String token, String channel, int uid)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a5ae66d22fe4aa3f5d2d0a4d07dade859}{query\+Channel}} (String token, String channel, int uid)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a348248d36012a9b5a0836fa7627ae3ab}{trigger\+Transcode}} (String token, String channel, int uid)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder}{I\+H265\+Transcoder}} interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a8b90fd00e106e1cb18ba046889bbf1db}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a8b90fd00e106e1cb18ba046889bbf1db}} 
+\index{io.agora.rtc2.IH265Transcoder@{io.agora.rtc2.IH265Transcoder}!registerTranscoderObserver@{registerTranscoderObserver}}
+\index{registerTranscoderObserver@{registerTranscoderObserver}!io.agora.rtc2.IH265Transcoder@{io.agora.rtc2.IH265Transcoder}}
+\doxysubsubsection{\texorpdfstring{registerTranscoderObserver()}{registerTranscoderObserver()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+I\+H265\+Transcoder.\+register\+Transcoder\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer}{I\+H265\+Transcoder\+Observer}}}]{observer }\end{DoxyParamCaption})}
+
+Register a \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer}{I\+H265\+Transcoder\+Observer}} object. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a3c761aef21d18928cebca4c5b1ee713f}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a3c761aef21d18928cebca4c5b1ee713f}} 
+\index{io.agora.rtc2.IH265Transcoder@{io.agora.rtc2.IH265Transcoder}!unregisterTranscoderObserver@{unregisterTranscoderObserver}}
+\index{unregisterTranscoderObserver@{unregisterTranscoderObserver}!io.agora.rtc2.IH265Transcoder@{io.agora.rtc2.IH265Transcoder}}
+\doxysubsubsection{\texorpdfstring{unregisterTranscoderObserver()}{unregisterTranscoderObserver()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+I\+H265\+Transcoder.\+unregister\+Transcoder\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer}{I\+H265\+Transcoder\+Observer}}}]{observer }\end{DoxyParamCaption})}
+
+Unregister a \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer}{I\+H265\+Transcoder\+Observer}} object. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_ad8e184229e1c859bd4951c283973e4f8}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_ad8e184229e1c859bd4951c283973e4f8}} 
+\index{io.agora.rtc2.IH265Transcoder@{io.agora.rtc2.IH265Transcoder}!enableTranscode@{enableTranscode}}
+\index{enableTranscode@{enableTranscode}!io.agora.rtc2.IH265Transcoder@{io.agora.rtc2.IH265Transcoder}}
+\doxysubsubsection{\texorpdfstring{enableTranscode()}{enableTranscode()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+I\+H265\+Transcoder.\+enable\+Transcode (\begin{DoxyParamCaption}\item[{String}]{token,  }\item[{String}]{channel,  }\item[{int}]{uid }\end{DoxyParamCaption})}
+
+Enable transcoding for a channel. 
+\begin{DoxyParams}{Parameters}
+{\em token} & The token for authentication. \\
+\hline
+{\em channel} & The unique channel name for the Agora\+R\+TC session in the string format. \\
+\hline
+{\em uid} & User ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a5ae66d22fe4aa3f5d2d0a4d07dade859}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a5ae66d22fe4aa3f5d2d0a4d07dade859}} 
+\index{io.agora.rtc2.IH265Transcoder@{io.agora.rtc2.IH265Transcoder}!queryChannel@{queryChannel}}
+\index{queryChannel@{queryChannel}!io.agora.rtc2.IH265Transcoder@{io.agora.rtc2.IH265Transcoder}}
+\doxysubsubsection{\texorpdfstring{queryChannel()}{queryChannel()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+I\+H265\+Transcoder.\+query\+Channel (\begin{DoxyParamCaption}\item[{String}]{token,  }\item[{String}]{channel,  }\item[{int}]{uid }\end{DoxyParamCaption})}
+
+Query the transcoded channel of a channel. 
+\begin{DoxyParams}{Parameters}
+{\em token} & The token for authentication. \\
+\hline
+{\em channel} & The unique channel name for the Agora\+R\+TC session in the string format. \\
+\hline
+{\em uid} & User ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a348248d36012a9b5a0836fa7627ae3ab}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_a348248d36012a9b5a0836fa7627ae3ab}} 
+\index{io.agora.rtc2.IH265Transcoder@{io.agora.rtc2.IH265Transcoder}!triggerTranscode@{triggerTranscode}}
+\index{triggerTranscode@{triggerTranscode}!io.agora.rtc2.IH265Transcoder@{io.agora.rtc2.IH265Transcoder}}
+\doxysubsubsection{\texorpdfstring{triggerTranscode()}{triggerTranscode()}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+I\+H265\+Transcoder.\+trigger\+Transcode (\begin{DoxyParamCaption}\item[{String}]{token,  }\item[{String}]{channel,  }\item[{int}]{uid }\end{DoxyParamCaption})}
+
+Trigger channel transcoding. 
+\begin{DoxyParams}{Parameters}
+{\em token} & The token for authentication. \\
+\hline
+{\em channel} & The unique channel name for the Agora\+R\+TC session in the string format. \\
+\hline
+{\em uid} & User ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

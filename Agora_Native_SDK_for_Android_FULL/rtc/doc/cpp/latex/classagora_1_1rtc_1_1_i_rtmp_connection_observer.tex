@@ -1,0 +1,115 @@
+\hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{}\doxysection{agora\+::rtc\+::I\+Rtmp\+Connection\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_rtmp_connection_observer}\index{agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Rtmp\+Connection.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a4048ee1d38dff83649d33bfef93a30f6}{on\+Connected}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} \&connection\+Info)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a676896b8556082f878cb2abfff4f60db}{on\+Disconnected}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} \&connection\+Info)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a52b17ca702ecc8c0aad58565313a2280}{on\+Reconnecting}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} \&connection\+Info)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a735ef894c2d4e077c3302a248cc42bbf}{on\+Reconnected}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} \&connection\+Info)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a86658e80515ca6a85ebde8c230c71f16}{on\+Connection\+Failure}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} \&connection\+Info, R\+T\+M\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+OR err\+Code)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a8a4b5e4b8b9357a4881284b7f56bf99f}{on\+Transfer\+Statistics}} (uint64\+\_\+t video\+\_\+width, uint64\+\_\+t video\+\_\+height, uint64\+\_\+t video\+\_\+bitrate, uint64\+\_\+t audio\+\_\+bitrate, uint64\+\_\+t video\+\_\+frame\+\_\+rate, uint64\+\_\+t push\+\_\+video\+\_\+frame\+\_\+cnt, uint64\+\_\+t pop\+\_\+video\+\_\+frame\+\_\+cnt)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}} class, which observes the R\+T\+MP connection state of the S\+DK. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a4048ee1d38dff83649d33bfef93a30f6}\label{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a4048ee1d38dff83649d33bfef93a30f6}} 
+\index{agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}!onConnected@{onConnected}}
+\index{onConnected@{onConnected}!agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onConnected()}{onConnected()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtmp\+Connection\+Observer\+::on\+Connected (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} \&}]{connection\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the connection state between the S\+DK and the R\+T\+MP server changes to S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D(3).
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Info} & The information of the current connection\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a676896b8556082f878cb2abfff4f60db}\label{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a676896b8556082f878cb2abfff4f60db}} 
+\index{agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}!onDisconnected@{onDisconnected}}
+\index{onDisconnected@{onDisconnected}!agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onDisconnected()}{onDisconnected()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtmp\+Connection\+Observer\+::on\+Disconnected (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} \&}]{connection\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the connection state between the S\+DK and the R\+T\+MP server changes to S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D(1).
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Info} & The information of the current connection\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a52b17ca702ecc8c0aad58565313a2280}\label{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a52b17ca702ecc8c0aad58565313a2280}} 
+\index{agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}!onReconnecting@{onReconnecting}}
+\index{onReconnecting@{onReconnecting}!agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onReconnecting()}{onReconnecting()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtmp\+Connection\+Observer\+::on\+Reconnecting (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} \&}]{connection\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the connection state between the S\+DK and R\+T\+MP server changes to S\+T\+A\+T\+E\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+I\+N\+G(4).
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Info} & The information of the current connection\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a735ef894c2d4e077c3302a248cc42bbf}\label{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a735ef894c2d4e077c3302a248cc42bbf}} 
+\index{agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}!onReconnected@{onReconnected}}
+\index{onReconnected@{onReconnected}!agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onReconnected()}{onReconnected()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtmp\+Connection\+Observer\+::on\+Reconnected (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} \&}]{connection\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the connection state between the S\+DK and R\+T\+MP server changes to S\+T\+A\+T\+E\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+E\+D(6).
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Info} & The information of the current connection\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a86658e80515ca6a85ebde8c230c71f16}\label{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a86658e80515ca6a85ebde8c230c71f16}} 
+\index{agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}!onConnectionFailure@{onConnectionFailure}}
+\index{onConnectionFailure@{onConnectionFailure}!agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onConnectionFailure()}{onConnectionFailure()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtmp\+Connection\+Observer\+::on\+Connection\+Failure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} \&}]{connection\+Info,  }\item[{R\+T\+M\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+OR}]{err\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the connection state between the S\+DK and the R\+T\+MP server changes to S\+T\+A\+T\+E\+\_\+\+F\+A\+I\+L\+E\+D(5).
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Info} & The connection information\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}}. \\
+\hline
+{\em err\+Code} & The error code for the connection failure. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a8a4b5e4b8b9357a4881284b7f56bf99f}\label{classagora_1_1rtc_1_1_i_rtmp_connection_observer_a8a4b5e4b8b9357a4881284b7f56bf99f}} 
+\index{agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}!onTransferStatistics@{onTransferStatistics}}
+\index{onTransferStatistics@{onTransferStatistics}!agora::rtc::IRtmpConnectionObserver@{agora::rtc::IRtmpConnectionObserver}}
+\doxysubsubsection{\texorpdfstring{onTransferStatistics()}{onTransferStatistics()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtmp\+Connection\+Observer\+::on\+Transfer\+Statistics (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{video\+\_\+width,  }\item[{uint64\+\_\+t}]{video\+\_\+height,  }\item[{uint64\+\_\+t}]{video\+\_\+bitrate,  }\item[{uint64\+\_\+t}]{audio\+\_\+bitrate,  }\item[{uint64\+\_\+t}]{video\+\_\+frame\+\_\+rate,  }\item[{uint64\+\_\+t}]{push\+\_\+video\+\_\+frame\+\_\+cnt,  }\item[{uint64\+\_\+t}]{pop\+\_\+video\+\_\+frame\+\_\+cnt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs every 1s when the connection transmits data, report the current video bitrate, audio bitrate and video framerate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+\_\+width} & The width of the video frame actually pushed out \\
+\hline
+{\em video\+\_\+height} & The height of the video frame actually pushed out \\
+\hline
+{\em video\+\_\+bitrate} & The actual bitrate of the video stream being pushed out \\
+\hline
+{\em audio\+\_\+bitrate} & The actual bitrate of the audio stream being pushed out \\
+\hline
+{\em video\+\_\+frame\+\_\+rate} & The frame rate of the video stream actually pushed out \\
+\hline
+\end{DoxyParams}

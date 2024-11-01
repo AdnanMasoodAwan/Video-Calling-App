@@ -1,0 +1,51 @@
+\hypertarget{structagora_1_1rtc_1_1_watermark_ratio}{}\doxysection{agora\+::rtc\+::Watermark\+Ratio Struct Reference}
+\label{structagora_1_1rtc_1_1_watermark_ratio}\index{agora::rtc::WatermarkRatio@{agora::rtc::WatermarkRatio}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_watermark_ratio_a67d509b2e26adb5ba28aa044b8f22d05}\label{structagora_1_1rtc_1_1_watermark_ratio_a67d509b2e26adb5ba28aa044b8f22d05}} 
+{\bfseries Watermark\+Ratio} (float x, float y, float width)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{structagora_1_1rtc_1_1_watermark_ratio_a5ba260ab094cb5efc6fa1c1010f07382}{x\+Ratio}}
+\item 
+float \mbox{\hyperlink{structagora_1_1rtc_1_1_watermark_ratio_a62d62803c931903a408b9dd32f849e1b}{y\+Ratio}}
+\item 
+float \mbox{\hyperlink{structagora_1_1rtc_1_1_watermark_ratio_a2ddc444cab8fc6c03d8e91a448e21d39}{width\+Ratio}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The position and size of the watermark on the screen.
+
+The position and size of the watermark on the screen are determined by {\ttfamily x\+Ratio}, {\ttfamily y\+Ratio}, and {\ttfamily width\+Ratio}\+:
+\begin{DoxyItemize}
+\item ({\ttfamily x\+Ratio}, {\ttfamily y\+Ratio}) refers to the coordinates of the upper left corner of the watermark, which determines the distance from the upper left corner of the watermark to the upper left corner of the screen. The {\ttfamily width\+Ratio} determines the width of the watermark. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_watermark_ratio_a5ba260ab094cb5efc6fa1c1010f07382}\label{structagora_1_1rtc_1_1_watermark_ratio_a5ba260ab094cb5efc6fa1c1010f07382}} 
+\index{agora::rtc::WatermarkRatio@{agora::rtc::WatermarkRatio}!xRatio@{xRatio}}
+\index{xRatio@{xRatio}!agora::rtc::WatermarkRatio@{agora::rtc::WatermarkRatio}}
+\doxysubsubsection{\texorpdfstring{xRatio}{xRatio}}
+{\footnotesize\ttfamily float agora\+::rtc\+::\+Watermark\+Ratio\+::x\+Ratio}
+
+The x-\/coordinate of the upper left corner of the watermark. The horizontal position relative to the origin, where the upper left corner of the screen is the origin, and the x-\/coordinate is the upper left corner of the watermark. The value range is \mbox{[}0.\+0,1.\+0\mbox{]}, and the default value is 0. \mbox{\Hypertarget{structagora_1_1rtc_1_1_watermark_ratio_a62d62803c931903a408b9dd32f849e1b}\label{structagora_1_1rtc_1_1_watermark_ratio_a62d62803c931903a408b9dd32f849e1b}} 
+\index{agora::rtc::WatermarkRatio@{agora::rtc::WatermarkRatio}!yRatio@{yRatio}}
+\index{yRatio@{yRatio}!agora::rtc::WatermarkRatio@{agora::rtc::WatermarkRatio}}
+\doxysubsubsection{\texorpdfstring{yRatio}{yRatio}}
+{\footnotesize\ttfamily float agora\+::rtc\+::\+Watermark\+Ratio\+::y\+Ratio}
+
+The y-\/coordinate of the upper left corner of the watermark. The vertical position relative to the origin, where the upper left corner of the screen is the origin, and the y-\/coordinate is the upper left corner of the screen. The value range is \mbox{[}0.\+0,1.\+0\mbox{]}, and the default value is 0. \mbox{\Hypertarget{structagora_1_1rtc_1_1_watermark_ratio_a2ddc444cab8fc6c03d8e91a448e21d39}\label{structagora_1_1rtc_1_1_watermark_ratio_a2ddc444cab8fc6c03d8e91a448e21d39}} 
+\index{agora::rtc::WatermarkRatio@{agora::rtc::WatermarkRatio}!widthRatio@{widthRatio}}
+\index{widthRatio@{widthRatio}!agora::rtc::WatermarkRatio@{agora::rtc::WatermarkRatio}}
+\doxysubsubsection{\texorpdfstring{widthRatio}{widthRatio}}
+{\footnotesize\ttfamily float agora\+::rtc\+::\+Watermark\+Ratio\+::width\+Ratio}
+
+The width of the watermark. The S\+DK calculates the height of the watermark proportionally according to this parameter value to ensure that the enlarged or reduced watermark image is not distorted. The value range is \mbox{[}0,1\mbox{]}, and the default value is 0, which means no watermark is displayed. 

@@ -1,0 +1,23 @@
+\hypertarget{classagora_1_1rtc_1_1_ai_echo_cancellation_extension}{}\doxysection{agora\+::rtc\+::Ai\+Echo\+Cancellation\+Extension Class Reference}
+\label{classagora_1_1rtc_1_1_ai_echo_cancellation_extension}\index{agora::rtc::AiEchoCancellationExtension@{agora::rtc::AiEchoCancellationExtension}}
+Inheritance diagram for agora\+::rtc\+::Ai\+Echo\+Cancellation\+Extension\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_ai_echo_cancellation_extension}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_ai_echo_cancellation_extension_a0d08f32c22493ceb0e46ec52a9f695d4}\label{classagora_1_1rtc_1_1_ai_echo_cancellation_extension_a0d08f32c22493ceb0e46ec52a9f695d4}} 
+virtual int {\bfseries Init} (const char $\ast$weight\+\_\+raw\+\_\+buffer, size\+\_\+t raw\+\_\+buffer\+\_\+bytes)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_ai_echo_cancellation_extension_a47c728f90d384b9247eacaa6da143aef}\label{classagora_1_1rtc_1_1_ai_echo_cancellation_extension_a47c728f90d384b9247eacaa6da143aef}} 
+virtual int {\bfseries Process\+Ai\+Nlp\+Frame} (const float $\ast$linear, const float $\ast$nearin, const float $\ast$far\+\_\+ref, float $\ast$out\+\_\+mask)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_ai_echo_cancellation_extension_ad8adcce3f058126a047d1429dd0acac8}\label{classagora_1_1rtc_1_1_ai_echo_cancellation_extension_ad8adcce3f058126a047d1429dd0acac8}} 
+virtual int {\bfseries Clear\+Hidden\+State} (float scale\+\_\+factor=0.\+0, int clear\+\_\+lpsbuffer\+\_\+nframe=0)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_ai_echo_cancellation_extension_ace44926b5aeadafff7dfc112db881412}\label{classagora_1_1rtc_1_1_ai_echo_cancellation_extension_ace44926b5aeadafff7dfc112db881412}} 
+virtual const char $\ast$ {\bfseries Get\+Lib\+Version} (int mode=0)=0
+\end{DoxyCompactItemize}

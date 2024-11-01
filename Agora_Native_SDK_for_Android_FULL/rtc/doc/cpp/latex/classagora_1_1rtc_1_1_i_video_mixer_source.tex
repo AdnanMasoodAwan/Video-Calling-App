@@ -1,0 +1,228 @@
+\hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source}{}\doxysection{agora\+::rtc\+::I\+Video\+Mixer\+Source Class Reference}
+\label{classagora_1_1rtc_1_1_i_video_mixer_source}\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Video\+Mixer\+Source.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Video\+Mixer\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_video_mixer_source}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_ae40451b2417642d1bf63f5420b858507}{add\+Video\+Track}} (const char $\ast$id, \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track}{I\+Video\+Track}} $>$ track, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_add4230742e8c247bfcd195d2c9eb716f}{remove\+Video\+Track}} (const char $\ast$id, \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track}{I\+Video\+Track}} $>$ track, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_ac826c24aacb08b50da12a8a92f232749}{set\+Stream\+Layout}} (const char $\ast$id, const \mbox{\hyperlink{structagora_1_1rtc_1_1_mixer_layout_config}{Mixer\+Layout\+Config}} \&config, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_aaf31620d98bffdf1176f619f81f3e718}{del\+Stream\+Layout}} (const char $\ast$id, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_a5aaf3b865e223b598bedcbf3f2bebf1e}{add\+Image\+Source}} (const char $\ast$id, const \mbox{\hyperlink{structagora_1_1rtc_1_1_mixer_layout_config}{Mixer\+Layout\+Config}} \&config, Image\+Type type=k\+Png, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_a52c0f2b52ba27f6762337364963b3464}{del\+Image\+Source}} (const char $\ast$id, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_a29726accf5b89238abda9122fd598188}{clear\+Layout}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_a36f13e12798900ee54243f86478da9f6}{refresh}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_aed51f2730614bda9514d312b103dbce8}{set\+Background}} (uint32\+\_\+t width, uint32\+\_\+t height, int fps, uint32\+\_\+t color\+\_\+argb=0, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_a2aa3311b08c7f47fe139633a634c6a53}{set\+Background}} (uint32\+\_\+t width, uint32\+\_\+t height, int fps, const char $\ast$url, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_ac8206ba62fc73ea5898f267ed7c0b87b}{set\+Rotation}} (uint8\+\_\+t rotation, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_a7d3864a698467757c9185f06deb6877e}{get\+Avg\+Mixer\+Delay}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source_a65bba940e76e9e02ea96165711ad160e}{set\+Master\+Clock\+Source}} (const char $\ast$id=N\+U\+LL, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source}{I\+Video\+Mixer\+Source}} class abstracts a multi-\/in-\/multi-\/out video source which receives video streams from multiple local or remote video tracks and generate mixed video stream in user defined output format. When only one video track is added to the mixer, it simply forwards the incoming video frames to its sinks. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_ae40451b2417642d1bf63f5420b858507}\label{classagora_1_1rtc_1_1_i_video_mixer_source_ae40451b2417642d1bf63f5420b858507}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!addVideoTrack@{addVideoTrack}}
+\index{addVideoTrack@{addVideoTrack}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{addVideoTrack()}{addVideoTrack()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::add\+Video\+Track (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track}{I\+Video\+Track}} $>$}]{track,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Add a video track for mixing. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique id of the stream. \\
+\hline
+{\em track} & The instance of the video track that you want mixer to receive its video stream. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_add4230742e8c247bfcd195d2c9eb716f}\label{classagora_1_1rtc_1_1_i_video_mixer_source_add4230742e8c247bfcd195d2c9eb716f}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!removeVideoTrack@{removeVideoTrack}}
+\index{removeVideoTrack@{removeVideoTrack}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{removeVideoTrack()}{removeVideoTrack()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::remove\+Video\+Track (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track}{I\+Video\+Track}} $>$}]{track,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Remove the video track. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique id of the stream. \\
+\hline
+{\em track} & The instance of the video track that you want to remove from the mixer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_ac826c24aacb08b50da12a8a92f232749}\label{classagora_1_1rtc_1_1_i_video_mixer_source_ac826c24aacb08b50da12a8a92f232749}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!setStreamLayout@{setStreamLayout}}
+\index{setStreamLayout@{setStreamLayout}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{setStreamLayout()}{setStreamLayout()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::set\+Stream\+Layout (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_mixer_layout_config}{Mixer\+Layout\+Config}} \&}]{config,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Configures the layout of video frames comming from a specific track (indicated by uid) on the mixer canvas. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique id of the stream. \\
+\hline
+{\em config} & The layout configuration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_aaf31620d98bffdf1176f619f81f3e718}\label{classagora_1_1rtc_1_1_i_video_mixer_source_aaf31620d98bffdf1176f619f81f3e718}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!delStreamLayout@{delStreamLayout}}
+\index{delStreamLayout@{delStreamLayout}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{delStreamLayout()}{delStreamLayout()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::del\+Stream\+Layout (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Remove the user layout on the mixer canvas 
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique id of the stream. \\
+\hline
+{\em uid} & The uid of the stream. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_a5aaf3b865e223b598bedcbf3f2bebf1e}\label{classagora_1_1rtc_1_1_i_video_mixer_source_a5aaf3b865e223b598bedcbf3f2bebf1e}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!addImageSource@{addImageSource}}
+\index{addImageSource@{addImageSource}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{addImageSource()}{addImageSource()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::add\+Image\+Source (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_mixer_layout_config}{Mixer\+Layout\+Config}} \&}]{config,  }\item[{Image\+Type}]{type = {\ttfamily kPng},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Add a image source to the mixer with its layout configuration on the mixer canvas. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique id of the image. \\
+\hline
+{\em config} & The layout configuration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_a52c0f2b52ba27f6762337364963b3464}\label{classagora_1_1rtc_1_1_i_video_mixer_source_a52c0f2b52ba27f6762337364963b3464}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!delImageSource@{delImageSource}}
+\index{delImageSource@{delImageSource}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{delImageSource()}{delImageSource()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::del\+Image\+Source (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Delete a image source to the mixer. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique id of the image. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_a29726accf5b89238abda9122fd598188}\label{classagora_1_1rtc_1_1_i_video_mixer_source_a29726accf5b89238abda9122fd598188}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!clearLayout@{clearLayout}}
+\index{clearLayout@{clearLayout}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{clearLayout()}{clearLayout()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::clear\+Layout (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Clear all the layout settings set previously \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_a36f13e12798900ee54243f86478da9f6}\label{classagora_1_1rtc_1_1_i_video_mixer_source_a36f13e12798900ee54243f86478da9f6}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!refresh@{refresh}}
+\index{refresh@{refresh}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::refresh (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Refresh the user layout on the mixer canvas \begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_aed51f2730614bda9514d312b103dbce8}\label{classagora_1_1rtc_1_1_i_video_mixer_source_aed51f2730614bda9514d312b103dbce8}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{setBackground()}{setBackground()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::set\+Background (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{height,  }\item[{int}]{fps,  }\item[{uint32\+\_\+t}]{color\+\_\+argb = {\ttfamily 0},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set the mixer canvas background to override the default configuration 
+\begin{DoxyParams}{Parameters}
+{\em width} & width of the canvas \\
+\hline
+{\em height} & height of the canvas \\
+\hline
+{\em fps} & fps of the mixed video stream \\
+\hline
+{\em color\+\_\+argb} & mixer canvas background color in argb \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_a2aa3311b08c7f47fe139633a634c6a53}\label{classagora_1_1rtc_1_1_i_video_mixer_source_a2aa3311b08c7f47fe139633a634c6a53}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{setBackground()}{setBackground()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::set\+Background (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{height,  }\item[{int}]{fps,  }\item[{const char $\ast$}]{url,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set the mixer canvas background to override the default configuration 
+\begin{DoxyParams}{Parameters}
+{\em width} & width of the canvas \\
+\hline
+{\em height} & height of the canvas \\
+\hline
+{\em fps} & fps of the mixed video stream \\
+\hline
+{\em url} & U\+RL of the canvas background image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_ac8206ba62fc73ea5898f267ed7c0b87b}\label{classagora_1_1rtc_1_1_i_video_mixer_source_ac8206ba62fc73ea5898f267ed7c0b87b}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::set\+Rotation (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{rotation,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set the rotation of the mixed video stream 
+\begin{DoxyParams}{Parameters}
+{\em rotation\+:0\+:none,1\+:90°,2\+:180°,3\+:270°} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_a7d3864a698467757c9185f06deb6877e}\label{classagora_1_1rtc_1_1_i_video_mixer_source_a7d3864a698467757c9185f06deb6877e}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!getAvgMixerDelay@{getAvgMixerDelay}}
+\index{getAvgMixerDelay@{getAvgMixerDelay}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{getAvgMixerDelay()}{getAvgMixerDelay()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::get\+Avg\+Mixer\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get the average delay in ms introduced by the mixer module, which includes the average mixing delay plus the encoder delay. \begin{DoxyReturn}{Returns}
+delay in ms 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_mixer_source_a65bba940e76e9e02ea96165711ad160e}\label{classagora_1_1rtc_1_1_i_video_mixer_source_a65bba940e76e9e02ea96165711ad160e}} 
+\index{agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}!setMasterClockSource@{setMasterClockSource}}
+\index{setMasterClockSource@{setMasterClockSource}!agora::rtc::IVideoMixerSource@{agora::rtc::IVideoMixerSource}}
+\doxysubsubsection{\texorpdfstring{setMasterClockSource()}{setMasterClockSource()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Mixer\+Source\+::set\+Master\+Clock\+Source (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id = {\ttfamily NULL},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set the master clock source for mixed video frame. The master clock source serves as the reference clock for audio/video synchronization after mixing. \begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}

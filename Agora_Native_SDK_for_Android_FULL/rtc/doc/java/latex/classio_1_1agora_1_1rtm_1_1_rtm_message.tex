@@ -1,0 +1,56 @@
+\hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_message}{}\doxysection{io.\+agora.\+rtm.\+Rtm\+Message Class Reference}
+\label{classio_1_1agora_1_1rtm_1_1_rtm_message}\index{io.agora.rtm.RtmMessage@{io.agora.rtm.RtmMessage}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_message_a231d46ce0aa1eccc77d05041366bdf81}{get\+Data}} ()
+\item 
+\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_message_type}{Rtm\+Message\+Type}} \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_message_ae8615d4910232f27c10dadf3da0b9c8d}{get\+Type}} ()
+\item 
+\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_message_ab9e214e2815a55549730c1d266edea99}{Rtm\+Message}} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_message_a3bf47ddf0200ed00f870f27c732a665a}\label{classio_1_1agora_1_1rtm_1_1_rtm_message_a3bf47ddf0200ed00f870f27c732a665a}} 
+{\bfseries Rtm\+Message} (byte\mbox{[}$\,$\mbox{]} data, int type)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_message_a7f6860f25b1a673c4d92a4fe4bc573b9}\label{classio_1_1agora_1_1rtm_1_1_rtm_message_a7f6860f25b1a673c4d92a4fe4bc573b9}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_message_ab9e214e2815a55549730c1d266edea99}\label{classio_1_1agora_1_1rtm_1_1_rtm_message_ab9e214e2815a55549730c1d266edea99}} 
+\index{io.agora.rtm.RtmMessage@{io.agora.rtm.RtmMessage}!RtmMessage@{RtmMessage}}
+\index{RtmMessage@{RtmMessage}!io.agora.rtm.RtmMessage@{io.agora.rtm.RtmMessage}}
+\doxysubsubsection{\texorpdfstring{RtmMessage()}{RtmMessage()}}
+{\footnotesize\ttfamily io.\+agora.\+rtm.\+Rtm\+Message.\+Rtm\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a new instance of
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_message_ab9e214e2815a55549730c1d266edea99}{RtmMessage}} }
+\end{DoxyCode}
+ with default parameters. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_message_a231d46ce0aa1eccc77d05041366bdf81}\label{classio_1_1agora_1_1rtm_1_1_rtm_message_a231d46ce0aa1eccc77d05041366bdf81}} 
+\index{io.agora.rtm.RtmMessage@{io.agora.rtm.RtmMessage}!getData@{getData}}
+\index{getData@{getData}!io.agora.rtm.RtmMessage@{io.agora.rtm.RtmMessage}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily Object io.\+agora.\+rtm.\+Rtm\+Message.\+get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieves the payload of the message.
+
+Note\+: If the message payload is a string(you can get message type by 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_message_ae8615d4910232f27c10dadf3da0b9c8d}{getType}}() }
+\end{DoxyCode}
+ ), will return a string. If the message payload is binary, will return a byte array. \mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_message_ae8615d4910232f27c10dadf3da0b9c8d}\label{classio_1_1agora_1_1rtm_1_1_rtm_message_ae8615d4910232f27c10dadf3da0b9c8d}} 
+\index{io.agora.rtm.RtmMessage@{io.agora.rtm.RtmMessage}!getType@{getType}}
+\index{getType@{getType}!io.agora.rtm.RtmMessage@{io.agora.rtm.RtmMessage}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_message_type}{Rtm\+Message\+Type}} io.\+agora.\+rtm.\+Rtm\+Message.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieves the type of the message.
+
+\begin{DoxyReturn}{Returns}
+The type of the message, see \mbox{\hyperlink{}{Rtm\+Message\+Type}} 
+\end{DoxyReturn}

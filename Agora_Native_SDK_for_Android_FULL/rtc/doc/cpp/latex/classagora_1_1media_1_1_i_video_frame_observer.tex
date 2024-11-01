@@ -1,0 +1,299 @@
+\hypertarget{classagora_1_1media_1_1_i_video_frame_observer}{}\doxysection{agora\+::media\+::I\+Video\+Frame\+Observer Class Reference}
+\label{classagora_1_1media_1_1_i_video_frame_observer}\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Base.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65}{V\+I\+D\+E\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+DE}} \{ \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65ac0338fc908faa61cc99587c6381d5829}{P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+O\+N\+LY}}, 
+\mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65ae90137a3e8b393f7f6b7ab8488d854a8}{P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+TE}}
+ \}
+\item 
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_ae60399181e83d7e93ad759b2ab549b97}\label{classagora_1_1media_1_1_i_video_frame_observer_ae60399181e83d7e93ad759b2ab549b97}} 
+typedef \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{media\+::base\+::\+Video\+Frame}} {\bfseries Video\+Frame}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_ace896f8111e36f690d0132a7a5c2c603}{on\+Capture\+Video\+Frame}} (agora\+::rtc\+::\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source\+Type, \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} \&video\+Frame)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_aabbf70d93e52f748b9c03d90a73fe65e}{on\+Pre\+Encode\+Video\+Frame}} (agora\+::rtc\+::\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source\+Type, \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} \&video\+Frame)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_a0b207e2905a273073f5b4592fa579136}{on\+Media\+Player\+Video\+Frame}} (\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} \&video\+Frame, int media\+Player\+Id)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_a55a50434efe819a3dcb74ffd0799b847}{on\+Render\+Video\+Frame}} (const char $\ast$channel\+Id, rtc\+::uid\+\_\+t remote\+Uid, \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} \&video\+Frame)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_ad4c50b6e2052a1b656fdca43439c55cd}\label{classagora_1_1media_1_1_i_video_frame_observer_ad4c50b6e2052a1b656fdca43439c55cd}} 
+virtual bool {\bfseries on\+Transcoded\+Video\+Frame} (\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} \&video\+Frame)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65}{V\+I\+D\+E\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+DE}} \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_af147400f7477416724546852894bb7da}{get\+Video\+Frame\+Process\+Mode}} ()
+\item 
+virtual base\+::\+V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+F\+O\+R\+M\+AT \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_abce7f145af45f90bfd8c9b0211c875db}{get\+Video\+Format\+Preference}} ()
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_afd5bb439a9951a83f08d8c0a81468dcb}{get\+Rotation\+Applied}} ()
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_afc5cce81bf1c008e9335a0423ca45991}{get\+Mirror\+Applied}} ()
+\item 
+virtual uint32\+\_\+t \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_ad4c174389264630ffb1b2d24c6030013}{get\+Observed\+Frame\+Position}} ()
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_a2d6db5dbead74855002812bac087c9e2}{is\+External}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer}{I\+Video\+Frame\+Observer}} class. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65}\label{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65}} 
+\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!VIDEO\_FRAME\_PROCESS\_MODE@{VIDEO\_FRAME\_PROCESS\_MODE}}
+\index{VIDEO\_FRAME\_PROCESS\_MODE@{VIDEO\_FRAME\_PROCESS\_MODE}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{VIDEO\_FRAME\_PROCESS\_MODE}{VIDEO\_FRAME\_PROCESS\_MODE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65}{agora\+::media\+::\+I\+Video\+Frame\+Observer\+::\+V\+I\+D\+E\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+DE}}}
+
+The process mode of the video frame\+: \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PROCESS\_MODE\_READ\_ONLY@{PROCESS\_MODE\_READ\_ONLY}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!PROCESS\_MODE\_READ\_ONLY@{PROCESS\_MODE\_READ\_ONLY}}}\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65ac0338fc908faa61cc99587c6381d5829}\label{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65ac0338fc908faa61cc99587c6381d5829}} 
+P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+O\+N\+LY&Read-\/only mode.
+
+In this mode, you do not modify the video frame. The video frame observer is a renderer. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PROCESS\_MODE\_READ\_WRITE@{PROCESS\_MODE\_READ\_WRITE}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!PROCESS\_MODE\_READ\_WRITE@{PROCESS\_MODE\_READ\_WRITE}}}\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65ae90137a3e8b393f7f6b7ab8488d854a8}\label{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65ae90137a3e8b393f7f6b7ab8488d854a8}} 
+P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+TE&Read and write mode.
+
+In this mode, you modify the video frame. The video frame observer is a video filter. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_ace896f8111e36f690d0132a7a5c2c603}\label{classagora_1_1media_1_1_i_video_frame_observer_ace896f8111e36f690d0132a7a5c2c603}} 
+\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!onCaptureVideoFrame@{onCaptureVideoFrame}}
+\index{onCaptureVideoFrame@{onCaptureVideoFrame}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onCaptureVideoFrame()}{onCaptureVideoFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Video\+Frame\+Observer\+::on\+Capture\+Video\+Frame (\begin{DoxyParamCaption}\item[{agora\+::rtc\+::\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE}]{source\+Type,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} \&}]{video\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs each time the S\+DK receives a video frame captured by the local camera.
+
+After you successfully register the video frame observer, the S\+DK triggers this callback each time a video frame is received. In this callback, you can get the video data captured by the local camera. You can then pre-\/process the data according to your scenarios.
+
+After pre-\/processing, you can send the processed video data back to the S\+DK by setting the {\ttfamily video\+Frame} parameter in this callback.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item If you get the video data in R\+G\+BA color encoding format, Agora does not support using this callback to send the processed data in R\+G\+BA color encoding format back to the S\+DK.
+\item The video data that this callback gets has not been pre-\/processed, such as watermarking, cropping content, rotating, or image enhancement.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Frame} & A pointer to the video frame\+: Video\+Frame \\
+\hline
+{\em source\+Type} & source type of video frame. See \#\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Determines whether to ignore the current video frame if the pre-\/processing fails\+:
+\begin{DoxyItemize}
+\item true\+: Do not ignore.
+\item false\+: Ignore, in which case this method does not sent the current video frame to the S\+DK. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_aabbf70d93e52f748b9c03d90a73fe65e}\label{classagora_1_1media_1_1_i_video_frame_observer_aabbf70d93e52f748b9c03d90a73fe65e}} 
+\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!onPreEncodeVideoFrame@{onPreEncodeVideoFrame}}
+\index{onPreEncodeVideoFrame@{onPreEncodeVideoFrame}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onPreEncodeVideoFrame()}{onPreEncodeVideoFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Video\+Frame\+Observer\+::on\+Pre\+Encode\+Video\+Frame (\begin{DoxyParamCaption}\item[{agora\+::rtc\+::\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE}]{source\+Type,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} \&}]{video\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs each time the S\+DK receives a video frame before encoding.
+
+After you successfully register the video frame observer, the S\+DK triggers this callback each time when it receives a video frame. In this callback, you can get the video data before encoding. You can then process the data according to your particular scenarios.
+
+After processing, you can send the processed video data back to the S\+DK by setting the {\ttfamily video\+Frame} parameter in this callback.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item To get the video data captured from the second screen before encoding, you need to set (1 $<$$<$ 2) as a frame position through {\ttfamily get\+Observed\+Frame\+Position}.
+\item The video data that this callback gets has been pre-\/processed, such as watermarking, cropping content, rotating, or image enhancement.
+\item This callback does not support sending processed R\+G\+BA video data back to the S\+DK.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Frame} & A pointer to the video frame\+: Video\+Frame \\
+\hline
+{\em source\+Type} & source type of video frame. See \#\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Determines whether to ignore the current video frame if the pre-\/processing fails\+:
+\begin{DoxyItemize}
+\item true\+: Do not ignore.
+\item false\+: Ignore, in which case this method does not sent the current video frame to the S\+DK. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_a0b207e2905a273073f5b4592fa579136}\label{classagora_1_1media_1_1_i_video_frame_observer_a0b207e2905a273073f5b4592fa579136}} 
+\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!onMediaPlayerVideoFrame@{onMediaPlayerVideoFrame}}
+\index{onMediaPlayerVideoFrame@{onMediaPlayerVideoFrame}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onMediaPlayerVideoFrame()}{onMediaPlayerVideoFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Video\+Frame\+Observer\+::on\+Media\+Player\+Video\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} \&}]{video\+Frame,  }\item[{int}]{media\+Player\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs each time the S\+DK receives a video frame decoded by the Media\+Player.
+
+After you successfully register the video frame observer, the S\+DK triggers this callback each time a video frame is decoded. In this callback, you can get the video data decoded by the Media\+Player. You can then pre-\/process the data according to your scenarios.
+
+After pre-\/processing, you can send the processed video data back to the S\+DK by setting the {\ttfamily video\+Frame} parameter in this callback.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item This callback will not be affected by the return values of \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_af147400f7477416724546852894bb7da}{get\+Video\+Frame\+Process\+Mode}}, \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_afd5bb439a9951a83f08d8c0a81468dcb}{get\+Rotation\+Applied}}, \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_afc5cce81bf1c008e9335a0423ca45991}{get\+Mirror\+Applied}}, \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_ad4c174389264630ffb1b2d24c6030013}{get\+Observed\+Frame\+Position}}.
+\item On Android, this callback is not affected by the return value of \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_abce7f145af45f90bfd8c9b0211c875db}{get\+Video\+Format\+Preference}}
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Frame} & A pointer to the video frame\+: Video\+Frame \\
+\hline
+{\em media\+Player\+Id} & ID of the media\+Player. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Determines whether to ignore the current video frame if the pre-\/processing fails\+:
+\begin{DoxyItemize}
+\item true\+: Do not ignore.
+\item false\+: Ignore, in which case this method does not sent the current video frame to the S\+DK. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_a55a50434efe819a3dcb74ffd0799b847}\label{classagora_1_1media_1_1_i_video_frame_observer_a55a50434efe819a3dcb74ffd0799b847}} 
+\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!onRenderVideoFrame@{onRenderVideoFrame}}
+\index{onRenderVideoFrame@{onRenderVideoFrame}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onRenderVideoFrame()}{onRenderVideoFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Video\+Frame\+Observer\+::on\+Render\+Video\+Frame (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel\+Id,  }\item[{rtc\+::uid\+\_\+t}]{remote\+Uid,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} \&}]{video\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs each time the S\+DK receives a video frame sent by the remote user.
+
+After you successfully register the video frame observer, the S\+DK triggers this callback each time a video frame is received. In this callback, you can get the video data sent by the remote user. You can then post-\/process the data according to your scenarios.
+
+After post-\/processing, you can send the processed data back to the S\+DK by setting the {\ttfamily video\+Frame} parameter in this callback.
+
+\begin{DoxyNote}{Note}
+This callback does not support sending processed R\+G\+BA video data back to the S\+DK.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name \\
+\hline
+{\em remote\+Uid} & ID of the remote user who sends the current video frame. \\
+\hline
+{\em video\+Frame} & A pointer to the video frame\+: Video\+Frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Determines whether to ignore the current video frame if the post-\/processing fails\+:
+\begin{DoxyItemize}
+\item true\+: Do not ignore.
+\item false\+: Ignore, in which case this method does not sent the current video frame to the S\+DK. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_af147400f7477416724546852894bb7da}\label{classagora_1_1media_1_1_i_video_frame_observer_af147400f7477416724546852894bb7da}} 
+\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!getVideoFrameProcessMode@{getVideoFrameProcessMode}}
+\index{getVideoFrameProcessMode@{getVideoFrameProcessMode}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getVideoFrameProcessMode()}{getVideoFrameProcessMode()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1media_1_1_i_video_frame_observer_aa0a690ef35d3813937a396d39ef74e65}{V\+I\+D\+E\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+DE}} agora\+::media\+::\+I\+Video\+Frame\+Observer\+::get\+Video\+Frame\+Process\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs each time the S\+DK receives a video frame and prompts you to set the process mode of the video frame.
+
+After you successfully register the video frame observer, the S\+DK triggers this callback each time it receives a video frame. You need to set your preferred process mode in the return value of this callback. \begin{DoxyReturn}{Returns}
+V\+I\+D\+E\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+M\+O\+DE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_abce7f145af45f90bfd8c9b0211c875db}\label{classagora_1_1media_1_1_i_video_frame_observer_abce7f145af45f90bfd8c9b0211c875db}} 
+\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!getVideoFormatPreference@{getVideoFormatPreference}}
+\index{getVideoFormatPreference@{getVideoFormatPreference}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getVideoFormatPreference()}{getVideoFormatPreference()}}
+{\footnotesize\ttfamily virtual base\+::\+V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+F\+O\+R\+M\+AT agora\+::media\+::\+I\+Video\+Frame\+Observer\+::get\+Video\+Format\+Preference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the format of the raw video data output by the S\+DK.
+
+If you want to get raw video data in a color encoding format other than Y\+UV 420, register this callback when calling {\ttfamily register\+Video\+Frame\+Observer}. After you successfully register the video frame observer, the S\+DK triggers this callback each time it receives a video frame. You need to set your preferred video data in the return value of this callback.
+
+\begin{DoxyNote}{Note}
+If you want the video captured by the sender to be the original format, set the original video data format to V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT in the return value. On different platforms, the original video pixel format is also different, for the actual video pixel format, see {\ttfamily Video\+Frame}.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Sets the video format. See V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+F\+O\+R\+M\+AT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_afd5bb439a9951a83f08d8c0a81468dcb}\label{classagora_1_1media_1_1_i_video_frame_observer_afd5bb439a9951a83f08d8c0a81468dcb}} 
+\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!getRotationApplied@{getRotationApplied}}
+\index{getRotationApplied@{getRotationApplied}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getRotationApplied()}{getRotationApplied()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Video\+Frame\+Observer\+::get\+Rotation\+Applied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs each time the S\+DK receives a video frame, and prompts you whether to rotate the captured video.
+
+If you want to rotate the captured video according to the rotation member in the {\ttfamily Video\+Frame} class, register this callback by calling {\ttfamily register\+Video\+Frame\+Observer}. After you successfully register the video frame observer, the S\+DK triggers this callback each time it receives a video frame. You need to set whether to rotate the video frame in the return value of this callback.
+
+\begin{DoxyNote}{Note}
+This function only supports video data in R\+G\+BA or Y\+U\+V420.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Determines whether to rotate.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Rotate the captured video.
+\item {\ttfamily false}\+: (Default) Do not rotate the captured video. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_afc5cce81bf1c008e9335a0423ca45991}\label{classagora_1_1media_1_1_i_video_frame_observer_afc5cce81bf1c008e9335a0423ca45991}} 
+\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!getMirrorApplied@{getMirrorApplied}}
+\index{getMirrorApplied@{getMirrorApplied}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getMirrorApplied()}{getMirrorApplied()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Video\+Frame\+Observer\+::get\+Mirror\+Applied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs each time the S\+DK receives a video frame and prompts you whether or not to mirror the captured video.
+
+If the video data you want to obtain is a mirror image of the original video, you need to register this callback when calling {\ttfamily register\+Video\+Frame\+Observer}. After you successfully register the video frame observer, the S\+DK triggers this callback each time it receives a video frame. You need to set whether or not to mirror the video frame in the return value of this callback.
+
+\begin{DoxyNote}{Note}
+This function only supports video data in R\+G\+BA and Y\+U\+V420 formats.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Determines whether to mirror.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Mirror the captured video.
+\item {\ttfamily false}\+: (Default) Do not mirror the captured video. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_ad4c174389264630ffb1b2d24c6030013}\label{classagora_1_1media_1_1_i_video_frame_observer_ad4c174389264630ffb1b2d24c6030013}} 
+\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!getObservedFramePosition@{getObservedFramePosition}}
+\index{getObservedFramePosition@{getObservedFramePosition}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getObservedFramePosition()}{getObservedFramePosition()}}
+{\footnotesize\ttfamily virtual uint32\+\_\+t agora\+::media\+::\+I\+Video\+Frame\+Observer\+::get\+Observed\+Frame\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the frame position for the video observer.
+
+After you successfully register the video observer, the S\+DK triggers this callback each time it receives a video frame. You can determine which position to observe by setting the return value. The S\+DK provides 3 positions for observer. Each position corresponds to a callback function\+:
+
+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+S\+T\+\_\+\+C\+A\+P\+T\+U\+R\+E\+R(1 $<$$<$ 0)\+: The position after capturing the video data, which corresponds to the on\+Capture\+Video\+Frame callback. P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+R\+E\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R(1 $<$$<$ 1)\+: The position before receiving the remote video data, which corresponds to the on\+Render\+Video\+Frame callback. P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+R\+E\+\_\+\+E\+N\+C\+O\+D\+E\+R(1 $<$$<$ 2)\+: The position before encoding the video data, which corresponds to the on\+Pre\+Encode\+Video\+Frame callback.
+
+To observe multiple frame positions, use \textquotesingle{}$\vert$\textquotesingle{} (the OR operator). This callback observes P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+S\+T\+\_\+\+C\+A\+P\+T\+U\+R\+E\+R(1 $<$$<$ 0) and P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+R\+E\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R(1 $<$$<$ 1) by default. To conserve the system consumption, you can reduce the number of frame positions that you want to observe.
+
+\begin{DoxyReturn}{Returns}
+A bit mask that controls the frame position of the video observer\+: V\+I\+D\+E\+O\+\_\+\+O\+B\+S\+E\+R\+V\+E\+R\+\_\+\+P\+O\+S\+I\+T\+I\+ON. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_frame_observer_a2d6db5dbead74855002812bac087c9e2}\label{classagora_1_1media_1_1_i_video_frame_observer_a2d6db5dbead74855002812bac087c9e2}} 
+\index{agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}!isExternal@{isExternal}}
+\index{isExternal@{isExternal}!agora::media::IVideoFrameObserver@{agora::media::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{isExternal()}{isExternal()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Video\+Frame\+Observer\+::is\+External (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Indicate if the observer is for internal use. Note\+: Never override this function \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: the observer is for external use
+\item false\+: the observer is for internal use 
+\end{DoxyItemize}
+\end{DoxyReturn}

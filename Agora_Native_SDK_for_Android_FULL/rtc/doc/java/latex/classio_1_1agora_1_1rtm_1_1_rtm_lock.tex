@@ -1,0 +1,167 @@
+\hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_lock}{}\doxysection{io.\+agora.\+rtm.\+Rtm\+Lock Class Reference}
+\label{classio_1_1agora_1_1rtm_1_1_rtm_lock}\index{io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_lock_a1b5717524f0702afb92b2d981f62ba1d}{set\+Lock}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}} channel\+Type, String lock\+Name, long ttl, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_lock_a76d84975124532bc0d7c14132baf3978}{get\+Locks}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}} channel\+Type, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_lock_detail}{Lock\+Detail}} $>$$>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_lock_a5aae6e540a908c6efa6c0257afd05324}{remove\+Lock}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}} channel\+Type, String lock\+Name, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_lock_a9d316a84d6c9af5455df3a7686785aa9}{acquire\+Lock}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}} channel\+Type, String lock\+Name, boolean retry, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_lock_a47db60dff7ff1234e15af00798c5a251}{release\+Lock}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}} channel\+Type, String lock\+Name, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_lock_afa6c90e0a845f7da10625049265fb82a}{revoke\+Lock}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}} channel\+Type, String lock\+Name, String owner, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_lock}{Rtm\+Lock}} class.
+
+This class provides the rtm lock methods that can be invoked by your app. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_lock_a1b5717524f0702afb92b2d981f62ba1d}\label{classio_1_1agora_1_1rtm_1_1_rtm_lock_a1b5717524f0702afb92b2d981f62ba1d}} 
+\index{io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}!setLock@{setLock}}
+\index{setLock@{setLock}!io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}}
+\doxysubsubsection{\texorpdfstring{setLock()}{setLock()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Lock.\+set\+Lock (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}}}]{channel\+Type,  }\item[{String}]{lock\+Name,  }\item[{long}]{ttl,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+sets a lock.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em channel\+Type} & The type of the channel. \\
+\hline
+{\em lock\+Name} & The name of the lock. \\
+\hline
+{\em ttl} & The lock ttl. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_lock_a76d84975124532bc0d7c14132baf3978}\label{classio_1_1agora_1_1rtm_1_1_rtm_lock_a76d84975124532bc0d7c14132baf3978}} 
+\index{io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}!getLocks@{getLocks}}
+\index{getLocks@{getLocks}!io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}}
+\doxysubsubsection{\texorpdfstring{getLocks()}{getLocks()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Lock.\+get\+Locks (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}}}]{channel\+Type,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_lock_detail}{Lock\+Detail}} $>$$>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+gets locks in the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em channel\+Type} & The type of the channel. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_lock_a5aae6e540a908c6efa6c0257afd05324}\label{classio_1_1agora_1_1rtm_1_1_rtm_lock_a5aae6e540a908c6efa6c0257afd05324}} 
+\index{io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}!removeLock@{removeLock}}
+\index{removeLock@{removeLock}!io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}}
+\doxysubsubsection{\texorpdfstring{removeLock()}{removeLock()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Lock.\+remove\+Lock (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}}}]{channel\+Type,  }\item[{String}]{lock\+Name,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+removes a lock.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em channel\+Type} & The type of the channel. \\
+\hline
+{\em lock\+Name} & The name of the lock. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_lock_a9d316a84d6c9af5455df3a7686785aa9}\label{classio_1_1agora_1_1rtm_1_1_rtm_lock_a9d316a84d6c9af5455df3a7686785aa9}} 
+\index{io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}!acquireLock@{acquireLock}}
+\index{acquireLock@{acquireLock}!io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}}
+\doxysubsubsection{\texorpdfstring{acquireLock()}{acquireLock()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Lock.\+acquire\+Lock (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}}}]{channel\+Type,  }\item[{String}]{lock\+Name,  }\item[{boolean}]{retry,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+acquires a lock
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em channel\+Type} & The type of the channel. \\
+\hline
+{\em lock\+Name} & The name of the lock. \\
+\hline
+{\em retry} & Whether to automatically retry when acquires lock failed \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_lock_a47db60dff7ff1234e15af00798c5a251}\label{classio_1_1agora_1_1rtm_1_1_rtm_lock_a47db60dff7ff1234e15af00798c5a251}} 
+\index{io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}!releaseLock@{releaseLock}}
+\index{releaseLock@{releaseLock}!io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}}
+\doxysubsubsection{\texorpdfstring{releaseLock()}{releaseLock()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Lock.\+release\+Lock (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}}}]{channel\+Type,  }\item[{String}]{lock\+Name,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+releases a lock
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em channel\+Type} & The type of the channel. \\
+\hline
+{\em lock\+Name} & The name of the lock. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_lock_afa6c90e0a845f7da10625049265fb82a}\label{classio_1_1agora_1_1rtm_1_1_rtm_lock_afa6c90e0a845f7da10625049265fb82a}} 
+\index{io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}!revokeLock@{revokeLock}}
+\index{revokeLock@{revokeLock}!io.agora.rtm.RtmLock@{io.agora.rtm.RtmLock}}
+\doxysubsubsection{\texorpdfstring{revokeLock()}{revokeLock()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Lock.\+revoke\+Lock (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}}}]{channel\+Type,  }\item[{String}]{lock\+Name,  }\item[{String}]{owner,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+disables a lock
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em channel\+Type} & The type of the channel. \\
+\hline
+{\em lock\+Name} & The name of the lock. \\
+\hline
+{\em owner} & The lock owner. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}

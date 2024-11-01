@@ -1,0 +1,49 @@
+\hypertarget{classagora_1_1_ref_counted_object}{}\doxysection{agora\+::Ref\+Counted\+Object$<$ T $>$ Class Template Reference}
+\label{classagora_1_1_ref_counted_object}\index{agora::RefCountedObject$<$ T $>$@{agora::RefCountedObject$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Agora\+Ref\+Counted\+Object.\+h$>$}
+
+Inheritance diagram for agora\+::Ref\+Counted\+Object$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1_ref_counted_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1_ref_counted_object_a54e7e8f0b513586a88a315f7e6b37022}\label{classagora_1_1_ref_counted_object_a54e7e8f0b513586a88a315f7e6b37022}} 
+{\footnotesize template$<$class P0 $>$ }\\{\bfseries Ref\+Counted\+Object} (const P0 \&p0)
+\item 
+\mbox{\Hypertarget{classagora_1_1_ref_counted_object_ac205ebee715ff1f336b7d033b617cd20}\label{classagora_1_1_ref_counted_object_ac205ebee715ff1f336b7d033b617cd20}} 
+virtual void {\bfseries Add\+Ref} () const
+\item 
+\mbox{\Hypertarget{classagora_1_1_ref_counted_object_a100b06b7816bc7eb49840072a93a51ed}\label{classagora_1_1_ref_counted_object_a100b06b7816bc7eb49840072a93a51ed}} 
+virtual agora\+::\+Ref\+Count\+Release\+Status {\bfseries Release} () const
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1_ref_counted_object_a438e247329bc1313678d9373ac1fbeef}{Has\+One\+Ref}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1_ref_counted_object_a4608324af37a715ffcaac8220b5dfc5d}\label{classagora_1_1_ref_counted_object_a4608324af37a715ffcaac8220b5dfc5d}} 
+\mbox{\hyperlink{classagora_1_1_ref_counter}{agora\+::\+Ref\+Counter}} {\bfseries ref\+\_\+count\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class agora\+::\+Ref\+Counted\+Object$<$ T $>$}
+
+Agora sample code for wrapping a class that needs to inherit from \mbox{\hyperlink{classagora_1_1_ref_count_interface}{Ref\+Count\+Interface}} in order to be held by \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}} Usage\+: agora\+::agora\+\_\+refptr$<$\+Type\+Name$>$ ptr = new Ref\+Counted\+Object$<$\+Type\+Name$>$(\+Arg1, Arg2, ...); 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1_ref_counted_object_a438e247329bc1313678d9373ac1fbeef}\label{classagora_1_1_ref_counted_object_a438e247329bc1313678d9373ac1fbeef}} 
+\index{agora::RefCountedObject$<$ T $>$@{agora::RefCountedObject$<$ T $>$}!HasOneRef@{HasOneRef}}
+\index{HasOneRef@{HasOneRef}!agora::RefCountedObject$<$ T $>$@{agora::RefCountedObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{HasOneRef()}{HasOneRef()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual bool \mbox{\hyperlink{classagora_1_1_ref_counted_object}{agora\+::\+Ref\+Counted\+Object}}$<$ T $>$\+::Has\+One\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return whether the reference count is one. If the reference count is used in the conventional way, a reference count of 1 implies that the current thread owns the reference and no other thread shares it. This call performs the test for a reference count of one, and performs the memory barrier needed for the owning thread to act on the object, knowing that it has exclusive access to the object. 

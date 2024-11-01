@@ -1,0 +1,107 @@
+\hypertarget{classagora_1_1base_1_1_ntp_time}{}\doxysection{agora\+::base\+::Ntp\+Time Class Reference}
+\label{classagora_1_1base_1_1_ntp_time}\index{agora::base::NtpTime@{agora::base::NtpTime}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_ntp_time_a89309803dc46bd01e9dcdad9a57915f9}\label{classagora_1_1base_1_1_ntp_time_a89309803dc46bd01e9dcdad9a57915f9}} 
+{\bfseries Ntp\+Time} (uint64\+\_\+t ms)
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_ntp_time_a06b8b870232cc3d835f4cccfb64a6d74}\label{classagora_1_1base_1_1_ntp_time_a06b8b870232cc3d835f4cccfb64a6d74}} 
+{\bfseries Ntp\+Time} (uint32\+\_\+t seconds, uint32\+\_\+t fractions)
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_ntp_time_ae23b09a8639706a5df9f39acd36dfe2c}\label{classagora_1_1base_1_1_ntp_time_ae23b09a8639706a5df9f39acd36dfe2c}} 
+{\bfseries operator uint64\+\_\+t} () const
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classagora_1_1base_1_1_ntp_time_abb0338d53f7bd2b1b5bca93610c75f5e}{Ms}} () const
+\item 
+bool \mbox{\hyperlink{classagora_1_1base_1_1_ntp_time_afb46c329ff4a743652e9f88211c42bb7}{Valid}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classagora_1_1base_1_1_ntp_time_af042bb44f9b627e97683da74b537c45e}{To\+Seconds}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classagora_1_1base_1_1_ntp_time_a51d9afd115c2dab8e8ceb46b7ffd7046}{To\+Fractions}} () const
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classagora_1_1base_1_1_ntp_time_ac163fef19802c30a00ef27a49c732df3}{To\+Timestamp}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_ntp_time_a8a2d97fe35cb1dd4ef4ee7d863025c81}\label{classagora_1_1base_1_1_ntp_time_a8a2d97fe35cb1dd4ef4ee7d863025c81}} 
+static const uint64\+\_\+t {\bfseries ntp\+Frac\+Per\+Second} = 4294967296
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1base_1_1_ntp_time_abb0338d53f7bd2b1b5bca93610c75f5e}\label{classagora_1_1base_1_1_ntp_time_abb0338d53f7bd2b1b5bca93610c75f5e}} 
+\index{agora::base::NtpTime@{agora::base::NtpTime}!Ms@{Ms}}
+\index{Ms@{Ms}!agora::base::NtpTime@{agora::base::NtpTime}}
+\doxysubsubsection{\texorpdfstring{Ms()}{Ms()}}
+{\footnotesize\ttfamily uint64\+\_\+t agora\+::base\+::\+Ntp\+Time\+::\+Ms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the N\+TP time.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The wallclock time which is in milliseconds relative to 0h U\+TC on 1 January 1900. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_ntp_time_afb46c329ff4a743652e9f88211c42bb7}\label{classagora_1_1base_1_1_ntp_time_afb46c329ff4a743652e9f88211c42bb7}} 
+\index{agora::base::NtpTime@{agora::base::NtpTime}!Valid@{Valid}}
+\index{Valid@{Valid}!agora::base::NtpTime@{agora::base::NtpTime}}
+\doxysubsubsection{\texorpdfstring{Valid()}{Valid()}}
+{\footnotesize\ttfamily bool agora\+::base\+::\+Ntp\+Time\+::\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Check that whether the \mbox{\hyperlink{classagora_1_1base_1_1_ntp_time}{Ntp\+Time}} object is valid
+
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: the \mbox{\hyperlink{classagora_1_1base_1_1_ntp_time}{Ntp\+Time}} object is valid.
+\item {\ttfamily false}\+: the \mbox{\hyperlink{classagora_1_1base_1_1_ntp_time}{Ntp\+Time}} object is invalid. 
+\end{DoxyItemize}\mbox{\Hypertarget{classagora_1_1base_1_1_ntp_time_af042bb44f9b627e97683da74b537c45e}\label{classagora_1_1base_1_1_ntp_time_af042bb44f9b627e97683da74b537c45e}} 
+\index{agora::base::NtpTime@{agora::base::NtpTime}!ToSeconds@{ToSeconds}}
+\index{ToSeconds@{ToSeconds}!agora::base::NtpTime@{agora::base::NtpTime}}
+\doxysubsubsection{\texorpdfstring{ToSeconds()}{ToSeconds()}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::base\+::\+Ntp\+Time\+::\+To\+Seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the integer part of the N\+TP timestamp.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item An uint32\+\_\+t value. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_ntp_time_a51d9afd115c2dab8e8ceb46b7ffd7046}\label{classagora_1_1base_1_1_ntp_time_a51d9afd115c2dab8e8ceb46b7ffd7046}} 
+\index{agora::base::NtpTime@{agora::base::NtpTime}!ToFractions@{ToFractions}}
+\index{ToFractions@{ToFractions}!agora::base::NtpTime@{agora::base::NtpTime}}
+\doxysubsubsection{\texorpdfstring{ToFractions()}{ToFractions()}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::base\+::\+Ntp\+Time\+::\+To\+Fractions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the fractional part of the N\+TP timestamp.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item An uint32\+\_\+t value. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_ntp_time_ac163fef19802c30a00ef27a49c732df3}\label{classagora_1_1base_1_1_ntp_time_ac163fef19802c30a00ef27a49c732df3}} 
+\index{agora::base::NtpTime@{agora::base::NtpTime}!ToTimestamp@{ToTimestamp}}
+\index{ToTimestamp@{ToTimestamp}!agora::base::NtpTime@{agora::base::NtpTime}}
+\doxysubsubsection{\texorpdfstring{ToTimestamp()}{ToTimestamp()}}
+{\footnotesize\ttfamily uint64\+\_\+t agora\+::base\+::\+Ntp\+Time\+::\+To\+Timestamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the N\+TP timestamp.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item The full resolution N\+TP timestamp is a 64-\/bit unsigned fixed-\/point number with the integer part in the first 32 bits and the fractional part in the last 32 bits.
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item An uint64\+\_\+t value. 
+\end{DoxyItemize}
+\end{DoxyReturn}

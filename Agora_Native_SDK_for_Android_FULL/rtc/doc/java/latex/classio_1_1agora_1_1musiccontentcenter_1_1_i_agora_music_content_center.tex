@@ -1,0 +1,387 @@
+\hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center}{}\doxysection{io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center Class Reference}
+\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center}\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Music\+Cache\+Status\+Type}
+\item 
+class {\bfseries Music\+Content\+Center\+State\+Reason}
+\item 
+class {\bfseries Preload\+State}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract int \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a1e0e0fc18a9af2ef926b63a90e4d92ae}{initialize}} (\mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_music_content_center_configuration}{Music\+Content\+Center\+Configuration}} configuration)
+\item 
+abstract int \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a2406492da6c0d37305078b8302becffe}{renew\+Token}} (String token)
+\item 
+abstract \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player}{I\+Agora\+Music\+Player}} \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_aa2cc22fcabb0c6c17eb3e9560f3de758}{create\+Music\+Player}} ()
+\item 
+abstract int \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ab2e9dd0e7daac8921f233275cf30a9ff}{destroy\+Music\+Player}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player}{I\+Agora\+Music\+Player}} player)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a325d7e7d9171259c94530f9fa996dbb5}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a325d7e7d9171259c94530f9fa996dbb5}} 
+abstract int {\bfseries register\+Event\+Handler} (\mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler}{I\+Music\+Content\+Center\+Event\+Handler}} event\+Handler)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_abdaf7e58261ec1537f27a6a5f798bee0}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_abdaf7e58261ec1537f27a6a5f798bee0}} 
+abstract int {\bfseries unregister\+Event\+Handler} ()
+\item 
+abstract String \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a60fcd2708feec7e4cd7a3f0024ec73fb}{preload}} (long song\+Code)
+\item 
+abstract int \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a7681c81a454bd8f5b95f6fe223ed6814}{preload}} (long song\+Code, String json\+Option)
+\item 
+abstract int \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a7d996a2fb448d87d07d597d17d097e71}{is\+Preloaded}} (long song\+Code)
+\item 
+abstract String \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a7946c723e44aa1cb78b9c0e1d3bde4ba}{get\+Music\+Charts}} ()
+\item 
+String \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a696ed7ee269dd417fdbba6a6b946b7b7}{get\+Music\+Collection\+By\+Music\+Chart\+Id}} (int music\+Chart\+Id, int page, int page\+Size)
+\item 
+abstract String \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a35a693fb7d3722036216b944795612b1}{get\+Music\+Collection\+By\+Music\+Chart\+Id}} (int music\+Chart\+Id, int page, int page\+Size, String json\+Option)
+\item 
+String \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_afd68aa8f17f2b921174f77e4773d0a88}{search\+Music}} (String keyword, int page, int page\+Size)
+\item 
+abstract String \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a8eab3f451b756670474727bcace7a94c}{search\+Music}} (String keyword, int page, int page\+Size, String json\+Option)
+\item 
+abstract String \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ab9c47593e85c33337f60648fe21d3f6b}{get\+Lyric}} (long song\+Code, int lyric\+Type)
+\item 
+abstract int \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ac065d0ab6c262606a112eef256ef83b0}{remove\+Cache}} (long song\+Code)
+\item 
+abstract \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_music_cache_info}{Music\+Cache\+Info}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a3ce3141a31a2919302ec837cc48d9218}{get\+Caches}} ()
+\item 
+abstract String \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a6d635d618817250159da6c3ffa168528}{get\+Song\+Simple\+Info}} (long song\+Code)
+\item 
+abstract long \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a3da413b0be7943c4d21d913805245971}{get\+Internal\+Song\+Code}} (long song\+Code, String json\+Option)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_aad81df2f3c1c496ac953ffd82d36cb70}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_aad81df2f3c1c496ac953ffd82d36cb70}} 
+static synchronized \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center}{I\+Agora\+Music\+Content\+Center}} {\bfseries create} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine}{Rtc\+Engine}} rtc\+Engine)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a98732619b0f23959b93cc540f49aa4b4}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a98732619b0f23959b93cc540f49aa4b4}} 
+static synchronized void {\bfseries destroy} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ac1f94c5e3adb1937873be7934422d730}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ac1f94c5e3adb1937873be7934422d730}} 
+abstract void {\bfseries do\+Destroy} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a1e0e0fc18a9af2ef926b63a90e4d92ae}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a1e0e0fc18a9af2ef926b63a90e4d92ae}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!initialize@{initialize}}
+\index{initialize@{initialize}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_music_content_center_configuration}{Music\+Content\+Center\+Configuration}}}]{configuration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+set coryright music token and other param
+
+
+\begin{DoxyParams}{Parameters}
+{\em configuration} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a2406492da6c0d37305078b8302becffe}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a2406492da6c0d37305078b8302becffe}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!renewToken@{renewToken}}
+\index{renewToken@{renewToken}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{renewToken()}{renewToken()}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+renew\+Token (\begin{DoxyParamCaption}\item[{String}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Renew token of music content center
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The new token. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_aa2cc22fcabb0c6c17eb3e9560f3de758}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_aa2cc22fcabb0c6c17eb3e9560f3de758}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!createMusicPlayer@{createMusicPlayer}}
+\index{createMusicPlayer@{createMusicPlayer}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{createMusicPlayer()}{createMusicPlayer()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player}{I\+Agora\+Music\+Player}} io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+create\+Music\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Creates a music player source object and return its pointer.
+
+\begin{DoxyReturn}{Returns}
+-\/ The pointer to I\+Music\+Player, if the method call succeeds.
+\begin{DoxyItemize}
+\item The empty pointer N\+U\+LL, if the method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ab2e9dd0e7daac8921f233275cf30a9ff}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ab2e9dd0e7daac8921f233275cf30a9ff}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!destroyMusicPlayer@{destroyMusicPlayer}}
+\index{destroyMusicPlayer@{destroyMusicPlayer}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{destroyMusicPlayer()}{destroyMusicPlayer()}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+destroy\+Music\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player}{I\+Agora\+Music\+Player}}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Destroy a music player source object and return result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The music player. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a60fcd2708feec7e4cd7a3f0024ec73fb}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a60fcd2708feec7e4cd7a3f0024ec73fb}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!preload@{preload}}
+\index{preload@{preload}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{preload()}{preload()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily abstract String io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+preload (\begin{DoxyParamCaption}\item[{long}]{song\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Preload a media file with specified parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+Code} & The identify of the media file that you want to play. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The request identification 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a7681c81a454bd8f5b95f6fe223ed6814}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a7681c81a454bd8f5b95f6fe223ed6814}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!preload@{preload}}
+\index{preload@{preload}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{preload()}{preload()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+preload (\begin{DoxyParamCaption}\item[{long}]{song\+Code,  }\item[{String}]{json\+Option }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Preload a media file with specified parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+Code} & The identify of the media file that you want to play. \\
+\hline
+{\em json\+Option} & The ext param, default is null. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success, file is preloaded.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]use \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a60fcd2708feec7e4cd7a3f0024ec73fb}{preload(long song\+Code)}} instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a7d996a2fb448d87d07d597d17d097e71}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a7d996a2fb448d87d07d597d17d097e71}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!isPreloaded@{isPreloaded}}
+\index{isPreloaded@{isPreloaded}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{isPreloaded()}{isPreloaded()}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+is\+Preloaded (\begin{DoxyParamCaption}\item[{long}]{song\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Check if the media file is preloaded
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+Code} & The identify of the media file that you want to play. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success, file is preloaded.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a7946c723e44aa1cb78b9c0e1d3bde4ba}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a7946c723e44aa1cb78b9c0e1d3bde4ba}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!getMusicCharts@{getMusicCharts}}
+\index{getMusicCharts@{getMusicCharts}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{getMusicCharts()}{getMusicCharts()}}
+{\footnotesize\ttfamily abstract String io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+get\+Music\+Charts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get music chart list of music.
+
+\begin{DoxyReturn}{Returns}
+The request identification 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a696ed7ee269dd417fdbba6a6b946b7b7}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a696ed7ee269dd417fdbba6a6b946b7b7}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!getMusicCollectionByMusicChartId@{getMusicCollectionByMusicChartId}}
+\index{getMusicCollectionByMusicChartId@{getMusicCollectionByMusicChartId}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{getMusicCollectionByMusicChartId()}{getMusicCollectionByMusicChartId()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+get\+Music\+Collection\+By\+Music\+Chart\+Id (\begin{DoxyParamCaption}\item[{int}]{music\+Chart\+Id,  }\item[{int}]{page,  }\item[{int}]{page\+Size }\end{DoxyParamCaption})}
+
+Get song list of the music chart by music\+Chart\+Id and page info.
+
+
+\begin{DoxyParams}{Parameters}
+{\em music\+Chart\+Id} & The music\+Chart\+Id id from get\+Music\+Charts. \\
+\hline
+{\em page} & The page, start from 1. \\
+\hline
+{\em page\+Size} & The page size, max is 50. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The request identification 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a35a693fb7d3722036216b944795612b1}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a35a693fb7d3722036216b944795612b1}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!getMusicCollectionByMusicChartId@{getMusicCollectionByMusicChartId}}
+\index{getMusicCollectionByMusicChartId@{getMusicCollectionByMusicChartId}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{getMusicCollectionByMusicChartId()}{getMusicCollectionByMusicChartId()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily abstract String io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+get\+Music\+Collection\+By\+Music\+Chart\+Id (\begin{DoxyParamCaption}\item[{int}]{music\+Chart\+Id,  }\item[{int}]{page,  }\item[{int}]{page\+Size,  }\item[{String}]{json\+Option }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get song list of the music chart by music\+Chart\+Id and page info.
+
+
+\begin{DoxyParams}{Parameters}
+{\em music\+Chart\+Id} & The music\+Chart\+Id id from get\+Music\+Charts. \\
+\hline
+{\em page} & The page, start from 1. \\
+\hline
+{\em page\+Size} & The page size, max is 50. \\
+\hline
+{\em json\+Option} & The ext param, default is null. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The request identification 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_afd68aa8f17f2b921174f77e4773d0a88}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_afd68aa8f17f2b921174f77e4773d0a88}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!searchMusic@{searchMusic}}
+\index{searchMusic@{searchMusic}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{searchMusic()}{searchMusic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+search\+Music (\begin{DoxyParamCaption}\item[{String}]{keyword,  }\item[{int}]{page,  }\item[{int}]{page\+Size }\end{DoxyParamCaption})}
+
+Get hot song list by music\+Chart\+Id and page info.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keyword} & The key word to search. \\
+\hline
+{\em page} & The page, start from 1. \\
+\hline
+{\em page\+Size} & The page size, max is 50. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The request identification 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a8eab3f451b756670474727bcace7a94c}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a8eab3f451b756670474727bcace7a94c}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!searchMusic@{searchMusic}}
+\index{searchMusic@{searchMusic}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{searchMusic()}{searchMusic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily abstract String io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+search\+Music (\begin{DoxyParamCaption}\item[{String}]{keyword,  }\item[{int}]{page,  }\item[{int}]{page\+Size,  }\item[{String}]{json\+Option }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get hot song list by music\+Chart\+Id and page info.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keyword} & The key word to search. \\
+\hline
+{\em page} & The page, start from 1. \\
+\hline
+{\em page\+Size} & The page size, max is 50. \\
+\hline
+{\em json\+Option} & The ext param, default is null. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The request identification 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ab9c47593e85c33337f60648fe21d3f6b}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ab9c47593e85c33337f60648fe21d3f6b}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!getLyric@{getLyric}}
+\index{getLyric@{getLyric}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{getLyric()}{getLyric()}}
+{\footnotesize\ttfamily abstract String io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+get\+Lyric (\begin{DoxyParamCaption}\item[{long}]{song\+Code,  }\item[{int}]{lyric\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get lyric of the song.
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+Code} & The identifier of the media file that you want to play. \\
+\hline
+{\em lyric\+Type} & The type of the lyric file. may be 0\+:xml or 1\+:lrc. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The request identification 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ac065d0ab6c262606a112eef256ef83b0}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ac065d0ab6c262606a112eef256ef83b0}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!removeCache@{removeCache}}
+\index{removeCache@{removeCache}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{removeCache()}{removeCache()}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+remove\+Cache (\begin{DoxyParamCaption}\item[{long}]{song\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Remove a cached media file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+Code} & The identifier of the media file that you want to play. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success; the cached media file is removed.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a3ce3141a31a2919302ec837cc48d9218}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a3ce3141a31a2919302ec837cc48d9218}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!getCaches@{getCaches}}
+\index{getCaches@{getCaches}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{getCaches()}{getCaches()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_music_cache_info}{Music\+Cache\+Info}} \mbox{[}$\,$\mbox{]} io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+get\+Caches (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get cached media files.
+
+\begin{DoxyReturn}{Returns}
+The array of \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_music_cache_info}{Music\+Cache\+Info}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a6d635d618817250159da6c3ffa168528}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a6d635d618817250159da6c3ffa168528}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!getSongSimpleInfo@{getSongSimpleInfo}}
+\index{getSongSimpleInfo@{getSongSimpleInfo}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{getSongSimpleInfo()}{getSongSimpleInfo()}}
+{\footnotesize\ttfamily abstract String io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+get\+Song\+Simple\+Info (\begin{DoxyParamCaption}\item[{long}]{song\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Gets the metadata of a specific music. Once this method is called, the S\+DK triggers the on\+Song\+Simple\+Info\+Result callback to report the metadata of the music.
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+Code} & The identifier of the media file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The request identification 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a3da413b0be7943c4d21d913805245971}\label{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_a3da413b0be7943c4d21d913805245971}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}!getInternalSongCode@{getInternalSongCode}}
+\index{getInternalSongCode@{getInternalSongCode}!io.agora.musiccontentcenter.IAgoraMusicContentCenter@{io.agora.musiccontentcenter.IAgoraMusicContentCenter}}
+\doxysubsubsection{\texorpdfstring{getInternalSongCode()}{getInternalSongCode()}}
+{\footnotesize\ttfamily abstract long io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Content\+Center.\+get\+Internal\+Song\+Code (\begin{DoxyParamCaption}\item[{long}]{song\+Code,  }\item[{String}]{json\+Option }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Create internal song\+Code\+Key from song\+Code and json\+Option
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+Code} & The identifier of the media file. \\
+\hline
+{\em json\+Option} & An extention parameter. The default value is null. it’s a json-\/format string and the {\ttfamily key} and {\ttfamily value} can be customized according to your scenarios. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Internal song\+Code key, if the method call succeeds.
+\begin{DoxyItemize}
+\item The number less than zero, if the method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}

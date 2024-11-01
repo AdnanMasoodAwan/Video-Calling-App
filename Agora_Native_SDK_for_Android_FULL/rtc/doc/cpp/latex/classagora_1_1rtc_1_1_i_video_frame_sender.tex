@@ -1,0 +1,45 @@
+\hypertarget{classagora_1_1rtc_1_1_i_video_frame_sender}{}\doxysection{agora\+::rtc\+::I\+Video\+Frame\+Sender Class Reference}
+\label{classagora_1_1rtc_1_1_i_video_frame_sender}\index{agora::rtc::IVideoFrameSender@{agora::rtc::IVideoFrameSender}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Video\+Frame\+Sender\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_video_frame_sender}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_sender_aeb5af980ac6e118d4d2f400cb04f865e}{send\+Video\+Frame}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_external_video_frame}{media\+::base\+::\+External\+Video\+Frame}} \&video\+Frame, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_sender}{I\+Video\+Frame\+Sender}}} class.
+
+In scenarios involving custom video sources, you can use this class to send the video data directly to a video track. If the video track is disabled, the sent data will be automatically discarded. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_frame_sender_aeb5af980ac6e118d4d2f400cb04f865e}\label{classagora_1_1rtc_1_1_i_video_frame_sender_aeb5af980ac6e118d4d2f400cb04f865e}} 
+\index{agora::rtc::IVideoFrameSender@{agora::rtc::IVideoFrameSender}!sendVideoFrame@{sendVideoFrame}}
+\index{sendVideoFrame@{sendVideoFrame}!agora::rtc::IVideoFrameSender@{agora::rtc::IVideoFrameSender}}
+\doxysubsubsection{\texorpdfstring{sendVideoFrame()}{sendVideoFrame()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Frame\+Sender\+::send\+Video\+Frame (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_external_video_frame}{media\+::base\+::\+External\+Video\+Frame}} \&}]{video\+Frame,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends the video frame to the video track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Frame} & The reference to the video frame to send.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

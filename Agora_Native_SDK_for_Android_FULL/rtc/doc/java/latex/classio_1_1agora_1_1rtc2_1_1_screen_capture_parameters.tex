@@ -1,0 +1,86 @@
+\hypertarget{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters}{}\doxysection{io.\+agora.\+rtc2.\+Screen\+Capture\+Parameters Class Reference}
+\label{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters}\index{io.agora.rtc2.ScreenCaptureParameters@{io.agora.rtc2.ScreenCaptureParameters}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_audio_capture_parameters}{Audio\+Capture\+Parameters}}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_video_capture_parameters}{Video\+Capture\+Parameters}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_ad57aa3187bfa167981ee64cbe2e8a3cb}\label{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_ad57aa3187bfa167981ee64cbe2e8a3cb}} 
+boolean {\bfseries is\+Capture\+Audio} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_a4f5066225f027f2658730002622cdb36}\label{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_a4f5066225f027f2658730002622cdb36}} 
+\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_video_capture_parameters}{Video\+Capture\+Parameters}} {\bfseries get\+Video\+Capture\+Parameters} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_ac83d8d5e8fde57d8324e3e610fd4f25e}\label{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_ac83d8d5e8fde57d8324e3e610fd4f25e}} 
+boolean {\bfseries is\+Capture\+Video} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_a1955a91129c3455563489846163cd96a}\label{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_a1955a91129c3455563489846163cd96a}} 
+\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_audio_capture_parameters}{Audio\+Capture\+Parameters}} {\bfseries get\+Audio\+Capture\+Parameters} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_ac0a9218d0b03c7cbaa0ea1f1879cc775}\label{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_ac0a9218d0b03c7cbaa0ea1f1879cc775}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_adba8cae0ff6a5f33d87c5c3da8db45d8}{capture\+Audio}} = false
+\item 
+\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_video_capture_parameters}{Video\+Capture\+Parameters}} \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_a3042ac84adb96a0f29cdc2e0ed3eccd8}{video\+Capture\+Parameters}} = new \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_video_capture_parameters}{Video\+Capture\+Parameters}}()
+\item 
+boolean \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_aef11d363144810a7712bd65ddc5c3a6d}{capture\+Video}} = true
+\item 
+\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_audio_capture_parameters}{Audio\+Capture\+Parameters}} \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_a505130528cbe870d0ff10eecc6b64ae9}{audio\+Capture\+Parameters}} = new \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_audio_capture_parameters}{Audio\+Capture\+Parameters}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The configuration of the screen sharing
+
+\begin{DoxySince}{Since}
+v3.\+7.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_adba8cae0ff6a5f33d87c5c3da8db45d8}\label{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_adba8cae0ff6a5f33d87c5c3da8db45d8}} 
+\index{io.agora.rtc2.ScreenCaptureParameters@{io.agora.rtc2.ScreenCaptureParameters}!captureAudio@{captureAudio}}
+\index{captureAudio@{captureAudio}!io.agora.rtc2.ScreenCaptureParameters@{io.agora.rtc2.ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{captureAudio}{captureAudio}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+Screen\+Capture\+Parameters.\+capture\+Audio = false}
+
+Determines whether to capture system audio during screen sharing\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Capture.
+\item {\ttfamily false}\+: (Default) Do not capture.
+\end{DoxyItemize}
+
+{\bfseries{Note}} Due to system limitations, capturing system audio is only available for Android A\+PI level 29 and later (that is, Android 10 and later). \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_a3042ac84adb96a0f29cdc2e0ed3eccd8}\label{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_a3042ac84adb96a0f29cdc2e0ed3eccd8}} 
+\index{io.agora.rtc2.ScreenCaptureParameters@{io.agora.rtc2.ScreenCaptureParameters}!videoCaptureParameters@{videoCaptureParameters}}
+\index{videoCaptureParameters@{videoCaptureParameters}!io.agora.rtc2.ScreenCaptureParameters@{io.agora.rtc2.ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{videoCaptureParameters}{videoCaptureParameters}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_video_capture_parameters}{Video\+Capture\+Parameters}} io.\+agora.\+rtc2.\+Screen\+Capture\+Parameters.\+video\+Capture\+Parameters = new \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_video_capture_parameters}{Video\+Capture\+Parameters}}()}
+
+The video configuration for the shared screen stream. See \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_video_capture_parameters}{Video\+Capture\+Parameters}}. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_aef11d363144810a7712bd65ddc5c3a6d}\label{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_aef11d363144810a7712bd65ddc5c3a6d}} 
+\index{io.agora.rtc2.ScreenCaptureParameters@{io.agora.rtc2.ScreenCaptureParameters}!captureVideo@{captureVideo}}
+\index{captureVideo@{captureVideo}!io.agora.rtc2.ScreenCaptureParameters@{io.agora.rtc2.ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{captureVideo}{captureVideo}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+Screen\+Capture\+Parameters.\+capture\+Video = true}
+
+Determines whether to capture the screen during screen sharing\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: (Default) Capture.
+\item {\ttfamily false}\+: Do not capture.
+\end{DoxyItemize}
+
+{\bfseries{Note}} Due to system limitations, screen capture is only available for Android A\+PI level 21 and later (that is, Android 5 and later). \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_a505130528cbe870d0ff10eecc6b64ae9}\label{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_a505130528cbe870d0ff10eecc6b64ae9}} 
+\index{io.agora.rtc2.ScreenCaptureParameters@{io.agora.rtc2.ScreenCaptureParameters}!audioCaptureParameters@{audioCaptureParameters}}
+\index{audioCaptureParameters@{audioCaptureParameters}!io.agora.rtc2.ScreenCaptureParameters@{io.agora.rtc2.ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{audioCaptureParameters}{audioCaptureParameters}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_audio_capture_parameters}{Audio\+Capture\+Parameters}} io.\+agora.\+rtc2.\+Screen\+Capture\+Parameters.\+audio\+Capture\+Parameters = new \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_audio_capture_parameters}{Audio\+Capture\+Parameters}}()}
+
+The audio configuration for the shared screen stream. See \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_audio_capture_parameters}{Audio\+Capture\+Parameters}}. 

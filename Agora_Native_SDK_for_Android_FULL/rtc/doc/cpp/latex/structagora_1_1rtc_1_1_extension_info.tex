@@ -1,0 +1,60 @@
+\hypertarget{structagora_1_1rtc_1_1_extension_info}{}\doxysection{agora\+::rtc\+::Extension\+Info Struct Reference}
+\label{structagora_1_1rtc_1_1_extension_info}\index{agora::rtc::ExtensionInfo@{agora::rtc::ExtensionInfo}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+agora\+::media\+::\+M\+E\+D\+I\+A\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_extension_info_a32082655ecf2d5b6f1a25afb5642cbec}{media\+Source\+Type}}
+\item 
+uid\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_extension_info_ad527838fd711df6a3e5f9db4a1eb77a0}{remote\+Uid}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_extension_info_a608c9ea19e64db48848d402f0e6a9aac}{channel\+Id}}
+\item 
+uid\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_extension_info_af669ea418c65585e7b13691a9094a1ce}{local\+Uid}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The information for extension. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_extension_info_a32082655ecf2d5b6f1a25afb5642cbec}\label{structagora_1_1rtc_1_1_extension_info_a32082655ecf2d5b6f1a25afb5642cbec}} 
+\index{agora::rtc::ExtensionInfo@{agora::rtc::ExtensionInfo}!mediaSourceType@{mediaSourceType}}
+\index{mediaSourceType@{mediaSourceType}!agora::rtc::ExtensionInfo@{agora::rtc::ExtensionInfo}}
+\doxysubsubsection{\texorpdfstring{mediaSourceType}{mediaSourceType}}
+{\footnotesize\ttfamily agora\+::media\+::\+M\+E\+D\+I\+A\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Extension\+Info\+::media\+Source\+Type}
+
+The type of media device. \mbox{\Hypertarget{structagora_1_1rtc_1_1_extension_info_ad527838fd711df6a3e5f9db4a1eb77a0}\label{structagora_1_1rtc_1_1_extension_info_ad527838fd711df6a3e5f9db4a1eb77a0}} 
+\index{agora::rtc::ExtensionInfo@{agora::rtc::ExtensionInfo}!remoteUid@{remoteUid}}
+\index{remoteUid@{remoteUid}!agora::rtc::ExtensionInfo@{agora::rtc::ExtensionInfo}}
+\doxysubsubsection{\texorpdfstring{remoteUid}{remoteUid}}
+{\footnotesize\ttfamily uid\+\_\+t agora\+::rtc\+::\+Extension\+Info\+::remote\+Uid}
+
+The id of the remote user on which the extension works.
+
+\begin{DoxyNote}{Note}
+remote\+Uid = 0 means that the extension works on all remote streams. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_extension_info_a608c9ea19e64db48848d402f0e6a9aac}\label{structagora_1_1rtc_1_1_extension_info_a608c9ea19e64db48848d402f0e6a9aac}} 
+\index{agora::rtc::ExtensionInfo@{agora::rtc::ExtensionInfo}!channelId@{channelId}}
+\index{channelId@{channelId}!agora::rtc::ExtensionInfo@{agora::rtc::ExtensionInfo}}
+\doxysubsubsection{\texorpdfstring{channelId}{channelId}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+Extension\+Info\+::channel\+Id}
+
+The unique channel name for the Agora\+R\+TC session in the string format. The string length must be less than 64 bytes. Supported character scopes are\+:
+\begin{DoxyItemize}
+\item All lowercase English letters\+: a to z.
+\item All uppercase English letters\+: A to Z.
+\item All numeric characters\+: 0 to 9.
+\item The space character.
+\item Punctuation characters and other symbols, including\+: \char`\"{}!\char`\"{}, \char`\"{}\#\char`\"{}, \char`\"{}\$\char`\"{}, \char`\"{}\%\char`\"{}, \char`\"{}\&\char`\"{}, \char`\"{}(\char`\"{}, \char`\"{})\char`\"{}, \char`\"{}+\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}\+:\char`\"{}, \char`\"{};\char`\"{}, \char`\"{}$<$\char`\"{}, \char`\"{}=\char`\"{}, \char`\"{}.\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}?\char`\"{}, \char`\"{}@\char`\"{}, \char`\"{}\mbox{[}\char`\"{}, \char`\"{}\mbox{]}\char`\"{}, \char`\"{}$^\wedge$\char`\"{}, \char`\"{}\+\_\+\char`\"{}, \char`\"{} \{\char`\"{}, \char`\"{}\}\char`\"{}, \char`\"{}$\vert$\char`\"{}, \char`\"{}$\sim$\char`\"{}, \char`\"{},\char`\"{}. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_extension_info_af669ea418c65585e7b13691a9094a1ce}\label{structagora_1_1rtc_1_1_extension_info_af669ea418c65585e7b13691a9094a1ce}} 
+\index{agora::rtc::ExtensionInfo@{agora::rtc::ExtensionInfo}!localUid@{localUid}}
+\index{localUid@{localUid}!agora::rtc::ExtensionInfo@{agora::rtc::ExtensionInfo}}
+\doxysubsubsection{\texorpdfstring{localUid}{localUid}}
+{\footnotesize\ttfamily uid\+\_\+t agora\+::rtc\+::\+Extension\+Info\+::local\+Uid}
+
+User ID\+: A 32-\/bit unsigned integer ranging from 1 to (2$^\wedge$32-\/1). It must be unique. 

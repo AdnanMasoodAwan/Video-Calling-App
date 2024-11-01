@@ -1,0 +1,68 @@
+\hypertarget{structagora_1_1rtc_1_1_texture_info}{}\doxysection{agora\+::rtc\+::Texture\+Info Struct Reference}
+\label{structagora_1_1rtc_1_1_texture_info}\index{agora::rtc::TextureInfo@{agora::rtc::TextureInfo}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Video\+Frame.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+E\+N\+U\+M\+\_\+\+C\+L\+A\+SS {\bfseries Texture\+Type}
+\item 
+O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+E\+N\+U\+M\+\_\+\+C\+L\+A\+SS {\bfseries Egl\+Context\+Type}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_texture_info_adf530e05073df0c9419f0318f3cee346}\label{structagora_1_1rtc_1_1_texture_info_adf530e05073df0c9419f0318f3cee346}} 
+Texture\+Type {\bfseries texture\+\_\+type}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_texture_info_adc9e17a680c0f8d92904fed00c3b16ef}\label{structagora_1_1rtc_1_1_texture_info_adc9e17a680c0f8d92904fed00c3b16ef}} 
+Egl\+Context\+Type {\bfseries context\+\_\+type}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_texture_info_a8aa20bfbcefdfeedd0c6a14907ad0961}\label{structagora_1_1rtc_1_1_texture_info_a8aa20bfbcefdfeedd0c6a14907ad0961}} 
+void $\ast$ {\bfseries shared\+\_\+context}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_texture_info_a5bddbdb084f870362be244ee84aaa988}\label{structagora_1_1rtc_1_1_texture_info_a5bddbdb084f870362be244ee84aaa988}} 
+int {\bfseries texture\+\_\+id}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_texture_info_a6ce760514f3e4fc6c0fb4f46a527a246}\label{structagora_1_1rtc_1_1_texture_info_a6ce760514f3e4fc6c0fb4f46a527a246}} 
+int64\+\_\+t {\bfseries fence\+\_\+object}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_texture_info_ae5c4e99d67eccd1d40e3a70b6e5f6b0f}\label{structagora_1_1rtc_1_1_texture_info_ae5c4e99d67eccd1d40e3a70b6e5f6b0f}} 
+float {\bfseries transform\+\_\+matrix} \mbox{[}16\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This structure defines the video frame of texture type on Android \begin{DoxyNote}{Note}
+For technical preview, not supported for the moment. Use \mbox{\hyperlink{structagora_1_1rtc_1_1_raw_pixel_buffer}{Raw\+Pixel\+Buffer}} instead. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_texture_info_a0939b1f5f59e153042a3b6790b4d9468}\label{structagora_1_1rtc_1_1_texture_info_a0939b1f5f59e153042a3b6790b4d9468}} 
+\index{agora::rtc::TextureInfo@{agora::rtc::TextureInfo}!TextureType@{TextureType}}
+\index{TextureType@{TextureType}!agora::rtc::TextureInfo@{agora::rtc::TextureInfo}}
+\doxysubsubsection{\texorpdfstring{TextureType}{TextureType}}
+{\footnotesize\ttfamily O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+E\+N\+U\+M\+\_\+\+C\+L\+A\+SS agora\+::rtc\+::\+Texture\+Info\+::\+Texture\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    kGlTextureOes,}
+\DoxyCodeLine{    kGlTexture2D,}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_texture_info_a7b3d246b1534c334d66b113e69fe9c4a}\label{structagora_1_1rtc_1_1_texture_info_a7b3d246b1534c334d66b113e69fe9c4a}} 
+\index{agora::rtc::TextureInfo@{agora::rtc::TextureInfo}!EglContextType@{EglContextType}}
+\index{EglContextType@{EglContextType}!agora::rtc::TextureInfo@{agora::rtc::TextureInfo}}
+\doxysubsubsection{\texorpdfstring{EglContextType}{EglContextType}}
+{\footnotesize\ttfamily O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+E\+N\+U\+M\+\_\+\+C\+L\+A\+SS agora\+::rtc\+::\+Texture\+Info\+::\+Egl\+Context\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    kEglContext10,}
+\DoxyCodeLine{    kEglContext14,}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}

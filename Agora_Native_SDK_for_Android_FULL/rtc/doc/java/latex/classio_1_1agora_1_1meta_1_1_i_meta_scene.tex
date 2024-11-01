@@ -1,0 +1,50 @@
+\hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene}{}\doxysection{io.\+agora.\+meta.\+I\+Meta\+Scene Class Reference}
+\label{classio_1_1agora_1_1meta_1_1_i_meta_scene}\index{io.agora.meta.IMetaScene@{io.agora.meta.IMetaScene}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_ae3dbdd5f4e96c535898b6ef25966af77}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_ae3dbdd5f4e96c535898b6ef25966af77}} 
+abstract int {\bfseries release} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_a7094ca79749318e040bedb4cf095e41d}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_a7094ca79749318e040bedb4cf095e41d}} 
+abstract \mbox{\hyperlink{interfaceio_1_1agora_1_1meta_1_1_i_local_user_avatar}{I\+Local\+User\+Avatar}} {\bfseries get\+Local\+User\+Avatar} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_a0c0349f71a2bf406fbd3a6af26121abe}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_a0c0349f71a2bf406fbd3a6af26121abe}} 
+abstract int {\bfseries add\+Event\+Handler} (\mbox{\hyperlink{interfaceio_1_1agora_1_1meta_1_1_i_meta_scene_event_handler}{I\+Meta\+Scene\+Event\+Handler}} event\+Handler)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_a778a483a710abe9c88880ce404c403f8}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_a778a483a710abe9c88880ce404c403f8}} 
+abstract int {\bfseries remove\+Event\+Handler} (\mbox{\hyperlink{interfaceio_1_1agora_1_1meta_1_1_i_meta_scene_event_handler}{I\+Meta\+Scene\+Event\+Handler}} event\+Handler)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_a91510e296536c61b491061616dc98dc2}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_a91510e296536c61b491061616dc98dc2}} 
+abstract int {\bfseries enter\+Scene} (\mbox{\hyperlink{classio_1_1agora_1_1meta_1_1_enter_scene_config}{Enter\+Scene\+Config}} config)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_a12c7ca39e679410fad2da1f8b71a7104}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_a12c7ca39e679410fad2da1f8b71a7104}} 
+abstract int {\bfseries leave\+Scene} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_a4041160da5e867fd0e87bd50e2f21949}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_a4041160da5e867fd0e87bd50e2f21949}} 
+abstract int {\bfseries send\+Scene\+Message} (byte\mbox{[}$\,$\mbox{]} message)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_ad94231dc057b88969a3079e045167c64}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_ad94231dc057b88969a3079e045167c64}} 
+abstract int {\bfseries set\+Scene\+Parameters} (String json\+Param)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_a0869a2f1467c1a84e6e66312f68b75a4}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_a0869a2f1467c1a84e6e66312f68b75a4}} 
+abstract int {\bfseries enable\+Video\+Display} (String display\+Id, boolean enable)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_a02104b86a29cd28c3173b4f9d5a6bc09}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_a02104b86a29cd28c3173b4f9d5a6bc09}} 
+abstract int {\bfseries push\+Video\+Frame\+To\+Display} (String display\+Id, \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_video_frame}{Video\+Frame}} frame)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_acc30ed0e70b3bb78e724bccddc336b0a}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_acc30ed0e70b3bb78e724bccddc336b0a}} 
+abstract int {\bfseries push\+Video\+Frame\+To\+Display} (String display\+Id, \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_video_frame}{Agora\+Video\+Frame}} frame)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_aced367a247e319b4281493b954bf0fa7}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_aced367a247e319b4281493b954bf0fa7}} 
+abstract int {\bfseries add\+Scene\+View} (Texture\+View view, \mbox{\hyperlink{classio_1_1agora_1_1meta_1_1_scene_display_config}{Scene\+Display\+Config}} config)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_a705c8c22f30a4b7933a7fb05bdb3d482}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_a705c8c22f30a4b7933a7fb05bdb3d482}} 
+abstract int {\bfseries remove\+Scene\+View} (Texture\+View view)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_a5ab513b2d8666c134b9c6b932b81f201}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_a5ab513b2d8666c134b9c6b932b81f201}} 
+abstract int {\bfseries enable\+Scene\+Video\+Capture} (Texture\+View view, boolean enable)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_scene_a9325d0f6ca672e3be54df3e5e93b3395}\label{classio_1_1agora_1_1meta_1_1_i_meta_scene_a9325d0f6ca672e3be54df3e5e93b3395}} 
+abstract int {\bfseries enable\+Face\+Capture} (boolean enable)
+\end{DoxyCompactItemize}

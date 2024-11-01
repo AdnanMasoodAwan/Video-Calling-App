@@ -1,0 +1,312 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_track}{}\doxysection{agora\+::rtc\+::I\+Audio\+Track Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_track}\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Audio\+Track.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Audio\+Track\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classagora_1_1rtc_1_1_i_audio_track}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}} \{ \newline
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a90801e89a9254918196742a0cca532b7}{Recording\+Local\+Playback}}, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a5c80ae40f5aab963f748f4274d5730e6}{Post\+Audio\+Processing}}, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a7f3f487c91932086f551c1056cca58ab}{Remote\+User\+Playback}}, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a54917ef3578795c7b70fd6bbea9e1f6e}{Pcm\+Source}}, 
+\newline
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a7612217f13f3f44602e72b2dd063d064}{Pcm\+Source\+Sending}}, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9ad7fd9c0051f186442624fc7485a26b60}{Pcm\+Source\+Local\+Playback}}, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a76f5476e71134352386e8e14476ea6c4}{Remote\+Mixed\+Playback}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_a1ac252072c46a22b71cf5484bb39576f}{adjust\+Playout\+Volume}} (int volume, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_a2b302a5b12ba4b4e2aa7ee20df4690c4}{get\+Playout\+Volume}} (int $\ast$volume)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_a97eef5de65076555c4277097a24af043}{add\+Audio\+Filter}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}} $>$ filter, \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}} position, \mbox{\hyperlink{structagora_1_1rtc_1_1_extension_context}{Extension\+Context}} $\ast$ext\+Context=N\+U\+LL, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_a2ac2cb41622eb22d669fa888866a24cd}{remove\+Audio\+Filter}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}} $>$ filter, \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}} position, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_a8a24d25832c3d4c8c13e390f5d063862}{enable\+Audio\+Filter}} (const char $\ast$id, bool enable, \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}} position, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_a43172a33531f9858d126975c10e71e82}{set\+Filter\+Property}} (const char $\ast$id, const char $\ast$key, const char $\ast$json\+Value, \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}} position, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aa1c64395b07434440b0a01ba13992b4c}{get\+Filter\+Property}} (const char $\ast$id, const char $\ast$key, char $\ast$json\+Value, size\+\_\+t buf\+Size, \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}} position)
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}} $>$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_a736864dc923f79c9c2a56f7599ca1097}{get\+Audio\+Filter}} (const char $\ast$name, \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}} position) const =0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_a6d8f8dc69565006f073e28474eb7541c}{add\+Audio\+Sink}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_sink_base}{I\+Audio\+Sink\+Base}} $>$ sink, const \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_sink_wants}{Audio\+Sink\+Wants}} \&wants, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_a2cd09a744aaf2dcefb9fc9797308937a}{remove\+Audio\+Sink}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_sink_base}{I\+Audio\+Sink\+Base}} $>$ sink, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track}{I\+Audio\+Track}} class. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}\label{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}} 
+\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!AudioFilterPosition@{AudioFilterPosition}}
+\index{AudioFilterPosition@{AudioFilterPosition}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+\doxysubsubsection{\texorpdfstring{AudioFilterPosition}{AudioFilterPosition}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{agora\+::rtc\+::\+I\+Audio\+Track\+::\+Audio\+Filter\+Position}}}
+
+The position of the audio filter in audio frame. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RecordingLocalPlayback@{RecordingLocalPlayback}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!RecordingLocalPlayback@{RecordingLocalPlayback}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a90801e89a9254918196742a0cca532b7}\label{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a90801e89a9254918196742a0cca532b7}} 
+Recording\+Local\+Playback&Work on the local playback \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PostAudioProcessing@{PostAudioProcessing}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!PostAudioProcessing@{PostAudioProcessing}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a5c80ae40f5aab963f748f4274d5730e6}\label{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a5c80ae40f5aab963f748f4274d5730e6}} 
+Post\+Audio\+Processing&Work on the post audio processing. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RemoteUserPlayback@{RemoteUserPlayback}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!RemoteUserPlayback@{RemoteUserPlayback}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a7f3f487c91932086f551c1056cca58ab}\label{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a7f3f487c91932086f551c1056cca58ab}} 
+Remote\+User\+Playback&Work on the remote audio before mixing. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PcmSource@{PcmSource}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!PcmSource@{PcmSource}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a54917ef3578795c7b70fd6bbea9e1f6e}\label{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a54917ef3578795c7b70fd6bbea9e1f6e}} 
+Pcm\+Source&Work on the pcm source. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PcmSourceSending@{PcmSourceSending}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!PcmSourceSending@{PcmSourceSending}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a7612217f13f3f44602e72b2dd063d064}\label{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a7612217f13f3f44602e72b2dd063d064}} 
+Pcm\+Source\+Sending&Work on the sending branch of the pcm source. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PcmSourceLocalPlayback@{PcmSourceLocalPlayback}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!PcmSourceLocalPlayback@{PcmSourceLocalPlayback}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9ad7fd9c0051f186442624fc7485a26b60}\label{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9ad7fd9c0051f186442624fc7485a26b60}} 
+Pcm\+Source\+Local\+Playback&Work on the local playback branch of the pcm source. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RemoteMixedPlayback@{RemoteMixedPlayback}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!RemoteMixedPlayback@{RemoteMixedPlayback}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a76f5476e71134352386e8e14476ea6c4}\label{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9a76f5476e71134352386e8e14476ea6c4}} 
+Remote\+Mixed\+Playback&Work on the playback after remote-\/audio mix. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_a1ac252072c46a22b71cf5484bb39576f}\label{classagora_1_1rtc_1_1_i_audio_track_a1ac252072c46a22b71cf5484bb39576f}} 
+\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!adjustPlayoutVolume@{adjustPlayoutVolume}}
+\index{adjustPlayoutVolume@{adjustPlayoutVolume}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+\doxysubsubsection{\texorpdfstring{adjustPlayoutVolume()}{adjustPlayoutVolume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Track\+::adjust\+Playout\+Volume (\begin{DoxyParamCaption}\item[{int}]{volume,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adjusts the playback volume. 
+\begin{DoxyParams}{Parameters}
+{\em volume} & The playback volume. The value ranges between 0 and 100 (default). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_a2b302a5b12ba4b4e2aa7ee20df4690c4}\label{classagora_1_1rtc_1_1_i_audio_track_a2b302a5b12ba4b4e2aa7ee20df4690c4}} 
+\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!getPlayoutVolume@{getPlayoutVolume}}
+\index{getPlayoutVolume@{getPlayoutVolume}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+\doxysubsubsection{\texorpdfstring{getPlayoutVolume()}{getPlayoutVolume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Track\+::get\+Playout\+Volume (\begin{DoxyParamCaption}\item[{int $\ast$}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the current playback volume. 
+\begin{DoxyParams}{Parameters}
+{\em volume} & A pointer to the playback volume. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_a97eef5de65076555c4277097a24af043}\label{classagora_1_1rtc_1_1_i_audio_track_a97eef5de65076555c4277097a24af043}} 
+\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!addAudioFilter@{addAudioFilter}}
+\index{addAudioFilter@{addAudioFilter}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+\doxysubsubsection{\texorpdfstring{addAudioFilter()}{addAudioFilter()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Audio\+Track\+::add\+Audio\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}} $>$}]{filter,  }\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}}]{position,  }\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_extension_context}{Extension\+Context}} $\ast$}]{ext\+Context = {\ttfamily NULL},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adds an audio filter.
+
+By adding an audio filter, you can apply various audio effects to the audio, for example, voice change. 
+\begin{DoxyParams}{Parameters}
+{\em filter} & A pointer to the audio filter. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}}. \\
+\hline
+{\em position} & The position of the audio filter. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}. \\
+\hline
+{\em ext\+Context} & The context of current filter. See \mbox{\hyperlink{structagora_1_1rtc_1_1_extension_context}{Extension\+Context}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_a2ac2cb41622eb22d669fa888866a24cd}\label{classagora_1_1rtc_1_1_i_audio_track_a2ac2cb41622eb22d669fa888866a24cd}} 
+\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!removeAudioFilter@{removeAudioFilter}}
+\index{removeAudioFilter@{removeAudioFilter}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+\doxysubsubsection{\texorpdfstring{removeAudioFilter()}{removeAudioFilter()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Audio\+Track\+::remove\+Audio\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}} $>$}]{filter,  }\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}}]{position,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Removes the audio filter added by callling {\ttfamily add\+Audio\+Filter}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filter} & The pointer to the audio filter that you want to remove. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}}. \\
+\hline
+{\em position} & The position of the audio filter. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_a8a24d25832c3d4c8c13e390f5d063862}\label{classagora_1_1rtc_1_1_i_audio_track_a8a24d25832c3d4c8c13e390f5d063862}} 
+\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!enableAudioFilter@{enableAudioFilter}}
+\index{enableAudioFilter@{enableAudioFilter}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+\doxysubsubsection{\texorpdfstring{enableAudioFilter()}{enableAudioFilter()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Track\+::enable\+Audio\+Filter (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{bool}]{enable,  }\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}}]{position,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Enable / Disable specified audio filter 
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the filter \\
+\hline
+{\em enable} & enable / disable the filter with given id \\
+\hline
+{\em position} & The position of the audio filter. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: success
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_a43172a33531f9858d126975c10e71e82}\label{classagora_1_1rtc_1_1_i_audio_track_a43172a33531f9858d126975c10e71e82}} 
+\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!setFilterProperty@{setFilterProperty}}
+\index{setFilterProperty@{setFilterProperty}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+\doxysubsubsection{\texorpdfstring{setFilterProperty()}{setFilterProperty()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Track\+::set\+Filter\+Property (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{const char $\ast$}]{key,  }\item[{const char $\ast$}]{json\+Value,  }\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}}]{position,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+set the properties of the specified audio filter 
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the filter \\
+\hline
+{\em key} & key of the property \\
+\hline
+{\em json\+Value} & json str value of the property \\
+\hline
+{\em position} & The position of the audio filter. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: success
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_aa1c64395b07434440b0a01ba13992b4c}\label{classagora_1_1rtc_1_1_i_audio_track_aa1c64395b07434440b0a01ba13992b4c}} 
+\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!getFilterProperty@{getFilterProperty}}
+\index{getFilterProperty@{getFilterProperty}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+\doxysubsubsection{\texorpdfstring{getFilterProperty()}{getFilterProperty()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Track\+::get\+Filter\+Property (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{const char $\ast$}]{key,  }\item[{char $\ast$}]{json\+Value,  }\item[{size\+\_\+t}]{buf\+Size,  }\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+get the properties of the specified video filter 
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the filter \\
+\hline
+{\em key} & key of the property \\
+\hline
+{\em json\+Value} & json str value of the property \\
+\hline
+{\em buf\+Size} & max length of the json value buffer \\
+\hline
+{\em position} & The position of the audio filter. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: success
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_a736864dc923f79c9c2a56f7599ca1097}\label{classagora_1_1rtc_1_1_i_audio_track_a736864dc923f79c9c2a56f7599ca1097}} 
+\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!getAudioFilter@{getAudioFilter}}
+\index{getAudioFilter@{getAudioFilter}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+\doxysubsubsection{\texorpdfstring{getAudioFilter()}{getAudioFilter()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}}$>$ agora\+::rtc\+::\+I\+Audio\+Track\+::get\+Audio\+Filter (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}}]{position }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the audio filter by its name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the audio filter. \\
+\hline
+{\em position} & The position of the audio filter. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track_aaf4feb1ff0066f122c9f0e87e0543ef9}{Audio\+Filter\+Position}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to the audio filter\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_a6d8f8dc69565006f073e28474eb7541c}\label{classagora_1_1rtc_1_1_i_audio_track_a6d8f8dc69565006f073e28474eb7541c}} 
+\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!addAudioSink@{addAudioSink}}
+\index{addAudioSink@{addAudioSink}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+\doxysubsubsection{\texorpdfstring{addAudioSink()}{addAudioSink()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Audio\+Track\+::add\+Audio\+Sink (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_sink_base}{I\+Audio\+Sink\+Base}} $>$}]{sink,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_sink_wants}{Audio\+Sink\+Wants}} \&}]{wants,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adds an audio sink to get P\+CM data from the audio track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sink} & The pointer to the audio sink. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_sink_base}{I\+Audio\+Sink\+Base}}. \\
+\hline
+{\em wants} & The properties an audio frame should have when it is delivered to the sink. See \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_sink_wants}{Audio\+Sink\+Wants}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_track_a2cd09a744aaf2dcefb9fc9797308937a}\label{classagora_1_1rtc_1_1_i_audio_track_a2cd09a744aaf2dcefb9fc9797308937a}} 
+\index{agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}!removeAudioSink@{removeAudioSink}}
+\index{removeAudioSink@{removeAudioSink}!agora::rtc::IAudioTrack@{agora::rtc::IAudioTrack}}
+\doxysubsubsection{\texorpdfstring{removeAudioSink()}{removeAudioSink()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Audio\+Track\+::remove\+Audio\+Sink (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_sink_base}{I\+Audio\+Sink\+Base}} $>$}]{sink,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Removes an audio sink.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sink} & The pointer to the audio sink to be removed. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_sink_base}{I\+Audio\+Sink\+Base}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

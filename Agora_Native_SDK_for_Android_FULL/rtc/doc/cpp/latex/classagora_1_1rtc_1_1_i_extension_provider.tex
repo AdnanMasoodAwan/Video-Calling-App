@@ -1,0 +1,84 @@
+\hypertarget{classagora_1_1rtc_1_1_i_extension_provider}{}\doxysection{agora\+::rtc\+::I\+Extension\+Provider Class Reference}
+\label{classagora_1_1rtc_1_1_i_extension_provider}\index{agora::rtc::IExtensionProvider@{agora::rtc::IExtensionProvider}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Extension\+Provider.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Extension\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classagora_1_1rtc_1_1_i_extension_provider}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_extension_provider_1_1_extension_meta_info}{Extension\+Meta\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_provider_a0f19fa651e471905ebe3751fd01d9d87}{E\+X\+T\+E\+N\+S\+I\+O\+N\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_provider_a0f19fa651e471905ebe3751fd01d9d87abff24365293223bab0c4f59b193c8b21}{A\+U\+D\+I\+O\+\_\+\+F\+I\+L\+T\+ER}}, 
+{\bfseries V\+I\+D\+E\+O\+\_\+\+P\+R\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+F\+I\+L\+T\+ER}, 
+{\bfseries V\+I\+D\+E\+O\+\_\+\+P\+O\+S\+T\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+F\+I\+L\+T\+ER}, 
+{\bfseries A\+U\+D\+I\+O\+\_\+\+S\+I\+NK}, 
+\newline
+{\bfseries V\+I\+D\+E\+O\+\_\+\+S\+I\+NK}, 
+{\bfseries A\+U\+D\+I\+O\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+L\+O\+C\+A\+L\+\_\+\+P\+L\+A\+Y\+B\+A\+C\+K\+\_\+\+F\+I\+L\+T\+ER} = 10000, 
+{\bfseries A\+U\+D\+I\+O\+\_\+\+P\+O\+S\+T\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+F\+I\+L\+T\+ER} = 10001, 
+{\bfseries A\+U\+D\+I\+O\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+U\+S\+E\+R\+\_\+\+P\+L\+A\+Y\+B\+A\+C\+K\+\_\+\+F\+I\+L\+T\+ER} = 10002, 
+\newline
+{\bfseries A\+U\+D\+I\+O\+\_\+\+P\+C\+M\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+I\+L\+T\+ER} = 10003, 
+{\bfseries A\+U\+D\+I\+O\+\_\+\+P\+C\+M\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+S\+E\+N\+D\+I\+N\+G\+\_\+\+F\+I\+L\+T\+ER} = 10004, 
+{\bfseries A\+U\+D\+I\+O\+\_\+\+P\+C\+M\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+L\+O\+C\+A\+L\+\_\+\+P\+L\+A\+Y\+B\+A\+C\+K\+\_\+\+F\+I\+L\+T\+ER} = 10005, 
+{\bfseries A\+U\+D\+I\+O\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+M\+I\+X\+E\+D\+\_\+\+P\+L\+A\+Y\+B\+A\+C\+K\+\_\+\+F\+I\+L\+T\+ER} = 10006, 
+\newline
+{\bfseries U\+N\+K\+N\+O\+WN} = 0x\+F\+F\+FF
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_provider_abb0c48ad32884caf7af199bfa062f6c5}\label{classagora_1_1rtc_1_1_i_extension_provider_abb0c48ad32884caf7af199bfa062f6c5}} 
+virtual void {\bfseries set\+Extension\+Control} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_control}{I\+Extension\+Control}} $\ast$control)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_provider_a42e2e6df264b5d5a4d570b37c6ded944}\label{classagora_1_1rtc_1_1_i_extension_provider_a42e2e6df264b5d5a4d570b37c6ded944}} 
+virtual void {\bfseries enumerate\+Extensions} (\mbox{\hyperlink{structagora_1_1rtc_1_1_i_extension_provider_1_1_extension_meta_info}{Extension\+Meta\+Info}} $\ast$extension\+\_\+list, int \&extension\+\_\+count)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_provider_a41755120a62aa5ac5a17fc059e3c25bd}\label{classagora_1_1rtc_1_1_i_extension_provider_a41755120a62aa5ac5a17fc059e3c25bd}} 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}} $>$ {\bfseries create\+Audio\+Filter} (const char $\ast$name)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_provider_a9c72def753f388322f931127fc3af629}\label{classagora_1_1rtc_1_1_i_extension_provider_a9c72def753f388322f931127fc3af629}} 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter}{I\+Extension\+Video\+Filter}} $>$ {\bfseries create\+Video\+Filter} (const char $\ast$name)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_provider_a8005a4fdc5dad2de19d56c60501bed3a}\label{classagora_1_1rtc_1_1_i_extension_provider_a8005a4fdc5dad2de19d56c60501bed3a}} 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_sink_base}{I\+Video\+Sink\+Base}} $>$ {\bfseries create\+Video\+Sink} (const char $\ast$name)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_provider_a3ae09a3bdfedf04efec73f29238ff151}\label{classagora_1_1rtc_1_1_i_extension_provider_a3ae09a3bdfedf04efec73f29238ff151}} 
+virtual void {\bfseries set\+Property} (const char $\ast$key, const char $\ast$value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfaces for Extension Provider User can implement these interfaces for providing their own media node implementations to S\+DK. Please refer to \mbox{\hyperlink{classagora_1_1_ref_counted_object}{agora\+::\+Ref\+Counted\+Object}} to wrap your implementation so that it can be held by \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}. For example\+: class Your\+Extension\+Provide\+: public \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_provider}{I\+Extension\+Provider}} \{ // Your Concrete implementaion \};
+
+// Use agroa\+::\+Ref\+Counted\+Object to provide \mbox{\hyperlink{classagora_1_1_ref_count_interface}{Ref\+Count\+Interface}} implementation for you implementation, // intantiate and wrap it with \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}.
+
+agora\+\_\+refptr$<$\+I\+Extension\+Provider$>$ provider = new Ref\+Counted\+Object$<$\+Your\+Extension\+Provide$>$(\+Arg1, Arg2, ...);
+
+You can instantiate your Audio\+Filter/\+Video\+Filter/\+Video\+Sink in the same way. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_provider_a0f19fa651e471905ebe3751fd01d9d87}\label{classagora_1_1rtc_1_1_i_extension_provider_a0f19fa651e471905ebe3751fd01d9d87}} 
+\index{agora::rtc::IExtensionProvider@{agora::rtc::IExtensionProvider}!EXTENSION\_TYPE@{EXTENSION\_TYPE}}
+\index{EXTENSION\_TYPE@{EXTENSION\_TYPE}!agora::rtc::IExtensionProvider@{agora::rtc::IExtensionProvider}}
+\doxysubsubsection{\texorpdfstring{EXTENSION\_TYPE}{EXTENSION\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_provider_a0f19fa651e471905ebe3751fd01d9d87}{agora\+::rtc\+::\+I\+Extension\+Provider\+::\+E\+X\+T\+E\+N\+S\+I\+O\+N\+\_\+\+T\+Y\+PE}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AUDIO\_FILTER@{AUDIO\_FILTER}!agora::rtc::IExtensionProvider@{agora::rtc::IExtensionProvider}}\index{agora::rtc::IExtensionProvider@{agora::rtc::IExtensionProvider}!AUDIO\_FILTER@{AUDIO\_FILTER}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_provider_a0f19fa651e471905ebe3751fd01d9d87abff24365293223bab0c4f59b193c8b21}\label{classagora_1_1rtc_1_1_i_extension_provider_a0f19fa651e471905ebe3751fd01d9d87abff24365293223bab0c4f59b193c8b21}} 
+A\+U\+D\+I\+O\+\_\+\+F\+I\+L\+T\+ER&note\+: discarded, Don\textquotesingle{}t use it anymore. \\
+\hline
+
+\end{DoxyEnumFields}

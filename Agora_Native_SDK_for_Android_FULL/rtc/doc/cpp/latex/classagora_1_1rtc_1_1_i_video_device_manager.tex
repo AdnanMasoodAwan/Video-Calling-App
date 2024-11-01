@@ -1,0 +1,124 @@
+\hypertarget{classagora_1_1rtc_1_1_i_video_device_manager}{}\doxysection{agora\+::rtc\+::I\+Video\+Device\+Manager Class Reference}
+\label{classagora_1_1rtc_1_1_i_video_device_manager}\index{agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_collection}{I\+Video\+Device\+Collection}} $\ast$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_manager_aef51744162ec544abf2aaf0488ca062d}{enumerate\+Video\+Devices}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_manager_a4e6b3bf8edc18da1c6d87b86aadf6381}{set\+Device}} (const char device\+Id\+U\+T\+F8\mbox{[}M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+TH\mbox{]})=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_manager_a9ef9b8037b49503a8fcf3e467f64eddc}{get\+Device}} (char device\+Id\+U\+T\+F8\mbox{[}M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+TH\mbox{]})=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_manager_ac148cafcb191841fd4aa7f5b6166b16d}{start\+Device\+Test}} (view\+\_\+t hwnd)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_manager_ae3fe9f7ad1ddf4d5cda5e30d14b9d321}{stop\+Device\+Test}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_manager_abf78f0933b1192d0c3ec19fc2b3c6f3f}{release}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_manager}{I\+Video\+Device\+Manager}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_device_manager_aef51744162ec544abf2aaf0488ca062d}\label{classagora_1_1rtc_1_1_i_video_device_manager_aef51744162ec544abf2aaf0488ca062d}} 
+\index{agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}!enumerateVideoDevices@{enumerateVideoDevices}}
+\index{enumerateVideoDevices@{enumerateVideoDevices}!agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}}
+\doxysubsubsection{\texorpdfstring{enumerateVideoDevices()}{enumerateVideoDevices()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_collection}{I\+Video\+Device\+Collection}}$\ast$ agora\+::rtc\+::\+I\+Video\+Device\+Manager\+::enumerate\+Video\+Devices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enumerates the video devices.
+
+This method returns an {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_collection}{I\+Video\+Device\+Collection}}} object including all video devices in the system. With the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_collection}{I\+Video\+Device\+Collection}}} object, the application can enumerate video devices. The application must call the release method to release the returned object after using it.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Success\+: An {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_collection}{I\+Video\+Device\+Collection}}} object including all video devices in the system.
+\item Failure\+: N\+U\+LL. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_device_manager_a4e6b3bf8edc18da1c6d87b86aadf6381}\label{classagora_1_1rtc_1_1_i_video_device_manager_a4e6b3bf8edc18da1c6d87b86aadf6381}} 
+\index{agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}!setDevice@{setDevice}}
+\index{setDevice@{setDevice}!agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}}
+\doxysubsubsection{\texorpdfstring{setDevice()}{setDevice()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Device\+Manager\+::set\+Device (\begin{DoxyParamCaption}\item[{const char}]{device\+Id\+U\+T\+F8\mbox{[}\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Specifies the video capture device with the device ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Id\+U\+T\+F8} & he device ID. You can get the device ID by calling {\ttfamily enumerate\+Video\+Devices}. The maximum length is \#\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+TH.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_device_manager_a9ef9b8037b49503a8fcf3e467f64eddc}\label{classagora_1_1rtc_1_1_i_video_device_manager_a9ef9b8037b49503a8fcf3e467f64eddc}} 
+\index{agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}!getDevice@{getDevice}}
+\index{getDevice@{getDevice}!agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}}
+\doxysubsubsection{\texorpdfstring{getDevice()}{getDevice()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Device\+Manager\+::get\+Device (\begin{DoxyParamCaption}\item[{char}]{device\+Id\+U\+T\+F8\mbox{[}\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Retrieves the current video capture device. 
+\begin{DoxyParams}{Parameters}
+{\em device\+Id\+U\+T\+F8} & Output parameter. The device ID. The maximum length is \#\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_device_manager_ac148cafcb191841fd4aa7f5b6166b16d}\label{classagora_1_1rtc_1_1_i_video_device_manager_ac148cafcb191841fd4aa7f5b6166b16d}} 
+\index{agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}!startDeviceTest@{startDeviceTest}}
+\index{startDeviceTest@{startDeviceTest}!agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}}
+\doxysubsubsection{\texorpdfstring{startDeviceTest()}{startDeviceTest()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Device\+Manager\+::start\+Device\+Test (\begin{DoxyParamCaption}\item[{view\+\_\+t}]{hwnd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Starts the video capture device test.
+
+This method tests whether the video capture device works properly. Before calling this method, ensure that you have already called \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a7d35fc62d74685d25636f04b04051958}{enable\+Video}}, and the H\+W\+ND window handle of the incoming parameter is valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hwnd} & An Output parameter that specifies the window handle to display the video. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_device_manager_ae3fe9f7ad1ddf4d5cda5e30d14b9d321}\label{classagora_1_1rtc_1_1_i_video_device_manager_ae3fe9f7ad1ddf4d5cda5e30d14b9d321}} 
+\index{agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}!stopDeviceTest@{stopDeviceTest}}
+\index{stopDeviceTest@{stopDeviceTest}!agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}}
+\doxysubsubsection{\texorpdfstring{stopDeviceTest()}{stopDeviceTest()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Device\+Manager\+::stop\+Device\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops the video capture device test. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_device_manager_abf78f0933b1192d0c3ec19fc2b3c6f3f}\label{classagora_1_1rtc_1_1_i_video_device_manager_abf78f0933b1192d0c3ec19fc2b3c6f3f}} 
+\index{agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}!release@{release}}
+\index{release@{release}!agora::rtc::IVideoDeviceManager@{agora::rtc::IVideoDeviceManager}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Video\+Device\+Manager\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases all the resources occupied by the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_manager}{I\+Video\+Device\+Manager}}} object. 

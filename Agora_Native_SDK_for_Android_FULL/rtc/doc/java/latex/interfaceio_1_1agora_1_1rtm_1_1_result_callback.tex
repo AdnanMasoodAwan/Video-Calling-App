@@ -1,0 +1,41 @@
+\hypertarget{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{}\doxysection{io.\+agora.\+rtm.\+Result\+Callback$<$ T $>$ Interface Template Reference}
+\label{interfaceio_1_1agora_1_1rtm_1_1_result_callback}\index{io.agora.rtm.ResultCallback$<$ T $>$@{io.agora.rtm.ResultCallback$<$ T $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a7206b30500655c4a73d146acf50cb6f5}{on\+Success}} (T response\+Info)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{on\+Failure}} (\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info}{Error\+Info}} error\+Info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} interface contains callbacks indicating the results of a method call\+: 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a7206b30500655c4a73d146acf50cb6f5}\label{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a7206b30500655c4a73d146acf50cb6f5}} 
+\index{io.agora.rtm.ResultCallback$<$ T $>$@{io.agora.rtm.ResultCallback$<$ T $>$}!onSuccess@{onSuccess}}
+\index{onSuccess@{onSuccess}!io.agora.rtm.ResultCallback$<$ T $>$@{io.agora.rtm.ResultCallback$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{onSuccess()}{onSuccess()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{io.\+agora.\+rtm.\+Result\+Callback}}$<$ T $>$.on\+Success (\begin{DoxyParamCaption}\item[{T}]{response\+Info }\end{DoxyParamCaption})}
+
+Occurs when a method call succeeds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response\+Info} & The response information. Can be set as void. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}\label{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}} 
+\index{io.agora.rtm.ResultCallback$<$ T $>$@{io.agora.rtm.ResultCallback$<$ T $>$}!onFailure@{onFailure}}
+\index{onFailure@{onFailure}!io.agora.rtm.ResultCallback$<$ T $>$@{io.agora.rtm.ResultCallback$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{onFailure()}{onFailure()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{io.\+agora.\+rtm.\+Result\+Callback}}$<$ T $>$.on\+Failure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info}{Error\+Info}}}]{error\+Info }\end{DoxyParamCaption})}
+
+Occurs when a method call fails.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Info} & The error code. See \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info}{Error\+Info}}. \\
+\hline
+\end{DoxyParams}

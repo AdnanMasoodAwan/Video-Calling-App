@@ -1,0 +1,53 @@
+\hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service}{}\doxysection{io.\+agora.\+meta.\+I\+Meta\+Service Class Reference}
+\label{classio_1_1agora_1_1meta_1_1_i_meta_service}\index{io.agora.meta.IMetaService@{io.agora.meta.IMetaService}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_ad179555a80c8e835299d774662191f43}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_ad179555a80c8e835299d774662191f43}} 
+abstract int {\bfseries initialize} (\mbox{\hyperlink{classio_1_1agora_1_1meta_1_1_meta_service_config}{Meta\+Service\+Config}} cfg)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_a21626aed18b106a2f9c89f8a99f07c93}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_a21626aed18b106a2f9c89f8a99f07c93}} 
+abstract int {\bfseries renew\+Token} (String token)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_a02d68401f86bcc8b82d5f849e2b83b10}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_a02d68401f86bcc8b82d5f849e2b83b10}} 
+abstract String {\bfseries get\+Launcher\+Version} (Context ctx)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_abccab5419d5f77f33c0ac1fa1b89d59f}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_abccab5419d5f77f33c0ac1fa1b89d59f}} 
+abstract int {\bfseries add\+Event\+Handler} (\mbox{\hyperlink{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler}{I\+Meta\+Service\+Event\+Handler}} event\+Handler)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_a14375dc0575b4f845784aac0ae259fce}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_a14375dc0575b4f845784aac0ae259fce}} 
+abstract int {\bfseries remove\+Event\+Handler} (\mbox{\hyperlink{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler}{I\+Meta\+Service\+Event\+Handler}} event\+Handler)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_aeeed271f09f621986c302f99bb866425}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_aeeed271f09f621986c302f99bb866425}} 
+abstract int {\bfseries get\+Scene\+Assets\+Info} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_a7be8ca50537407e816b01861c245ebb3}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_a7be8ca50537407e816b01861c245ebb3}} 
+abstract int {\bfseries is\+Scene\+Assets\+Downloaded} (long scene\+Id)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_a64e9b9c24814ca51b274241ddfd5e18a}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_a64e9b9c24814ca51b274241ddfd5e18a}} 
+abstract int {\bfseries download\+Scene\+Assets} (long scene\+Id)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_ae5f0d8f99edc848acf9bdd3e6b6bdfd8}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_ae5f0d8f99edc848acf9bdd3e6b6bdfd8}} 
+abstract int {\bfseries cancel\+Download\+Scene\+Assets} (long scene\+Id)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_a907e070433c8c6fb3153516826b77f8d}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_a907e070433c8c6fb3153516826b77f8d}} 
+abstract int {\bfseries clean\+Scene\+Assets} (long scene\+Id)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_a4b081e7fdb81385ce1ab5c4b2eab613e}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_a4b081e7fdb81385ce1ab5c4b2eab613e}} 
+abstract int {\bfseries create\+Scene} (\mbox{\hyperlink{classio_1_1agora_1_1meta_1_1_meta_scene_config}{Meta\+Scene\+Config}} config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_af5666eaf27c8cac4ebcdf071b3f0747d}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_af5666eaf27c8cac4ebcdf071b3f0747d}} 
+static synchronized \mbox{\hyperlink{classio_1_1agora_1_1meta_1_1_i_meta_service}{I\+Meta\+Service}} {\bfseries create} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_a46e8530f5154b22e863ae2282bf1e13b}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_a46e8530f5154b22e863ae2282bf1e13b}} 
+static synchronized void {\bfseries destroy} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1meta_1_1_i_meta_service_a0db7700413887af8beffb945671c3772}\label{classio_1_1agora_1_1meta_1_1_i_meta_service_a0db7700413887af8beffb945671c3772}} 
+abstract int {\bfseries do\+Destroy} ()
+\end{DoxyCompactItemize}

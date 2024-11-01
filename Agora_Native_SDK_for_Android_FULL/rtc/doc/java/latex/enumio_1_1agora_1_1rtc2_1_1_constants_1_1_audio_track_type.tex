@@ -1,0 +1,34 @@
+\hypertarget{enumio_1_1agora_1_1rtc2_1_1_constants_1_1_audio_track_type}{}\doxysection{io.\+agora.\+rtc2.\+Constants.\+Audio\+Track\+Type Enum Reference}
+\label{enumio_1_1agora_1_1rtc2_1_1_constants_1_1_audio_track_type}\index{io.agora.rtc2.Constants.AudioTrackType@{io.agora.rtc2.Constants.AudioTrackType}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{enumio_1_1agora_1_1rtc2_1_1_constants_1_1_audio_track_type_ae36950a921c2184445cdf0dab79af263}\label{enumio_1_1agora_1_1rtc2_1_1_constants_1_1_audio_track_type_ae36950a921c2184445cdf0dab79af263}} 
+static int {\bfseries get\+Value} (\mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1_constants_1_1_audio_track_type}{Audio\+Track\+Type}} type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1_constants_1_1_audio_track_type_a43b21328b8c85a17b3fc0fddb5361230}{A\+U\+D\+I\+O\+\_\+\+T\+R\+A\+C\+K\+\_\+\+M\+I\+X\+A\+B\+LE}} =(0)
+\item 
+\mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1_constants_1_1_audio_track_type_afc08de02872637d1a966f28cbfde041a}{A\+U\+D\+I\+O\+\_\+\+T\+R\+A\+C\+K\+\_\+\+D\+I\+R\+E\+CT}} =(1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The type of custom audio track 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{enumio_1_1agora_1_1rtc2_1_1_constants_1_1_audio_track_type_a43b21328b8c85a17b3fc0fddb5361230}\label{enumio_1_1agora_1_1rtc2_1_1_constants_1_1_audio_track_type_a43b21328b8c85a17b3fc0fddb5361230}} 
+\index{io.agora.rtc2.Constants.AudioTrackType@{io.agora.rtc2.Constants.AudioTrackType}!AUDIO\_TRACK\_MIXABLE@{AUDIO\_TRACK\_MIXABLE}}
+\index{AUDIO\_TRACK\_MIXABLE@{AUDIO\_TRACK\_MIXABLE}!io.agora.rtc2.Constants.AudioTrackType@{io.agora.rtc2.Constants.AudioTrackType}}
+\doxysubsubsection{\texorpdfstring{AUDIO\_TRACK\_MIXABLE}{AUDIO\_TRACK\_MIXABLE}}
+{\footnotesize\ttfamily io.\+agora.\+rtc2.\+Constants.\+Audio\+Track\+Type.\+A\+U\+D\+I\+O\+\_\+\+T\+R\+A\+C\+K\+\_\+\+M\+I\+X\+A\+B\+LE =(0)}
+
+0\+: Mixable audio track You can push more than one mixable Audio tracks into one R\+TC connection(channel id + uid), and S\+DK will mix these tracks into one audio track automatically. However, compare to direct audio track, mixable track might cause extra 30ms+ delay. \mbox{\Hypertarget{enumio_1_1agora_1_1rtc2_1_1_constants_1_1_audio_track_type_afc08de02872637d1a966f28cbfde041a}\label{enumio_1_1agora_1_1rtc2_1_1_constants_1_1_audio_track_type_afc08de02872637d1a966f28cbfde041a}} 
+\index{io.agora.rtc2.Constants.AudioTrackType@{io.agora.rtc2.Constants.AudioTrackType}!AUDIO\_TRACK\_DIRECT@{AUDIO\_TRACK\_DIRECT}}
+\index{AUDIO\_TRACK\_DIRECT@{AUDIO\_TRACK\_DIRECT}!io.agora.rtc2.Constants.AudioTrackType@{io.agora.rtc2.Constants.AudioTrackType}}
+\doxysubsubsection{\texorpdfstring{AUDIO\_TRACK\_DIRECT}{AUDIO\_TRACK\_DIRECT}}
+{\footnotesize\ttfamily io.\+agora.\+rtc2.\+Constants.\+Audio\+Track\+Type.\+A\+U\+D\+I\+O\+\_\+\+T\+R\+A\+C\+K\+\_\+\+D\+I\+R\+E\+CT =(1)}
+
+1\+: Direct audio track You can only push one direct (non-\/mixable) audio track into one R\+TC connection(channel id + uid). Compare to mixable stream, you can have lower lantency using direct audio track. 

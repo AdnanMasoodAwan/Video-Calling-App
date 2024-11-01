@@ -1,0 +1,1042 @@
+\hypertarget{classagora_1_1base_1_1_i_agora_service}{}\doxysection{agora\+::base\+::I\+Agora\+Service Class Reference}
+\label{classagora_1_1base_1_1_i_agora_service}\index{agora::base::IAgoraService@{agora::base::IAgoraService}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a6f1fb6e792c564dee46903cbb3bc35fc}{initialize}} (const \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}} \&config)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_aef8f68c57ac36aca4277a57cd7615667}{at\+Exit}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_affb633b88e136c72ef321d696b7a0656}{release}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a5d7223e244269fb9ebbe9e609d82c523}{set\+Audio\+Session\+Preset}} (agora\+::rtc\+::\+A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE scenario, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a2feac66925e2f27f0964912bb1f8f75c}{set\+Audio\+Session\+Configuration}} (const \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration}{Audio\+Session\+Configuration}} \&config, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a81052481e16f8b82bd1935175f002637}{get\+Audio\+Session\+Configuration}} (\mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration}{Audio\+Session\+Configuration}} $\ast$config)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a3aecc66675ca9698fa6fdeab5b85333a}{set\+Log\+File}} (const char $\ast$file\+Path, unsigned int file\+Size, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ad46b8621ebf9c9143007f444b5064b8d}{set\+Log\+Filter}} (unsigned int filters, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{rtc\+::\+I\+Rtc\+Connection}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a326cda8c926bcb6da5f3a2c512a9ae90}{create\+Rtc\+Connection}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration}{rtc\+::\+Rtc\+Connection\+Configuration}} \&cfg)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_adae5bb15639f9559a1399082590955e5}\label{classagora_1_1base_1_1_i_agora_service_adae5bb15639f9559a1399082590955e5}} 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection}{rtc\+::\+I\+Rtmp\+Connection}} $>$ {\bfseries create\+Rtmp\+Connection} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_configuration}{rtc\+::\+Rtmp\+Connection\+Configuration}} \&cfg)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a80cdd14cd711c50b153ffb9a8961bf0a}{create\+Local\+Audio\+Track}} ()=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a0b5487755546a5cfc3907f70445da786}{create\+Local\+Mixed\+Audio\+Track}} ()=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ab267caa07c4614e8bf27da38527150de}{create\+Custom\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{rtc\+::\+I\+Audio\+Pcm\+Data\+Sender}} $>$ audio\+Source)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a2151a9043d465a1c7ae673a030fbb433}{create\+Direct\+Custom\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{rtc\+::\+I\+Audio\+Pcm\+Data\+Sender}} $>$ audio\+Source)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ad0b10716a1036151ea2ed3d779a1f1d4}{create\+Custom\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{rtc\+::\+I\+Audio\+Pcm\+Data\+Sender}} $>$ audio\+Source, bool enable\+Aec)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a47def12a2f4034460c756fd351bc6e71}{create\+Custom\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_mixer_source}{rtc\+::\+I\+Remote\+Audio\+Mixer\+Source}} $>$ audio\+Source)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a1cdac0edad710852fa97f20b83044a05}{create\+Custom\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender}{rtc\+::\+I\+Audio\+Encoded\+Frame\+Sender}} $>$ audio\+Source, T\+Mix\+Mode mix\+Mode)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a7d77492f47e21b1e1f055d4e322c94c7}{create\+Custom\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_sender}{rtc\+::\+I\+Media\+Packet\+Sender}} $>$ source)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a11274090bcbfd95f548a0054f79ef7c7}{create\+Media\+Player\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source}{rtc\+::\+I\+Media\+Player\+Source}} $>$ audio\+Source)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ae3385bc6b84407ddad8424849faa7838}{create\+Media\+Streaming\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source}{rtc\+::\+I\+Media\+Streaming\+Source}} $>$ streaming\+Source)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a29ce86dc2369a46b5b0aecca39a40b25}{create\+Recording\+Device\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source}{rtc\+::\+I\+Recording\+Device\+Source}} $>$ audio\+Source, bool enable\+Aec, bool overlap)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager}{rtc\+::\+I\+N\+G\+Audio\+Device\+Manager}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_aa7b11bf85ed45ceeea9a50f45536001c}{create\+Audio\+Device\+Manager}} ()=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_node_factory}{rtc\+::\+I\+Media\+Node\+Factory}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a02745fde3a908936af56c0243506d1d7}{create\+Media\+Node\+Factory}} ()=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_aa7ba9cceccc73cbfb6bc1678264a5515}{create\+Camera\+Video\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer}{rtc\+::\+I\+Camera\+Capturer}} $>$ video\+Source, const char $\ast$id=O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ac209846c760933cc343d3e056c1a0f81}{create\+Mixed\+Video\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source}{rtc\+::\+I\+Video\+Mixer\+Source}} $>$ video\+Source, const char $\ast$id=O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a63ed97767c49e2890424f4e2c89f66fc}{create\+Transcoded\+Video\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_transceiver}{rtc\+::\+I\+Video\+Frame\+Transceiver}} $>$ transceiver, const char $\ast$id=O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_aaefc87859c82a4266947f0a4ebd07c51}{create\+Custom\+Video\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_sender}{rtc\+::\+I\+Video\+Frame\+Sender}} $>$ video\+Source, const char $\ast$id=O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a5cbbb4b5bebe8a90953389bb249a2d4d}{create\+Custom\+Video\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_encoded_image_sender}{rtc\+::\+I\+Video\+Encoded\+Image\+Sender}} $>$ video\+Source, const \mbox{\hyperlink{structagora_1_1rtc_1_1_sender_options}{rtc\+::\+Sender\+Options}} \&options, const char $\ast$id=O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a77e5f2326e69951534998ae25189a20a}{create\+Screen\+Capture\+Video\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_screen_capturer}{rtc\+::\+I\+Screen\+Capturer}} $>$ screen, const char $\ast$id=O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_aab925bdeaca592542bf92dc864c6500e}{create\+Custom\+Video\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_sender}{rtc\+::\+I\+Media\+Packet\+Sender}} $>$ source, const char $\ast$id=O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_aaeee87fe8d3baf50947e7a9fd7744708}{create\+Media\+Player\+Video\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source}{rtc\+::\+I\+Media\+Player\+Source}} $>$ video\+Source, const char $\ast$id=O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a87f676cba1b609a56a56bb8946ba7dea}{create\+Media\+Streaming\+Video\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source}{rtc\+::\+I\+Media\+Streaming\+Source}} $>$ streaming\+Source, const char $\ast$id=O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_service}{rtc\+::\+I\+Rtmp\+Streaming\+Service}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a69443cc65d8086de850f8151e1024944}{create\+Rtmp\+Streaming\+Service}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{rtc\+::\+I\+Rtc\+Connection}} $>$ rtc\+Connection, const char $\ast$app\+Id)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_relay_service}{rtc\+::\+I\+Media\+Relay\+Service}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a47644e5f456d49cd482d0a36de9c2bbf}{create\+Media\+Relay\+Service}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{rtc\+::\+I\+Rtc\+Connection}} $>$ rtc\+Connection, const char $\ast$app\+Id)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_file_uploader_service}{rtc\+::\+I\+File\+Uploader\+Service}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_aaf853ce79903690a4fc2799002d7b240}{create\+File\+Upload\+Service}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{rtc\+::\+I\+Rtc\+Connection}} $>$ rtc\+Connection, const char $\ast$app\+Id)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service}{rtm\+::\+I\+Rtm\+Service}} $\ast$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ae3dae3b461aed1b826e5162479530ff1}{create\+Rtm\+Service}} ()=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a3e5e81e7dbd403fc5676cd3faca4360c}\label{classagora_1_1base_1_1_i_agora_service_a3e5e81e7dbd403fc5676cd3faca4360c}} 
+virtual int {\bfseries add\+Extension\+Observer} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_extension_observer}{agora\+::rtc\+::\+I\+Media\+Extension\+Observer}} $>$ observer, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a53be677e570dce903b7194b1b75ce71a}\label{classagora_1_1base_1_1_i_agora_service_a53be677e570dce903b7194b1b75ce71a}} 
+virtual int {\bfseries remove\+Extension\+Observer} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_extension_observer}{agora\+::rtc\+::\+I\+Media\+Extension\+Observer}} $>$ observer, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ rtc\+::\+I\+Audio\+Device\+Manager $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ac52954448663dabb7c4035175bb2909d}{create\+Audio\+Device\+Manager\+Component}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{rtc\+::\+I\+Audio\+Device\+Manager\+Observer}} $\ast$observer)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1_i_local_data_channel}{I\+Local\+Data\+Channel}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_aee8bea04e107d4bd36081c110d52a387}{create\+Local\+Data\+Channel}} (const \mbox{\hyperlink{structagora_1_1_data_channel_config}{Data\+Channel\+Config}} \&config)=0
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_afbb8c1a290016f7acffde70cd286b4a8}{get\+Extension\+Id}} (const char $\ast$provider\+\_\+name, const char $\ast$extension\+\_\+name)=0
+\begin{DoxyCompactList}\small\item\em Get the ID of the registered extension. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ada8e387e7095703c53331af689dedc2a}{enable\+Extension}} (const char $\ast$provider\+\_\+name, const char $\ast$extension\+\_\+name, const char $\ast$track\+\_\+id=N\+U\+LL, bool auto\+\_\+enable\+\_\+on\+\_\+track=false, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ae600a08ccb1d8083048067fd4b90b334}{disable\+Extension}} (const char $\ast$provider\+\_\+name, const char $\ast$extension\+\_\+name, const char $\ast$track\+\_\+id=N\+U\+LL, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_parameter}{base\+::\+I\+Agora\+Parameter}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a1c707744b5e4f06467219a25ecaeccb7}{get\+Agora\+Parameter}} ()=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_config_center}{rtc\+::\+I\+Config\+Center}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a18c4f5e6c60f06a1632768afd37725b5}{get\+Config\+Center}} ()=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1base_1_1_i_sync_client}{base\+::\+I\+Sync\+Client}} $>$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a26c89725f04dfb473a9f829bf604056f}{create\+Sync\+Client}} (const \mbox{\hyperlink{structagora_1_1base_1_1_sync_config}{base\+::\+Sync\+Config}} \&config)=0
+\item 
+virtual int32\+\_\+t \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ac45ababdf3c92d6af22fbb92516766bf}{set\+Log\+Writer}} (\mbox{\hyperlink{classagora_1_1commons_1_1_i_log_writer}{agora\+::commons\+::\+I\+Log\+Writer}} $\ast$log\+Writer)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1commons_1_1_i_log_writer}{agora\+::commons\+::\+I\+Log\+Writer}} $\ast$ \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ac577b550eb990e9043b663ebf8a6eebf}{release\+Log\+Writer}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service}{I\+Agora\+Service}} class.
+
+{\ttfamily \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service}{I\+Agora\+Service}}} is the entry point of Agora low-\/level A\+P\+Is. Use this interface to create access points to Agora interfaces, including R\+TC connections and media tracks.
+
+You can create an {\ttfamily \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service}{I\+Agora\+Service}}} object by calling \mbox{\hyperlink{group__create_agora_service_gadedc5876942db5dd130c45e88ea44126}{create\+Agora\+Service}}.
+
+You can configure the {\ttfamily \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service}{I\+Agora\+Service}}} object for different user scenarios on the global level by using {\ttfamily \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a6f1fb6e792c564dee46903cbb3bc35fc}\label{classagora_1_1base_1_1_i_agora_service_a6f1fb6e792c564dee46903cbb3bc35fc}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!initialize@{initialize}}
+\index{initialize@{initialize}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily virtual int agora\+::base\+::\+I\+Agora\+Service\+::initialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Initializes the \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service}{Agora\+Service}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & The configuration of the initialization. For details, see \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item {\ttfamily E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT}, if {\ttfamily context} in {\ttfamily \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}}} is not provided for Android.
+\item {\ttfamily E\+R\+R\+\_\+\+I\+N\+I\+T\+\_\+\+N\+E\+T\+\_\+\+E\+N\+G\+I\+NE}, if the network engine cannot be initialized. On Windows, the error occurs mostly because the connection to the local port is disabled by the firewall. In this case, turn off the firewall and then turn it on again. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_aef8f68c57ac36aca4277a57cd7615667}\label{classagora_1_1base_1_1_i_agora_service_aef8f68c57ac36aca4277a57cd7615667}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!atExit@{atExit}}
+\index{atExit@{atExit}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{atExit()}{atExit()}}
+{\footnotesize\ttfamily virtual int agora\+::base\+::\+I\+Agora\+Service\+::at\+Exit (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Flush log \& cache before exit \mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_affb633b88e136c72ef321d696b7a0656}\label{classagora_1_1base_1_1_i_agora_service_affb633b88e136c72ef321d696b7a0656}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!release@{release}}
+\index{release@{release}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int agora\+::base\+::\+I\+Agora\+Service\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service}{Agora\+Service}} object.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a5d7223e244269fb9ebbe9e609d82c523}\label{classagora_1_1base_1_1_i_agora_service_a5d7223e244269fb9ebbe9e609d82c523}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!setAudioSessionPreset@{setAudioSessionPreset}}
+\index{setAudioSessionPreset@{setAudioSessionPreset}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{setAudioSessionPreset()}{setAudioSessionPreset()}}
+{\footnotesize\ttfamily virtual int agora\+::base\+::\+I\+Agora\+Service\+::set\+Audio\+Session\+Preset (\begin{DoxyParamCaption}\item[{agora\+::rtc\+::\+A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE}]{scenario,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Configures the preset audio scenario.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scenario} & The preset audio scenario\+: A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a2feac66925e2f27f0964912bb1f8f75c}\label{classagora_1_1base_1_1_i_agora_service_a2feac66925e2f27f0964912bb1f8f75c}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!setAudioSessionConfiguration@{setAudioSessionConfiguration}}
+\index{setAudioSessionConfiguration@{setAudioSessionConfiguration}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{setAudioSessionConfiguration()}{setAudioSessionConfiguration()}}
+{\footnotesize\ttfamily virtual int agora\+::base\+::\+I\+Agora\+Service\+::set\+Audio\+Session\+Configuration (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration}{Audio\+Session\+Configuration}} \&}]{config,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Customizes the audio session configuration.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & The reference to the audio session configuration\+: \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration}{Audio\+Session\+Configuration}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a81052481e16f8b82bd1935175f002637}\label{classagora_1_1base_1_1_i_agora_service_a81052481e16f8b82bd1935175f002637}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!getAudioSessionConfiguration@{getAudioSessionConfiguration}}
+\index{getAudioSessionConfiguration@{getAudioSessionConfiguration}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{getAudioSessionConfiguration()}{getAudioSessionConfiguration()}}
+{\footnotesize\ttfamily virtual int agora\+::base\+::\+I\+Agora\+Service\+::get\+Audio\+Session\+Configuration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration}{Audio\+Session\+Configuration}} $\ast$}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the audio session configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em config} & The pointer to the audio session configuration\+: \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration}{Audio\+Session\+Configuration}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a3aecc66675ca9698fa6fdeab5b85333a}\label{classagora_1_1base_1_1_i_agora_service_a3aecc66675ca9698fa6fdeab5b85333a}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!setLogFile@{setLogFile}}
+\index{setLogFile@{setLogFile}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{setLogFile()}{setLogFile()}}
+{\footnotesize\ttfamily virtual int agora\+::base\+::\+I\+Agora\+Service\+::set\+Log\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Path,  }\item[{unsigned int}]{file\+Size,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the path and size of the S\+DK log files.
+
+The S\+DK records all the log data during the S\+DK runtime in two log files, each with a default size of 512 KB. If you set {\ttfamily file\+Size} as 1024 KB, the S\+DK outputs log files with a maximum size of 2 MB. If the total size of the log files exceeds the set value, the new output log overwrites the old output log.
+
+\begin{DoxyNote}{Note}
+To ensure that the output log is complete, call this method immediately after calling \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a6f1fb6e792c564dee46903cbb3bc35fc}{initialize}}.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & The pointer to the log file. Ensure that the directory of the log file exists and is writable. \\
+\hline
+{\em file\+Size} & The size of the S\+DK log file size (Byte), which means file\+Size bytes per log file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_ad46b8621ebf9c9143007f444b5064b8d}\label{classagora_1_1base_1_1_i_agora_service_ad46b8621ebf9c9143007f444b5064b8d}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!setLogFilter@{setLogFilter}}
+\index{setLogFilter@{setLogFilter}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{setLogFilter()}{setLogFilter()}}
+{\footnotesize\ttfamily virtual int agora\+::base\+::\+I\+Agora\+Service\+::set\+Log\+Filter (\begin{DoxyParamCaption}\item[{unsigned int}]{filters,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the S\+DK log output filter.
+
+The log level follows the sequence of O\+FF, C\+R\+I\+T\+I\+C\+AL, E\+R\+R\+OR, W\+A\+R\+N\+I\+NG, I\+N\+FO, and D\+E\+B\+UG.
+
+Select a level to output the logs in and above the selected level. For example, if you set the log level to W\+A\+R\+N\+I\+NG, you can see the logs in the levels of C\+R\+I\+T\+I\+C\+AL, E\+R\+R\+OR, and W\+A\+R\+N\+I\+NG.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filters} & The log output filter.
+\begin{DoxyItemize}
+\item {\ttfamily L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+O\+NE (0x0000)}\+: Do not output any log file.
+\item {\ttfamily L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO (0x0001)}\+: (Recommended) Output log files of the I\+N\+FO level.
+\item {\ttfamily L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+RN (0x0002)}\+: Output log files of the W\+A\+RN level.
+\item {\ttfamily L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR (0x0004)}\+: Output log files of the E\+R\+R\+OR level.
+\item {\ttfamily L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+AL (0x0008)}\+: Output log files of the F\+A\+T\+AL level. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a326cda8c926bcb6da5f3a2c512a9ae90}\label{classagora_1_1base_1_1_i_agora_service_a326cda8c926bcb6da5f3a2c512a9ae90}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createRtcConnection@{createRtcConnection}}
+\index{createRtcConnection@{createRtcConnection}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createRtcConnection()}{createRtcConnection()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{rtc\+::\+I\+Rtc\+Connection}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Rtc\+Connection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration}{rtc\+::\+Rtc\+Connection\+Configuration}} \&}]{cfg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates an \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{Rtc\+Connection}} object and returns the pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & The reference to the R\+TC connection configuration\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration}{Rtc\+Connection\+Configuration}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{I\+Rtc\+Connection}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a80cdd14cd711c50b153ffb9a8961bf0a}\label{classagora_1_1base_1_1_i_agora_service_a80cdd14cd711c50b153ffb9a8961bf0a}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createLocalAudioTrack@{createLocalAudioTrack}}
+\index{createLocalAudioTrack@{createLocalAudioTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createLocalAudioTrack()}{createLocalAudioTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Local\+Audio\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local audio track object and returns the pointer.
+
+By default, the audio track is created from the selected audio input device, such as the built-\/in microphone on a mobile device.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure.
+\item {\ttfamily I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}, if {\ttfamily enable\+Audio\+Processor} in \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}} is set as {\ttfamily false}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a0b5487755546a5cfc3907f70445da786}\label{classagora_1_1base_1_1_i_agora_service_a0b5487755546a5cfc3907f70445da786}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createLocalMixedAudioTrack@{createLocalMixedAudioTrack}}
+\index{createLocalMixedAudioTrack@{createLocalMixedAudioTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createLocalMixedAudioTrack()}{createLocalMixedAudioTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Local\+Mixed\+Audio\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local mixed audio track object and returns the pointer.
+
+By default, the audio track is created from mix source, which could mixed target track.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_ab267caa07c4614e8bf27da38527150de}\label{classagora_1_1base_1_1_i_agora_service_ab267caa07c4614e8bf27da38527150de}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createCustomAudioTrack@{createCustomAudioTrack}}
+\index{createCustomAudioTrack@{createCustomAudioTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createCustomAudioTrack()}{createCustomAudioTrack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Custom\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{rtc\+::\+I\+Audio\+Pcm\+Data\+Sender}} $>$}]{audio\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local audio track object with a P\+CM data sender and returns the pointer.
+
+Once created, this track can be used to send P\+CM audio data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Source} & The pointer to the P\+CM audio data sender\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{I\+Audio\+Pcm\+Data\+Sender}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure.
+\item {\ttfamily I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}, if {\ttfamily enable\+Audio\+Processor} in \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}} is set as {\ttfamily false}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a2151a9043d465a1c7ae673a030fbb433}\label{classagora_1_1base_1_1_i_agora_service_a2151a9043d465a1c7ae673a030fbb433}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createDirectCustomAudioTrack@{createDirectCustomAudioTrack}}
+\index{createDirectCustomAudioTrack@{createDirectCustomAudioTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createDirectCustomAudioTrack()}{createDirectCustomAudioTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Direct\+Custom\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{rtc\+::\+I\+Audio\+Pcm\+Data\+Sender}} $>$}]{audio\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local audio track object with a P\+CM data sender and returns the pointer. The source is not intended to be mixed with other source.
+
+Once created, this track can be used to send P\+CM audio data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Source} & The pointer to the P\+CM audio data sender\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{I\+Audio\+Pcm\+Data\+Sender}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure.
+\item {\ttfamily I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}, if {\ttfamily enable\+Audio\+Processor} in \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}} is set as {\ttfamily false}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_ad0b10716a1036151ea2ed3d779a1f1d4}\label{classagora_1_1base_1_1_i_agora_service_ad0b10716a1036151ea2ed3d779a1f1d4}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createCustomAudioTrack@{createCustomAudioTrack}}
+\index{createCustomAudioTrack@{createCustomAudioTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createCustomAudioTrack()}{createCustomAudioTrack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Custom\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{rtc\+::\+I\+Audio\+Pcm\+Data\+Sender}} $>$}]{audio\+Source,  }\item[{bool}]{enable\+Aec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local audio track object with a P\+CM data sender and returns the pointer.
+
+Once created, this track can be used to send P\+CM audio data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Source} & The pointer to the P\+CM audio data sender\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{I\+Audio\+Pcm\+Data\+Sender}}. \\
+\hline
+{\em enable\+Aec} & Whether enable audio echo cancellation for P\+CM audio data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure.
+\item {\ttfamily I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}, if {\ttfamily enable\+Audio\+Processor} in \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}} is set as {\ttfamily false}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a47def12a2f4034460c756fd351bc6e71}\label{classagora_1_1base_1_1_i_agora_service_a47def12a2f4034460c756fd351bc6e71}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createCustomAudioTrack@{createCustomAudioTrack}}
+\index{createCustomAudioTrack@{createCustomAudioTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createCustomAudioTrack()}{createCustomAudioTrack()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Custom\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_mixer_source}{rtc\+::\+I\+Remote\+Audio\+Mixer\+Source}} $>$}]{audio\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local audio track object with a audio mixer source and returns the pointer.
+
+Once created, this track can be used to send P\+CM audio data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Source} & The pointer to the audio mixer source \+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_mixer_source}{I\+Remote\+Audio\+Mixer\+Source}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}, if the method call succeeds.
+\item A null pointer, if the method call fails.
+\item {\ttfamily I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}, if {\ttfamily enable\+Audio\+Processor} in {\ttfamily \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}}} is set as {\ttfamily false}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a1cdac0edad710852fa97f20b83044a05}\label{classagora_1_1base_1_1_i_agora_service_a1cdac0edad710852fa97f20b83044a05}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createCustomAudioTrack@{createCustomAudioTrack}}
+\index{createCustomAudioTrack@{createCustomAudioTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createCustomAudioTrack()}{createCustomAudioTrack()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Custom\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender}{rtc\+::\+I\+Audio\+Encoded\+Frame\+Sender}} $>$}]{audio\+Source,  }\item[{T\+Mix\+Mode}]{mix\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local audio track object with an encoded audio frame sender and returns the pointer.
+
+Once created, this track can be used to send encoded audio frames, such as Opus frames.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Source} & The pointer to the encoded audio frame sender\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender}{I\+Audio\+Encoder\+Frame\+Sender}}. \\
+\hline
+{\em mix\+Mode} & The mixing mode of the encoded audio in the channel\+: \#\+T\+Mix\+Mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure.
+\begin{DoxyItemize}
+\item {\ttfamily I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}, if {\ttfamily enable\+Audio\+Processor} is set as {\ttfamily false} in \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}}. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a7d77492f47e21b1e1f055d4e322c94c7}\label{classagora_1_1base_1_1_i_agora_service_a7d77492f47e21b1e1f055d4e322c94c7}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createCustomAudioTrack@{createCustomAudioTrack}}
+\index{createCustomAudioTrack@{createCustomAudioTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createCustomAudioTrack()}{createCustomAudioTrack()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Custom\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_sender}{rtc\+::\+I\+Media\+Packet\+Sender}} $>$}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local audio track object with a media packet sender and returns the pointer.
+
+Once created, this track can be used to send audio packets, such as customized U\+D\+P/\+R\+TP packets.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The pointer to the media packet sender\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_sender}{I\+Media\+Packet\+Sender}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure.
+\item {\ttfamily I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}, if {\ttfamily enable\+Audio\+Processor} is set as {\ttfamily false} in \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a11274090bcbfd95f548a0054f79ef7c7}\label{classagora_1_1base_1_1_i_agora_service_a11274090bcbfd95f548a0054f79ef7c7}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createMediaPlayerAudioTrack@{createMediaPlayerAudioTrack}}
+\index{createMediaPlayerAudioTrack@{createMediaPlayerAudioTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createMediaPlayerAudioTrack()}{createMediaPlayerAudioTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Media\+Player\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source}{rtc\+::\+I\+Media\+Player\+Source}} $>$}]{audio\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local audio track object with an I\+Media\+Player\+Source object and returns the pointer.
+
+Once created, this track can be used to send P\+CM audio data decoded from a media player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Source} & The pointer to the player source. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source}{I\+Media\+Player\+Source}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure.
+\item {\ttfamily I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}, if {\ttfamily enable\+Audio\+Processor} is set as {\ttfamily false} in \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_ae3385bc6b84407ddad8424849faa7838}\label{classagora_1_1base_1_1_i_agora_service_ae3385bc6b84407ddad8424849faa7838}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createMediaStreamingAudioTrack@{createMediaStreamingAudioTrack}}
+\index{createMediaStreamingAudioTrack@{createMediaStreamingAudioTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createMediaStreamingAudioTrack()}{createMediaStreamingAudioTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Media\+Streaming\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source}{rtc\+::\+I\+Media\+Streaming\+Source}} $>$}]{streaming\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local audio track object with an I\+Media\+Streaming\+Source object and returns the pointer.
+
+Once created, this track can be used to send encoded audio data which demuxed from a media streaming.
+
+
+\begin{DoxyParams}{Parameters}
+{\em streaming\+Source} & The pointer to the streaming source. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source}{I\+Media\+Streaming\+Source}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure.
+\item {\ttfamily I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}, if {\ttfamily enable\+Audio\+Processor} is set as {\ttfamily false} in \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration}{Agora\+Service\+Configuration}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a29ce86dc2369a46b5b0aecca39a40b25}\label{classagora_1_1base_1_1_i_agora_service_a29ce86dc2369a46b5b0aecca39a40b25}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createRecordingDeviceAudioTrack@{createRecordingDeviceAudioTrack}}
+\index{createRecordingDeviceAudioTrack@{createRecordingDeviceAudioTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createRecordingDeviceAudioTrack()}{createRecordingDeviceAudioTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{rtc\+::\+I\+Local\+Audio\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Recording\+Device\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source}{rtc\+::\+I\+Recording\+Device\+Source}} $>$}]{audio\+Source,  }\item[{bool}]{enable\+Aec,  }\item[{bool}]{overlap }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local audio track object with the recording device source and returns the pointer.
+
+Once created, this track can be used to send audio data got from a recording device. 
+\begin{DoxyParams}{Parameters}
+{\em audio\+Source} & The pointer to the recording device source. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source}{I\+Recording\+Device\+Source}}. \\
+\hline
+{\em enable\+Aec} & Whether enable audio echo cancellation for loopback recording. If loopback recording device is a virtual sound card, it should be false, or it should be true. \\
+\hline
+{\em overlap} & Whether overlap playout signal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_aa7b11bf85ed45ceeea9a50f45536001c}\label{classagora_1_1base_1_1_i_agora_service_aa7b11bf85ed45ceeea9a50f45536001c}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createAudioDeviceManager@{createAudioDeviceManager}}
+\index{createAudioDeviceManager@{createAudioDeviceManager}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createAudioDeviceManager()}{createAudioDeviceManager()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager}{rtc\+::\+I\+N\+G\+Audio\+Device\+Manager}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Audio\+Device\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates an audio device manager object and returns the pointer.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager}{I\+N\+G\+Audio\+Device\+Manager}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a02745fde3a908936af56c0243506d1d7}\label{classagora_1_1base_1_1_i_agora_service_a02745fde3a908936af56c0243506d1d7}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createMediaNodeFactory@{createMediaNodeFactory}}
+\index{createMediaNodeFactory@{createMediaNodeFactory}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createMediaNodeFactory()}{createMediaNodeFactory()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_node_factory}{rtc\+::\+I\+Media\+Node\+Factory}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Media\+Node\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a media node factory object and returns the pointer.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_node_factory}{I\+Media\+Node\+Factory}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_aa7ba9cceccc73cbfb6bc1678264a5515}\label{classagora_1_1base_1_1_i_agora_service_aa7ba9cceccc73cbfb6bc1678264a5515}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createCameraVideoTrack@{createCameraVideoTrack}}
+\index{createCameraVideoTrack@{createCameraVideoTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createCameraVideoTrack()}{createCameraVideoTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Camera\+Video\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer}{rtc\+::\+I\+Camera\+Capturer}} $>$}]{video\+Source,  }\item[{const char $\ast$}]{id = {\ttfamily OPTIONAL\+\_\+NULLPTR} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local video track object with a camera capturer and returns the pointer.
+
+Once created, this track can be used to send video data captured by the camera.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Source} & The pointer to the camera capturer\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer}{I\+Camera\+Capturer}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_ac209846c760933cc343d3e056c1a0f81}\label{classagora_1_1base_1_1_i_agora_service_ac209846c760933cc343d3e056c1a0f81}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createMixedVideoTrack@{createMixedVideoTrack}}
+\index{createMixedVideoTrack@{createMixedVideoTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createMixedVideoTrack()}{createMixedVideoTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Mixed\+Video\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source}{rtc\+::\+I\+Video\+Mixer\+Source}} $>$}]{video\+Source,  }\item[{const char $\ast$}]{id = {\ttfamily OPTIONAL\+\_\+NULLPTR} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local video track object with a video mixer and returns the pointer.
+
+Once created, this track can be used to send video data processed by the video mixer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Source} & The pointer to the video mixer. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_mixer_source}{I\+Video\+Mixer\+Source}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a63ed97767c49e2890424f4e2c89f66fc}\label{classagora_1_1base_1_1_i_agora_service_a63ed97767c49e2890424f4e2c89f66fc}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createTranscodedVideoTrack@{createTranscodedVideoTrack}}
+\index{createTranscodedVideoTrack@{createTranscodedVideoTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createTranscodedVideoTrack()}{createTranscodedVideoTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Transcoded\+Video\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_transceiver}{rtc\+::\+I\+Video\+Frame\+Transceiver}} $>$}]{transceiver,  }\item[{const char $\ast$}]{id = {\ttfamily OPTIONAL\+\_\+NULLPTR} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local video track object with a video frame transceiver and returns the pointer.
+
+Once created, this track can be used to send video data processed by the transceiver.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transceiver} & The pointer to the video transceiver. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_transceiver}{I\+Video\+Frame\+Transceiver}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_aaefc87859c82a4266947f0a4ebd07c51}\label{classagora_1_1base_1_1_i_agora_service_aaefc87859c82a4266947f0a4ebd07c51}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createCustomVideoTrack@{createCustomVideoTrack}}
+\index{createCustomVideoTrack@{createCustomVideoTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createCustomVideoTrack()}{createCustomVideoTrack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Custom\+Video\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_sender}{rtc\+::\+I\+Video\+Frame\+Sender}} $>$}]{video\+Source,  }\item[{const char $\ast$}]{id = {\ttfamily OPTIONAL\+\_\+NULLPTR} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local video track object with a customized video source and returns the pointer.
+
+Once created, this track can be used to send video data from a customized source.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Source} & The pointer to the customized video frame sender\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_sender}{I\+Video\+Frame\+Sender}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a5cbbb4b5bebe8a90953389bb249a2d4d}\label{classagora_1_1base_1_1_i_agora_service_a5cbbb4b5bebe8a90953389bb249a2d4d}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createCustomVideoTrack@{createCustomVideoTrack}}
+\index{createCustomVideoTrack@{createCustomVideoTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createCustomVideoTrack()}{createCustomVideoTrack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Custom\+Video\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_encoded_image_sender}{rtc\+::\+I\+Video\+Encoded\+Image\+Sender}} $>$}]{video\+Source,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_sender_options}{rtc\+::\+Sender\+Options}} \&}]{options,  }\item[{const char $\ast$}]{id = {\ttfamily OPTIONAL\+\_\+NULLPTR} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local video track object with an encoded video image sender and returns the pointer.
+
+Once created, this track can be used to send encoded video images, such as H.\+264 or V\+P8 frames.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Source} & The pointer to the encoded video frame sender. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_encoded_image_sender}{I\+Video\+Encoded\+Image\+Sender}}. \\
+\hline
+{\em options} & The configuration for creating video encoded image track.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a77e5f2326e69951534998ae25189a20a}\label{classagora_1_1base_1_1_i_agora_service_a77e5f2326e69951534998ae25189a20a}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createScreenCaptureVideoTrack@{createScreenCaptureVideoTrack}}
+\index{createScreenCaptureVideoTrack@{createScreenCaptureVideoTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createScreenCaptureVideoTrack()}{createScreenCaptureVideoTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Screen\+Capture\+Video\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_screen_capturer}{rtc\+::\+I\+Screen\+Capturer}} $>$}]{screen,  }\item[{const char $\ast$}]{id = {\ttfamily OPTIONAL\+\_\+NULLPTR} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local video track object with a screen capture source extension and returns the pointer.
+
+Once created, this track can be used to work with the screen capture extension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & The pointer to the screen capture source.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_aab925bdeaca592542bf92dc864c6500e}\label{classagora_1_1base_1_1_i_agora_service_aab925bdeaca592542bf92dc864c6500e}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createCustomVideoTrack@{createCustomVideoTrack}}
+\index{createCustomVideoTrack@{createCustomVideoTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createCustomVideoTrack()}{createCustomVideoTrack()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Custom\+Video\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_sender}{rtc\+::\+I\+Media\+Packet\+Sender}} $>$}]{source,  }\item[{const char $\ast$}]{id = {\ttfamily OPTIONAL\+\_\+NULLPTR} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local video track object with a media packet sender and returns the pointer.
+
+Once created, this track can be used to send video packets, such as customized U\+D\+P/\+R\+TP packets.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The pointer to the media packet sender\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_sender}{I\+Media\+Packet\+Sender}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_aaeee87fe8d3baf50947e7a9fd7744708}\label{classagora_1_1base_1_1_i_agora_service_aaeee87fe8d3baf50947e7a9fd7744708}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createMediaPlayerVideoTrack@{createMediaPlayerVideoTrack}}
+\index{createMediaPlayerVideoTrack@{createMediaPlayerVideoTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createMediaPlayerVideoTrack()}{createMediaPlayerVideoTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Media\+Player\+Video\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source}{rtc\+::\+I\+Media\+Player\+Source}} $>$}]{video\+Source,  }\item[{const char $\ast$}]{id = {\ttfamily OPTIONAL\+\_\+NULLPTR} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local video track object with an I\+Media\+Player\+Source object and returns the pointer.
+
+Once created, this track can be used to send Y\+UV frames decoded from a player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Source} & The pointer to the player source. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source}{I\+Media\+Player\+Source}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a87f676cba1b609a56a56bb8946ba7dea}\label{classagora_1_1base_1_1_i_agora_service_a87f676cba1b609a56a56bb8946ba7dea}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createMediaStreamingVideoTrack@{createMediaStreamingVideoTrack}}
+\index{createMediaStreamingVideoTrack@{createMediaStreamingVideoTrack}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createMediaStreamingVideoTrack()}{createMediaStreamingVideoTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Media\+Streaming\+Video\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source}{rtc\+::\+I\+Media\+Streaming\+Source}} $>$}]{streaming\+Source,  }\item[{const char $\ast$}]{id = {\ttfamily OPTIONAL\+\_\+NULLPTR} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a local video track object with an I\+Media\+Streaming\+Source object and returns the pointer.
+
+Once created, this track can be used to send H264 frames which demuxed from a streaming.
+
+
+\begin{DoxyParams}{Parameters}
+{\em streaming\+Source} & The pointer to the player source. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source}{I\+Media\+Streaming\+Source}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a69443cc65d8086de850f8151e1024944}\label{classagora_1_1base_1_1_i_agora_service_a69443cc65d8086de850f8151e1024944}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createRtmpStreamingService@{createRtmpStreamingService}}
+\index{createRtmpStreamingService@{createRtmpStreamingService}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createRtmpStreamingService()}{createRtmpStreamingService()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_service}{rtc\+::\+I\+Rtmp\+Streaming\+Service}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Rtmp\+Streaming\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{rtc\+::\+I\+Rtc\+Connection}} $>$}]{rtc\+Connection,  }\item[{const char $\ast$}]{app\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates an R\+T\+MP streaming service object and returns the pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Connection} & The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{I\+Rtc\+Connection}}. \\
+\hline
+{\em app\+Id} & The App ID of the live streaming service. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_service}{I\+Rtmp\+Streaming\+Service}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a47644e5f456d49cd482d0a36de9c2bbf}\label{classagora_1_1base_1_1_i_agora_service_a47644e5f456d49cd482d0a36de9c2bbf}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createMediaRelayService@{createMediaRelayService}}
+\index{createMediaRelayService@{createMediaRelayService}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createMediaRelayService()}{createMediaRelayService()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_relay_service}{rtc\+::\+I\+Media\+Relay\+Service}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Media\+Relay\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{rtc\+::\+I\+Rtc\+Connection}} $>$}]{rtc\+Connection,  }\item[{const char $\ast$}]{app\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates an Media Relay service object and returns the pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Connection} & The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{I\+Rtc\+Connection}}. \\
+\hline
+{\em app\+Id} & The App ID of the media relay service. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_relay_service}{I\+Media\+Relay\+Service}}, if the method call succeeds.
+\item A null pointer, if the method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_aaf853ce79903690a4fc2799002d7b240}\label{classagora_1_1base_1_1_i_agora_service_aaf853ce79903690a4fc2799002d7b240}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createFileUploadService@{createFileUploadService}}
+\index{createFileUploadService@{createFileUploadService}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createFileUploadService()}{createFileUploadService()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_file_uploader_service}{rtc\+::\+I\+File\+Uploader\+Service}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+File\+Upload\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{rtc\+::\+I\+Rtc\+Connection}} $>$}]{rtc\+Connection,  }\item[{const char $\ast$}]{app\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates an file upload object and returns the pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Connection} & The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{I\+Rtc\+Connection}}. \\
+\hline
+{\em app\+Id} & The App ID of the media relay service. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_file_uploader_service}{I\+File\+Uploader\+Service}}, if the method call succeeds.
+\item A null pointer, if the method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_ae3dae3b461aed1b826e5162479530ff1}\label{classagora_1_1base_1_1_i_agora_service_ae3dae3b461aed1b826e5162479530ff1}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createRtmService@{createRtmService}}
+\index{createRtmService@{createRtmService}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createRtmService()}{createRtmService()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service}{rtm\+::\+I\+Rtm\+Service}}$\ast$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Rtm\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates an R\+TM servive object and returns the pointer.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service}{I\+Rtm\+Service}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_ac52954448663dabb7c4035175bb2909d}\label{classagora_1_1base_1_1_i_agora_service_ac52954448663dabb7c4035175bb2909d}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createAudioDeviceManagerComponent@{createAudioDeviceManagerComponent}}
+\index{createAudioDeviceManagerComponent@{createAudioDeviceManagerComponent}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createAudioDeviceManagerComponent()}{createAudioDeviceManagerComponent()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$rtc\+::\+I\+Audio\+Device\+Manager$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Audio\+Device\+Manager\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{rtc\+::\+I\+Audio\+Device\+Manager\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates an audio device manager and returns the pointer.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to I\+Audio\+Device\+Manager\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_aee8bea04e107d4bd36081c110d52a387}\label{classagora_1_1base_1_1_i_agora_service_aee8bea04e107d4bd36081c110d52a387}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createLocalDataChannel@{createLocalDataChannel}}
+\index{createLocalDataChannel@{createLocalDataChannel}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createLocalDataChannel()}{createLocalDataChannel()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1_i_local_data_channel}{I\+Local\+Data\+Channel}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Local\+Data\+Channel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1_data_channel_config}{Data\+Channel\+Config}} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates an data channel and returns the pointer.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to I\+Local\+Data\+Channel\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_afbb8c1a290016f7acffde70cd286b4a8}\label{classagora_1_1base_1_1_i_agora_service_afbb8c1a290016f7acffde70cd286b4a8}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!getExtensionId@{getExtensionId}}
+\index{getExtensionId@{getExtensionId}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{getExtensionId()}{getExtensionId()}}
+{\footnotesize\ttfamily virtual const char$\ast$ agora\+::base\+::\+I\+Agora\+Service\+::get\+Extension\+Id (\begin{DoxyParamCaption}\item[{const char $\ast$}]{provider\+\_\+name,  }\item[{const char $\ast$}]{extension\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the ID of the registered extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em provider\+\_\+name} & The pointer to provider name string (null-\/terminated) \\
+\hline
+{\em extension\+\_\+name} & The pointer to extension name string (null-\/terminated) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Pointer to the extension id string (null-\/terminated). The pointer will be valid during service\textquotesingle{}s lifetime 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_ada8e387e7095703c53331af689dedc2a}\label{classagora_1_1base_1_1_i_agora_service_ada8e387e7095703c53331af689dedc2a}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!enableExtension@{enableExtension}}
+\index{enableExtension@{enableExtension}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{enableExtension()}{enableExtension()}}
+{\footnotesize\ttfamily virtual int agora\+::base\+::\+I\+Agora\+Service\+::enable\+Extension (\begin{DoxyParamCaption}\item[{const char $\ast$}]{provider\+\_\+name,  }\item[{const char $\ast$}]{extension\+\_\+name,  }\item[{const char $\ast$}]{track\+\_\+id = {\ttfamily NULL},  }\item[{bool}]{auto\+\_\+enable\+\_\+on\+\_\+track = {\ttfamily false},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enable extension. If the extension is enabled, the track loads the extension automatically.
+
+
+\begin{DoxyParams}{Parameters}
+{\em provider\+\_\+name} & name for provider, e.\+g. agora.\+io. \\
+\hline
+{\em extension\+\_\+name} & name for extension, e.\+g. agora.\+beauty. \\
+\hline
+{\em track\+\_\+id} & id for the track, O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR means effective on all tracks \\
+\hline
+{\em auto\+\_\+enable\+\_\+on\+\_\+track} & if the extension is automatically open on track.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_ae600a08ccb1d8083048067fd4b90b334}\label{classagora_1_1base_1_1_i_agora_service_ae600a08ccb1d8083048067fd4b90b334}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!disableExtension@{disableExtension}}
+\index{disableExtension@{disableExtension}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{disableExtension()}{disableExtension()}}
+{\footnotesize\ttfamily virtual int agora\+::base\+::\+I\+Agora\+Service\+::disable\+Extension (\begin{DoxyParamCaption}\item[{const char $\ast$}]{provider\+\_\+name,  }\item[{const char $\ast$}]{extension\+\_\+name,  }\item[{const char $\ast$}]{track\+\_\+id = {\ttfamily NULL},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Disable extension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em provider\+\_\+name} & name for provider, e.\+g. agora.\+io. \\
+\hline
+{\em extension\+\_\+name} & name for extension, e.\+g. agora.\+beauty. \\
+\hline
+{\em track\+\_\+id} & id for the track, O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR means effective on all tracks\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a1c707744b5e4f06467219a25ecaeccb7}\label{classagora_1_1base_1_1_i_agora_service_a1c707744b5e4f06467219a25ecaeccb7}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!getAgoraParameter@{getAgoraParameter}}
+\index{getAgoraParameter@{getAgoraParameter}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{getAgoraParameter()}{getAgoraParameter()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1base_1_1_i_agora_parameter}{base\+::\+I\+Agora\+Parameter}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::get\+Agora\+Parameter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_parameter}{I\+Agora\+Parameter}} object. \begin{DoxySince}{Since}
+4.\+3.\+0 
+\end{DoxySince}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to the \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_parameter}{I\+Agora\+Parameter}} object.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a18c4f5e6c60f06a1632768afd37725b5}\label{classagora_1_1base_1_1_i_agora_service_a18c4f5e6c60f06a1632768afd37725b5}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!getConfigCenter@{getConfigCenter}}
+\index{getConfigCenter@{getConfigCenter}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{getConfigCenter()}{getConfigCenter()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_config_center}{rtc\+::\+I\+Config\+Center}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::get\+Config\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_config_center}{I\+Config\+Center}} object and return the pointer.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_config_center}{I\+Config\+Center}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_a26c89725f04dfb473a9f829bf604056f}\label{classagora_1_1base_1_1_i_agora_service_a26c89725f04dfb473a9f829bf604056f}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!createSyncClient@{createSyncClient}}
+\index{createSyncClient@{createSyncClient}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{createSyncClient()}{createSyncClient()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1base_1_1_i_sync_client}{base\+::\+I\+Sync\+Client}}$>$ agora\+::base\+::\+I\+Agora\+Service\+::create\+Sync\+Client (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1base_1_1_sync_config}{base\+::\+Sync\+Config}} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get the I\+Sync\+Client object and return the pointer.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to I\+Sync\+Client\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_ac45ababdf3c92d6af22fbb92516766bf}\label{classagora_1_1base_1_1_i_agora_service_ac45ababdf3c92d6af22fbb92516766bf}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!setLogWriter@{setLogWriter}}
+\index{setLogWriter@{setLogWriter}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{setLogWriter()}{setLogWriter()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t agora\+::base\+::\+I\+Agora\+Service\+::set\+Log\+Writer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1commons_1_1_i_log_writer}{agora\+::commons\+::\+I\+Log\+Writer}} $\ast$}]{log\+Writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set the log\+Writer for the sdk log. 
+\begin{DoxyParams}{Parameters}
+{\em log\+Writer} & the log writer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_agora_service_ac577b550eb990e9043b663ebf8a6eebf}\label{classagora_1_1base_1_1_i_agora_service_ac577b550eb990e9043b663ebf8a6eebf}} 
+\index{agora::base::IAgoraService@{agora::base::IAgoraService}!releaseLogWriter@{releaseLogWriter}}
+\index{releaseLogWriter@{releaseLogWriter}!agora::base::IAgoraService@{agora::base::IAgoraService}}
+\doxysubsubsection{\texorpdfstring{releaseLogWriter()}{releaseLogWriter()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1commons_1_1_i_log_writer}{agora\+::commons\+::\+I\+Log\+Writer}}$\ast$ agora\+::base\+::\+I\+Agora\+Service\+::release\+Log\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Release log\+Writer for the sdk log. \begin{DoxyReturn}{Returns}
+-\/The pointer to \mbox{\hyperlink{classagora_1_1commons_1_1_i_log_writer}{agora\+::commons\+::\+I\+Log\+Writer}}
+\begin{DoxyItemize}
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

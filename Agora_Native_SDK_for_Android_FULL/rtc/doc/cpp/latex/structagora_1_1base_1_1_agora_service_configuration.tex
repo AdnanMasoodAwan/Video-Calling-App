@@ -1,0 +1,168 @@
+\hypertarget{structagora_1_1base_1_1_agora_service_configuration}{}\doxysection{agora\+::base\+::Agora\+Service\+Configuration Struct Reference}
+\label{structagora_1_1base_1_1_agora_service_configuration}\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Service.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a5cd6f6b187f157fa7209f435c78b24e4}{enable\+Audio\+Processor}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a54fb8535f90fc4241eff32b87be602ea}{enable\+Audio\+Device}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_aabf2a47b88644e2d6713c0f00198bba2}{enable\+Video}}
+\item 
+void $\ast$ \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_abdf28450fbaca9a2f976a08c68742650}{context}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a5bfcde4f7882a2039d7ca3745f8c446c}{app\+Id}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a45da48ccfe5300c8f9af4dc92cf27189}{area\+Code}}
+\item 
+agora\+::\+C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a1784fc06f211e467b6caf785a0be4a39}{channel\+Profile}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_ace5d473cd6b10b7d75e6ae14fbc660a1}{license}}
+\item 
+rtc\+::\+A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_aa68c326243ba3dfe54f37ccc8bf85802}{audio\+Scenario}}
+\item 
+\mbox{\hyperlink{structagora_1_1commons_1_1_log_config}{commons\+::\+Log\+Config}} \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a36b41f555664e59304255c6dfacbdc0b}{log\+Config}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a54744e3516aab7a8a86e2966cbf8b1c6}{use\+String\+Uid}}
+\item 
+\mbox{\hyperlink{classagora_1_1base_1_1_i_service_observer}{I\+Service\+Observer}} $\ast$ \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a1bc673f3dc54e5fd0fc42a3ec1874c5c}{service\+Observer}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ rtc\+::\+T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+T\+Y\+PE $>$ thread\+Priority \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a2ea3127135604842eb40bd1c785d22a2}{\+\_\+\+\_\+deprecated}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a022baca876690311098ff6a9a14fcb43}{use\+External\+Egl\+Context}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a394fb9219d98e334a9659f24d7e416b6}{domain\+Limit}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The global configurations for \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service}{Agora\+Service}}.
+
+Set these configurations when calling \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a6f1fb6e792c564dee46903cbb3bc35fc}{initialize}}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_a5cd6f6b187f157fa7209f435c78b24e4}\label{structagora_1_1base_1_1_agora_service_configuration_a5cd6f6b187f157fa7209f435c78b24e4}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!enableAudioProcessor@{enableAudioProcessor}}
+\index{enableAudioProcessor@{enableAudioProcessor}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{enableAudioProcessor}{enableAudioProcessor}}
+{\footnotesize\ttfamily bool agora\+::base\+::\+Agora\+Service\+Configuration\+::enable\+Audio\+Processor}
+
+Whether to enable the audio processing module.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: (Default) Enable the audio processing module.
+\item {\ttfamily false}\+: Disable the audio processing module. If you disable the audio processing module, you cannot create audio tracks. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_a54fb8535f90fc4241eff32b87be602ea}\label{structagora_1_1base_1_1_agora_service_configuration_a54fb8535f90fc4241eff32b87be602ea}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!enableAudioDevice@{enableAudioDevice}}
+\index{enableAudioDevice@{enableAudioDevice}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{enableAudioDevice}{enableAudioDevice}}
+{\footnotesize\ttfamily bool agora\+::base\+::\+Agora\+Service\+Configuration\+::enable\+Audio\+Device}
+
+Whether to enable the audio device module. The function of the audio device module is to manage audio devices, such as recording and playing audio.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: (Default) Enable the audio device module. Audio recording and playback is available.
+\item {\ttfamily false}\+: Disable the audio device module. Audio recording and playback is unavailable.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+If you set {\ttfamily enable\+Audio\+Device} as {\ttfamily false} and set {\ttfamily enable\+Audio\+Processor} as {\ttfamily true}, you cannot use audio devices, but you can push P\+CM audio data. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_aabf2a47b88644e2d6713c0f00198bba2}\label{structagora_1_1base_1_1_agora_service_configuration_aabf2a47b88644e2d6713c0f00198bba2}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!enableVideo@{enableVideo}}
+\index{enableVideo@{enableVideo}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{enableVideo}{enableVideo}}
+{\footnotesize\ttfamily bool agora\+::base\+::\+Agora\+Service\+Configuration\+::enable\+Video}
+
+Whether to enable video.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Enable video.
+\item {\ttfamily false}\+: (Default) Disable video. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_abdf28450fbaca9a2f976a08c68742650}\label{structagora_1_1base_1_1_agora_service_configuration_abdf28450fbaca9a2f976a08c68742650}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!context@{context}}
+\index{context@{context}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily void$\ast$ agora\+::base\+::\+Agora\+Service\+Configuration\+::context}
+
+The user context.
+\begin{DoxyItemize}
+\item For Windows, it is the handle of the window that loads the video. Specify this value to support plugging or unplugging the video devices while the host is powered on.
+\item For Android, it is the context of activity. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_a5bfcde4f7882a2039d7ca3745f8c446c}\label{structagora_1_1base_1_1_agora_service_configuration_a5bfcde4f7882a2039d7ca3745f8c446c}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!appId@{appId}}
+\index{appId@{appId}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{appId}{appId}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::base\+::\+Agora\+Service\+Configuration\+::app\+Id}
+
+The App ID of your project. \mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_a45da48ccfe5300c8f9af4dc92cf27189}\label{structagora_1_1base_1_1_agora_service_configuration_a45da48ccfe5300c8f9af4dc92cf27189}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!areaCode@{areaCode}}
+\index{areaCode@{areaCode}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{areaCode}{areaCode}}
+{\footnotesize\ttfamily unsigned int agora\+::base\+::\+Agora\+Service\+Configuration\+::area\+Code}
+
+The supported area code, default is A\+R\+E\+A\+\_\+\+C\+O\+D\+E\+\_\+\+G\+L\+OB \mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_a1784fc06f211e467b6caf785a0be4a39}\label{structagora_1_1base_1_1_agora_service_configuration_a1784fc06f211e467b6caf785a0be4a39}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!channelProfile@{channelProfile}}
+\index{channelProfile@{channelProfile}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{channelProfile}{channelProfile}}
+{\footnotesize\ttfamily agora\+::\+C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE agora\+::base\+::\+Agora\+Service\+Configuration\+::channel\+Profile}
+
+The channel profile. For details, see C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE. The default channel profile is {\ttfamily C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+L\+I\+V\+E\+\_\+\+B\+R\+O\+A\+D\+C\+A\+S\+T\+I\+NG}. \mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_ace5d473cd6b10b7d75e6ae14fbc660a1}\label{structagora_1_1base_1_1_agora_service_configuration_ace5d473cd6b10b7d75e6ae14fbc660a1}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!license@{license}}
+\index{license@{license}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{license}{license}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::base\+::\+Agora\+Service\+Configuration\+::license}
+
+The license used for verification when connectting channel. Charge according to the license \mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_aa68c326243ba3dfe54f37ccc8bf85802}\label{structagora_1_1base_1_1_agora_service_configuration_aa68c326243ba3dfe54f37ccc8bf85802}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!audioScenario@{audioScenario}}
+\index{audioScenario@{audioScenario}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{audioScenario}{audioScenario}}
+{\footnotesize\ttfamily rtc\+::\+A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE agora\+::base\+::\+Agora\+Service\+Configuration\+::audio\+Scenario}
+
+The audio scenario. See A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE. The default value is {\ttfamily A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+D\+E\+F\+A\+U\+LT}. \mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_a36b41f555664e59304255c6dfacbdc0b}\label{structagora_1_1base_1_1_agora_service_configuration_a36b41f555664e59304255c6dfacbdc0b}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!logConfig@{logConfig}}
+\index{logConfig@{logConfig}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{logConfig}{logConfig}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1commons_1_1_log_config}{commons\+::\+Log\+Config}} agora\+::base\+::\+Agora\+Service\+Configuration\+::log\+Config}
+
+The config for custumer set log path, log size and log level. \mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_a54744e3516aab7a8a86e2966cbf8b1c6}\label{structagora_1_1base_1_1_agora_service_configuration_a54744e3516aab7a8a86e2966cbf8b1c6}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!useStringUid@{useStringUid}}
+\index{useStringUid@{useStringUid}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{useStringUid}{useStringUid}}
+{\footnotesize\ttfamily bool agora\+::base\+::\+Agora\+Service\+Configuration\+::use\+String\+Uid}
+
+Whether to enable string uid. \mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_a1bc673f3dc54e5fd0fc42a3ec1874c5c}\label{structagora_1_1base_1_1_agora_service_configuration_a1bc673f3dc54e5fd0fc42a3ec1874c5c}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!serviceObserver@{serviceObserver}}
+\index{serviceObserver@{serviceObserver}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{serviceObserver}{serviceObserver}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1base_1_1_i_service_observer}{I\+Service\+Observer}}$\ast$ agora\+::base\+::\+Agora\+Service\+Configuration\+::service\+Observer}
+
+The service observer. \mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_a2ea3127135604842eb40bd1c785d22a2}\label{structagora_1_1base_1_1_agora_service_configuration_a2ea3127135604842eb40bd1c785d22a2}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!\_\_deprecated@{\_\_deprecated}}
+\index{\_\_deprecated@{\_\_deprecated}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated}{\_\_deprecated}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$rtc\+::\+T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+T\+Y\+PE$>$ thread\+Priority agora\+::base\+::\+Agora\+Service\+Configuration\+::\+\_\+\+\_\+deprecated}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]Thread priority for S\+DK common threads \end{DoxyRefDesc}
+\mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_a022baca876690311098ff6a9a14fcb43}\label{structagora_1_1base_1_1_agora_service_configuration_a022baca876690311098ff6a9a14fcb43}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!useExternalEglContext@{useExternalEglContext}}
+\index{useExternalEglContext@{useExternalEglContext}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{useExternalEglContext}{useExternalEglContext}}
+{\footnotesize\ttfamily bool agora\+::base\+::\+Agora\+Service\+Configuration\+::use\+External\+Egl\+Context}
+
+Whether use egl context in current thread as sdk‘s root egl context which shared by all egl related modules. eg. camera capture, video renderer. \begin{DoxyNote}{Note}
+This property applies to Android only. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1base_1_1_agora_service_configuration_a394fb9219d98e334a9659f24d7e416b6}\label{structagora_1_1base_1_1_agora_service_configuration_a394fb9219d98e334a9659f24d7e416b6}} 
+\index{agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}!domainLimit@{domainLimit}}
+\index{domainLimit@{domainLimit}!agora::base::AgoraServiceConfiguration@{agora::base::AgoraServiceConfiguration}}
+\doxysubsubsection{\texorpdfstring{domainLimit}{domainLimit}}
+{\footnotesize\ttfamily bool agora\+::base\+::\+Agora\+Service\+Configuration\+::domain\+Limit}
+
+Determines whether to enable domain limit.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: only connect to servers that already parsed by D\+NS
+\item {\ttfamily false}\+: (Default) connect to servers with no limit 
+\end{DoxyItemize}

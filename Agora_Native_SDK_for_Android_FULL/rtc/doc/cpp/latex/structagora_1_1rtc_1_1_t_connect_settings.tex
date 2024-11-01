@@ -1,0 +1,43 @@
+\hypertarget{structagora_1_1rtc_1_1_t_connect_settings}{}\doxysection{agora\+::rtc\+::T\+Connect\+Settings Struct Reference}
+\label{structagora_1_1rtc_1_1_t_connect_settings}\index{agora::rtc::TConnectSettings@{agora::rtc::TConnectSettings}}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connect_settings_a033860577f7bcae0771751532bc20f9c}{token}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connect_settings_a63d75ce749f5ced3bc5d2d3e5cc0895b}{channel\+Id}}
+\item 
+user\+\_\+id\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connect_settings_a740b8c4bbe2ca2f6f7b14de9aa469307}{user\+Id}}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_t_connect_settings_a1887565de6d02cca448b94195aaae360}\label{structagora_1_1rtc_1_1_t_connect_settings_a1887565de6d02cca448b94195aaae360}} 
+\mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$ int64\+\_\+t $>$ {\bfseries app\+Defined\+Start\+Time\+Ms}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_t_connect_settings_a033860577f7bcae0771751532bc20f9c}\label{structagora_1_1rtc_1_1_t_connect_settings_a033860577f7bcae0771751532bc20f9c}} 
+\index{agora::rtc::TConnectSettings@{agora::rtc::TConnectSettings}!token@{token}}
+\index{token@{token}!agora::rtc::TConnectSettings@{agora::rtc::TConnectSettings}}
+\doxysubsubsection{\texorpdfstring{token}{token}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+T\+Connect\+Settings\+::token}
+
+The app ID. \mbox{\Hypertarget{structagora_1_1rtc_1_1_t_connect_settings_a63d75ce749f5ced3bc5d2d3e5cc0895b}\label{structagora_1_1rtc_1_1_t_connect_settings_a63d75ce749f5ced3bc5d2d3e5cc0895b}} 
+\index{agora::rtc::TConnectSettings@{agora::rtc::TConnectSettings}!channelId@{channelId}}
+\index{channelId@{channelId}!agora::rtc::TConnectSettings@{agora::rtc::TConnectSettings}}
+\doxysubsubsection{\texorpdfstring{channelId}{channelId}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+T\+Connect\+Settings\+::channel\+Id}
+
+The channel name. It must be in the string format and not exceed 64 bytes in length. Supported character scopes are\+:
+\begin{DoxyItemize}
+\item All lowercase English letters\+: a to z.
+\item All uppercase English letters\+: A to Z.
+\item All numeric characters\+: 0 to 9.
+\item The space character.
+\item Punctuation characters and other symbols, including\+: \char`\"{}!\char`\"{}, \char`\"{}\#\char`\"{}, \char`\"{}\$\char`\"{}, \char`\"{}\%\char`\"{}, \char`\"{}\&\char`\"{}, \char`\"{}(\char`\"{}, \char`\"{})\char`\"{}, \char`\"{}+\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}\+:\char`\"{}, \char`\"{};\char`\"{}, \char`\"{}$<$\char`\"{}, \char`\"{}=\char`\"{}, \char`\"{}.\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}?\char`\"{}, \char`\"{}@\char`\"{}, \char`\"{}\mbox{[}\char`\"{}, \char`\"{}\mbox{]}\char`\"{}, \char`\"{}$^\wedge$\char`\"{}, \char`\"{}\+\_\+\char`\"{}, \char`\"{} \{\char`\"{}, \char`\"{}\}\char`\"{}, \char`\"{}$\vert$\char`\"{}, \char`\"{}$\sim$\char`\"{}, \char`\"{},\char`\"{} 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_t_connect_settings_a740b8c4bbe2ca2f6f7b14de9aa469307}\label{structagora_1_1rtc_1_1_t_connect_settings_a740b8c4bbe2ca2f6f7b14de9aa469307}} 
+\index{agora::rtc::TConnectSettings@{agora::rtc::TConnectSettings}!userId@{userId}}
+\index{userId@{userId}!agora::rtc::TConnectSettings@{agora::rtc::TConnectSettings}}
+\doxysubsubsection{\texorpdfstring{userId}{userId}}
+{\footnotesize\ttfamily user\+\_\+id\+\_\+t agora\+::rtc\+::\+T\+Connect\+Settings\+::user\+Id}
+
+The ID of the local user. If you do not specify a user ID or set {\ttfamily user\+Id} as {\ttfamily null}, the S\+DK returns a user ID in the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1df408778b1886055df47cd7d0ff8e5c}{on\+Connected}} callback. Your app must record and maintain the {\ttfamily user\+Id} since the S\+DK does not do so. 

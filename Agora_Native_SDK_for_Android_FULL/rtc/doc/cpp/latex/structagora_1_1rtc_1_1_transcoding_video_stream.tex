@@ -1,0 +1,121 @@
+\hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream}{}\doxysection{agora\+::rtc\+::Transcoding\+Video\+Stream Struct Reference}
+\label{structagora_1_1rtc_1_1_transcoding_video_stream}\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream_ae80667f86e550ac6488c88a4c4927767}{source\+Type}}
+\item 
+uid\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream_a2c9d71545204f7e14995e046f14901f1}{remote\+User\+Uid}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream_ad494d2d3448ed7fe4e1beac6ca8e3497}{image\+Url}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream_abceb7269de824b451b68da60670ef2e5}{media\+Player\+Id}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream_aaab9562bdfde861386ff7fa570b757ef}{x}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream_a46e3658c2cae819ecb6b1cd7bbda4aba}{y}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream_a9156961eff941afda38bf5be72e7d319}{width}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream_a457a7b951e0b7aa86fb54162570f7575}{height}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream_a132d87034593ac8bc827229ef5168569}{z\+Order}}
+\item 
+double \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream_a4c86ea3b80a26eee22064cbd0e8d0001}{alpha}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream_ad68720c836f8cb56311353903d2d2d45}{mirror}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The video streams for the video mixing on the local client. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream_ae80667f86e550ac6488c88a4c4927767}\label{structagora_1_1rtc_1_1_transcoding_video_stream_ae80667f86e550ac6488c88a4c4927767}} 
+\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}!sourceType@{sourceType}}
+\index{sourceType@{sourceType}!agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+\doxysubsubsection{\texorpdfstring{sourceType}{sourceType}}
+{\footnotesize\ttfamily V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Transcoding\+Video\+Stream\+::source\+Type}
+
+The source type of video for the video mixing on the local client. See \#\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE. \mbox{\Hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream_a2c9d71545204f7e14995e046f14901f1}\label{structagora_1_1rtc_1_1_transcoding_video_stream_a2c9d71545204f7e14995e046f14901f1}} 
+\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}!remoteUserUid@{remoteUserUid}}
+\index{remoteUserUid@{remoteUserUid}!agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+\doxysubsubsection{\texorpdfstring{remoteUserUid}{remoteUserUid}}
+{\footnotesize\ttfamily uid\+\_\+t agora\+::rtc\+::\+Transcoding\+Video\+Stream\+::remote\+User\+Uid}
+
+The ID of the remote user. \begin{DoxyNote}{Note}
+Use this parameter only when the source type of the video for the video mixing on the local client is {\ttfamily V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+R\+E\+M\+O\+TE}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream_ad494d2d3448ed7fe4e1beac6ca8e3497}\label{structagora_1_1rtc_1_1_transcoding_video_stream_ad494d2d3448ed7fe4e1beac6ca8e3497}} 
+\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}!imageUrl@{imageUrl}}
+\index{imageUrl@{imageUrl}!agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+\doxysubsubsection{\texorpdfstring{imageUrl}{imageUrl}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+Transcoding\+Video\+Stream\+::image\+Url}
+
+The U\+RL of the image. \begin{DoxyNote}{Note}
+Use this parameter only when the source type of the video for the video mixing on the local client is {\ttfamily R\+T\+C\+\_\+\+I\+M\+A\+GE}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream_abceb7269de824b451b68da60670ef2e5}\label{structagora_1_1rtc_1_1_transcoding_video_stream_abceb7269de824b451b68da60670ef2e5}} 
+\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}!mediaPlayerId@{mediaPlayerId}}
+\index{mediaPlayerId@{mediaPlayerId}!agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+\doxysubsubsection{\texorpdfstring{mediaPlayerId}{mediaPlayerId}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Transcoding\+Video\+Stream\+::media\+Player\+Id}
+
+Media\+Player id if source\+Type is M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+O\+U\+R\+CE. \mbox{\Hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream_aaab9562bdfde861386ff7fa570b757ef}\label{structagora_1_1rtc_1_1_transcoding_video_stream_aaab9562bdfde861386ff7fa570b757ef}} 
+\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}!x@{x}}
+\index{x@{x}!agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Transcoding\+Video\+Stream\+::x}
+
+The horizontal displacement of the top-\/left corner of the video for the video mixing on the client relative to the top-\/left corner (origin) of the canvas for this video mixing. \mbox{\Hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream_a46e3658c2cae819ecb6b1cd7bbda4aba}\label{structagora_1_1rtc_1_1_transcoding_video_stream_a46e3658c2cae819ecb6b1cd7bbda4aba}} 
+\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}!y@{y}}
+\index{y@{y}!agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Transcoding\+Video\+Stream\+::y}
+
+The vertical displacement of the top-\/left corner of the video for the video mixing on the client relative to the top-\/left corner (origin) of the canvas for this video mixing. \mbox{\Hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream_a9156961eff941afda38bf5be72e7d319}\label{structagora_1_1rtc_1_1_transcoding_video_stream_a9156961eff941afda38bf5be72e7d319}} 
+\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}!width@{width}}
+\index{width@{width}!agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Transcoding\+Video\+Stream\+::width}
+
+The width (px) of the video for the video mixing on the local client. \mbox{\Hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream_a457a7b951e0b7aa86fb54162570f7575}\label{structagora_1_1rtc_1_1_transcoding_video_stream_a457a7b951e0b7aa86fb54162570f7575}} 
+\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}!height@{height}}
+\index{height@{height}!agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Transcoding\+Video\+Stream\+::height}
+
+The height (px) of the video for the video mixing on the local client. \mbox{\Hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream_a132d87034593ac8bc827229ef5168569}\label{structagora_1_1rtc_1_1_transcoding_video_stream_a132d87034593ac8bc827229ef5168569}} 
+\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}!zOrder@{zOrder}}
+\index{zOrder@{zOrder}!agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+\doxysubsubsection{\texorpdfstring{zOrder}{zOrder}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Transcoding\+Video\+Stream\+::z\+Order}
+
+The number of the layer to which the video for the video mixing on the local client belongs. The value range is \mbox{[}0,100\mbox{]}.
+\begin{DoxyItemize}
+\item 0\+: (Default) The layer is at the bottom.
+\item 100\+: The layer is at the top. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream_a4c86ea3b80a26eee22064cbd0e8d0001}\label{structagora_1_1rtc_1_1_transcoding_video_stream_a4c86ea3b80a26eee22064cbd0e8d0001}} 
+\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}!alpha@{alpha}}
+\index{alpha@{alpha}!agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+\doxysubsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily double agora\+::rtc\+::\+Transcoding\+Video\+Stream\+::alpha}
+
+The transparency of the video for the video mixing on the local client. The value range is \mbox{[}0.\+0,1.\+0\mbox{]}. 0.\+0 means the transparency is completely transparent. 1.\+0 means the transparency is opaque. \mbox{\Hypertarget{structagora_1_1rtc_1_1_transcoding_video_stream_ad68720c836f8cb56311353903d2d2d45}\label{structagora_1_1rtc_1_1_transcoding_video_stream_ad68720c836f8cb56311353903d2d2d45}} 
+\index{agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}!mirror@{mirror}}
+\index{mirror@{mirror}!agora::rtc::TranscodingVideoStream@{agora::rtc::TranscodingVideoStream}}
+\doxysubsubsection{\texorpdfstring{mirror}{mirror}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Transcoding\+Video\+Stream\+::mirror}
+
+Whether to mirror the video for the video mixing on the local client.
+\begin{DoxyItemize}
+\item true\+: Mirroring.
+\item false\+: (Default) Do not mirror. \begin{DoxyNote}{Note}
+The paramter only works for videos with the source type {\ttfamily C\+A\+M\+E\+RA}. 
+\end{DoxyNote}
+
+\end{DoxyItemize}

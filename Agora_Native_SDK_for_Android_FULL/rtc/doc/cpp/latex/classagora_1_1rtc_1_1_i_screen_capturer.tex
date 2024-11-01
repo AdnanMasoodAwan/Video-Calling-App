@@ -1,0 +1,132 @@
+\hypertarget{classagora_1_1rtc_1_1_i_screen_capturer}{}\doxysection{agora\+::rtc\+::I\+Screen\+Capturer Class Reference}
+\label{classagora_1_1rtc_1_1_i_screen_capturer}\index{agora::rtc::IScreenCapturer@{agora::rtc::IScreenCapturer}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Screen\+Capturer.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Screen\+Capturer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_screen_capturer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_screen_capturer_ac0d928d126e8feaa9ab35b46a09b07e9}{init\+With\+Window\+Id}} (view\+\_\+t window\+Id, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} \&region\+Rect)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_screen_capturer_adc289a9e600a7eae83f4b62dda468a60}{set\+Content\+Hint}} (V\+I\+D\+E\+O\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+H\+I\+NT content\+Hint, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_screen_capturer_a12a5ab0d9862493107e8e4eaf61270f6}{update\+Screen\+Capture\+Region}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} \&region\+Rect, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_screen_capturer_a7a49c64183fc10fd0336f1bb770ef65a}{set\+Screen\+Orientation}} (V\+I\+D\+E\+O\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON orientation, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_screen_capturer_a283dad735cab9895cd958e5c569c7fe6}{set\+Frame\+Rate}} (int rate, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_screen_capturer}{I\+Screen\+Capturer}} class, which provides access to the screen capturer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capturer_ac0d928d126e8feaa9ab35b46a09b07e9}\label{classagora_1_1rtc_1_1_i_screen_capturer_ac0d928d126e8feaa9ab35b46a09b07e9}} 
+\index{agora::rtc::IScreenCapturer@{agora::rtc::IScreenCapturer}!initWithWindowId@{initWithWindowId}}
+\index{initWithWindowId@{initWithWindowId}!agora::rtc::IScreenCapturer@{agora::rtc::IScreenCapturer}}
+\doxysubsubsection{\texorpdfstring{initWithWindowId()}{initWithWindowId()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Screen\+Capturer\+::init\+With\+Window\+Id (\begin{DoxyParamCaption}\item[{view\+\_\+t}]{window\+Id,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} \&}]{region\+Rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Initializes the screen capturer by specifying a window ID.
+
+This method shares a whole or part of a window specified by the window ID.
+
+\begin{DoxyNote}{Note}
+This method applies to Windows and mac\+OS only. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Id} & The ID of the window to be shared. This parameter specifies which window you want to share. \\
+\hline
+{\em region\+Rect} & The reference to the relative location of the region to the window. See \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{agora\+::rtc\+::\+Rectangle}} \&region\+Rect \char`\"{}region\+Rect\char`\"{}.
+\begin{DoxyItemize}
+\item If the specified region overruns the window, only the region within the screen will be captured.
+\item If you set {\ttfamily width} or {\ttfamily height} as 0, the whole window will be captured. Note that the coordinates of rectangle are relative to the window and follows system specifications. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capturer_adc289a9e600a7eae83f4b62dda468a60}\label{classagora_1_1rtc_1_1_i_screen_capturer_adc289a9e600a7eae83f4b62dda468a60}} 
+\index{agora::rtc::IScreenCapturer@{agora::rtc::IScreenCapturer}!setContentHint@{setContentHint}}
+\index{setContentHint@{setContentHint}!agora::rtc::IScreenCapturer@{agora::rtc::IScreenCapturer}}
+\doxysubsubsection{\texorpdfstring{setContentHint()}{setContentHint()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Screen\+Capturer\+::set\+Content\+Hint (\begin{DoxyParamCaption}\item[{V\+I\+D\+E\+O\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+H\+I\+NT}]{content\+Hint,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the content hint for screen sharing.
+
+A content hint suggests the type of the content being shared, so that the S\+DK applies different optimization algorithms to different types of content. 
+\begin{DoxyParams}{Parameters}
+{\em content\+Hint} & The content hint for screen capture\+: V\+I\+D\+E\+O\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+H\+I\+NT. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+R\+E\+A\+DY\+: No screen or window is being shared. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capturer_a12a5ab0d9862493107e8e4eaf61270f6}\label{classagora_1_1rtc_1_1_i_screen_capturer_a12a5ab0d9862493107e8e4eaf61270f6}} 
+\index{agora::rtc::IScreenCapturer@{agora::rtc::IScreenCapturer}!updateScreenCaptureRegion@{updateScreenCaptureRegion}}
+\index{updateScreenCaptureRegion@{updateScreenCaptureRegion}!agora::rtc::IScreenCapturer@{agora::rtc::IScreenCapturer}}
+\doxysubsubsection{\texorpdfstring{updateScreenCaptureRegion()}{updateScreenCaptureRegion()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Screen\+Capturer\+::update\+Screen\+Capture\+Region (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} \&}]{region\+Rect,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Updates the screen capture region. 
+\begin{DoxyParams}{Parameters}
+{\em region\+Rect} & The reference to the relative location of the region to the screen or window. See \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}}.
+\begin{DoxyItemize}
+\item If the specified region overruns the screen or window, the screen capturer captures only the region within it.
+\item If you set {\ttfamily width} or {\ttfamily height} as 0, the S\+DK shares the whole screen or window. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item No screen or window is being shared. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capturer_a7a49c64183fc10fd0336f1bb770ef65a}\label{classagora_1_1rtc_1_1_i_screen_capturer_a7a49c64183fc10fd0336f1bb770ef65a}} 
+\index{agora::rtc::IScreenCapturer@{agora::rtc::IScreenCapturer}!setScreenOrientation@{setScreenOrientation}}
+\index{setScreenOrientation@{setScreenOrientation}!agora::rtc::IScreenCapturer@{agora::rtc::IScreenCapturer}}
+\doxysubsubsection{\texorpdfstring{setScreenOrientation()}{setScreenOrientation()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Screen\+Capturer\+::set\+Screen\+Orientation (\begin{DoxyParamCaption}\item[{V\+I\+D\+E\+O\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON}]{orientation,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set orientation of the captured screen image 
+\begin{DoxyParams}{Parameters}
+{\em V\+I\+D\+E\+O\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON} & orientaion of the device 0(by default), 90, 180, 270 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capturer_a283dad735cab9895cd958e5c569c7fe6}\label{classagora_1_1rtc_1_1_i_screen_capturer_a283dad735cab9895cd958e5c569c7fe6}} 
+\index{agora::rtc::IScreenCapturer@{agora::rtc::IScreenCapturer}!setFrameRate@{setFrameRate}}
+\index{setFrameRate@{setFrameRate}!agora::rtc::IScreenCapturer@{agora::rtc::IScreenCapturer}}
+\doxysubsubsection{\texorpdfstring{setFrameRate()}{setFrameRate()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Screen\+Capturer\+::set\+Frame\+Rate (\begin{DoxyParamCaption}\item[{int}]{rate,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set frame rate of the screen capture source 
+\begin{DoxyParams}{Parameters}
+{\em rate} & frame rate (in fps) \\
+\hline
+\end{DoxyParams}

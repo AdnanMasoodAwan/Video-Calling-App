@@ -1,0 +1,42 @@
+\hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine}{}\doxysection{io.\+agora.\+spatialaudio.\+I\+Local\+Spatial\+Audio\+Engine Class Reference}
+\label{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine}\index{io.agora.spatialaudio.ILocalSpatialAudioEngine@{io.agora.spatialaudio.ILocalSpatialAudioEngine}}
+Inheritance diagram for io.\+agora.\+spatialaudio.\+I\+Local\+Spatial\+Audio\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a07d4168d3783232b6fe77fa73c49ba66}\label{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a07d4168d3783232b6fe77fa73c49ba66}} 
+abstract int {\bfseries initialize} (\mbox{\hyperlink{classio_1_1agora_1_1spatialaudio_1_1_local_spatial_audio_config}{Local\+Spatial\+Audio\+Config}} config)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a4128f95250f715a740a3ceb11ccb576d}\label{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a4128f95250f715a740a3ceb11ccb576d}} 
+abstract int {\bfseries update\+Remote\+Position} (int uid, \mbox{\hyperlink{classio_1_1agora_1_1spatialaudio_1_1_remote_voice_position_info}{Remote\+Voice\+Position\+Info}} pos\+Info)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_ab5a1d224cda7ae46dd589230dadc589e}\label{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_ab5a1d224cda7ae46dd589230dadc589e}} 
+abstract int {\bfseries update\+Remote\+Position\+Ex} (int uid, \mbox{\hyperlink{classio_1_1agora_1_1spatialaudio_1_1_remote_voice_position_info}{Remote\+Voice\+Position\+Info}} pos\+Info, \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_connection}{Rtc\+Connection}} connection)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_adb1bcbd251edd6d5c0559a4227033a92}\label{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_adb1bcbd251edd6d5c0559a4227033a92}} 
+abstract int {\bfseries remove\+Remote\+Position} (int uid)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a6fbe71b04bd537600b63d4e25f785b23}\label{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a6fbe71b04bd537600b63d4e25f785b23}} 
+abstract int {\bfseries remove\+Remote\+Position\+Ex} (int uid, \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_connection}{Rtc\+Connection}} connection)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a0986efa6d5a9e32ab71b6dba4192816f}\label{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a0986efa6d5a9e32ab71b6dba4192816f}} 
+abstract int {\bfseries clear\+Remote\+Positions\+Ex} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_connection}{Rtc\+Connection}} connection)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a51e6697ce1978b52e5d1744a99df685b}\label{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a51e6697ce1978b52e5d1744a99df685b}} 
+abstract int {\bfseries set\+Remote\+Audio\+Attenuation} (int uid, double attenuation, boolean force\+Set)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a0916ebb5331f9339152c480a2486b61c}\label{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a0916ebb5331f9339152c480a2486b61c}} 
+static synchronized \mbox{\hyperlink{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine}{I\+Local\+Spatial\+Audio\+Engine}} {\bfseries create} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a07a139f13cb77ab07716ca2ce98c8cc3}\label{classio_1_1agora_1_1spatialaudio_1_1_i_local_spatial_audio_engine_a07a139f13cb77ab07716ca2ce98c8cc3}} 
+static synchronized void {\bfseries destroy} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}

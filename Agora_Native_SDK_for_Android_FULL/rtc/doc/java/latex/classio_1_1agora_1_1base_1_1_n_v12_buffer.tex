@@ -1,0 +1,168 @@
+\hypertarget{classio_1_1agora_1_1base_1_1_n_v12_buffer}{}\doxysection{io.\+agora.\+base.\+N\+V12\+Buffer Class Reference}
+\label{classio_1_1agora_1_1base_1_1_n_v12_buffer}\index{io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}}
+Inheritance diagram for io.\+agora.\+base.\+N\+V12\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classio_1_1agora_1_1base_1_1_n_v12_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_n_v12_buffer_afe697d92b9c3c476a03b39c0b2e7a21c}\label{classio_1_1agora_1_1base_1_1_n_v12_buffer_afe697d92b9c3c476a03b39c0b2e7a21c}} 
+{\bfseries N\+V12\+Buffer} (int width, int height, int stride, int slice\+Height, Byte\+Buffer buffer, @Nullable Runnable release\+Callback)
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_a7442739e10984dea03320717a540e3ff}{get\+Width}} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_aca7d9963b5951aa4d4c211193c4e686d}{get\+Height}} ()
+\item 
+Video\+Frame.\+I420\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_a09a86ad6ed6c0d8906d3760f290c940b}{to\+I420}} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_a3fb1e2e75e16d72de3d686e7fba39d0e}{retain}} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_aa8a3502189d2204362a5cb8efcacc668}{release}} ()
+\item 
+Video\+Frame.\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_a5db9eb733c8567fbae9324b3469ca752}{crop\+And\+Scale}} (int cropX, int cropY, int crop\+Width, int crop\+Height, int scale\+Width, int scale\+Height)
+\item 
+Video\+Frame.\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_ae9f30ae516014a823fb7d5e4458e1be3}{mirror}} (int frame\+Rotation)
+\item 
+Video\+Frame.\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_a24deb8bf82d3932f57b1b47c51694471}{rotate}} (int frame\+Rotation)
+\item 
+Video\+Frame.\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_a1c5f5dfffb4914867a1e9f841f426a47}{transform}} (int cropX, int cropY, int crop\+Width, int crop\+Height, int scale\+Width, int scale\+Height, int rotation)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_n_v12_buffer_a7442739e10984dea03320717a540e3ff}\label{classio_1_1agora_1_1base_1_1_n_v12_buffer_a7442739e10984dea03320717a540e3ff}} 
+\index{io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int io.\+agora.\+base.\+N\+V12\+Buffer.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resolution of the buffer in pixels.
+
+\begin{DoxyReturn}{Returns}
+width. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a23ed478a1b2c5401e0ca1825342a23f9}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_n_v12_buffer_aca7d9963b5951aa4d4c211193c4e686d}\label{classio_1_1agora_1_1base_1_1_n_v12_buffer_aca7d9963b5951aa4d4c211193c4e686d}} 
+\index{io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int io.\+agora.\+base.\+N\+V12\+Buffer.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resolution of the buffer in pixels.
+
+\begin{DoxyReturn}{Returns}
+height. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a2a2b6e87e00209dd52a6dcee781d7014}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_n_v12_buffer_a09a86ad6ed6c0d8906d3760f290c940b}\label{classio_1_1agora_1_1base_1_1_n_v12_buffer_a09a86ad6ed6c0d8906d3760f290c940b}} 
+\index{io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}!toI420@{toI420}}
+\index{toI420@{toI420}!io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}}
+\doxysubsubsection{\texorpdfstring{toI420()}{toI420()}}
+{\footnotesize\ttfamily Video\+Frame.\+I420\+Buffer io.\+agora.\+base.\+N\+V12\+Buffer.\+to\+I420 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a memory-\/backed frame in I420 format. If the pixel data is in another format, a conversion will take place. All implementations must provide a fallback to I420 for compatibility with e.\+g. the internal Web\+R\+TC software encoders.
+
+\begin{DoxyNote}{Note}
+invoke \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_aa8a3502189d2204362a5cb8efcacc668}{release()}} to release the memory or decreases ref count by one, otherwise memory may be leaked. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a52b3ce61de7817c9524281c28bfeaaa7}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_n_v12_buffer_a3fb1e2e75e16d72de3d686e7fba39d0e}\label{classio_1_1agora_1_1base_1_1_n_v12_buffer_a3fb1e2e75e16d72de3d686e7fba39d0e}} 
+\index{io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}!retain@{retain}}
+\index{retain@{retain}!io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}}
+\doxysubsubsection{\texorpdfstring{retain()}{retain()}}
+{\footnotesize\ttfamily void io.\+agora.\+base.\+N\+V12\+Buffer.\+retain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increases ref count by one. 
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a947158565c8906f669d6befb328a7d22}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_n_v12_buffer_aa8a3502189d2204362a5cb8efcacc668}\label{classio_1_1agora_1_1base_1_1_n_v12_buffer_aa8a3502189d2204362a5cb8efcacc668}} 
+\index{io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}!release@{release}}
+\index{release@{release}!io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void io.\+agora.\+base.\+N\+V12\+Buffer.\+release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Decreases ref count by one. When the ref count reaches zero, resources related to the object will be freed. 
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a53f5b85a4c0ba647c39ee9cdf5567257}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_n_v12_buffer_a5db9eb733c8567fbae9324b3469ca752}\label{classio_1_1agora_1_1base_1_1_n_v12_buffer_a5db9eb733c8567fbae9324b3469ca752}} 
+\index{io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}!cropAndScale@{cropAndScale}}
+\index{cropAndScale@{cropAndScale}!io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}}
+\doxysubsubsection{\texorpdfstring{cropAndScale()}{cropAndScale()}}
+{\footnotesize\ttfamily Video\+Frame.\+Buffer io.\+agora.\+base.\+N\+V12\+Buffer.\+crop\+And\+Scale (\begin{DoxyParamCaption}\item[{int}]{cropX,  }\item[{int}]{cropY,  }\item[{int}]{crop\+Width,  }\item[{int}]{crop\+Height,  }\item[{int}]{scale\+Width,  }\item[{int}]{scale\+Height }\end{DoxyParamCaption})}
+
+Crops a region defined by $\vert$cropx$\vert$, $\vert$crop\+Y$\vert$, $\vert$crop\+Width$\vert$ and $\vert$crop\+Height$\vert$. Scales it to size $\vert$scale\+Width$\vert$ x $\vert$scale\+Height$\vert$.
+
+\begin{DoxyReturn}{Returns}
+a new buffer which match the request, null if not supported.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+invoke \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_aa8a3502189d2204362a5cb8efcacc668}{release()}} to release the memory or decreases ref count by one, otherwise memory may be leaked. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a3dd7ca92b21f526856b4d24e3d65cc0a}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_n_v12_buffer_ae9f30ae516014a823fb7d5e4458e1be3}\label{classio_1_1agora_1_1base_1_1_n_v12_buffer_ae9f30ae516014a823fb7d5e4458e1be3}} 
+\index{io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}!mirror@{mirror}}
+\index{mirror@{mirror}!io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}}
+\doxysubsubsection{\texorpdfstring{mirror()}{mirror()}}
+{\footnotesize\ttfamily Video\+Frame.\+Buffer io.\+agora.\+base.\+N\+V12\+Buffer.\+mirror (\begin{DoxyParamCaption}\item[{int}]{frame\+Rotation }\end{DoxyParamCaption})}
+
+Apply mirror
+
+\begin{DoxyReturn}{Returns}
+a new buffer which match the request, null if not supported.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+invoke \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_aa8a3502189d2204362a5cb8efcacc668}{release()}} to release the memory or decreases ref count by one, otherwise memory may be leaked. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a035a3f710625fc668f5594186d57b08c}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_n_v12_buffer_a24deb8bf82d3932f57b1b47c51694471}\label{classio_1_1agora_1_1base_1_1_n_v12_buffer_a24deb8bf82d3932f57b1b47c51694471}} 
+\index{io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}!rotate@{rotate}}
+\index{rotate@{rotate}!io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily Video\+Frame.\+Buffer io.\+agora.\+base.\+N\+V12\+Buffer.\+rotate (\begin{DoxyParamCaption}\item[{int}]{frame\+Rotation }\end{DoxyParamCaption})}
+
+Apply rotate \begin{DoxyReturn}{Returns}
+a new buffer which match the request, null if not supported.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+invoke \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_aa8a3502189d2204362a5cb8efcacc668}{release()}} to release the memory or decreases ref count by one, otherwise memory may be leaked. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_afdf60a0efe0e87e092ad84c4247fca32}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_n_v12_buffer_a1c5f5dfffb4914867a1e9f841f426a47}\label{classio_1_1agora_1_1base_1_1_n_v12_buffer_a1c5f5dfffb4914867a1e9f841f426a47}} 
+\index{io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}!transform@{transform}}
+\index{transform@{transform}!io.agora.base.NV12Buffer@{io.agora.base.NV12Buffer}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily Video\+Frame.\+Buffer io.\+agora.\+base.\+N\+V12\+Buffer.\+transform (\begin{DoxyParamCaption}\item[{int}]{cropX,  }\item[{int}]{cropY,  }\item[{int}]{crop\+Width,  }\item[{int}]{crop\+Height,  }\item[{int}]{scale\+Width,  }\item[{int}]{scale\+Height,  }\item[{int}]{frame\+Rotation }\end{DoxyParamCaption})}
+
+Apply crop/scale/mirror/rotate \begin{DoxyReturn}{Returns}
+a new buffer which match the request, null if not supported.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+invoke \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_n_v12_buffer_aa8a3502189d2204362a5cb8efcacc668}{release()}} to release the memory or decreases ref count by one, otherwise memory may be leaked. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a524ad2e6d965ea18870a4a504c115bf6}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+

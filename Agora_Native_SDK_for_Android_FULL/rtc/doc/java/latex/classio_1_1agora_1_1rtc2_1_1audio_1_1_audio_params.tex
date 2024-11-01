@@ -1,0 +1,97 @@
+\hypertarget{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{}\doxysection{io.\+agora.\+rtc2.\+audio.\+Audio\+Params Class Reference}
+\label{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}\index{io.agora.rtc2.audio.AudioParams@{io.agora.rtc2.audio.AudioParams}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_ac38bf20854f46c31bcc2fdd3705d4a40}\label{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_ac38bf20854f46c31bcc2fdd3705d4a40}} 
+{\bfseries Audio\+Params} (int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_ace4e66c75c5a88bfa19bcfc9a45a774a}{sample\+Rate}}, int channel\+Cnt, int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a451465f347666820681b951bd3206055}{mode}}, int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_aa73fa9418bde2223907fc8b208f4326c}{samples\+Per\+Call}})
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a40e55fb40a1df5291495203b2ebeda3f}\label{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a40e55fb40a1df5291495203b2ebeda3f}} 
+int {\bfseries get\+Sample\+Rate} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_abfc40fc72ebcb5e660e1f9691a356db3}\label{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_abfc40fc72ebcb5e660e1f9691a356db3}} 
+int {\bfseries get\+Channel} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_ad635abcc7c4d263ecf2c9a50d1c05dc6}\label{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_ad635abcc7c4d263ecf2c9a50d1c05dc6}} 
+int {\bfseries get\+Mode} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a40639aa4319565fa1cb691d458d53e20}\label{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a40639aa4319565fa1cb691d458d53e20}} 
+int {\bfseries get\+Samples\+Per\+Call} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a9a6fd1eaf1ad556cf5a346854f17dc79}\label{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a9a6fd1eaf1ad556cf5a346854f17dc79}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_ace4e66c75c5a88bfa19bcfc9a45a774a}{sample\+Rate}} = 0
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a857b76cfa84488160f502f36ff8c2465}{channel}} = 0
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a451465f347666820681b951bd3206055}{mode}} = \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_constants_ae6f9e30d96f2e542fb7ef99ca1f552e1}{Constants.\+R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+O\+N\+LY}}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_aa73fa9418bde2223907fc8b208f4326c}{samples\+Per\+Call}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{Audio\+Params}}} class.
+
+You can pass the {\ttfamily \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{Audio\+Params}}} object in the return value of the following callbacks to set the audio data format for the corresponding callbacks\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a9e62f7b9c5cf201cd75ea2f0b2417b43}{get\+Record\+Audio\+Params}}\+: Sets the audio recording format for the \mbox{\hyperlink{}{on\+Record\+Frame}} callback.
+\item \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_ae9850f39cd04cee8419eb469e9318b8f}{get\+Playback\+Audio\+Params}}\+: Sets the audio playback format for the \mbox{\hyperlink{}{on\+Playback\+Frame}} callback.
+\item \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a5fa3838fcba7216a10777e86503f6646}{get\+Mixed\+Audio\+Params}}\+: Sets the audio mixing format for the \mbox{\hyperlink{}{on\+Mixed\+Frame}} callback.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+The S\+DK calculates the sample interval according to the {\ttfamily samples\+Per\+Call}, {\ttfamily sample\+Rate}, and {\ttfamily channel\+Cnt} values in the {\ttfamily \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{Audio\+Params}}} object and triggers the following callbacks at the calculated sample interval\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{}{on\+Record\+Frame}}
+\item \mbox{\hyperlink{}{on\+Playback\+Frame}}
+\item \mbox{\hyperlink{}{on\+Mixed\+Frame}}
+\end{DoxyItemize}
+\end{DoxyNote}
+Sample interval (seconds) = {\ttfamily sample\+Per\+Call}/({\ttfamily sample\+Rate} × {\ttfamily channel\+Cnt}). Ensure that the value of sample interval is equal to or greater than 0.\+01. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_ace4e66c75c5a88bfa19bcfc9a45a774a}\label{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_ace4e66c75c5a88bfa19bcfc9a45a774a}} 
+\index{io.agora.rtc2.audio.AudioParams@{io.agora.rtc2.audio.AudioParams}!sampleRate@{sampleRate}}
+\index{sampleRate@{sampleRate}!io.agora.rtc2.audio.AudioParams@{io.agora.rtc2.audio.AudioParams}}
+\doxysubsubsection{\texorpdfstring{sampleRate}{sampleRate}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+audio.\+Audio\+Params.\+sample\+Rate = 0}
+
+The audio sample rate (Hz), which can be set as one of the following values\+:
+\begin{DoxyItemize}
+\item {\ttfamily 8000}
+\item {\ttfamily 16000} (Default)
+\item {\ttfamily 32000}
+\item {\ttfamily 44100}
+\item {\ttfamily 48000} 
+\end{DoxyItemize}\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a857b76cfa84488160f502f36ff8c2465}\label{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a857b76cfa84488160f502f36ff8c2465}} 
+\index{io.agora.rtc2.audio.AudioParams@{io.agora.rtc2.audio.AudioParams}!channel@{channel}}
+\index{channel@{channel}!io.agora.rtc2.audio.AudioParams@{io.agora.rtc2.audio.AudioParams}}
+\doxysubsubsection{\texorpdfstring{channel}{channel}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+audio.\+Audio\+Params.\+channel = 0}
+
+The number of audio channels, which can be set as either of the following values\+:
+\begin{DoxyItemize}
+\item {\ttfamily 1}\+: Mono (Default)
+\item {\ttfamily 2}\+: Stereo 
+\end{DoxyItemize}\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a451465f347666820681b951bd3206055}\label{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_a451465f347666820681b951bd3206055}} 
+\index{io.agora.rtc2.audio.AudioParams@{io.agora.rtc2.audio.AudioParams}!mode@{mode}}
+\index{mode@{mode}!io.agora.rtc2.audio.AudioParams@{io.agora.rtc2.audio.AudioParams}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+audio.\+Audio\+Params.\+mode = \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_constants_ae6f9e30d96f2e542fb7ef99ca1f552e1}{Constants.\+R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+O\+N\+LY}}}
+
+The use mode of the audio data\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_constants_ae6f9e30d96f2e542fb7ef99ca1f552e1}{R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+O\+N\+L\+Y(0)}}\+: (Default) Read-\/only mode, in which users can only read the \mbox{\hyperlink{}{Audio\+Frame}} without modifying anything. For example, this mode applies when users acquire data with the Agora S\+DK and then push the R\+T\+MP or R\+T\+M\+PS streams.
+\item \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_constants_ac8f0ba9ceea5c9b532e6799ba390633f}{R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+T\+E(2)}}\+: Read and write mode, in which users read the \mbox{\hyperlink{}{Audio\+Frame}}, modify it, and then play it. For example, this mode applies when users have their own sound-\/effect processing module to pre-\/process the audio (such as a voice changer). 
+\end{DoxyItemize}\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_aa73fa9418bde2223907fc8b208f4326c}\label{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params_aa73fa9418bde2223907fc8b208f4326c}} 
+\index{io.agora.rtc2.audio.AudioParams@{io.agora.rtc2.audio.AudioParams}!samplesPerCall@{samplesPerCall}}
+\index{samplesPerCall@{samplesPerCall}!io.agora.rtc2.audio.AudioParams@{io.agora.rtc2.audio.AudioParams}}
+\doxysubsubsection{\texorpdfstring{samplesPerCall}{samplesPerCall}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+audio.\+Audio\+Params.\+samples\+Per\+Call = 0}
+
+The number of samples. For example, set it as 1024 for R\+T\+MP or R\+T\+M\+PS streaming. 

@@ -1,0 +1,41 @@
+\hypertarget{classagora_1_1media_1_1_i_video_encoded_frame_observer}{}\doxysection{agora\+::media\+::I\+Video\+Encoded\+Frame\+Observer Class Reference}
+\label{classagora_1_1media_1_1_i_video_encoded_frame_observer}\index{agora::media::IVideoEncodedFrameObserver@{agora::media::IVideoEncodedFrameObserver}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer_ae2b81fc6ee5979d9723a7274817c17fc}{on\+Encoded\+Video\+Frame\+Received}} (rtc\+::uid\+\_\+t uid, const uint8\+\_\+t $\ast$image\+Buffer, size\+\_\+t length, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_video_frame_info}{rtc\+::\+Encoded\+Video\+Frame\+Info}} \&video\+Encoded\+Frame\+Info)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{I\+Video\+Encoded\+Frame\+Observer}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_video_encoded_frame_observer_ae2b81fc6ee5979d9723a7274817c17fc}\label{classagora_1_1media_1_1_i_video_encoded_frame_observer_ae2b81fc6ee5979d9723a7274817c17fc}} 
+\index{agora::media::IVideoEncodedFrameObserver@{agora::media::IVideoEncodedFrameObserver}!onEncodedVideoFrameReceived@{onEncodedVideoFrameReceived}}
+\index{onEncodedVideoFrameReceived@{onEncodedVideoFrameReceived}!agora::media::IVideoEncodedFrameObserver@{agora::media::IVideoEncodedFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onEncodedVideoFrameReceived()}{onEncodedVideoFrameReceived()}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer\+::on\+Encoded\+Video\+Frame\+Received (\begin{DoxyParamCaption}\item[{rtc\+::uid\+\_\+t}]{uid,  }\item[{const uint8\+\_\+t $\ast$}]{image\+Buffer,  }\item[{size\+\_\+t}]{length,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_video_frame_info}{rtc\+::\+Encoded\+Video\+Frame\+Info}} \&}]{video\+Encoded\+Frame\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs each time the S\+DK receives an encoded video image. 
+\begin{DoxyParams}{Parameters}
+{\em uid} & The user id of remote user. \\
+\hline
+{\em image\+Buffer} & The pointer to the video image buffer. \\
+\hline
+{\em length} & The data length of the video image. \\
+\hline
+{\em video\+Encoded\+Frame\+Info} & The information of the encoded video frame\+: Encoded\+Video\+Frame\+Info. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Determines whether to accept encoded video image.
+\begin{DoxyItemize}
+\item true\+: Accept.
+\item false\+: Do not accept. 
+\end{DoxyItemize}
+\end{DoxyReturn}

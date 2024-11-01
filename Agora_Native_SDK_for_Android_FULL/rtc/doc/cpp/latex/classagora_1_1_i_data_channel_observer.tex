@@ -1,0 +1,81 @@
+\hypertarget{classagora_1_1_i_data_channel_observer}{}\doxysection{agora\+::I\+Data\+Channel\+Observer Class Reference}
+\label{classagora_1_1_i_data_channel_observer}\index{agora::IDataChannelObserver@{agora::IDataChannelObserver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1_i_data_channel_observer_a8e4d1659d2fdf92879f0789d7a22d3fb}{on\+Local\+Data\+Channel\+Published}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1_i_local_data_channel}{I\+Local\+Data\+Channel}} $>$ channel)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1_i_data_channel_observer_a44c930266f2ee078ad59e3b9bbc2b003}{on\+Remote\+Data\+Channel\+Subscribed}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1_i_remote_data_channel}{I\+Remote\+Data\+Channel}} $>$ channel)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1_i_data_channel_observer_adc236b9bf85aef121182f3ea1bcb18ba}{on\+Remote\+Data\+Channel\+Unsubscribed}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1_i_remote_data_channel}{I\+Remote\+Data\+Channel}} $>$ channel)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1_i_data_channel_observer_a1f70231ee246f2f940d6448eeff409ed}{on\+Remote\+Data\+Packet\+Received}} (const \mbox{\hyperlink{structagora_1_1_user_data_channel_info}{User\+Data\+Channel\+Info}} \&info, \mbox{\hyperlink{classagora_1_1util_1_1_copyable_auto_ptr}{util\+::\+A\+String}} packet)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1_i_data_channel_observer_a1449ffb25868b50a86c503006d751073}{on\+Remote\+Data\+Channel\+Info\+Updated}} (const \mbox{\hyperlink{structagora_1_1_user_data_channel_info}{User\+Data\+Channel\+Info}} $\ast$modified\+\_\+infos, size\+\_\+t modified\+\_\+infos\+\_\+size, const \mbox{\hyperlink{structagora_1_1_user_data_channel_info}{User\+Data\+Channel\+Info}} $\ast$deleted\+\_\+infos, size\+\_\+t deleted\+\_\+infos\+\_\+size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1_i_data_channel_observer_a8e4d1659d2fdf92879f0789d7a22d3fb}\label{classagora_1_1_i_data_channel_observer_a8e4d1659d2fdf92879f0789d7a22d3fb}} 
+\index{agora::IDataChannelObserver@{agora::IDataChannelObserver}!onLocalDataChannelPublished@{onLocalDataChannelPublished}}
+\index{onLocalDataChannelPublished@{onLocalDataChannelPublished}!agora::IDataChannelObserver@{agora::IDataChannelObserver}}
+\doxysubsubsection{\texorpdfstring{onLocalDataChannelPublished()}{onLocalDataChannelPublished()}}
+{\footnotesize\ttfamily virtual void agora\+::\+I\+Data\+Channel\+Observer\+::on\+Local\+Data\+Channel\+Published (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1_i_local_data_channel}{I\+Local\+Data\+Channel}} $>$}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the channe is ready to send the data packet. 
+\begin{DoxyParams}{Parameters}
+{\em channel} & the published channel. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1_i_data_channel_observer_a44c930266f2ee078ad59e3b9bbc2b003}\label{classagora_1_1_i_data_channel_observer_a44c930266f2ee078ad59e3b9bbc2b003}} 
+\index{agora::IDataChannelObserver@{agora::IDataChannelObserver}!onRemoteDataChannelSubscribed@{onRemoteDataChannelSubscribed}}
+\index{onRemoteDataChannelSubscribed@{onRemoteDataChannelSubscribed}!agora::IDataChannelObserver@{agora::IDataChannelObserver}}
+\doxysubsubsection{\texorpdfstring{onRemoteDataChannelSubscribed()}{onRemoteDataChannelSubscribed()}}
+{\footnotesize\ttfamily virtual void agora\+::\+I\+Data\+Channel\+Observer\+::on\+Remote\+Data\+Channel\+Subscribed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1_i_remote_data_channel}{I\+Remote\+Data\+Channel}} $>$}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the the channe is added and ready to receive data packet. 
+\begin{DoxyParams}{Parameters}
+{\em channel} & the remote channel pointer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1_i_data_channel_observer_adc236b9bf85aef121182f3ea1bcb18ba}\label{classagora_1_1_i_data_channel_observer_adc236b9bf85aef121182f3ea1bcb18ba}} 
+\index{agora::IDataChannelObserver@{agora::IDataChannelObserver}!onRemoteDataChannelUnsubscribed@{onRemoteDataChannelUnsubscribed}}
+\index{onRemoteDataChannelUnsubscribed@{onRemoteDataChannelUnsubscribed}!agora::IDataChannelObserver@{agora::IDataChannelObserver}}
+\doxysubsubsection{\texorpdfstring{onRemoteDataChannelUnsubscribed()}{onRemoteDataChannelUnsubscribed()}}
+{\footnotesize\ttfamily virtual void agora\+::\+I\+Data\+Channel\+Observer\+::on\+Remote\+Data\+Channel\+Unsubscribed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1_i_remote_data_channel}{I\+Remote\+Data\+Channel}} $>$}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the the channe is removed. 
+\begin{DoxyParams}{Parameters}
+{\em channel} & the remote channel pointer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1_i_data_channel_observer_a1f70231ee246f2f940d6448eeff409ed}\label{classagora_1_1_i_data_channel_observer_a1f70231ee246f2f940d6448eeff409ed}} 
+\index{agora::IDataChannelObserver@{agora::IDataChannelObserver}!onRemoteDataPacketReceived@{onRemoteDataPacketReceived}}
+\index{onRemoteDataPacketReceived@{onRemoteDataPacketReceived}!agora::IDataChannelObserver@{agora::IDataChannelObserver}}
+\doxysubsubsection{\texorpdfstring{onRemoteDataPacketReceived()}{onRemoteDataPacketReceived()}}
+{\footnotesize\ttfamily virtual void agora\+::\+I\+Data\+Channel\+Observer\+::on\+Remote\+Data\+Packet\+Received (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1_user_data_channel_info}{User\+Data\+Channel\+Info}} \&}]{info,  }\item[{\mbox{\hyperlink{classagora_1_1util_1_1_copyable_auto_ptr}{util\+::\+A\+String}}}]{packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the packet is received. 
+\begin{DoxyParams}{Parameters}
+{\em info} & the channel Info. \\
+\hline
+{\em packet} & the received packet. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1_i_data_channel_observer_a1449ffb25868b50a86c503006d751073}\label{classagora_1_1_i_data_channel_observer_a1449ffb25868b50a86c503006d751073}} 
+\index{agora::IDataChannelObserver@{agora::IDataChannelObserver}!onRemoteDataChannelInfoUpdated@{onRemoteDataChannelInfoUpdated}}
+\index{onRemoteDataChannelInfoUpdated@{onRemoteDataChannelInfoUpdated}!agora::IDataChannelObserver@{agora::IDataChannelObserver}}
+\doxysubsubsection{\texorpdfstring{onRemoteDataChannelInfoUpdated()}{onRemoteDataChannelInfoUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::\+I\+Data\+Channel\+Observer\+::on\+Remote\+Data\+Channel\+Info\+Updated (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1_user_data_channel_info}{User\+Data\+Channel\+Info}} $\ast$}]{modified\+\_\+infos,  }\item[{size\+\_\+t}]{modified\+\_\+infos\+\_\+size,  }\item[{const \mbox{\hyperlink{structagora_1_1_user_data_channel_info}{User\+Data\+Channel\+Info}} $\ast$}]{deleted\+\_\+infos,  }\item[{size\+\_\+t}]{deleted\+\_\+infos\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the remote data channel info updated. 
+\begin{DoxyParams}{Parameters}
+{\em modified\+\_\+infos} & the modifed channel Infos, add or update. \\
+\hline
+{\em modified\+\_\+infos\+\_\+size} & the size of modifed channel Infos . \\
+\hline
+{\em deleted\+\_\+infos} & the deleted channel Infos. \\
+\hline
+{\em deleted\+\_\+infos\+\_\+size} & the size of deleted channel Infos . \\
+\hline
+\end{DoxyParams}

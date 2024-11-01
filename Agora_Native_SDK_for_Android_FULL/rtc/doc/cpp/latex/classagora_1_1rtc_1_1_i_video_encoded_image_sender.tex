@@ -1,0 +1,47 @@
+\hypertarget{classagora_1_1rtc_1_1_i_video_encoded_image_sender}{}\doxysection{agora\+::rtc\+::I\+Video\+Encoded\+Image\+Sender Class Reference}
+\label{classagora_1_1rtc_1_1_i_video_encoded_image_sender}\index{agora::rtc::IVideoEncodedImageSender@{agora::rtc::IVideoEncodedImageSender}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Video\+Encoded\+Image\+Sender\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_video_encoded_image_sender}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_encoded_image_sender_ac82a2f06f268b980503521d951d0d53d}{send\+Encoded\+Video\+Image}} (const uint8\+\_\+t $\ast$image\+Buffer, size\+\_\+t length, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_video_frame_info}{Encoded\+Video\+Frame\+Info}} \&video\+Encoded\+Frame\+Info, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_encoded_image_sender}{I\+Video\+Encoded\+Image\+Sender}}} class.
+
+In scenarios involving custom video sources, you can use this class to send the encoded video data directly to the video track. If the video track is disabled, the sent video image will be automatically discarded. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_encoded_image_sender_ac82a2f06f268b980503521d951d0d53d}\label{classagora_1_1rtc_1_1_i_video_encoded_image_sender_ac82a2f06f268b980503521d951d0d53d}} 
+\index{agora::rtc::IVideoEncodedImageSender@{agora::rtc::IVideoEncodedImageSender}!sendEncodedVideoImage@{sendEncodedVideoImage}}
+\index{sendEncodedVideoImage@{sendEncodedVideoImage}!agora::rtc::IVideoEncodedImageSender@{agora::rtc::IVideoEncodedImageSender}}
+\doxysubsubsection{\texorpdfstring{sendEncodedVideoImage()}{sendEncodedVideoImage()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Video\+Encoded\+Image\+Sender\+::send\+Encoded\+Video\+Image (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{image\+Buffer,  }\item[{size\+\_\+t}]{length,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_video_frame_info}{Encoded\+Video\+Frame\+Info}} \&}]{video\+Encoded\+Frame\+Info,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends the encoded video image to the video track. 
+\begin{DoxyParams}{Parameters}
+{\em image\+Buffer} & The video buffer. \\
+\hline
+{\em length} & The data length of the video data. \\
+\hline
+{\em video\+Encoded\+Frame\+Info} & The reference to the information of the encoded video frame\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_video_frame_info}{Encoded\+Video\+Frame\+Info}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

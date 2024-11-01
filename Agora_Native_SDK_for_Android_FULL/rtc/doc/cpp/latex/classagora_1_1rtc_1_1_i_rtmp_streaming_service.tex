@@ -1,0 +1,194 @@
+\hypertarget{classagora_1_1rtc_1_1_i_rtmp_streaming_service}{}\doxysection{agora\+::rtc\+::I\+Rtmp\+Streaming\+Service Class Reference}
+\label{classagora_1_1rtc_1_1_i_rtmp_streaming_service}\index{agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtmp\+Streaming\+Service.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Rtmp\+Streaming\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_rtmp_streaming_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a617b348662cb00f67d898a08b1db5015}{start\+Rtmp\+Stream\+Without\+Transcoding}} (const char $\ast$url, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a0a8a513afdacc44572d34edbcbc6d39a}{start\+Rtmp\+Stream\+With\+Transcoding}} (const char $\ast$url, const \mbox{\hyperlink{structagora_1_1rtc_1_1_live_transcoding}{Live\+Transcoding}} \&transcoding, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a2ced1adb3c039264d77db5f240ff17f0}{update\+Rtmp\+Transcoding}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_live_transcoding}{Live\+Transcoding}} \&transcoding, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a94830439fb4ec115388119f3ab9fc579}{stop\+Rtmp\+Stream}} (const char $\ast$url, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_service_aa6006ea354332388049169582544de85}{register\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_observer}{I\+Rtmp\+Streaming\+Observer}} $\ast$observer, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a4675c5372bb56c10dae29578aa3107d4}{unregister\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_observer}{I\+Rtmp\+Streaming\+Observer}} $\ast$observer)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_service}{I\+Rtmp\+Streaming\+Service}} class, which enables the live stream service. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a617b348662cb00f67d898a08b1db5015}\label{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a617b348662cb00f67d898a08b1db5015}} 
+\index{agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}!startRtmpStreamWithoutTranscoding@{startRtmpStreamWithoutTranscoding}}
+\index{startRtmpStreamWithoutTranscoding@{startRtmpStreamWithoutTranscoding}!agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}}
+\doxysubsubsection{\texorpdfstring{startRtmpStreamWithoutTranscoding()}{startRtmpStreamWithoutTranscoding()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtmp\+Streaming\+Service\+::start\+Rtmp\+Stream\+Without\+Transcoding (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Publishes the local stream without transcoding to a specified C\+DN live R\+T\+MP address. (C\+DN live only.)
+
+The S\+DK returns the result of this method call in the on\+Stream\+Published callback.
+
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_acfc4de5d9454cad1dfd1d154e180d78c}{start\+Rtmp\+Stream\+Without\+Transcoding}} method call triggers the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a01f3ce153df3a96703a0c9af934058f6}{on\+Rtmp\+Streaming\+State\+Changed}} callback on the local client to report the state of adding a local stream to the C\+DN. \begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item Ensure that the user joins the channel before calling this method.
+\item This method adds only one stream R\+T\+MP U\+RL address each time it is called.
+\item The R\+T\+MP U\+RL address must not contain special characters, such as Chinese language characters.
+\item This method applies to Live Broadcast only.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The C\+DN streaming U\+RL in the R\+T\+MP format. The maximum length of this parameter is 1024 bytes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item \#\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT (2)\+: The R\+T\+MP U\+RL address is N\+U\+LL or has a string length of 0.
+\item \#\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED (7)\+: You have not initialized the R\+TC engine when publishing the stream.
+\item \#\+E\+R\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+I\+N\+\_\+\+U\+SE (19)\+: This streaming U\+RL is already in use. Use a new streaming U\+RL for C\+DN streaming. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a0a8a513afdacc44572d34edbcbc6d39a}\label{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a0a8a513afdacc44572d34edbcbc6d39a}} 
+\index{agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}!startRtmpStreamWithTranscoding@{startRtmpStreamWithTranscoding}}
+\index{startRtmpStreamWithTranscoding@{startRtmpStreamWithTranscoding}!agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}}
+\doxysubsubsection{\texorpdfstring{startRtmpStreamWithTranscoding()}{startRtmpStreamWithTranscoding()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtmp\+Streaming\+Service\+::start\+Rtmp\+Stream\+With\+Transcoding (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_live_transcoding}{Live\+Transcoding}} \&}]{transcoding,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Publishes the local stream with transcoding to a specified C\+DN live R\+T\+MP address. (C\+DN live only.)
+
+The S\+DK returns the result of this method call in the on\+Stream\+Published callback.
+
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a0f91aa3af0a7c9a8428966028b5a010c}{start\+Rtmp\+Stream\+With\+Transcoding}} method call triggers the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a01f3ce153df3a96703a0c9af934058f6}{on\+Rtmp\+Streaming\+State\+Changed}} callback on the local client to report the state of adding a local stream to the C\+DN. \begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item Ensure that the user joins the channel before calling this method.
+\item This method adds only one stream R\+T\+MP U\+RL address each time it is called.
+\item The R\+T\+MP U\+RL address must not contain special characters, such as Chinese language characters.
+\item This method applies to Live Broadcast only.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The C\+DN streaming U\+RL in the R\+T\+MP format. The maximum length of this parameter is 1024 bytes. \\
+\hline
+{\em transcoding} & Sets the C\+DN live audio/video transcoding settings. See \mbox{\hyperlink{structagora_1_1rtc_1_1_live_transcoding}{Live\+Transcoding}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item \#\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT (2)\+: The R\+T\+MP U\+RL address is N\+U\+LL or has a string length of 0.
+\item \#\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED (7)\+: You have not initialized the R\+TC engine when publishing the stream.
+\item \#\+E\+R\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+I\+N\+\_\+\+U\+SE (19)\+: This streaming U\+RL is already in use. Use a new streaming U\+RL for C\+DN streaming. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a2ced1adb3c039264d77db5f240ff17f0}\label{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a2ced1adb3c039264d77db5f240ff17f0}} 
+\index{agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}!updateRtmpTranscoding@{updateRtmpTranscoding}}
+\index{updateRtmpTranscoding@{updateRtmpTranscoding}!agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}}
+\doxysubsubsection{\texorpdfstring{updateRtmpTranscoding()}{updateRtmpTranscoding()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtmp\+Streaming\+Service\+::update\+Rtmp\+Transcoding (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_live_transcoding}{Live\+Transcoding}} \&}]{transcoding,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Update the video layout and audio settings for C\+DN live. (C\+DN live only.) \begin{DoxyNote}{Note}
+This method applies to Live Broadcast only.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em transcoding} & Sets the C\+DN live audio/video transcoding settings. See \mbox{\hyperlink{structagora_1_1rtc_1_1_live_transcoding}{Live\+Transcoding}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a94830439fb4ec115388119f3ab9fc579}\label{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a94830439fb4ec115388119f3ab9fc579}} 
+\index{agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}!stopRtmpStream@{stopRtmpStream}}
+\index{stopRtmpStream@{stopRtmpStream}!agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}}
+\doxysubsubsection{\texorpdfstring{stopRtmpStream()}{stopRtmpStream()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtmp\+Streaming\+Service\+::stop\+Rtmp\+Stream (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stop an R\+T\+MP stream with transcoding or without transcoding from the C\+DN. (C\+DN live only.)
+
+This method removes the R\+T\+MP U\+RL address (added by the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_acfc4de5d9454cad1dfd1d154e180d78c}{start\+Rtmp\+Stream\+Without\+Transcoding}} method or \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a0f91aa3af0a7c9a8428966028b5a010c}{I\+Rtc\+Engine\+::start\+Rtmp\+Stream\+With\+Transcoding}} \char`\"{}start\+Rtmp\+Stream\+With\+Transcoding\char`\"{} method) from a C\+DN live stream. The S\+DK returns the result of this method call in the on\+Stream\+Unpublished callback.
+
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ab9807b2e5fb708d01066759af02cc630}{stop\+Rtmp\+Stream}} method call triggers the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a01f3ce153df3a96703a0c9af934058f6}{on\+Rtmp\+Streaming\+State\+Changed}} callback on the local client to report the state of removing an R\+T\+MP stream from the C\+DN. \begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item This method removes only one R\+T\+MP U\+RL address each time it is called.
+\item The R\+T\+MP U\+RL address must not contain special characters, such as Chinese language characters.
+\item This method applies to Live Broadcast only.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The R\+T\+MP U\+RL address to be removed. The maximum length of this parameter is 1024 bytes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_streaming_service_aa6006ea354332388049169582544de85}\label{classagora_1_1rtc_1_1_i_rtmp_streaming_service_aa6006ea354332388049169582544de85}} 
+\index{agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}!registerObserver@{registerObserver}}
+\index{registerObserver@{registerObserver}!agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}}
+\doxysubsubsection{\texorpdfstring{registerObserver()}{registerObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtmp\+Streaming\+Service\+::register\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_observer}{I\+Rtmp\+Streaming\+Observer}} $\ast$}]{observer,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an R\+T\+MP streaming observer. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to an R\+T\+MP streaming observer. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_observer}{I\+Rtmp\+Streaming\+Observer}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a4675c5372bb56c10dae29578aa3107d4}\label{classagora_1_1rtc_1_1_i_rtmp_streaming_service_a4675c5372bb56c10dae29578aa3107d4}} 
+\index{agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}!unregisterObserver@{unregisterObserver}}
+\index{unregisterObserver@{unregisterObserver}!agora::rtc::IRtmpStreamingService@{agora::rtc::IRtmpStreamingService}}
+\doxysubsubsection{\texorpdfstring{unregisterObserver()}{unregisterObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtmp\+Streaming\+Service\+::unregister\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_observer}{I\+Rtmp\+Streaming\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the R\+T\+MP streaming observer created by \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_service_aa6006ea354332388049169582544de85}{register\+Observer()}}. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the R\+T\+MP streaming observer that you want to release. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_observer}{I\+Rtmp\+Streaming\+Observer}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

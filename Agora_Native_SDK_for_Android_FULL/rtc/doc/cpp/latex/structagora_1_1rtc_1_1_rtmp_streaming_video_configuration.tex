@@ -1,0 +1,112 @@
+\hypertarget{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration}{}\doxysection{agora\+::rtc\+::Rtmp\+Streaming\+Video\+Configuration Struct Reference}
+\label{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration}\index{agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Rtmp\+Connection.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a0e173e914dddf1a75eac72f16852ae91}{width}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_aaf2fe7e652d42c94255d2d90e8c9eb16}{height}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a5af94eb1974774ecbbd197efaf938ad5}{framerate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_ad79fe13bc5076b76b16b646393405365}{bitrate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_ae4ae6f7fcffd8ef0a1b1fcb87213db23}{max\+Bitrate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_aeecea6a861612bece29245296551b30c}{min\+Bitrate}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a556cde00494a99818d081d7cf554fc42}{gop\+In\+Ms}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a6d228a47289b2d51dcf8080daadd5c65}{encoder\+Hw\+Sw\+Mode}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_abdfd03a0afbd0de527b768c3d5667a0e}{encoder\+Bitrate\+Control\+Mode}}
+\item 
+O\+R\+I\+E\+N\+T\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_ab0414e65411d9e226ab4e70c68b5bc25}{orientation\+Mode}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configurations for the R\+T\+MP video stream. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a0e173e914dddf1a75eac72f16852ae91}\label{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a0e173e914dddf1a75eac72f16852ae91}} 
+\index{agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}!width@{width}}
+\index{width@{width}!agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Rtmp\+Streaming\+Video\+Configuration\+::width}
+
+The width (in pixels) of the video. The default value is 640.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item The value of the dimension (with the $\vert$height$\vert$ below) does not indicate the orientation mode of the output ratio. For how to set the video orientation, see \mbox{\hyperlink{}{Orientation\+Mode}}. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_aaf2fe7e652d42c94255d2d90e8c9eb16}\label{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_aaf2fe7e652d42c94255d2d90e8c9eb16}} 
+\index{agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}!height@{height}}
+\index{height@{height}!agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Rtmp\+Streaming\+Video\+Configuration\+::height}
+
+The height (in pixels) of the video. The default value is 360.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item The value of the dimension (with the $\vert$width$\vert$ above) does not indicate the orientation mode of the output ratio. For how to set the video orientation, see \mbox{\hyperlink{}{Orientation\+Mode}}. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a5af94eb1974774ecbbd197efaf938ad5}\label{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a5af94eb1974774ecbbd197efaf938ad5}} 
+\index{agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}!framerate@{framerate}}
+\index{framerate@{framerate}!agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}}
+\doxysubsubsection{\texorpdfstring{framerate}{framerate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Rtmp\+Streaming\+Video\+Configuration\+::framerate}
+
+Frame rate (fps) of the output video stream to be published. The default value is 15 fps. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_ad79fe13bc5076b76b16b646393405365}\label{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_ad79fe13bc5076b76b16b646393405365}} 
+\index{agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}!bitrate@{bitrate}}
+\index{bitrate@{bitrate}!agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}}
+\doxysubsubsection{\texorpdfstring{bitrate}{bitrate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Rtmp\+Streaming\+Video\+Configuration\+::bitrate}
+
+The target bitrate (Kbps) of the output video stream to be published. The default value is 800 Kbps. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_ae4ae6f7fcffd8ef0a1b1fcb87213db23}\label{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_ae4ae6f7fcffd8ef0a1b1fcb87213db23}} 
+\index{agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}!maxBitrate@{maxBitrate}}
+\index{maxBitrate@{maxBitrate}!agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}}
+\doxysubsubsection{\texorpdfstring{maxBitrate}{maxBitrate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Rtmp\+Streaming\+Video\+Configuration\+::max\+Bitrate}
+
+(For future use) The maximum bitrate (Kbps) for video. The default value is 960 Kbps. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_aeecea6a861612bece29245296551b30c}\label{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_aeecea6a861612bece29245296551b30c}} 
+\index{agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}!minBitrate@{minBitrate}}
+\index{minBitrate@{minBitrate}!agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}}
+\doxysubsubsection{\texorpdfstring{minBitrate}{minBitrate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Rtmp\+Streaming\+Video\+Configuration\+::min\+Bitrate}
+
+(For future use) The minimum bitrate (Kbps) for video. The default value is 600 Kbps. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a556cde00494a99818d081d7cf554fc42}\label{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a556cde00494a99818d081d7cf554fc42}} 
+\index{agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}!gopInMs@{gopInMs}}
+\index{gopInMs@{gopInMs}!agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}}
+\doxysubsubsection{\texorpdfstring{gopInMs}{gopInMs}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+Rtmp\+Streaming\+Video\+Configuration\+::gop\+In\+Ms}
+
+The interval between two keyframes. The default value is 2000ms. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a6d228a47289b2d51dcf8080daadd5c65}\label{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_a6d228a47289b2d51dcf8080daadd5c65}} 
+\index{agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}!encoderHwSwMode@{encoderHwSwMode}}
+\index{encoderHwSwMode@{encoderHwSwMode}!agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}}
+\doxysubsubsection{\texorpdfstring{encoderHwSwMode}{encoderHwSwMode}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Rtmp\+Streaming\+Video\+Configuration\+::encoder\+Hw\+Sw\+Mode}
+
+Whether the encoder enables hard coding or soft coding. The default value is 0. 0\+: default 1\+: hardware encoder 2\+: software encoder \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_abdfd03a0afbd0de527b768c3d5667a0e}\label{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_abdfd03a0afbd0de527b768c3d5667a0e}} 
+\index{agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}!encoderBitrateControlMode@{encoderBitrateControlMode}}
+\index{encoderBitrateControlMode@{encoderBitrateControlMode}!agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}}
+\doxysubsubsection{\texorpdfstring{encoderBitrateControlMode}{encoderBitrateControlMode}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Rtmp\+Streaming\+Video\+Configuration\+::encoder\+Bitrate\+Control\+Mode}
+
+Whether the encoder enables C\+BR coding or V\+BR coding. The default value is 0. 0\+: C\+BR 1\+: V\+BR \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_ab0414e65411d9e226ab4e70c68b5bc25}\label{structagora_1_1rtc_1_1_rtmp_streaming_video_configuration_ab0414e65411d9e226ab4e70c68b5bc25}} 
+\index{agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}!orientationMode@{orientationMode}}
+\index{orientationMode@{orientationMode}!agora::rtc::RtmpStreamingVideoConfiguration@{agora::rtc::RtmpStreamingVideoConfiguration}}
+\doxysubsubsection{\texorpdfstring{orientationMode}{orientationMode}}
+{\footnotesize\ttfamily O\+R\+I\+E\+N\+T\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE agora\+::rtc\+::\+Rtmp\+Streaming\+Video\+Configuration\+::orientation\+Mode}
+
+The orientation mode. See \mbox{\hyperlink{}{O\+R\+I\+E\+N\+T\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}}. 

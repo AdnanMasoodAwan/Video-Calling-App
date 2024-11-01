@@ -1,0 +1,134 @@
+\hypertarget{classagora_1_1rtc_1_1_i_media_streaming_source_observer}{}\doxysection{agora\+::rtc\+::I\+Media\+Streaming\+Source\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_media_streaming_source_observer}\index{agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}}
+
+
+This observer interface of media streaming source.  
+
+
+
+
+{\ttfamily \#include $<$I\+Agora\+Media\+Streaming\+Source.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a60a66334d9aeaadc632793d276d072bb}{on\+State\+Changed}} (S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+R\+C\+\_\+\+S\+T\+A\+TE state, S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+R\+C\+\_\+\+E\+RR err\+\_\+code)=0
+\begin{DoxyCompactList}\small\item\em Reports the playback state change. When the state of the playback changes, the S\+DK triggers this callback to report the new playback state and the reason or error for the change. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a07dafe3c8f45553bf00743b2f7835911}{on\+Open\+Done}} (S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+R\+C\+\_\+\+E\+RR err\+\_\+code)=0
+\begin{DoxyCompactList}\small\item\em Triggered when file is opened. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a4820506f9b383593eeb87b9ba4f43986}{on\+Seek\+Done}} (S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+R\+C\+\_\+\+E\+RR err\+\_\+code)=0
+\begin{DoxyCompactList}\small\item\em Triggered when seeking is done. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source_observer_aef38c1b63a51e1f3e0c852f38b1d9b24}{on\+Eof\+Once}} (int64\+\_\+t progress\+\_\+ms, int64\+\_\+t repeat\+\_\+count)=0
+\begin{DoxyCompactList}\small\item\em Triggered when playing is E\+OF. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source_observer_ab781d87ce07d5694e8d29e365a59d6ff}{on\+Progress}} (int64\+\_\+t position\+\_\+ms)=0
+\begin{DoxyCompactList}\small\item\em Reports current playback progress. The callback triggered once every one second during the playing status. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a7ab8d5e5305245d9fa869a52bacf8a24}{on\+Meta\+Data}} (const void $\ast$data, int length)=0
+\begin{DoxyCompactList}\small\item\em Occurs when the metadata is received. The callback occurs when the player receives the media metadata and reports the detailed information of the media metadata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This observer interface of media streaming source. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a60a66334d9aeaadc632793d276d072bb}\label{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a60a66334d9aeaadc632793d276d072bb}} 
+\index{agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}!onStateChanged@{onStateChanged}}
+\index{onStateChanged@{onStateChanged}!agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onStateChanged()}{onStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Streaming\+Source\+Observer\+::on\+State\+Changed (\begin{DoxyParamCaption}\item[{S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+R\+C\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+R\+C\+\_\+\+E\+RR}]{err\+\_\+code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reports the playback state change. When the state of the playback changes, the S\+DK triggers this callback to report the new playback state and the reason or error for the change. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The new playback state after change. See \mbox{\hyperlink{}{S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+R\+C\+\_\+\+S\+T\+A\+TE}}. \\
+\hline
+{\em ec} & The player\textquotesingle{}s error code. See \mbox{\hyperlink{}{S\+T\+R\+E\+A\+M\+I\+N\+G\+S\+R\+C\+\_\+\+E\+RR}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a07dafe3c8f45553bf00743b2f7835911}\label{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a07dafe3c8f45553bf00743b2f7835911}} 
+\index{agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}!onOpenDone@{onOpenDone}}
+\index{onOpenDone@{onOpenDone}!agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onOpenDone()}{onOpenDone()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Streaming\+Source\+Observer\+::on\+Open\+Done (\begin{DoxyParamCaption}\item[{S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+R\+C\+\_\+\+E\+RR}]{err\+\_\+code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Triggered when file is opened. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em err\+\_\+code} & The error code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a4820506f9b383593eeb87b9ba4f43986}\label{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a4820506f9b383593eeb87b9ba4f43986}} 
+\index{agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}!onSeekDone@{onSeekDone}}
+\index{onSeekDone@{onSeekDone}!agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onSeekDone()}{onSeekDone()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Streaming\+Source\+Observer\+::on\+Seek\+Done (\begin{DoxyParamCaption}\item[{S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+R\+C\+\_\+\+E\+RR}]{err\+\_\+code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Triggered when seeking is done. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em err\+\_\+code} & The error code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_streaming_source_observer_aef38c1b63a51e1f3e0c852f38b1d9b24}\label{classagora_1_1rtc_1_1_i_media_streaming_source_observer_aef38c1b63a51e1f3e0c852f38b1d9b24}} 
+\index{agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}!onEofOnce@{onEofOnce}}
+\index{onEofOnce@{onEofOnce}!agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onEofOnce()}{onEofOnce()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Streaming\+Source\+Observer\+::on\+Eof\+Once (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{progress\+\_\+ms,  }\item[{int64\+\_\+t}]{repeat\+\_\+count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Triggered when playing is E\+OF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em progress\+\_\+ms} & the progress position \\
+\hline
+{\em repeat\+\_\+count} & means repeated count of playing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_streaming_source_observer_ab781d87ce07d5694e8d29e365a59d6ff}\label{classagora_1_1rtc_1_1_i_media_streaming_source_observer_ab781d87ce07d5694e8d29e365a59d6ff}} 
+\index{agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}!onProgress@{onProgress}}
+\index{onProgress@{onProgress}!agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onProgress()}{onProgress()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Streaming\+Source\+Observer\+::on\+Progress (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{position\+\_\+ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reports current playback progress. The callback triggered once every one second during the playing status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position\+\_\+ms} & Current playback progress (millisecond). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a7ab8d5e5305245d9fa869a52bacf8a24}\label{classagora_1_1rtc_1_1_i_media_streaming_source_observer_a7ab8d5e5305245d9fa869a52bacf8a24}} 
+\index{agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}!onMetaData@{onMetaData}}
+\index{onMetaData@{onMetaData}!agora::rtc::IMediaStreamingSourceObserver@{agora::rtc::IMediaStreamingSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onMetaData()}{onMetaData()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Streaming\+Source\+Observer\+::on\+Meta\+Data (\begin{DoxyParamCaption}\item[{const void $\ast$}]{data,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Occurs when the metadata is received. The callback occurs when the player receives the media metadata and reports the detailed information of the media metadata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The detailed data of the media metadata. \\
+\hline
+{\em length} & The data length (bytes). \\
+\hline
+\end{DoxyParams}

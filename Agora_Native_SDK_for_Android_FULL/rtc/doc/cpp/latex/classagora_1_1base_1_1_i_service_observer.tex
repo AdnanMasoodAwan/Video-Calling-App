@@ -1,0 +1,68 @@
+\hypertarget{classagora_1_1base_1_1_i_service_observer}{}\doxysection{agora\+::base\+::I\+Service\+Observer Class Reference}
+\label{classagora_1_1base_1_1_i_service_observer}\index{agora::base::IServiceObserver@{agora::base::IServiceObserver}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1base_1_1_i_service_observer_ac5a55c71be106bfcb35ec473ec781a12}{on\+Permission\+Error}} (agora\+::rtc\+::\+P\+E\+R\+M\+I\+S\+S\+I\+O\+N\+\_\+\+T\+Y\+PE permission\+Type)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1base_1_1_i_service_observer_a45342e643489e6804c0cf8a446c98bb7}{on\+Audio\+Device\+Error}} (E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE error, const char $\ast$description)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1base_1_1_i_service_observer_a9b6ef3f4ced20034ac5437be33c3bf7e}{on\+Fetch\+Config\+Result}} (int code, rtc\+::\+C\+O\+N\+F\+I\+G\+\_\+\+F\+E\+T\+C\+H\+\_\+\+T\+Y\+PE config\+Type, const char $\ast$config\+Content)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1base_1_1_i_service_observer}{I\+Service\+Observer}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_service_observer_ac5a55c71be106bfcb35ec473ec781a12}\label{classagora_1_1base_1_1_i_service_observer_ac5a55c71be106bfcb35ec473ec781a12}} 
+\index{agora::base::IServiceObserver@{agora::base::IServiceObserver}!onPermissionError@{onPermissionError}}
+\index{onPermissionError@{onPermissionError}!agora::base::IServiceObserver@{agora::base::IServiceObserver}}
+\doxysubsubsection{\texorpdfstring{onPermissionError()}{onPermissionError()}}
+{\footnotesize\ttfamily virtual void agora\+::base\+::\+I\+Service\+Observer\+::on\+Permission\+Error (\begin{DoxyParamCaption}\item[{agora\+::rtc\+::\+P\+E\+R\+M\+I\+S\+S\+I\+O\+N\+\_\+\+T\+Y\+PE}]{permission\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the permission error. 
+\begin{DoxyParams}{Parameters}
+{\em permission} & \mbox{\hyperlink{}{P\+E\+R\+M\+I\+S\+S\+I\+ON}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_service_observer_a45342e643489e6804c0cf8a446c98bb7}\label{classagora_1_1base_1_1_i_service_observer_a45342e643489e6804c0cf8a446c98bb7}} 
+\index{agora::base::IServiceObserver@{agora::base::IServiceObserver}!onAudioDeviceError@{onAudioDeviceError}}
+\index{onAudioDeviceError@{onAudioDeviceError}!agora::base::IServiceObserver@{agora::base::IServiceObserver}}
+\doxysubsubsection{\texorpdfstring{onAudioDeviceError()}{onAudioDeviceError()}}
+{\footnotesize\ttfamily virtual void agora\+::base\+::\+I\+Service\+Observer\+::on\+Audio\+Device\+Error (\begin{DoxyParamCaption}\item[{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE}]{error,  }\item[{const char $\ast$}]{description }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the audio device error. 
+\begin{DoxyParams}{Parameters}
+{\em error} & \mbox{\hyperlink{}{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_service_observer_a9b6ef3f4ced20034ac5437be33c3bf7e}\label{classagora_1_1base_1_1_i_service_observer_a9b6ef3f4ced20034ac5437be33c3bf7e}} 
+\index{agora::base::IServiceObserver@{agora::base::IServiceObserver}!onFetchConfigResult@{onFetchConfigResult}}
+\index{onFetchConfigResult@{onFetchConfigResult}!agora::base::IServiceObserver@{agora::base::IServiceObserver}}
+\doxysubsubsection{\texorpdfstring{onFetchConfigResult()}{onFetchConfigResult()}}
+{\footnotesize\ttfamily virtual void agora\+::base\+::\+I\+Service\+Observer\+::on\+Fetch\+Config\+Result (\begin{DoxyParamCaption}\item[{int}]{code,  }\item[{rtc\+::\+C\+O\+N\+F\+I\+G\+\_\+\+F\+E\+T\+C\+H\+\_\+\+T\+Y\+PE}]{config\+Type,  }\item[{const char $\ast$}]{config\+Content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the config fetch result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The error code of fetching config.
+\begin{DoxyItemize}
+\item 0(E\+R\+R\+\_\+\+OK)\+: Success.
+\item 10(E\+R\+R\+\_\+\+T\+I\+M\+E\+D\+O\+UT)\+: Fetching config is timed out. 
+\end{DoxyItemize}\\
+\hline
+{\em config\+Type} & The type of fetching config.
+\begin{DoxyItemize}
+\item 1(C\+O\+N\+F\+I\+G\+\_\+\+F\+E\+T\+C\+H\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+ZE)\+: Fetch config when initializing Rtc\+Engine without channel info.
+\item 2(C\+O\+N\+F\+I\+G\+\_\+\+F\+E\+T\+C\+H\+\_\+\+T\+Y\+P\+E\+\_\+\+J\+O\+I\+N\+\_\+\+C\+H\+A\+N\+N\+EL)\+: Fetch config when joining channel with channel info, such as channel name and uid. 
+\end{DoxyItemize}\\
+\hline
+{\em config\+Content} & The config fetched from server. \\
+\hline
+\end{DoxyParams}

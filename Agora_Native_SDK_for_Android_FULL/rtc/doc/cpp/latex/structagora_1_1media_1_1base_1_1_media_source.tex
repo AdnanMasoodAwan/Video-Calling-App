@@ -1,0 +1,113 @@
+\hypertarget{structagora_1_1media_1_1base_1_1_media_source}{}\doxysection{agora\+::media\+::base\+::Media\+Source Struct Reference}
+\label{structagora_1_1media_1_1base_1_1_media_source}\index{agora::media::base::MediaSource@{agora::media::base::MediaSource}}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_media_source_aaf0dd90ad1462a04105e9f2348041e32}{url}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_media_source_a5648db076a4cf4c7583a08b0b95c106f}{uri}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_media_source_ab52e7f5c9a483c634dadfee3dcce2ba5}{start\+Pos}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_media_source_a6c4e98fa55b3609cb93d95b671695748}{auto\+Play}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_media_source_a28a14228b70e606561cca5053eb3e65b}{enable\+Cache}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_media_source_ab167899013e14b1ad1d56ab175547e74}{enable\+Multi\+Audio\+Track}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_media_source_afc76bb1f8a153d8ca78030d99afd6ded}{is\+Agora\+Source}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_media_source_abccce79be714d5c6e1584390406f2189}{is\+Live\+Source}}
+\item 
+\mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_media_player_custom_data_provider}{I\+Media\+Player\+Custom\+Data\+Provider}} $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_media_source_ad4a79f71c88c47b395f835b69ec9764f}{provider}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_media_source_aaf0dd90ad1462a04105e9f2348041e32}\label{structagora_1_1media_1_1base_1_1_media_source_aaf0dd90ad1462a04105e9f2348041e32}} 
+\index{agora::media::base::MediaSource@{agora::media::base::MediaSource}!url@{url}}
+\index{url@{url}!agora::media::base::MediaSource@{agora::media::base::MediaSource}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::media\+::base\+::\+Media\+Source\+::url}
+
+The U\+RL of the media file that you want to play. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_media_source_a5648db076a4cf4c7583a08b0b95c106f}\label{structagora_1_1media_1_1base_1_1_media_source_a5648db076a4cf4c7583a08b0b95c106f}} 
+\index{agora::media::base::MediaSource@{agora::media::base::MediaSource}!uri@{uri}}
+\index{uri@{uri}!agora::media::base::MediaSource@{agora::media::base::MediaSource}}
+\doxysubsubsection{\texorpdfstring{uri}{uri}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::media\+::base\+::\+Media\+Source\+::uri}
+
+The U\+RI of the media file
+
+When caching is enabled, if the url cannot distinguish the cache file name, the uri must be able to ensure that the cache file name corresponding to the url is unique. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_media_source_ab52e7f5c9a483c634dadfee3dcce2ba5}\label{structagora_1_1media_1_1base_1_1_media_source_ab52e7f5c9a483c634dadfee3dcce2ba5}} 
+\index{agora::media::base::MediaSource@{agora::media::base::MediaSource}!startPos@{startPos}}
+\index{startPos@{startPos}!agora::media::base::MediaSource@{agora::media::base::MediaSource}}
+\doxysubsubsection{\texorpdfstring{startPos}{startPos}}
+{\footnotesize\ttfamily int64\+\_\+t agora\+::media\+::base\+::\+Media\+Source\+::start\+Pos}
+
+Set the starting position for playback, in ms. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_media_source_a6c4e98fa55b3609cb93d95b671695748}\label{structagora_1_1media_1_1base_1_1_media_source_a6c4e98fa55b3609cb93d95b671695748}} 
+\index{agora::media::base::MediaSource@{agora::media::base::MediaSource}!autoPlay@{autoPlay}}
+\index{autoPlay@{autoPlay}!agora::media::base::MediaSource@{agora::media::base::MediaSource}}
+\doxysubsubsection{\texorpdfstring{autoPlay}{autoPlay}}
+{\footnotesize\ttfamily bool agora\+::media\+::base\+::\+Media\+Source\+::auto\+Play}
+
+Determines whether to autoplay after opening a media resource.
+\begin{DoxyItemize}
+\item true\+: (Default) Autoplay after opening a media resource.
+\item false\+: Do not autoplay after opening a media resource. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_media_source_a28a14228b70e606561cca5053eb3e65b}\label{structagora_1_1media_1_1base_1_1_media_source_a28a14228b70e606561cca5053eb3e65b}} 
+\index{agora::media::base::MediaSource@{agora::media::base::MediaSource}!enableCache@{enableCache}}
+\index{enableCache@{enableCache}!agora::media::base::MediaSource@{agora::media::base::MediaSource}}
+\doxysubsubsection{\texorpdfstring{enableCache}{enableCache}}
+{\footnotesize\ttfamily bool agora\+::media\+::base\+::\+Media\+Source\+::enable\+Cache}
+
+Determines whether to enable cache streaming to local files. If enable cached, the media player will use the url or uri as the cache index.
+
+\begin{DoxyNote}{Note}
+The local cache function only supports on-\/demand video/audio streams and does not support live streams. Caching video and audio files based on the H\+LS protocol (m3u8) to your local device is not supported.
+\end{DoxyNote}
+
+\begin{DoxyItemize}
+\item true\+: Enable cache.
+\item false\+: (Default) Disable cache. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_media_source_ab167899013e14b1ad1d56ab175547e74}\label{structagora_1_1media_1_1base_1_1_media_source_ab167899013e14b1ad1d56ab175547e74}} 
+\index{agora::media::base::MediaSource@{agora::media::base::MediaSource}!enableMultiAudioTrack@{enableMultiAudioTrack}}
+\index{enableMultiAudioTrack@{enableMultiAudioTrack}!agora::media::base::MediaSource@{agora::media::base::MediaSource}}
+\doxysubsubsection{\texorpdfstring{enableMultiAudioTrack}{enableMultiAudioTrack}}
+{\footnotesize\ttfamily bool agora\+::media\+::base\+::\+Media\+Source\+::enable\+Multi\+Audio\+Track}
+
+Determines whether to enable multi-\/track audio stream decoding. Then you can select multi audio track of the media file for playback or publish to channel
+
+\begin{DoxyNote}{Note}
+If you use the select\+Multi\+Audio\+Track A\+PI, you must set enable\+Multi\+Audio\+Track to true.
+\end{DoxyNote}
+
+\begin{DoxyItemize}
+\item true\+: Enable Multi\+Audio\+Track;.
+\item false\+: (Default) Disable Multi\+Audio\+Track;. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_media_source_afc76bb1f8a153d8ca78030d99afd6ded}\label{structagora_1_1media_1_1base_1_1_media_source_afc76bb1f8a153d8ca78030d99afd6ded}} 
+\index{agora::media::base::MediaSource@{agora::media::base::MediaSource}!isAgoraSource@{isAgoraSource}}
+\index{isAgoraSource@{isAgoraSource}!agora::media::base::MediaSource@{agora::media::base::MediaSource}}
+\doxysubsubsection{\texorpdfstring{isAgoraSource}{isAgoraSource}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::media\+::base\+::\+Media\+Source\+::is\+Agora\+Source}
+
+Determines whether the opened media resource is a stream through the Agora Broadcast Streaming Network(\+C\+D\+N).
+\begin{DoxyItemize}
+\item true\+: It is a stream through the Agora Broadcast Streaming Network.
+\item false\+: (Default) It is not a stream through the Agora Broadcast Streaming Network. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_media_source_abccce79be714d5c6e1584390406f2189}\label{structagora_1_1media_1_1base_1_1_media_source_abccce79be714d5c6e1584390406f2189}} 
+\index{agora::media::base::MediaSource@{agora::media::base::MediaSource}!isLiveSource@{isLiveSource}}
+\index{isLiveSource@{isLiveSource}!agora::media::base::MediaSource@{agora::media::base::MediaSource}}
+\doxysubsubsection{\texorpdfstring{isLiveSource}{isLiveSource}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::media\+::base\+::\+Media\+Source\+::is\+Live\+Source}
+
+Determines whether the opened media resource is a live stream. If is a live stream, it can speed up the opening of media resources.
+\begin{DoxyItemize}
+\item true\+: It is a live stream.
+\item false\+: (Default) It is not is a live stream. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_media_source_ad4a79f71c88c47b395f835b69ec9764f}\label{structagora_1_1media_1_1base_1_1_media_source_ad4a79f71c88c47b395f835b69ec9764f}} 
+\index{agora::media::base::MediaSource@{agora::media::base::MediaSource}!provider@{provider}}
+\index{provider@{provider}!agora::media::base::MediaSource@{agora::media::base::MediaSource}}
+\doxysubsubsection{\texorpdfstring{provider}{provider}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_media_player_custom_data_provider}{I\+Media\+Player\+Custom\+Data\+Provider}}$\ast$ agora\+::media\+::base\+::\+Media\+Source\+::provider}
+
+External custom data source object 

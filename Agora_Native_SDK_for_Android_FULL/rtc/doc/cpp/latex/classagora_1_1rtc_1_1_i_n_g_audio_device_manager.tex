@@ -1,0 +1,295 @@
+\hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager}{}\doxysection{agora\+::rtc\+::I\+N\+G\+Audio\+Device\+Manager Class Reference}
+\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager}\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Audio\+Device\+Manager.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+N\+G\+Audio\+Device\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_n_g_audio_device_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source}{I\+Recording\+Device\+Source}} $>$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a0a98ff4832cbd4ad9a9c76edea4429d4}{create\+Recording\+Device\+Source}} (char device\+Id\mbox{[}k\+Adm\+Max\+Device\+Name\+Size\mbox{]})=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a1766c05f7cb65d7f5f72a5ffea1a499d}{set\+Microphone\+Volume}} (unsigned int volume, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a624095516e62b54d8e2aa8c032400882}{get\+Microphone\+Volume}} (unsigned int \&volume)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a18021a940bcd54cdb5c1a7af53104c71}{set\+Speaker\+Volume}} (unsigned int volume, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_addb42b409f43045bda3788dfad18cbdc}{get\+Speaker\+Volume}} (unsigned int \&volume)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_adc8593929ec7dc280f8d33bd0f440f76}{set\+Microphone\+Mute}} (bool mute, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_aac3096dda5f78f870f195aa4561583a5}{get\+Microphone\+Mute}} (bool \&mute)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_aaaff18d4b611d9ec3124098996d6cd58}{set\+Speaker\+Mute}} (bool mute, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a363ea70b1c383b331841b241faf1e9b0}{get\+Speaker\+Mute}} (bool \&mute)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a204cf218de85c9c30815cfedfa64963f}{get\+Playout\+Audio\+Parameters}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_audio_parameters}{Audio\+Parameters}} $\ast$params) const =0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_ad713a3892fc07af53ca63d989e72ec65}{get\+Record\+Audio\+Parameters}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_audio_parameters}{Audio\+Parameters}} $\ast$params) const =0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a02c2603b689301765899d59b323d93e0}{register\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{I\+Audio\+Device\+Manager\+Observer}} $\ast$observer, void($\ast$safe\+Deleter)(\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{I\+Audio\+Device\+Manager\+Observer}} $\ast$)=N\+U\+LL, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_ad6f18aa988238908f44360f50857fed4}{unregister\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{I\+Audio\+Device\+Manager\+Observer}} $\ast$observer)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a09d7e9bf76a1212650fe754cb6830d97}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a09d7e9bf76a1212650fe754cb6830d97}} 
+virtual int {\bfseries setup\+Audio\+Attribute\+Context} (void $\ast$audio\+Attr, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The I\+N\+G\+Audio\+Decice\+Manager class.
+
+This class provides access to audio volume and audio route control, as well as device enumeration and selection on the PC. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a0a98ff4832cbd4ad9a9c76edea4429d4}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a0a98ff4832cbd4ad9a9c76edea4429d4}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!createRecordingDeviceSource@{createRecordingDeviceSource}}
+\index{createRecordingDeviceSource@{createRecordingDeviceSource}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{createRecordingDeviceSource()}{createRecordingDeviceSource()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$\mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source}{I\+Recording\+Device\+Source}}$>$ agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::create\+Recording\+Device\+Source (\begin{DoxyParamCaption}\item[{char}]{device\+Id\mbox{[}k\+Adm\+Max\+Device\+Name\+Size\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a audio device source object and returns the pointer.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source}{I\+Recording\+Device\+Source}}, if the method call succeeds.
+\item An empty pointer N\+U\+LL\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a1766c05f7cb65d7f5f72a5ffea1a499d}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a1766c05f7cb65d7f5f72a5ffea1a499d}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!setMicrophoneVolume@{setMicrophoneVolume}}
+\index{setMicrophoneVolume@{setMicrophoneVolume}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{setMicrophoneVolume()}{setMicrophoneVolume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::set\+Microphone\+Volume (\begin{DoxyParamCaption}\item[{unsigned int}]{volume,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the volume of the microphone. 
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume of the microphone. The value range is \mbox{[}0, 255\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a624095516e62b54d8e2aa8c032400882}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a624095516e62b54d8e2aa8c032400882}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!getMicrophoneVolume@{getMicrophoneVolume}}
+\index{getMicrophoneVolume@{getMicrophoneVolume}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{getMicrophoneVolume()}{getMicrophoneVolume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::get\+Microphone\+Volume (\begin{DoxyParamCaption}\item[{unsigned int \&}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the volume of the microphone. 
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume of the microphone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a18021a940bcd54cdb5c1a7af53104c71}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a18021a940bcd54cdb5c1a7af53104c71}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!setSpeakerVolume@{setSpeakerVolume}}
+\index{setSpeakerVolume@{setSpeakerVolume}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{setSpeakerVolume()}{setSpeakerVolume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::set\+Speaker\+Volume (\begin{DoxyParamCaption}\item[{unsigned int}]{volume,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the volume of the speaker. 
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume of the speaker. The value range is \mbox{[}2, 255\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_addb42b409f43045bda3788dfad18cbdc}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_addb42b409f43045bda3788dfad18cbdc}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!getSpeakerVolume@{getSpeakerVolume}}
+\index{getSpeakerVolume@{getSpeakerVolume}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{getSpeakerVolume()}{getSpeakerVolume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::get\+Speaker\+Volume (\begin{DoxyParamCaption}\item[{unsigned int \&}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the volume of the speaker. 
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume of the speaker. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_adc8593929ec7dc280f8d33bd0f440f76}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_adc8593929ec7dc280f8d33bd0f440f76}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!setMicrophoneMute@{setMicrophoneMute}}
+\index{setMicrophoneMute@{setMicrophoneMute}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{setMicrophoneMute()}{setMicrophoneMute()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::set\+Microphone\+Mute (\begin{DoxyParamCaption}\item[{bool}]{mute,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Captures or stops capturing the local audio with the microphone. 
+\begin{DoxyParams}{Parameters}
+{\em mute} & Determines whether to capture or stop capturing the local audio with the microphone.
+\begin{DoxyItemize}
+\item true\+: Stop capturing the local audio.
+\item false\+: (Default) Capture the local audio. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_aac3096dda5f78f870f195aa4561583a5}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_aac3096dda5f78f870f195aa4561583a5}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!getMicrophoneMute@{getMicrophoneMute}}
+\index{getMicrophoneMute@{getMicrophoneMute}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{getMicrophoneMute()}{getMicrophoneMute()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::get\+Microphone\+Mute (\begin{DoxyParamCaption}\item[{bool \&}]{mute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the mute state of the microphone. 
+\begin{DoxyParams}{Parameters}
+{\em mute} & The mute state of the microphone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_aaaff18d4b611d9ec3124098996d6cd58}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_aaaff18d4b611d9ec3124098996d6cd58}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!setSpeakerMute@{setSpeakerMute}}
+\index{setSpeakerMute@{setSpeakerMute}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{setSpeakerMute()}{setSpeakerMute()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::set\+Speaker\+Mute (\begin{DoxyParamCaption}\item[{bool}]{mute,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Plays or stops playing the remote audio with the speaker. 
+\begin{DoxyParams}{Parameters}
+{\em mute} & Determines whether to play or stop playing the remote audio.
+\begin{DoxyItemize}
+\item true\+: Stop playing the remote audio.
+\item false\+: (Default) Play the remote audio. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a363ea70b1c383b331841b241faf1e9b0}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a363ea70b1c383b331841b241faf1e9b0}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!getSpeakerMute@{getSpeakerMute}}
+\index{getSpeakerMute@{getSpeakerMute}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{getSpeakerMute()}{getSpeakerMute()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::get\+Speaker\+Mute (\begin{DoxyParamCaption}\item[{bool \&}]{mute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the mute state of the speaker. 
+\begin{DoxyParams}{Parameters}
+{\em mute} & A reference to the mute state of the speaker. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a204cf218de85c9c30815cfedfa64963f}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a204cf218de85c9c30815cfedfa64963f}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!getPlayoutAudioParameters@{getPlayoutAudioParameters}}
+\index{getPlayoutAudioParameters@{getPlayoutAudioParameters}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{getPlayoutAudioParameters()}{getPlayoutAudioParameters()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::get\+Playout\+Audio\+Parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_audio_parameters}{Audio\+Parameters}} $\ast$}]{params }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get the playout parameters of audio device. 
+\begin{DoxyParams}{Parameters}
+{\em params} & A point to the struct \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_parameters}{Audio\+Parameters}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_ad713a3892fc07af53ca63d989e72ec65}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_ad713a3892fc07af53ca63d989e72ec65}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!getRecordAudioParameters@{getRecordAudioParameters}}
+\index{getRecordAudioParameters@{getRecordAudioParameters}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{getRecordAudioParameters()}{getRecordAudioParameters()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::get\+Record\+Audio\+Parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_audio_parameters}{Audio\+Parameters}} $\ast$}]{params }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get the record parameters of audio device. 
+\begin{DoxyParams}{Parameters}
+{\em params} & A point to the struct \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_parameters}{Audio\+Parameters}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a02c2603b689301765899d59b323d93e0}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a02c2603b689301765899d59b323d93e0}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!registerObserver@{registerObserver}}
+\index{registerObserver@{registerObserver}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{registerObserver()}{registerObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::register\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{I\+Audio\+Device\+Manager\+Observer}} $\ast$}]{observer,  }\item[{void($\ast$)(\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{I\+Audio\+Device\+Manager\+Observer}} $\ast$)}]{safe\+Deleter = {\ttfamily NULL},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{I\+Audio\+Device\+Manager\+Observer}} object.
+
+You need to implement the I\+Audio\+Device\+Manage\+Observer class in this method, and register callbacks according to your scenario.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & A pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{I\+Audio\+Device\+Manager\+Observer}} class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_ad6f18aa988238908f44360f50857fed4}\label{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_ad6f18aa988238908f44360f50857fed4}} 
+\index{agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}!unregisterObserver@{unregisterObserver}}
+\index{unregisterObserver@{unregisterObserver}!agora::rtc::INGAudioDeviceManager@{agora::rtc::INGAudioDeviceManager}}
+\doxysubsubsection{\texorpdfstring{unregisterObserver()}{unregisterObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+N\+G\+Audio\+Device\+Manager\+::unregister\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{I\+Audio\+Device\+Manager\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{I\+Audio\+Device\+Manager\+Observer}} object. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{I\+Audio\+Device\+Manager\+Observer}} class registered using \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager_a02c2603b689301765899d59b323d93e0}{register\+Observer}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

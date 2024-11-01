@@ -1,0 +1,53 @@
+\hypertarget{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result}{}\doxysection{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler.\+Lastmile\+Probe\+Result Class Reference}
+\label{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result}\index{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult@{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_1_1_lastmile_probe_one_way_result}{Lastmile\+Probe\+One\+Way\+Result}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_acb5dafb46271cde1a06bbbf4570fde8f}{state}}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_ab12230613f10d9107eb9c2c23975fc2f}{rtt}}
+\item 
+\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_1_1_lastmile_probe_one_way_result}{Lastmile\+Probe\+One\+Way\+Result}} \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_a5d479c49c1665458ed886764638cc11e}{uplink\+Report}} = new \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_1_1_lastmile_probe_one_way_result}{Lastmile\+Probe\+One\+Way\+Result}}()
+\item 
+\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_1_1_lastmile_probe_one_way_result}{Lastmile\+Probe\+One\+Way\+Result}} \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_a069ad22ee6eccc682da0b3182c511c20}{downlink\+Report}} = new \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_1_1_lastmile_probe_one_way_result}{Lastmile\+Probe\+One\+Way\+Result}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Statistics of the last-\/mile probe. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_acb5dafb46271cde1a06bbbf4570fde8f}\label{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_acb5dafb46271cde1a06bbbf4570fde8f}} 
+\index{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult@{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult}!state@{state}}
+\index{state@{state}!io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult@{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily short io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler.\+Lastmile\+Probe\+Result.\+state}
+
+The state of the probe test\+: 
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_constants_a66d187d82bcc43143e31b3fc7d9781e0}{L\+A\+S\+T\+M\+I\+L\+E\+\_\+\+P\+R\+O\+B\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E(1)}}\+: the last-\/mile network probe test is complete. 
+\item \{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_constants_a54c11393102fadbdc04e60958b4dcb7d}{L\+A\+S\+T\+M\+I\+L\+E\+\_\+\+P\+R\+O\+B\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+N\+O\+\_\+\+B\+W\+E(2)\}\+: the last-\/mile network probe test is incomplete and the bandwidth estimation is not available, probably due to limited test resources. }}\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_constants_a839cd7f08543168a767bafd03d1d1868}{L\+A\+S\+T\+M\+I\+L\+E\+\_\+\+P\+R\+O\+B\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E(3)}}\+: the last-\/mile network probe test is not carried out, probably due to poor network conditions. 
+\end{DoxyItemize}\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_ab12230613f10d9107eb9c2c23975fc2f}\label{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_ab12230613f10d9107eb9c2c23975fc2f}} 
+\index{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult@{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult}!rtt@{rtt}}
+\index{rtt@{rtt}!io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult@{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult}}
+\doxysubsubsection{\texorpdfstring{rtt}{rtt}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler.\+Lastmile\+Probe\+Result.\+rtt}
+
+The round-\/trip delay time (ms). \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_a5d479c49c1665458ed886764638cc11e}\label{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_a5d479c49c1665458ed886764638cc11e}} 
+\index{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult@{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult}!uplinkReport@{uplinkReport}}
+\index{uplinkReport@{uplinkReport}!io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult@{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult}}
+\doxysubsubsection{\texorpdfstring{uplinkReport}{uplinkReport}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_1_1_lastmile_probe_one_way_result}{Lastmile\+Probe\+One\+Way\+Result}} io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler.\+Lastmile\+Probe\+Result.\+uplink\+Report = new \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_1_1_lastmile_probe_one_way_result}{Lastmile\+Probe\+One\+Way\+Result}}()}
+
+The uplink last-\/mile network report. For details, see \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_1_1_lastmile_probe_one_way_result}{Lastmile\+Probe\+One\+Way\+Result}}. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_a069ad22ee6eccc682da0b3182c511c20}\label{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_a069ad22ee6eccc682da0b3182c511c20}} 
+\index{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult@{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult}!downlinkReport@{downlinkReport}}
+\index{downlinkReport@{downlinkReport}!io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult@{io.agora.rtc2.IRtcEngineEventHandler.LastmileProbeResult}}
+\doxysubsubsection{\texorpdfstring{downlinkReport}{downlinkReport}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_1_1_lastmile_probe_one_way_result}{Lastmile\+Probe\+One\+Way\+Result}} io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler.\+Lastmile\+Probe\+Result.\+downlink\+Report = new \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_1_1_lastmile_probe_one_way_result}{Lastmile\+Probe\+One\+Way\+Result}}()}
+
+The downlink last-\/mile network report. For details, see \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_lastmile_probe_result_1_1_lastmile_probe_one_way_result}{Lastmile\+Probe\+One\+Way\+Result}}. 

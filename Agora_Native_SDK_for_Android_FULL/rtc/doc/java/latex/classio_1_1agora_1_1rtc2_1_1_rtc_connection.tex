@@ -1,0 +1,49 @@
+\hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_connection}{}\doxysection{io.\+agora.\+rtc2.\+Rtc\+Connection Class Reference}
+\label{classio_1_1agora_1_1rtc2_1_1_rtc_connection}\index{io.agora.rtc2.RtcConnection@{io.agora.rtc2.RtcConnection}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1_rtc_connection_1_1_c_o_n_n_e_c_t_i_o_n___s_t_a_t_e___t_y_p_e}{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_connection_a20050d8a0c3d030e4c7fa7c5777e1be4}\label{classio_1_1agora_1_1rtc2_1_1_rtc_connection_a20050d8a0c3d030e4c7fa7c5777e1be4}} 
+{\bfseries Rtc\+Connection} (String \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_connection_abd46e5a4d6e0af8a919c8a3d256442a4}{channel\+Id}}, int uid)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_connection_a179863520fcf9f429afb8ecea0cb67e6}\label{classio_1_1agora_1_1rtc2_1_1_rtc_connection_a179863520fcf9f429afb8ecea0cb67e6}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_connection_abb516536b1107acc12fcb7a8c24f86f9}{local\+Uid}}
+\item 
+String \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_connection_abd46e5a4d6e0af8a919c8a3d256442a4}{channel\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_connection}{Rtc\+Connection}} class. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_connection_abb516536b1107acc12fcb7a8c24f86f9}\label{classio_1_1agora_1_1rtc2_1_1_rtc_connection_abb516536b1107acc12fcb7a8c24f86f9}} 
+\index{io.agora.rtc2.RtcConnection@{io.agora.rtc2.RtcConnection}!localUid@{localUid}}
+\index{localUid@{localUid}!io.agora.rtc2.RtcConnection@{io.agora.rtc2.RtcConnection}}
+\doxysubsubsection{\texorpdfstring{localUid}{localUid}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+Rtc\+Connection.\+local\+Uid}
+
+The user ID. A 32-\/bit unsigned integer with a value ranging from 1 to (2$^\wedge$32-\/1) \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_connection_abd46e5a4d6e0af8a919c8a3d256442a4}\label{classio_1_1agora_1_1rtc2_1_1_rtc_connection_abd46e5a4d6e0af8a919c8a3d256442a4}} 
+\index{io.agora.rtc2.RtcConnection@{io.agora.rtc2.RtcConnection}!channelId@{channelId}}
+\index{channelId@{channelId}!io.agora.rtc2.RtcConnection@{io.agora.rtc2.RtcConnection}}
+\doxysubsubsection{\texorpdfstring{channelId}{channelId}}
+{\footnotesize\ttfamily String io.\+agora.\+rtc2.\+Rtc\+Connection.\+channel\+Id}
+
+The unique channel name for the Agora\+R\+TC session in the string format. The string length must be less than 64 bytes. Supported character scopes are\+:
+\begin{DoxyItemize}
+\item All lowercase English letters\+: a to z.
+\item All uppercase English letters\+: A to Z.
+\item All numeric characters\+: 0 to 9.
+\item The space character.
+\item Punctuation characters and other symbols, including\+: \char`\"{}!\char`\"{}, \char`\"{}\#\char`\"{}, \char`\"{}\$\char`\"{}, \char`\"{}\%\char`\"{}, \char`\"{}\&\char`\"{}, \char`\"{}(\char`\"{}, \char`\"{})\char`\"{}, \char`\"{}+\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}\+:\char`\"{}, \char`\"{};\char`\"{}, \char`\"{}$<$\char`\"{}, \char`\"{}=\char`\"{}, \char`\"{}.\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}?\char`\"{}, \char`\"{}@\char`\"{}, \char`\"{}\mbox{[}\char`\"{}, \char`\"{}\mbox{]}\char`\"{}, \char`\"{}$^\wedge$\char`\"{}, \char`\"{}\+\_\+\char`\"{}, \char`\"{} \{\char`\"{}, \char`\"{}\}\char`\"{}, \char`\"{}$\vert$\char`\"{}, \char`\"{}$\sim$\char`\"{}, \char`\"{},\char`\"{}. 
+\end{DoxyItemize}

@@ -1,0 +1,44 @@
+\hypertarget{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info}{}\doxysection{io.\+agora.\+rtc2.\+Recorder\+Stream\+Info Class Reference}
+\label{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info}\index{io.agora.rtc2.RecorderStreamInfo@{io.agora.rtc2.RecorderStreamInfo}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_a4230d3b13e41960f4316883068ce0611}\label{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_a4230d3b13e41960f4316883068ce0611}} 
+{\bfseries Recorder\+Stream\+Info} (String \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_a58e29607fe497783e4ac0b846ce06bae}{channel\+Id}}, int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_a46e3f1faf45749aa736fa547953b6eb0}{uid}})
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_abae700c7c654f0345a84d8510185ff29}\label{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_abae700c7c654f0345a84d8510185ff29}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_a46e3f1faf45749aa736fa547953b6eb0}{uid}}
+\item 
+String \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_a58e29607fe497783e4ac0b846ce06bae}{channel\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The information about recorded media streams. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_a46e3f1faf45749aa736fa547953b6eb0}\label{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_a46e3f1faf45749aa736fa547953b6eb0}} 
+\index{io.agora.rtc2.RecorderStreamInfo@{io.agora.rtc2.RecorderStreamInfo}!uid@{uid}}
+\index{uid@{uid}!io.agora.rtc2.RecorderStreamInfo@{io.agora.rtc2.RecorderStreamInfo}}
+\doxysubsubsection{\texorpdfstring{uid}{uid}}
+{\footnotesize\ttfamily int io.\+agora.\+rtc2.\+Recorder\+Stream\+Info.\+uid}
+
+The user ID. A 32-\/bit unsigned integer with a value ranging from 1 to (2$^\wedge$32-\/1) \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_a58e29607fe497783e4ac0b846ce06bae}\label{classio_1_1agora_1_1rtc2_1_1_recorder_stream_info_a58e29607fe497783e4ac0b846ce06bae}} 
+\index{io.agora.rtc2.RecorderStreamInfo@{io.agora.rtc2.RecorderStreamInfo}!channelId@{channelId}}
+\index{channelId@{channelId}!io.agora.rtc2.RecorderStreamInfo@{io.agora.rtc2.RecorderStreamInfo}}
+\doxysubsubsection{\texorpdfstring{channelId}{channelId}}
+{\footnotesize\ttfamily String io.\+agora.\+rtc2.\+Recorder\+Stream\+Info.\+channel\+Id}
+
+The channel ID of the audio/video stream needs to be recorded. The string length must be less than 64 bytes. Supported character scopes are\+:
+\begin{DoxyItemize}
+\item All lowercase English letters\+: a to z.
+\item All uppercase English letters\+: A to Z.
+\item All numeric characters\+: 0 to 9.
+\item The space character.
+\item Punctuation characters and other symbols, including\+: \char`\"{}!\char`\"{}, \char`\"{}\#\char`\"{}, \char`\"{}\$\char`\"{}, \char`\"{}\%\char`\"{}, \char`\"{}\&\char`\"{}, \char`\"{}(\char`\"{}, \char`\"{})\char`\"{}, \char`\"{}+\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}\+:\char`\"{}, \char`\"{};\char`\"{}, \char`\"{}$<$\char`\"{}, \char`\"{}=\char`\"{}, \char`\"{}.\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}?\char`\"{}, \char`\"{}@\char`\"{}, \char`\"{}\mbox{[}\char`\"{}, \char`\"{}\mbox{]}\char`\"{}, \char`\"{}$^\wedge$\char`\"{}, \char`\"{}\+\_\+\char`\"{}, \char`\"{} \{\char`\"{}, \char`\"{}\}\char`\"{}, \char`\"{}$\vert$\char`\"{}, \char`\"{}$\sim$\char`\"{}, \char`\"{},\char`\"{}. 
+\end{DoxyItemize}

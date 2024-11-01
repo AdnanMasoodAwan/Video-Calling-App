@@ -1,0 +1,162 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_filter}{}\doxysection{agora\+::rtc\+::I\+Audio\+Filter Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_filter}\index{agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Audio\+Filter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classagora_1_1rtc_1_1_i_audio_filter}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_a0a90c8dc3c9458b3bdcfabc5d5b95c2f}{set\+Enabled}} (bool enable)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_a25c7ab82e7f45061fbfc01377e5629ef}{is\+Enabled}} () const =0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_a1d20ce806f2992642d96d794f803c949}{set\+Property}} (const char $\ast$key, const void $\ast$buf, int buf\+\_\+size)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_a745e3c19ba39039f7bce2754b6b38028}{get\+Property}} (const char $\ast$key, void $\ast$buf, int buf\+\_\+size) const =0
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_a30571a9e3ce2bdc82c4c664ad12398f7}{get\+Name}} () const =0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_a1973b8fe4744f05f192a90c55f3773e4}{get\+Preferred\+Sample\+Rate}} ()
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_a340f9ee3b2bc655afbe9aac286b646e2}{get\+Preferred\+Channel\+Numbers}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}}} class.
+
+This class is the intermediate node for audio, which reads audio frames from the underlying pipeline and writes audio frames back after adaptation. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_a0a90c8dc3c9458b3bdcfabc5d5b95c2f}\label{classagora_1_1rtc_1_1_i_audio_filter_a0a90c8dc3c9458b3bdcfabc5d5b95c2f}} 
+\index{agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Filter\+::set\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enables or disables the audio filter. 
+\begin{DoxyParams}{Parameters}
+{\em enable} & Whether to enable the audio filter\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Enable the audio filter.
+\item {\ttfamily false}\+: Do not enable the audio filter. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_a25c7ab82e7f45061fbfc01377e5629ef}\label{classagora_1_1rtc_1_1_i_audio_filter_a25c7ab82e7f45061fbfc01377e5629ef}} 
+\index{agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}!isEnabled@{isEnabled}}
+\index{isEnabled@{isEnabled}!agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}}
+\doxysubsubsection{\texorpdfstring{isEnabled()}{isEnabled()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Audio\+Filter\+::is\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Checks whether the audio filter is enabled. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: The audio filter is enabled.
+\item {\ttfamily false}\+: The audio filter is not enabled. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_a1d20ce806f2992642d96d794f803c949}\label{classagora_1_1rtc_1_1_i_audio_filter_a1d20ce806f2992642d96d794f803c949}} 
+\index{agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Filter\+::set\+Property (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{const void $\ast$}]{buf,  }\item[{int}]{buf\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets a private property in the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The pointer to the property name. \\
+\hline
+{\em buf} & The pointer to the buffer of this private property. \\
+\hline
+{\em buf\+\_\+size} & The buffer size of this private property. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The actual size of the private property, if the method call succeeds.
+\item -\/1, if the method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_a745e3c19ba39039f7bce2754b6b38028}\label{classagora_1_1rtc_1_1_i_audio_filter_a745e3c19ba39039f7bce2754b6b38028}} 
+\index{agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Filter\+::get\+Property (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{void $\ast$}]{buf,  }\item[{int}]{buf\+\_\+size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets a private property in the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The pointer to the property name. \\
+\hline
+{\em buf} & The pointer to the buffer of this private property. \\
+\hline
+{\em buf\+\_\+size} & The buffer size of this private property. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The actual size of the private property, if the method call succeeds.
+\item -\/1, if the method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_a30571a9e3ce2bdc82c4c664ad12398f7}\label{classagora_1_1rtc_1_1_i_audio_filter_a30571a9e3ce2bdc82c4c664ad12398f7}} 
+\index{agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}!getName@{getName}}
+\index{getName@{getName}!agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ agora\+::rtc\+::\+I\+Audio\+Filter\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the name of the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter}{I\+Audio\+Filter}}} class.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The name of the audio filter, if the method call succeeds.
+\item An empty string, if the method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_a1973b8fe4744f05f192a90c55f3773e4}\label{classagora_1_1rtc_1_1_i_audio_filter_a1973b8fe4744f05f192a90c55f3773e4}} 
+\index{agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}!getPreferredSampleRate@{getPreferredSampleRate}}
+\index{getPreferredSampleRate@{getPreferredSampleRate}!agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}}
+\doxysubsubsection{\texorpdfstring{getPreferredSampleRate()}{getPreferredSampleRate()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Filter\+::get\+Preferred\+Sample\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the sample rate supported by the audio filter, the framework will resample the audio data and then pass it to the audio filter. If the user does not overwrite, resampling will not be done by default. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Audio data will not be resampled.
+\item $>$ 0\+: Audio data will be resampled to this sample rate. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_base_a5956d605573e39b77bbf5a8417c1b0f5}{agora\+::rtc\+::\+I\+Audio\+Filter\+Base}}.
+
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_a340f9ee3b2bc655afbe9aac286b646e2}\label{classagora_1_1rtc_1_1_i_audio_filter_a340f9ee3b2bc655afbe9aac286b646e2}} 
+\index{agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}!getPreferredChannelNumbers@{getPreferredChannelNumbers}}
+\index{getPreferredChannelNumbers@{getPreferredChannelNumbers}!agora::rtc::IAudioFilter@{agora::rtc::IAudioFilter}}
+\doxysubsubsection{\texorpdfstring{getPreferredChannelNumbers()}{getPreferredChannelNumbers()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Filter\+::get\+Preferred\+Channel\+Numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the channel number supported by the audio filter, the framework will resample the audio data and then pass it to the audio filter. If the user does not overwrite, resampling will not be done by default. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Audio data will not be resampled.
+\item $>$ 0\+: Audio data will be resampled to this sample rate. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_base_a94c24e65223ad1a8de2d0e8c0577273b}{agora\+::rtc\+::\+I\+Audio\+Filter\+Base}}.
+

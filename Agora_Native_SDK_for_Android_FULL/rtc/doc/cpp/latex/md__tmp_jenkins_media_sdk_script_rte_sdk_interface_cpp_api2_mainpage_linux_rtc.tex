@@ -1,0 +1,347 @@
+Agora provides ensured quality of experience (QoE) for worldwide Internet-\/based voice and video communications through a virtual global network optimized for real-\/time web and mobile-\/to-\/mobile applications.
+
+This page provides reference for Agora low-\/level A\+P\+Is\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#agoraservice}{\texttt{ Agora service}}
+\item \href{\#rtcconnection}{\texttt{ R\+TC connection}}
+\item \href{\#localuser}{\texttt{ Local user}}
+\item \href{\#localaudiotrack}{\texttt{ Local audio track}}
+\item \href{\#remoteaudiotrack}{\texttt{ Remote audio track}}
+\item \href{\#localvideotrack}{\texttt{ Local video track}}
+\item \href{\#remotevideotrack}{\texttt{ Remote video track}}
+\item \href{\#medianodefactory}{\texttt{ Media node factory}}
+\item \href{\#audiodatasender}{\texttt{ Audio data sender}}
+\item \href{\#videodatasender}{\texttt{ Video data sender}}
+\end{DoxyItemize}
+
+\label{_agoraservice}%
+
+
+\doxysubsection*{Agora service}
+
+I\+Agora\+Service is the entry point of Agora Low Level A\+P\+Is. Use this interface to create access points to Agora Modules, including R\+TC Connection, Media Tracks, etc.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{group__create_agora_service}{create\+Agora\+Service}} &Creates an I\+Agora\+Service object and returns the pointer.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a6f1fb6e792c564dee46903cbb3bc35fc}{initialize}} &Initializes the I\+Agora\+Service object.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_affb633b88e136c72ef321d696b7a0656}{release}} &Releases the I\+Agora\+Service object.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a3aecc66675ca9698fa6fdeab5b85333a}{set\+Log\+File}} &Sets the log file path and size.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ad46b8621ebf9c9143007f444b5064b8d}{set\+Log\+Filter}} &Sets the log output level.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a326cda8c926bcb6da5f3a2c512a9ae90}{create\+Rtc\+Connection}} &Creates an R\+TC connection object and returns the pointer.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ab267caa07c4614e8bf27da38527150de}{create\+Custom\+Audio\+Track}}1 &Creates a local audio track object with the P\+CM data receiver and returns the pointer.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a1cdac0edad710852fa97f20b83044a05}{create\+Custom\+Audio\+Track}}2 &Creates a local audio track object with the receiver for encoded audio data and returns the pointer.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a02745fde3a908936af56c0243506d1d7}{create\+Media\+Node\+Factory}} &Creates a media node factory and returns the pointer.  \\\cline{1-2}
+create\+Custom\+Video\+Track1 &Creates a local video track object with the custom video source ans returns the pointer.  \\\cline{1-2}
+create\+Custom\+Video\+Track2 &Creates a local video track object with the receiver for encoded video data and returns the pointer.  \\\cline{1-2}
+\end{longtabu}
+
+
+\label{_rtcconnection}%
+
+
+\doxysubsection*{R\+TC connection}
+
+I\+Rtc\+Connection allows an app to establish a connection to an Agora channel. In order to establish a connection, the app must provide an app ID, a token, and the ID of the channel that you want to join.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a2872f80606fa399892ba60fe66014e13}{connect}} &Connects to an Agora channel.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a04ed01edbc8107fa0ba6d9ca891c62b0}{disconnect}} &Disconnects from the channel.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a3fa98edb2c0560223125bd1230f21722}{start\+Lastmile\+Probe\+Test}} &Starts the last-\/mile network probe test.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_aafd0531bdf281a2aaa90f7a0c507b59e}{stop\+Lastmile\+Probe\+Test}} &Stops the last-\/mile network probe test.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a83dbfc421cd3ae4399260fef5679e13d}{renew\+Token}} &Renews the token.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_ab91ff9124027bdc7a3ce6e77addf8da1}{get\+Connection\+Info}} &Gets the current connection information.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a1cf54986a330713047da51c1503ec86c}{get\+Local\+User}} &Gets the I\+Local\+User object.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_ae1b27f3868e38f5dc434ec572e31de4f}{get\+Remote\+Users}} &Gets the information of remote users.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_af2c7166f692f2285a0ba060aa6b16739}{get\+User\+Info}} &Gets the information of a specified user in the channel.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a1826542f1addfde229cd05d5ff8e0741}{register\+Observer}} &Registers an I\+Rtc\+Connection\+Observer object.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_af2d87e566c2cd918e12d777cdeae37ee}{unregister\+Observer}} &Releases the registered I\+Rtc\+Connection\+Observer object.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a4cc6181ddb6280c2f37239eef88bbd2f}{get\+Conn\+Id}} &Gets the ID of the current connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_aa87931e6de4996dc36d57369d6a8a153}{get\+Transport\+Stats}} &Gets the transportation statistics of this connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a44ce079c780ace4b8188d59ad68d96fb}{get\+Agora\+Parameter}} &Gets an I\+Agora\+Parameter object.  \\\cline{1-2}
+\end{longtabu}
+
+
+Connecting to an Agora channel is done asynchronously, and apps can listen for the connection states of both the local and remote user using an R\+TC connection observer.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Event }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Event }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1df408778b1886055df47cd7d0ff8e5c}{on\+Connected}} &Occurs when the connection state changes to S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae62590c268ad2904583dc9c62c337056}{on\+Disconnected}} &Occurs when the connection state changes to S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a5eb8ab1144ac6487708e744a7e579ceb}{on\+Reconnecting}} &Occurs when the connection state changes to S\+T\+A\+T\+E\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+I\+NG.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a11829011671bc54cf1483288421687ce}{on\+Connection\+Lost}} &Occurs when the S\+DK loses connection with the Agora channel.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a255ffd92a1b67201f04d018e163118fc}{on\+Lastmile\+Quality}} &Reports the quality of the last mile network.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a91037dcd860c1000e31a3d0eecb1889a}{on\+Lastmile\+Probe\+Result}} &Reports the last-\/mile network probe result.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a27ee9184ccaba5855389412846f6949f}{on\+Token\+Privilege\+Will\+Expire}} &Occurs when the token privilege expires in 30 seconds.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_adf8fa47e6d34fdd75b90b42f68ea35f7}{on\+Token\+Privilege\+Did\+Expire}} &Occurs when the token privilege has expired.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a33d46c9db2a0cbff4a24aa790a69eec3}{on\+Connection\+Failure}} &Occurs when the connection state changes to S\+T\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae5daa5e5f14febe188bc79f29cd3697a}{on\+User\+Joined}} &Occurs when a remote user has successfully joined the channel.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a037693bddc8c6a8b36e5199e5085cea9}{on\+User\+Left}} &Occurs when a remote user has left the channel.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_aabcc0d7016f685e132fc38b0a2d0d27f}{on\+Transport\+Stats}} &Reports the transport statistics of the current connection,  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_aa7e00e4b74e281072eb346cf97ea2e5a}{on\+Change\+Role\+Success}} &Occurs when the role of the local user changes.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a7c4b7ec0e3854211f85e1ac885b05b67}{on\+Change\+Role\+Failure}} &Occurs when the role of the local user changes.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_adbeb932227fa99295d70bced528114c1}{on\+User\+Network\+Quality}} &Reports the network quality of each user.  \\\cline{1-2}
+\end{longtabu}
+
+
+\label{_localuser}%
+
+
+\doxysubsection*{Local user}
+
+Once connected, each R\+TC connection has its own local user. Apps can get the local user object using \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a1cf54986a330713047da51c1503ec86c}{I\+Rtc\+Connection\+::get\+Local\+User}}.
+
+Each local user has two user roles\+: broadcaster (publisher or subscriber) and audience (subscriber only). The publisher publishes audio and video tracks, while the audience receives them.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a9d8aa36f210b737ba132bcfc2ed986d4}{set\+User\+Role}} &Sets the role of the user.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a910b5120b7db6570999611cc70625d06}{get\+User\+Role}} &Gets the role of the user.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a465fe5080eff89a2defaa7727163c8de}{set\+Audio\+Encoder\+Configuration}} &Configures the audio encoder.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a7c1fd759e10a5803b32d1af68bc18286}{get\+Local\+Audio\+Statistics}} &Gets the detailed statistics of the local audio.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a5e5cc962971f99f07a692d82ac02ff1d}{publish\+Audio}} &Publishes a local audio track to the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ab9bae681db866df89983dece3cd85581}{unpublish\+Audio}} &Stops publishing the local audio track to the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a40690b61671aa9e6ceef1e7347fd3e38}{publish\+Video}} &Publishes a local video track to the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ab29368f2ad167b5572e8b1ead5893559}{unpublish\+Video}} &Stops publishing the local video track to the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a894d4efd0746016c8e190cee839a798d}{subscribe\+Audio}} &Subscribes to the audio of a specified remote user in the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a894d4efd0746016c8e190cee839a798d}{subscribe\+All\+Audio}} &Subscribes to the audio of all remote users in the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a29cdc42aafc7f1037e05da8e4e177fba}{unsubscribe\+Audio}} &Stops subscribing to the audio of a specified remote user in the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a1b177c676190940a0789876fb87a48b9}{unsubscribe\+All\+Audio}} &Stops subscribing to the audio of all remote users in the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a9417b0610817c1acfe28babaf9611c61}{set\+Playback\+Audio\+Frame\+Before\+Mixing\+Parameters}} &Sets the audio frame parameters for the on\+Playback\+Audio\+Frame\+Before\+Mixing callback.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_aabe80c2dc8f056b9eac78d9c35a32887}{register\+Audio\+Frame\+Observer}} &Registers an audio frame observer object.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_aab2c70c722e492385a719dd9ab457406}{unregister\+Audio\+Frame\+Observer}} &Releases the audio frame observer object.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a9c8a3fcf49db6800e3b7ce955126c45d}{subscribe\+Video}} &Subscribes to the video of a specified remote user in the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a77ee018bedf45f21aa198d697c3774a4}{subscribe\+All\+Video}} &Subscribes to the video of all remote users in the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a6ffe44ce817cadd084638b9eff22dc33}{unsubscribe\+Video}} &Stops subscribing to the video of a specified remote user in the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ad7abc9f9acdef90c819a137f45a72f88}{unsubscribe\+All\+Video}} &Stops subscribing to the video of all remote users in the R\+TC connection.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ad72f63130bd2e71ebba0f05ad752150a}{set\+Audio\+Volume\+Indication\+Parameters}} &Sets the time interval and the volume smoothing factor of the on\+Audio\+Volume\+Indication callback.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a35af2e423873d04ea6df3097af4f9f5f}{register\+Local\+User\+Observer}} &Registers a local user observer object.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_aa1dd761f67f1dfe30142b92be902a274}{unregister\+Local\+User\+Observer}} &Releases the local user observer object.  \\\cline{1-2}
+\end{longtabu}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Event }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Event }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a1fe4d9e7b6abd7c3a18d75970d1f7937}{on\+Audio\+Track\+Publish\+Success}} &Occurs when the local audio track has published.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a438116da0ad0a36b7e55e66dd002d8a5}{on\+Audio\+Track\+Publication\+Failure}} &Occurs when the local audio track fails to be published.  \\\cline{1-2}
+on\+Local\+Audio\+Track\+State\+Changed &Occurs when the state of the local audio track changes.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a38bbffc4bcd41754ee637ca314a26563}{on\+Local\+Audio\+Track\+Statistics}} &Reports the statistics of the local audio track.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a70cd9478bb697521064b3ec58094cd64}{on\+Remote\+Audio\+Track\+Statistics}} &Reports the statistics of the remote audio track.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aa308da2febe75ed17423e8b231bb5519}{on\+User\+Audio\+Track\+Subscribed}} &Occurs when the first remote audio frame is received.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_ae69feaba3395bdbe820ab98150bdda38}{on\+User\+Audio\+Track\+State\+Changed}} &Occurs when the state of a remote audio track changes.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a6aa9af78a8661e6edb90238ecb79c030}{on\+Video\+Track\+Publish\+Success}} &Occurs when the local video track is published.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a1872ffbb8975ddfdabbb3b5cf554a7e8}{on\+Video\+Track\+Publication\+Failure}} &Occurs when the local video track fails to be published.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a091810138312df9f6d570ed718abefee}{on\+Local\+Video\+Track\+State\+Changed}} &Occurs when the state of the local video track changes.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a167b28d331295decd627a6a80907b168}{on\+Local\+Video\+Track\+Statistics}} &Reports the statistics of the local video track.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_abbb459299d603804f38ad8b751ca71e6}{on\+User\+Video\+Track\+Subscribed}} &Occurs when the first remote video frame is received.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a633eeef87c0b2ca62f6e05c9e8cbe87d}{on\+User\+Video\+Track\+State\+Changed}} &Occurs when the state of a remote video track changes.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_acb8043e4a0c46620830788126e5f31c9}{on\+Remote\+Video\+Track\+Statistics}} &Reports the statistics of the remote video track.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a08499ccc9e5bd513a961f58ac84e51e7}{on\+Audio\+Volume\+Indication}} &Reports which users are speaking, the speakers\textquotesingle{} volume, and whether the local user is speaking.  \\\cline{1-2}
+\end{longtabu}
+
+
+\label{_localaudiotrack}%
+
+
+\doxysubsection*{Local audio track}
+
+A local audio track can be created by \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_ab267caa07c4614e8bf27da38527150de}{create\+Custom\+Audio\+Track}}.
+
+After the local audio track is created, you can publish one or multiple local audio tracks using \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a5e5cc962971f99f07a692d82ac02ff1d}{I\+Local\+User\+::publish\+Audio}}.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a6903e270c18fc5db08f49405f1749a5a}{set\+Enabled}} &Enables or disables the local audio track.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a103aa5dd48b949e735101e0c2825376a}{is\+Enabled}} &Gets whether the local audio track is enabled.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_aca03d4f431b5318472e2b1769cb09c17}{get\+State}} &Gets the state of the local audio.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_aeb53201b4e4648dd714db4b1d4c66696}{Get\+Stats}} &Gets the statistics of the local audio track.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a1068bd00b29242e1071e6905fa1ed509}{adjust\+Publish\+Volume}} &Adjusts the audio volume for publishing.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a0ef5208b317ed83239dd35e03ed050ad}{get\+Publish\+Volume}} &Gets the current volume for publishing.  \\\cline{1-2}
+\end{longtabu}
+
+
+\label{_remoteaudiotrack}%
+
+
+\doxysubsection*{Remote audio track}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_a7fa3cd504b1fdc3c06e133d358ab04e1}{get\+Statistics}} &Gets the statistics of the remote audio track.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_abcf5b94e335602c43a25ac8e6c479bc5}{get\+State}} &Gets the state of the remote audio.  \\\cline{1-2}
+\end{longtabu}
+
+
+\label{_localvideotrack}%
+
+
+\doxysubsection*{Local video track}
+
+A local video track can be created by \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_aaefc87859c82a4266947f0a4ebd07c51}{create\+Custom\+Video\+Track}}.
+
+It originates from one video source, for example, the camera capturer, the screen capturer, or a custom video source.
+
+To customize the video track, choose the video node that you want to use, for example, the video source, the video filter, or video renderer in I\+Video\+Node\+Factory.
+
+Apps can publish one or multiple local video tracks through \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a40690b61671aa9e6ceef1e7347fd3e38}{I\+Local\+User\+::publish\+Video}}. Each video track has its own video stream. In other words, you can send the camera capturing stream and screen sharing stream simultaneously.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track_ae3eb9f4a2a3b91cfe963ad0779991878}{set\+Enabled}} &Enables or disables the local video track.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track_a0c5423ecd9dcde4fda0ac56d329f456d}{set\+Video\+Encoder\+Configuration}} &Sets the video encoder configuration.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track_a36640f215f62a7fa34ba9cae81497468}{get\+State}} &Gets the state of the local video.  \\\cline{1-2}
+\end{longtabu}
+
+
+\label{_remotevideotrack}%
+
+
+\doxysubsection*{Remote video track}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track_a9198277c30a29b82237876d7bd63fb63}{get\+State}} &Gets the state of the remote video.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track_aae079a7139538bc5e9980b1259534c2e}{get\+Track\+Info}} &Gets the information of the remote video track.  \\\cline{1-2}
+register\+Video\+Encoded\+Image\+Receiver &Registers an I\+Video\+Encoded\+Image\+Receiver object.  \\\cline{1-2}
+unregister\+Video\+Encoded\+Image\+Receiver &Releases the I\+Video\+Encoded\+Image\+Receiver object.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_a790f34e2f3a304599468b7ba7f705507}{add\+Renderer}} &Adds a video renderer to the video track.  \\\cline{1-2}
+\end{longtabu}
+
+
+\label{_medianodefactory}%
+
+
+\doxysubsection*{Media node factory}
+
+Use this factory to create audio and video nodes for the audio and video tracks.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_node_factory_aa6b8aa23b839f89801ca90d5228d712d}{create\+Audio\+Pcm\+Data\+Sender}} &Creates a P\+CM audio data sender.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_node_factory_a8723328a619ac7786ff9f96a644d5db5}{create\+Audio\+Encoded\+Frame\+Sender}} &Creates an encoded audio data sender.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_node_factory_ae5c627b7b2671942a75f577dc64a22f7}{create\+Video\+Frame\+Sender}} &Creates a video frame sender.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_node_factory_a5313c5f02951817b9a7f41c156db0338}{create\+Video\+Encoded\+Image\+Sender}} &Creates an encoded video image sender.  \\\cline{1-2}
+\end{longtabu}
+
+
+\label{_audiodatasender}%
+
+
+\doxysubsection*{Audio data sender}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender_a61b77d230dff1c1b1f16a8d4e9f8bad7}{send\+Audio\+Pcm\+Data}} &Sends the P\+CM audio data to the local audio track.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_sender_a922bbc9eadb666ffd0f8560164a4fbe3}{send\+Encoded\+Audio\+Frame}} &Sends the encoded audio data to the local audio track.  \\\cline{1-2}
+\end{longtabu}
+
+
+\label{_videodatasender}%
+
+
+\doxysubsection*{Video data sender}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_sender_aeb5af980ac6e118d4d2f400cb04f865e}{send\+Video\+Frame}} &Sends the video frame to the video track.  \\\cline{1-2}
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_encoded_image_sender_ac82a2f06f268b980503521d951d0d53d}{send\+Encoded\+Video\+Image}} &Sends the encoded video image to the video track.  \\\cline{1-2}
+\end{longtabu}

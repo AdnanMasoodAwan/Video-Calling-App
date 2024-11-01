@@ -1,0 +1,60 @@
+\hypertarget{structagora_1_1rtc_1_1_channel_media_relay_configuration}{}\doxysection{agora\+::rtc\+::Channel\+Media\+Relay\+Configuration Struct Reference}
+\label{structagora_1_1rtc_1_1_channel_media_relay_configuration}\index{agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}} $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_relay_configuration_af2a51196e174ee47a82092d53e9e1dc7}{src\+Info}}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}} $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_relay_configuration_ae2c49f93de131ba36b41e191d3540570}{dest\+Infos}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_relay_configuration_ad413ace6e670b016bcc342657a7af6bf}{dest\+Count}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_relay_configuration}{Channel\+Media\+Relay\+Configuration}}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_channel_media_relay_configuration_af2a51196e174ee47a82092d53e9e1dc7}\label{structagora_1_1rtc_1_1_channel_media_relay_configuration_af2a51196e174ee47a82092d53e9e1dc7}} 
+\index{agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}!srcInfo@{srcInfo}}
+\index{srcInfo@{srcInfo}!agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}}
+\doxysubsubsection{\texorpdfstring{srcInfo}{srcInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}}$\ast$ agora\+::rtc\+::\+Channel\+Media\+Relay\+Configuration\+::src\+Info}
+
+The information of the source channel {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}}}. It contains the following members\+:
+\begin{DoxyItemize}
+\item {\ttfamily channel\+Name}\+: The name of the source channel. The default value is {\ttfamily N\+U\+LL}, which means the S\+DK applies the name of the current channel.
+\item {\ttfamily uid}\+: The unique ID to identify the relay stream in the source channel. The default value is 0, which means the S\+DK generates a random U\+ID. You must set it as 0.
+\item {\ttfamily token}\+: The token for joining the source channel. It is generated with the {\ttfamily channel\+Name} and {\ttfamily uid} you set in {\ttfamily src\+Info}.
+\begin{DoxyItemize}
+\item If you have not enabled the App Certificate, set this parameter as the default value {\ttfamily N\+U\+LL}, which means the S\+DK applies the App ID.
+\item If you have enabled the App Certificate, you must use the token generated with the {\ttfamily channel\+Name} and {\ttfamily uid}, and the {\ttfamily uid} must be set as 0. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_channel_media_relay_configuration_ae2c49f93de131ba36b41e191d3540570}\label{structagora_1_1rtc_1_1_channel_media_relay_configuration_ae2c49f93de131ba36b41e191d3540570}} 
+\index{agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}!destInfos@{destInfos}}
+\index{destInfos@{destInfos}!agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}}
+\doxysubsubsection{\texorpdfstring{destInfos}{destInfos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}}$\ast$ agora\+::rtc\+::\+Channel\+Media\+Relay\+Configuration\+::dest\+Infos}
+
+The information of the destination channel {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}}}. It contains the following members\+:
+\begin{DoxyItemize}
+\item {\ttfamily channel\+Name}\+: The name of the destination channel.
+\item {\ttfamily uid}\+: The unique ID to identify the relay stream in the destination channel. The value ranges from 0 to (2$^\wedge$32-\/1). To avoid U\+ID conflicts, this {\ttfamily U\+ID} must be different from any other {\ttfamily U\+ID} in the destination channel. The default value is 0, which means the S\+DK generates a random {\ttfamily U\+ID}. Do not set this parameter as the {\ttfamily U\+ID} of the host in the destination channel, and ensure that this {\ttfamily U\+ID} is different from any other {\ttfamily U\+ID} in the channel.
+\item {\ttfamily token}\+: The token for joining the destination channel. It is generated with the {\ttfamily channel\+Name} and {\ttfamily uid} you set in {\ttfamily dest\+Infos}.
+\begin{DoxyItemize}
+\item If you have not enabled the App Certificate, set this parameter as the default value N\+U\+LL, which means the S\+DK applies the App ID. If you have enabled the App Certificate, you must use the token generated with the {\ttfamily channel\+Name} and {\ttfamily uid}. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_channel_media_relay_configuration_ad413ace6e670b016bcc342657a7af6bf}\label{structagora_1_1rtc_1_1_channel_media_relay_configuration_ad413ace6e670b016bcc342657a7af6bf}} 
+\index{agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}!destCount@{destCount}}
+\index{destCount@{destCount}!agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}}
+\doxysubsubsection{\texorpdfstring{destCount}{destCount}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Channel\+Media\+Relay\+Configuration\+::dest\+Count}
+
+The number of destination channels. The default value is 0, and the value range is from 0 to
+\begin{DoxyEnumerate}
+\item Ensure that the value of this parameter corresponds to the number of {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}}} structs you define in {\ttfamily dest\+Info}. 
+\end{DoxyEnumerate}

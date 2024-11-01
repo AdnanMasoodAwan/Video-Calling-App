@@ -1,0 +1,62 @@
+\hypertarget{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata}{}\doxysection{agora\+::rtc\+::I\+Metadata\+Observer\+::Metadata Struct Reference}
+\label{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata}\index{agora::rtc::IMetadataObserver::Metadata@{agora::rtc::IMetadataObserver::Metadata}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_aec5efeaa06a3d5fc8d1b264f66b8b729}{channel\+Id}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_a7a60f3dbe73288e3f3ae0d58c24deae1}{uid}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_a5e90e7099760c8f95a3c178d6ff6b70d}{size}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_aff932a17745b82ce0b1ec3b914a11cea}{buffer}}
+\item 
+long long \mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_a2dd74384bb97f20667b22317110a717e}{time\+Stamp\+Ms}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata}{Metadata}}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_aec5efeaa06a3d5fc8d1b264f66b8b729}\label{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_aec5efeaa06a3d5fc8d1b264f66b8b729}} 
+\index{agora::rtc::IMetadataObserver::Metadata@{agora::rtc::IMetadataObserver::Metadata}!channelId@{channelId}}
+\index{channelId@{channelId}!agora::rtc::IMetadataObserver::Metadata@{agora::rtc::IMetadataObserver::Metadata}}
+\doxysubsubsection{\texorpdfstring{channelId}{channelId}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+I\+Metadata\+Observer\+::\+Metadata\+::channel\+Id}
+
+The channel ID of the {\ttfamily metadata}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_a7a60f3dbe73288e3f3ae0d58c24deae1}\label{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_a7a60f3dbe73288e3f3ae0d58c24deae1}} 
+\index{agora::rtc::IMetadataObserver::Metadata@{agora::rtc::IMetadataObserver::Metadata}!uid@{uid}}
+\index{uid@{uid}!agora::rtc::IMetadataObserver::Metadata@{agora::rtc::IMetadataObserver::Metadata}}
+\doxysubsubsection{\texorpdfstring{uid}{uid}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+I\+Metadata\+Observer\+::\+Metadata\+::uid}
+
+The User ID that sent the metadata.
+\begin{DoxyItemize}
+\item For the receiver\+: The user ID of the user who sent the {\ttfamily metadata}.
+\item For the sender\+: Ignore this value. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_a5e90e7099760c8f95a3c178d6ff6b70d}\label{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_a5e90e7099760c8f95a3c178d6ff6b70d}} 
+\index{agora::rtc::IMetadataObserver::Metadata@{agora::rtc::IMetadataObserver::Metadata}!size@{size}}
+\index{size@{size}!agora::rtc::IMetadataObserver::Metadata@{agora::rtc::IMetadataObserver::Metadata}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+I\+Metadata\+Observer\+::\+Metadata\+::size}
+
+The buffer size of the sent or received {\ttfamily metadata}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_aff932a17745b82ce0b1ec3b914a11cea}\label{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_aff932a17745b82ce0b1ec3b914a11cea}} 
+\index{agora::rtc::IMetadataObserver::Metadata@{agora::rtc::IMetadataObserver::Metadata}!buffer@{buffer}}
+\index{buffer@{buffer}!agora::rtc::IMetadataObserver::Metadata@{agora::rtc::IMetadataObserver::Metadata}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ agora\+::rtc\+::\+I\+Metadata\+Observer\+::\+Metadata\+::buffer}
+
+The buffer address of the sent or received {\ttfamily metadata}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_a2dd74384bb97f20667b22317110a717e}\label{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata_a2dd74384bb97f20667b22317110a717e}} 
+\index{agora::rtc::IMetadataObserver::Metadata@{agora::rtc::IMetadataObserver::Metadata}!timeStampMs@{timeStampMs}}
+\index{timeStampMs@{timeStampMs}!agora::rtc::IMetadataObserver::Metadata@{agora::rtc::IMetadataObserver::Metadata}}
+\doxysubsubsection{\texorpdfstring{timeStampMs}{timeStampMs}}
+{\footnotesize\ttfamily long long agora\+::rtc\+::\+I\+Metadata\+Observer\+::\+Metadata\+::time\+Stamp\+Ms}
+
+The N\+TP timestamp (ms) when the metadata is sent. \begin{DoxyNote}{Note}
+If the receiver is audience, the receiver cannot get the N\+TP timestamp (ms). 
+\end{DoxyNote}

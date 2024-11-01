@@ -1,0 +1,85 @@
+\hypertarget{classagora_1_1rtc_1_1_i_video_device_collection}{}\doxysection{agora\+::rtc\+::I\+Video\+Device\+Collection Class Reference}
+\label{classagora_1_1rtc_1_1_i_video_device_collection}\index{agora::rtc::IVideoDeviceCollection@{agora::rtc::IVideoDeviceCollection}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_collection_aa16ab5e1a605648d0db7c440688ffb07}{get\+Count}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_collection_a09f88d63623cfe2281ef717a46857fe1}{set\+Device}} (const char device\+Id\+U\+T\+F8\mbox{[}M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+TH\mbox{]})=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_collection_a7737c3964f39f4038118426db1e9fed9}{get\+Device}} (int index, char device\+Name\+U\+T\+F8\mbox{[}M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+TH\mbox{]}, char device\+Id\+U\+T\+F8\mbox{[}M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+TH\mbox{]})=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_collection_a23df8e690cc8219d4b123984dd692482}{release}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_collection}{I\+Video\+Device\+Collection}} class. You can get information related to video devices through this interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_device_collection_aa16ab5e1a605648d0db7c440688ffb07}\label{classagora_1_1rtc_1_1_i_video_device_collection_aa16ab5e1a605648d0db7c440688ffb07}} 
+\index{agora::rtc::IVideoDeviceCollection@{agora::rtc::IVideoDeviceCollection}!getCount@{getCount}}
+\index{getCount@{getCount}!agora::rtc::IVideoDeviceCollection@{agora::rtc::IVideoDeviceCollection}}
+\doxysubsubsection{\texorpdfstring{getCount()}{getCount()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Device\+Collection\+::get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the total number of the indexed video capture devices in the system.
+
+\begin{DoxyReturn}{Returns}
+The total number of the indexed video capture devices. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_device_collection_a09f88d63623cfe2281ef717a46857fe1}\label{classagora_1_1rtc_1_1_i_video_device_collection_a09f88d63623cfe2281ef717a46857fe1}} 
+\index{agora::rtc::IVideoDeviceCollection@{agora::rtc::IVideoDeviceCollection}!setDevice@{setDevice}}
+\index{setDevice@{setDevice}!agora::rtc::IVideoDeviceCollection@{agora::rtc::IVideoDeviceCollection}}
+\doxysubsubsection{\texorpdfstring{setDevice()}{setDevice()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Device\+Collection\+::set\+Device (\begin{DoxyParamCaption}\item[{const char}]{device\+Id\+U\+T\+F8\mbox{[}\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Specifies a device with the device ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Id\+U\+T\+F8} & The device ID. The maximum length is \#\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+T\+Y\+PE. Plugging or unplugging the audio device does not change the value of device\+Id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_device_collection_a7737c3964f39f4038118426db1e9fed9}\label{classagora_1_1rtc_1_1_i_video_device_collection_a7737c3964f39f4038118426db1e9fed9}} 
+\index{agora::rtc::IVideoDeviceCollection@{agora::rtc::IVideoDeviceCollection}!getDevice@{getDevice}}
+\index{getDevice@{getDevice}!agora::rtc::IVideoDeviceCollection@{agora::rtc::IVideoDeviceCollection}}
+\doxysubsubsection{\texorpdfstring{getDevice()}{getDevice()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Device\+Collection\+::get\+Device (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{char}]{device\+Name\+U\+T\+F8\mbox{[}\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]},  }\item[{char}]{device\+Id\+U\+T\+F8\mbox{[}\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets a specified piece of information about an indexed video device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index value of the video device. The value of this parameter must be less than the value returned in {\ttfamily get\+Count}. \\
+\hline
+{\em device\+Name\+U\+T\+F8} & The name of the device. The maximum length is \#\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+TH. \\
+\hline
+{\em device\+Id\+U\+T\+F8} & The device ID of the video device. The maximum length is \#\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+L\+E\+N\+G\+TH. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_device_collection_a23df8e690cc8219d4b123984dd692482}\label{classagora_1_1rtc_1_1_i_video_device_collection_a23df8e690cc8219d4b123984dd692482}} 
+\index{agora::rtc::IVideoDeviceCollection@{agora::rtc::IVideoDeviceCollection}!release@{release}}
+\index{release@{release}!agora::rtc::IVideoDeviceCollection@{agora::rtc::IVideoDeviceCollection}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Video\+Device\+Collection\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases all the resources occupied by the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_device_collection}{I\+Video\+Device\+Collection}} object. 

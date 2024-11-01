@@ -1,0 +1,253 @@
+\hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer}{}\doxysection{io.\+agora.\+base.\+Java\+I010\+Buffer Class Reference}
+\label{classio_1_1agora_1_1base_1_1_java_i010_buffer}\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+Inheritance diagram for io.\+agora.\+base.\+Java\+I010\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classio_1_1agora_1_1base_1_1_java_i010_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_af99b448fab7df57afac1bbe1ef4b782d}{Java\+I010\+Buffer}} (int width, int height, Byte\+Buffer dataY, int strideY, Byte\+Buffer dataU, int strideU, Byte\+Buffer dataV, int strideV, @Nullable Runnable release\+Callback)
+\item 
+Byte\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a5c0de70f753fcdcb0346c85361de9d66}{get\+DataY}} ()
+\item 
+Byte\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a45b2cc1335424b7f938d38dc2390cc0a}{get\+DataV}} ()
+\item 
+Byte\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a0689c505be00679545240cf9af223e9a}{get\+DataU}} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_af81f0487f16f961b272b4d0a48084cae}{get\+Height}} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_abeb61c59919f23b1cfcd8e8a9c8194d6}{get\+Width}} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a08a229dc513b56e8d79d61bf01680ebd}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a08a229dc513b56e8d79d61bf01680ebd}} 
+int {\bfseries get\+StrideV} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_ae68f5dcb197ffce3aaa100c236518c3a}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_ae68f5dcb197ffce3aaa100c236518c3a}} 
+int {\bfseries get\+StrideY} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a5729b169168308758a62eb32917f7024}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a5729b169168308758a62eb32917f7024}} 
+int {\bfseries get\+StrideU} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a114c736209836962eb6218f41996da04}{release}} ()
+\item 
+\mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_i420_buffer}{I420\+Buffer}} \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a802f4aa532cc527654ac7a44fa02db70}{to\+I420}} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a224e94c5d599c38869f99930b648120b}{retain}} ()
+\item 
+Video\+Frame.\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a1bada9cbdf27c2fad927b1342631adfc}{crop\+And\+Scale}} (int cropX, int cropY, int crop\+Width, int crop\+Height, int scale\+Width, int scale\+Height)
+\item 
+Video\+Frame.\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_aad310b96afcf6d4333e3fc55ef50c557}{rotate}} (int frame\+Rotation)
+\item 
+Video\+Frame.\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_ad9aab61d8435dec269022db9bd36bb82}{transform}} (int cropX, int cropY, int crop\+Width, int crop\+Height, int scale\+Width, int scale\+Height, int rotation)
+\item 
+Video\+Frame.\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a4be87dac19f5bec2d3bae8e1f8756a50}{mirror}} (int frame\+Rotation)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_af300cfe3d49b256bc9902d08a910b0d1}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_af300cfe3d49b256bc9902d08a910b0d1}} 
+static \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer}{Java\+I010\+Buffer}} {\bfseries wrap} (int width, int height, Byte\+Buffer dataY, int strideY, Byte\+Buffer dataU, int strideU, Byte\+Buffer dataV, int strideV, @Nullable Runnable release\+Callback)
+\item 
+static \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer}{Java\+I010\+Buffer}} \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a650830d1c0901e54027f5b9ea44b89ce}{allocate}} (int width, int height)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a527489fcbe55bfab53663cdb621ecb7d}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a527489fcbe55bfab53663cdb621ecb7d}} 
+static \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_i420_buffer}{I420\+Buffer}} {\bfseries i010\+Buffer\+To\+I420} (\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer}{Java\+I010\+Buffer}} buffer)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_i420_buffer}{Video\+Frame.\+I420\+Buffer}} backed by Java direct byte buffers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_af99b448fab7df57afac1bbe1ef4b782d}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_af99b448fab7df57afac1bbe1ef4b782d}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!JavaI010Buffer@{JavaI010Buffer}}
+\index{JavaI010Buffer@{JavaI010Buffer}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{JavaI010Buffer()}{JavaI010Buffer()}}
+{\footnotesize\ttfamily io.\+agora.\+base.\+Java\+I010\+Buffer.\+Java\+I010\+Buffer (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{Byte\+Buffer}]{dataY,  }\item[{int}]{strideY,  }\item[{Byte\+Buffer}]{dataU,  }\item[{int}]{strideU,  }\item[{Byte\+Buffer}]{dataV,  }\item[{int}]{strideV,  }\item[{@Nullable Runnable}]{release\+Callback }\end{DoxyParamCaption})}
+
+Constructs a new \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer}{Java\+I010\+Buffer}} backed by the given data 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a650830d1c0901e54027f5b9ea44b89ce}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a650830d1c0901e54027f5b9ea44b89ce}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!allocate@{allocate}}
+\index{allocate@{allocate}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer}{Java\+I010\+Buffer}} io.\+agora.\+base.\+Java\+I010\+Buffer.\+allocate (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Allocates an empty I010\+Buffer suitable for an image of the given dimensions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & width. \\
+\hline
+{\em height} & height. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an empty I010\+Buffer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a5c0de70f753fcdcb0346c85361de9d66}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a5c0de70f753fcdcb0346c85361de9d66}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!getDataY@{getDataY}}
+\index{getDataY@{getDataY}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{getDataY()}{getDataY()}}
+{\footnotesize\ttfamily Byte\+Buffer io.\+agora.\+base.\+Java\+I010\+Buffer.\+get\+DataY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a direct Byte\+Buffer containing Y-\/plane data. The buffer capacity is at least get\+Stride\+Y() $\ast$ \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_af81f0487f16f961b272b4d0a48084cae}{get\+Height()}} bytes. The position of the returned buffer is ignored and must be 0. Callers may mutate the Byte\+Buffer (eg. through relative-\/read operations), so implementations must return a new Byte\+Buffer or slice for each call. 
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_i420_buffer_ad0ccc0ef12176ebf45f17028b13f1604}{io.\+agora.\+base.\+Video\+Frame.\+I420\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a45b2cc1335424b7f938d38dc2390cc0a}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a45b2cc1335424b7f938d38dc2390cc0a}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!getDataV@{getDataV}}
+\index{getDataV@{getDataV}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{getDataV()}{getDataV()}}
+{\footnotesize\ttfamily Byte\+Buffer io.\+agora.\+base.\+Java\+I010\+Buffer.\+get\+DataV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a direct Byte\+Buffer containing V-\/plane data. The buffer capacity is at least get\+Stride\+V() $\ast$ ((\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_af81f0487f16f961b272b4d0a48084cae}{get\+Height()}} + 1) / 2) bytes. The position of the returned buffer is ignored and must be 0. Callers may mutate the Byte\+Buffer (eg. through relative-\/read operations), so implementations must return a new Byte\+Buffer or slice for each call. 
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_i420_buffer_a6ff38aeb5c981dc03754a2b8ed1364a0}{io.\+agora.\+base.\+Video\+Frame.\+I420\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a0689c505be00679545240cf9af223e9a}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a0689c505be00679545240cf9af223e9a}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!getDataU@{getDataU}}
+\index{getDataU@{getDataU}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{getDataU()}{getDataU()}}
+{\footnotesize\ttfamily Byte\+Buffer io.\+agora.\+base.\+Java\+I010\+Buffer.\+get\+DataU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a direct Byte\+Buffer containing U-\/plane data. The buffer capacity is at least get\+Stride\+U() $\ast$ ((\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_af81f0487f16f961b272b4d0a48084cae}{get\+Height()}} + 1) / 2) bytes. The position of the returned buffer is ignored and must be 0. Callers may mutate the Byte\+Buffer (eg. through relative-\/read operations), so implementations must return a new Byte\+Buffer or slice for each call. 
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_i420_buffer_af5a94482a717bd790382a04ea57cda10}{io.\+agora.\+base.\+Video\+Frame.\+I420\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_af81f0487f16f961b272b4d0a48084cae}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_af81f0487f16f961b272b4d0a48084cae}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int io.\+agora.\+base.\+Java\+I010\+Buffer.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resolution of the buffer in pixels.
+
+\begin{DoxyReturn}{Returns}
+height. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a2a2b6e87e00209dd52a6dcee781d7014}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_abeb61c59919f23b1cfcd8e8a9c8194d6}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_abeb61c59919f23b1cfcd8e8a9c8194d6}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int io.\+agora.\+base.\+Java\+I010\+Buffer.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resolution of the buffer in pixels.
+
+\begin{DoxyReturn}{Returns}
+width. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a23ed478a1b2c5401e0ca1825342a23f9}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a114c736209836962eb6218f41996da04}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a114c736209836962eb6218f41996da04}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!release@{release}}
+\index{release@{release}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void io.\+agora.\+base.\+Java\+I010\+Buffer.\+release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Decreases ref count by one. When the ref count reaches zero, resources related to the object will be freed. 
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a53f5b85a4c0ba647c39ee9cdf5567257}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a802f4aa532cc527654ac7a44fa02db70}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a802f4aa532cc527654ac7a44fa02db70}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!toI420@{toI420}}
+\index{toI420@{toI420}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{toI420()}{toI420()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_i420_buffer}{I420\+Buffer}} io.\+agora.\+base.\+Java\+I010\+Buffer.\+to\+I420 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a memory-\/backed frame in I420 format. If the pixel data is in another format, a conversion will take place. All implementations must provide a fallback to I420 for compatibility with e.\+g. the internal Web\+R\+TC software encoders.
+
+\begin{DoxyNote}{Note}
+invoke \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a114c736209836962eb6218f41996da04}{release()}} to release the memory or decreases ref count by one, otherwise memory may be leaked. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a52b3ce61de7817c9524281c28bfeaaa7}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a224e94c5d599c38869f99930b648120b}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a224e94c5d599c38869f99930b648120b}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!retain@{retain}}
+\index{retain@{retain}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{retain()}{retain()}}
+{\footnotesize\ttfamily void io.\+agora.\+base.\+Java\+I010\+Buffer.\+retain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increases ref count by one. 
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a947158565c8906f669d6befb328a7d22}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a1bada9cbdf27c2fad927b1342631adfc}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a1bada9cbdf27c2fad927b1342631adfc}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!cropAndScale@{cropAndScale}}
+\index{cropAndScale@{cropAndScale}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{cropAndScale()}{cropAndScale()}}
+{\footnotesize\ttfamily Video\+Frame.\+Buffer io.\+agora.\+base.\+Java\+I010\+Buffer.\+crop\+And\+Scale (\begin{DoxyParamCaption}\item[{int}]{cropX,  }\item[{int}]{cropY,  }\item[{int}]{crop\+Width,  }\item[{int}]{crop\+Height,  }\item[{int}]{scale\+Width,  }\item[{int}]{scale\+Height }\end{DoxyParamCaption})}
+
+Crops a region defined by $\vert$cropx$\vert$, $\vert$crop\+Y$\vert$, $\vert$crop\+Width$\vert$ and $\vert$crop\+Height$\vert$. Scales it to size $\vert$scale\+Width$\vert$ x $\vert$scale\+Height$\vert$.
+
+\begin{DoxyReturn}{Returns}
+a new buffer which match the request, null if not supported.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+invoke \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a114c736209836962eb6218f41996da04}{release()}} to release the memory or decreases ref count by one, otherwise memory may be leaked. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a3dd7ca92b21f526856b4d24e3d65cc0a}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_aad310b96afcf6d4333e3fc55ef50c557}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_aad310b96afcf6d4333e3fc55ef50c557}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!rotate@{rotate}}
+\index{rotate@{rotate}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily Video\+Frame.\+Buffer io.\+agora.\+base.\+Java\+I010\+Buffer.\+rotate (\begin{DoxyParamCaption}\item[{int}]{frame\+Rotation }\end{DoxyParamCaption})}
+
+Apply rotate \begin{DoxyReturn}{Returns}
+a new buffer which match the request, null if not supported.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+invoke \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a114c736209836962eb6218f41996da04}{release()}} to release the memory or decreases ref count by one, otherwise memory may be leaked. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_afdf60a0efe0e87e092ad84c4247fca32}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_ad9aab61d8435dec269022db9bd36bb82}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_ad9aab61d8435dec269022db9bd36bb82}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!transform@{transform}}
+\index{transform@{transform}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily Video\+Frame.\+Buffer io.\+agora.\+base.\+Java\+I010\+Buffer.\+transform (\begin{DoxyParamCaption}\item[{int}]{cropX,  }\item[{int}]{cropY,  }\item[{int}]{crop\+Width,  }\item[{int}]{crop\+Height,  }\item[{int}]{scale\+Width,  }\item[{int}]{scale\+Height,  }\item[{int}]{frame\+Rotation }\end{DoxyParamCaption})}
+
+Apply crop/scale/mirror/rotate \begin{DoxyReturn}{Returns}
+a new buffer which match the request, null if not supported.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+invoke \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a114c736209836962eb6218f41996da04}{release()}} to release the memory or decreases ref count by one, otherwise memory may be leaked. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a524ad2e6d965ea18870a4a504c115bf6}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_java_i010_buffer_a4be87dac19f5bec2d3bae8e1f8756a50}\label{classio_1_1agora_1_1base_1_1_java_i010_buffer_a4be87dac19f5bec2d3bae8e1f8756a50}} 
+\index{io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}!mirror@{mirror}}
+\index{mirror@{mirror}!io.agora.base.JavaI010Buffer@{io.agora.base.JavaI010Buffer}}
+\doxysubsubsection{\texorpdfstring{mirror()}{mirror()}}
+{\footnotesize\ttfamily Video\+Frame.\+Buffer io.\+agora.\+base.\+Java\+I010\+Buffer.\+mirror (\begin{DoxyParamCaption}\item[{int}]{frame\+Rotation }\end{DoxyParamCaption})}
+
+Apply mirror
+
+\begin{DoxyReturn}{Returns}
+a new buffer which match the request, null if not supported.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+invoke \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_java_i010_buffer_a114c736209836962eb6218f41996da04}{release()}} to release the memory or decreases ref count by one, otherwise memory may be leaked. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_buffer_a035a3f710625fc668f5594186d57b08c}{io.\+agora.\+base.\+Video\+Frame.\+Buffer}}.
+

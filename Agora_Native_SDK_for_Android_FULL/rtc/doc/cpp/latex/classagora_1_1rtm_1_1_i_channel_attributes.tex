@@ -1,0 +1,137 @@
+\hypertarget{classagora_1_1rtm_1_1_i_channel_attributes}{}\doxysection{agora\+::rtm\+::I\+Channel\+Attributes Class Reference}
+\label{classagora_1_1rtm_1_1_i_channel_attributes}\index{agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtm\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes_a75505fcd3e34f67d984942eb56466813}{add\+Attribute}} (const char $\ast$key, const char $\ast$value)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes_ae6b2ed58f7ca4e4551fe20b93aebc7bb}{remove\+Attribute}} (const char $\ast$key)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes_a20d2960476d03b593522bf2fa8b3aee0}{get\+Attributes\+Size}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes_aeff5ae2e2b339c0bfb49993947ce5c9a}{get\+Attributes}} (int size, char $\ast$$\ast$key, char $\ast$$\ast$value) const =0
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes_aea1bb95a295bff14e992ac3fc91d9284}{get\+Attribute\+Value}} (const char $\ast$key) const =0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes_a8d2f4f6970bbd30282d919e0cc592f6b}{release}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} $\ast$ \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes_a62030226738d193b3b569adbd895f2e9}{create\+Channel\+Attributes}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_attributes_a62030226738d193b3b569adbd895f2e9}\label{classagora_1_1rtm_1_1_i_channel_attributes_a62030226738d193b3b569adbd895f2e9}} 
+\index{agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}!createChannelAttributes@{createChannelAttributes}}
+\index{createChannelAttributes@{createChannelAttributes}!agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}}
+\doxysubsubsection{\texorpdfstring{createChannelAttributes()}{createChannelAttributes()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}}$\ast$ agora\+::rtm\+::\+I\+Channel\+Attributes\+::create\+Channel\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} instance. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item An \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} instance, if the method call succeeds. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_attributes_a75505fcd3e34f67d984942eb56466813}\label{classagora_1_1rtm_1_1_i_channel_attributes_a75505fcd3e34f67d984942eb56466813}} 
+\index{agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}!addAttribute@{addAttribute}}
+\index{addAttribute@{addAttribute}!agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}}
+\doxysubsubsection{\texorpdfstring{addAttribute()}{addAttribute()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Channel\+Attributes\+::add\+Attribute (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adds an attribute to a specified channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The pointer to the attribute key. \\
+\hline
+{\em value} & The pointer to the attribute value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_attributes_ae6b2ed58f7ca4e4551fe20b93aebc7bb}\label{classagora_1_1rtm_1_1_i_channel_attributes_ae6b2ed58f7ca4e4551fe20b93aebc7bb}} 
+\index{agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}!removeAttribute@{removeAttribute}}
+\index{removeAttribute@{removeAttribute}!agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}}
+\doxysubsubsection{\texorpdfstring{removeAttribute()}{removeAttribute()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Channel\+Attributes\+::remove\+Attribute (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Removes an attribute from the channel. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The pointer to the attribute key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_attributes_a20d2960476d03b593522bf2fa8b3aee0}\label{classagora_1_1rtm_1_1_i_channel_attributes_a20d2960476d03b593522bf2fa8b3aee0}} 
+\index{agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}!getAttributesSize@{getAttributesSize}}
+\index{getAttributesSize@{getAttributesSize}!agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}}
+\doxysubsubsection{\texorpdfstring{getAttributesSize()}{getAttributesSize()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Channel\+Attributes\+::get\+Attributes\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the size of the attributes. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_attributes_aeff5ae2e2b339c0bfb49993947ce5c9a}\label{classagora_1_1rtm_1_1_i_channel_attributes_aeff5ae2e2b339c0bfb49993947ce5c9a}} 
+\index{agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}!getAttributes@{getAttributes}}
+\index{getAttributes@{getAttributes}!agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}}
+\doxysubsubsection{\texorpdfstring{getAttributes()}{getAttributes()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Attributes\+::get\+Attributes (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{char $\ast$$\ast$}]{key,  }\item[{char $\ast$$\ast$}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the channel attributes. 
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the channel attributes. \\
+\hline
+{\em key} & The pointer to the key of each channel attribute. \\
+\hline
+{\em value} & The pointer to the value of each channel attribute. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_attributes_aea1bb95a295bff14e992ac3fc91d9284}\label{classagora_1_1rtm_1_1_i_channel_attributes_aea1bb95a295bff14e992ac3fc91d9284}} 
+\index{agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}!getAttributeValue@{getAttributeValue}}
+\index{getAttributeValue@{getAttributeValue}!agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}}
+\doxysubsubsection{\texorpdfstring{getAttributeValue()}{getAttributeValue()}}
+{\footnotesize\ttfamily virtual const char$\ast$ agora\+::rtm\+::\+I\+Channel\+Attributes\+::get\+Attribute\+Value (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the value of a channel attribute using the attribute key. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The pointer to the key of the channel attribute that you want to get. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_attributes_a8d2f4f6970bbd30282d919e0cc592f6b}\label{classagora_1_1rtm_1_1_i_channel_attributes_a8d2f4f6970bbd30282d919e0cc592f6b}} 
+\index{agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}!release@{release}}
+\index{release@{release}!agora::rtm::IChannelAttributes@{agora::rtm::IChannelAttributes}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Channel\+Attributes\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} instance. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & 0\+: Success.
+\begin{DoxyItemize}
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}

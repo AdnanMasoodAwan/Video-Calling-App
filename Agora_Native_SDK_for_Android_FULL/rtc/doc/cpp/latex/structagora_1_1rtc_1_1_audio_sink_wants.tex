@@ -1,0 +1,46 @@
+\hypertarget{structagora_1_1rtc_1_1_audio_sink_wants}{}\doxysection{agora\+::rtc\+::Audio\+Sink\+Wants Struct Reference}
+\label{structagora_1_1rtc_1_1_audio_sink_wants}\index{agora::rtc::AudioSinkWants@{agora::rtc::AudioSinkWants}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Audio\+Track.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_sink_wants_a51035b91a861d22c6bddb3ae807395ce}\label{structagora_1_1rtc_1_1_audio_sink_wants_a51035b91a861d22c6bddb3ae807395ce}} 
+{\bfseries Audio\+Sink\+Wants} (int sample\+Rate, size\+\_\+t chs)
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_sink_wants_a2c3336a67734e34e82c49388be8923a3}\label{structagora_1_1rtc_1_1_audio_sink_wants_a2c3336a67734e34e82c49388be8923a3}} 
+{\bfseries Audio\+Sink\+Wants} (int sample\+Rate, size\+\_\+t chs, int track\+Num)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_sink_wants_a9f5fa2981bbd206433fac756d5448873}{samples\+Per\+Sec}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_sink_wants_aaf3b1a0d02880ce6e50326d58b471130}{channels}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Properties of audio frames expected by a sink.
+
+\begin{DoxyNote}{Note}
+The source determines the audio frame to be sent to the sink based on a variety of factors, such as other sinks or the capability of the source. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_sink_wants_a9f5fa2981bbd206433fac756d5448873}\label{structagora_1_1rtc_1_1_audio_sink_wants_a9f5fa2981bbd206433fac756d5448873}} 
+\index{agora::rtc::AudioSinkWants@{agora::rtc::AudioSinkWants}!samplesPerSec@{samplesPerSec}}
+\index{samplesPerSec@{samplesPerSec}!agora::rtc::AudioSinkWants@{agora::rtc::AudioSinkWants}}
+\doxysubsubsection{\texorpdfstring{samplesPerSec}{samplesPerSec}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Audio\+Sink\+Wants\+::samples\+Per\+Sec}
+
+The sample rate of the audio frame to be sent to the sink. \mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_sink_wants_aaf3b1a0d02880ce6e50326d58b471130}\label{structagora_1_1rtc_1_1_audio_sink_wants_aaf3b1a0d02880ce6e50326d58b471130}} 
+\index{agora::rtc::AudioSinkWants@{agora::rtc::AudioSinkWants}!channels@{channels}}
+\index{channels@{channels}!agora::rtc::AudioSinkWants@{agora::rtc::AudioSinkWants}}
+\doxysubsubsection{\texorpdfstring{channels}{channels}}
+{\footnotesize\ttfamily size\+\_\+t agora\+::rtc\+::\+Audio\+Sink\+Wants\+::channels}
+
+The number of audio channels of the audio frame to be sent to the sink. 

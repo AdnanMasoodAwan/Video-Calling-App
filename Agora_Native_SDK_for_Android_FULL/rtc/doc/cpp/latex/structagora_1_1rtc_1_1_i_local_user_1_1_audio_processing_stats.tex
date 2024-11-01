@@ -1,0 +1,95 @@
+\hypertarget{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats}{}\doxysection{agora\+::rtc\+::I\+Local\+User\+::Audio\+Processing\+Stats Struct Reference}
+\label{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats}\index{agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Local\+User.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$ double $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a6307959b722863ce1f0c4f2018c99206}{echo\+\_\+return\+\_\+loss}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$ double $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a96c6204fe66bb635bf2b1ab3cabad9fe}{echo\+\_\+return\+\_\+loss\+\_\+enhancement}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$ double $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_ad9e8bd59619780af58b36151373de628}{divergent\+\_\+filter\+\_\+fraction}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$ int32\+\_\+t $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_af867b3850536b90fcf01fc72e66f5f73}{delay\+\_\+median\+\_\+ms}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$ int32\+\_\+t $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a2e9e19d027d35c3c07ef9b78c1c88cc3}{delay\+\_\+standard\+\_\+deviation\+\_\+ms}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$ double $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a7fd562d00087d3eb0108217f32be0df0}{residual\+\_\+echo\+\_\+likelihood}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$ double $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a756a59a781e9e65496bd8d5bff67f686}{residual\+\_\+echo\+\_\+likelihood\+\_\+recent\+\_\+max}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$ int32\+\_\+t $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_aeff711c729b4c7b17b1cb687e5a372a0}{delay\+\_\+ms}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The statistics related to audio processing. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a6307959b722863ce1f0c4f2018c99206}\label{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a6307959b722863ce1f0c4f2018c99206}} 
+\index{agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}!echo\_return\_loss@{echo\_return\_loss}}
+\index{echo\_return\_loss@{echo\_return\_loss}!agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}}
+\doxysubsubsection{\texorpdfstring{echo\_return\_loss}{echo\_return\_loss}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$double$>$ agora\+::rtc\+::\+I\+Local\+User\+::\+Audio\+Processing\+Stats\+::echo\+\_\+return\+\_\+loss}
+
+The echo return loss (E\+RL).
+
+E\+RL = 10log\+\_\+10(P\+\_\+far / P\+\_\+echo).
+
+E\+RL measures the signal loss that comes back as an echo. A higher ratio corresponds to a smaller amount of echo. The higher the E\+RL the better. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a96c6204fe66bb635bf2b1ab3cabad9fe}\label{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a96c6204fe66bb635bf2b1ab3cabad9fe}} 
+\index{agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}!echo\_return\_loss\_enhancement@{echo\_return\_loss\_enhancement}}
+\index{echo\_return\_loss\_enhancement@{echo\_return\_loss\_enhancement}!agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}}
+\doxysubsubsection{\texorpdfstring{echo\_return\_loss\_enhancement}{echo\_return\_loss\_enhancement}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$double$>$ agora\+::rtc\+::\+I\+Local\+User\+::\+Audio\+Processing\+Stats\+::echo\+\_\+return\+\_\+loss\+\_\+enhancement}
+
+The echo return loss enhancement (E\+R\+LE).
+
+E\+R\+LE = 10log\+\_\+10(P\+\_\+echo / P\+\_\+out).
+
+The performance of an echo canceller is measured in echo return loss enhancement, which is the amount of additional signal loss applied by the echo canceller.
+
+The total signal loss of the echo is the sum of E\+RL and E\+R\+LE. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_ad9e8bd59619780af58b36151373de628}\label{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_ad9e8bd59619780af58b36151373de628}} 
+\index{agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}!divergent\_filter\_fraction@{divergent\_filter\_fraction}}
+\index{divergent\_filter\_fraction@{divergent\_filter\_fraction}!agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}}
+\doxysubsubsection{\texorpdfstring{divergent\_filter\_fraction}{divergent\_filter\_fraction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$double$>$ agora\+::rtc\+::\+I\+Local\+User\+::\+Audio\+Processing\+Stats\+::divergent\+\_\+filter\+\_\+fraction}
+
+The fraction of time that the A\+EC (Acoustic Echo Cancelling) linear filter is divergent, in a 1-\/second non-\/overlapped aggregation window. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_af867b3850536b90fcf01fc72e66f5f73}\label{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_af867b3850536b90fcf01fc72e66f5f73}} 
+\index{agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}!delay\_median\_ms@{delay\_median\_ms}}
+\index{delay\_median\_ms@{delay\_median\_ms}!agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}}
+\doxysubsubsection{\texorpdfstring{delay\_median\_ms}{delay\_median\_ms}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$int32\+\_\+t$>$ agora\+::rtc\+::\+I\+Local\+User\+::\+Audio\+Processing\+Stats\+::delay\+\_\+median\+\_\+ms}
+
+The delay metrics (ms).
+
+It consists of the delay median and standard deviation. It also consists of the fraction of delay estimates that can make the echo cancellation perform poorly. The values are aggregated until the first call of \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_a7fa3cd504b1fdc3c06e133d358ab04e1}{get\+Statistics}} and afterwards aggregated and updated every second. \begin{DoxyNote}{Note}
+If there are several clients pulling metrics from {\ttfamily get\+Statistics} during a session, the first call from any of them will change to one second aggregation window for all. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a2e9e19d027d35c3c07ef9b78c1c88cc3}\label{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a2e9e19d027d35c3c07ef9b78c1c88cc3}} 
+\index{agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}!delay\_standard\_deviation\_ms@{delay\_standard\_deviation\_ms}}
+\index{delay\_standard\_deviation\_ms@{delay\_standard\_deviation\_ms}!agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}}
+\doxysubsubsection{\texorpdfstring{delay\_standard\_deviation\_ms}{delay\_standard\_deviation\_ms}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$int32\+\_\+t$>$ agora\+::rtc\+::\+I\+Local\+User\+::\+Audio\+Processing\+Stats\+::delay\+\_\+standard\+\_\+deviation\+\_\+ms}
+
+The delay standard deviation(ms). \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a7fd562d00087d3eb0108217f32be0df0}\label{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a7fd562d00087d3eb0108217f32be0df0}} 
+\index{agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}!residual\_echo\_likelihood@{residual\_echo\_likelihood}}
+\index{residual\_echo\_likelihood@{residual\_echo\_likelihood}!agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}}
+\doxysubsubsection{\texorpdfstring{residual\_echo\_likelihood}{residual\_echo\_likelihood}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$double$>$ agora\+::rtc\+::\+I\+Local\+User\+::\+Audio\+Processing\+Stats\+::residual\+\_\+echo\+\_\+likelihood}
+
+The residual echo detector likelihood. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a756a59a781e9e65496bd8d5bff67f686}\label{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_a756a59a781e9e65496bd8d5bff67f686}} 
+\index{agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}!residual\_echo\_likelihood\_recent\_max@{residual\_echo\_likelihood\_recent\_max}}
+\index{residual\_echo\_likelihood\_recent\_max@{residual\_echo\_likelihood\_recent\_max}!agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}}
+\doxysubsubsection{\texorpdfstring{residual\_echo\_likelihood\_recent\_max}{residual\_echo\_likelihood\_recent\_max}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$double$>$ agora\+::rtc\+::\+I\+Local\+User\+::\+Audio\+Processing\+Stats\+::residual\+\_\+echo\+\_\+likelihood\+\_\+recent\+\_\+max}
+
+The maximum residual echo likelihood from the last time period. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_aeff711c729b4c7b17b1cb687e5a372a0}\label{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats_aeff711c729b4c7b17b1cb687e5a372a0}} 
+\index{agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}!delay\_ms@{delay\_ms}}
+\index{delay\_ms@{delay\_ms}!agora::rtc::ILocalUser::AudioProcessingStats@{agora::rtc::ILocalUser::AudioProcessingStats}}
+\doxysubsubsection{\texorpdfstring{delay\_ms}{delay\_ms}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}$<$int32\+\_\+t$>$ agora\+::rtc\+::\+I\+Local\+User\+::\+Audio\+Processing\+Stats\+::delay\+\_\+ms}
+
+The instantaneous delay estimate produced in the A\+EC (ms). The value is the instantaneous value at the time of calling \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_a7fa3cd504b1fdc3c06e133d358ab04e1}{get\+Statistics}}. 

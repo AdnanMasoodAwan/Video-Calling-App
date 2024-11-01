@@ -1,0 +1,102 @@
+\hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info}{}\doxysection{agora\+::rtc\+::I\+Camera\+Capturer\+::I\+Device\+Info Class Reference}
+\label{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info}\index{agora::rtc::ICameraCapturer::IDeviceInfo@{agora::rtc::ICameraCapturer::IDeviceInfo}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Camera\+Capturer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_ae15913de5e835df5e441303dd7a9e85e}{release}} ()=0
+\item 
+virtual uint32\+\_\+t \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_a1167425136227e297210b1938c57fead}{Number\+Of\+Devices}} ()=0
+\item 
+virtual int32\+\_\+t \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_abbaaad972e236c3b476f910ff2f55aef}{Get\+Device\+Name}} (uint32\+\_\+t device\+Number, char $\ast$device\+Name\+U\+T\+F8, uint32\+\_\+t device\+Name\+Length, char $\ast$device\+Unique\+Id\+U\+T\+F8, uint32\+\_\+t device\+Unique\+Id\+Length, char $\ast$product\+Unique\+Id\+U\+T\+F8=0, uint32\+\_\+t product\+Unique\+Id\+Length=0, char $\ast$device\+Type\+U\+T\+F8=0, uint32\+\_\+t device\+Type\+Length=0)=0
+\item 
+virtual int32\+\_\+t \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_a0560c2604d7ac0787ff03097146e59e1}{Number\+Of\+Capabilities}} (const char $\ast$device\+Unique\+Id\+U\+T\+F8)=0
+\item 
+virtual int32\+\_\+t \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_a95a8d93520b92b43760460c9d64b1fc4}{Get\+Capability}} (const char $\ast$device\+Unique\+Id\+U\+T\+F8, const uint32\+\_\+t device\+Capability\+Number, \mbox{\hyperlink{structagora_1_1rtc_1_1_video_format}{Video\+Format}} \&capability)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info}{I\+Device\+Info}} class, which manages the information of available cameras. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_ae15913de5e835df5e441303dd7a9e85e}\label{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_ae15913de5e835df5e441303dd7a9e85e}} 
+\index{agora::rtc::ICameraCapturer::IDeviceInfo@{agora::rtc::ICameraCapturer::IDeviceInfo}!release@{release}}
+\index{release@{release}!agora::rtc::ICameraCapturer::IDeviceInfo@{agora::rtc::ICameraCapturer::IDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Camera\+Capturer\+::\+I\+Device\+Info\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the device. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_a1167425136227e297210b1938c57fead}\label{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_a1167425136227e297210b1938c57fead}} 
+\index{agora::rtc::ICameraCapturer::IDeviceInfo@{agora::rtc::ICameraCapturer::IDeviceInfo}!NumberOfDevices@{NumberOfDevices}}
+\index{NumberOfDevices@{NumberOfDevices}!agora::rtc::ICameraCapturer::IDeviceInfo@{agora::rtc::ICameraCapturer::IDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{NumberOfDevices()}{NumberOfDevices()}}
+{\footnotesize\ttfamily virtual uint32\+\_\+t agora\+::rtc\+::\+I\+Camera\+Capturer\+::\+I\+Device\+Info\+::\+Number\+Of\+Devices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the number of all available cameras. \begin{DoxyReturn}{Returns}
+The number of all available cameras. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_abbaaad972e236c3b476f910ff2f55aef}\label{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_abbaaad972e236c3b476f910ff2f55aef}} 
+\index{agora::rtc::ICameraCapturer::IDeviceInfo@{agora::rtc::ICameraCapturer::IDeviceInfo}!GetDeviceName@{GetDeviceName}}
+\index{GetDeviceName@{GetDeviceName}!agora::rtc::ICameraCapturer::IDeviceInfo@{agora::rtc::ICameraCapturer::IDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{GetDeviceName()}{GetDeviceName()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t agora\+::rtc\+::\+I\+Camera\+Capturer\+::\+I\+Device\+Info\+::\+Get\+Device\+Name (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{device\+Number,  }\item[{char $\ast$}]{device\+Name\+U\+T\+F8,  }\item[{uint32\+\_\+t}]{device\+Name\+Length,  }\item[{char $\ast$}]{device\+Unique\+Id\+U\+T\+F8,  }\item[{uint32\+\_\+t}]{device\+Unique\+Id\+Length,  }\item[{char $\ast$}]{product\+Unique\+Id\+U\+T\+F8 = {\ttfamily 0},  }\item[{uint32\+\_\+t}]{product\+Unique\+Id\+Length = {\ttfamily 0},  }\item[{char $\ast$}]{device\+Type\+U\+T\+F8 = {\ttfamily 0},  }\item[{uint32\+\_\+t}]{device\+Type\+Length = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the name of a specified camera. 
+\begin{DoxyParams}{Parameters}
+{\em device\+Number} & The index number of the device. \\
+\hline
+{\em device\+Name\+U\+T\+F8} & The name of the device. \\
+\hline
+{\em device\+Name\+Length} & The length of the device name. \\
+\hline
+{\em device\+Unique\+Id\+U\+T\+F8} & The unique ID of the device. \\
+\hline
+{\em device\+Unique\+Id\+Length} & The length of the device ID. \\
+\hline
+{\em product\+Unique\+Id\+U\+T\+F8} & The unique ID of the product. \\
+\hline
+{\em product\+Unique\+Id\+Length} & The length of the product ID. \\
+\hline
+{\em device\+Type\+U\+T\+F8} & The camera type of the device. \\
+\hline
+{\em device\+Type\+Length} & The length of the camera type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the device in the U\+T\+F8 format\+: Success. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_a0560c2604d7ac0787ff03097146e59e1}\label{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_a0560c2604d7ac0787ff03097146e59e1}} 
+\index{agora::rtc::ICameraCapturer::IDeviceInfo@{agora::rtc::ICameraCapturer::IDeviceInfo}!NumberOfCapabilities@{NumberOfCapabilities}}
+\index{NumberOfCapabilities@{NumberOfCapabilities}!agora::rtc::ICameraCapturer::IDeviceInfo@{agora::rtc::ICameraCapturer::IDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{NumberOfCapabilities()}{NumberOfCapabilities()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t agora\+::rtc\+::\+I\+Camera\+Capturer\+::\+I\+Device\+Info\+::\+Number\+Of\+Capabilities (\begin{DoxyParamCaption}\item[{const char $\ast$}]{device\+Unique\+Id\+U\+T\+F8 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the capability number for a specified device. 
+\begin{DoxyParams}{Parameters}
+{\em device\+Unique\+Id\+U\+T\+F8} & The pointer to the ID of the device in the U\+T\+F8 format. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The capability number of the device. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_a95a8d93520b92b43760460c9d64b1fc4}\label{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info_a95a8d93520b92b43760460c9d64b1fc4}} 
+\index{agora::rtc::ICameraCapturer::IDeviceInfo@{agora::rtc::ICameraCapturer::IDeviceInfo}!GetCapability@{GetCapability}}
+\index{GetCapability@{GetCapability}!agora::rtc::ICameraCapturer::IDeviceInfo@{agora::rtc::ICameraCapturer::IDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{GetCapability()}{GetCapability()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t agora\+::rtc\+::\+I\+Camera\+Capturer\+::\+I\+Device\+Info\+::\+Get\+Capability (\begin{DoxyParamCaption}\item[{const char $\ast$}]{device\+Unique\+Id\+U\+T\+F8,  }\item[{const uint32\+\_\+t}]{device\+Capability\+Number,  }\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_video_format}{Video\+Format}} \&}]{capability }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the capability of a specified device. 
+\begin{DoxyParams}{Parameters}
+{\em device\+Unique\+Id\+U\+T\+F8} & The pointer to the ID of the device in the U\+T\+F8 format. \\
+\hline
+{\em device\+Capability\+Number} & The capability number of the device. \\
+\hline
+{\em capability} & The reference to the video capability. See \mbox{\hyperlink{structagora_1_1rtc_1_1_video_format}{Video\+Format}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The capability number of the device. 
+\end{DoxyReturn}

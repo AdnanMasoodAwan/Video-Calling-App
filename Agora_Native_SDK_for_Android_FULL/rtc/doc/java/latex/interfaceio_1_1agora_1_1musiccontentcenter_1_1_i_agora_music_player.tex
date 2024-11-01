@@ -1,0 +1,137 @@
+\hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player}{}\doxysection{io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player Interface Reference}
+\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player}\index{io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}}
+Inheritance diagram for io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_1_1_music_play_mode}{Music\+Play\+Mode}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a766615a4b17a22116127cb99acc2ef70}{open}} (long song\+Code, long start\+Pos)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a1343b2784c28e3376d6295892cd5ea72}{open}} (String url, long start\+Pos)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a517b16cb2a82ba4029f83a65bbbb33d0}{destroy}} ()
+\item 
+String \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_af3e3f9bec20134445a680dd2e91fa241}{get\+Play\+Src}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a1908d845c34b464a3531cc02ccc85b8d}{stop}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a9a11bce8b91167e85e2d34a8a6513ab1}{set\+Play\+Mode}} (\mbox{\hyperlink{enumio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_1_1_music_play_mode}{Music\+Play\+Mode}} mode)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a766615a4b17a22116127cb99acc2ef70}\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a766615a4b17a22116127cb99acc2ef70}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}!open@{open}}
+\index{open@{open}!io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player.\+open (\begin{DoxyParamCaption}\item[{long}]{song\+Code,  }\item[{long}]{start\+Pos }\end{DoxyParamCaption})}
+
+open a media file with specified parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+Code} & The identify of the media file that you want to play. \\
+\hline
+{\em start\+Pos} & The playback position (ms) of the music file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a1343b2784c28e3376d6295892cd5ea72}\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a1343b2784c28e3376d6295892cd5ea72}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}!open@{open}}
+\index{open@{open}!io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player.\+open (\begin{DoxyParamCaption}\item[{String}]{url,  }\item[{long}]{start\+Pos }\end{DoxyParamCaption})}
+
+Opens a media file with an android U\+RI.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL of the media file that you want to play. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a17d627406558715c2cd06ee71b587432}{io.\+agora.\+mediaplayer.\+I\+Media\+Player}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a517b16cb2a82ba4029f83a65bbbb33d0}\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a517b16cb2a82ba4029f83a65bbbb33d0}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}!destroy@{destroy}}
+\index{destroy@{destroy}!io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily int io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000002}{Deprecated}}]use \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_content_center_ab2e9dd0e7daac8921f233275cf30a9ff}{I\+Agora\+Music\+Content\+Center\#destroy\+Music\+Player(\+I\+Agora\+Music\+Player player)}} instead. \end{DoxyRefDesc}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a7b0e840af73b95213d42e155c20a5e0e}{io.\+agora.\+mediaplayer.\+I\+Media\+Player}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_af3e3f9bec20134445a680dd2e91fa241}\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_af3e3f9bec20134445a680dd2e91fa241}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}!getPlaySrc@{getPlaySrc}}
+\index{getPlaySrc@{getPlaySrc}!io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}}
+\doxysubsubsection{\texorpdfstring{getPlaySrc()}{getPlaySrc()}}
+{\footnotesize\ttfamily String io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player.\+get\+Play\+Src (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the url of the media file being played or the song\+Code of the media file you opened.
+
+\begin{DoxyReturn}{Returns}
+The url of the media file being played or the song\+Code of the media file you opened. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ae38ff4b5ee5a2582e9e6e04087c14433}{io.\+agora.\+mediaplayer.\+I\+Media\+Player}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a1908d845c34b464a3531cc02ccc85b8d}\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a1908d845c34b464a3531cc02ccc85b8d}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}!stop@{stop}}
+\index{stop@{stop}!io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily int io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stops playing the current media file.
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a96cfc3d9200e98724eb03476530e6025}{io.\+agora.\+mediaplayer.\+I\+Media\+Player}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a9a11bce8b91167e85e2d34a8a6513ab1}\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a9a11bce8b91167e85e2d34a8a6513ab1}} 
+\index{io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}!setPlayMode@{setPlayMode}}
+\index{setPlayMode@{setPlayMode}!io.agora.musiccontentcenter.IAgoraMusicPlayer@{io.agora.musiccontentcenter.IAgoraMusicPlayer}}
+\doxysubsubsection{\texorpdfstring{setPlayMode()}{setPlayMode()}}
+{\footnotesize\ttfamily int io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player.\+set\+Play\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_1_1_music_play_mode}{Music\+Play\+Mode}}}]{mode }\end{DoxyParamCaption})}
+
+Set the mode for playing songs. You can call this method to switch from original to accompaniment or lead vocals. If you do not call this method to set the mode, the S\+DK plays the accompaniment by default.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The playing mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ 0\+: Success.
+\begin{DoxyItemize}
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

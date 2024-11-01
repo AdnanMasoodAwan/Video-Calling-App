@@ -1,0 +1,59 @@
+\hypertarget{classagora_1_1media_1_1base_1_1_i_media_player_custom_data_provider}{}\doxysection{agora\+::media\+::base\+::I\+Media\+Player\+Custom\+Data\+Provider Class Reference}
+\label{classagora_1_1media_1_1base_1_1_i_media_player_custom_data_provider}\index{agora::media::base::IMediaPlayerCustomDataProvider@{agora::media::base::IMediaPlayerCustomDataProvider}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Player\+Types.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_media_player_custom_data_provider_abbc1b16e00175269c7f21f9e8cb13a38}{on\+Read\+Data}} (unsigned char $\ast$buffer, int buffer\+Size)=0
+\begin{DoxyCompactList}\small\item\em The player requests to read the data callback, you need to fill the specified length of data into the buffer. \end{DoxyCompactList}\item 
+virtual int64\+\_\+t \mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_media_player_custom_data_provider_a239a0ee3039f4c5df636738924ef0bb5}{on\+Seek}} (int64\+\_\+t offset, int whence)=0
+\begin{DoxyCompactList}\small\item\em The Player seek event callback, you need to operate the corresponding stream seek operation, You can refer to the definition of lseek() at \href{https://man7.org/linux/man-pages/man2/lseek.2.html}{\texttt{ https\+://man7.\+org/linux/man-\/pages/man2/lseek.\+2.\+html}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The custom data source provides a data stream input callback, and the player will continue to call back this interface, requesting the user to fill in the data that needs to be played. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1media_1_1base_1_1_i_media_player_custom_data_provider_abbc1b16e00175269c7f21f9e8cb13a38}\label{classagora_1_1media_1_1base_1_1_i_media_player_custom_data_provider_abbc1b16e00175269c7f21f9e8cb13a38}} 
+\index{agora::media::base::IMediaPlayerCustomDataProvider@{agora::media::base::IMediaPlayerCustomDataProvider}!onReadData@{onReadData}}
+\index{onReadData@{onReadData}!agora::media::base::IMediaPlayerCustomDataProvider@{agora::media::base::IMediaPlayerCustomDataProvider}}
+\doxysubsubsection{\texorpdfstring{onReadData()}{onReadData()}}
+{\footnotesize\ttfamily virtual int agora\+::media\+::base\+::\+I\+Media\+Player\+Custom\+Data\+Provider\+::on\+Read\+Data (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The player requests to read the data callback, you need to fill the specified length of data into the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer pointer that you need to fill data. \\
+\hline
+{\em buffer\+Size} & the buffer\+Size need to fill of the buffer pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+you need return offset value if succeed. return 0 if failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1base_1_1_i_media_player_custom_data_provider_a239a0ee3039f4c5df636738924ef0bb5}\label{classagora_1_1media_1_1base_1_1_i_media_player_custom_data_provider_a239a0ee3039f4c5df636738924ef0bb5}} 
+\index{agora::media::base::IMediaPlayerCustomDataProvider@{agora::media::base::IMediaPlayerCustomDataProvider}!onSeek@{onSeek}}
+\index{onSeek@{onSeek}!agora::media::base::IMediaPlayerCustomDataProvider@{agora::media::base::IMediaPlayerCustomDataProvider}}
+\doxysubsubsection{\texorpdfstring{onSeek()}{onSeek()}}
+{\footnotesize\ttfamily virtual int64\+\_\+t agora\+::media\+::base\+::\+I\+Media\+Player\+Custom\+Data\+Provider\+::on\+Seek (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{offset,  }\item[{int}]{whence }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The Player seek event callback, you need to operate the corresponding stream seek operation, You can refer to the definition of lseek() at \href{https://man7.org/linux/man-pages/man2/lseek.2.html}{\texttt{ https\+://man7.\+org/linux/man-\/pages/man2/lseek.\+2.\+html}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & the value of seek offset. \\
+\hline
+{\em whence} & the postion of start seeking, the directive whence as follows\+: 0 -\/ S\+E\+E\+K\+\_\+\+S\+ET \+: The file offset is set to offset bytes. 1 -\/ S\+E\+E\+K\+\_\+\+C\+UR \+: The file offset is set to its current location plus offset bytes. 2 -\/ S\+E\+E\+K\+\_\+\+E\+ND \+: The file offset is set to the size of the file plus offset bytes. 65536 -\/ A\+V\+S\+E\+E\+K\+\_\+\+S\+I\+ZE \+: \mbox{\hyperlink{classagora_1_1_optional}{Optional}}. Passing this as the \char`\"{}whence\char`\"{} parameter to a seek function causes it to return the filesize without seeking anywhere. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whence == 65536, return filesize if you need. whence $>$= 0 \&\& whence $<$ 3 , return offset value if succeed. return -\/1 if failed. 
+\end{DoxyReturn}

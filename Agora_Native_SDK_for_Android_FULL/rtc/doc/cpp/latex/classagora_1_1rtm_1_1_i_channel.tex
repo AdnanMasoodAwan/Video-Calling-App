@@ -1,0 +1,164 @@
+\hypertarget{classagora_1_1rtm_1_1_i_channel}{}\doxysection{agora\+::rtm\+::I\+Channel Class Reference}
+\label{classagora_1_1rtm_1_1_i_channel}\index{agora::rtm::IChannel@{agora::rtm::IChannel}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtm\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_ae7a4c44225ee34dd3348b898a8396c0f}{set\+Event\+Handler}} (\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler}{I\+Channel\+Event\+Handler}} $\ast$event\+Handler, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_a1d9ace5993885833eba138086d8261c4}{join}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_a5b62ab59b6786ba513cf2daefbcd1876}{leave}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_a51caea048fc98a7d4f7a7e0f1fd1fc38}{send\+Message}} (const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} $\ast$message, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_a9fc51e74051535b671baec030b9cd7a9}{update\+Attributes}} (\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} $\ast$attributes, int64\+\_\+t \&request\+Id, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_a1cb06e990208dca3618af0d7a2403042}{delete\+Attributes}} (\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} $\ast$attributes, int64\+\_\+t \&request\+Id, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_aedbf0bee40a4cb0eba57a894a2735079}{get\+Id}} () const =0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_a801cd3b75b5b98896228af29e5b734df}{release}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel}{I\+Channel}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_ae7a4c44225ee34dd3348b898a8396c0f}\label{classagora_1_1rtm_1_1_i_channel_ae7a4c44225ee34dd3348b898a8396c0f}} 
+\index{agora::rtm::IChannel@{agora::rtm::IChannel}!setEventHandler@{setEventHandler}}
+\index{setEventHandler@{setEventHandler}!agora::rtm::IChannel@{agora::rtm::IChannel}}
+\doxysubsubsection{\texorpdfstring{setEventHandler()}{setEventHandler()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Channel\+::set\+Event\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler}{I\+Channel\+Event\+Handler}} $\ast$}]{event\+Handler,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets an event handler for \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel}{I\+Channel}}. 
+\begin{DoxyParams}{Parameters}
+{\em event\+Handler} & The pointer to the event handler of \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel}{I\+Channel}}\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler}{I\+Channel\+Event\+Handler}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_a1d9ace5993885833eba138086d8261c4}\label{classagora_1_1rtm_1_1_i_channel_a1d9ace5993885833eba138086d8261c4}} 
+\index{agora::rtm::IChannel@{agora::rtm::IChannel}!join@{join}}
+\index{join@{join}!agora::rtm::IChannel@{agora::rtm::IChannel}}
+\doxysubsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Channel\+::join (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Joins the current channel.
+
+A successful method call triggers either on\+Join\+Success() or on\+Join\+Failure() on the local client, to report the state of joining the channel. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_a5b62ab59b6786ba513cf2daefbcd1876}\label{classagora_1_1rtm_1_1_i_channel_a5b62ab59b6786ba513cf2daefbcd1876}} 
+\index{agora::rtm::IChannel@{agora::rtm::IChannel}!leave@{leave}}
+\index{leave@{leave}!agora::rtm::IChannel@{agora::rtm::IChannel}}
+\doxysubsubsection{\texorpdfstring{leave()}{leave()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Channel\+::leave (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Leaves the current channel.
+
+After the local user successfully leaves the channel, the S\+DK triggers the on\+Leave() on the local client. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_a51caea048fc98a7d4f7a7e0f1fd1fc38}\label{classagora_1_1rtm_1_1_i_channel_a51caea048fc98a7d4f7a7e0f1fd1fc38}} 
+\index{agora::rtm::IChannel@{agora::rtm::IChannel}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!agora::rtm::IChannel@{agora::rtm::IChannel}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Channel\+::send\+Message (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} $\ast$}]{message,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends a channel message.
+
+After you successfully send a channel message, all members in the channel receive the message in the on\+Message\+Received() callback. 
+\begin{DoxyParams}{Parameters}
+{\em message} & The pointer to the channel message that you want to send\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_a9fc51e74051535b671baec030b9cd7a9}\label{classagora_1_1rtm_1_1_i_channel_a9fc51e74051535b671baec030b9cd7a9}} 
+\index{agora::rtm::IChannel@{agora::rtm::IChannel}!updateAttributes@{updateAttributes}}
+\index{updateAttributes@{updateAttributes}!agora::rtm::IChannel@{agora::rtm::IChannel}}
+\doxysubsubsection{\texorpdfstring{updateAttributes()}{updateAttributes()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Channel\+::update\+Attributes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} $\ast$}]{attributes,  }\item[{int64\+\_\+t \&}]{request\+Id,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Updates the channel attributes.
+
+A successful method call triggers the on\+Update\+Attributes\+Response() callback on the local client. 
+\begin{DoxyParams}{Parameters}
+{\em attributes} & The pointer to the channel attributes that you want to update\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}}. \\
+\hline
+{\em request\+Id} & ID of the current update request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_a1cb06e990208dca3618af0d7a2403042}\label{classagora_1_1rtm_1_1_i_channel_a1cb06e990208dca3618af0d7a2403042}} 
+\index{agora::rtm::IChannel@{agora::rtm::IChannel}!deleteAttributes@{deleteAttributes}}
+\index{deleteAttributes@{deleteAttributes}!agora::rtm::IChannel@{agora::rtm::IChannel}}
+\doxysubsubsection{\texorpdfstring{deleteAttributes()}{deleteAttributes()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Channel\+::delete\+Attributes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} $\ast$}]{attributes,  }\item[{int64\+\_\+t \&}]{request\+Id,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Removes the channel attributes.
+
+A successful method call triggers the on\+Delete\+Attributes\+Response() callback on the local client. 
+\begin{DoxyParams}{Parameters}
+{\em attributes} & The pointer to the channel attributes that you want to remove\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}}. \\
+\hline
+{\em request\+Id} & ID of the current delete request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_aedbf0bee40a4cb0eba57a894a2735079}\label{classagora_1_1rtm_1_1_i_channel_aedbf0bee40a4cb0eba57a894a2735079}} 
+\index{agora::rtm::IChannel@{agora::rtm::IChannel}!getId@{getId}}
+\index{getId@{getId}!agora::rtm::IChannel@{agora::rtm::IChannel}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily virtual const char$\ast$ agora\+::rtm\+::\+I\+Channel\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the current request ID. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to the request ID, if the method call succeeds.
+\item An empty pointer N\+U\+LL, if the method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_a801cd3b75b5b98896228af29e5b734df}\label{classagora_1_1rtm_1_1_i_channel_a801cd3b75b5b98896228af29e5b734df}} 
+\index{agora::rtm::IChannel@{agora::rtm::IChannel}!release@{release}}
+\index{release@{release}!agora::rtm::IChannel@{agora::rtm::IChannel}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Channel\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel}{I\+Channel}} instance.
+
+This is a synchronous method call, which means that the S\+DK reports the result of this method call after the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel}{I\+Channel}} instance is successfully released. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

@@ -1,0 +1,35 @@
+\hypertarget{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{}\doxysection{agora\+::rtc\+::I\+Packet\+Observer\+::Packet Struct Reference}
+\label{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}\index{agora::rtc::IPacketObserver::Packet@{agora::rtc::IPacketObserver::Packet}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet_a9ba9d05dea0fe5a4df3fbedb0bdc9ab7}{buffer}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet_aa422c79419df7b01ab9b8da4d2a378bd}{size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of the \mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}} struct. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet_a9ba9d05dea0fe5a4df3fbedb0bdc9ab7}\label{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet_a9ba9d05dea0fe5a4df3fbedb0bdc9ab7}} 
+\index{agora::rtc::IPacketObserver::Packet@{agora::rtc::IPacketObserver::Packet}!buffer@{buffer}}
+\index{buffer@{buffer}!agora::rtc::IPacketObserver::Packet@{agora::rtc::IPacketObserver::Packet}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily const unsigned char$\ast$ agora\+::rtc\+::\+I\+Packet\+Observer\+::\+Packet\+::buffer}
+
+The buffer address of the sent or received data. \begin{DoxyNote}{Note}
+Agora recommends setting {\ttfamily buffer} to a value larger than 2048 bytes. Otherwise, you may encounter undefined behaviors (such as crashes). 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet_aa422c79419df7b01ab9b8da4d2a378bd}\label{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet_aa422c79419df7b01ab9b8da4d2a378bd}} 
+\index{agora::rtc::IPacketObserver::Packet@{agora::rtc::IPacketObserver::Packet}!size@{size}}
+\index{size@{size}!agora::rtc::IPacketObserver::Packet@{agora::rtc::IPacketObserver::Packet}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+I\+Packet\+Observer\+::\+Packet\+::size}
+
+The buffer size of the sent or received data. 

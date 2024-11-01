@@ -1,0 +1,100 @@
+\hypertarget{classagora_1_1rtc_1_1_i_packet_observer}{}\doxysection{agora\+::rtc\+::I\+Packet\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_packet_observer}\index{agora::rtc::IPacketObserver@{agora::rtc::IPacketObserver}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_packet_observer_ae023dfc10aca2f214edb9dc175237d9e}{on\+Send\+Audio\+Packet}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}} \&packet)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_packet_observer_acd1892d19c93514b62c34593a3baf4e7}{on\+Send\+Video\+Packet}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}} \&packet)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_packet_observer_ab4e9874b56efc40966c0f8ff99a7450f}{on\+Receive\+Audio\+Packet}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}} \&packet)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_packet_observer_a48b7cc7db416607a15c69b6b77050311}{on\+Receive\+Video\+Packet}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}} \&packet)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_packet_observer}{I\+Packet\+Observer}} struct. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_packet_observer_ae023dfc10aca2f214edb9dc175237d9e}\label{classagora_1_1rtc_1_1_i_packet_observer_ae023dfc10aca2f214edb9dc175237d9e}} 
+\index{agora::rtc::IPacketObserver@{agora::rtc::IPacketObserver}!onSendAudioPacket@{onSendAudioPacket}}
+\index{onSendAudioPacket@{onSendAudioPacket}!agora::rtc::IPacketObserver@{agora::rtc::IPacketObserver}}
+\doxysubsubsection{\texorpdfstring{onSendAudioPacket()}{onSendAudioPacket()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Packet\+Observer\+::on\+Send\+Audio\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}} \&}]{packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the S\+DK is ready to send the audio packet. 
+\begin{DoxyParams}{Parameters}
+{\em packet} & The audio packet to be sent\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether to send the audio packet\+:
+\begin{DoxyItemize}
+\item true\+: Send the packet.
+\item false\+: Do not send the packet, in which case the audio packet will be discarded. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_packet_observer_acd1892d19c93514b62c34593a3baf4e7}\label{classagora_1_1rtc_1_1_i_packet_observer_acd1892d19c93514b62c34593a3baf4e7}} 
+\index{agora::rtc::IPacketObserver@{agora::rtc::IPacketObserver}!onSendVideoPacket@{onSendVideoPacket}}
+\index{onSendVideoPacket@{onSendVideoPacket}!agora::rtc::IPacketObserver@{agora::rtc::IPacketObserver}}
+\doxysubsubsection{\texorpdfstring{onSendVideoPacket()}{onSendVideoPacket()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Packet\+Observer\+::on\+Send\+Video\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}} \&}]{packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the S\+DK is ready to send the video packet. 
+\begin{DoxyParams}{Parameters}
+{\em packet} & The video packet to be sent\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether to send the video packet\+:
+\begin{DoxyItemize}
+\item true\+: Send the packet.
+\item false\+: Do not send the packet, in which case the audio packet will be discarded. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_packet_observer_ab4e9874b56efc40966c0f8ff99a7450f}\label{classagora_1_1rtc_1_1_i_packet_observer_ab4e9874b56efc40966c0f8ff99a7450f}} 
+\index{agora::rtc::IPacketObserver@{agora::rtc::IPacketObserver}!onReceiveAudioPacket@{onReceiveAudioPacket}}
+\index{onReceiveAudioPacket@{onReceiveAudioPacket}!agora::rtc::IPacketObserver@{agora::rtc::IPacketObserver}}
+\doxysubsubsection{\texorpdfstring{onReceiveAudioPacket()}{onReceiveAudioPacket()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Packet\+Observer\+::on\+Receive\+Audio\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}} \&}]{packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the audio packet is received. 
+\begin{DoxyParams}{Parameters}
+{\em packet} & The received audio packet\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether to process the audio packet\+:
+\begin{DoxyItemize}
+\item true\+: Process the packet.
+\item false\+: Do not process the packet, in which case the audio packet will be discarded. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_packet_observer_a48b7cc7db416607a15c69b6b77050311}\label{classagora_1_1rtc_1_1_i_packet_observer_a48b7cc7db416607a15c69b6b77050311}} 
+\index{agora::rtc::IPacketObserver@{agora::rtc::IPacketObserver}!onReceiveVideoPacket@{onReceiveVideoPacket}}
+\index{onReceiveVideoPacket@{onReceiveVideoPacket}!agora::rtc::IPacketObserver@{agora::rtc::IPacketObserver}}
+\doxysubsubsection{\texorpdfstring{onReceiveVideoPacket()}{onReceiveVideoPacket()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Packet\+Observer\+::on\+Receive\+Video\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}} \&}]{packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the video packet is received. 
+\begin{DoxyParams}{Parameters}
+{\em packet} & The received video packet\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_i_packet_observer_1_1_packet}{Packet}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether to process the audio packet\+:
+\begin{DoxyItemize}
+\item true\+: Process the packet.
+\item false\+: Do not process the packet, in which case the video packet will be discarded. 
+\end{DoxyItemize}
+\end{DoxyReturn}

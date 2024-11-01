@@ -1,0 +1,148 @@
+\hypertarget{classagora_1_1rtc_1_1_i_camera_capturer}{}\doxysection{agora\+::rtc\+::I\+Camera\+Capturer Class Reference}
+\label{classagora_1_1rtc_1_1_i_camera_capturer}\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Camera\+Capturer.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Camera\+Capturer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_camera_capturer}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_1_1_i_device_info}{I\+Device\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316}{C\+A\+M\+E\+R\+A\+\_\+\+S\+O\+U\+R\+CE}} \{ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316a05e8171c3db0fb87c0a72e18183579aa}{C\+A\+M\+E\+R\+A\+\_\+\+B\+A\+CK}}, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316aafd47cdb463201684c3a9d73e810c568}{C\+A\+M\+E\+R\+A\+\_\+\+F\+R\+O\+NT}}, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316aa2df2e6aae61dd4f7e68893698559448}{C\+A\+M\+E\+R\+A\+\_\+\+E\+X\+T\+RA}}
+ \}
+\item 
+enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_a93a8e50f5a615c09c27e0ced76505cd5}{C\+A\+M\+E\+R\+A\+\_\+\+S\+T\+A\+TE}} \{ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_a93a8e50f5a615c09c27e0ced76505cd5ae9d3b6195f8893c6b3d7c654df486b60}{C\+A\+M\+E\+R\+A\+\_\+\+S\+T\+A\+R\+T\+ED}}, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_a93a8e50f5a615c09c27e0ced76505cd5ad0ca8224de6a41e141d1fb8898e4d81f}{C\+A\+M\+E\+R\+A\+\_\+\+S\+T\+O\+P\+P\+ED}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_a07861c2ee224ba0f2e07fb1e0f3fc1ee}{set\+Device\+Orientation}} (V\+I\+D\+E\+O\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON orientation, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_ae555a88c9acacd0cd6e2b4bc0fc1f780}{set\+Capture\+Format}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_format}{Video\+Format}} \&capture\+\_\+format, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual \mbox{\hyperlink{structagora_1_1rtc_1_1_video_format}{Video\+Format}} \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_af1c257c904627391e828c043bc8fa26d}{get\+Capture\+Format}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_a80bf58bbbb9d9c54e573646f3d307755}{register\+Camera\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capture_observer}{I\+Camera\+Capture\+Observer}} $\ast$observer, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_a3986b7fb3a867a726a9532561adcbbb0}{unregister\+Camera\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capture_observer}{I\+Camera\+Capture\+Observer}} $\ast$observer)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer}{I\+Camera\+Capturer}} class, which provides access to a camera capturer. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316}\label{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316}} 
+\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!CAMERA\_SOURCE@{CAMERA\_SOURCE}}
+\index{CAMERA\_SOURCE@{CAMERA\_SOURCE}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}
+\doxysubsubsection{\texorpdfstring{CAMERA\_SOURCE}{CAMERA\_SOURCE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316}{agora\+::rtc\+::\+I\+Camera\+Capturer\+::\+C\+A\+M\+E\+R\+A\+\_\+\+S\+O\+U\+R\+CE}}}
+
+The camera source. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAMERA\_BACK@{CAMERA\_BACK}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!CAMERA\_BACK@{CAMERA\_BACK}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316a05e8171c3db0fb87c0a72e18183579aa}\label{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316a05e8171c3db0fb87c0a72e18183579aa}} 
+C\+A\+M\+E\+R\+A\+\_\+\+B\+A\+CK&The camera source is the rear camera. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAMERA\_FRONT@{CAMERA\_FRONT}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!CAMERA\_FRONT@{CAMERA\_FRONT}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316aafd47cdb463201684c3a9d73e810c568}\label{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316aafd47cdb463201684c3a9d73e810c568}} 
+C\+A\+M\+E\+R\+A\+\_\+\+F\+R\+O\+NT&The camera source is the front camera. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAMERA\_EXTRA@{CAMERA\_EXTRA}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!CAMERA\_EXTRA@{CAMERA\_EXTRA}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316aa2df2e6aae61dd4f7e68893698559448}\label{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316aa2df2e6aae61dd4f7e68893698559448}} 
+C\+A\+M\+E\+R\+A\+\_\+\+E\+X\+T\+RA&The camera source is the extra camera. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_a93a8e50f5a615c09c27e0ced76505cd5}\label{classagora_1_1rtc_1_1_i_camera_capturer_a93a8e50f5a615c09c27e0ced76505cd5}} 
+\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!CAMERA\_STATE@{CAMERA\_STATE}}
+\index{CAMERA\_STATE@{CAMERA\_STATE}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}
+\doxysubsubsection{\texorpdfstring{CAMERA\_STATE}{CAMERA\_STATE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_a93a8e50f5a615c09c27e0ced76505cd5}{agora\+::rtc\+::\+I\+Camera\+Capturer\+::\+C\+A\+M\+E\+R\+A\+\_\+\+S\+T\+A\+TE}}}
+
+The camera state. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAMERA\_STARTED@{CAMERA\_STARTED}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!CAMERA\_STARTED@{CAMERA\_STARTED}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_a93a8e50f5a615c09c27e0ced76505cd5ae9d3b6195f8893c6b3d7c654df486b60}\label{classagora_1_1rtc_1_1_i_camera_capturer_a93a8e50f5a615c09c27e0ced76505cd5ae9d3b6195f8893c6b3d7c654df486b60}} 
+C\+A\+M\+E\+R\+A\+\_\+\+S\+T\+A\+R\+T\+ED&The camera source is started. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAMERA\_STOPPED@{CAMERA\_STOPPED}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!CAMERA\_STOPPED@{CAMERA\_STOPPED}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_a93a8e50f5a615c09c27e0ced76505cd5ad0ca8224de6a41e141d1fb8898e4d81f}\label{classagora_1_1rtc_1_1_i_camera_capturer_a93a8e50f5a615c09c27e0ced76505cd5ad0ca8224de6a41e141d1fb8898e4d81f}} 
+C\+A\+M\+E\+R\+A\+\_\+\+S\+T\+O\+P\+P\+ED&The camera source is stopped. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_a07861c2ee224ba0f2e07fb1e0f3fc1ee}\label{classagora_1_1rtc_1_1_i_camera_capturer_a07861c2ee224ba0f2e07fb1e0f3fc1ee}} 
+\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!setDeviceOrientation@{setDeviceOrientation}}
+\index{setDeviceOrientation@{setDeviceOrientation}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}
+\doxysubsubsection{\texorpdfstring{setDeviceOrientation()}{setDeviceOrientation()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Camera\+Capturer\+::set\+Device\+Orientation (\begin{DoxyParamCaption}\item[{V\+I\+D\+E\+O\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON}]{orientation,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set the device orientation of the capture device 
+\begin{DoxyParams}{Parameters}
+{\em V\+I\+D\+E\+O\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON} & orientaion of the device 0(by default), 90, 180, 270 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_ae555a88c9acacd0cd6e2b4bc0fc1f780}\label{classagora_1_1rtc_1_1_i_camera_capturer_ae555a88c9acacd0cd6e2b4bc0fc1f780}} 
+\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!setCaptureFormat@{setCaptureFormat}}
+\index{setCaptureFormat@{setCaptureFormat}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}
+\doxysubsubsection{\texorpdfstring{setCaptureFormat()}{setCaptureFormat()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Camera\+Capturer\+::set\+Capture\+Format (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_format}{Video\+Format}} \&}]{capture\+\_\+format,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the format of the video captured by the camera.
+
+If you do not set the video capturing format, the S\+DK automatically chooses a proper format according to the video encoder configuration of the video track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capture\+\_\+format} & The reference to the video format\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_video_format}{Video\+Format}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_af1c257c904627391e828c043bc8fa26d}\label{classagora_1_1rtc_1_1_i_camera_capturer_af1c257c904627391e828c043bc8fa26d}} 
+\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!getCaptureFormat@{getCaptureFormat}}
+\index{getCaptureFormat@{getCaptureFormat}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}
+\doxysubsubsection{\texorpdfstring{getCaptureFormat()}{getCaptureFormat()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structagora_1_1rtc_1_1_video_format}{Video\+Format}} agora\+::rtc\+::\+I\+Camera\+Capturer\+::get\+Capture\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the format of the video captured by the camera. \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structagora_1_1rtc_1_1_video_format}{Video\+Format}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_a80bf58bbbb9d9c54e573646f3d307755}\label{classagora_1_1rtc_1_1_i_camera_capturer_a80bf58bbbb9d9c54e573646f3d307755}} 
+\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!registerCameraObserver@{registerCameraObserver}}
+\index{registerCameraObserver@{registerCameraObserver}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}
+\doxysubsubsection{\texorpdfstring{registerCameraObserver()}{registerCameraObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Camera\+Capturer\+::register\+Camera\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capture_observer}{I\+Camera\+Capture\+Observer}} $\ast$}]{observer,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Register a camera observer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & Instance of the capture observer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capturer_a3986b7fb3a867a726a9532561adcbbb0}\label{classagora_1_1rtc_1_1_i_camera_capturer_a3986b7fb3a867a726a9532561adcbbb0}} 
+\index{agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}!unregisterCameraObserver@{unregisterCameraObserver}}
+\index{unregisterCameraObserver@{unregisterCameraObserver}!agora::rtc::ICameraCapturer@{agora::rtc::ICameraCapturer}}
+\doxysubsubsection{\texorpdfstring{unregisterCameraObserver()}{unregisterCameraObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Camera\+Capturer\+::unregister\+Camera\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capture_observer}{I\+Camera\+Capture\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Unregisters the camera observer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & Instance of the capture observer. \\
+\hline
+\end{DoxyParams}

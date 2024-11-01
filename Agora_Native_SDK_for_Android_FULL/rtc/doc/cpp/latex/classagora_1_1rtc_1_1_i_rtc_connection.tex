@@ -1,0 +1,591 @@
+\hypertarget{classagora_1_1rtc_1_1_i_rtc_connection}{}\doxysection{agora\+::rtc\+::I\+Rtc\+Connection Class Reference}
+\label{classagora_1_1rtc_1_1_i_rtc_connection}\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Rtc\+Connection.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Rtc\+Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_rtc_connection}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a2872f80606fa399892ba60fe66014e13}{connect}} (const char $\ast$token, const char $\ast$channel\+Id, user\+\_\+id\+\_\+t user\+Id, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_afcc1fb6848da6c926d3348530f824efc}{connect}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connect_settings}{T\+Connect\+Settings}} \&settings, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a04ed01edbc8107fa0ba6d9ca891c62b0}{disconnect}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a3fa98edb2c0560223125bd1230f21722}{start\+Lastmile\+Probe\+Test}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_config}{Lastmile\+Probe\+Config}} \&config, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_aafd0531bdf281a2aaa90f7a0c507b59e}{stop\+Lastmile\+Probe\+Test}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a83dbfc421cd3ae4399260fef5679e13d}{renew\+Token}} (const char $\ast$token, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_ab91ff9124027bdc7a3ce6e77addf8da1}{get\+Connection\+Info}} ()=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user}{I\+Local\+User}} $\ast$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a1cf54986a330713047da51c1503ec86c}{get\+Local\+User}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_ae1b27f3868e38f5dc434ec572e31de4f}{get\+Remote\+Users}} (\mbox{\hyperlink{classagora_1_1util_1_1_a_list}{User\+List}} \&users)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_af2c7166f692f2285a0ba060aa6b16739}{get\+User\+Info}} (user\+\_\+id\+\_\+t user\+Id, \mbox{\hyperlink{structagora_1_1_user_info}{agora\+::\+User\+Info}} \&user\+Info)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a1826542f1addfde229cd05d5ff8e0741}{register\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer}{I\+Rtc\+Connection\+Observer}} $\ast$observer, void($\ast$safe\+Deleter)(\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer}{I\+Rtc\+Connection\+Observer}} $\ast$)=N\+U\+LL, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_af2d87e566c2cd918e12d777cdeae37ee}{unregister\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer}{I\+Rtc\+Connection\+Observer}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a29a7b27ff72684ddd3031f1e8f652059}{register\+Network\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_network_observer}{I\+Network\+Observer}} $\ast$observer, void($\ast$safe\+Deleter)(\mbox{\hyperlink{classagora_1_1rtc_1_1_i_network_observer}{I\+Network\+Observer}} $\ast$)=N\+U\+LL, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a562653dfda203cd768f89748c7af6022}{unregister\+Network\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_network_observer}{I\+Network\+Observer}} $\ast$observer)=0
+\item 
+virtual conn\+\_\+id\+\_\+t \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a4cc6181ddb6280c2f37239eef88bbd2f}{get\+Conn\+Id}} ()=0
+\item 
+virtual \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}} \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_aa87931e6de4996dc36d57369d6a8a153}{get\+Transport\+Stats}} ()=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_parameter}{agora\+::base\+::\+I\+Agora\+Parameter}} $\ast$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a44ce079c780ace4b8188d59ad68d96fb}{get\+Agora\+Parameter}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a53f87120cf152e9a80a64de9f0144ede}{create\+Data\+Stream}} (int $\ast$stream\+Id, bool reliable, bool ordered, bool sync)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a9877bed51ff1904d50929179035da6f4}{send\+Stream\+Message}} (int stream\+Id, const char $\ast$data, size\+\_\+t length, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_afb3d64d36a930d5aebda663de809fffd}{enable\+Encryption}} (bool enabled, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encryption_config}{Encryption\+Config}} \&config, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a5afc316a0085c9739bcf872224f971e8}{send\+Custom\+Report\+Message}} (const char $\ast$id, const char $\ast$category, const char $\ast$event, const char $\ast$label, int value, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_ab3d10eedee141e857313fdebdc95041d}{get\+User\+Info\+By\+User\+Account}} (const char $\ast$user\+Account, \mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{rtc\+::\+User\+Info}} $\ast$user\+Info)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a8f77c8e61a79ce40dda190c333dc8585}{get\+User\+Info\+By\+Uid}} (uid\+\_\+t uid, \mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{rtc\+::\+User\+Info}} $\ast$user\+Info)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{I\+Rtc\+Connection}}} class.
+
+You can use this class for managing the connection between your app and an Agora Channel.
+
+Once connected, your app gets an {\ttfamily Agora\+Local\+User} object for publishing and subscribing to media streams in the Agora Channel.
+
+Connecting to a channel is done asynchronously, and your app can listen for the connection states or events through {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer}{I\+Rtc\+Connection\+Observer}}}. {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{I\+Rtc\+Connection}}} also monitors remote users in the channel. The S\+DK notifies your app when a remote user joins or leaves the channel. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a2872f80606fa399892ba60fe66014e13}\label{classagora_1_1rtc_1_1_i_rtc_connection_a2872f80606fa399892ba60fe66014e13}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!connect@{connect}}
+\index{connect@{connect}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::connect (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token,  }\item[{const char $\ast$}]{channel\+Id,  }\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Connects to an Agora channel.
+
+When the method call succeeds, the connection state changes from {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D(1)} to {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+N\+G(2)}.
+
+Depending on the whether the connection succeeds or not, the connection state changes to either {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D(3)} or {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+A\+I\+L\+E\+D(5)}. The S\+DK also triggers {\ttfamily on\+Connected} or {\ttfamily on\+Disconnected} to notify you of the state change.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The app ID. \\
+\hline
+{\em channel\+Id} & The channel name. It must be in the string format and not exceed 64 bytes in length. Supported character scopes are\+:
+\begin{DoxyItemize}
+\item All lowercase English letters\+: a to z.
+\item All uppercase English letters\+: A to Z.
+\item All numeric characters\+: 0 to 9.
+\item The space character.
+\item Punctuation characters and other symbols, including\+: \char`\"{}!\char`\"{}, \char`\"{}\#\char`\"{}, \char`\"{}\$\char`\"{}, \char`\"{}\%\char`\"{}, \char`\"{}\&\char`\"{}, \char`\"{}(\char`\"{}, \char`\"{})\char`\"{}, \char`\"{}+\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}\+:\char`\"{}, \char`\"{};\char`\"{}, \char`\"{}$<$\char`\"{}, \char`\"{}=\char`\"{}, \char`\"{}.\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}?\char`\"{}, \char`\"{}@\char`\"{}, \char`\"{}\mbox{[}\char`\"{}, \char`\"{}\mbox{]}\char`\"{}, \char`\"{}$^\wedge$\char`\"{}, \char`\"{}\+\_\+\char`\"{}, \char`\"{} \{\char`\"{}, \char`\"{}\}\char`\"{}, \char`\"{}$\vert$\char`\"{}, \char`\"{}$\sim$\char`\"{}, \char`\"{},\char`\"{} 
+\end{DoxyItemize}\\
+\hline
+{\em user\+Id} & The ID of the local user. If you do not specify a user ID or set {\ttfamily user\+Id} as {\ttfamily null}, the S\+DK returns a user ID in the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a1df408778b1886055df47cd7d0ff8e5c}{on\+Connected}} callback. Your app must record and maintain the {\ttfamily user\+Id} since the S\+DK does not do so. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item -\/2(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT)\+: The argument that you pass is invalid.
+\item -\/8(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE)\+: The current connection state is not C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D(1). 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_afcc1fb6848da6c926d3348530f824efc}\label{classagora_1_1rtc_1_1_i_rtc_connection_afcc1fb6848da6c926d3348530f824efc}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!connect@{connect}}
+\index{connect@{connect}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::connect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connect_settings}{T\+Connect\+Settings}} \&}]{settings,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Connects to an Agora channel.
+
+When the method call succeeds, the connection state changes from {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D(1)} to {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+N\+G(2)}.
+
+Depending on the whether the connection succeeds or not, the connection state changes to either {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D(3)} or {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+A\+I\+L\+E\+D(5)}. The S\+DK also triggers {\ttfamily on\+Connected} or {\ttfamily on\+Disconnected} to notify you of the state change. 
+\begin{DoxyParams}{Parameters}
+{\em settings} & The settings of connecting. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a04ed01edbc8107fa0ba6d9ca891c62b0}\label{classagora_1_1rtc_1_1_i_rtc_connection_a04ed01edbc8107fa0ba6d9ca891c62b0}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::disconnect (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Disconnects from the Agora channel.
+
+Once your app successful disconnects from the channel, the connection state changes to {\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D(1)}. You are also notified with the callback \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae62590c268ad2904583dc9c62c337056}{on\+Disconnected}}.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a3fa98edb2c0560223125bd1230f21722}\label{classagora_1_1rtc_1_1_i_rtc_connection_a3fa98edb2c0560223125bd1230f21722}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!startLastmileProbeTest@{startLastmileProbeTest}}
+\index{startLastmileProbeTest@{startLastmileProbeTest}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{startLastmileProbeTest()}{startLastmileProbeTest()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::start\+Lastmile\+Probe\+Test (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_config}{Lastmile\+Probe\+Config}} \&}]{config,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Starts the last-\/mile network probe test.
+
+Call this method before connecting to the channel to get the uplink and downlink last-\/mile network statistics, including the bandwidth, packet loss, jitter, and round-\/trip time (R\+TT).
+
+After you enable the last-\/mile network probe test, the S\+DK triggers the following callbacks\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a255ffd92a1b67201f04d018e163118fc}{on\+Lastmile\+Quality}}\+: The S\+DK triggers this callback within two seconds depending on the network conditions. This callback rates the network conditions and is more closely linked to the user experience.
+\item \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a91037dcd860c1000e31a3d0eecb1889a}{on\+Lastmile\+Probe\+Result}}\+: The S\+DK triggers this callback within 30 seconds depending on the network conditions. This callback reports the real-\/time statistics of the network conditions and is more objective.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item Do not call any other method before receiving the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a255ffd92a1b67201f04d018e163118fc}{on\+Lastmile\+Quality}} and \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a91037dcd860c1000e31a3d0eecb1889a}{on\+Lastmile\+Probe\+Result}} callbacks. Otherwise, the callbacks may be interrupted.
+\item In the live-\/broadcast profile, a host should not call this method after connecting to a channel.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em config} & The configurations of the last-\/mile network probe test. See \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_config}{Lastmile\+Probe\+Config}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_aafd0531bdf281a2aaa90f7a0c507b59e}\label{classagora_1_1rtc_1_1_i_rtc_connection_aafd0531bdf281a2aaa90f7a0c507b59e}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!stopLastmileProbeTest@{stopLastmileProbeTest}}
+\index{stopLastmileProbeTest@{stopLastmileProbeTest}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{stopLastmileProbeTest()}{stopLastmileProbeTest()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::stop\+Lastmile\+Probe\+Test (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops the last-\/mile network probe test. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a83dbfc421cd3ae4399260fef5679e13d}\label{classagora_1_1rtc_1_1_i_rtc_connection_a83dbfc421cd3ae4399260fef5679e13d}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!renewToken@{renewToken}}
+\index{renewToken@{renewToken}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{renewToken()}{renewToken()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::renew\+Token (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Renews the token.
+
+The token expires after a certain period of time. When the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a4d98ce7536aa49f929c4763fe9525c06}{on\+Error}} callback reports {\ttfamily E\+R\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+E\+D(109)}, you must generate a new token from the server and then call this method to renew it. Otherwise, the S\+DK disconnects from the Agora channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The pointer to the new token. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_ab91ff9124027bdc7a3ce6e77addf8da1}\label{classagora_1_1rtc_1_1_i_rtc_connection_ab91ff9124027bdc7a3ce6e77addf8da1}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!getConnectionInfo@{getConnectionInfo}}
+\index{getConnectionInfo@{getConnectionInfo}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{getConnectionInfo()}{getConnectionInfo()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} agora\+::rtc\+::\+I\+Rtc\+Connection\+::get\+Connection\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the connection information.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to the \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info}{T\+Connection\+Info}} object\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a1cf54986a330713047da51c1503ec86c}\label{classagora_1_1rtc_1_1_i_rtc_connection_a1cf54986a330713047da51c1503ec86c}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!getLocalUser@{getLocalUser}}
+\index{getLocalUser@{getLocalUser}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{getLocalUser()}{getLocalUser()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user}{I\+Local\+User}}$\ast$ agora\+::rtc\+::\+I\+Rtc\+Connection\+::get\+Local\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user}{I\+Local\+User}} object.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user}{I\+Local\+User}} object\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_ae1b27f3868e38f5dc434ec572e31de4f}\label{classagora_1_1rtc_1_1_i_rtc_connection_ae1b27f3868e38f5dc434ec572e31de4f}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!getRemoteUsers@{getRemoteUsers}}
+\index{getRemoteUsers@{getRemoteUsers}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{getRemoteUsers()}{getRemoteUsers()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::get\+Remote\+Users (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1util_1_1_a_list}{User\+List}} \&}]{users }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the information of all the remote users in the channel.
+
+After a user successfully connects to the channel, you can also get the information of this remote user with the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_ae5daa5e5f14febe188bc79f29cd3697a}{on\+User\+Joined}} callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em users} & The reference to the User\+List object, which contains the information of all users in the channel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_af2c7166f692f2285a0ba060aa6b16739}\label{classagora_1_1rtc_1_1_i_rtc_connection_af2c7166f692f2285a0ba060aa6b16739}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!getUserInfo@{getUserInfo}}
+\index{getUserInfo@{getUserInfo}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{getUserInfo()}{getUserInfo()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::get\+User\+Info (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{\mbox{\hyperlink{structagora_1_1_user_info}{agora\+::\+User\+Info}} \&}]{user\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the information of a specified remote user in the channel.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em user\+Id} & ID of the user whose information you want to get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em user\+Info} & The reference to the \mbox{\hyperlink{structagora_1_1_user_info}{User\+Info}} object, which contains the information of the specified user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a1826542f1addfde229cd05d5ff8e0741}\label{classagora_1_1rtc_1_1_i_rtc_connection_a1826542f1addfde229cd05d5ff8e0741}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!registerObserver@{registerObserver}}
+\index{registerObserver@{registerObserver}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{registerObserver()}{registerObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::register\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer}{I\+Rtc\+Connection\+Observer}} $\ast$}]{observer,  }\item[{void($\ast$)(\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer}{I\+Rtc\+Connection\+Observer}} $\ast$)}]{safe\+Deleter = {\ttfamily NULL},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an R\+TC connection observer. You can call this method only after creating an {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection}{I\+Rtc\+Connection}}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer}{I\+Rtc\+Connection\+Observer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_af2d87e566c2cd918e12d777cdeae37ee}\label{classagora_1_1rtc_1_1_i_rtc_connection_af2d87e566c2cd918e12d777cdeae37ee}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!unregisterObserver@{unregisterObserver}}
+\index{unregisterObserver@{unregisterObserver}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{unregisterObserver()}{unregisterObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::unregister\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer}{I\+Rtc\+Connection\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the registered \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer}{I\+Rtc\+Connection\+Observer}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer}{I\+Rtc\+Connection\+Observer}} object created by the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a1826542f1addfde229cd05d5ff8e0741}{register\+Observer}} method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a29a7b27ff72684ddd3031f1e8f652059}\label{classagora_1_1rtc_1_1_i_rtc_connection_a29a7b27ff72684ddd3031f1e8f652059}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!registerNetworkObserver@{registerNetworkObserver}}
+\index{registerNetworkObserver@{registerNetworkObserver}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{registerNetworkObserver()}{registerNetworkObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::register\+Network\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_network_observer}{I\+Network\+Observer}} $\ast$}]{observer,  }\item[{void($\ast$)(\mbox{\hyperlink{classagora_1_1rtc_1_1_i_network_observer}{I\+Network\+Observer}} $\ast$)}]{safe\+Deleter = {\ttfamily NULL},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an network observer object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_network_observer}{I\+Network\+Observer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a562653dfda203cd768f89748c7af6022}\label{classagora_1_1rtc_1_1_i_rtc_connection_a562653dfda203cd768f89748c7af6022}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!unregisterNetworkObserver@{unregisterNetworkObserver}}
+\index{unregisterNetworkObserver@{unregisterNetworkObserver}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{unregisterNetworkObserver()}{unregisterNetworkObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::unregister\+Network\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_network_observer}{I\+Network\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the registered \mbox{\hyperlink{classagora_1_1rtc_1_1_i_network_observer}{I\+Network\+Observer}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_network_observer}{I\+Network\+Observer}} object created by the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a29a7b27ff72684ddd3031f1e8f652059}{register\+Network\+Observer}} method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a4cc6181ddb6280c2f37239eef88bbd2f}\label{classagora_1_1rtc_1_1_i_rtc_connection_a4cc6181ddb6280c2f37239eef88bbd2f}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!getConnId@{getConnId}}
+\index{getConnId@{getConnId}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{getConnId()}{getConnId()}}
+{\footnotesize\ttfamily virtual conn\+\_\+id\+\_\+t agora\+::rtc\+::\+I\+Rtc\+Connection\+::get\+Conn\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the ID of the connection.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The connection ID\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_aa87931e6de4996dc36d57369d6a8a153}\label{classagora_1_1rtc_1_1_i_rtc_connection_aa87931e6de4996dc36d57369d6a8a153}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!getTransportStats@{getTransportStats}}
+\index{getTransportStats@{getTransportStats}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{getTransportStats()}{getTransportStats()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}} agora\+::rtc\+::\+I\+Rtc\+Connection\+::get\+Transport\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the transportation statistics of the R\+TC connection.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a44ce079c780ace4b8188d59ad68d96fb}\label{classagora_1_1rtc_1_1_i_rtc_connection_a44ce079c780ace4b8188d59ad68d96fb}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!getAgoraParameter@{getAgoraParameter}}
+\index{getAgoraParameter@{getAgoraParameter}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{getAgoraParameter()}{getAgoraParameter()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_parameter}{agora\+::base\+::\+I\+Agora\+Parameter}}$\ast$ agora\+::rtc\+::\+I\+Rtc\+Connection\+::get\+Agora\+Parameter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the I\+Agora\+Parameter object.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to the \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_parameter}{I\+Agora\+Parameter}} object.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a53f87120cf152e9a80a64de9f0144ede}\label{classagora_1_1rtc_1_1_i_rtc_connection_a53f87120cf152e9a80a64de9f0144ede}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!createDataStream@{createDataStream}}
+\index{createDataStream@{createDataStream}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{createDataStream()}{createDataStream()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::create\+Data\+Stream (\begin{DoxyParamCaption}\item[{int $\ast$}]{stream\+Id,  }\item[{bool}]{reliable,  }\item[{bool}]{ordered,  }\item[{bool}]{sync }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a data stream.
+
+Each user can create up to five data streams during the lifecycle of an R\+TC connection.
+
+\begin{DoxyNote}{Note}
+Set both the {\ttfamily reliable} and {\ttfamily ordered} parameters as {\ttfamily true} or {\ttfamily false}. Do not set one as {\ttfamily true} and the other as {\ttfamily false}.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em stream\+Id} & The pointer to the ID of the data stream. \\
+\hline
+{\em reliable} & Whether to guarantee the receivers receive the data stream within five seconds\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Guarantee that the receivers receive the data stream within five seconds. If the receivers do not receive the data stream within five seconds, the S\+DK reports an error to the application.
+\item {\ttfamily false}\+: Do not guarantee that the receivers receive the data stream within five seconds and the S\+DK does not report any error message for data stream delay or missing. 
+\end{DoxyItemize}\\
+\hline
+{\em ordered} & Whether the receivers receive the data stream in the order of sending\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: The receivers receive the data stream in the order of sending.
+\item {\ttfamily false}\+: The receivers do not receive the data stream in the order of sending.
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a9877bed51ff1904d50929179035da6f4}\label{classagora_1_1rtc_1_1_i_rtc_connection_a9877bed51ff1904d50929179035da6f4}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!sendStreamMessage@{sendStreamMessage}}
+\index{sendStreamMessage@{sendStreamMessage}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{sendStreamMessage()}{sendStreamMessage()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::send\+Stream\+Message (\begin{DoxyParamCaption}\item[{int}]{stream\+Id,  }\item[{const char $\ast$}]{data,  }\item[{size\+\_\+t}]{length,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends data stream messages to all users in a channel.
+
+\begin{DoxyNote}{Note}
+This method has the following restrictions\+:
+\begin{DoxyItemize}
+\item Up to 30 packets can be sent per second in a channel with a maximum size of 1 kB for each packet.
+\item Each client can send up to 6 kB of data per second.
+\item Each user can have up to five data streams simultaneously.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em stream\+Id} & The ID of the sent data stream, returned in the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a53f87120cf152e9a80a64de9f0144ede}{create\+Data\+Stream}} method. \\
+\hline
+{\em data} & The pointer to the sent data. \\
+\hline
+{\em length} & The length of the sent data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_afb3d64d36a930d5aebda663de809fffd}\label{classagora_1_1rtc_1_1_i_rtc_connection_afb3d64d36a930d5aebda663de809fffd}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!enableEncryption@{enableEncryption}}
+\index{enableEncryption@{enableEncryption}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{enableEncryption()}{enableEncryption()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::enable\+Encryption (\begin{DoxyParamCaption}\item[{bool}]{enabled,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_encryption_config}{Encryption\+Config}} \&}]{config,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enables/\+Disables the built-\/in encryption.
+
+In scenarios requiring high security, Agora recommends calling this method to enable the built-\/in encryption before joining a channel.
+
+All users in the same channel must use the same encryption mode and encryption key. Once all users leave the channel, the encryption key of this channel is automatically cleared.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item If you enable the built-\/in encryption, you cannot use the R\+T\+MP streaming function.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Whether to enable the built-\/in encryption\+:
+\begin{DoxyItemize}
+\item true\+: Enable the built-\/in encryption.
+\item false\+: Disable the built-\/in encryption. 
+\end{DoxyItemize}\\
+\hline
+{\em config} & Configurations of built-\/in encryption schemas. See \mbox{\hyperlink{structagora_1_1rtc_1_1_encryption_config}{Encryption\+Config}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a5afc316a0085c9739bcf872224f971e8}\label{classagora_1_1rtc_1_1_i_rtc_connection_a5afc316a0085c9739bcf872224f971e8}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!sendCustomReportMessage@{sendCustomReportMessage}}
+\index{sendCustomReportMessage@{sendCustomReportMessage}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{sendCustomReportMessage()}{sendCustomReportMessage()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::send\+Custom\+Report\+Message (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id,  }\item[{const char $\ast$}]{category,  }\item[{const char $\ast$}]{event,  }\item[{const char $\ast$}]{label,  }\item[{int}]{value,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reports a custom event to Agora.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The custom event ID. \\
+\hline
+{\em category} & The category of the custom event. \\
+\hline
+{\em event} & The custom event to report. \\
+\hline
+{\em label} & The label of the custom event. \\
+\hline
+{\em value} & The value of the custom event.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_ab3d10eedee141e857313fdebdc95041d}\label{classagora_1_1rtc_1_1_i_rtc_connection_ab3d10eedee141e857313fdebdc95041d}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!getUserInfoByUserAccount@{getUserInfoByUserAccount}}
+\index{getUserInfoByUserAccount@{getUserInfoByUserAccount}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{getUserInfoByUserAccount()}{getUserInfoByUserAccount()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::get\+User\+Info\+By\+User\+Account (\begin{DoxyParamCaption}\item[{const char $\ast$}]{user\+Account,  }\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{rtc\+::\+User\+Info}} $\ast$}]{user\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the user information by user account, which is in string format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em user\+Account} & The user account of the user. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em user\+Info} & A \mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{User\+Info}} object that identifies the user\+:
+\begin{DoxyItemize}
+\item Input\+: A user\+Info object.
+\item Output\+: A user\+Info object that contains the user account and user ID of the user.
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_connection_a8f77c8e61a79ce40dda190c333dc8585}\label{classagora_1_1rtc_1_1_i_rtc_connection_a8f77c8e61a79ce40dda190c333dc8585}} 
+\index{agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}!getUserInfoByUid@{getUserInfoByUid}}
+\index{getUserInfoByUid@{getUserInfoByUid}!agora::rtc::IRtcConnection@{agora::rtc::IRtcConnection}}
+\doxysubsubsection{\texorpdfstring{getUserInfoByUid()}{getUserInfoByUid()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Connection\+::get\+User\+Info\+By\+Uid (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{rtc\+::\+User\+Info}} $\ast$}]{user\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the user information by user ID, which is in integer format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em uid} & The ID of the remote user. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em user\+Info} & A \mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{User\+Info}} object that identifies the user\+:
+\begin{DoxyItemize}
+\item Input\+: A user\+Info object.
+\item Output\+: A user\+Info object that contains the user account and user ID of the user.
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

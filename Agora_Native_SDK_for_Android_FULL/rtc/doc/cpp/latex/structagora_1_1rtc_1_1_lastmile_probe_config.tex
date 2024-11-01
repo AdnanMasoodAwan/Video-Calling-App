@@ -1,0 +1,56 @@
+\hypertarget{structagora_1_1rtc_1_1_lastmile_probe_config}{}\doxysection{agora\+::rtc\+::Lastmile\+Probe\+Config Struct Reference}
+\label{structagora_1_1rtc_1_1_lastmile_probe_config}\index{agora::rtc::LastmileProbeConfig@{agora::rtc::LastmileProbeConfig}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_config_a1e2faafc2b91e2f46a01afb2764dfc55}{probe\+Uplink}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_config_a6df33d21a54db8d1156a2ba1bd140453}{probe\+Downlink}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_config_aae246e9868e72e6fb199f54ad6976e83}{expected\+Uplink\+Bitrate}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_config_add80e15b69184a83f7301560443dca71}{expected\+Downlink\+Bitrate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configurations of the last-\/mile network test. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_lastmile_probe_config_a1e2faafc2b91e2f46a01afb2764dfc55}\label{structagora_1_1rtc_1_1_lastmile_probe_config_a1e2faafc2b91e2f46a01afb2764dfc55}} 
+\index{agora::rtc::LastmileProbeConfig@{agora::rtc::LastmileProbeConfig}!probeUplink@{probeUplink}}
+\index{probeUplink@{probeUplink}!agora::rtc::LastmileProbeConfig@{agora::rtc::LastmileProbeConfig}}
+\doxysubsubsection{\texorpdfstring{probeUplink}{probeUplink}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Lastmile\+Probe\+Config\+::probe\+Uplink}
+
+Determines whether to test the uplink network. Some users, for example, the audience in a live broadcast channel, do not need such a test\+:
+\begin{DoxyItemize}
+\item true\+: Test.
+\item false\+: Do not test. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_lastmile_probe_config_a6df33d21a54db8d1156a2ba1bd140453}\label{structagora_1_1rtc_1_1_lastmile_probe_config_a6df33d21a54db8d1156a2ba1bd140453}} 
+\index{agora::rtc::LastmileProbeConfig@{agora::rtc::LastmileProbeConfig}!probeDownlink@{probeDownlink}}
+\index{probeDownlink@{probeDownlink}!agora::rtc::LastmileProbeConfig@{agora::rtc::LastmileProbeConfig}}
+\doxysubsubsection{\texorpdfstring{probeDownlink}{probeDownlink}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Lastmile\+Probe\+Config\+::probe\+Downlink}
+
+Determines whether to test the downlink network\+:
+\begin{DoxyItemize}
+\item true\+: Test.
+\item false\+: Do not test. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_lastmile_probe_config_aae246e9868e72e6fb199f54ad6976e83}\label{structagora_1_1rtc_1_1_lastmile_probe_config_aae246e9868e72e6fb199f54ad6976e83}} 
+\index{agora::rtc::LastmileProbeConfig@{agora::rtc::LastmileProbeConfig}!expectedUplinkBitrate@{expectedUplinkBitrate}}
+\index{expectedUplinkBitrate@{expectedUplinkBitrate}!agora::rtc::LastmileProbeConfig@{agora::rtc::LastmileProbeConfig}}
+\doxysubsubsection{\texorpdfstring{expectedUplinkBitrate}{expectedUplinkBitrate}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+Lastmile\+Probe\+Config\+::expected\+Uplink\+Bitrate}
+
+The expected maximum sending bitrate (bps) of the local user. The value range is \mbox{[}100000, 5000000\mbox{]}. We recommend setting this parameter according to the bitrate value set by {\ttfamily set\+Video\+Encoder\+Configuration}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_lastmile_probe_config_add80e15b69184a83f7301560443dca71}\label{structagora_1_1rtc_1_1_lastmile_probe_config_add80e15b69184a83f7301560443dca71}} 
+\index{agora::rtc::LastmileProbeConfig@{agora::rtc::LastmileProbeConfig}!expectedDownlinkBitrate@{expectedDownlinkBitrate}}
+\index{expectedDownlinkBitrate@{expectedDownlinkBitrate}!agora::rtc::LastmileProbeConfig@{agora::rtc::LastmileProbeConfig}}
+\doxysubsubsection{\texorpdfstring{expectedDownlinkBitrate}{expectedDownlinkBitrate}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+Lastmile\+Probe\+Config\+::expected\+Downlink\+Bitrate}
+
+The expected maximum receiving bitrate (bps) of the local user. The value range is \mbox{[}100000,5000000\mbox{]}. 

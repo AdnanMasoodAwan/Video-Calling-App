@@ -1,0 +1,106 @@
+\hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats}{}\doxysection{agora\+::rtc\+::I\+Local\+Audio\+Track\+::Local\+Audio\+Track\+Stats Struct Reference}
+\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats}\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Audio\+Track.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a7c77ac68db0f232440a9a9b3121fb479}{source\+\_\+id}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a546174a829a99b6128a0ff90c29b2fb3}{buffered\+\_\+pcm\+\_\+data\+\_\+list\+\_\+size}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a24864796d083bb3c05b11c89930c7b7c}{missed\+\_\+audio\+\_\+frames}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a1b886e3e91d02c0c956678c9e2ede1ec}{sent\+\_\+audio\+\_\+frames}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_acf208f36fa7c7bc1f29160b88ab00794}{pushed\+\_\+audio\+\_\+frames}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a7729be9e0e5cff9bd6d2422b0b46a423}{dropped\+\_\+audio\+\_\+frames}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a64d3681d7ae58c251100f433019a0a95}{playout\+\_\+audio\+\_\+frames}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_ada2d156938823b90140b097466618edb}{effect\+\_\+type}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a1f0e88de0f4c0e3286bdb9757893ef60}{hw\+\_\+ear\+\_\+monitor}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_ab3703e20558b5111553862a9301c07ff}{enabled}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a1b724993353768979e8465fe7d54efe7}{audio\+\_\+volume}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Statistics of a local audio track. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a7c77ac68db0f232440a9a9b3121fb479}\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a7c77ac68db0f232440a9a9b3121fb479}} 
+\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}!source\_id@{source\_id}}
+\index{source\_id@{source\_id}!agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+\doxysubsubsection{\texorpdfstring{source\_id}{source\_id}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Local\+Audio\+Track\+Stats\+::source\+\_\+id}
+
+The source ID of the local audio track. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a546174a829a99b6128a0ff90c29b2fb3}\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a546174a829a99b6128a0ff90c29b2fb3}} 
+\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}!buffered\_pcm\_data\_list\_size@{buffered\_pcm\_data\_list\_size}}
+\index{buffered\_pcm\_data\_list\_size@{buffered\_pcm\_data\_list\_size}!agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+\doxysubsubsection{\texorpdfstring{buffered\_pcm\_data\_list\_size}{buffered\_pcm\_data\_list\_size}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Local\+Audio\+Track\+Stats\+::buffered\+\_\+pcm\+\_\+data\+\_\+list\+\_\+size}
+
+The number of audio frames in the buffer.
+
+When sending P\+CM data, the P\+CM data is first stored in a buffer area. Then a thread gets audio frames from the buffer and sends P\+CM data. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a24864796d083bb3c05b11c89930c7b7c}\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a24864796d083bb3c05b11c89930c7b7c}} 
+\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}!missed\_audio\_frames@{missed\_audio\_frames}}
+\index{missed\_audio\_frames@{missed\_audio\_frames}!agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+\doxysubsubsection{\texorpdfstring{missed\_audio\_frames}{missed\_audio\_frames}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Local\+Audio\+Track\+Stats\+::missed\+\_\+audio\+\_\+frames}
+
+The number of audio frames missed by the thread that gets P\+CM data from the buffer. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a1b886e3e91d02c0c956678c9e2ede1ec}\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a1b886e3e91d02c0c956678c9e2ede1ec}} 
+\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}!sent\_audio\_frames@{sent\_audio\_frames}}
+\index{sent\_audio\_frames@{sent\_audio\_frames}!agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+\doxysubsubsection{\texorpdfstring{sent\_audio\_frames}{sent\_audio\_frames}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Local\+Audio\+Track\+Stats\+::sent\+\_\+audio\+\_\+frames}
+
+The number of audio frames sent by the thread that gets P\+CM data from the buffer. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_acf208f36fa7c7bc1f29160b88ab00794}\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_acf208f36fa7c7bc1f29160b88ab00794}} 
+\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}!pushed\_audio\_frames@{pushed\_audio\_frames}}
+\index{pushed\_audio\_frames@{pushed\_audio\_frames}!agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+\doxysubsubsection{\texorpdfstring{pushed\_audio\_frames}{pushed\_audio\_frames}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Local\+Audio\+Track\+Stats\+::pushed\+\_\+audio\+\_\+frames}
+
+The number of audio frames sent by the user. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a7729be9e0e5cff9bd6d2422b0b46a423}\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a7729be9e0e5cff9bd6d2422b0b46a423}} 
+\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}!dropped\_audio\_frames@{dropped\_audio\_frames}}
+\index{dropped\_audio\_frames@{dropped\_audio\_frames}!agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+\doxysubsubsection{\texorpdfstring{dropped\_audio\_frames}{dropped\_audio\_frames}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Local\+Audio\+Track\+Stats\+::dropped\+\_\+audio\+\_\+frames}
+
+The number of dropped audio frames caused by insufficient buffer size. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a64d3681d7ae58c251100f433019a0a95}\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a64d3681d7ae58c251100f433019a0a95}} 
+\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}!playout\_audio\_frames@{playout\_audio\_frames}}
+\index{playout\_audio\_frames@{playout\_audio\_frames}!agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+\doxysubsubsection{\texorpdfstring{playout\_audio\_frames}{playout\_audio\_frames}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Local\+Audio\+Track\+Stats\+::playout\+\_\+audio\+\_\+frames}
+
+The number of playout audio frames. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_ada2d156938823b90140b097466618edb}\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_ada2d156938823b90140b097466618edb}} 
+\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}!effect\_type@{effect\_type}}
+\index{effect\_type@{effect\_type}!agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+\doxysubsubsection{\texorpdfstring{effect\_type}{effect\_type}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Local\+Audio\+Track\+Stats\+::effect\+\_\+type}
+
+The type of audio effect. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a1f0e88de0f4c0e3286bdb9757893ef60}\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a1f0e88de0f4c0e3286bdb9757893ef60}} 
+\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}!hw\_ear\_monitor@{hw\_ear\_monitor}}
+\index{hw\_ear\_monitor@{hw\_ear\_monitor}!agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+\doxysubsubsection{\texorpdfstring{hw\_ear\_monitor}{hw\_ear\_monitor}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Local\+Audio\+Track\+Stats\+::hw\+\_\+ear\+\_\+monitor}
+
+Whether the hardware ear monitor is enabled. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_ab3703e20558b5111553862a9301c07ff}\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_ab3703e20558b5111553862a9301c07ff}} 
+\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}!enabled@{enabled}}
+\index{enabled@{enabled}!agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+\doxysubsubsection{\texorpdfstring{enabled}{enabled}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Local\+Audio\+Track\+Stats\+::enabled}
+
+Whether the local audio track is enabled. \mbox{\Hypertarget{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a1b724993353768979e8465fe7d54efe7}\label{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats_a1b724993353768979e8465fe7d54efe7}} 
+\index{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}!audio\_volume@{audio\_volume}}
+\index{audio\_volume@{audio\_volume}!agora::rtc::ILocalAudioTrack::LocalAudioTrackStats@{agora::rtc::ILocalAudioTrack::LocalAudioTrackStats}}
+\doxysubsubsection{\texorpdfstring{audio\_volume}{audio\_volume}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Local\+Audio\+Track\+Stats\+::audio\+\_\+volume}
+
+The volume that ranges from 0 to 255. 

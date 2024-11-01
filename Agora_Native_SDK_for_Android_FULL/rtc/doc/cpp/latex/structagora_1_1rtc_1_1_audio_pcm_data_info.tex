@@ -1,0 +1,57 @@
+\hypertarget{structagora_1_1rtc_1_1_audio_pcm_data_info}{}\doxysection{agora\+::rtc\+::Audio\+Pcm\+Data\+Info Struct Reference}
+\label{structagora_1_1rtc_1_1_audio_pcm_data_info}\index{agora::rtc::AudioPcmDataInfo@{agora::rtc::AudioPcmDataInfo}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_pcm_data_info_a58563de3f538ea4838390d7c5f637ae1}\label{structagora_1_1rtc_1_1_audio_pcm_data_info_a58563de3f538ea4838390d7c5f637ae1}} 
+{\bfseries Audio\+Pcm\+Data\+Info} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_pcm_data_info}{Audio\+Pcm\+Data\+Info}} \&rhs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_pcm_data_info_a51c2e6eb4bc847d3b44e6a99b9542d30}{samples\+Per\+Channel}}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_pcm_data_info_a21ad68f5a8a50caeb754f872fbba0e1c}\label{structagora_1_1rtc_1_1_audio_pcm_data_info_a21ad68f5a8a50caeb754f872fbba0e1c}} 
+int16\+\_\+t {\bfseries channel\+Num}
+\item 
+size\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_pcm_data_info_a544d50a6566aefb4fd5157f6642bf5a7}{samples\+Out}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_pcm_data_info_a52cb072bd4a6003bbb7776ef9bf9f626}{elapsed\+Time\+Ms}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_pcm_data_info_ab9e76abcb191e494f17d7b903a828598}{ntp\+Time\+Ms}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of the \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_pcm_data_info}{Audio\+Pcm\+Data\+Info}} struct. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_pcm_data_info_a51c2e6eb4bc847d3b44e6a99b9542d30}\label{structagora_1_1rtc_1_1_audio_pcm_data_info_a51c2e6eb4bc847d3b44e6a99b9542d30}} 
+\index{agora::rtc::AudioPcmDataInfo@{agora::rtc::AudioPcmDataInfo}!samplesPerChannel@{samplesPerChannel}}
+\index{samplesPerChannel@{samplesPerChannel}!agora::rtc::AudioPcmDataInfo@{agora::rtc::AudioPcmDataInfo}}
+\doxysubsubsection{\texorpdfstring{samplesPerChannel}{samplesPerChannel}}
+{\footnotesize\ttfamily size\+\_\+t agora\+::rtc\+::\+Audio\+Pcm\+Data\+Info\+::samples\+Per\+Channel}
+
+The sample count of the P\+CM data that you expect. \mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_pcm_data_info_a544d50a6566aefb4fd5157f6642bf5a7}\label{structagora_1_1rtc_1_1_audio_pcm_data_info_a544d50a6566aefb4fd5157f6642bf5a7}} 
+\index{agora::rtc::AudioPcmDataInfo@{agora::rtc::AudioPcmDataInfo}!samplesOut@{samplesOut}}
+\index{samplesOut@{samplesOut}!agora::rtc::AudioPcmDataInfo@{agora::rtc::AudioPcmDataInfo}}
+\doxysubsubsection{\texorpdfstring{samplesOut}{samplesOut}}
+{\footnotesize\ttfamily size\+\_\+t agora\+::rtc\+::\+Audio\+Pcm\+Data\+Info\+::samples\+Out}
+
+The number of output samples. \mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_pcm_data_info_a52cb072bd4a6003bbb7776ef9bf9f626}\label{structagora_1_1rtc_1_1_audio_pcm_data_info_a52cb072bd4a6003bbb7776ef9bf9f626}} 
+\index{agora::rtc::AudioPcmDataInfo@{agora::rtc::AudioPcmDataInfo}!elapsedTimeMs@{elapsedTimeMs}}
+\index{elapsedTimeMs@{elapsedTimeMs}!agora::rtc::AudioPcmDataInfo@{agora::rtc::AudioPcmDataInfo}}
+\doxysubsubsection{\texorpdfstring{elapsedTimeMs}{elapsedTimeMs}}
+{\footnotesize\ttfamily int64\+\_\+t agora\+::rtc\+::\+Audio\+Pcm\+Data\+Info\+::elapsed\+Time\+Ms}
+
+The rendering time (ms). \mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_pcm_data_info_ab9e76abcb191e494f17d7b903a828598}\label{structagora_1_1rtc_1_1_audio_pcm_data_info_ab9e76abcb191e494f17d7b903a828598}} 
+\index{agora::rtc::AudioPcmDataInfo@{agora::rtc::AudioPcmDataInfo}!ntpTimeMs@{ntpTimeMs}}
+\index{ntpTimeMs@{ntpTimeMs}!agora::rtc::AudioPcmDataInfo@{agora::rtc::AudioPcmDataInfo}}
+\doxysubsubsection{\texorpdfstring{ntpTimeMs}{ntpTimeMs}}
+{\footnotesize\ttfamily int64\+\_\+t agora\+::rtc\+::\+Audio\+Pcm\+Data\+Info\+::ntp\+Time\+Ms}
+
+The N\+TP (Network Time Protocol) timestamp (ms). 

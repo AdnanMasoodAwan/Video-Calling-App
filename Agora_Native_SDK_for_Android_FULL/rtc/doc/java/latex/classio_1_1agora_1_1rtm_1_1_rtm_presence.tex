@@ -1,0 +1,180 @@
+\hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_presence}{}\doxysection{io.\+agora.\+rtm.\+Rtm\+Presence Class Reference}
+\label{classio_1_1agora_1_1rtm_1_1_rtm_presence}\index{io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_presence_a1dc17d4341b3506b4a74571e4c987fff}{who\+Now}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}} channel\+Type, \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_presence_options}{Presence\+Options}} options, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_who_now_result}{Who\+Now\+Result}} $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_presence_a62d1dce031393eba75a67844e2f19059}{where\+Now}} (String user\+Id, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_channel_info}{Channel\+Info}} $>$$>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_presence_a6911d32b3fbb4431fe9f1552b862d439}{get\+Online\+Users}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}} channel\+Type, \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_get_online_users_options}{Get\+Online\+Users\+Options}} options, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_get_online_users_result}{Get\+Online\+Users\+Result}} $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_presence_a6d3d843b6596dbe29e0bb551a7a120b4}{get\+User\+Channels}} (String user\+Id, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_channel_info}{Channel\+Info}} $>$$>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_presence_ab91c5e3a6045f076829acdf44d99a91c}{set\+State}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}} channel\+Type, Map$<$ String, String $>$ items, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_presence_ac2ee25bc1ad5253a6ab58d979cf9c481}{remove\+State}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}} channel\+Type, Array\+List$<$ String $>$ keys, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_presence_a62a4b922f8441cb0acfd7f7ca473ce6b}{get\+State}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}} channel\+Type, String user\+Id, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_user_state}{User\+State}} $>$ result\+Callback)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_presence}{Rtm\+Presence}} class.
+
+This class provides the rtm presence methods that can be invoked by your app. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_presence_a1dc17d4341b3506b4a74571e4c987fff}\label{classio_1_1agora_1_1rtm_1_1_rtm_presence_a1dc17d4341b3506b4a74571e4c987fff}} 
+\index{io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}!whoNow@{whoNow}}
+\index{whoNow@{whoNow}!io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}}
+\doxysubsubsection{\texorpdfstring{whoNow()}{whoNow()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Presence.\+who\+Now (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}}}]{channel\+Type,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_presence_options}{Presence\+Options}}}]{options,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_who_now_result}{Who\+Now\+Result}} $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+To query who joined this channel
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em channel\+Type} & The type of the channel. \\
+\hline
+{\em options} & The query option. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_presence_a62d1dce031393eba75a67844e2f19059}\label{classio_1_1agora_1_1rtm_1_1_rtm_presence_a62d1dce031393eba75a67844e2f19059}} 
+\index{io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}!whereNow@{whereNow}}
+\index{whereNow@{whereNow}!io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}}
+\doxysubsubsection{\texorpdfstring{whereNow()}{whereNow()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Presence.\+where\+Now (\begin{DoxyParamCaption}\item[{String}]{user\+Id,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_channel_info}{Channel\+Info}} $>$$>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+To query which channels the user joined
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The id of the user. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_presence_a6911d32b3fbb4431fe9f1552b862d439}\label{classio_1_1agora_1_1rtm_1_1_rtm_presence_a6911d32b3fbb4431fe9f1552b862d439}} 
+\index{io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}!getOnlineUsers@{getOnlineUsers}}
+\index{getOnlineUsers@{getOnlineUsers}!io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}}
+\doxysubsubsection{\texorpdfstring{getOnlineUsers()}{getOnlineUsers()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Presence.\+get\+Online\+Users (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}}}]{channel\+Type,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_get_online_users_options}{Get\+Online\+Users\+Options}}}]{options,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_get_online_users_result}{Get\+Online\+Users\+Result}} $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+To query who joined this channel
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em channel\+Type} & The type of the channel. \\
+\hline
+{\em options} & The query option. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_presence_a6d3d843b6596dbe29e0bb551a7a120b4}\label{classio_1_1agora_1_1rtm_1_1_rtm_presence_a6d3d843b6596dbe29e0bb551a7a120b4}} 
+\index{io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}!getUserChannels@{getUserChannels}}
+\index{getUserChannels@{getUserChannels}!io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}}
+\doxysubsubsection{\texorpdfstring{getUserChannels()}{getUserChannels()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Presence.\+get\+User\+Channels (\begin{DoxyParamCaption}\item[{String}]{user\+Id,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_channel_info}{Channel\+Info}} $>$$>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+To query which channels the user joined or subscribed
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The id of the user. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_presence_ab91c5e3a6045f076829acdf44d99a91c}\label{classio_1_1agora_1_1rtm_1_1_rtm_presence_ab91c5e3a6045f076829acdf44d99a91c}} 
+\index{io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}!setState@{setState}}
+\index{setState@{setState}!io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Presence.\+set\+State (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}}}]{channel\+Type,  }\item[{Map$<$ String, String $>$}]{items,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Set user state
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em channel\+Type} & The type of the channel. \\
+\hline
+{\em items} & The states item of user. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_presence_ac2ee25bc1ad5253a6ab58d979cf9c481}\label{classio_1_1agora_1_1rtm_1_1_rtm_presence_ac2ee25bc1ad5253a6ab58d979cf9c481}} 
+\index{io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}!removeState@{removeState}}
+\index{removeState@{removeState}!io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}}
+\doxysubsubsection{\texorpdfstring{removeState()}{removeState()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Presence.\+remove\+State (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}}}]{channel\+Type,  }\item[{Array\+List$<$ String $>$}]{keys,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Delete user state
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em channel\+Type} & The type of the channel. \\
+\hline
+{\em keys} & The keys of state item. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_presence_a62a4b922f8441cb0acfd7f7ca473ce6b}\label{classio_1_1agora_1_1rtm_1_1_rtm_presence_a62a4b922f8441cb0acfd7f7ca473ce6b}} 
+\index{io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}!getState@{getState}}
+\index{getState@{getState}!io.agora.rtm.RtmPresence@{io.agora.rtm.RtmPresence}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Presence.\+get\+State (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_channel_type}{Rtm\+Channel\+Type}}}]{channel\+Type,  }\item[{String}]{user\+Id,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_user_state}{User\+State}} $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get user state
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em channel\+Type} & The type of the channel. \\
+\hline
+{\em user\+Id} & The id of the user. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}

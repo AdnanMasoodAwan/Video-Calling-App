@@ -1,0 +1,670 @@
+\hypertarget{classagora_1_1rtc_1_1_i_local_user_observer}{}\doxysection{agora\+::rtc\+::I\+Local\+User\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_local_user_observer}\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Local\+User.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556a}{U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+FO}} \{ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aad15b0ab1be696265256f8245acf5881a}{U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+F\+O\+\_\+\+M\+U\+T\+E\+\_\+\+A\+U\+D\+IO}} = 0, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aa8bb5302885ceef4379af47121e5e4b8c}{U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+F\+O\+\_\+\+M\+U\+T\+E\+\_\+\+V\+I\+D\+EO}} = 1, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aa917bfb392bb266b81c3ff5471d807848}{U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+F\+O\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+V\+I\+D\+EO}} = 4, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aa8f823ef5cb0d02b211fd0f628766a716}{U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+F\+O\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+EO}} = 8
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a4ba286678d17e0f4ae58ddafbfb2fc74}\label{classagora_1_1rtc_1_1_i_local_user_observer_a4ba286678d17e0f4ae58ddafbfb2fc74}} 
+virtual void {\bfseries on\+Audio\+Track\+Publish\+Start} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}} $>$ audio\+Track)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a1fe4d9e7b6abd7c3a18d75970d1f7937}{on\+Audio\+Track\+Publish\+Success}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}} $>$ audio\+Track)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a94477d75eefadad24fafdb04c6b2d112}\label{classagora_1_1rtc_1_1_i_local_user_observer_a94477d75eefadad24fafdb04c6b2d112}} 
+virtual void {\bfseries on\+Audio\+Track\+Unpublished} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}} $>$ audio\+Track)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a438116da0ad0a36b7e55e66dd002d8a5}{on\+Audio\+Track\+Publication\+Failure}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}} $>$ audio\+Track, E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE error)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a38bbffc4bcd41754ee637ca314a26563}{on\+Local\+Audio\+Track\+Statistics}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_local_audio_stats}{Local\+Audio\+Stats}} \&stats)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a70cd9478bb697521064b3ec58094cd64}{on\+Remote\+Audio\+Track\+Statistics}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{rtc\+::\+I\+Remote\+Audio\+Track}} $>$ audio\+Track, const \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_audio_track_stats}{Remote\+Audio\+Track\+Stats}} \&stats)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aa308da2febe75ed17423e8b231bb5519}{on\+User\+Audio\+Track\+Subscribed}} (user\+\_\+id\+\_\+t user\+Id, \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{rtc\+::\+I\+Remote\+Audio\+Track}} $>$ audio\+Track)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_ae69feaba3395bdbe820ab98150bdda38}{on\+User\+Audio\+Track\+State\+Changed}} (user\+\_\+id\+\_\+t user\+Id, \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{rtc\+::\+I\+Remote\+Audio\+Track}} $>$ audio\+Track, R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+TE state, R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+ON reason, int elapsed)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a377d8b15f62389400b405530e8266b9f}\label{classagora_1_1rtc_1_1_i_local_user_observer_a377d8b15f62389400b405530e8266b9f}} 
+virtual void {\bfseries on\+Video\+Track\+Publish\+Start} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}} $>$ video\+Track)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a6aa9af78a8661e6edb90238ecb79c030}{on\+Video\+Track\+Publish\+Success}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}} $>$ video\+Track)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a1872ffbb8975ddfdabbb3b5cf554a7e8}{on\+Video\+Track\+Publication\+Failure}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}} $>$ video\+Track, E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE error)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a9e969bb504884b72acf67de5ddbea7e7}\label{classagora_1_1rtc_1_1_i_local_user_observer_a9e969bb504884b72acf67de5ddbea7e7}} 
+virtual void {\bfseries on\+Video\+Track\+Unpublished} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}} $>$ video\+Track)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a091810138312df9f6d570ed718abefee}{on\+Local\+Video\+Track\+State\+Changed}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$ video\+Track, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE state, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+A\+S\+ON reason)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a167b28d331295decd627a6a80907b168}{on\+Local\+Video\+Track\+Statistics}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$ video\+Track, const \mbox{\hyperlink{structagora_1_1rtc_1_1_local_video_track_stats}{Local\+Video\+Track\+Stats}} \&stats)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_abbb459299d603804f38ad8b751ca71e6}{on\+User\+Video\+Track\+Subscribed}} (user\+\_\+id\+\_\+t user\+Id, const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info}{Video\+Track\+Info}} \&track\+Info, \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track}{rtc\+::\+I\+Remote\+Video\+Track}} $>$ video\+Track)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a633eeef87c0b2ca62f6e05c9e8cbe87d}{on\+User\+Video\+Track\+State\+Changed}} (user\+\_\+id\+\_\+t user\+Id, \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track}{rtc\+::\+I\+Remote\+Video\+Track}} $>$ video\+Track, R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+TE state, R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+ON reason, int elapsed)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a7acbf5f758768d580d6aa47b2b6d5e55}{on\+First\+Remote\+Video\+Frame\+Rendered}} (user\+\_\+id\+\_\+t user\+Id, int width, int height, int elapsed)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_acb8043e4a0c46620830788126e5f31c9}{on\+Remote\+Video\+Track\+Statistics}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track}{rtc\+::\+I\+Remote\+Video\+Track}} $>$ video\+Track, const \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_track_stats}{Remote\+Video\+Track\+Stats}} \&stats)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a08499ccc9e5bd513a961f58ac84e51e7}{on\+Audio\+Volume\+Indication}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_volume_information}{Audio\+Volume\+Information}} $\ast$speakers, unsigned int speaker\+Number, int total\+Volume)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a19e58403b55140d43b2cb2a01b10c1f1}{on\+Active\+Speaker}} (user\+\_\+id\+\_\+t user\+Id)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a09a5043cafce60cba0808f060963b5b3}{on\+Audio\+Subscribe\+State\+Changed}} (const char $\ast$channel, user\+\_\+id\+\_\+t user\+Id, S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE old\+State, S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE new\+State, int elapse\+Since\+Last\+State)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a31fddab1fbfa9acffe3f033bfdea3a32}{on\+Video\+Subscribe\+State\+Changed}} (const char $\ast$channel, user\+\_\+id\+\_\+t user\+Id, S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE old\+State, S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE new\+State, int elapse\+Since\+Last\+State)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a2cd55760dfcef7b6dc6f13b0e51ed0dc}{on\+Audio\+Publish\+State\+Changed}} (const char $\ast$channel, S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE old\+State, S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE new\+State, int elapse\+Since\+Last\+State)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a00564978b6d7f59074f71afc303b0a21}{on\+Video\+Publish\+State\+Changed}} (const char $\ast$channel, S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE old\+State, S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE new\+State, int elapse\+Since\+Last\+State)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_acdb2005cbfaaaa16cc17e212102e3797}{on\+Remote\+Subscribe\+Fallback\+To\+Audio\+Only}} (user\+\_\+id\+\_\+t user\+Id, bool is\+Fallback\+Or\+Recover)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_ab66e3d7f7df89932c5817c06352bdbc6}{on\+First\+Remote\+Audio\+Frame}} (user\+\_\+id\+\_\+t user\+Id, int elapsed)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a684740deb2ce6a0a44ed95a76d90c996}{on\+First\+Remote\+Audio\+Decoded}} (user\+\_\+id\+\_\+t user\+Id, int elapsed)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a0ac4f4ece7f59fd00b9ad9ec1b6fff92}{on\+First\+Remote\+Video\+Frame}} (user\+\_\+id\+\_\+t user\+Id, int width, int height, int elapsed)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_ac2ea2bc9cd9743a76908c6fac67f456d}{on\+First\+Remote\+Video\+Decoded}} (user\+\_\+id\+\_\+t user\+Id, int width, int height, int elapsed)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a6ce4f76b2903e5ec847b765fc4e0c9ef}{on\+Video\+Size\+Changed}} (user\+\_\+id\+\_\+t user\+Id, int width, int height, int rotation)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_ae6ddc7cfb4236112154c5944ee64af7a}{on\+Audio\+Metadata\+Received}} (user\+\_\+id\+\_\+t user\+Id, const char $\ast$metadata, size\+\_\+t length)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a33015fc17aed0131666c469b7dfcfdb0}{on\+User\+Info\+Updated}} (user\+\_\+id\+\_\+t user\+Id, \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556a}{U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+FO}} msg, bool val)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_abe52ed35277c6c6efc50125b05895859}{on\+Intra\+Request\+Received}} ()
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a0a0af52ad5ef54b08919df497b738f8b}{on\+Stream\+Message}} (user\+\_\+id\+\_\+t user\+Id, int stream\+Id, const char $\ast$data, size\+\_\+t length)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aafb1342a58c31264531cea41ca8e4969}{on\+User\+State\+Changed}} (user\+\_\+id\+\_\+t user\+Id, uint32\+\_\+t state)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a89b218e7fa0bd33672f0f06524f51c7b}\label{classagora_1_1rtc_1_1_i_local_user_observer_a89b218e7fa0bd33672f0f06524f51c7b}} 
+virtual void {\bfseries on\+Video\+Rendering\+Tracing\+Result} (user\+\_\+id\+\_\+t user\+\_\+id, M\+E\+D\+I\+A\+\_\+\+T\+R\+A\+C\+E\+\_\+\+E\+V\+E\+NT current\+State, \mbox{\hyperlink{structagora_1_1rtc_1_1_video_rendering_tracing_info}{Video\+Rendering\+Tracing\+Info}} tracing\+Info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}}} class. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556a}\label{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556a}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!USER\_MEDIA\_INFO@{USER\_MEDIA\_INFO}}
+\index{USER\_MEDIA\_INFO@{USER\_MEDIA\_INFO}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{USER\_MEDIA\_INFO}{USER\_MEDIA\_INFO}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556a}{agora\+::rtc\+::\+I\+Local\+User\+Observer\+::\+U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+FO}}}
+
+The media information of a specified user. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{USER\_MEDIA\_INFO\_MUTE\_AUDIO@{USER\_MEDIA\_INFO\_MUTE\_AUDIO}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!USER\_MEDIA\_INFO\_MUTE\_AUDIO@{USER\_MEDIA\_INFO\_MUTE\_AUDIO}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aad15b0ab1be696265256f8245acf5881a}\label{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aad15b0ab1be696265256f8245acf5881a}} 
+U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+F\+O\+\_\+\+M\+U\+T\+E\+\_\+\+A\+U\+D\+IO&0\+: The user has muted the audio. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{USER\_MEDIA\_INFO\_MUTE\_VIDEO@{USER\_MEDIA\_INFO\_MUTE\_VIDEO}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!USER\_MEDIA\_INFO\_MUTE\_VIDEO@{USER\_MEDIA\_INFO\_MUTE\_VIDEO}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aa8bb5302885ceef4379af47121e5e4b8c}\label{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aa8bb5302885ceef4379af47121e5e4b8c}} 
+U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+F\+O\+\_\+\+M\+U\+T\+E\+\_\+\+V\+I\+D\+EO&1\+: The user has muted the video. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{USER\_MEDIA\_INFO\_ENABLE\_VIDEO@{USER\_MEDIA\_INFO\_ENABLE\_VIDEO}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!USER\_MEDIA\_INFO\_ENABLE\_VIDEO@{USER\_MEDIA\_INFO\_ENABLE\_VIDEO}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aa917bfb392bb266b81c3ff5471d807848}\label{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aa917bfb392bb266b81c3ff5471d807848}} 
+U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+F\+O\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+V\+I\+D\+EO&4\+: The user has enabled the video, which includes video capturing and encoding. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{USER\_MEDIA\_INFO\_ENABLE\_LOCAL\_VIDEO@{USER\_MEDIA\_INFO\_ENABLE\_LOCAL\_VIDEO}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!USER\_MEDIA\_INFO\_ENABLE\_LOCAL\_VIDEO@{USER\_MEDIA\_INFO\_ENABLE\_LOCAL\_VIDEO}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aa8f823ef5cb0d02b211fd0f628766a716}\label{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556aa8f823ef5cb0d02b211fd0f628766a716}} 
+U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+F\+O\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+EO&8\+: The user has enabled the local video capturing. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a1fe4d9e7b6abd7c3a18d75970d1f7937}\label{classagora_1_1rtc_1_1_i_local_user_observer_a1fe4d9e7b6abd7c3a18d75970d1f7937}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onAudioTrackPublishSuccess@{onAudioTrackPublishSuccess}}
+\index{onAudioTrackPublishSuccess@{onAudioTrackPublishSuccess}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onAudioTrackPublishSuccess()}{onAudioTrackPublishSuccess()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Audio\+Track\+Publish\+Success (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}} $>$}]{audio\+Track }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the first packet of the local audio track is sent, indicating that the local audio track is successfully published.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Track} & The pointer to \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a438116da0ad0a36b7e55e66dd002d8a5}\label{classagora_1_1rtc_1_1_i_local_user_observer_a438116da0ad0a36b7e55e66dd002d8a5}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onAudioTrackPublicationFailure@{onAudioTrackPublicationFailure}}
+\index{onAudioTrackPublicationFailure@{onAudioTrackPublicationFailure}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onAudioTrackPublicationFailure()}{onAudioTrackPublicationFailure()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Audio\+Track\+Publication\+Failure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}} $>$}]{audio\+Track,  }\item[{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when a local audio track fails to be published.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Track} & The pointer to {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}}. \\
+\hline
+{\em error} & The error information\+: \#\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a38bbffc4bcd41754ee637ca314a26563}\label{classagora_1_1rtc_1_1_i_local_user_observer_a38bbffc4bcd41754ee637ca314a26563}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onLocalAudioTrackStatistics@{onLocalAudioTrackStatistics}}
+\index{onLocalAudioTrackStatistics@{onLocalAudioTrackStatistics}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onLocalAudioTrackStatistics()}{onLocalAudioTrackStatistics()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Local\+Audio\+Track\+Statistics (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_local_audio_stats}{Local\+Audio\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reports the statistics of a local audio track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & The reference to the statistics of the local audio track. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a70cd9478bb697521064b3ec58094cd64}\label{classagora_1_1rtc_1_1_i_local_user_observer_a70cd9478bb697521064b3ec58094cd64}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onRemoteAudioTrackStatistics@{onRemoteAudioTrackStatistics}}
+\index{onRemoteAudioTrackStatistics@{onRemoteAudioTrackStatistics}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onRemoteAudioTrackStatistics()}{onRemoteAudioTrackStatistics()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Remote\+Audio\+Track\+Statistics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{rtc\+::\+I\+Remote\+Audio\+Track}} $>$}]{audio\+Track,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_audio_track_stats}{Remote\+Audio\+Track\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reports the statistics of a remote audio track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Track} & The pointer to {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{I\+Remote\+Audio\+Track}}}. \\
+\hline
+{\em stats} & The statistics of the remote audio track. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_aa308da2febe75ed17423e8b231bb5519}\label{classagora_1_1rtc_1_1_i_local_user_observer_aa308da2febe75ed17423e8b231bb5519}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onUserAudioTrackSubscribed@{onUserAudioTrackSubscribed}}
+\index{onUserAudioTrackSubscribed@{onUserAudioTrackSubscribed}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onUserAudioTrackSubscribed()}{onUserAudioTrackSubscribed()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+User\+Audio\+Track\+Subscribed (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{rtc\+::\+I\+Remote\+Audio\+Track}} $>$}]{audio\+Track }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the first remote audio frame is received.
+
+This callback indicates that the local user has subscribed to a specified remote audio track, and the first frame of this audio track has been received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the remote user whose audio frame is received. \\
+\hline
+{\em audio\+Track} & The pointer to {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{I\+Remote\+Audio\+Track}}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_ae69feaba3395bdbe820ab98150bdda38}\label{classagora_1_1rtc_1_1_i_local_user_observer_ae69feaba3395bdbe820ab98150bdda38}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onUserAudioTrackStateChanged@{onUserAudioTrackStateChanged}}
+\index{onUserAudioTrackStateChanged@{onUserAudioTrackStateChanged}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onUserAudioTrackStateChanged()}{onUserAudioTrackStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+User\+Audio\+Track\+State\+Changed (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{rtc\+::\+I\+Remote\+Audio\+Track}} $>$}]{audio\+Track,  }\item[{R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+ON}]{reason,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the state of a remote audio track changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the remote user whose audio track state has changed. \\
+\hline
+{\em audio\+Track} & The pointer to {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{I\+Remote\+Audio\+Track}}}. \\
+\hline
+{\em state} & The current state of the audio track. \\
+\hline
+{\em reason} & The reason for the state change. \\
+\hline
+{\em elapsed} & The time (ms) since the user connects to an Agora channel. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a6aa9af78a8661e6edb90238ecb79c030}\label{classagora_1_1rtc_1_1_i_local_user_observer_a6aa9af78a8661e6edb90238ecb79c030}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onVideoTrackPublishSuccess@{onVideoTrackPublishSuccess}}
+\index{onVideoTrackPublishSuccess@{onVideoTrackPublishSuccess}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onVideoTrackPublishSuccess()}{onVideoTrackPublishSuccess()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Video\+Track\+Publish\+Success (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}} $>$}]{video\+Track }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the first packet of a local video track is sent, indicating that the local video track is successfully published. 
+\begin{DoxyParams}{Parameters}
+{\em video\+Track} & The pointer to {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a1872ffbb8975ddfdabbb3b5cf554a7e8}\label{classagora_1_1rtc_1_1_i_local_user_observer_a1872ffbb8975ddfdabbb3b5cf554a7e8}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onVideoTrackPublicationFailure@{onVideoTrackPublicationFailure}}
+\index{onVideoTrackPublicationFailure@{onVideoTrackPublicationFailure}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onVideoTrackPublicationFailure()}{onVideoTrackPublicationFailure()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Video\+Track\+Publication\+Failure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}} $>$}]{video\+Track,  }\item[{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when a local video track fails to be published.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Track} & The pointer to {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}}. \\
+\hline
+{\em error} & The error information\+: \#\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a091810138312df9f6d570ed718abefee}\label{classagora_1_1rtc_1_1_i_local_user_observer_a091810138312df9f6d570ed718abefee}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onLocalVideoTrackStateChanged@{onLocalVideoTrackStateChanged}}
+\index{onLocalVideoTrackStateChanged@{onLocalVideoTrackStateChanged}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onLocalVideoTrackStateChanged()}{onLocalVideoTrackStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Local\+Video\+Track\+State\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$}]{video\+Track,  }\item[{L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+A\+S\+ON}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the state of a local video track changes. \begin{DoxyNote}{Note}
+When you receive error from this callback, the corresponding track is in error state. To make the track recover from error state, we highly recommend that you disable the track and try re-\/enabling it again.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Track} & The pointer to {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}}. \\
+\hline
+{\em state} & The state of the local video track. \\
+\hline
+{\em reason} & The error information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a167b28d331295decd627a6a80907b168}\label{classagora_1_1rtc_1_1_i_local_user_observer_a167b28d331295decd627a6a80907b168}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onLocalVideoTrackStatistics@{onLocalVideoTrackStatistics}}
+\index{onLocalVideoTrackStatistics@{onLocalVideoTrackStatistics}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onLocalVideoTrackStatistics()}{onLocalVideoTrackStatistics()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Local\+Video\+Track\+Statistics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{rtc\+::\+I\+Local\+Video\+Track}} $>$}]{video\+Track,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_local_video_track_stats}{Local\+Video\+Track\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reports the statistics of a local video track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Track} & The pointer to {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}}. \\
+\hline
+{\em stats} & The statistics of the local video track. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_abbb459299d603804f38ad8b751ca71e6}\label{classagora_1_1rtc_1_1_i_local_user_observer_abbb459299d603804f38ad8b751ca71e6}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onUserVideoTrackSubscribed@{onUserVideoTrackSubscribed}}
+\index{onUserVideoTrackSubscribed@{onUserVideoTrackSubscribed}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onUserVideoTrackSubscribed()}{onUserVideoTrackSubscribed()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+User\+Video\+Track\+Subscribed (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info}{Video\+Track\+Info}} \&}]{track\+Info,  }\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track}{rtc\+::\+I\+Remote\+Video\+Track}} $>$}]{video\+Track }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the first remote video frame is received.
+
+This callback indicates that the local user has subscribed to a specified remote video track, and the first frame of this video track has been received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the remote user whose video frame is received. \\
+\hline
+{\em track\+Info} & The information of the remote video track. \\
+\hline
+{\em video\+Track} & The pointer to {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track}{I\+Remote\+Video\+Track}}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a633eeef87c0b2ca62f6e05c9e8cbe87d}\label{classagora_1_1rtc_1_1_i_local_user_observer_a633eeef87c0b2ca62f6e05c9e8cbe87d}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onUserVideoTrackStateChanged@{onUserVideoTrackStateChanged}}
+\index{onUserVideoTrackStateChanged@{onUserVideoTrackStateChanged}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onUserVideoTrackStateChanged()}{onUserVideoTrackStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+User\+Video\+Track\+State\+Changed (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track}{rtc\+::\+I\+Remote\+Video\+Track}} $>$}]{video\+Track,  }\item[{R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+ON}]{reason,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the state of a remote video track changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & the ID of the remote user whose video track state has changed. \\
+\hline
+{\em video\+Track} & The pointer to {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track}{I\+Remote\+Video\+Track}}}. \\
+\hline
+{\em state} & The current state of the video track. \\
+\hline
+{\em reason} & The reason for the state change. \\
+\hline
+{\em elapsed} & The time (ms) since the user connects to an Agora channel. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a7acbf5f758768d580d6aa47b2b6d5e55}\label{classagora_1_1rtc_1_1_i_local_user_observer_a7acbf5f758768d580d6aa47b2b6d5e55}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onFirstRemoteVideoFrameRendered@{onFirstRemoteVideoFrameRendered}}
+\index{onFirstRemoteVideoFrameRendered@{onFirstRemoteVideoFrameRendered}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onFirstRemoteVideoFrameRendered()}{onFirstRemoteVideoFrameRendered()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+First\+Remote\+Video\+Frame\+Rendered (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the first remote video frame is rendered.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & the ID of the remote user. \\
+\hline
+{\em width} & Width (px) of the video frame. \\
+\hline
+{\em height} & Height (px) of the video stream. \\
+\hline
+{\em elapsed} & The time (ms) since the user connects to an Agora channel. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_acb8043e4a0c46620830788126e5f31c9}\label{classagora_1_1rtc_1_1_i_local_user_observer_acb8043e4a0c46620830788126e5f31c9}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onRemoteVideoTrackStatistics@{onRemoteVideoTrackStatistics}}
+\index{onRemoteVideoTrackStatistics@{onRemoteVideoTrackStatistics}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onRemoteVideoTrackStatistics()}{onRemoteVideoTrackStatistics()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Remote\+Video\+Track\+Statistics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track}{rtc\+::\+I\+Remote\+Video\+Track}} $>$}]{video\+Track,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_track_stats}{Remote\+Video\+Track\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reports the statistics of a remote video track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Track} & The pointer to {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_video_track}{I\+Remote\+Video\+Track}}}. \\
+\hline
+{\em stats} & The statistics of the remote video track. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a08499ccc9e5bd513a961f58ac84e51e7}\label{classagora_1_1rtc_1_1_i_local_user_observer_a08499ccc9e5bd513a961f58ac84e51e7}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onAudioVolumeIndication@{onAudioVolumeIndication}}
+\index{onAudioVolumeIndication@{onAudioVolumeIndication}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onAudioVolumeIndication()}{onAudioVolumeIndication()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Audio\+Volume\+Indication (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_volume_information}{Audio\+Volume\+Information}} $\ast$}]{speakers,  }\item[{unsigned int}]{speaker\+Number,  }\item[{int}]{total\+Volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reports which users are speaking, the speakers\textquotesingle{} volumes, and whether the local user is speaking.
+
+This callback reports the I\+Ds and volumes of the loudest speakers at the moment in the channel, and whether the local user is speaking.
+
+You can set the time interval of this callback using \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ad72f63130bd2e71ebba0f05ad752150a}{set\+Audio\+Volume\+Indication\+Parameters}}.
+
+The S\+DK triggers two {\ttfamily on\+Audio\+Volume\+Indication} callbacks at one time, one reporting the volume information of the local user and the other reporting the volume information of all remote users.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item To detect whether the local user is speaking, set {\ttfamily report\+\_\+vad} in {\ttfamily enable\+Audio\+Volume\+Indication} to {\ttfamily true}.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em speakers} & The pointer to \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_volume_information}{Audio\+Volume\+Information}}, which is an array containing the user ID and volume information for each speaker.
+\begin{DoxyItemize}
+\item In the local user\textquotesingle{}s callback, this array contains the following members\+:
+\begin{DoxyItemize}
+\item {\ttfamily uid}, which is always {\ttfamily 0}
+\item {\ttfamily volume}, which reports the sum of the voice volume and the audio-\/mixing volume of the local user
+\item {\ttfamily vad}, which reports whether the local user is speaking
+\end{DoxyItemize}
+\item In the remote users\textquotesingle{} callback, this array contains the following members\+:
+\begin{DoxyItemize}
+\item {\ttfamily uid}, which is the U\+ID of each remote speaker
+\item {\ttfamily volume}, which reports the sum of the voice volume and the audio-\/mixing volume of each remote speaker.
+\item {\ttfamily vad}, which is always {\ttfamily 0} An empty {\ttfamily speakers} array in the callback indicates that no remote user is speaking at the moment. 
+\end{DoxyItemize}
+\end{DoxyItemize}\\
+\hline
+{\em speaker\+Number} & The total number of the speakers. \\
+\hline
+{\em total\+Volume} & The total volume after audio mixing. The value ranges between 0 (lowest volume) and 255 (highest volume).
+\begin{DoxyItemize}
+\item In the local user\textquotesingle{}s callback, {\ttfamily total\+Volume} is the sum of the voice volume and the audio-\/mixing volume of the local user.
+\item In the remote speakers\textquotesingle{} callback, {\ttfamily total\+Volume} is the sum of the voice volume and the audio-\/mixing volume of all remote speakers. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a19e58403b55140d43b2cb2a01b10c1f1}\label{classagora_1_1rtc_1_1_i_local_user_observer_a19e58403b55140d43b2cb2a01b10c1f1}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onActiveSpeaker@{onActiveSpeaker}}
+\index{onActiveSpeaker@{onActiveSpeaker}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onActiveSpeaker()}{onActiveSpeaker()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Active\+Speaker (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when an active speaker is detected.
+
+You can add relative functions on your app, for example, the active speaker, once detected, will have the portrait zoomed in.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item The active speaker means the user ID of the speaker who speaks at the highest volume during a certain period of time.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the active speaker. A {\ttfamily user\+Id} of {\ttfamily 0} means the local user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a09a5043cafce60cba0808f060963b5b3}\label{classagora_1_1rtc_1_1_i_local_user_observer_a09a5043cafce60cba0808f060963b5b3}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onAudioSubscribeStateChanged@{onAudioSubscribeStateChanged}}
+\index{onAudioSubscribeStateChanged@{onAudioSubscribeStateChanged}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onAudioSubscribeStateChanged()}{onAudioSubscribeStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Audio\+Subscribe\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel,  }\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE}]{old\+State,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the audio subscribe state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em user\+Id} & The remote string user ID that is subscribed to. \\
+\hline
+{\em old\+State} & The old state of the audio stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the audio stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a31fddab1fbfa9acffe3f033bfdea3a32}\label{classagora_1_1rtc_1_1_i_local_user_observer_a31fddab1fbfa9acffe3f033bfdea3a32}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onVideoSubscribeStateChanged@{onVideoSubscribeStateChanged}}
+\index{onVideoSubscribeStateChanged@{onVideoSubscribeStateChanged}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onVideoSubscribeStateChanged()}{onVideoSubscribeStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Video\+Subscribe\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel,  }\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE}]{old\+State,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the video subscribe state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em user\+Id} & The remote string user ID that is subscribed to. \\
+\hline
+{\em old\+State} & The old state of the video stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the video stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a2cd55760dfcef7b6dc6f13b0e51ed0dc}\label{classagora_1_1rtc_1_1_i_local_user_observer_a2cd55760dfcef7b6dc6f13b0e51ed0dc}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onAudioPublishStateChanged@{onAudioPublishStateChanged}}
+\index{onAudioPublishStateChanged@{onAudioPublishStateChanged}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onAudioPublishStateChanged()}{onAudioPublishStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Audio\+Publish\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE}]{old\+State,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the audio publish state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em old\+State} & The old state of the audio stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the audio stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a00564978b6d7f59074f71afc303b0a21}\label{classagora_1_1rtc_1_1_i_local_user_observer_a00564978b6d7f59074f71afc303b0a21}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onVideoPublishStateChanged@{onVideoPublishStateChanged}}
+\index{onVideoPublishStateChanged@{onVideoPublishStateChanged}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onVideoPublishStateChanged()}{onVideoPublishStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Video\+Publish\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE}]{old\+State,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the video publish state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em old\+State} & The old state of the video stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the video stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_acdb2005cbfaaaa16cc17e212102e3797}\label{classagora_1_1rtc_1_1_i_local_user_observer_acdb2005cbfaaaa16cc17e212102e3797}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onRemoteSubscribeFallbackToAudioOnly@{onRemoteSubscribeFallbackToAudioOnly}}
+\index{onRemoteSubscribeFallbackToAudioOnly@{onRemoteSubscribeFallbackToAudioOnly}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onRemoteSubscribeFallbackToAudioOnly()}{onRemoteSubscribeFallbackToAudioOnly()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Remote\+Subscribe\+Fallback\+To\+Audio\+Only (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{bool}]{is\+Fallback\+Or\+Recover }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the first remote audio frame is received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of the remote user. \\
+\hline
+{\em is\+Fallback\+Or\+Recover} & Whether the remotely subscribed media stream falls back to audio-\/only or switches back to the video\+:
+\begin{DoxyItemize}
+\item true\+: The remotely subscribed media stream falls back to audio-\/only due to poor network conditions.
+\item false\+: The remotely subscribed media stream switches back to the video stream after the network conditions improved. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_ab66e3d7f7df89932c5817c06352bdbc6}\label{classagora_1_1rtc_1_1_i_local_user_observer_ab66e3d7f7df89932c5817c06352bdbc6}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onFirstRemoteAudioFrame@{onFirstRemoteAudioFrame}}
+\index{onFirstRemoteAudioFrame@{onFirstRemoteAudioFrame}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onFirstRemoteAudioFrame()}{onFirstRemoteAudioFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+First\+Remote\+Audio\+Frame (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the first remote audio frame is received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of the remote user. \\
+\hline
+{\em elapsed} & The time (ms) since the user connects to an Agora channel. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a684740deb2ce6a0a44ed95a76d90c996}\label{classagora_1_1rtc_1_1_i_local_user_observer_a684740deb2ce6a0a44ed95a76d90c996}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onFirstRemoteAudioDecoded@{onFirstRemoteAudioDecoded}}
+\index{onFirstRemoteAudioDecoded@{onFirstRemoteAudioDecoded}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onFirstRemoteAudioDecoded()}{onFirstRemoteAudioDecoded()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+First\+Remote\+Audio\+Decoded (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the S\+DK decodes the first remote audio frame for playback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & User ID of the remote user sending the audio stream. \\
+\hline
+{\em elapsed} & The time (ms) since the user connects to an Agora channel. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a0ac4f4ece7f59fd00b9ad9ec1b6fff92}\label{classagora_1_1rtc_1_1_i_local_user_observer_a0ac4f4ece7f59fd00b9ad9ec1b6fff92}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onFirstRemoteVideoFrame@{onFirstRemoteVideoFrame}}
+\index{onFirstRemoteVideoFrame@{onFirstRemoteVideoFrame}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onFirstRemoteVideoFrame()}{onFirstRemoteVideoFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+First\+Remote\+Video\+Frame (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the first remote video frame is rendered. The S\+DK triggers this callback when the first frame of the remote video is displayed in the user\textquotesingle{}s video window. The application can get the time elapsed from a user joining the channel until the first video frame is displayed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of the remote user. \\
+\hline
+{\em width} & Width (px) of the video frame. \\
+\hline
+{\em height} & Height (px) of the video stream. \\
+\hline
+{\em elapsed} & Time elapsed (ms) from the local user calling the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_adc937172e59bd2695ea171553a88188c}{join\+Channel}} method until the S\+DK triggers this callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_ac2ea2bc9cd9743a76908c6fac67f456d}\label{classagora_1_1rtc_1_1_i_local_user_observer_ac2ea2bc9cd9743a76908c6fac67f456d}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onFirstRemoteVideoDecoded@{onFirstRemoteVideoDecoded}}
+\index{onFirstRemoteVideoDecoded@{onFirstRemoteVideoDecoded}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onFirstRemoteVideoDecoded()}{onFirstRemoteVideoDecoded()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+First\+Remote\+Video\+Decoded (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the S\+DK decodes the first remote video frame for playback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of the remote user. \\
+\hline
+{\em width} & Width (px) of the video stream. \\
+\hline
+{\em height} & Height (px) of the video stream. \\
+\hline
+{\em elapsed} & The time (ms) since the user connects to an Agora channel. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a6ce4f76b2903e5ec847b765fc4e0c9ef}\label{classagora_1_1rtc_1_1_i_local_user_observer_a6ce4f76b2903e5ec847b765fc4e0c9ef}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onVideoSizeChanged@{onVideoSizeChanged}}
+\index{onVideoSizeChanged@{onVideoSizeChanged}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onVideoSizeChanged()}{onVideoSizeChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Video\+Size\+Changed (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+The local or remote video size or rotation changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & User ID of the user whose video size or rotation has changed. \\
+\hline
+{\em width} & Width (pixels) of the video stream. \\
+\hline
+{\em height} & Height (pixels) of the video stream. \\
+\hline
+{\em rotation} & Rotation \mbox{[}0 to 360). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_ae6ddc7cfb4236112154c5944ee64af7a}\label{classagora_1_1rtc_1_1_i_local_user_observer_ae6ddc7cfb4236112154c5944ee64af7a}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onAudioMetadataReceived@{onAudioMetadataReceived}}
+\index{onAudioMetadataReceived@{onAudioMetadataReceived}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onAudioMetadataReceived()}{onAudioMetadataReceived()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Audio\+Metadata\+Received (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{const char $\ast$}]{metadata,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The audio metadata received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of the remote user. \\
+\hline
+{\em metadata} & The pointer of metadata \\
+\hline
+{\em length} & Size of metadata @technical preview \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a33015fc17aed0131666c469b7dfcfdb0}\label{classagora_1_1rtc_1_1_i_local_user_observer_a33015fc17aed0131666c469b7dfcfdb0}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onUserInfoUpdated@{onUserInfoUpdated}}
+\index{onUserInfoUpdated@{onUserInfoUpdated}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onUserInfoUpdated()}{onUserInfoUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+User\+Info\+Updated (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556a}{U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+FO}}}]{msg,  }\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the user media information is updated.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the user. \\
+\hline
+{\em msg} & The media information of the user. See \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_aebf5fda0b9fa8f8921fab72a2bf6556a}{U\+S\+E\+R\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+FO}}. \\
+\hline
+{\em val} & Whether the user is muted. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_abe52ed35277c6c6efc50125b05895859}\label{classagora_1_1rtc_1_1_i_local_user_observer_abe52ed35277c6c6efc50125b05895859}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onIntraRequestReceived@{onIntraRequestReceived}}
+\index{onIntraRequestReceived@{onIntraRequestReceived}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onIntraRequestReceived()}{onIntraRequestReceived()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Intra\+Request\+Received (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the intra request is received from a remote user.
+
+The method notifies the local user to encode a key frame. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_a0a0af52ad5ef54b08919df497b738f8b}\label{classagora_1_1rtc_1_1_i_local_user_observer_a0a0af52ad5ef54b08919df497b738f8b}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onStreamMessage@{onStreamMessage}}
+\index{onStreamMessage@{onStreamMessage}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onStreamMessage()}{onStreamMessage()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+Stream\+Message (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{int}]{stream\+Id,  }\item[{const char $\ast$}]{data,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+datastream from this connection. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_observer_aafb1342a58c31264531cea41ca8e4969}\label{classagora_1_1rtc_1_1_i_local_user_observer_aafb1342a58c31264531cea41ca8e4969}} 
+\index{agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}!onUserStateChanged@{onUserStateChanged}}
+\index{onUserStateChanged@{onUserStateChanged}!agora::rtc::ILocalUserObserver@{agora::rtc::ILocalUserObserver}}
+\doxysubsubsection{\texorpdfstring{onUserStateChanged()}{onUserStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+Observer\+::on\+User\+State\+Changed (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{uint32\+\_\+t}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the remote user state is updated. 
+\begin{DoxyParams}{Parameters}
+{\em uid} & The uid of the remote user. \\
+\hline
+{\em state} & The remote user state.\+Just \& \#\+R\+E\+M\+O\+T\+E\+\_\+\+U\+S\+E\+R\+\_\+\+S\+T\+A\+TE \\
+\hline
+\end{DoxyParams}

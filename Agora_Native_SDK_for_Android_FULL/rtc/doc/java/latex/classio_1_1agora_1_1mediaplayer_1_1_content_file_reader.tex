@@ -1,0 +1,39 @@
+\hypertarget{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader}{}\doxysection{io.\+agora.\+mediaplayer.\+Content\+File\+Reader Class Reference}
+\label{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader}\index{io.agora.mediaplayer.ContentFileReader@{io.agora.mediaplayer.ContentFileReader}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_acf096b80c7a923fd6e29e91d427f19d8}\label{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_acf096b80c7a923fd6e29e91d427f19d8}} 
+int {\bfseries open} (String url)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_a416a5582efcea0ccf6d97d07f585491a}\label{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_a416a5582efcea0ccf6d97d07f585491a}} 
+long {\bfseries get\+File\+Size} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_a9ca4d7e937ee7caf67acd34bac9e007b}\label{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_a9ca4d7e937ee7caf67acd34bac9e007b}} 
+long {\bfseries seek} (long pos)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_a74750e30cac44e886740fd874c5b3fa9}\label{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_a74750e30cac44e886740fd874c5b3fa9}} 
+void {\bfseries close\+File} ()
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_a63f40679db2a4c8dc69087081babb0de}{read}} (Byte\+Buffer read\+Byte\+Buffer)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_acebaf88462d0ee0230c61beae404a8d3}\label{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_acebaf88462d0ee0230c61beae404a8d3}} 
+long {\bfseries get\+Current\+Position} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_a63f40679db2a4c8dc69087081babb0de}\label{classio_1_1agora_1_1mediaplayer_1_1_content_file_reader_a63f40679db2a4c8dc69087081babb0de}} 
+\index{io.agora.mediaplayer.ContentFileReader@{io.agora.mediaplayer.ContentFileReader}!read@{read}}
+\index{read@{read}!io.agora.mediaplayer.ContentFileReader@{io.agora.mediaplayer.ContentFileReader}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+Content\+File\+Reader.\+read (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{read\+Byte\+Buffer }\end{DoxyParamCaption})}
+
+Read file content to Byte\+Buffer 
+\begin{DoxyParams}{Parameters}
+{\em read\+Byte\+Buffer} & The buffer into which bytes are to be transferred \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of bytes read, possibly zero, or -\/1 if the channel has reached end-\/of-\/stream, or -\/2 if other errors 
+\end{DoxyReturn}

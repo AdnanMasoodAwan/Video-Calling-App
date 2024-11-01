@@ -1,0 +1,185 @@
+\hypertarget{classagora_1_1rtc_1_1_i_video_renderer}{}\doxysection{agora\+::rtc\+::I\+Video\+Renderer Class Reference}
+\label{classagora_1_1rtc_1_1_i_video_renderer}\index{agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Video\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classagora_1_1rtc_1_1_i_video_renderer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_renderer_a3d19ff43241782fbeeaaf2b7fb8749ea}{set\+Render\+Mode}} (media\+::base\+::\+R\+E\+N\+D\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE render\+Mode, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_renderer_a5b2b65511dc82c5f1d68d08333075ec8}{set\+Render\+Mode}} (void $\ast$view, media\+::base\+::\+R\+E\+N\+D\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE render\+Mode, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_renderer_ac6df6a03f85f1253975e889102cfbf8b}{set\+Mirror}} (bool mirror, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_renderer_aa91375bacace92c37a16eb5881cb59c6}{set\+Mirror}} (void $\ast$view, bool mirror, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_renderer_a4cd2117161f249ad94c03df27fa687bb}{set\+View}} (void $\ast$view, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_renderer_acec91536afcf5b1c4642d99f87443e31}{add\+View}} (void $\ast$view, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} \&crop\+Area, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_renderer_a7f8a9187d3f25b2dca64203c15907740}{unset\+View}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_renderer_a3cdc8fe52aa3321cdb00fbc0edf7a14b}{remove\+View}} (void $\ast$view)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_renderer}{I\+Video\+Renderer}}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_renderer_a3d19ff43241782fbeeaaf2b7fb8749ea}\label{classagora_1_1rtc_1_1_i_video_renderer_a3d19ff43241782fbeeaaf2b7fb8749ea}} 
+\index{agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}!setRenderMode@{setRenderMode}}
+\index{setRenderMode@{setRenderMode}!agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}}
+\doxysubsubsection{\texorpdfstring{setRenderMode()}{setRenderMode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Renderer\+::set\+Render\+Mode (\begin{DoxyParamCaption}\item[{media\+::base\+::\+R\+E\+N\+D\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE}]{render\+Mode,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the render mode. 
+\begin{DoxyParams}{Parameters}
+{\em render\+Mode} & The video render mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_renderer_a5b2b65511dc82c5f1d68d08333075ec8}\label{classagora_1_1rtc_1_1_i_video_renderer_a5b2b65511dc82c5f1d68d08333075ec8}} 
+\index{agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}!setRenderMode@{setRenderMode}}
+\index{setRenderMode@{setRenderMode}!agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}}
+\doxysubsubsection{\texorpdfstring{setRenderMode()}{setRenderMode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Renderer\+::set\+Render\+Mode (\begin{DoxyParamCaption}\item[{void $\ast$}]{view,  }\item[{media\+::base\+::\+R\+E\+N\+D\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE}]{render\+Mode,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the render mode of the view. 
+\begin{DoxyParams}{Parameters}
+{\em view} & the view to set render mode. \\
+\hline
+{\em render\+Mode} & The video render mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_renderer_ac6df6a03f85f1253975e889102cfbf8b}\label{classagora_1_1rtc_1_1_i_video_renderer_ac6df6a03f85f1253975e889102cfbf8b}} 
+\index{agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}!setMirror@{setMirror}}
+\index{setMirror@{setMirror}!agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}}
+\doxysubsubsection{\texorpdfstring{setMirror()}{setMirror()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Renderer\+::set\+Mirror (\begin{DoxyParamCaption}\item[{bool}]{mirror,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets whether to mirror the video. 
+\begin{DoxyParams}{Parameters}
+{\em mirror} & Whether to mirror the video\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Mirror the video.
+\item {\ttfamily false}\+: Do not mirror the video. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_renderer_aa91375bacace92c37a16eb5881cb59c6}\label{classagora_1_1rtc_1_1_i_video_renderer_aa91375bacace92c37a16eb5881cb59c6}} 
+\index{agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}!setMirror@{setMirror}}
+\index{setMirror@{setMirror}!agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}}
+\doxysubsubsection{\texorpdfstring{setMirror()}{setMirror()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Renderer\+::set\+Mirror (\begin{DoxyParamCaption}\item[{void $\ast$}]{view,  }\item[{bool}]{mirror,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets whether to mirror the video. 
+\begin{DoxyParams}{Parameters}
+{\em view} & the view to set mirror mode. \\
+\hline
+{\em mirror} & Whether to mirror the video\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Mirror the video.
+\item {\ttfamily false}\+: Do not mirror the video. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_renderer_a4cd2117161f249ad94c03df27fa687bb}\label{classagora_1_1rtc_1_1_i_video_renderer_a4cd2117161f249ad94c03df27fa687bb}} 
+\index{agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}!setView@{setView}}
+\index{setView@{setView}!agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}}
+\doxysubsubsection{\texorpdfstring{setView()}{setView()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Renderer\+::set\+View (\begin{DoxyParamCaption}\item[{void $\ast$}]{view,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the video display window. 
+\begin{DoxyParams}{Parameters}
+{\em view} & The pointer to the video display window. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_renderer_acec91536afcf5b1c4642d99f87443e31}\label{classagora_1_1rtc_1_1_i_video_renderer_acec91536afcf5b1c4642d99f87443e31}} 
+\index{agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}!addView@{addView}}
+\index{addView@{addView}!agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}}
+\doxysubsubsection{\texorpdfstring{addView()}{addView()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Renderer\+::add\+View (\begin{DoxyParamCaption}\item[{void $\ast$}]{view,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} \&}]{crop\+Area,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the video display window. 
+\begin{DoxyParams}{Parameters}
+{\em view} & The pointer to the video display window. \\
+\hline
+{\em crop\+Area} & (\mbox{\hyperlink{classagora_1_1_optional}{Optional}}) Sets the relative location of the region to show. See \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_renderer_a7f8a9187d3f25b2dca64203c15907740}\label{classagora_1_1rtc_1_1_i_video_renderer_a7f8a9187d3f25b2dca64203c15907740}} 
+\index{agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}!unsetView@{unsetView}}
+\index{unsetView@{unsetView}!agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}}
+\doxysubsubsection{\texorpdfstring{unsetView()}{unsetView()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Renderer\+::unset\+View (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops rendering the video view on the window. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_renderer_a3cdc8fe52aa3321cdb00fbc0edf7a14b}\label{classagora_1_1rtc_1_1_i_video_renderer_a3cdc8fe52aa3321cdb00fbc0edf7a14b}} 
+\index{agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}!removeView@{removeView}}
+\index{removeView@{removeView}!agora::rtc::IVideoRenderer@{agora::rtc::IVideoRenderer}}
+\doxysubsubsection{\texorpdfstring{removeView()}{removeView()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Renderer\+::remove\+View (\begin{DoxyParamCaption}\item[{void $\ast$}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+remove rendering the video view on the window. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

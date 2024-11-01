@@ -1,0 +1,53 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{}\doxysection{agora\+::rtc\+::I\+Audio\+Pcm\+Data\+Sender Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}\index{agora::rtc::IAudioPcmDataSender@{agora::rtc::IAudioPcmDataSender}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Audio\+Pcm\+Data\+Sender\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender_a61b77d230dff1c1b1f16a8d4e9f8bad7}{send\+Audio\+Pcm\+Data}} (const void $\ast$audio\+\_\+data, uint32\+\_\+t capture\+\_\+timestamp, int64\+\_\+t presentation\+\_\+ms, const size\+\_\+t samples\+\_\+per\+\_\+channel, const agora\+::rtc\+::\+B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+A\+M\+P\+LE bytes\+\_\+per\+\_\+sample, const size\+\_\+t number\+\_\+of\+\_\+channels, const uint32\+\_\+t sample\+\_\+rate, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{I\+Audio\+Pcm\+Data\+Sender}} class.
+
+In scenarios involving custom audio source, you can use the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_pcm_data_sender}{I\+Audio\+Pcm\+Data\+Sender}}} class to send P\+CM audio data directly to the audio track. If the audio track is disabled, the sent audio data is automatically discarded. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_pcm_data_sender_a61b77d230dff1c1b1f16a8d4e9f8bad7}\label{classagora_1_1rtc_1_1_i_audio_pcm_data_sender_a61b77d230dff1c1b1f16a8d4e9f8bad7}} 
+\index{agora::rtc::IAudioPcmDataSender@{agora::rtc::IAudioPcmDataSender}!sendAudioPcmData@{sendAudioPcmData}}
+\index{sendAudioPcmData@{sendAudioPcmData}!agora::rtc::IAudioPcmDataSender@{agora::rtc::IAudioPcmDataSender}}
+\doxysubsubsection{\texorpdfstring{sendAudioPcmData()}{sendAudioPcmData()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Pcm\+Data\+Sender\+::send\+Audio\+Pcm\+Data (\begin{DoxyParamCaption}\item[{const void $\ast$}]{audio\+\_\+data,  }\item[{uint32\+\_\+t}]{capture\+\_\+timestamp,  }\item[{int64\+\_\+t}]{presentation\+\_\+ms,  }\item[{const size\+\_\+t}]{samples\+\_\+per\+\_\+channel,  }\item[{const agora\+::rtc\+::\+B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+A\+M\+P\+LE}]{bytes\+\_\+per\+\_\+sample,  }\item[{const size\+\_\+t}]{number\+\_\+of\+\_\+channels,  }\item[{const uint32\+\_\+t}]{sample\+\_\+rate,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends the P\+CM audio data to the local audio track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+\_\+data} & The P\+CM audio data to be sent. \\
+\hline
+{\em samples\+\_\+per\+\_\+channel} & The number of audio samples in 10 ms for each audio channel. \\
+\hline
+{\em bytes\+\_\+per\+\_\+sample} & The number of bytes in each sample. \\
+\hline
+{\em number\+\_\+of\+\_\+channels} & The number of audio channels. \\
+\hline
+{\em sample\+\_\+rate} & The sample rate (Hz). The minimum value is 8000.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

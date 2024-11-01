@@ -1,0 +1,70 @@
+\hypertarget{classagora_1_1media_1_1_i_audio_frame_observer}{}\doxysection{agora\+::media\+::I\+Audio\+Frame\+Observer Class Reference}
+\label{classagora_1_1media_1_1_i_audio_frame_observer}\index{agora::media::IAudioFrameObserver@{agora::media::IAudioFrameObserver}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Base.\+h$>$}
+
+Inheritance diagram for agora\+::media\+::I\+Audio\+Frame\+Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1media_1_1_i_audio_frame_observer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_add04e053c8a76ea70f4f40c2c7276275}{on\+Playback\+Audio\+Frame\+Before\+Mixing}} (const char $\ast$channel\+Id, rtc\+::uid\+\_\+t uid, \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&audio\+Frame)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_af9f96e0fb16217950c8045b54a970d90}{on\+Playback\+Audio\+Frame\+Before\+Mixing}} (const char $\ast$channel\+Id, base\+::user\+\_\+id\+\_\+t user\+Id, \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&audio\+Frame)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer}{I\+Audio\+Frame\+Observer}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_add04e053c8a76ea70f4f40c2c7276275}\label{classagora_1_1media_1_1_i_audio_frame_observer_add04e053c8a76ea70f4f40c2c7276275}} 
+\index{agora::media::IAudioFrameObserver@{agora::media::IAudioFrameObserver}!onPlaybackAudioFrameBeforeMixing@{onPlaybackAudioFrameBeforeMixing}}
+\index{onPlaybackAudioFrameBeforeMixing@{onPlaybackAudioFrameBeforeMixing}!agora::media::IAudioFrameObserver@{agora::media::IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onPlaybackAudioFrameBeforeMixing()}{onPlaybackAudioFrameBeforeMixing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Audio\+Frame\+Observer\+::on\+Playback\+Audio\+Frame\+Before\+Mixing (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel\+Id,  }\item[{rtc\+::uid\+\_\+t}]{uid,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} \&}]{audio\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the before-\/mixing playback audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name \\
+\hline
+{\em uid} & ID of the remote user. \\
+\hline
+{\em audio\+Frame} & The reference to the audio frame\+: Audio\+Frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The before-\/mixing playback audio frame is valid and is encoded and sent.
+\item false\+: The before-\/mixing playback audio frame is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_frame_observer_af9f96e0fb16217950c8045b54a970d90}\label{classagora_1_1media_1_1_i_audio_frame_observer_af9f96e0fb16217950c8045b54a970d90}} 
+\index{agora::media::IAudioFrameObserver@{agora::media::IAudioFrameObserver}!onPlaybackAudioFrameBeforeMixing@{onPlaybackAudioFrameBeforeMixing}}
+\index{onPlaybackAudioFrameBeforeMixing@{onPlaybackAudioFrameBeforeMixing}!agora::media::IAudioFrameObserver@{agora::media::IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onPlaybackAudioFrameBeforeMixing()}{onPlaybackAudioFrameBeforeMixing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::on\+Playback\+Audio\+Frame\+Before\+Mixing}
+
+Occurs when the before-\/mixing playback audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name \\
+\hline
+{\em user\+Id} & ID of the remote user. \\
+\hline
+{\em audio\+Frame} & The reference to the audio frame\+: Audio\+Frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The before-\/mixing playback audio frame is valid and is encoded and sent.
+\item false\+: The before-\/mixing playback audio frame is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}

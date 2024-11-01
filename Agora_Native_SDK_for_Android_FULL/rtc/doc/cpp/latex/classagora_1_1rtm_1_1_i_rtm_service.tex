@@ -1,0 +1,177 @@
+\hypertarget{classagora_1_1rtm_1_1_i_rtm_service}{}\doxysection{agora\+::rtm\+::I\+Rtm\+Service Class Reference}
+\label{classagora_1_1rtm_1_1_i_rtm_service}\index{agora::rtm::IRtmService@{agora::rtm::IRtmService}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtm\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_a4cdc69f903ee52d849834454742fe270}{initialize}} (const char $\ast$app\+Id, \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler}{I\+Rtm\+Service\+Event\+Handler}} $\ast$event\+Handler)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_a0efbaa6b2409e68144afeaa0c9a070bd}{unregister\+Observer}} (\mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler}{I\+Rtm\+Service\+Event\+Handler}} $\ast$event\+Handler)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_a40f5bb3bc5092620a1ec58597f45ada1}{release}} (bool sync=false)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_ae14745f84c2713557233a76f87d813be}{login}} (const char $\ast$token, const char $\ast$user\+Id, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_a9338f44afa34d415ce050e9cdb01c364}{logout}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_a9fd01f4122f34587caffc06bb66fee06}{send\+Message\+To\+Peer}} (const char $\ast$peer\+Id, const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} $\ast$message, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel}{I\+Channel}} $\ast$ \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_a0196e60ee165f6c97f561cf71499d377}{create\+Channel}} (const char $\ast$channel\+Id, \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler}{I\+Channel\+Event\+Handler}} $\ast$event\+Handler)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service}{I\+Rtm\+Service}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_a4cdc69f903ee52d849834454742fe270}\label{classagora_1_1rtm_1_1_i_rtm_service_a4cdc69f903ee52d849834454742fe270}} 
+\index{agora::rtm::IRtmService@{agora::rtm::IRtmService}!initialize@{initialize}}
+\index{initialize@{initialize}!agora::rtm::IRtmService@{agora::rtm::IRtmService}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Rtm\+Service\+::initialize (\begin{DoxyParamCaption}\item[{const char $\ast$}]{app\+Id,  }\item[{\mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler}{I\+Rtm\+Service\+Event\+Handler}} $\ast$}]{event\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates and gets an \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service}{I\+Rtm\+Service}} instance. 
+\begin{DoxyParams}{Parameters}
+{\em app\+Id} & The pointer to the app ID. \\
+\hline
+{\em event\+Handler} & The pointer to the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler}{I\+Rtm\+Service\+Event\+Handler}} object. \\
+\hline
+{\em event\+Space} & The connection specific ID, used during report to argus. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_a0efbaa6b2409e68144afeaa0c9a070bd}\label{classagora_1_1rtm_1_1_i_rtm_service_a0efbaa6b2409e68144afeaa0c9a070bd}} 
+\index{agora::rtm::IRtmService@{agora::rtm::IRtmService}!unregisterObserver@{unregisterObserver}}
+\index{unregisterObserver@{unregisterObserver}!agora::rtm::IRtmService@{agora::rtm::IRtmService}}
+\doxysubsubsection{\texorpdfstring{unregisterObserver()}{unregisterObserver()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Rtm\+Service\+::unregister\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler}{I\+Rtm\+Service\+Event\+Handler}} $\ast$}]{event\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler}{I\+Rtm\+Service\+Event\+Handler}} object. 
+\begin{DoxyParams}{Parameters}
+{\em event\+Handler} & The pointer to the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler}{I\+Rtm\+Service\+Event\+Handler}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_a40f5bb3bc5092620a1ec58597f45ada1}\label{classagora_1_1rtm_1_1_i_rtm_service_a40f5bb3bc5092620a1ec58597f45ada1}} 
+\index{agora::rtm::IRtmService@{agora::rtm::IRtmService}!release@{release}}
+\index{release@{release}!agora::rtm::IRtmService@{agora::rtm::IRtmService}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Rtm\+Service\+::release (\begin{DoxyParamCaption}\item[{bool}]{sync = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service}{I\+Rtm\+Service}} instance. 
+\begin{DoxyParams}{Parameters}
+{\em sync} & Determines whether to report the result of this method call synchronously.
+\begin{DoxyItemize}
+\item true\+: Report the result of this method call after the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service}{I\+Rtm\+Service}} instance is released.
+\item false\+: (Default) Report the result of this method call immediately, even when the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service}{I\+Rtm\+Service}} is not released. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_ae14745f84c2713557233a76f87d813be}\label{classagora_1_1rtm_1_1_i_rtm_service_ae14745f84c2713557233a76f87d813be}} 
+\index{agora::rtm::IRtmService@{agora::rtm::IRtmService}!login@{login}}
+\index{login@{login}!agora::rtm::IRtmService@{agora::rtm::IRtmService}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Rtm\+Service\+::login (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token,  }\item[{const char $\ast$}]{user\+Id,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Logs in the R\+TM service.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item If you login with the same user ID from a different instance, your previous login will be kicked.
+\item The call frequency limit of this method is 2 queries per second. 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The token used to log in the R\+TM service. \\
+\hline
+{\em user\+Id} & ID of the user logging in the R\+TM service. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_a9338f44afa34d415ce050e9cdb01c364}\label{classagora_1_1rtm_1_1_i_rtm_service_a9338f44afa34d415ce050e9cdb01c364}} 
+\index{agora::rtm::IRtmService@{agora::rtm::IRtmService}!logout@{logout}}
+\index{logout@{logout}!agora::rtm::IRtmService@{agora::rtm::IRtmService}}
+\doxysubsubsection{\texorpdfstring{logout()}{logout()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Rtm\+Service\+::logout (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Logs out of the R\+TM service. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_a9fd01f4122f34587caffc06bb66fee06}\label{classagora_1_1rtm_1_1_i_rtm_service_a9fd01f4122f34587caffc06bb66fee06}} 
+\index{agora::rtm::IRtmService@{agora::rtm::IRtmService}!sendMessageToPeer@{sendMessageToPeer}}
+\index{sendMessageToPeer@{sendMessageToPeer}!agora::rtm::IRtmService@{agora::rtm::IRtmService}}
+\doxysubsubsection{\texorpdfstring{sendMessageToPeer()}{sendMessageToPeer()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Rtm\+Service\+::send\+Message\+To\+Peer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{peer\+Id,  }\item[{const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} $\ast$}]{message,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends a peer message to a specified remote user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em peer\+Id} & The pointer to the ID of the remote user. \\
+\hline
+{\em message} & The pointer to message\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_a0196e60ee165f6c97f561cf71499d377}\label{classagora_1_1rtm_1_1_i_rtm_service_a0196e60ee165f6c97f561cf71499d377}} 
+\index{agora::rtm::IRtmService@{agora::rtm::IRtmService}!createChannel@{createChannel}}
+\index{createChannel@{createChannel}!agora::rtm::IRtmService@{agora::rtm::IRtmService}}
+\doxysubsubsection{\texorpdfstring{createChannel()}{createChannel()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel}{I\+Channel}}$\ast$ agora\+::rtm\+::\+I\+Rtm\+Service\+::create\+Channel (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel\+Id,  }\item[{\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler}{I\+Channel\+Event\+Handler}} $\ast$}]{event\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates an R\+TM channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The unique channel name for an R\+TM session. Supported character scopes are\+:
+\begin{DoxyItemize}
+\item All lowercase English letters\+: a to z.
+\item All uppercase English letters\+: A to Z.
+\item All numeric characters\+: 0 to 9.
+\item The space character.
+\item Punctuation characters and other symbols, including\+: \char`\"{}!\char`\"{}, \char`\"{}\#\char`\"{}, \char`\"{}\$\char`\"{}, \char`\"{}\%\char`\"{}, \char`\"{}\&\char`\"{}, \char`\"{}(\char`\"{}, \char`\"{})\char`\"{}, \char`\"{}+\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}\+:\char`\"{}, \char`\"{};\char`\"{}, \char`\"{}$<$\char`\"{}, \char`\"{}=\char`\"{}, \char`\"{}.\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}?\char`\"{}, \char`\"{}@\char`\"{}, \char`\"{}\mbox{[}\char`\"{}, \char`\"{}\mbox{]}\char`\"{}, \char`\"{}$^\wedge$\char`\"{}, \char`\"{}\+\_\+\char`\"{}, \char`\"{} \{\char`\"{}, \char`\"{}\}\char`\"{}, \char`\"{}$\vert$\char`\"{}, \char`\"{}$\sim$\char`\"{}, \char`\"{},\char`\"{}
+\end{DoxyItemize}\\
+\hline
+{\em event\+Handler} & The pointer to \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler}{I\+Channel\+Event\+Handler}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to an \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel}{I\+Channel}} instance, if the method call succeeds.
+\item An empty pointer N\+U\+LL, if the method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}

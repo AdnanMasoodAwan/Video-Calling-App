@@ -1,0 +1,116 @@
+\hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{}\doxysection{agora\+::media\+::I\+Audio\+Frame\+Observer\+Base\+::Audio\+Frame Struct Reference}
+\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aa0e2b429cd1e9e55f60614adffa01dac}{A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a9e04a714fe2e4eebfcb0a0fcc408052d}{type}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a49b3248c73b2cc26f356340fa2ad4e25}{samples\+Per\+Channel}}
+\item 
+agora\+::rtc\+::\+B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+A\+M\+P\+LE \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_aeaba879497222e6a31d045609399273f}{bytes\+Per\+Sample}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a430c78087098e6274c4af455663293ef}{channels}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a5cba3e92a33cd5112b6d26aa0c5746eb}{samples\+Per\+Sec}}
+\item 
+void $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a758829545ac205eb11cea294a8cbfeee}{buffer}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_aec488c2aa5e96fb7ed4d8f1dcd4d9fc0}{render\+Time\+Ms}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a6b38aace45f60526536994b8dd8dbdb1}{avsync\+\_\+type}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a025a9a7b8689ce61f1653e99d37382c9}{presentation\+Ms}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a866adca216aea7a77f5e2de643f0f4a2}{audio\+Track\+Number}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a352c88d3426c135ad7575707a19b1405}{rtp\+Timestamp}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of the \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame}{Audio\+Frame}} struct. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a9e04a714fe2e4eebfcb0a0fcc408052d}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a9e04a714fe2e4eebfcb0a0fcc408052d}} 
+\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}!type@{type}}
+\index{type@{type}!agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aa0e2b429cd1e9e55f60614adffa01dac}{A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+T\+Y\+PE}} agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Frame\+::type}
+
+The audio frame type\+: \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aa0e2b429cd1e9e55f60614adffa01dac}{A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+T\+Y\+PE}}. \mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a49b3248c73b2cc26f356340fa2ad4e25}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a49b3248c73b2cc26f356340fa2ad4e25}} 
+\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}!samplesPerChannel@{samplesPerChannel}}
+\index{samplesPerChannel@{samplesPerChannel}!agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+\doxysubsubsection{\texorpdfstring{samplesPerChannel}{samplesPerChannel}}
+{\footnotesize\ttfamily int agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Frame\+::samples\+Per\+Channel}
+
+The number of samples per channel in this frame. \mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_aeaba879497222e6a31d045609399273f}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_aeaba879497222e6a31d045609399273f}} 
+\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}!bytesPerSample@{bytesPerSample}}
+\index{bytesPerSample@{bytesPerSample}!agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+\doxysubsubsection{\texorpdfstring{bytesPerSample}{bytesPerSample}}
+{\footnotesize\ttfamily agora\+::rtc\+::\+B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+A\+M\+P\+LE agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Frame\+::bytes\+Per\+Sample}
+
+The number of bytes per sample\+: \#\+B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+A\+M\+P\+LE \mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a430c78087098e6274c4af455663293ef}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a430c78087098e6274c4af455663293ef}} 
+\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}!channels@{channels}}
+\index{channels@{channels}!agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+\doxysubsubsection{\texorpdfstring{channels}{channels}}
+{\footnotesize\ttfamily int agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Frame\+::channels}
+
+The number of audio channels (data is interleaved, if stereo).
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a5cba3e92a33cd5112b6d26aa0c5746eb}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a5cba3e92a33cd5112b6d26aa0c5746eb}} 
+\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}!samplesPerSec@{samplesPerSec}}
+\index{samplesPerSec@{samplesPerSec}!agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+\doxysubsubsection{\texorpdfstring{samplesPerSec}{samplesPerSec}}
+{\footnotesize\ttfamily int agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Frame\+::samples\+Per\+Sec}
+
+The sample rate \mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a758829545ac205eb11cea294a8cbfeee}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a758829545ac205eb11cea294a8cbfeee}} 
+\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}!buffer@{buffer}}
+\index{buffer@{buffer}!agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily void$\ast$ agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Frame\+::buffer}
+
+The data buffer of the audio frame. When the audio frame uses a stereo channel, the data buffer is interleaved.
+
+Buffer data size\+: buffer = samples\+Per\+Channel × channels × bytes\+Per\+Sample. \mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_aec488c2aa5e96fb7ed4d8f1dcd4d9fc0}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_aec488c2aa5e96fb7ed4d8f1dcd4d9fc0}} 
+\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}!renderTimeMs@{renderTimeMs}}
+\index{renderTimeMs@{renderTimeMs}!agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+\doxysubsubsection{\texorpdfstring{renderTimeMs}{renderTimeMs}}
+{\footnotesize\ttfamily int64\+\_\+t agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Frame\+::render\+Time\+Ms}
+
+The timestamp to render the audio data.
+
+You can use this timestamp to restore the order of the captured audio frame, and synchronize audio and video frames in video scenarios, including scenarios where external video sources are used. \mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a6b38aace45f60526536994b8dd8dbdb1}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a6b38aace45f60526536994b8dd8dbdb1}} 
+\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}!avsync\_type@{avsync\_type}}
+\index{avsync\_type@{avsync\_type}!agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+\doxysubsubsection{\texorpdfstring{avsync\_type}{avsync\_type}}
+{\footnotesize\ttfamily int agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Frame\+::avsync\+\_\+type}
+
+A reserved parameter.
+
+You can use this presentation\+Ms parameter to indicate the presenation milisecond timestamp, this will then filled into audio4 extension part, the remote side could use this pts in av sync process with video frame. \mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a025a9a7b8689ce61f1653e99d37382c9}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a025a9a7b8689ce61f1653e99d37382c9}} 
+\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}!presentationMs@{presentationMs}}
+\index{presentationMs@{presentationMs}!agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+\doxysubsubsection{\texorpdfstring{presentationMs}{presentationMs}}
+{\footnotesize\ttfamily int64\+\_\+t agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Frame\+::presentation\+Ms}
+
+The pts timestamp of this audio frame.
+
+This timestamp is used to indicate the origin pts time of the frame, and sync with video frame by the pts time stamp \mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a866adca216aea7a77f5e2de643f0f4a2}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a866adca216aea7a77f5e2de643f0f4a2}} 
+\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}!audioTrackNumber@{audioTrackNumber}}
+\index{audioTrackNumber@{audioTrackNumber}!agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+\doxysubsubsection{\texorpdfstring{audioTrackNumber}{audioTrackNumber}}
+{\footnotesize\ttfamily int agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Frame\+::audio\+Track\+Number}
+
+The number of the audio track. \mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a352c88d3426c135ad7575707a19b1405}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_frame_a352c88d3426c135ad7575707a19b1405}} 
+\index{agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}!rtpTimestamp@{rtpTimestamp}}
+\index{rtpTimestamp@{rtpTimestamp}!agora::media::IAudioFrameObserverBase::AudioFrame@{agora::media::IAudioFrameObserverBase::AudioFrame}}
+\doxysubsubsection{\texorpdfstring{rtpTimestamp}{rtpTimestamp}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Frame\+::rtp\+Timestamp}
+
+R\+TP timestamp of the first sample in the audio frame 

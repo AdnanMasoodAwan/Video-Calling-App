@@ -1,0 +1,72 @@
+\hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_media_recorder_callback}{}\doxysection{io.\+agora.\+rtc2.\+I\+Media\+Recorder\+Callback Interface Reference}
+\label{interfaceio_1_1agora_1_1rtc2_1_1_i_media_recorder_callback}\index{io.agora.rtc2.IMediaRecorderCallback@{io.agora.rtc2.IMediaRecorderCallback}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_media_recorder_callback_a10d7e4bbb53400f8fbadcb5d9485de6b}{on\+Recorder\+State\+Changed}} (String channel\+Id, int uid, int state, int reason)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_media_recorder_callback_a9b974422fdaa7069f878ea5369aab3c3}{on\+Recorder\+Info\+Updated}} (String channel\+Id, int uid, \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_recorder_info}{Recorder\+Info}} info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_media_recorder_callback}{I\+Media\+Recorder\+Callback}}} interface.
+
+\begin{DoxySince}{Since}
+v4.\+0.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_media_recorder_callback_a10d7e4bbb53400f8fbadcb5d9485de6b}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_media_recorder_callback_a10d7e4bbb53400f8fbadcb5d9485de6b}} 
+\index{io.agora.rtc2.IMediaRecorderCallback@{io.agora.rtc2.IMediaRecorderCallback}!onRecorderStateChanged@{onRecorderStateChanged}}
+\index{onRecorderStateChanged@{onRecorderStateChanged}!io.agora.rtc2.IMediaRecorderCallback@{io.agora.rtc2.IMediaRecorderCallback}}
+\doxysubsubsection{\texorpdfstring{onRecorderStateChanged()}{onRecorderStateChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Media\+Recorder\+Callback.\+on\+Recorder\+State\+Changed (\begin{DoxyParamCaption}\item[{String}]{channel\+Id,  }\item[{int}]{uid,  }\item[{int}]{state,  }\item[{int}]{reason }\end{DoxyParamCaption})}
+
+Occurs when the recording state changes.
+
+When the local audio and video recording state changes, the S\+DK triggers this callback to report the current recording state and the reason for the change.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The current recording state\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{}{int R\+E\+C\+O\+R\+D\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+E\+R\+R\+OR(-\/1)}}\+: An error occurs during the recording. See {\ttfamily error} message for the reason.
+\item \mbox{\hyperlink{}{R\+E\+C\+O\+R\+D\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+A\+R\+T(2)}}\+: The audio and video recording is started.
+\item \mbox{\hyperlink{}{R\+E\+C\+O\+R\+D\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P(3)}}\+: The audio and video recording is stopped. 
+\end{DoxyItemize}\\
+\hline
+{\em reason} & The reason for the state change\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{}{R\+E\+C\+O\+R\+D\+E\+R\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+N\+O\+N\+E(0)}}\+: No error occurs.
+\item \mbox{\hyperlink{}{R\+E\+C\+O\+R\+D\+E\+R\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+W\+R\+I\+T\+E\+\_\+\+F\+A\+I\+L\+E\+D(1)}}\+: The S\+DK fails to write the recorded data to a file.
+\item \mbox{\hyperlink{}{R\+E\+C\+O\+R\+D\+E\+R\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+N\+O\+\_\+\+S\+T\+R\+E\+A\+M(2)}}\+: The S\+DK does not detect audio and video streams to be recorded, or audio and video streams are interrupted for more than five seconds during recording.
+\item \mbox{\hyperlink{}{R\+E\+C\+O\+R\+D\+E\+R\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+O\+V\+E\+R\+\_\+\+M\+A\+X\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N(3)}}\+: The recording duration exceeds the upper limit.
+\item \mbox{\hyperlink{}{R\+E\+C\+O\+R\+D\+E\+R\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+C\+H\+A\+N\+G\+E\+D(4)}}\+: The recording configuration changes. 
+\end{DoxyItemize}\\
+\hline
+{\em channel\+Id} & The channel name. \\
+\hline
+{\em uid} & ID of the user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_media_recorder_callback_a9b974422fdaa7069f878ea5369aab3c3}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_media_recorder_callback_a9b974422fdaa7069f878ea5369aab3c3}} 
+\index{io.agora.rtc2.IMediaRecorderCallback@{io.agora.rtc2.IMediaRecorderCallback}!onRecorderInfoUpdated@{onRecorderInfoUpdated}}
+\index{onRecorderInfoUpdated@{onRecorderInfoUpdated}!io.agora.rtc2.IMediaRecorderCallback@{io.agora.rtc2.IMediaRecorderCallback}}
+\doxysubsubsection{\texorpdfstring{onRecorderInfoUpdated()}{onRecorderInfoUpdated()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Media\+Recorder\+Callback.\+on\+Recorder\+Info\+Updated (\begin{DoxyParamCaption}\item[{String}]{channel\+Id,  }\item[{int}]{uid,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_recorder_info}{Recorder\+Info}}}]{info }\end{DoxyParamCaption})}
+
+Occurs when the recording information is updated.
+
+After you successfully register this callback and enable the local audio and video recording, the S\+DK periodically triggers the {\ttfamily on\+Recorder\+Info\+Updated} callback based on the set value of {\ttfamily recorder\+Info\+Update\+Interval}. This callback reports the filename, duration, and size of the current recording file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & Information about the recording file. See \mbox{\hyperlink{}{Recorder\+Info}}.\textbackslash{} \\
+\hline
+{\em channel\+Id} & The channel name. \\
+\hline
+{\em uid} & ID of the user. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,107 @@
+\hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal}{}\doxysection{io.\+agora.\+rtc2.\+Rtc\+Engine\+Internal Class Reference}
+\label{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal}\index{io.agora.rtc2.RtcEngineInternal@{io.agora.rtc2.RtcEngineInternal}}
+Inheritance diagram for io.\+agora.\+rtc2.\+Rtc\+Engine\+Internal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_af6b7e731acdad3ff47fb5af20c7c87a9}\label{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_af6b7e731acdad3ff47fb5af20c7c87a9}} 
+abstract int {\bfseries set\+Profile} (String profile, boolean merge)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_aeb79b8d641eba1e110725bbd929c4b8d}\label{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_aeb79b8d641eba1e110725bbd929c4b8d}} 
+abstract int {\bfseries enable\+Transport\+Quality\+Indication} (boolean enabled)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_aad268676464c8712723b6508a3da217a}\label{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_aad268676464c8712723b6508a3da217a}} 
+abstract String {\bfseries make\+Quality\+Report\+Url} (String channel, String listener\+Uid, String speaker\+Uid, int format)
+\item 
+abstract int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a6e45e351fa7aa891d5a38e2911d7238a}{update\+Shared\+Context}} (E\+G\+L\+Context shared\+Context)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a52360a0e82e2f3932c14ca2be60830ee}\label{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a52360a0e82e2f3932c14ca2be60830ee}} 
+abstract int {\bfseries update\+Shared\+Context} (android.\+opengl.\+E\+G\+L\+Context shared\+Context)
+\item 
+abstract int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a9e7df4b85d39dd74aa7bb65201662f38}{set\+Texture\+Id}} (int id, E\+G\+L\+Context egl\+Context, int width, int height, long ts)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_ac8a0f77e24c7f7d25b94f08d1ea710f2}\label{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_ac8a0f77e24c7f7d25b94f08d1ea710f2}} 
+abstract int {\bfseries set\+Texture\+Id} (int id, android.\+opengl.\+E\+G\+L\+Context egl\+Context, int width, int height, long ts)
+\item 
+abstract int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a99b1609cfd78efa0959c88c478e8e5a0}{monitor\+Audio\+Route\+Change}} (boolean is\+Monitoring)
+\item 
+abstract int \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a44b27e13534779cad10ff185b694bfde}{set\+Api\+Call\+Mode}} (int sync\+Call\+Timeout)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a6e45e351fa7aa891d5a38e2911d7238a}\label{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a6e45e351fa7aa891d5a38e2911d7238a}} 
+\index{io.agora.rtc2.RtcEngineInternal@{io.agora.rtc2.RtcEngineInternal}!updateSharedContext@{updateSharedContext}}
+\index{updateSharedContext@{updateSharedContext}!io.agora.rtc2.RtcEngineInternal@{io.agora.rtc2.RtcEngineInternal}}
+\doxysubsubsection{\texorpdfstring{updateSharedContext()}{updateSharedContext()}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+rtc2.\+Rtc\+Engine\+Internal.\+update\+Shared\+Context (\begin{DoxyParamCaption}\item[{E\+G\+L\+Context}]{shared\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Shared context of Media\+Codec. Only takes effect when using the hardware encoder and texture as the input source.
+
+
+\begin{DoxyParams}{Parameters}
+{\em shared\+Context} & Shared context \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a9e7df4b85d39dd74aa7bb65201662f38}\label{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a9e7df4b85d39dd74aa7bb65201662f38}} 
+\index{io.agora.rtc2.RtcEngineInternal@{io.agora.rtc2.RtcEngineInternal}!setTextureId@{setTextureId}}
+\index{setTextureId@{setTextureId}!io.agora.rtc2.RtcEngineInternal@{io.agora.rtc2.RtcEngineInternal}}
+\doxysubsubsection{\texorpdfstring{setTextureId()}{setTextureId()}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+rtc2.\+Rtc\+Engine\+Internal.\+set\+Texture\+Id (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{E\+G\+L\+Context}]{egl\+Context,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{long}]{ts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Sets the texture ID to Media\+Codec.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Texture ID \\
+\hline
+{\em egl\+Context} & egl\+Context which the texture belongs to \\
+\hline
+{\em width} & Texture\textquotesingle{}s original width \\
+\hline
+{\em height} & Texture\textquotesingle{}s original height \\
+\hline
+{\em ts} & Timestamp of the captured frame (ms) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Texture ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a99b1609cfd78efa0959c88c478e8e5a0}\label{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a99b1609cfd78efa0959c88c478e8e5a0}} 
+\index{io.agora.rtc2.RtcEngineInternal@{io.agora.rtc2.RtcEngineInternal}!monitorAudioRouteChange@{monitorAudioRouteChange}}
+\index{monitorAudioRouteChange@{monitorAudioRouteChange}!io.agora.rtc2.RtcEngineInternal@{io.agora.rtc2.RtcEngineInternal}}
+\doxysubsubsection{\texorpdfstring{monitorAudioRouteChange()}{monitorAudioRouteChange()}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+rtc2.\+Rtc\+Engine\+Internal.\+monitor\+Audio\+Route\+Change (\begin{DoxyParamCaption}\item[{boolean}]{is\+Monitoring }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Enables the audio routing monitoring by the S\+DK.
+
+Call before joining a channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Monitoring} & Default value is true \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a44b27e13534779cad10ff185b694bfde}\label{classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal_a44b27e13534779cad10ff185b694bfde}} 
+\index{io.agora.rtc2.RtcEngineInternal@{io.agora.rtc2.RtcEngineInternal}!setApiCallMode@{setApiCallMode}}
+\index{setApiCallMode@{setApiCallMode}!io.agora.rtc2.RtcEngineInternal@{io.agora.rtc2.RtcEngineInternal}}
+\doxysubsubsection{\texorpdfstring{setApiCallMode()}{setApiCallMode()}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+rtc2.\+Rtc\+Engine\+Internal.\+set\+Api\+Call\+Mode (\begin{DoxyParamCaption}\item[{int}]{sync\+Call\+Timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sync\+Call\+Timeout} & Synchronous or asynchronous mode -\/1\+: Asynchronous mode $>$=0\+: Synchronous mode, timeout (ms) \\
+\hline
+\end{DoxyParams}

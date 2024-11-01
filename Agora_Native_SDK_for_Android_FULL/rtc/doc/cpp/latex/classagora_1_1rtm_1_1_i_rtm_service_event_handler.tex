@@ -1,0 +1,87 @@
+\hypertarget{classagora_1_1rtm_1_1_i_rtm_service_event_handler}{}\doxysection{agora\+::rtm\+::I\+Rtm\+Service\+Event\+Handler Class Reference}
+\label{classagora_1_1rtm_1_1_i_rtm_service_event_handler}\index{agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtm\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a8cf1b2be30172004f595484e0a194d76}{on\+Login\+Success}} ()
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a4070957075f00a9a54ed60290838fec4}{on\+Login\+Failure}} (L\+O\+G\+I\+N\+\_\+\+E\+R\+R\+\_\+\+C\+O\+DE error\+Code)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a63ac6fe8d1038d864f0f4cea0a74bc34}{on\+Logout}} ()
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a2a1463bd16f93eb3510a31cd7d0c1913}{on\+Connection\+State\+Changed}} (C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+TE state)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a79262c88821504f3c24926320d09855f}{on\+Send\+Message\+State}} (int64\+\_\+t message\+Id, P\+E\+E\+R\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+T\+A\+TE state)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler_afaf1e899bc3d39dbe33f7fa769897c9a}{on\+Message\+Received\+From\+Peer}} (const char $\ast$peer\+Id, const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} $\ast$message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtm_1_1_i_rtm_service_event_handler}{I\+Rtm\+Service\+Event\+Handler}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a8cf1b2be30172004f595484e0a194d76}\label{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a8cf1b2be30172004f595484e0a194d76}} 
+\index{agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}!onLoginSuccess@{onLoginSuccess}}
+\index{onLoginSuccess@{onLoginSuccess}!agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLoginSuccess()}{onLoginSuccess()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Rtm\+Service\+Event\+Handler\+::on\+Login\+Success (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the user successfully logs in the R\+TM service. \mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a4070957075f00a9a54ed60290838fec4}\label{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a4070957075f00a9a54ed60290838fec4}} 
+\index{agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}!onLoginFailure@{onLoginFailure}}
+\index{onLoginFailure@{onLoginFailure}!agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLoginFailure()}{onLoginFailure()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Rtm\+Service\+Event\+Handler\+::on\+Login\+Failure (\begin{DoxyParamCaption}\item[{L\+O\+G\+I\+N\+\_\+\+E\+R\+R\+\_\+\+C\+O\+DE}]{error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the user fails to log in the R\+TM service. 
+\begin{DoxyParams}{Parameters}
+{\em error\+Code} & The reason for the login failure\+: \#\+L\+O\+G\+I\+N\+\_\+\+E\+R\+R\+\_\+\+C\+O\+DE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a63ac6fe8d1038d864f0f4cea0a74bc34}\label{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a63ac6fe8d1038d864f0f4cea0a74bc34}} 
+\index{agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}!onLogout@{onLogout}}
+\index{onLogout@{onLogout}!agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLogout()}{onLogout()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Rtm\+Service\+Event\+Handler\+::on\+Logout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the user successfully logs out of the R\+TM service. \mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a2a1463bd16f93eb3510a31cd7d0c1913}\label{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a2a1463bd16f93eb3510a31cd7d0c1913}} 
+\index{agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}!onConnectionStateChanged@{onConnectionStateChanged}}
+\index{onConnectionStateChanged@{onConnectionStateChanged}!agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}}
+\doxysubsubsection{\texorpdfstring{onConnectionStateChanged()}{onConnectionStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Rtm\+Service\+Event\+Handler\+::on\+Connection\+State\+Changed (\begin{DoxyParamCaption}\item[{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+TE}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the connection state of the local user has changed. 
+\begin{DoxyParams}{Parameters}
+{\em state} & The current connection state\+: \#\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+TE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a79262c88821504f3c24926320d09855f}\label{classagora_1_1rtm_1_1_i_rtm_service_event_handler_a79262c88821504f3c24926320d09855f}} 
+\index{agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}!onSendMessageState@{onSendMessageState}}
+\index{onSendMessageState@{onSendMessageState}!agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}}
+\doxysubsubsection{\texorpdfstring{onSendMessageState()}{onSendMessageState()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Rtm\+Service\+Event\+Handler\+::on\+Send\+Message\+State (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{message\+Id,  }\item[{P\+E\+E\+R\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+T\+A\+TE}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the state of sending a message. 
+\begin{DoxyParams}{Parameters}
+{\em message\+Id} & ID of the message. \\
+\hline
+{\em state} & The current state of the message\+: \#\+P\+E\+E\+R\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_rtm_service_event_handler_afaf1e899bc3d39dbe33f7fa769897c9a}\label{classagora_1_1rtm_1_1_i_rtm_service_event_handler_afaf1e899bc3d39dbe33f7fa769897c9a}} 
+\index{agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}!onMessageReceivedFromPeer@{onMessageReceivedFromPeer}}
+\index{onMessageReceivedFromPeer@{onMessageReceivedFromPeer}!agora::rtm::IRtmServiceEventHandler@{agora::rtm::IRtmServiceEventHandler}}
+\doxysubsubsection{\texorpdfstring{onMessageReceivedFromPeer()}{onMessageReceivedFromPeer()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Rtm\+Service\+Event\+Handler\+::on\+Message\+Received\+From\+Peer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{peer\+Id,  }\item[{const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user receives a message from a remote user. 
+\begin{DoxyParams}{Parameters}
+{\em peer\+Id} & ID of the remote user that sends the message. \\
+\hline
+{\em message} & The pointer to the message\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}}. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,58 @@
+\hypertarget{classagora_1_1media_1_1_i_media_recorder_observer}{}\doxysection{agora\+::media\+::I\+Media\+Recorder\+Observer Class Reference}
+\label{classagora_1_1media_1_1_i_media_recorder_observer}\index{agora::media::IMediaRecorderObserver@{agora::media::IMediaRecorderObserver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1media_1_1_i_media_recorder_observer_a9c2004c3fe6d7e1ef55bbcf687fdd904}{on\+Recorder\+State\+Changed}} (const char $\ast$channel\+Id, rtc\+::uid\+\_\+t uid, Recorder\+State state, Recorder\+Reason\+Code reason)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1media_1_1_i_media_recorder_observer_aead58f033f1805246a1f4b7b94cb5666}{on\+Recorder\+Info\+Updated}} (const char $\ast$channel\+Id, rtc\+::uid\+\_\+t uid, const \mbox{\hyperlink{structagora_1_1media_1_1_recorder_info}{Recorder\+Info}} \&info)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_media_recorder_observer_a9c2004c3fe6d7e1ef55bbcf687fdd904}\label{classagora_1_1media_1_1_i_media_recorder_observer_a9c2004c3fe6d7e1ef55bbcf687fdd904}} 
+\index{agora::media::IMediaRecorderObserver@{agora::media::IMediaRecorderObserver}!onRecorderStateChanged@{onRecorderStateChanged}}
+\index{onRecorderStateChanged@{onRecorderStateChanged}!agora::media::IMediaRecorderObserver@{agora::media::IMediaRecorderObserver}}
+\doxysubsubsection{\texorpdfstring{onRecorderStateChanged()}{onRecorderStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::media\+::\+I\+Media\+Recorder\+Observer\+::on\+Recorder\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel\+Id,  }\item[{rtc\+::uid\+\_\+t}]{uid,  }\item[{Recorder\+State}]{state,  }\item[{Recorder\+Reason\+Code}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the recording state changes.
+
+\begin{DoxySince}{Since}
+v4.\+0.\+0
+\end{DoxySince}
+When the local audio and video recording state changes, the S\+DK triggers this callback to report the current recording state and the reason for the change.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name. \\
+\hline
+{\em uid} & ID of the user. \\
+\hline
+{\em state} & The current recording state. See Recorder\+State. \\
+\hline
+{\em reason} & The reason for the state change. See Recorder\+Reason\+Code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_media_recorder_observer_aead58f033f1805246a1f4b7b94cb5666}\label{classagora_1_1media_1_1_i_media_recorder_observer_aead58f033f1805246a1f4b7b94cb5666}} 
+\index{agora::media::IMediaRecorderObserver@{agora::media::IMediaRecorderObserver}!onRecorderInfoUpdated@{onRecorderInfoUpdated}}
+\index{onRecorderInfoUpdated@{onRecorderInfoUpdated}!agora::media::IMediaRecorderObserver@{agora::media::IMediaRecorderObserver}}
+\doxysubsubsection{\texorpdfstring{onRecorderInfoUpdated()}{onRecorderInfoUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::media\+::\+I\+Media\+Recorder\+Observer\+::on\+Recorder\+Info\+Updated (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel\+Id,  }\item[{rtc\+::uid\+\_\+t}]{uid,  }\item[{const \mbox{\hyperlink{structagora_1_1media_1_1_recorder_info}{Recorder\+Info}} \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the recording information is updated.
+
+\begin{DoxySince}{Since}
+v4.\+0.\+0
+\end{DoxySince}
+After you successfully register this callback and enable the local audio and video recording, the S\+DK periodically triggers the {\ttfamily on\+Recorder\+Info\+Updated} callback based on the set value of {\ttfamily recorder\+Info\+Update\+Interval}. This callback reports the filename, duration, and size of the current recording file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name. \\
+\hline
+{\em uid} & ID of the user. \\
+\hline
+{\em info} & Information about the recording file. See \mbox{\hyperlink{structagora_1_1media_1_1_recorder_info}{Recorder\+Info}}. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,228 @@
+\hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer}{}\doxysection{agora\+::rtc\+::I\+Media\+Player\+Source\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_media_player_source_observer}\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Media\+Player\+Source.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_a175672d68a5c5b252294e041dfdf5b12}{on\+Player\+Source\+State\+Changed}} (media\+::base\+::\+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+TE state, media\+::base\+::\+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON reason)=0
+\begin{DoxyCompactList}\small\item\em Reports the playback state change. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_ae8f0f915a640ef64d4e4368ee669296e}{on\+Position\+Changed}} (int64\+\_\+t position\+Ms, int64\+\_\+t timestamp\+Ms)=0
+\begin{DoxyCompactList}\small\item\em Reports current playback progress. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_a9c9ab85806339059ea8b8aed80590707}{on\+Player\+Event}} (media\+::base\+::\+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+E\+V\+E\+NT event\+Code, int64\+\_\+t elapsed\+Time, const char $\ast$message)=0
+\begin{DoxyCompactList}\small\item\em Reports the playback event. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_acba6bfe69d4624ea1b0dd9c64ebc63b0}{on\+Meta\+Data}} (const void $\ast$data, int length)=0
+\begin{DoxyCompactList}\small\item\em Occurs when the metadata is received. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_a70be90b22c142a052d9e8cdf1f9b71a3}{on\+Play\+Buffer\+Updated}} (int64\+\_\+t play\+Cached\+Buffer)=0
+\begin{DoxyCompactList}\small\item\em Triggered when play buffer updated, once every 1 second. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_a8e62cb1fd3973474f10564fb2d0f5751}{on\+Preload\+Event}} (const char $\ast$src, media\+::base\+::\+P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+L\+O\+A\+D\+\_\+\+E\+V\+E\+NT event)=0
+\begin{DoxyCompactList}\small\item\em Triggered when the player preload\+Src. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_ade8b59a982d1f3cf595a0fd3a0be304a}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_ade8b59a982d1f3cf595a0fd3a0be304a}} 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_ade8b59a982d1f3cf595a0fd3a0be304a}{on\+Completed}} ()=0
+\begin{DoxyCompactList}\small\item\em Occurs when one playback of the media file is completed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_a68df2caa6e3d70015f2203f715a05964}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_a68df2caa6e3d70015f2203f715a05964}} 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_a68df2caa6e3d70015f2203f715a05964}{on\+Agora\+C\+D\+N\+Token\+Will\+Expire}} ()=0
+\begin{DoxyCompactList}\small\item\em Agora\+C\+DN Token has expired and needs to be set up with renew\+Agora\+C\+D\+N\+Src\+Token(const char$\ast$ src). \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_adb87d987bf123d66e6746b9a3c46210a}{on\+Player\+Src\+Info\+Changed}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_src_info}{media\+::base\+::\+Src\+Info}} \&from, const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_src_info}{media\+::base\+::\+Src\+Info}} \&to)=0
+\begin{DoxyCompactList}\small\item\em Reports current playback source bitrate changed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_ab1132196cf015e8ec3a4b1dbb323c94a}{on\+Player\+Info\+Updated}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_player_updated_info}{media\+::base\+::\+Player\+Updated\+Info}} \&info)=0
+\begin{DoxyCompactList}\small\item\em Triggered when media player information updated. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_a880054148d3d3aae45d4be40782106a9}{on\+Player\+Cache\+Stats}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_cache_statistics}{media\+::base\+::\+Cache\+Statistics}} \&stats)
+\begin{DoxyCompactList}\small\item\em Triggered every 1 second, reports the statistics of the files being cached. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_a6b99d2a920a26f4ec457d4a29ecf6a46}{on\+Player\+Playback\+Stats}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_player_playback_stats}{media\+::base\+::\+Player\+Playback\+Stats}} \&stats)
+\begin{DoxyCompactList}\small\item\em Triggered every 1 second, reports the statistics of the media stream being played. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer_ae500f91dd7fb85c6d9055a72e2a4473d}{on\+Audio\+Volume\+Indication}} (int volume)=0
+\begin{DoxyCompactList}\small\item\em Triggered every 200 millisecond ,update player current volume range \mbox{[}0,255\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class class reports runtime events to the applications. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_a175672d68a5c5b252294e041dfdf5b12}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_a175672d68a5c5b252294e041dfdf5b12}} 
+\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}!onPlayerSourceStateChanged@{onPlayerSourceStateChanged}}
+\index{onPlayerSourceStateChanged@{onPlayerSourceStateChanged}!agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onPlayerSourceStateChanged()}{onPlayerSourceStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Player\+Source\+Observer\+::on\+Player\+Source\+State\+Changed (\begin{DoxyParamCaption}\item[{media\+::base\+::\+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{media\+::base\+::\+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reports the playback state change. 
+
+When the state of the playback changes, the S\+DK triggers this callback to report the new playback state and the reason or error for the change. 
+\begin{DoxyParams}{Parameters}
+{\em state} & The new playback state after change. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+TE}}. \\
+\hline
+{\em reason} & The player\textquotesingle{}s error code. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_ae8f0f915a640ef64d4e4368ee669296e}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_ae8f0f915a640ef64d4e4368ee669296e}} 
+\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}!onPositionChanged@{onPositionChanged}}
+\index{onPositionChanged@{onPositionChanged}!agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onPositionChanged()}{onPositionChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Player\+Source\+Observer\+::on\+Position\+Changed (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{position\+Ms,  }\item[{int64\+\_\+t}]{timestamp\+Ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reports current playback progress. 
+
+The callback occurs once every one second during the playback and reports the current playback progress. 
+\begin{DoxyParams}{Parameters}
+{\em position\+Ms} & Current playback progress (milisecond). \\
+\hline
+{\em timestamp\+Ms} & Current N\+T\+P(\+Network Time Protocol) time (milisecond). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_a9c9ab85806339059ea8b8aed80590707}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_a9c9ab85806339059ea8b8aed80590707}} 
+\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}!onPlayerEvent@{onPlayerEvent}}
+\index{onPlayerEvent@{onPlayerEvent}!agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onPlayerEvent()}{onPlayerEvent()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Player\+Source\+Observer\+::on\+Player\+Event (\begin{DoxyParamCaption}\item[{media\+::base\+::\+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+E\+V\+E\+NT}]{event\+Code,  }\item[{int64\+\_\+t}]{elapsed\+Time,  }\item[{const char $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reports the playback event. 
+
+
+\begin{DoxyItemize}
+\item After calling the {\ttfamily seek} method, the S\+DK triggers the callback to report the results of the seek operation.
+\item After calling the {\ttfamily select\+Audio\+Track} method, the S\+DK triggers the callback to report that the audio track changes.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Code} & The playback event. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+E\+V\+E\+NT}}. \\
+\hline
+{\em elapsed\+Time} & The playback elapsed time. \\
+\hline
+{\em message} & The playback message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_acba6bfe69d4624ea1b0dd9c64ebc63b0}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_acba6bfe69d4624ea1b0dd9c64ebc63b0}} 
+\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}!onMetaData@{onMetaData}}
+\index{onMetaData@{onMetaData}!agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onMetaData()}{onMetaData()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Player\+Source\+Observer\+::on\+Meta\+Data (\begin{DoxyParamCaption}\item[{const void $\ast$}]{data,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Occurs when the metadata is received. 
+
+The callback occurs when the player receives the media metadata and reports the detailed information of the media metadata. 
+\begin{DoxyParams}{Parameters}
+{\em data} & The detailed data of the media metadata. \\
+\hline
+{\em length} & The data length (bytes). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_a70be90b22c142a052d9e8cdf1f9b71a3}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_a70be90b22c142a052d9e8cdf1f9b71a3}} 
+\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}!onPlayBufferUpdated@{onPlayBufferUpdated}}
+\index{onPlayBufferUpdated@{onPlayBufferUpdated}!agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onPlayBufferUpdated()}{onPlayBufferUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Player\+Source\+Observer\+::on\+Play\+Buffer\+Updated (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{play\+Cached\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Triggered when play buffer updated, once every 1 second. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & cached buffer during playing, in milliseconds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_a8e62cb1fd3973474f10564fb2d0f5751}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_a8e62cb1fd3973474f10564fb2d0f5751}} 
+\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}!onPreloadEvent@{onPreloadEvent}}
+\index{onPreloadEvent@{onPreloadEvent}!agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onPreloadEvent()}{onPreloadEvent()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Player\+Source\+Observer\+::on\+Preload\+Event (\begin{DoxyParamCaption}\item[{const char $\ast$}]{src,  }\item[{media\+::base\+::\+P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+L\+O\+A\+D\+\_\+\+E\+V\+E\+NT}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Triggered when the player preload\+Src. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_adb87d987bf123d66e6746b9a3c46210a}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_adb87d987bf123d66e6746b9a3c46210a}} 
+\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}!onPlayerSrcInfoChanged@{onPlayerSrcInfoChanged}}
+\index{onPlayerSrcInfoChanged@{onPlayerSrcInfoChanged}!agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onPlayerSrcInfoChanged()}{onPlayerSrcInfoChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Player\+Source\+Observer\+::on\+Player\+Src\+Info\+Changed (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_src_info}{media\+::base\+::\+Src\+Info}} \&}]{from,  }\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_src_info}{media\+::base\+::\+Src\+Info}} \&}]{to }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reports current playback source bitrate changed. 
+
+Reports current playback source info changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & Streaming media information before the change. \\
+\hline
+{\em to} & Streaming media information after the change. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_ab1132196cf015e8ec3a4b1dbb323c94a}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_ab1132196cf015e8ec3a4b1dbb323c94a}} 
+\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}!onPlayerInfoUpdated@{onPlayerInfoUpdated}}
+\index{onPlayerInfoUpdated@{onPlayerInfoUpdated}!agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onPlayerInfoUpdated()}{onPlayerInfoUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Player\+Source\+Observer\+::on\+Player\+Info\+Updated (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_player_updated_info}{media\+::base\+::\+Player\+Updated\+Info}} \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Triggered when media player information updated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & Include information of media player. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_a880054148d3d3aae45d4be40782106a9}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_a880054148d3d3aae45d4be40782106a9}} 
+\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}!onPlayerCacheStats@{onPlayerCacheStats}}
+\index{onPlayerCacheStats@{onPlayerCacheStats}!agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onPlayerCacheStats()}{onPlayerCacheStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Player\+Source\+Observer\+::on\+Player\+Cache\+Stats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_cache_statistics}{media\+::base\+::\+Cache\+Statistics}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Triggered every 1 second, reports the statistics of the files being cached. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & Cached file statistics. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_a6b99d2a920a26f4ec457d4a29ecf6a46}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_a6b99d2a920a26f4ec457d4a29ecf6a46}} 
+\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}!onPlayerPlaybackStats@{onPlayerPlaybackStats}}
+\index{onPlayerPlaybackStats@{onPlayerPlaybackStats}!agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onPlayerPlaybackStats()}{onPlayerPlaybackStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Player\+Source\+Observer\+::on\+Player\+Playback\+Stats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_player_playback_stats}{media\+::base\+::\+Player\+Playback\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Triggered every 1 second, reports the statistics of the media stream being played. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & The statistics of the media stream. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_observer_ae500f91dd7fb85c6d9055a72e2a4473d}\label{classagora_1_1rtc_1_1_i_media_player_source_observer_ae500f91dd7fb85c6d9055a72e2a4473d}} 
+\index{agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}!onAudioVolumeIndication@{onAudioVolumeIndication}}
+\index{onAudioVolumeIndication@{onAudioVolumeIndication}!agora::rtc::IMediaPlayerSourceObserver@{agora::rtc::IMediaPlayerSourceObserver}}
+\doxysubsubsection{\texorpdfstring{onAudioVolumeIndication()}{onAudioVolumeIndication()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Media\+Player\+Source\+Observer\+::on\+Audio\+Volume\+Indication (\begin{DoxyParamCaption}\item[{int}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Triggered every 200 millisecond ,update player current volume range \mbox{[}0,255\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & volume of current player. \\
+\hline
+\end{DoxyParams}

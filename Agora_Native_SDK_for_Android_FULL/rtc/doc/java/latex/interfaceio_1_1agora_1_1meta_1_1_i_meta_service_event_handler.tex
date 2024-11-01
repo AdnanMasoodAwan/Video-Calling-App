@@ -1,0 +1,29 @@
+\hypertarget{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler}{}\doxysection{io.\+agora.\+meta.\+I\+Meta\+Service\+Event\+Handler Interface Reference}
+\label{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler}\index{io.agora.meta.IMetaServiceEventHandler@{io.agora.meta.IMetaServiceEventHandler}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_1_1_connection_changed_reason}{Connection\+Changed\+Reason}}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_1_1_connection_state}{Connection\+State}}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_1_1_scene_download_state}{Scene\+Download\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_aba84b2e717a31f32169fd7200abbc31f}\label{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_aba84b2e717a31f32169fd7200abbc31f}} 
+void {\bfseries on\+Create\+Scene\+Result} (\mbox{\hyperlink{classio_1_1agora_1_1meta_1_1_i_meta_scene}{I\+Meta\+Scene}} scene, int error\+Code)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_ae312cdf88fad86c447e9dea4ed53daca}\label{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_ae312cdf88fad86c447e9dea4ed53daca}} 
+void {\bfseries on\+Connection\+State\+Changed} (String room\+Name, int state, int reason)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_a2b97298c9f423e5c4e2d0f9061b47be0}\label{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_a2b97298c9f423e5c4e2d0f9061b47be0}} 
+void {\bfseries on\+Token\+Will\+Expire} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_afa5b85af73b88ff80b77e5382fc91fe2}\label{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_afa5b85af73b88ff80b77e5382fc91fe2}} 
+void {\bfseries on\+Get\+Scene\+Assets\+Info\+Result} (\mbox{\hyperlink{classio_1_1agora_1_1meta_1_1_meta_scene_assets_info}{Meta\+Scene\+Assets\+Info}}\mbox{[}$\,$\mbox{]} meta\+Scene\+Assets\+Infos, int error\+Code)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_a7ad7456b56d4e109a1f31aca58f6ab51}\label{interfaceio_1_1agora_1_1meta_1_1_i_meta_service_event_handler_a7ad7456b56d4e109a1f31aca58f6ab51}} 
+void {\bfseries on\+Download\+Scene\+Assets\+Progress} (long scene\+Id, int progress, int state)
+\end{DoxyCompactItemize}

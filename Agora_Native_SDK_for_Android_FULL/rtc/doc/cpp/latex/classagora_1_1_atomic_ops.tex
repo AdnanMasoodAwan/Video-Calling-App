@@ -1,0 +1,26 @@
+\hypertarget{classagora_1_1_atomic_ops}{}\doxysection{agora\+::Atomic\+Ops Class Reference}
+\label{classagora_1_1_atomic_ops}\index{agora::AtomicOps@{agora::AtomicOps}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1_atomic_ops_a98e0c4b8521f272380139ce4fc99a7a9}\label{classagora_1_1_atomic_ops_a98e0c4b8521f272380139ce4fc99a7a9}} 
+static int {\bfseries Increment} (volatile int $\ast$i)
+\item 
+\mbox{\Hypertarget{classagora_1_1_atomic_ops_ac20c7713d76c5e4fee1b79655047f5c0}\label{classagora_1_1_atomic_ops_ac20c7713d76c5e4fee1b79655047f5c0}} 
+static int {\bfseries Decrement} (volatile int $\ast$i)
+\item 
+\mbox{\Hypertarget{classagora_1_1_atomic_ops_ab18a3c6fb69918e59da09452e434460d}\label{classagora_1_1_atomic_ops_ab18a3c6fb69918e59da09452e434460d}} 
+static int {\bfseries Acquire\+Load} (volatile const int $\ast$i)
+\item 
+\mbox{\Hypertarget{classagora_1_1_atomic_ops_a546f2e6e1fbf655cd531adecf293c630}\label{classagora_1_1_atomic_ops_a546f2e6e1fbf655cd531adecf293c630}} 
+static void {\bfseries Release\+Store} (volatile int $\ast$i, int value)
+\item 
+\mbox{\Hypertarget{classagora_1_1_atomic_ops_a23de2ff967d6343cad0009935f436365}\label{classagora_1_1_atomic_ops_a23de2ff967d6343cad0009935f436365}} 
+static int {\bfseries Compare\+And\+Swap} (volatile int $\ast$i, int old\+\_\+value, int new\+\_\+value)
+\item 
+\mbox{\Hypertarget{classagora_1_1_atomic_ops_a137a1c49b202071ef4316868ae6f07b7}\label{classagora_1_1_atomic_ops_a137a1c49b202071ef4316868ae6f07b7}} 
+{\footnotesize template$<$typename T $>$ }\\static T $\ast$ {\bfseries Acquire\+Load\+Ptr} (T $\ast$volatile $\ast$ptr)
+\item 
+\mbox{\Hypertarget{classagora_1_1_atomic_ops_a5b1443a6c28332b3f1d93a28649ed43f}\label{classagora_1_1_atomic_ops_a5b1443a6c28332b3f1d93a28649ed43f}} 
+{\footnotesize template$<$typename T $>$ }\\static T $\ast$ {\bfseries Compare\+And\+Swap\+Ptr} (T $\ast$volatile $\ast$ptr, T $\ast$old\+\_\+value, T $\ast$new\+\_\+value)
+\end{DoxyCompactItemize}

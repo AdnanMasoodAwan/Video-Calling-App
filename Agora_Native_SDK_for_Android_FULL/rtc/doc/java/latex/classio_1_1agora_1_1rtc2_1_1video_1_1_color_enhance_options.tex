@@ -1,0 +1,39 @@
+\hypertarget{classio_1_1agora_1_1rtc2_1_1video_1_1_color_enhance_options}{}\doxysection{io.\+agora.\+rtc2.\+video.\+Color\+Enhance\+Options Class Reference}
+\label{classio_1_1agora_1_1rtc2_1_1video_1_1_color_enhance_options}\index{io.agora.rtc2.video.ColorEnhanceOptions@{io.agora.rtc2.video.ColorEnhanceOptions}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1video_1_1_color_enhance_options_af991fe4addd38aad5ca5ce9d3f1abd4f}\label{classio_1_1agora_1_1rtc2_1_1video_1_1_color_enhance_options_af991fe4addd38aad5ca5ce9d3f1abd4f}} 
+{\bfseries Color\+Enhance\+Options} (float strength, float skin\+Protect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_color_enhance_options_a61ab01d9721022fb0b82dd7cf3130e19}{strength\+Level}}
+\item 
+float \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_color_enhance_options_a967f8f832ba0c8236b9c5cdf0b419e37}{skin\+Protect\+Level}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The color enhancement options.
+
+\begin{DoxySince}{Since}
+v3.\+6.\+2 
+\end{DoxySince}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1video_1_1_color_enhance_options_a61ab01d9721022fb0b82dd7cf3130e19}\label{classio_1_1agora_1_1rtc2_1_1video_1_1_color_enhance_options_a61ab01d9721022fb0b82dd7cf3130e19}} 
+\index{io.agora.rtc2.video.ColorEnhanceOptions@{io.agora.rtc2.video.ColorEnhanceOptions}!strengthLevel@{strengthLevel}}
+\index{strengthLevel@{strengthLevel}!io.agora.rtc2.video.ColorEnhanceOptions@{io.agora.rtc2.video.ColorEnhanceOptions}}
+\doxysubsubsection{\texorpdfstring{strengthLevel}{strengthLevel}}
+{\footnotesize\ttfamily float io.\+agora.\+rtc2.\+video.\+Color\+Enhance\+Options.\+strength\+Level}
+
+The level of color enhancement. The value range is \mbox{[}0.\+0,1.\+0\mbox{]}. {\ttfamily 0.\+0} means no color enhancement is applied to the video. The higher the value, the higher the level of color enhancement. The default value is {\ttfamily 0.\+5}. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1video_1_1_color_enhance_options_a967f8f832ba0c8236b9c5cdf0b419e37}\label{classio_1_1agora_1_1rtc2_1_1video_1_1_color_enhance_options_a967f8f832ba0c8236b9c5cdf0b419e37}} 
+\index{io.agora.rtc2.video.ColorEnhanceOptions@{io.agora.rtc2.video.ColorEnhanceOptions}!skinProtectLevel@{skinProtectLevel}}
+\index{skinProtectLevel@{skinProtectLevel}!io.agora.rtc2.video.ColorEnhanceOptions@{io.agora.rtc2.video.ColorEnhanceOptions}}
+\doxysubsubsection{\texorpdfstring{skinProtectLevel}{skinProtectLevel}}
+{\footnotesize\ttfamily float io.\+agora.\+rtc2.\+video.\+Color\+Enhance\+Options.\+skin\+Protect\+Level}
+
+The level of skin tone protection. The value range is \mbox{[}0.\+0,1.\+0\mbox{]}. {\ttfamily 0.\+0} means no skin tone protection. The higher the value, the higher the level of skin tone protection. The default value is {\ttfamily 1.\+0}. When the level of color enhancement is higher, the portrait skin tone can be significantly distorted, so you need to set the level of skin tone protection; when the level of skin tone protection is higher, the color enhancement effect can be slightly reduced. Therefore, to get the best color enhancement effect, Agora recommends that you adjust {\ttfamily strength\+Level} and {\ttfamily skin\+Protect\+Level} to get the most appropriate values. 

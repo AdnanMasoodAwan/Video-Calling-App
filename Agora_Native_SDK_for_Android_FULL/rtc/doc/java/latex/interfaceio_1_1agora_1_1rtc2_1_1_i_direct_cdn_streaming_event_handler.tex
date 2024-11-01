@@ -1,0 +1,41 @@
+\hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_direct_cdn_streaming_event_handler}{}\doxysection{io.\+agora.\+rtc2.\+I\+Direct\+Cdn\+Streaming\+Event\+Handler Interface Reference}
+\label{interfaceio_1_1agora_1_1rtc2_1_1_i_direct_cdn_streaming_event_handler}\index{io.agora.rtc2.IDirectCdnStreamingEventHandler@{io.agora.rtc2.IDirectCdnStreamingEventHandler}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_direct_cdn_streaming_event_handler_ab533e92d1d91f7a50a5fdcd156db510f}{on\+Direct\+Cdn\+Streaming\+State\+Changed}} (\mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1_direct_cdn_streaming_state}{Direct\+Cdn\+Streaming\+State}} state, \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1_direct_cdn_streaming_reason}{Direct\+Cdn\+Streaming\+Reason}} reason, String message)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_direct_cdn_streaming_event_handler_a4a61cab5c5320ac658cc42d6ffb2e7f8}{on\+Direct\+Cdn\+Streaming\+Stats}} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_direct_cdn_streaming_stats}{Direct\+Cdn\+Streaming\+Stats}} stats)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Created by chenjianming on 17/05/2021. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_direct_cdn_streaming_event_handler_ab533e92d1d91f7a50a5fdcd156db510f}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_direct_cdn_streaming_event_handler_ab533e92d1d91f7a50a5fdcd156db510f}} 
+\index{io.agora.rtc2.IDirectCdnStreamingEventHandler@{io.agora.rtc2.IDirectCdnStreamingEventHandler}!onDirectCdnStreamingStateChanged@{onDirectCdnStreamingStateChanged}}
+\index{onDirectCdnStreamingStateChanged@{onDirectCdnStreamingStateChanged}!io.agora.rtc2.IDirectCdnStreamingEventHandler@{io.agora.rtc2.IDirectCdnStreamingEventHandler}}
+\doxysubsubsection{\texorpdfstring{onDirectCdnStreamingStateChanged()}{onDirectCdnStreamingStateChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Direct\+Cdn\+Streaming\+Event\+Handler.\+on\+Direct\+Cdn\+Streaming\+State\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1_direct_cdn_streaming_state}{Direct\+Cdn\+Streaming\+State}}}]{state,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1_direct_cdn_streaming_reason}{Direct\+Cdn\+Streaming\+Reason}}}]{reason,  }\item[{String}]{message }\end{DoxyParamCaption})}
+
+Event callback of Direct Cdn Streaming 
+\begin{DoxyParams}{Parameters}
+{\em state} & Current state \\
+\hline
+{\em reason} & Reason Code \\
+\hline
+{\em message} & Message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_direct_cdn_streaming_event_handler_a4a61cab5c5320ac658cc42d6ffb2e7f8}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_direct_cdn_streaming_event_handler_a4a61cab5c5320ac658cc42d6ffb2e7f8}} 
+\index{io.agora.rtc2.IDirectCdnStreamingEventHandler@{io.agora.rtc2.IDirectCdnStreamingEventHandler}!onDirectCdnStreamingStats@{onDirectCdnStreamingStats}}
+\index{onDirectCdnStreamingStats@{onDirectCdnStreamingStats}!io.agora.rtc2.IDirectCdnStreamingEventHandler@{io.agora.rtc2.IDirectCdnStreamingEventHandler}}
+\doxysubsubsection{\texorpdfstring{onDirectCdnStreamingStats()}{onDirectCdnStreamingStats()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Direct\+Cdn\+Streaming\+Event\+Handler.\+on\+Direct\+Cdn\+Streaming\+Stats (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_direct_cdn_streaming_stats}{Direct\+Cdn\+Streaming\+Stats}}}]{stats }\end{DoxyParamCaption})}
+
+Current status data of rtmp streaming. 
+\begin{DoxyParams}{Parameters}
+{\em stats} & status data \\
+\hline
+\end{DoxyParams}

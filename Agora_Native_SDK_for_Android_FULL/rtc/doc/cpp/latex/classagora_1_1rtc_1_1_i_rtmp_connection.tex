@@ -1,0 +1,143 @@
+\hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection}{}\doxysection{agora\+::rtc\+::I\+Rtmp\+Connection Class Reference}
+\label{classagora_1_1rtc_1_1_i_rtmp_connection}\index{agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Rtmp\+Connection.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Rtmp\+Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_rtmp_connection}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_a5e89428056585b3b0643af03ff197ec4}{connect}} (const char $\ast$url, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_ac3fcd6d1efd903f1bb75797fb709584e}{disconnect}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_a3bd6ddccf345b4102f0a1d371b13acfd}{get\+Connection\+Info}} ()=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_local_user}{I\+Rtmp\+Local\+User}} $\ast$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_a87b6eedbf3b26da33c0f65135826349b}{get\+Rtmp\+Local\+User}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_aa6eea62bee7f3db6a5e5d1046d8074c6}{register\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}} $\ast$observer, void($\ast$safe\+Deleter)(\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}} $\ast$)=N\+U\+LL, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_a8ea6ca78a6c994d8af882eaf123d2115}{unregister\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}} $\ast$observer)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection}{I\+Rtmp\+Connection}} class.
+
+With this class, an app can establish a connection to a R\+T\+MP server. Once connected, the app gets an Rtmp\+User object, which can publish media streams to the R\+T\+MP server.
+
+Connecting to the server is done asynchronous, and apps can listen for the connection states or events with \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_a5e89428056585b3b0643af03ff197ec4}\label{classagora_1_1rtc_1_1_i_rtmp_connection_a5e89428056585b3b0643af03ff197ec4}} 
+\index{agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}!connect@{connect}}
+\index{connect@{connect}!agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtmp\+Connection\+::connect (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Connects to a R\+T\+MP server.
+
+When the method call succeeds, the R\+T\+MP connection state changes to S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+N\+G(2).
+
+Depending on the success or failure of the connection establishment, the R\+T\+MP connection will make a second state transition to either S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D(3) or S\+T\+A\+T\+E\+\_\+\+F\+A\+I\+L\+E\+D(5). You will also be notified with the either on\+Connected() or on\+Disconnected().
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The C\+DN streaming U\+RL in the R\+T\+MP format. The maximum length of this parameter is 1024 bytes. The U\+RL address must not contain special characters, such as Chinese language characters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT\+: The passed in argument is invalid.
+\item E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE\+: The current connection state is not S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D(3). 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_ac3fcd6d1efd903f1bb75797fb709584e}\label{classagora_1_1rtc_1_1_i_rtmp_connection_ac3fcd6d1efd903f1bb75797fb709584e}} 
+\index{agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtmp\+Connection\+::disconnect (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Disconnects from the R\+T\+MP server.
+
+A successful call of this method changes the connection state to S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D(4). You will be notified with the callback on\+Disconnected. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_a3bd6ddccf345b4102f0a1d371b13acfd}\label{classagora_1_1rtc_1_1_i_rtmp_connection_a3bd6ddccf345b4102f0a1d371b13acfd}} 
+\index{agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}!getConnectionInfo@{getConnectionInfo}}
+\index{getConnectionInfo@{getConnectionInfo}!agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}}
+\doxysubsubsection{\texorpdfstring{getConnectionInfo()}{getConnectionInfo()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} agora\+::rtc\+::\+I\+Rtmp\+Connection\+::get\+Connection\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the current connection information.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item A pointer to the \mbox{\hyperlink{structagora_1_1rtc_1_1_rtmp_connection_info}{Rtmp\+Connection\+Info}} object, if the method call succeeds.
+\item An empty pointer N\+U\+LL, if the method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_a87b6eedbf3b26da33c0f65135826349b}\label{classagora_1_1rtc_1_1_i_rtmp_connection_a87b6eedbf3b26da33c0f65135826349b}} 
+\index{agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}!getRtmpLocalUser@{getRtmpLocalUser}}
+\index{getRtmpLocalUser@{getRtmpLocalUser}!agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}}
+\doxysubsubsection{\texorpdfstring{getRtmpLocalUser()}{getRtmpLocalUser()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_local_user}{I\+Rtmp\+Local\+User}}$\ast$ agora\+::rtc\+::\+I\+Rtmp\+Connection\+::get\+Rtmp\+Local\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the I\+Rtmp\+User object.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item A pointer to the I\+Rtmp\+User object, if the method call succeeds.
+\item An empty pointer N\+U\+LL, if the method call fails. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_aa6eea62bee7f3db6a5e5d1046d8074c6}\label{classagora_1_1rtc_1_1_i_rtmp_connection_aa6eea62bee7f3db6a5e5d1046d8074c6}} 
+\index{agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}!registerObserver@{registerObserver}}
+\index{registerObserver@{registerObserver}!agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}}
+\doxysubsubsection{\texorpdfstring{registerObserver()}{registerObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtmp\+Connection\+::register\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}} $\ast$}]{observer,  }\item[{void($\ast$)(\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}} $\ast$)}]{safe\+Deleter = {\ttfamily NULL},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & A pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_connection_a8ea6ca78a6c994d8af882eaf123d2115}\label{classagora_1_1rtc_1_1_i_rtmp_connection_a8ea6ca78a6c994d8af882eaf123d2115}} 
+\index{agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}!unregisterObserver@{unregisterObserver}}
+\index{unregisterObserver@{unregisterObserver}!agora::rtc::IRtmpConnection@{agora::rtc::IRtmpConnection}}
+\doxysubsubsection{\texorpdfstring{unregisterObserver()}{unregisterObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtmp\+Connection\+::unregister\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the registered \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_observer}{I\+Rtmp\+Connection\+Observer}} object created by the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_connection_aa6eea62bee7f3db6a5e5d1046d8074c6}{register\+Observer}} method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

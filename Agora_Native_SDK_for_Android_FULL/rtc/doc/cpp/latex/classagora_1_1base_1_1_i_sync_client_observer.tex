@@ -1,0 +1,27 @@
+\hypertarget{classagora_1_1base_1_1_i_sync_client_observer}{}\doxysection{agora\+::base\+::I\+Sync\+Client\+Observer Class Reference}
+\label{classagora_1_1base_1_1_i_sync_client_observer}\index{agora::base::ISyncClientObserver@{agora::base::ISyncClientObserver}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Sync\+Client.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structagora_1_1base_1_1_i_sync_client_observer_1_1_collection_event}{Collection\+Event}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_observer_a1a70b0029491d5dc038c6de0b63e4943}\label{classagora_1_1base_1_1_i_sync_client_observer_a1a70b0029491d5dc038c6de0b63e4943}} 
+virtual void {\bfseries on\+Collection\+Event} (const char $\ast$previous\+Json, const char $\ast$cur\+Json, const char $\ast$collection, const char $\ast$doc\+Name, const \mbox{\hyperlink{structagora_1_1base_1_1_i_sync_client_observer_1_1_collection_event}{Collection\+Event}} $\ast$events, int event\+Size)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_observer_a82a16e5608b92b3f1fed5dd26a2d2dbe}\label{classagora_1_1base_1_1_i_sync_client_observer_a82a16e5608b92b3f1fed5dd26a2d2dbe}} 
+virtual void {\bfseries on\+Database\+Event} (const char $\ast$database\+Name, Sync\+Client\+Error error)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_observer_abe67f5ea7e0f334531c11b79424114c7}\label{classagora_1_1base_1_1_i_sync_client_observer_abe67f5ea7e0f334531c11b79424114c7}} 
+virtual void {\bfseries on\+Data\+Exception} (const char $\ast$database\+Name, const char $\ast$collection\+Name)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+sync client observer 

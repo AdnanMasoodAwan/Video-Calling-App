@@ -1,0 +1,104 @@
+\hypertarget{classagora_1_1rtc_1_1_i_video_frame}{}\doxysection{agora\+::rtc\+::I\+Video\+Frame Class Reference}
+\label{classagora_1_1rtc_1_1_i_video_frame}\index{agora::rtc::IVideoFrame@{agora::rtc::IVideoFrame}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Video\+Frame.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Video\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_video_frame}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_a9da2dbe328a764630e57beb55412636f}{get\+Video\+Frame\+Data}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_video_frame_data}{Video\+Frame\+Data}} \&data) const =0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_a8ae288082f7e6024ecc81c8921a85b1e}{fill\+Video\+Frame\+Data}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_frame_data}{Video\+Frame\+Data}} \&data)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_a081bc65044ec0a073a19a5e51eaf48cc}{get\+Video\+Frame\+Meta\+Data}} (Video\+Frame\+Meta\+Data\+Type type, void $\ast$data)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_ad6f4341666086d02f15cc7ceb2a312b7}{fill\+Video\+Frame\+Meta\+Data}} (Video\+Frame\+Meta\+Data\+Type type, const void $\ast$data)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} class defines the interface to send video frame data to the S\+DK or get video frame data from the S\+DK. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_frame_a9da2dbe328a764630e57beb55412636f}\label{classagora_1_1rtc_1_1_i_video_frame_a9da2dbe328a764630e57beb55412636f}} 
+\index{agora::rtc::IVideoFrame@{agora::rtc::IVideoFrame}!getVideoFrameData@{getVideoFrameData}}
+\index{getVideoFrameData@{getVideoFrameData}!agora::rtc::IVideoFrame@{agora::rtc::IVideoFrame}}
+\doxysubsubsection{\texorpdfstring{getVideoFrameData()}{getVideoFrameData()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Frame\+::get\+Video\+Frame\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_video_frame_data}{Video\+Frame\+Data}} \&}]{data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get the concrete video frame data of the underlying buffer. 
+\begin{DoxyParams}{Parameters}
+{\em data} & \mbox{[}out\mbox{]} The video frame data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item int\+: error code. 0 for success. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_frame_a8ae288082f7e6024ecc81c8921a85b1e}\label{classagora_1_1rtc_1_1_i_video_frame_a8ae288082f7e6024ecc81c8921a85b1e}} 
+\index{agora::rtc::IVideoFrame@{agora::rtc::IVideoFrame}!fillVideoFrameData@{fillVideoFrameData}}
+\index{fillVideoFrameData@{fillVideoFrameData}!agora::rtc::IVideoFrame@{agora::rtc::IVideoFrame}}
+\doxysubsubsection{\texorpdfstring{fillVideoFrameData()}{fillVideoFrameData()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Frame\+::fill\+Video\+Frame\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_frame_data}{Video\+Frame\+Data}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Fill the underlying buffer with source buffer info contained in \mbox{\hyperlink{structagora_1_1rtc_1_1_video_frame_data}{Video\+Frame\+Data}} For frames of type \char`\"{}\+Type\+::k\+Mem\+Pixels\char`\"{}, This function first tries to fill in-\/place with no copy and reallocation. When it fails, a copy or copy-\/plus-\/reallocation may happen 
+\begin{DoxyParams}{Parameters}
+{\em data} & \mbox{[}in\mbox{]} Data to be filled in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: if succeeds
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_frame_a081bc65044ec0a073a19a5e51eaf48cc}\label{classagora_1_1rtc_1_1_i_video_frame_a081bc65044ec0a073a19a5e51eaf48cc}} 
+\index{agora::rtc::IVideoFrame@{agora::rtc::IVideoFrame}!getVideoFrameMetaData@{getVideoFrameMetaData}}
+\index{getVideoFrameMetaData@{getVideoFrameMetaData}!agora::rtc::IVideoFrame@{agora::rtc::IVideoFrame}}
+\doxysubsubsection{\texorpdfstring{getVideoFrameMetaData()}{getVideoFrameMetaData()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Frame\+::get\+Video\+Frame\+Meta\+Data (\begin{DoxyParamCaption}\item[{Video\+Frame\+Meta\+Data\+Type}]{type,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get the underlying meta data of the given type. e.\+g. If type is Video\+Frame\+Meta\+Data\+Type\+::k\+Alpha\+Channel, then data value can be casted to \mbox{\hyperlink{structagora_1_1rtc_1_1_alpha_channel}{Alpha\+Channel}}; 
+\begin{DoxyParams}{Parameters}
+{\em type} & Video\+Frame\+Meta\+Data\+Type type of the meta data wanted \\
+\hline
+{\em data} & \mbox{[}out\mbox{]} pointer to the the meta data object of the given type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: if succeeds
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_frame_ad6f4341666086d02f15cc7ceb2a312b7}\label{classagora_1_1rtc_1_1_i_video_frame_ad6f4341666086d02f15cc7ceb2a312b7}} 
+\index{agora::rtc::IVideoFrame@{agora::rtc::IVideoFrame}!fillVideoFrameMetaData@{fillVideoFrameMetaData}}
+\index{fillVideoFrameMetaData@{fillVideoFrameMetaData}!agora::rtc::IVideoFrame@{agora::rtc::IVideoFrame}}
+\doxysubsubsection{\texorpdfstring{fillVideoFrameMetaData()}{fillVideoFrameMetaData()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Video\+Frame\+::fill\+Video\+Frame\+Meta\+Data (\begin{DoxyParamCaption}\item[{Video\+Frame\+Meta\+Data\+Type}]{type,  }\item[{const void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Fill the underlying meta data of the given type. e.\+g. If type is Video\+Frame\+Meta\+Data\+Type\+::k\+Alpha\+Channel, then data should point to \mbox{\hyperlink{structagora_1_1rtc_1_1_alpha_channel}{Alpha\+Channel}} object; 
+\begin{DoxyParams}{Parameters}
+{\em type} & Video\+Frame\+Meta\+Data\+Type type of the meta data to fill \\
+\hline
+{\em data} & \mbox{[}in\mbox{]} pointer to the the meta data object of the given type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: if succeeds
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}

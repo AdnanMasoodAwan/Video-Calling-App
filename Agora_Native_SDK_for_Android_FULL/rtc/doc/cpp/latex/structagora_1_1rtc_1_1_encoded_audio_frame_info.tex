@@ -1,0 +1,72 @@
+\hypertarget{structagora_1_1rtc_1_1_encoded_audio_frame_info}{}\doxysection{agora\+::rtc\+::Encoded\+Audio\+Frame\+Info Struct Reference}
+\label{structagora_1_1rtc_1_1_encoded_audio_frame_info}\index{agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_encoded_audio_frame_info_a4f8eab058b10981cd7974c0b86a6b00d}\label{structagora_1_1rtc_1_1_encoded_audio_frame_info_a4f8eab058b10981cd7974c0b86a6b00d}} 
+{\bfseries Encoded\+Audio\+Frame\+Info} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&rhs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+A\+U\+D\+I\+O\+\_\+\+C\+O\+D\+E\+C\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info_aa16372afe1cb9007b35a2feed846c5ed}{codec}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info_a14c82a506143d5820df0a721cbab3e40}{sample\+Rate\+Hz}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info_a958cc5b36dd262c30e934d5f51b6e0c8}{samples\+Per\+Channel}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info_aa60140fa8c89fcd6566845d2e4f2d293}{number\+Of\+Channels}}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_advanced_settings}{Encoded\+Audio\+Frame\+Advanced\+Settings}} \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info_a59708c94c9e8cd10b35c88046b1dddb9}{advanced\+Settings}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info_ad34b388600f3e23ed5aeb83f602bd5a9}{capture\+Time\+Ms}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of the \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} struct. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_encoded_audio_frame_info_aa16372afe1cb9007b35a2feed846c5ed}\label{structagora_1_1rtc_1_1_encoded_audio_frame_info_aa16372afe1cb9007b35a2feed846c5ed}} 
+\index{agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}!codec@{codec}}
+\index{codec@{codec}!agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}}
+\doxysubsubsection{\texorpdfstring{codec}{codec}}
+{\footnotesize\ttfamily A\+U\+D\+I\+O\+\_\+\+C\+O\+D\+E\+C\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Encoded\+Audio\+Frame\+Info\+::codec}
+
+The audio codec\+: \#\+A\+U\+D\+I\+O\+\_\+\+C\+O\+D\+E\+C\+\_\+\+T\+Y\+PE. \mbox{\Hypertarget{structagora_1_1rtc_1_1_encoded_audio_frame_info_a14c82a506143d5820df0a721cbab3e40}\label{structagora_1_1rtc_1_1_encoded_audio_frame_info_a14c82a506143d5820df0a721cbab3e40}} 
+\index{agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}!sampleRateHz@{sampleRateHz}}
+\index{sampleRateHz@{sampleRateHz}!agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}}
+\doxysubsubsection{\texorpdfstring{sampleRateHz}{sampleRateHz}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Encoded\+Audio\+Frame\+Info\+::sample\+Rate\+Hz}
+
+The sample rate (Hz) of the audio frame. \mbox{\Hypertarget{structagora_1_1rtc_1_1_encoded_audio_frame_info_a958cc5b36dd262c30e934d5f51b6e0c8}\label{structagora_1_1rtc_1_1_encoded_audio_frame_info_a958cc5b36dd262c30e934d5f51b6e0c8}} 
+\index{agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}!samplesPerChannel@{samplesPerChannel}}
+\index{samplesPerChannel@{samplesPerChannel}!agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}}
+\doxysubsubsection{\texorpdfstring{samplesPerChannel}{samplesPerChannel}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Encoded\+Audio\+Frame\+Info\+::samples\+Per\+Channel}
+
+The number of samples per audio channel.
+
+If this value is not set, it is 1024 for A\+AC, or 960 for O\+P\+US by default. \mbox{\Hypertarget{structagora_1_1rtc_1_1_encoded_audio_frame_info_aa60140fa8c89fcd6566845d2e4f2d293}\label{structagora_1_1rtc_1_1_encoded_audio_frame_info_aa60140fa8c89fcd6566845d2e4f2d293}} 
+\index{agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}!numberOfChannels@{numberOfChannels}}
+\index{numberOfChannels@{numberOfChannels}!agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}}
+\doxysubsubsection{\texorpdfstring{numberOfChannels}{numberOfChannels}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Encoded\+Audio\+Frame\+Info\+::number\+Of\+Channels}
+
+The number of audio channels of the audio frame. \mbox{\Hypertarget{structagora_1_1rtc_1_1_encoded_audio_frame_info_a59708c94c9e8cd10b35c88046b1dddb9}\label{structagora_1_1rtc_1_1_encoded_audio_frame_info_a59708c94c9e8cd10b35c88046b1dddb9}} 
+\index{agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}!advancedSettings@{advancedSettings}}
+\index{advancedSettings@{advancedSettings}!agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}}
+\doxysubsubsection{\texorpdfstring{advancedSettings}{advancedSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_advanced_settings}{Encoded\+Audio\+Frame\+Advanced\+Settings}} agora\+::rtc\+::\+Encoded\+Audio\+Frame\+Info\+::advanced\+Settings}
+
+The advanced settings of the audio frame. \mbox{\Hypertarget{structagora_1_1rtc_1_1_encoded_audio_frame_info_ad34b388600f3e23ed5aeb83f602bd5a9}\label{structagora_1_1rtc_1_1_encoded_audio_frame_info_ad34b388600f3e23ed5aeb83f602bd5a9}} 
+\index{agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}!captureTimeMs@{captureTimeMs}}
+\index{captureTimeMs@{captureTimeMs}!agora::rtc::EncodedAudioFrameInfo@{agora::rtc::EncodedAudioFrameInfo}}
+\doxysubsubsection{\texorpdfstring{captureTimeMs}{captureTimeMs}}
+{\footnotesize\ttfamily int64\+\_\+t agora\+::rtc\+::\+Encoded\+Audio\+Frame\+Info\+::capture\+Time\+Ms}
+
+This is a input parameter which means the timestamp for capturing the audio frame. 

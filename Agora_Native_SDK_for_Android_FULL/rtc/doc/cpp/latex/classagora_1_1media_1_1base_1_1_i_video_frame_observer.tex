@@ -1,0 +1,36 @@
+\hypertarget{classagora_1_1media_1_1base_1_1_i_video_frame_observer}{}\doxysection{agora\+::media\+::base\+::I\+Video\+Frame\+Observer Class Reference}
+\label{classagora_1_1media_1_1base_1_1_i_video_frame_observer}\index{agora::media::base::IVideoFrameObserver@{agora::media::base::IVideoFrameObserver}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_video_frame_observer_ae5b1f12a527fdefe10ac1d2620bc3aee}{on\+Frame}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} $\ast$frame)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1media_1_1base_1_1_i_video_frame_observer_a4af3fc101f6ca0d8923d7f3c59d57c5e}\label{classagora_1_1media_1_1base_1_1_i_video_frame_observer_a4af3fc101f6ca0d8923d7f3c59d57c5e}} 
+virtual bool {\bfseries is\+External} ()
+\item 
+\mbox{\Hypertarget{classagora_1_1media_1_1base_1_1_i_video_frame_observer_a8139a2c909c94d40b2d8aa69277ce80a}\label{classagora_1_1media_1_1base_1_1_i_video_frame_observer_a8139a2c909c94d40b2d8aa69277ce80a}} 
+virtual V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+F\+O\+R\+M\+AT {\bfseries get\+Video\+Format\+Preference} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_video_frame_observer}{I\+Video\+Frame\+Observer}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1media_1_1base_1_1_i_video_frame_observer_ae5b1f12a527fdefe10ac1d2620bc3aee}\label{classagora_1_1media_1_1base_1_1_i_video_frame_observer_ae5b1f12a527fdefe10ac1d2620bc3aee}} 
+\index{agora::media::base::IVideoFrameObserver@{agora::media::base::IVideoFrameObserver}!onFrame@{onFrame}}
+\index{onFrame@{onFrame}!agora::media::base::IVideoFrameObserver@{agora::media::base::IVideoFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onFrame()}{onFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::media\+::base\+::\+I\+Video\+Frame\+Observer\+::on\+Frame (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} $\ast$}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs each time the player receives a video frame.
+
+After registering the video frame observer, the callback occurs each time the player receives a video frame to report the detailed information of the video frame. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & The detailed information of the video frame. See \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}}. \\
+\hline
+\end{DoxyParams}

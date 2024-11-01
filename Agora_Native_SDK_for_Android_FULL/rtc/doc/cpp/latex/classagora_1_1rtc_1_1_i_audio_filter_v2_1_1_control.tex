@@ -1,0 +1,54 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_filter_v2_1_1_control}{}\doxysection{agora\+::rtc\+::I\+Audio\+Filter\+V2\+::Control Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_filter_v2_1_1_control}\index{agora::rtc::IAudioFilterV2::Control@{agora::rtc::IAudioFilterV2::Control}}
+Inheritance diagram for agora\+::rtc\+::I\+Audio\+Filter\+V2\+::Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_audio_filter_v2_1_1_control}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_v2_1_1_control_a1b0e29acefc9d81fe5b5cbc37d3dc28d}{post\+Event}} (const char $\ast$key, const char $\ast$value)=0
+\begin{DoxyCompactList}\small\item\em Post an event and notify the end users. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_filter_v2_1_1_control_a7988033cdda03fbafe377ae66bb6079f}{print\+Log}} (commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL level, const char $\ast$format,...)=0
+\begin{DoxyCompactList}\small\item\em print log to the S\+DK. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_v2_1_1_control_a1b0e29acefc9d81fe5b5cbc37d3dc28d}\label{classagora_1_1rtc_1_1_i_audio_filter_v2_1_1_control_a1b0e29acefc9d81fe5b5cbc37d3dc28d}} 
+\index{agora::rtc::IAudioFilterV2::Control@{agora::rtc::IAudioFilterV2::Control}!postEvent@{postEvent}}
+\index{postEvent@{postEvent}!agora::rtc::IAudioFilterV2::Control@{agora::rtc::IAudioFilterV2::Control}}
+\doxysubsubsection{\texorpdfstring{postEvent()}{postEvent()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Filter\+V2\+::\+Control\+::post\+Event (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Post an event and notify the end users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \textquotesingle{}\textbackslash{}0\textquotesingle{} ended string that describes the key of the event \\
+\hline
+{\em value} & \textquotesingle{}\textbackslash{}0\textquotesingle{} ended string that describes the value of the event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_filter_v2_1_1_control_a7988033cdda03fbafe377ae66bb6079f}\label{classagora_1_1rtc_1_1_i_audio_filter_v2_1_1_control_a7988033cdda03fbafe377ae66bb6079f}} 
+\index{agora::rtc::IAudioFilterV2::Control@{agora::rtc::IAudioFilterV2::Control}!printLog@{printLog}}
+\index{printLog@{printLog}!agora::rtc::IAudioFilterV2::Control@{agora::rtc::IAudioFilterV2::Control}}
+\doxysubsubsection{\texorpdfstring{printLog()}{printLog()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Filter\+V2\+::\+Control\+::print\+Log (\begin{DoxyParamCaption}\item[{commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL}]{level,  }\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+print log to the S\+DK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Log level agora\+::commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL \\
+\hline
+{\em format} & log formatter string \\
+\hline
+{\em ...} & variadic arguments \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,105 @@
+\hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source}{}\doxysection{agora\+::rtc\+::I\+Screen\+Capture\+Source Class Reference}
+\label{classagora_1_1rtc_1_1_i_screen_capture_source}\index{agora::rtc::IScreenCaptureSource@{agora::rtc::IScreenCaptureSource}}
+Inheritance diagram for agora\+::rtc\+::I\+Screen\+Capture\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_screen_capture_source}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_screen_capture_source_1_1_audio_capture_config}{Audio\+Capture\+Config}}
+\item 
+class \mbox{\hyperlink{classagora_1_1rtc_1_1_i_screen_capture_source_1_1_control}{Control}}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_screen_capture_source_1_1_screen_source_list_option}{Screen\+Source\+List\+Option}}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_screen_capture_source_1_1_video_capture_config}{Video\+Capture\+Config}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a4955d8dc90c0e6952edc68c038128b70}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a4955d8dc90c0e6952edc68c038128b70}} 
+enum {\bfseries Capture\+Mode} \{ {\bfseries k\+Pull}, 
+{\bfseries k\+Push}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_af2781783f30de5581ea53fc005f95559}\label{classagora_1_1rtc_1_1_i_screen_capture_source_af2781783f30de5581ea53fc005f95559}} 
+virtual int {\bfseries initialize\+Capture} (const \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_screen_capture_source_1_1_control}{Control}} $>$ \&control)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a29681c1aa6516e4f4c394bde56c4e18c}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a29681c1aa6516e4f4c394bde56c4e18c}} 
+virtual int {\bfseries init\+Video} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_i_screen_capture_source_1_1_video_capture_config}{Video\+Capture\+Config}} \&config)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_abc921a56d12e02836e2eae16873c39bc}\label{classagora_1_1rtc_1_1_i_screen_capture_source_abc921a56d12e02836e2eae16873c39bc}} 
+virtual int {\bfseries start\+Video\+Capture} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_i_screen_capture_source_1_1_video_capture_config}{Video\+Capture\+Config}} \&config)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_afc6840e8fad7cd357e4dc7af216c4338}\label{classagora_1_1rtc_1_1_i_screen_capture_source_afc6840e8fad7cd357e4dc7af216c4338}} 
+virtual int {\bfseries stop\+Video\+Capture} ()=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a1c60ffcb05b25dd413d641e7ca920bfd}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a1c60ffcb05b25dd413d641e7ca920bfd}} 
+virtual int {\bfseries stop\+Video\+Capture\+Async} ()=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a576d3ff439c2ec7e8821f4333c8bbe17}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a576d3ff439c2ec7e8821f4333c8bbe17}} 
+virtual Capture\+Mode {\bfseries get\+Video\+Capture\+Mode} ()=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a37e0c23ce2d4f1018dcf153cae34288a}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a37e0c23ce2d4f1018dcf153cae34288a}} 
+virtual int {\bfseries start\+Audio\+Capture} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_i_screen_capture_source_1_1_audio_capture_config}{Audio\+Capture\+Config}} \&config)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a6e5aeb7ff7b2efda7abd0adf5e2d305e}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a6e5aeb7ff7b2efda7abd0adf5e2d305e}} 
+virtual int {\bfseries stop\+Audio\+Capture} ()
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a639b3c33dff378514d773f9939188b0e}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a639b3c33dff378514d773f9939188b0e}} 
+virtual int {\bfseries set\+Audio\+Volume} (uint32\+\_\+t volume)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_ae284225b63d0057304f87f36f839b9ec}\label{classagora_1_1rtc_1_1_i_screen_capture_source_ae284225b63d0057304f87f36f839b9ec}} 
+virtual int {\bfseries set\+Frame\+Rate} (int fps)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_ae110497f3055c66c4eb5e917056c9883}\label{classagora_1_1rtc_1_1_i_screen_capture_source_ae110497f3055c66c4eb5e917056c9883}} 
+virtual int {\bfseries set\+Screen\+Capture\+Dimensions} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_dimensions}{agora\+::rtc\+::\+Video\+Dimensions}} \&dimensions)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a460277247d107728ca3e0a5116406ac2}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a460277247d107728ca3e0a5116406ac2}} 
+virtual int {\bfseries update\+Capture\+Region} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{agora\+::rtc\+::\+Rectangle}} \&capture\+Region)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_afed8ec1d0e1bf79f6b70ca57a436b6df}\label{classagora_1_1rtc_1_1_i_screen_capture_source_afed8ec1d0e1bf79f6b70ca57a436b6df}} 
+virtual int {\bfseries set\+Exclude\+Window\+List} (void $\ast$const $\ast$handles, int count)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a5b0b2f8f8d5992cabc7c60be48104838}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a5b0b2f8f8d5992cabc7c60be48104838}} 
+virtual int {\bfseries capture\+Mouse\+Cursor} (bool capture)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a4768cb99f2f45afe47f1bda95cf056d5}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a4768cb99f2f45afe47f1bda95cf056d5}} 
+virtual int {\bfseries capture} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} $>$ \&frame)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a93b29181b6fd140450e8d0572a2f8b32}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a93b29181b6fd140450e8d0572a2f8b32}} 
+virtual int {\bfseries get\+Profiling\+Stats} (\mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_profiling_statistics}{Screen\+Capture\+Profiling\+Statistics}} \&stats)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a549d7978256984d94715e74ce9da43d5}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a549d7978256984d94715e74ce9da43d5}} 
+virtual int {\bfseries get\+Screen\+Dimensions} (int \&width, int \&height)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a1367d197c06bc53a2b0eb025e7f1ba51}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a1367d197c06bc53a2b0eb025e7f1ba51}} 
+virtual int {\bfseries set\+Property} (const char $\ast$key, const char $\ast$json\+\_\+value)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_acf027129cdc4feee0c17d678e01e84d9}\label{classagora_1_1rtc_1_1_i_screen_capture_source_acf027129cdc4feee0c17d678e01e84d9}} 
+virtual int {\bfseries set\+Custom\+Context} (const char $\ast$key, const void $\ast$context)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a3d156529fedc5fb64577efae73d329ae}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a3d156529fedc5fb64577efae73d329ae}} 
+virtual int {\bfseries get\+Property} (const char $\ast$key, char $\ast$json\+\_\+value, int \&length)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_ab1e9c0a8242a94a896cbcb836b9a74d5}\label{classagora_1_1rtc_1_1_i_screen_capture_source_ab1e9c0a8242a94a896cbcb836b9a74d5}} 
+virtual int {\bfseries set\+High\+Light} (bool is\+High\+Light, unsigned int color, int width)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a82eecef4b57f8c9bf2e8e3ec402b8876}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a82eecef4b57f8c9bf2e8e3ec402b8876}} 
+virtual int {\bfseries set\+Content\+Type} (int content\+Type)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_ab4275bc73b9b710a8cf59b70b64e2431}\label{classagora_1_1rtc_1_1_i_screen_capture_source_ab4275bc73b9b710a8cf59b70b64e2431}} 
+virtual void $\ast$ {\bfseries get\+Custom\+Context} (const char $\ast$key)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a6bf66853b351849fbf8fcdd12464f5da}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a6bf66853b351849fbf8fcdd12464f5da}} 
+virtual void $\ast$ {\bfseries get\+Screen\+Capture\+Sources} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_i_screen_capture_source_1_1_screen_source_list_option}{Screen\+Source\+List\+Option}} \&option)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_screen_capture_source_a7bbc5810c2100bd1b7e043c51998c811}\label{classagora_1_1rtc_1_1_i_screen_capture_source_a7bbc5810c2100bd1b7e043c51998c811}} 
+virtual void {\bfseries set\+Frame\+Copy} (bool frame\+Copy)
+\end{DoxyCompactItemize}

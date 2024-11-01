@@ -1,0 +1,119 @@
+\hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler}{}\doxysection{io.\+agora.\+musiccontentcenter.\+I\+Music\+Content\+Center\+Event\+Handler Interface Reference}
+\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler}\index{io.agora.musiccontentcenter.IMusicContentCenterEventHandler@{io.agora.musiccontentcenter.IMusicContentCenterEventHandler}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a77215573b51137c8e6823c537af5b629}{on\+Pre\+Load\+Event}} (String request\+Id, long song\+Code, int percent, String lyric\+Url, int state, int reason)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_afceddbf723d7ba8affbb082628df8525}{on\+Music\+Collection\+Result}} (String request\+Id, int page, int page\+Size, int total, \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_music}{Music}}\mbox{[}$\,$\mbox{]} list, int reason)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a2cb2c460c46df60773f532f55e4a8297}{on\+Music\+Charts\+Result}} (String request\+Id, \mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_music_chart_info}{Music\+Chart\+Info}}\mbox{[}$\,$\mbox{]} list, int reason)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a11ec5f0af019252df0bbabd11229f0d5}{on\+Lyric\+Result}} (String request\+Id, long song\+Code, String lyric\+Url, int reason)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a4bd3113af9bed235306e49203c6ac1ce}{on\+Song\+Simple\+Info\+Result}} (String request\+Id, long song\+Code, String simple\+Info, int reason)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a77215573b51137c8e6823c537af5b629}\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a77215573b51137c8e6823c537af5b629}} 
+\index{io.agora.musiccontentcenter.IMusicContentCenterEventHandler@{io.agora.musiccontentcenter.IMusicContentCenterEventHandler}!onPreLoadEvent@{onPreLoadEvent}}
+\index{onPreLoadEvent@{onPreLoadEvent}!io.agora.musiccontentcenter.IMusicContentCenterEventHandler@{io.agora.musiccontentcenter.IMusicContentCenterEventHandler}}
+\doxysubsubsection{\texorpdfstring{onPreLoadEvent()}{onPreLoadEvent()}}
+{\footnotesize\ttfamily void io.\+agora.\+musiccontentcenter.\+I\+Music\+Content\+Center\+Event\+Handler.\+on\+Pre\+Load\+Event (\begin{DoxyParamCaption}\item[{String}]{request\+Id,  }\item[{long}]{song\+Code,  }\item[{int}]{percent,  }\item[{String}]{lyric\+Url,  }\item[{int}]{state,  }\item[{int}]{reason }\end{DoxyParamCaption})}
+
+Preload process callback, occurs when preload is called
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & The request id is same as that returned by on\+Pre\+Load\+Event. \\
+\hline
+{\em song\+Code} & Song code \\
+\hline
+{\em percent} & Preload progress (0 $\sim$ 100) \\
+\hline
+{\em lyric\+Url} & The lyric url of this music \\
+\hline
+{\em state} & Preload state; see Preload\+State. \\
+\hline
+{\em reason} & The status of the request. See Music\+Content\+Center\+State\+Reason \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_afceddbf723d7ba8affbb082628df8525}\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_afceddbf723d7ba8affbb082628df8525}} 
+\index{io.agora.musiccontentcenter.IMusicContentCenterEventHandler@{io.agora.musiccontentcenter.IMusicContentCenterEventHandler}!onMusicCollectionResult@{onMusicCollectionResult}}
+\index{onMusicCollectionResult@{onMusicCollectionResult}!io.agora.musiccontentcenter.IMusicContentCenterEventHandler@{io.agora.musiccontentcenter.IMusicContentCenterEventHandler}}
+\doxysubsubsection{\texorpdfstring{onMusicCollectionResult()}{onMusicCollectionResult()}}
+{\footnotesize\ttfamily void io.\+agora.\+musiccontentcenter.\+I\+Music\+Content\+Center\+Event\+Handler.\+on\+Music\+Collection\+Result (\begin{DoxyParamCaption}\item[{String}]{request\+Id,  }\item[{int}]{page,  }\item[{int}]{page\+Size,  }\item[{int}]{total,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_music}{Music}}\mbox{[}$\,$\mbox{]}}]{list,  }\item[{int}]{reason }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_music}{Music}} collection, occurs when get\+Music\+Collection\+By\+Music\+Chart\+Id or search\+Music method is called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & The request id is same as that returned by get\+Music\+Collection\+By\+Music\+Chart\+Id or search\+Music \\
+\hline
+{\em page} & The page of the music chart, starting from 1 \\
+\hline
+{\em page\+Size} & The page size, max is 50. \\
+\hline
+{\em total} & The total size. \\
+\hline
+{\em list} & The result of music collection. \\
+\hline
+{\em reason} & The status of the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a2cb2c460c46df60773f532f55e4a8297}\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a2cb2c460c46df60773f532f55e4a8297}} 
+\index{io.agora.musiccontentcenter.IMusicContentCenterEventHandler@{io.agora.musiccontentcenter.IMusicContentCenterEventHandler}!onMusicChartsResult@{onMusicChartsResult}}
+\index{onMusicChartsResult@{onMusicChartsResult}!io.agora.musiccontentcenter.IMusicContentCenterEventHandler@{io.agora.musiccontentcenter.IMusicContentCenterEventHandler}}
+\doxysubsubsection{\texorpdfstring{onMusicChartsResult()}{onMusicChartsResult()}}
+{\footnotesize\ttfamily void io.\+agora.\+musiccontentcenter.\+I\+Music\+Content\+Center\+Event\+Handler.\+on\+Music\+Charts\+Result (\begin{DoxyParamCaption}\item[{String}]{request\+Id,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1musiccontentcenter_1_1_music_chart_info}{Music\+Chart\+Info}}\mbox{[}$\,$\mbox{]}}]{list,  }\item[{int}]{reason }\end{DoxyParamCaption})}
+
+The music chart result callback; occurs when get\+Music\+Charts method is called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & The request id is same as that returned by get\+Music\+Charts. \\
+\hline
+{\em list} & The result of music chart collection \\
+\hline
+{\em reason} & The status of the request. See Music\+Content\+Center\+State\+Reason \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a11ec5f0af019252df0bbabd11229f0d5}\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a11ec5f0af019252df0bbabd11229f0d5}} 
+\index{io.agora.musiccontentcenter.IMusicContentCenterEventHandler@{io.agora.musiccontentcenter.IMusicContentCenterEventHandler}!onLyricResult@{onLyricResult}}
+\index{onLyricResult@{onLyricResult}!io.agora.musiccontentcenter.IMusicContentCenterEventHandler@{io.agora.musiccontentcenter.IMusicContentCenterEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLyricResult()}{onLyricResult()}}
+{\footnotesize\ttfamily void io.\+agora.\+musiccontentcenter.\+I\+Music\+Content\+Center\+Event\+Handler.\+on\+Lyric\+Result (\begin{DoxyParamCaption}\item[{String}]{request\+Id,  }\item[{long}]{song\+Code,  }\item[{String}]{lyric\+Url,  }\item[{int}]{reason }\end{DoxyParamCaption})}
+
+Lyric url callback of get\+Lyric, occurs when get\+Lyric is called
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & The request id is same as that returned by get\+Lyric \\
+\hline
+{\em song\+Code} & Song code \\
+\hline
+{\em lyric\+Url} & The lyric url of this music \\
+\hline
+{\em reason} & The status of the request. See Music\+Content\+Center\+State\+Reason \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a4bd3113af9bed235306e49203c6ac1ce}\label{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_music_content_center_event_handler_a4bd3113af9bed235306e49203c6ac1ce}} 
+\index{io.agora.musiccontentcenter.IMusicContentCenterEventHandler@{io.agora.musiccontentcenter.IMusicContentCenterEventHandler}!onSongSimpleInfoResult@{onSongSimpleInfoResult}}
+\index{onSongSimpleInfoResult@{onSongSimpleInfoResult}!io.agora.musiccontentcenter.IMusicContentCenterEventHandler@{io.agora.musiccontentcenter.IMusicContentCenterEventHandler}}
+\doxysubsubsection{\texorpdfstring{onSongSimpleInfoResult()}{onSongSimpleInfoResult()}}
+{\footnotesize\ttfamily void io.\+agora.\+musiccontentcenter.\+I\+Music\+Content\+Center\+Event\+Handler.\+on\+Song\+Simple\+Info\+Result (\begin{DoxyParamCaption}\item[{String}]{request\+Id,  }\item[{long}]{song\+Code,  }\item[{String}]{simple\+Info,  }\item[{int}]{reason }\end{DoxyParamCaption})}
+
+Simple info callback of get\+Song\+Simple\+Info, occurs when get\+Song\+Simple\+Info is called
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & The request id is same as that returned by get\+Song\+Simple\+Info. \\
+\hline
+{\em song\+Code} & Song code \\
+\hline
+{\em simple\+Info} & The metadata of the music. \\
+\hline
+{\em reason} & The status of the request. See Music\+Content\+Center\+State\+Reason \\
+\hline
+\end{DoxyParams}

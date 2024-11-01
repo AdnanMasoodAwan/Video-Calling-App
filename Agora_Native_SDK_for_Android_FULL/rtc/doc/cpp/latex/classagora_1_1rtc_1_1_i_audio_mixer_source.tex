@@ -1,0 +1,55 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_mixer_source}{}\doxysection{agora\+::rtc\+::I\+Audio\+Mixer\+Source Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_mixer_source}\index{agora::rtc::IAudioMixerSource@{agora::rtc::IAudioMixerSource}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Audio\+Mixer\+Source.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Audio\+Mixer\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_audio_mixer_source}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_mixer_source_a483077f1e14abd17c9fcc677e95780ee}{add\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track}{I\+Audio\+Track}} $>$ track, bool is\+\_\+remote, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_mixer_source_a87b5d1498254acd9a4dae4f1e7f0d617}{remove\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track}{I\+Audio\+Track}} $>$ track, bool is\+\_\+remote, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_mixer_source}{I\+Audio\+Mixer\+Source}} class abstracts a multi-\/in-\/multi-\/out audio source which receives audio streams from multiple local or remote audio tracks and generate mixed audio stream in user defined output format. When only one audio track is added to the mixer, it simply forwards the incoming audio frames to its sinks. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_mixer_source_a483077f1e14abd17c9fcc677e95780ee}\label{classagora_1_1rtc_1_1_i_audio_mixer_source_a483077f1e14abd17c9fcc677e95780ee}} 
+\index{agora::rtc::IAudioMixerSource@{agora::rtc::IAudioMixerSource}!addAudioTrack@{addAudioTrack}}
+\index{addAudioTrack@{addAudioTrack}!agora::rtc::IAudioMixerSource@{agora::rtc::IAudioMixerSource}}
+\doxysubsubsection{\texorpdfstring{addAudioTrack()}{addAudioTrack()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Mixer\+Source\+::add\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track}{I\+Audio\+Track}} $>$}]{track,  }\item[{bool}]{is\+\_\+remote,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Add audio track for mixing. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique id of the stream. \\
+\hline
+{\em track} & The instance of the audio track that you want mixer to receive its audio stream. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_mixer_source_a87b5d1498254acd9a4dae4f1e7f0d617}\label{classagora_1_1rtc_1_1_i_audio_mixer_source_a87b5d1498254acd9a4dae4f1e7f0d617}} 
+\index{agora::rtc::IAudioMixerSource@{agora::rtc::IAudioMixerSource}!removeAudioTrack@{removeAudioTrack}}
+\index{removeAudioTrack@{removeAudioTrack}!agora::rtc::IAudioMixerSource@{agora::rtc::IAudioMixerSource}}
+\doxysubsubsection{\texorpdfstring{removeAudioTrack()}{removeAudioTrack()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Audio\+Mixer\+Source\+::remove\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_track}{I\+Audio\+Track}} $>$}]{track,  }\item[{bool}]{is\+\_\+remote,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Remove the audio track. 
+\begin{DoxyParams}{Parameters}
+{\em track} & The instance of the audio track that you want to remove from the mixer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ Success $<$0 -\/ Failure 
+\end{DoxyReturn}

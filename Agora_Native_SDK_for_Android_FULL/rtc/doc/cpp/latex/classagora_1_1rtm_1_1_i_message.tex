@@ -1,0 +1,142 @@
+\hypertarget{classagora_1_1rtm_1_1_i_message}{}\doxysection{agora\+::rtm\+::I\+Message Class Reference}
+\label{classagora_1_1rtm_1_1_i_message}\index{agora::rtm::IMessage@{agora::rtm::IMessage}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtm\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int64\+\_\+t \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message_a6fc858856050e0ebb4101f716297310d}{get\+Message\+Id}} () const =0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message_a57e34dc8ff7dec74ad44b2d611f5bcaa}{get\+Message\+Type}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message_a2e93098d5a3819e9d4cf8d42641474ae}{set\+Text}} (const char $\ast$str)=0
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message_a6b68b2abe8c9ead51bdfd2788c8cf694}{get\+Text}} () const =0
+\item 
+virtual const unsigned char $\ast$ \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message_a686bb126b5e28ec93e07dbe4eca7b8fe}{get\+Raw\+Message\+Data}} () const =0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message_aafc4d8ecf5b8d051033c094bb4a52ab3}{get\+Raw\+Message\+Length}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message_ad3173b7b18f2a4113438060d075bdb79}{set\+Message\+Type}} (int32\+\_\+t type)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message_afef81e7b091256a1e5c87787d55d9a36}{set\+Raw\+Message}} (const uint8\+\_\+t $\ast$data, int length)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message_a83840910fbb6104c414c30caf2359ffe}{release}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} $\ast$ \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message_a4ddf418ff0663a4ad31b669481562a8f}{create\+Message}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_message_a4ddf418ff0663a4ad31b669481562a8f}\label{classagora_1_1rtm_1_1_i_message_a4ddf418ff0663a4ad31b669481562a8f}} 
+\index{agora::rtm::IMessage@{agora::rtm::IMessage}!createMessage@{createMessage}}
+\index{createMessage@{createMessage}!agora::rtm::IMessage@{agora::rtm::IMessage}}
+\doxysubsubsection{\texorpdfstring{createMessage()}{createMessage()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}}$\ast$ agora\+::rtm\+::\+I\+Message\+::create\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} instance.
+
+The created \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} instance can be either for a channel message or for a peer-\/to-\/peer message.
+
+You can set the content of the text message later using the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message_a2e93098d5a3819e9d4cf8d42641474ae}{set\+Text()}} method. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item An empty text \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} instance, if the method call succeeds. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_message_a6fc858856050e0ebb4101f716297310d}\label{classagora_1_1rtm_1_1_i_message_a6fc858856050e0ebb4101f716297310d}} 
+\index{agora::rtm::IMessage@{agora::rtm::IMessage}!getMessageId@{getMessageId}}
+\index{getMessageId@{getMessageId}!agora::rtm::IMessage@{agora::rtm::IMessage}}
+\doxysubsubsection{\texorpdfstring{getMessageId()}{getMessageId()}}
+{\footnotesize\ttfamily virtual int64\+\_\+t agora\+::rtm\+::\+I\+Message\+::get\+Message\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the ID of the message. \begin{DoxyReturn}{Returns}
+The ID of the current \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_message_a57e34dc8ff7dec74ad44b2d611f5bcaa}\label{classagora_1_1rtm_1_1_i_message_a57e34dc8ff7dec74ad44b2d611f5bcaa}} 
+\index{agora::rtm::IMessage@{agora::rtm::IMessage}!getMessageType@{getMessageType}}
+\index{getMessageType@{getMessageType}!agora::rtm::IMessage@{agora::rtm::IMessage}}
+\doxysubsubsection{\texorpdfstring{getMessageType()}{getMessageType()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Message\+::get\+Message\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the message type. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_message_a2e93098d5a3819e9d4cf8d42641474ae}\label{classagora_1_1rtm_1_1_i_message_a2e93098d5a3819e9d4cf8d42641474ae}} 
+\index{agora::rtm::IMessage@{agora::rtm::IMessage}!setText@{setText}}
+\index{setText@{setText}!agora::rtm::IMessage@{agora::rtm::IMessage}}
+\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Message\+::set\+Text (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the content of the text message, or the text description of the raw message. 
+\begin{DoxyParams}{Parameters}
+{\em str} & The content of the text message, or the text description of the raw message. The maximum length is 32 KB. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_message_a6b68b2abe8c9ead51bdfd2788c8cf694}\label{classagora_1_1rtm_1_1_i_message_a6b68b2abe8c9ead51bdfd2788c8cf694}} 
+\index{agora::rtm::IMessage@{agora::rtm::IMessage}!getText@{getText}}
+\index{getText@{getText}!agora::rtm::IMessage@{agora::rtm::IMessage}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily virtual const char$\ast$ agora\+::rtm\+::\+I\+Message\+::get\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the content of the text messsage, or the text description of the raw message. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The content of the text message or the text description of the raw message. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_message_a686bb126b5e28ec93e07dbe4eca7b8fe}\label{classagora_1_1rtm_1_1_i_message_a686bb126b5e28ec93e07dbe4eca7b8fe}} 
+\index{agora::rtm::IMessage@{agora::rtm::IMessage}!getRawMessageData@{getRawMessageData}}
+\index{getRawMessageData@{getRawMessageData}!agora::rtm::IMessage@{agora::rtm::IMessage}}
+\doxysubsubsection{\texorpdfstring{getRawMessageData()}{getRawMessageData()}}
+{\footnotesize\ttfamily virtual const unsigned char$\ast$ agora\+::rtm\+::\+I\+Message\+::get\+Raw\+Message\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get pointer of custom raw message \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The content of binary raw message 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_message_aafc4d8ecf5b8d051033c094bb4a52ab3}\label{classagora_1_1rtm_1_1_i_message_aafc4d8ecf5b8d051033c094bb4a52ab3}} 
+\index{agora::rtm::IMessage@{agora::rtm::IMessage}!getRawMessageLength@{getRawMessageLength}}
+\index{getRawMessageLength@{getRawMessageLength}!agora::rtm::IMessage@{agora::rtm::IMessage}}
+\doxysubsubsection{\texorpdfstring{getRawMessageLength()}{getRawMessageLength()}}
+{\footnotesize\ttfamily virtual int agora\+::rtm\+::\+I\+Message\+::get\+Raw\+Message\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get length of custom raw message \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The length of binary raw message in bytes 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_message_ad3173b7b18f2a4113438060d075bdb79}\label{classagora_1_1rtm_1_1_i_message_ad3173b7b18f2a4113438060d075bdb79}} 
+\index{agora::rtm::IMessage@{agora::rtm::IMessage}!setMessageType@{setMessageType}}
+\index{setMessageType@{setMessageType}!agora::rtm::IMessage@{agora::rtm::IMessage}}
+\doxysubsubsection{\texorpdfstring{setMessageType()}{setMessageType()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Message\+::set\+Message\+Type (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set message type \mbox{\Hypertarget{classagora_1_1rtm_1_1_i_message_afef81e7b091256a1e5c87787d55d9a36}\label{classagora_1_1rtm_1_1_i_message_afef81e7b091256a1e5c87787d55d9a36}} 
+\index{agora::rtm::IMessage@{agora::rtm::IMessage}!setRawMessage@{setRawMessage}}
+\index{setRawMessage@{setRawMessage}!agora::rtm::IMessage@{agora::rtm::IMessage}}
+\doxysubsubsection{\texorpdfstring{setRawMessage()}{setRawMessage()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Message\+::set\+Raw\+Message (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{data,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set raw binary message \mbox{\Hypertarget{classagora_1_1rtm_1_1_i_message_a83840910fbb6104c414c30caf2359ffe}\label{classagora_1_1rtm_1_1_i_message_a83840910fbb6104c414c30caf2359ffe}} 
+\index{agora::rtm::IMessage@{agora::rtm::IMessage}!release@{release}}
+\index{release@{release}!agora::rtm::IMessage@{agora::rtm::IMessage}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Message\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} instance. 

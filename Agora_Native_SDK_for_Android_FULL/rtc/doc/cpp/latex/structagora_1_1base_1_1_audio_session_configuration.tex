@@ -1,0 +1,203 @@
+\hypertarget{structagora_1_1base_1_1_audio_session_configuration}{}\doxysection{agora\+::base\+::Audio\+Session\+Configuration Struct Reference}
+\label{structagora_1_1base_1_1_audio_session_configuration}\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_a27635d41eb9924fad7dc2b4f5cfb8dd8}\label{structagora_1_1base_1_1_audio_session_configuration_a27635d41eb9924fad7dc2b4f5cfb8dd8}} 
+void {\bfseries Set\+All} (const \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration}{Audio\+Session\+Configuration}} \&change)
+\item 
+\mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_a87da9b25f5b249890ad1178414e9013f}\label{structagora_1_1base_1_1_audio_session_configuration_a87da9b25f5b249890ad1178414e9013f}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration}{Audio\+Session\+Configuration}} \&o) const
+\item 
+\mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_acafc1c9c40fa2046aeca7bd8fca23498}\label{structagora_1_1base_1_1_audio_session_configuration_acafc1c9c40fa2046aeca7bd8fca23498}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration}{Audio\+Session\+Configuration}} \&o) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_a8ef6a83a25846294745ae688dba23735}{playback\+And\+Record}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_a4a818f1f7a3dcce8b194cc8ecf691068}{chat\+Mode}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_a92456f63837c57c6b067c88113b0b679}{default\+To\+Speaker}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_a153ecc51f6e870f48a2f6b477c920582}{override\+Speaker}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_aa9f086919cdd62915706ac50581e4aef}{allow\+Mix\+With\+Others}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_adee64f39c443c1b3d166feb1efb7af1e}{allow\+Duck\+Others}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_a164679336fb99bbb87bfb8dae824df60}{allow\+Bluetooth}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_a09b8a4e53b4fcefc57d7ddfb5739a88b}{allow\+Bluetooth\+A2\+DP}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ double $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_aab8aaf78c9e9d1ec42cbc372133b5d0b}{sample\+Rate}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ double $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_aac17163bd327eb5c701deb9892c60c37}{io\+Buffer\+Duration}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ int $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_a87c0214ec3027290a4d606b84bc4083d}{input\+Number\+Of\+Channels}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ int $>$ \mbox{\hyperlink{structagora_1_1base_1_1_audio_session_configuration_a24adae018e09f00a5615e7808ddc31e0}{output\+Number\+Of\+Channels}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The audio session configurations.
+
+Set these configurations when calling \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a2feac66925e2f27f0964912bb1f8f75c}{set\+Audio\+Session\+Configuration}}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_a8ef6a83a25846294745ae688dba23735}\label{structagora_1_1base_1_1_audio_session_configuration_a8ef6a83a25846294745ae688dba23735}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!playbackAndRecord@{playbackAndRecord}}
+\index{playbackAndRecord@{playbackAndRecord}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{playbackAndRecord}{playbackAndRecord}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::playback\+And\+Record}
+
+Whether to enable audio input (recording) and audio output (playback)\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Enable audio recording and playback.
+\item {\ttfamily false}\+: Disable audio recording and playback, which prevents audio input and output.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item For the recording function to work, the user must grant permission for audio recording.
+\item By default, the audio of your app is nonmixable, which means activating audio sessions in your app interrupts other nonmixable audio sessions. Set {\ttfamily allow\+Mix\+With\+Others} as {\ttfamily true} to allow audio mixing. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_a4a818f1f7a3dcce8b194cc8ecf691068}\label{structagora_1_1base_1_1_audio_session_configuration_a4a818f1f7a3dcce8b194cc8ecf691068}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!chatMode@{chatMode}}
+\index{chatMode@{chatMode}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{chatMode}{chatMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::chat\+Mode}
+
+Whether to enable chat mode\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Enable chat mode. This mode is for apps that are engaged in two-\/way real-\/time communication, such as a voice or video chat.
+\item {\ttfamily false}\+: Disable chat mode.
+\end{DoxyItemize}
+
+For a video chat, set this member as {\ttfamily true} and set the audio route to the speaker. \mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_a92456f63837c57c6b067c88113b0b679}\label{structagora_1_1base_1_1_audio_session_configuration_a92456f63837c57c6b067c88113b0b679}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!defaultToSpeaker@{defaultToSpeaker}}
+\index{defaultToSpeaker@{defaultToSpeaker}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{defaultToSpeaker}{defaultToSpeaker}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::default\+To\+Speaker}
+
+Whether the audio defaults to the built-\/in speaker\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: The audio defaults to the built-\/in speaker.
+\item {\ttfamily false}\+: The audio does not default to the built-\/in speaker.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+This member is available only when {\ttfamily playback\+And\+Record} is set as {\ttfamily true}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_a153ecc51f6e870f48a2f6b477c920582}\label{structagora_1_1base_1_1_audio_session_configuration_a153ecc51f6e870f48a2f6b477c920582}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!overrideSpeaker@{overrideSpeaker}}
+\index{overrideSpeaker@{overrideSpeaker}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{overrideSpeaker}{overrideSpeaker}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::override\+Speaker}
+
+Whether to temporarily change the current audio route to the built-\/in speaker\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Set the current audio route to the built-\/in speaker.
+\item {\ttfamily false}\+: Do not set the current audio route to the built-\/in speaker.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+This member is available only when the {\ttfamily playback\+And\+Record} member is set as {\ttfamily true}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_aa9f086919cdd62915706ac50581e4aef}\label{structagora_1_1base_1_1_audio_session_configuration_aa9f086919cdd62915706ac50581e4aef}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!allowMixWithOthers@{allowMixWithOthers}}
+\index{allowMixWithOthers@{allowMixWithOthers}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{allowMixWithOthers}{allowMixWithOthers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::allow\+Mix\+With\+Others}
+
+Whether to mix the audio from this session with the audio from active audio sessions in other apps.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Mix the audio sessions.
+\item {\ttfamily false}\+: Do not mix the audio session.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+This member is available only when the {\ttfamily playback\+And\+Record} member is set as {\ttfamily true}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_adee64f39c443c1b3d166feb1efb7af1e}\label{structagora_1_1base_1_1_audio_session_configuration_adee64f39c443c1b3d166feb1efb7af1e}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!allowDuckOthers@{allowDuckOthers}}
+\index{allowDuckOthers@{allowDuckOthers}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{allowDuckOthers}{allowDuckOthers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::allow\+Duck\+Others}
+
+Whether to duck the audio from this session with the audio from active audio sessions in other apps.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Duck the audio sessions.
+\item {\ttfamily false}\+: Do not duck the audio session.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+This member is available only when the {\ttfamily playback\+And\+Record} member is set as {\ttfamily true}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_a164679336fb99bbb87bfb8dae824df60}\label{structagora_1_1base_1_1_audio_session_configuration_a164679336fb99bbb87bfb8dae824df60}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!allowBluetooth@{allowBluetooth}}
+\index{allowBluetooth@{allowBluetooth}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{allowBluetooth}{allowBluetooth}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::allow\+Bluetooth}
+
+Whether to allow Bluetooth handsfree devices to appear as available audio input devices\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Allow Bluetooth handsfree devices to appear as available audio input routes.
+\item {\ttfamily false}\+: Do not allow Bluetooth handsfree devices to appear as available audio input routes.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+This member is available only when the {\ttfamily playback\+And\+Record} member is set as {\ttfamily true}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_a09b8a4e53b4fcefc57d7ddfb5739a88b}\label{structagora_1_1base_1_1_audio_session_configuration_a09b8a4e53b4fcefc57d7ddfb5739a88b}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!allowBluetoothA2DP@{allowBluetoothA2DP}}
+\index{allowBluetoothA2DP@{allowBluetoothA2DP}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{allowBluetoothA2DP}{allowBluetoothA2DP}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::allow\+Bluetooth\+A2\+DP}
+
+Whether to allow the audio from this session to be routed to Bluetooth devices that support the Advanced Audio Distribution Profile (A2\+DP).
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Allow the audio from this session to be routed to Bluetooth devices that support the Advanced Audio Distribution Profile (A2\+DP).
+\item {\ttfamily false}\+: Do not allow the audio from this session to be routed to Bluetooth devices that support the Advanced Audio Distribution Profile (A2\+DP).
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+This member is available only when the {\ttfamily playback\+And\+Record} member is set as {\ttfamily true}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_aab8aaf78c9e9d1ec42cbc372133b5d0b}\label{structagora_1_1base_1_1_audio_session_configuration_aab8aaf78c9e9d1ec42cbc372133b5d0b}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!sampleRate@{sampleRate}}
+\index{sampleRate@{sampleRate}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{sampleRate}{sampleRate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$double$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::sample\+Rate}
+
+The expected audio sample rate (k\+Hz) of this session.
+
+The value range is \mbox{[}8,48\mbox{]}. The actual sample rate may differ based on the audio sampling device in use. \mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_aac17163bd327eb5c701deb9892c60c37}\label{structagora_1_1base_1_1_audio_session_configuration_aac17163bd327eb5c701deb9892c60c37}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!ioBufferDuration@{ioBufferDuration}}
+\index{ioBufferDuration@{ioBufferDuration}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{ioBufferDuration}{ioBufferDuration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$double$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::io\+Buffer\+Duration}
+
+The expected input and output buffer duration (ms) of this session.
+
+The value range is \mbox{[}0,93\mbox{]}. The actual I/O buffer duration might be lower than the set value based on the hardware in use. \mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_a87c0214ec3027290a4d606b84bc4083d}\label{structagora_1_1base_1_1_audio_session_configuration_a87c0214ec3027290a4d606b84bc4083d}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!inputNumberOfChannels@{inputNumberOfChannels}}
+\index{inputNumberOfChannels@{inputNumberOfChannels}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{inputNumberOfChannels}{inputNumberOfChannels}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$int$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::input\+Number\+Of\+Channels}
+
+The expected number of input audio channels of this session. \mbox{\Hypertarget{structagora_1_1base_1_1_audio_session_configuration_a24adae018e09f00a5615e7808ddc31e0}\label{structagora_1_1base_1_1_audio_session_configuration_a24adae018e09f00a5615e7808ddc31e0}} 
+\index{agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}!outputNumberOfChannels@{outputNumberOfChannels}}
+\index{outputNumberOfChannels@{outputNumberOfChannels}!agora::base::AudioSessionConfiguration@{agora::base::AudioSessionConfiguration}}
+\doxysubsubsection{\texorpdfstring{outputNumberOfChannels}{outputNumberOfChannels}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$int$>$ agora\+::base\+::\+Audio\+Session\+Configuration\+::output\+Number\+Of\+Channels}
+
+The expected number of output audio channels of this session. 

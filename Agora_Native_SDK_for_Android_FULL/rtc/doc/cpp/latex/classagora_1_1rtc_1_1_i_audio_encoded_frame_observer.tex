@@ -1,0 +1,78 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer}{}\doxysection{agora\+::rtc\+::I\+Audio\+Encoded\+Frame\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer}\index{agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a294e78b378c3b409f9a22f43ff5ce0c5}{on\+Record\+Audio\+Encoded\+Frame}} (const uint8\+\_\+t $\ast$frame\+Buffer, int length, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&audio\+Encoded\+Frame\+Info)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_aa89cf1986e0cf457352b202142d0d254}{on\+Playback\+Audio\+Encoded\+Frame}} (const uint8\+\_\+t $\ast$frame\+Buffer, int length, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&audio\+Encoded\+Frame\+Info)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a415f2f8c4af17f2a516e81b108b67841}{on\+Mixed\+Audio\+Encoded\+Frame}} (const uint8\+\_\+t $\ast$frame\+Buffer, int length, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&audio\+Encoded\+Frame\+Info)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The encoded audio observer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a294e78b378c3b409f9a22f43ff5ce0c5}\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a294e78b378c3b409f9a22f43ff5ce0c5}} 
+\index{agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}!onRecordAudioEncodedFrame@{onRecordAudioEncodedFrame}}
+\index{onRecordAudioEncodedFrame@{onRecordAudioEncodedFrame}!agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onRecordAudioEncodedFrame()}{onRecordAudioEncodedFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Encoded\+Frame\+Observer\+::on\+Record\+Audio\+Encoded\+Frame (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{frame\+Buffer,  }\item[{int}]{length,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&}]{audio\+Encoded\+Frame\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the encoded audio data of the local user.
+
+After calling {\ttfamily register\+Audio\+Encoded\+Frame\+Observer} and setting the encoded audio as {\ttfamily A\+U\+D\+I\+O\+\_\+\+E\+N\+C\+O\+D\+E\+D\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+B\+S\+E\+R\+V\+E\+R\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+R\+E\+C\+O\+RD}, you can get the encoded audio data of the local user from this callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+Buffer} & The pointer to the audio frame buffer. \\
+\hline
+{\em length} & The data length (byte) of the audio frame. \\
+\hline
+{\em audio\+Encoded\+Frame\+Info} & Audio information after encoding. For details, see {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_aa89cf1986e0cf457352b202142d0d254}\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_aa89cf1986e0cf457352b202142d0d254}} 
+\index{agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}!onPlaybackAudioEncodedFrame@{onPlaybackAudioEncodedFrame}}
+\index{onPlaybackAudioEncodedFrame@{onPlaybackAudioEncodedFrame}!agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onPlaybackAudioEncodedFrame()}{onPlaybackAudioEncodedFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Encoded\+Frame\+Observer\+::on\+Playback\+Audio\+Encoded\+Frame (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{frame\+Buffer,  }\item[{int}]{length,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&}]{audio\+Encoded\+Frame\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the encoded audio data of all remote users.
+
+After calling {\ttfamily register\+Audio\+Encoded\+Frame\+Observer} and setting the encoded audio as {\ttfamily A\+U\+D\+I\+O\+\_\+\+E\+N\+C\+O\+D\+E\+D\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+B\+S\+E\+R\+V\+E\+R\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+L\+A\+Y\+B\+A\+CK}, you can get encoded audio data of all remote users through this callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+Buffer} & The pointer to the audio frame buffer. \\
+\hline
+{\em length} & The data length (byte) of the audio frame. \\
+\hline
+{\em audio\+Encoded\+Frame\+Info} & Audio information after encoding. For details, see {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a415f2f8c4af17f2a516e81b108b67841}\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a415f2f8c4af17f2a516e81b108b67841}} 
+\index{agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}!onMixedAudioEncodedFrame@{onMixedAudioEncodedFrame}}
+\index{onMixedAudioEncodedFrame@{onMixedAudioEncodedFrame}!agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onMixedAudioEncodedFrame()}{onMixedAudioEncodedFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Encoded\+Frame\+Observer\+::on\+Mixed\+Audio\+Encoded\+Frame (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{frame\+Buffer,  }\item[{int}]{length,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&}]{audio\+Encoded\+Frame\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the mixed and encoded audio data of the local and all remote users.
+
+After calling {\ttfamily register\+Audio\+Encoded\+Frame\+Observer} and setting the audio profile as {\ttfamily A\+U\+D\+I\+O\+\_\+\+E\+N\+C\+O\+D\+E\+D\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+B\+S\+E\+R\+V\+E\+R\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+M\+I\+X\+ED}, you can get the mixed and encoded audio data of the local and all remote users through this callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+Buffer} & The pointer to the audio frame buffer. \\
+\hline
+{\em length} & The data length (byte) of the audio frame. \\
+\hline
+{\em audio\+Encoded\+Frame\+Info} & Audio information after encoding. For details, see {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}}}. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,69 @@
+\hypertarget{structagora_1_1rtc_1_1_video_frame_data}{}\doxysection{agora\+::rtc\+::Video\+Frame\+Data Struct Reference}
+\label{structagora_1_1rtc_1_1_video_frame_data}\index{agora::rtc::VideoFrameData@{agora::rtc::VideoFrameData}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Video\+Frame.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::Video\+Frame\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structagora_1_1rtc_1_1_video_frame_data}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+E\+N\+U\+M\+\_\+\+C\+L\+A\+SS {\bfseries Type}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_frame_data_af6de884fded1b8f9cd8fda937b3671df}\label{structagora_1_1rtc_1_1_video_frame_data_af6de884fded1b8f9cd8fda937b3671df}} 
+Type {\bfseries type}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_frame_data_ad97f655ddde85679e4215377e1ca6de6}\label{structagora_1_1rtc_1_1_video_frame_data_ad97f655ddde85679e4215377e1ca6de6}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{structagora_1_1rtc_1_1_texture_info}{TextureInfo}} {\bfseries texture}\\
+\>\mbox{\hyperlink{structagora_1_1rtc_1_1_raw_pixel_buffer}{RawPixelBuffer}} {\bfseries pixels}\\
+\>void $\ast$ {\bfseries cvpixelbuffer}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_frame_data_a0f825bd5a93afbee574e96a430634630}\label{structagora_1_1rtc_1_1_video_frame_data_a0f825bd5a93afbee574e96a430634630}} 
+int {\bfseries width}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_frame_data_aca7639f4bf14b68824746fa35b181bcd}\label{structagora_1_1rtc_1_1_video_frame_data_aca7639f4bf14b68824746fa35b181bcd}} 
+int {\bfseries height}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_frame_data_a151bf9e11f08baf063ccc54e5a4c0550}\label{structagora_1_1rtc_1_1_video_frame_data_a151bf9e11f08baf063ccc54e5a4c0550}} 
+int {\bfseries rotation}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_frame_data_a217fa98f26b1005a9d023dd88a3dcaf3}\label{structagora_1_1rtc_1_1_video_frame_data_a217fa98f26b1005a9d023dd88a3dcaf3}} 
+\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_color_space}{agora\+::media\+::base\+::\+Color\+Space}} {\bfseries color\+\_\+space}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_frame_data_a574cf91da0fd9e5a9cb724c5533cebeb}\label{structagora_1_1rtc_1_1_video_frame_data_a574cf91da0fd9e5a9cb724c5533cebeb}} 
+int64\+\_\+t {\bfseries timestamp\+\_\+ms}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This structure defines underlying detailed video frame data of \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{agora\+::rtc\+::\+I\+Video\+Frame}} 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_frame_data_ab8927f2d75bf54ec30e8c31eaf6d04ff}\label{structagora_1_1rtc_1_1_video_frame_data_ab8927f2d75bf54ec30e8c31eaf6d04ff}} 
+\index{agora::rtc::VideoFrameData@{agora::rtc::VideoFrameData}!Type@{Type}}
+\index{Type@{Type}!agora::rtc::VideoFrameData@{agora::rtc::VideoFrameData}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+E\+N\+U\+M\+\_\+\+C\+L\+A\+SS agora\+::rtc\+::\+Video\+Frame\+Data\+::\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    kRawPixels, }
+\DoxyCodeLine{    kTexture, }
+\DoxyCodeLine{    kCVPixelBuffer, }
+\DoxyCodeLine{    kPaddedRawPixels, }
+\DoxyCodeLine{    kTextureOES,}
+\DoxyCodeLine{    kTexture2D, }
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}

@@ -1,0 +1,97 @@
+\hypertarget{structagora_1_1media_1_1base_1_1_color_space}{}\doxysection{agora\+::media\+::base\+::Color\+Space Struct Reference}
+\label{structagora_1_1media_1_1base_1_1_color_space}\index{agora::media::base::ColorSpace@{agora::media::base::ColorSpace}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_color_space_ad4d1d446ec52eadae16de778bc318b88}\label{structagora_1_1media_1_1base_1_1_color_space_ad4d1d446ec52eadae16de778bc318b88}} 
+enum {\bfseries Primary\+ID} \{ \newline
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+B\+T709} = 1, 
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+ED} = 2, 
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+B\+T470M} = 4, 
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+B\+T470\+BG} = 5, 
+\newline
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+S\+M\+P\+T\+E170M} = 6, 
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+S\+M\+P\+T\+E240M} = 7, 
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+F\+I\+LM} = 8, 
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+B\+T2020} = 9, 
+\newline
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+S\+M\+P\+T\+E\+S\+T428} = 10, 
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+S\+M\+P\+T\+E\+S\+T431} = 11, 
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+S\+M\+P\+T\+E\+S\+T432} = 12, 
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+I\+D\+\_\+\+J\+E\+D\+E\+C\+P22} = 22
+ \}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_color_space_a176cfa47f82b46f5dc38038b363773aa}\label{structagora_1_1media_1_1base_1_1_color_space_a176cfa47f82b46f5dc38038b363773aa}} 
+enum {\bfseries Range\+ID} \{ {\bfseries R\+A\+N\+G\+E\+I\+D\+\_\+\+I\+N\+V\+A\+L\+ID} = 0, 
+{\bfseries R\+A\+N\+G\+E\+I\+D\+\_\+\+L\+I\+M\+I\+T\+ED} = 1, 
+{\bfseries R\+A\+N\+G\+E\+I\+D\+\_\+\+F\+U\+LL} = 2, 
+{\bfseries R\+A\+N\+G\+E\+I\+D\+\_\+\+D\+E\+R\+I\+V\+ED} = 3
+ \}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_color_space_a65623a063c04d488287c2d20d82f3c84}\label{structagora_1_1media_1_1base_1_1_color_space_a65623a063c04d488287c2d20d82f3c84}} 
+enum {\bfseries Matrix\+ID} \{ \newline
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+R\+GB} = 0, 
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+B\+T709} = 1, 
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+ED} = 2, 
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+F\+CC} = 4, 
+\newline
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+B\+T470\+BG} = 5, 
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+S\+M\+P\+T\+E170M} = 6, 
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+S\+M\+P\+T\+E240M} = 7, 
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+Y\+C\+O\+CG} = 8, 
+\newline
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+B\+T2020\+\_\+\+N\+CL} = 9, 
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+B\+T2020\+\_\+\+CL} = 10, 
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+S\+M\+P\+T\+E2085} = 11, 
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+C\+D\+N\+C\+LS} = 12, 
+\newline
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+C\+D\+C\+LS} = 13, 
+{\bfseries M\+A\+T\+R\+I\+X\+I\+D\+\_\+\+B\+T2100\+\_\+\+I\+C\+T\+CP} = 14
+ \}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_color_space_aa46a6ab58d1060bb7ebbb6911e8983de}\label{structagora_1_1media_1_1base_1_1_color_space_aa46a6ab58d1060bb7ebbb6911e8983de}} 
+enum {\bfseries Transfer\+ID} \{ \newline
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+B\+T709} = 1, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+ED} = 2, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+G\+A\+M\+M\+A22} = 4, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+G\+A\+M\+M\+A28} = 5, 
+\newline
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+S\+M\+P\+T\+E170M} = 6, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+S\+M\+P\+T\+E240M} = 7, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+L\+I\+N\+E\+AR} = 8, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+L\+OG} = 9, 
+\newline
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+L\+O\+G\+\_\+\+S\+Q\+RT} = 10, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+I\+E\+C61966\+\_\+2\+\_\+4} = 11, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+B\+T1361\+\_\+\+E\+CG} = 12, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+I\+E\+C61966\+\_\+2\+\_\+1} = 13, 
+\newline
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+B\+T2020\+\_\+10} = 14, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+B\+T2020\+\_\+12} = 15, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+S\+M\+P\+T\+E\+S\+T2084} = 16, 
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+S\+M\+P\+T\+E\+S\+T428} = 17, 
+\newline
+{\bfseries T\+R\+A\+N\+S\+F\+E\+R\+I\+D\+\_\+\+A\+R\+I\+B\+\_\+\+S\+T\+D\+\_\+\+B67} = 18
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_color_space_a627fe74e0808917fa160ea25c00eb24c}\label{structagora_1_1media_1_1base_1_1_color_space_a627fe74e0808917fa160ea25c00eb24c}} 
+bool {\bfseries validate} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_color_space_a6b571962ff87ef4339ba3f39c2e246ef}\label{structagora_1_1media_1_1base_1_1_color_space_a6b571962ff87ef4339ba3f39c2e246ef}} 
+Primary\+ID {\bfseries primaries}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_color_space_a8c15d7a4623d0b13de7fe19112907cb7}\label{structagora_1_1media_1_1base_1_1_color_space_a8c15d7a4623d0b13de7fe19112907cb7}} 
+Transfer\+ID {\bfseries transfer}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_color_space_a1075130177f16c9dd8c3c175998b903c}\label{structagora_1_1media_1_1base_1_1_color_space_a1075130177f16c9dd8c3c175998b903c}} 
+Matrix\+ID {\bfseries matrix}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_color_space_a0b9c379588273d3867b2d2e098e3e516}\label{structagora_1_1media_1_1base_1_1_color_space_a0b9c379588273d3867b2d2e098e3e516}} 
+Range\+ID {\bfseries range}
+\end{DoxyCompactItemize}

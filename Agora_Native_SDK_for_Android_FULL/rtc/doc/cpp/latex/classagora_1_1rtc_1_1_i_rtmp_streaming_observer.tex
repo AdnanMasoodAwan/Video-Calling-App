@@ -1,0 +1,73 @@
+\hypertarget{classagora_1_1rtc_1_1_i_rtmp_streaming_observer}{}\doxysection{agora\+::rtc\+::I\+Rtmp\+Streaming\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_rtmp_streaming_observer}\index{agora::rtc::IRtmpStreamingObserver@{agora::rtc::IRtmpStreamingObserver}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtmp\+Streaming\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_observer_a6e05487493504d784bf63794d0c774e3}{on\+Rtmp\+Streaming\+State\+Changed}} (const char $\ast$url, R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE state, R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+R\+E\+A\+S\+ON reason)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_observer_a87c84e06373256c5c5ab91a4b8d1531c}{on\+Rtmp\+Streaming\+Event}} (const char $\ast$url, R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+E\+V\+E\+NT event\+Code)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_observer_a3e974c6cbeb877267ad684b96702b307}{on\+Transcoding\+Updated}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_streaming_observer}{I\+Rtmp\+Streaming\+Observer}} class, which monitors events in of the live streaming service. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_streaming_observer_a6e05487493504d784bf63794d0c774e3}\label{classagora_1_1rtc_1_1_i_rtmp_streaming_observer_a6e05487493504d784bf63794d0c774e3}} 
+\index{agora::rtc::IRtmpStreamingObserver@{agora::rtc::IRtmpStreamingObserver}!onRtmpStreamingStateChanged@{onRtmpStreamingStateChanged}}
+\index{onRtmpStreamingStateChanged@{onRtmpStreamingStateChanged}!agora::rtc::IRtmpStreamingObserver@{agora::rtc::IRtmpStreamingObserver}}
+\doxysubsubsection{\texorpdfstring{onRtmpStreamingStateChanged()}{onRtmpStreamingStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtmp\+Streaming\+Observer\+::on\+Rtmp\+Streaming\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url,  }\item[{R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+R\+E\+A\+S\+ON}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the state of the R\+T\+MP streaming changes.
+
+The S\+DK triggers this callback to report the result of the local user calling {\ttfamily add\+Publish\+Stream\+Url} or {\ttfamily remove\+Publish\+Stream\+Url}.
+
+This callback also reports the streaming U\+RL and its current streaming state. When exceptions occur, you can troubleshoot issues by referring to the detailed error description in the {\ttfamily err\+Code} parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The R\+T\+MP U\+RL address. \\
+\hline
+{\em state} & The R\+T\+MP streaming state\+: \#\+R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em reason} & The detailed error information for streaming\+: \#\+R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+R\+E\+A\+S\+ON. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_streaming_observer_a87c84e06373256c5c5ab91a4b8d1531c}\label{classagora_1_1rtc_1_1_i_rtmp_streaming_observer_a87c84e06373256c5c5ab91a4b8d1531c}} 
+\index{agora::rtc::IRtmpStreamingObserver@{agora::rtc::IRtmpStreamingObserver}!onRtmpStreamingEvent@{onRtmpStreamingEvent}}
+\index{onRtmpStreamingEvent@{onRtmpStreamingEvent}!agora::rtc::IRtmpStreamingObserver@{agora::rtc::IRtmpStreamingObserver}}
+\doxysubsubsection{\texorpdfstring{onRtmpStreamingEvent()}{onRtmpStreamingEvent()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtmp\+Streaming\+Observer\+::on\+Rtmp\+Streaming\+Event (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url,  }\item[{R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+E\+V\+E\+NT}]{event\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports events during the R\+T\+MP or R\+T\+M\+PS streaming.
+
+\begin{DoxySince}{Since}
+v3.\+1.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The R\+T\+MP or R\+T\+M\+PS streaming U\+RL. \\
+\hline
+{\em event\+Code} & The event code. See \#\+R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+E\+V\+E\+NT \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtmp_streaming_observer_a3e974c6cbeb877267ad684b96702b307}\label{classagora_1_1rtc_1_1_i_rtmp_streaming_observer_a3e974c6cbeb877267ad684b96702b307}} 
+\index{agora::rtc::IRtmpStreamingObserver@{agora::rtc::IRtmpStreamingObserver}!onTranscodingUpdated@{onTranscodingUpdated}}
+\index{onTranscodingUpdated@{onTranscodingUpdated}!agora::rtc::IRtmpStreamingObserver@{agora::rtc::IRtmpStreamingObserver}}
+\doxysubsubsection{\texorpdfstring{onTranscodingUpdated()}{onTranscodingUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtmp\+Streaming\+Observer\+::on\+Transcoding\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the publisher\textquotesingle{}s transcoding settings are updated.
+
+When the {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_live_transcoding}{Live\+Transcoding}}} class in the {\ttfamily set\+Live\+Transocding} method updates, the S\+DK triggers this callback to report the update information.
+
+\begin{DoxyNote}{Note}
+If you call the {\ttfamily set\+Live\+Transcoding} method to set the {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_live_transcoding}{Live\+Transcoding}}} class for the first time, the S\+DK does not trigger this callback. 
+\end{DoxyNote}

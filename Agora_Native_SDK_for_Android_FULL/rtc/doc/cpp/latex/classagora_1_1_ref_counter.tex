@@ -1,0 +1,31 @@
+\hypertarget{classagora_1_1_ref_counter}{}\doxysection{agora\+::Ref\+Counter Class Reference}
+\label{classagora_1_1_ref_counter}\index{agora::RefCounter@{agora::RefCounter}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1_ref_counter_a45598efe612c80f43a97072d4d20c731}\label{classagora_1_1_ref_counter_a45598efe612c80f43a97072d4d20c731}} 
+{\bfseries Ref\+Counter} (int ref\+\_\+count)
+\item 
+\mbox{\Hypertarget{classagora_1_1_ref_counter_a80f999c3f247daa581dca37ab3ad265a}\label{classagora_1_1_ref_counter_a80f999c3f247daa581dca37ab3ad265a}} 
+void {\bfseries Inc\+Ref} ()
+\item 
+agora\+::\+Ref\+Count\+Release\+Status \mbox{\hyperlink{classagora_1_1_ref_counter_ae962f18ad07b877079402918756f99bf}{Dec\+Ref}} ()
+\item 
+bool \mbox{\hyperlink{classagora_1_1_ref_counter_ad4d043d868cc1c21f4024a677acd7fad}{Has\+One\+Ref}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1_ref_counter_ae962f18ad07b877079402918756f99bf}\label{classagora_1_1_ref_counter_ae962f18ad07b877079402918756f99bf}} 
+\index{agora::RefCounter@{agora::RefCounter}!DecRef@{DecRef}}
+\index{DecRef@{DecRef}!agora::RefCounter@{agora::RefCounter}}
+\doxysubsubsection{\texorpdfstring{DecRef()}{DecRef()}}
+{\footnotesize\ttfamily agora\+::\+Ref\+Count\+Release\+Status agora\+::\+Ref\+Counter\+::\+Dec\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if this was the last reference, and the resource protected by the reference counter can be deleted. \mbox{\Hypertarget{classagora_1_1_ref_counter_ad4d043d868cc1c21f4024a677acd7fad}\label{classagora_1_1_ref_counter_ad4d043d868cc1c21f4024a677acd7fad}} 
+\index{agora::RefCounter@{agora::RefCounter}!HasOneRef@{HasOneRef}}
+\index{HasOneRef@{HasOneRef}!agora::RefCounter@{agora::RefCounter}}
+\doxysubsubsection{\texorpdfstring{HasOneRef()}{HasOneRef()}}
+{\footnotesize\ttfamily bool agora\+::\+Ref\+Counter\+::\+Has\+One\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return whether the reference count is one. If the reference count is used in the conventional way, a reference count of 1 implies that the current thread owns the reference and no other thread shares it. This call performs the test for a reference count of one, and performs the memory barrier needed for the owning thread to act on the resource protected by the reference counter, knowing that it has exclusive access. 

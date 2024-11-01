@@ -1,0 +1,27 @@
+\hypertarget{classagora_1_1rtc_1_1_i_video_frame_observer2}{}\doxysection{agora\+::rtc\+::I\+Video\+Frame\+Observer2 Class Reference}
+\label{classagora_1_1rtc_1_1_i_video_frame_observer2}\index{agora::rtc::IVideoFrameObserver2@{agora::rtc::IVideoFrameObserver2}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_observer2_a8b6fa921185f59ad5d3b5dbbbf180058}{on\+Frame}} (const char $\ast$channel\+Id, user\+\_\+id\+\_\+t remote\+Uid, const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{media\+::base\+::\+Video\+Frame}} $\ast$frame)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_video_frame_observer2_a8b6fa921185f59ad5d3b5dbbbf180058}\label{classagora_1_1rtc_1_1_i_video_frame_observer2_a8b6fa921185f59ad5d3b5dbbbf180058}} 
+\index{agora::rtc::IVideoFrameObserver2@{agora::rtc::IVideoFrameObserver2}!onFrame@{onFrame}}
+\index{onFrame@{onFrame}!agora::rtc::IVideoFrameObserver2@{agora::rtc::IVideoFrameObserver2}}
+\doxysubsubsection{\texorpdfstring{onFrame()}{onFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Video\+Frame\+Observer2\+::on\+Frame (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel\+Id,  }\item[{user\+\_\+id\+\_\+t}]{remote\+Uid,  }\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{media\+::base\+::\+Video\+Frame}} $\ast$}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs each time the player receives a video frame.
+
+After registering the video frame observer, the callback occurs each time receives a video frame to report the detailed information of the video frame. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name \\
+\hline
+{\em remote\+Uid} & ID of the remote user. \\
+\hline
+{\em frame} & The detailed information of the video frame. See \mbox{\hyperlink{}{Video\+Frame}}. \\
+\hline
+\end{DoxyParams}

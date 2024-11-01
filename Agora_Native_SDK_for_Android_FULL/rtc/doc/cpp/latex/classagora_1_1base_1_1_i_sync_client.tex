@@ -1,0 +1,80 @@
+\hypertarget{classagora_1_1base_1_1_i_sync_client}{}\doxysection{agora\+::base\+::I\+Sync\+Client Class Reference}
+\label{classagora_1_1base_1_1_i_sync_client}\index{agora::base::ISyncClient@{agora::base::ISyncClient}}
+Inheritance diagram for agora\+::base\+::I\+Sync\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1base_1_1_i_sync_client}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_ac9860091b602afefbecb2e68d051ba8e}\label{classagora_1_1base_1_1_i_sync_client_ac9860091b602afefbecb2e68d051ba8e}} 
+virtual int32\+\_\+t {\bfseries register\+Sync\+Client\+Observer} (\mbox{\hyperlink{classagora_1_1base_1_1_i_sync_client_observer}{I\+Sync\+Client\+Observer}} $\ast$observer, void($\ast$safe\+Deleter)(\mbox{\hyperlink{classagora_1_1base_1_1_i_sync_client_observer}{I\+Sync\+Client\+Observer}} $\ast$)=O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+N\+U\+L\+L\+P\+TR, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_acc2fb977c2af89af5ebfd1b7fcc028db}\label{classagora_1_1base_1_1_i_sync_client_acc2fb977c2af89af5ebfd1b7fcc028db}} 
+virtual int32\+\_\+t {\bfseries unregister\+Sync\+Client\+Observer} (\mbox{\hyperlink{classagora_1_1base_1_1_i_sync_client_observer}{I\+Sync\+Client\+Observer}} $\ast$observer)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_ac32d9d1ac4502d5ea6892cedfdb2a75e}\label{classagora_1_1base_1_1_i_sync_client_ac32d9d1ac4502d5ea6892cedfdb2a75e}} 
+virtual int32\+\_\+t {\bfseries login} (const char $\ast$token, const char $\ast$channel\+Name, user\+\_\+id\+\_\+t user\+Id, sync\+Client\+Callback callback, void $\ast$user\+Data, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_ad0c0d00b8f69e5cfcd3f9b0bd67ea874}\label{classagora_1_1base_1_1_i_sync_client_ad0c0d00b8f69e5cfcd3f9b0bd67ea874}} 
+virtual int32\+\_\+t {\bfseries query\+Doc} (const char $\ast$database, const char $\ast$coll, const char $\ast$range\+\_\+start, const char $\ast$range\+\_\+end, int64\+\_\+t limits, bool doc\+\_\+only, bool count\+\_\+only, query\+Doc\+Callback callback, void $\ast$user\+Data, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a3d626a768e7851f7b641ded262c2e489}\label{classagora_1_1base_1_1_i_sync_client_a3d626a768e7851f7b641ded262c2e489}} 
+virtual int32\+\_\+t {\bfseries logout} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a6df728cda57fa98b955818ee3f8b8613}\label{classagora_1_1base_1_1_i_sync_client_a6df728cda57fa98b955818ee3f8b8613}} 
+virtual int32\+\_\+t {\bfseries renew\+Token} (const char $\ast$token, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_aae246272b6559b0bbd10c7e4937a8991}\label{classagora_1_1base_1_1_i_sync_client_aae246272b6559b0bbd10c7e4937a8991}} 
+virtual int32\+\_\+t {\bfseries connect\+Database} (const char $\ast$database, data\+Base\+Op\+Callback callback, void $\ast$user\+Data, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_acb84624b65a0e4af41862b705d54be3d}\label{classagora_1_1base_1_1_i_sync_client_acb84624b65a0e4af41862b705d54be3d}} 
+virtual int32\+\_\+t {\bfseries disconnect\+Database} (const char $\ast$database, data\+Base\+Op\+Callback callback, void $\ast$user\+Data, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a65840ab9bb139d4f563687b5b93d8195}\label{classagora_1_1base_1_1_i_sync_client_a65840ab9bb139d4f563687b5b93d8195}} 
+virtual int32\+\_\+t {\bfseries create\+Collection} (const char $\ast$database, const char $\ast$collection, const char $\ast$$\ast$readable, int read\+Size, collection\+Op\+Callback callback, void $\ast$user\+Data, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_ad5b58d827eae0a5972fdcb8333abd381}\label{classagora_1_1base_1_1_i_sync_client_ad5b58d827eae0a5972fdcb8333abd381}} 
+virtual int32\+\_\+t {\bfseries delete\+Collection} (const char $\ast$database, const char $\ast$collection, collection\+Op\+Callback callback, void $\ast$user\+Data, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a9e23185582d3e452d2bd4407957de15e}\label{classagora_1_1base_1_1_i_sync_client_a9e23185582d3e452d2bd4407957de15e}} 
+virtual int32\+\_\+t {\bfseries subscribe} (const char $\ast$database, const char $\ast$collection, \mbox{\hyperlink{classagora_1_1util_1_1_copyable_auto_ptr}{util\+::\+A\+String}} \&snapshot\+Json)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a0f004cff219bcbaccbceec34dd06d85a}\label{classagora_1_1base_1_1_i_sync_client_a0f004cff219bcbaccbceec34dd06d85a}} 
+virtual int32\+\_\+t {\bfseries unsubscribe} (const char $\ast$database, const char $\ast$collection, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a9383fc021f2218e22dbf8a294b00f5e1}\label{classagora_1_1base_1_1_i_sync_client_a9383fc021f2218e22dbf8a294b00f5e1}} 
+virtual int32\+\_\+t {\bfseries put\+Doc} (const char $\ast$database, const char $\ast$collection, const char $\ast$doc\+Name, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a6ca00559a185f71ef73cef228b6ad6d5}\label{classagora_1_1base_1_1_i_sync_client_a6ca00559a185f71ef73cef228b6ad6d5}} 
+virtual int32\+\_\+t {\bfseries delete\+Doc} (const char $\ast$database, const char $\ast$collection, const char $\ast$doc\+Name, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_addb89ffac69f62e31bf4850e268c8bd4}\label{classagora_1_1base_1_1_i_sync_client_addb89ffac69f62e31bf4850e268c8bd4}} 
+virtual int32\+\_\+t {\bfseries get\+Docs} (const char $\ast$database, const char $\ast$collection, \mbox{\hyperlink{classagora_1_1util_1_1_copyable_auto_ptr}{util\+::\+A\+String}} $\ast$doc\+Names, uint32\+\_\+t doc\+Size)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a66b45a5bcfd0b28ff6f4538e25f4218b}\label{classagora_1_1base_1_1_i_sync_client_a66b45a5bcfd0b28ff6f4538e25f4218b}} 
+virtual int32\+\_\+t {\bfseries put\+Doc\+Value} (const char $\ast$database, const char $\ast$collection, const char $\ast$doc\+Name, const char $\ast$json\+Value, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a683b03fc68c7f0a54c30f419eddd8c52}\label{classagora_1_1base_1_1_i_sync_client_a683b03fc68c7f0a54c30f419eddd8c52}} 
+virtual int32\+\_\+t {\bfseries update\+Doc\+Value} (const char $\ast$database, const char $\ast$collection, const char $\ast$doc\+Name, const char $\ast$path, const char $\ast$json\+Value, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a88dbbc19b1eb691f10b18907cbbf4798}\label{classagora_1_1base_1_1_i_sync_client_a88dbbc19b1eb691f10b18907cbbf4798}} 
+virtual int32\+\_\+t {\bfseries delete\+Doc\+Value} (const char $\ast$database, const char $\ast$collection, const char $\ast$doc\+Name, const char $\ast$path, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_ac86293721f7732ffee8e9afa46f98a5f}\label{classagora_1_1base_1_1_i_sync_client_ac86293721f7732ffee8e9afa46f98a5f}} 
+virtual int32\+\_\+t {\bfseries delete\+Doc\+Values} (const char $\ast$database, const char $\ast$collection, const char $\ast$doc\+Name, const char $\ast$$\ast$path, uint32\+\_\+t path\+Size, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_adeb164c174a63feeaf7aa3b659f1c028}\label{classagora_1_1base_1_1_i_sync_client_adeb164c174a63feeaf7aa3b659f1c028}} 
+virtual int32\+\_\+t {\bfseries get\+Doc\+Value} (const char $\ast$database, const char $\ast$collection, const char $\ast$doc\+Name, \mbox{\hyperlink{classagora_1_1util_1_1_copyable_auto_ptr}{util\+::\+A\+String}} \&json\+Value)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a9e06b65b4e1684d681db23d99e3042a9}\label{classagora_1_1base_1_1_i_sync_client_a9e06b65b4e1684d681db23d99e3042a9}} 
+virtual int32\+\_\+t {\bfseries has\+Path} (const char $\ast$database, const char $\ast$collection, const char $\ast$doc\+Name, const char $\ast$path, bool \&result)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_a49a28ecd62209aed5c4f32e402e42135}\label{classagora_1_1base_1_1_i_sync_client_a49a28ecd62209aed5c4f32e402e42135}} 
+virtual int32\+\_\+t {\bfseries keep\+Alive\+Doc} (const char $\ast$database, const char $\ast$collection, const char $\ast$doc\+Name, uint32\+\_\+t ttl, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1base_1_1_i_sync_client_ac1ae7a2ab74f36146dd4a3f207e606d6}\label{classagora_1_1base_1_1_i_sync_client_ac1ae7a2ab74f36146dd4a3f207e606d6}} 
+virtual int32\+\_\+t {\bfseries shakehand} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}

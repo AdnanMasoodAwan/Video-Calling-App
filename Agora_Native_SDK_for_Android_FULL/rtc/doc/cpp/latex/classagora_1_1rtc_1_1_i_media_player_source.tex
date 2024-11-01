@@ -1,0 +1,751 @@
+\hypertarget{classagora_1_1rtc_1_1_i_media_player_source}{}\doxysection{agora\+::rtc\+::I\+Media\+Player\+Source Class Reference}
+\label{classagora_1_1rtc_1_1_i_media_player_source}\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Media\+Player\+Source.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Media\+Player\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_media_player_source}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a1b96f6018fdc48c7f090e90b2fea3375}{get\+Source\+Id}} () const =0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_ab63f69c63c54beecdcb68cff585cb416}{open}} (const char $\ast$url, int64\+\_\+t start\+Pos)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a0c3144b382b87b1e4bbef0938e37579c}{open\+With\+Media\+Source}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_media_source}{media\+::base\+::\+Media\+Source}} \&source)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_afad229dd37e09325b06dac56de3d4b73}{play}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_ab3522b8414ee85dd4d3bc1285b903bb2}{pause}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a351b858987899593bb76e0696acc89b0}{stop}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_ada253d67b1bb22b390802dfb903d2bdf}{resume}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_acf4337d22c5b823c7efcf0ac48e43790}{seek}} (int64\+\_\+t new\+Pos)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a51b113e924466f89a9591bc13ccc20b5}{get\+Duration}} (int64\+\_\+t \&duration)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_ad9af47612c935be9f8a49d6f2359f630}{get\+Play\+Position}} (int64\+\_\+t \&pos)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_aff418ec192e126b42bfacc20dac0a5d0}{get\+Stream\+Count}} (int64\+\_\+t \&count)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a9080bb11b35747f1d56f27e8f04b873a}{get\+Stream\+Info}} (int64\+\_\+t index, \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_player_stream_info}{media\+::base\+::\+Player\+Stream\+Info}} $\ast$info)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_aa991ab033590a7972bc3f2a48fb121ee}{set\+Loop\+Count}} (int64\+\_\+t loop\+Count)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a7a203e7088d9673ea23b95e7b6ab9444}{set\+Playback\+Speed}} (int speed)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_ad4a70ecaf356ba997945557c3ba93aab}{select\+Audio\+Track}} (int64\+\_\+t index)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a23dba9aebab075d636ad84f587667683}{select\+Multi\+Audio\+Track}} (int playout\+Track\+Index, int publish\+Track\+Index)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a69b3af6015fcaee57da654ecb52f2ace}{set\+Player\+Option}} (const char $\ast$key, int64\+\_\+t value)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_ae90b912b1177582495724b4ed6af5410}{set\+Player\+Option}} (const char $\ast$key, const char $\ast$value)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a34cab6d66010a3e2c22ec845487218cc}{take\+Screenshot}} (const char $\ast$filename)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a0123e5e5ba0ebdf712458fc63051501d}{select\+Internal\+Subtitle}} (int64\+\_\+t index)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_aa18defef810e1d5ae246181e58e91840}{set\+External\+Subtitle}} (const char $\ast$url)=0
+\item 
+virtual media\+::base\+::\+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+TE \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a06a866086862bcf92422068176ca9865}{get\+State}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a05825175c2aefe0ca97f8ab9687d44a6}{register\+Player\+Source\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer}{I\+Media\+Player\+Source\+Observer}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a2a5a21090d22bd840a653d29af9358ce}{unregister\+Player\+Source\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer}{I\+Media\+Player\+Source\+Observer}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_aca8c5ea1fd203edb46e5fbeb6c0ed21e}{register\+Audio\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_pcm_frame_sink}{media\+::\+I\+Audio\+Pcm\+Frame\+Sink}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_af6ce7c3c9739f4fb55180534974c79ef}{unregister\+Audio\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_pcm_frame_sink}{media\+::\+I\+Audio\+Pcm\+Frame\+Sink}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a1cfe6d56054b199d7884a07d7d851594}{open\+With\+Agora\+C\+D\+N\+Src}} (const char $\ast$src, int64\+\_\+t start\+Pos)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_aa961d92fb2b67b218635b0bd1e992afe}{get\+Agora\+C\+D\+N\+Line\+Count}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a93753d4abf2f860f5f18710202c8807f}{switch\+Agora\+C\+D\+N\+Line\+By\+Index}} (int index)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_affdf3b40696c4092d9b71f56b5aa78cb}{get\+Current\+Agora\+C\+D\+N\+Index}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_ac07803c8336cd8aea67d42503bd7fbee}{enable\+Auto\+Switch\+Agora\+C\+DN}} (bool enable)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a7f8118e0746440534f290ebbbca47b9a}{renew\+Agora\+C\+D\+N\+Src\+Token}} (const char $\ast$token, int64\+\_\+t ts)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_af4727bc8345b5e7c152628bd28f89c5e}{switch\+Agora\+C\+D\+N\+Src}} (const char $\ast$src, bool sync\+Pts=false)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a89c716aafa8344477e1b1abf0eeb448c}{switch\+Src}} (const char $\ast$src, bool sync\+Pts)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a4081d9cf64904fed9bea8c6494793629}{preload\+Src}} (const char $\ast$src, int64\+\_\+t start\+Pos)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a8cbd859dc5ec1594f8fa979708769877}{unload\+Src}} (const char $\ast$src)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a82dc1629a726229a8d7004ed8e3a3656}{play\+Preloaded\+Src}} (const char $\ast$src)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source}{I\+Media\+Player\+Source}} class provides access to a media player source. To playout multiple media sources simultaneously, create multiple media player source objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a1b96f6018fdc48c7f090e90b2fea3375}\label{classagora_1_1rtc_1_1_i_media_player_source_a1b96f6018fdc48c7f090e90b2fea3375}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!getSourceId@{getSourceId}}
+\index{getSourceId@{getSourceId}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{getSourceId()}{getSourceId()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::get\+Source\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the unique source ID of the media player source. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item $>$=0\+: The source ID of this media player source.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_ab63f69c63c54beecdcb68cff585cb416}\label{classagora_1_1rtc_1_1_i_media_player_source_ab63f69c63c54beecdcb68cff585cb416}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!open@{open}}
+\index{open@{open}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::open (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url,  }\item[{int64\+\_\+t}]{start\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Opens a media file with a specified U\+RL. 
+\begin{DoxyParams}{Parameters}
+{\em url} & The path of the media file. Both the local path and online path are supported. \\
+\hline
+{\em start\+Pos} & The starting position (ms) for playback. Default value is 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a0c3144b382b87b1e4bbef0938e37579c}\label{classagora_1_1rtc_1_1_i_media_player_source_a0c3144b382b87b1e4bbef0938e37579c}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!openWithMediaSource@{openWithMediaSource}}
+\index{openWithMediaSource@{openWithMediaSource}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{openWithMediaSource()}{openWithMediaSource()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::open\+With\+Media\+Source (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_media_source}{media\+::base\+::\+Media\+Source}} \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Opens a media file with a media file source. 
+\begin{DoxyParams}{Parameters}
+{\em source} & Media file source that you want to play, see {\ttfamily Media\+Source} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_afad229dd37e09325b06dac56de3d4b73}\label{classagora_1_1rtc_1_1_i_media_player_source_afad229dd37e09325b06dac56de3d4b73}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!play@{play}}
+\index{play@{play}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Plays the media file. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_ab3522b8414ee85dd4d3bc1285b903bb2}\label{classagora_1_1rtc_1_1_i_media_player_source_ab3522b8414ee85dd4d3bc1285b903bb2}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!pause@{pause}}
+\index{pause@{pause}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pauses the playback. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a351b858987899593bb76e0696acc89b0}\label{classagora_1_1rtc_1_1_i_media_player_source_a351b858987899593bb76e0696acc89b0}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!stop@{stop}}
+\index{stop@{stop}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops the playback. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_ada253d67b1bb22b390802dfb903d2bdf}\label{classagora_1_1rtc_1_1_i_media_player_source_ada253d67b1bb22b390802dfb903d2bdf}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!resume@{resume}}
+\index{resume@{resume}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Resumes the playback. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_acf4337d22c5b823c7efcf0ac48e43790}\label{classagora_1_1rtc_1_1_i_media_player_source_acf4337d22c5b823c7efcf0ac48e43790}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!seek@{seek}}
+\index{seek@{seek}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{seek()}{seek()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::seek (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{new\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the playback position of the media file. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Pos} & The new playback position (ms). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a51b113e924466f89a9591bc13ccc20b5}\label{classagora_1_1rtc_1_1_i_media_player_source_a51b113e924466f89a9591bc13ccc20b5}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!getDuration@{getDuration}}
+\index{getDuration@{getDuration}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{getDuration()}{getDuration()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::get\+Duration (\begin{DoxyParamCaption}\item[{int64\+\_\+t \&}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the duration of the media file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em duration} & A reference to the duration of the media file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_ad9af47612c935be9f8a49d6f2359f630}\label{classagora_1_1rtc_1_1_i_media_player_source_ad9af47612c935be9f8a49d6f2359f630}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!getPlayPosition@{getPlayPosition}}
+\index{getPlayPosition@{getPlayPosition}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{getPlayPosition()}{getPlayPosition()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::get\+Play\+Position (\begin{DoxyParamCaption}\item[{int64\+\_\+t \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the current playback position of the media file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em pos} & A reference to the current playback position (ms). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_aff418ec192e126b42bfacc20dac0a5d0}\label{classagora_1_1rtc_1_1_i_media_player_source_aff418ec192e126b42bfacc20dac0a5d0}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!getStreamCount@{getStreamCount}}
+\index{getStreamCount@{getStreamCount}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{getStreamCount()}{getStreamCount()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::get\+Stream\+Count (\begin{DoxyParamCaption}\item[{int64\+\_\+t \&}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the number of the media streams in the media source. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em count} & The number of the media streams in the media source. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a9080bb11b35747f1d56f27e8f04b873a}\label{classagora_1_1rtc_1_1_i_media_player_source_a9080bb11b35747f1d56f27e8f04b873a}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!getStreamInfo@{getStreamInfo}}
+\index{getStreamInfo@{getStreamInfo}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{getStreamInfo()}{getStreamInfo()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::get\+Stream\+Info (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{index,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_player_stream_info}{media\+::base\+::\+Player\+Stream\+Info}} $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the detailed information of a media stream. 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em index} & The index of the media stream. \\
+\hline
+\mbox{\texttt{ out}}  & {\em info} & The detailed information of the media stream. See \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_player_stream_info}{Player\+Stream\+Info}} for details. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_aa991ab033590a7972bc3f2a48fb121ee}\label{classagora_1_1rtc_1_1_i_media_player_source_aa991ab033590a7972bc3f2a48fb121ee}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!setLoopCount@{setLoopCount}}
+\index{setLoopCount@{setLoopCount}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{setLoopCount()}{setLoopCount()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::set\+Loop\+Count (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{loop\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets whether to loop the media file for playback. 
+\begin{DoxyParams}{Parameters}
+{\em loop\+Count} & The number of times of looping the media file.
+\begin{DoxyItemize}
+\item 0\+: Play the media file once.
+\item 1\+: Play the media file twice.
+\item -\/1\+: Play the media file in a loop indefinitely, until \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a351b858987899593bb76e0696acc89b0}{stop}} is called. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a7a203e7088d9673ea23b95e7b6ab9444}\label{classagora_1_1rtc_1_1_i_media_player_source_a7a203e7088d9673ea23b95e7b6ab9444}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!setPlaybackSpeed@{setPlaybackSpeed}}
+\index{setPlaybackSpeed@{setPlaybackSpeed}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{setPlaybackSpeed()}{setPlaybackSpeed()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::set\+Playback\+Speed (\begin{DoxyParamCaption}\item[{int}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Changes the playback speed. 
+\begin{DoxyParams}{Parameters}
+{\em speed} & The playback speed ref \mbox{[}50-\/400\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_ad4a70ecaf356ba997945557c3ba93aab}\label{classagora_1_1rtc_1_1_i_media_player_source_ad4a70ecaf356ba997945557c3ba93aab}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!selectAudioTrack@{selectAudioTrack}}
+\index{selectAudioTrack@{selectAudioTrack}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{selectAudioTrack()}{selectAudioTrack()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::select\+Audio\+Track (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Selects an audio track of the media file for playback. 
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the audio track in media file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a23dba9aebab075d636ad84f587667683}\label{classagora_1_1rtc_1_1_i_media_player_source_a23dba9aebab075d636ad84f587667683}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!selectMultiAudioTrack@{selectMultiAudioTrack}}
+\index{selectMultiAudioTrack@{selectMultiAudioTrack}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{selectMultiAudioTrack()}{selectMultiAudioTrack()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::select\+Multi\+Audio\+Track (\begin{DoxyParamCaption}\item[{int}]{playout\+Track\+Index,  }\item[{int}]{publish\+Track\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Selects multi audio track of the media file for playback or publish to channel. 
+\begin{DoxyParams}{Parameters}
+{\em playout\+Track\+Index} & The index of the audio track in media file for local playback. \\
+\hline
+{\em publish\+Track\+Index} & The index of the audio track in the media file published to the remote.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You can obtain the stream\+Index of the audio track by calling get\+Stream\+Info.. If you want to use select\+Multi\+Audio\+Track, you need to open the media file with open\+With\+Media\+Source and set enable\+Multi\+Audio\+Track to true.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}.
+\item -\/2\+: Invalid argument. Argument must be greater than or equal to zero.
+\item -\/8\+: Invalid State.\+You must open the media file with open\+With\+Media\+Source and set enable\+Multi\+Audio\+Track to true 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a69b3af6015fcaee57da654ecb52f2ace}\label{classagora_1_1rtc_1_1_i_media_player_source_a69b3af6015fcaee57da654ecb52f2ace}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!setPlayerOption@{setPlayerOption}}
+\index{setPlayerOption@{setPlayerOption}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{setPlayerOption()}{setPlayerOption()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::set\+Player\+Option (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{int64\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Changes the player option before playing a file. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of the option paramemter. \\
+\hline
+{\em value} & The value of option parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_ae90b912b1177582495724b4ed6af5410}\label{classagora_1_1rtc_1_1_i_media_player_source_ae90b912b1177582495724b4ed6af5410}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!setPlayerOption@{setPlayerOption}}
+\index{setPlayerOption@{setPlayerOption}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{setPlayerOption()}{setPlayerOption()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::set\+Player\+Option (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Changes the player option before playing a file. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of the option paramemter. \\
+\hline
+{\em value} & The value of option parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a34cab6d66010a3e2c22ec845487218cc}\label{classagora_1_1rtc_1_1_i_media_player_source_a34cab6d66010a3e2c22ec845487218cc}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!takeScreenshot@{takeScreenshot}}
+\index{takeScreenshot@{takeScreenshot}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{takeScreenshot()}{takeScreenshot()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::take\+Screenshot (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Takes a screenshot when playing a video file. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the screenshot file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a0123e5e5ba0ebdf712458fc63051501d}\label{classagora_1_1rtc_1_1_i_media_player_source_a0123e5e5ba0ebdf712458fc63051501d}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!selectInternalSubtitle@{selectInternalSubtitle}}
+\index{selectInternalSubtitle@{selectInternalSubtitle}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{selectInternalSubtitle()}{selectInternalSubtitle()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::select\+Internal\+Subtitle (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Selects internal subtitles for a video file. 
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the internal subtitles. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_aa18defef810e1d5ae246181e58e91840}\label{classagora_1_1rtc_1_1_i_media_player_source_aa18defef810e1d5ae246181e58e91840}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!setExternalSubtitle@{setExternalSubtitle}}
+\index{setExternalSubtitle@{setExternalSubtitle}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{setExternalSubtitle()}{setExternalSubtitle()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::set\+External\+Subtitle (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets an external subtitle file for a video file. 
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL of the subtitle file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a06a866086862bcf92422068176ca9865}\label{classagora_1_1rtc_1_1_i_media_player_source_a06a866086862bcf92422068176ca9865}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!getState@{getState}}
+\index{getState@{getState}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily virtual media\+::base\+::\+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+TE agora\+::rtc\+::\+I\+Media\+Player\+Source\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the playback state. \begin{DoxyReturn}{Returns}
+The current playback state. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+TE}} for details. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a05825175c2aefe0ca97f8ab9687d44a6}\label{classagora_1_1rtc_1_1_i_media_player_source_a05825175c2aefe0ca97f8ab9687d44a6}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!registerPlayerSourceObserver@{registerPlayerSourceObserver}}
+\index{registerPlayerSourceObserver@{registerPlayerSourceObserver}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{registerPlayerSourceObserver()}{registerPlayerSourceObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::register\+Player\+Source\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer}{I\+Media\+Player\+Source\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers a media player source observer.
+
+Once the media player source observer is registered, you can use the observer to monitor the state change of the media player. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer}{I\+Media\+Player\+Source\+Observer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a2a5a21090d22bd840a653d29af9358ce}\label{classagora_1_1rtc_1_1_i_media_player_source_a2a5a21090d22bd840a653d29af9358ce}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!unregisterPlayerSourceObserver@{unregisterPlayerSourceObserver}}
+\index{unregisterPlayerSourceObserver@{unregisterPlayerSourceObserver}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{unregisterPlayerSourceObserver()}{unregisterPlayerSourceObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::unregister\+Player\+Source\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer}{I\+Media\+Player\+Source\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the media player source observer. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_observer}{I\+Media\+Player\+Source\+Observer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_aca8c5ea1fd203edb46e5fbeb6c0ed21e}\label{classagora_1_1rtc_1_1_i_media_player_source_aca8c5ea1fd203edb46e5fbeb6c0ed21e}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!registerAudioFrameObserver@{registerAudioFrameObserver}}
+\index{registerAudioFrameObserver@{registerAudioFrameObserver}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{registerAudioFrameObserver()}{registerAudioFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::register\+Audio\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_pcm_frame_sink}{media\+::\+I\+Audio\+Pcm\+Frame\+Sink}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers the audio frame observer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_pcm_frame_sink}{observer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_af6ce7c3c9739f4fb55180534974c79ef}\label{classagora_1_1rtc_1_1_i_media_player_source_af6ce7c3c9739f4fb55180534974c79ef}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!unregisterAudioFrameObserver@{unregisterAudioFrameObserver}}
+\index{unregisterAudioFrameObserver@{unregisterAudioFrameObserver}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{unregisterAudioFrameObserver()}{unregisterAudioFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::unregister\+Audio\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_pcm_frame_sink}{media\+::\+I\+Audio\+Pcm\+Frame\+Sink}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the audio frame observer. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_pcm_frame_sink}{observer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a1cfe6d56054b199d7884a07d7d851594}\label{classagora_1_1rtc_1_1_i_media_player_source_a1cfe6d56054b199d7884a07d7d851594}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!openWithAgoraCDNSrc@{openWithAgoraCDNSrc}}
+\index{openWithAgoraCDNSrc@{openWithAgoraCDNSrc}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{openWithAgoraCDNSrc()}{openWithAgoraCDNSrc()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::open\+With\+Agora\+C\+D\+N\+Src (\begin{DoxyParamCaption}\item[{const char $\ast$}]{src,  }\item[{int64\+\_\+t}]{start\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Open the Agora C\+DN media source. 
+\begin{DoxyParams}{Parameters}
+{\em src} & The src of the media file that you want to play. \\
+\hline
+{\em start\+Pos} & The playback position (ms). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_aa961d92fb2b67b218635b0bd1e992afe}\label{classagora_1_1rtc_1_1_i_media_player_source_aa961d92fb2b67b218635b0bd1e992afe}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!getAgoraCDNLineCount@{getAgoraCDNLineCount}}
+\index{getAgoraCDNLineCount@{getAgoraCDNLineCount}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{getAgoraCDNLineCount()}{getAgoraCDNLineCount()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::get\+Agora\+C\+D\+N\+Line\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the number of Agora C\+DN lines. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item $>$ 0\+: number of C\+DN.
+\item $<$= 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a93753d4abf2f860f5f18710202c8807f}\label{classagora_1_1rtc_1_1_i_media_player_source_a93753d4abf2f860f5f18710202c8807f}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!switchAgoraCDNLineByIndex@{switchAgoraCDNLineByIndex}}
+\index{switchAgoraCDNLineByIndex@{switchAgoraCDNLineByIndex}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{switchAgoraCDNLineByIndex()}{switchAgoraCDNLineByIndex()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::switch\+Agora\+C\+D\+N\+Line\+By\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Switch Agora C\+DN lines. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Specific C\+DN line index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_affdf3b40696c4092d9b71f56b5aa78cb}\label{classagora_1_1rtc_1_1_i_media_player_source_affdf3b40696c4092d9b71f56b5aa78cb}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!getCurrentAgoraCDNIndex@{getCurrentAgoraCDNIndex}}
+\index{getCurrentAgoraCDNIndex@{getCurrentAgoraCDNIndex}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{getCurrentAgoraCDNIndex()}{getCurrentAgoraCDNIndex()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::get\+Current\+Agora\+C\+D\+N\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the line of the current C\+DN. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item $>$= 0\+: Specific line.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_ac07803c8336cd8aea67d42503bd7fbee}\label{classagora_1_1rtc_1_1_i_media_player_source_ac07803c8336cd8aea67d42503bd7fbee}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!enableAutoSwitchAgoraCDN@{enableAutoSwitchAgoraCDN}}
+\index{enableAutoSwitchAgoraCDN@{enableAutoSwitchAgoraCDN}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{enableAutoSwitchAgoraCDN()}{enableAutoSwitchAgoraCDN()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::enable\+Auto\+Switch\+Agora\+C\+DN (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enable automatic C\+DN line switching. 
+\begin{DoxyParams}{Parameters}
+{\em enable} & Whether enable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a7f8118e0746440534f290ebbbca47b9a}\label{classagora_1_1rtc_1_1_i_media_player_source_a7f8118e0746440534f290ebbbca47b9a}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!renewAgoraCDNSrcToken@{renewAgoraCDNSrcToken}}
+\index{renewAgoraCDNSrcToken@{renewAgoraCDNSrcToken}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{renewAgoraCDNSrcToken()}{renewAgoraCDNSrcToken()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::renew\+Agora\+C\+D\+N\+Src\+Token (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token,  }\item[{int64\+\_\+t}]{ts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Update the C\+DN source token and timestamp. 
+\begin{DoxyParams}{Parameters}
+{\em token} & token. \\
+\hline
+{\em ts} & ts. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_af4727bc8345b5e7c152628bd28f89c5e}\label{classagora_1_1rtc_1_1_i_media_player_source_af4727bc8345b5e7c152628bd28f89c5e}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!switchAgoraCDNSrc@{switchAgoraCDNSrc}}
+\index{switchAgoraCDNSrc@{switchAgoraCDNSrc}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{switchAgoraCDNSrc()}{switchAgoraCDNSrc()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::switch\+Agora\+C\+D\+N\+Src (\begin{DoxyParamCaption}\item[{const char $\ast$}]{src,  }\item[{bool}]{sync\+Pts = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Switch the C\+DN source when open a media through \char`\"{}open\+With\+Agora\+C\+D\+N\+Src\char`\"{} A\+PI 
+\begin{DoxyParams}{Parameters}
+{\em src} & Specific src. \\
+\hline
+{\em sync\+Pts} & Live streaming must be set to false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a89c716aafa8344477e1b1abf0eeb448c}\label{classagora_1_1rtc_1_1_i_media_player_source_a89c716aafa8344477e1b1abf0eeb448c}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!switchSrc@{switchSrc}}
+\index{switchSrc@{switchSrc}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{switchSrc()}{switchSrc()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::switch\+Src (\begin{DoxyParamCaption}\item[{const char $\ast$}]{src,  }\item[{bool}]{sync\+Pts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Switch the media source when open a media through \char`\"{}open\char`\"{} A\+PI 
+\begin{DoxyParams}{Parameters}
+{\em src} & Specific src. \\
+\hline
+{\em sync\+Pts} & Live streaming must be set to false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a4081d9cf64904fed9bea8c6494793629}\label{classagora_1_1rtc_1_1_i_media_player_source_a4081d9cf64904fed9bea8c6494793629}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!preloadSrc@{preloadSrc}}
+\index{preloadSrc@{preloadSrc}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{preloadSrc()}{preloadSrc()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::preload\+Src (\begin{DoxyParamCaption}\item[{const char $\ast$}]{src,  }\item[{int64\+\_\+t}]{start\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Preload a media source 
+\begin{DoxyParams}{Parameters}
+{\em src} & Specific src. \\
+\hline
+{\em start\+Pos} & The starting position (ms) for playback. Default value is 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a8cbd859dc5ec1594f8fa979708769877}\label{classagora_1_1rtc_1_1_i_media_player_source_a8cbd859dc5ec1594f8fa979708769877}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!unloadSrc@{unloadSrc}}
+\index{unloadSrc@{unloadSrc}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{unloadSrc()}{unloadSrc()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::unload\+Src (\begin{DoxyParamCaption}\item[{const char $\ast$}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Unload a preloaded media source 
+\begin{DoxyParams}{Parameters}
+{\em src} & Specific src. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_player_source_a82dc1629a726229a8d7004ed8e3a3656}\label{classagora_1_1rtc_1_1_i_media_player_source_a82dc1629a726229a8d7004ed8e3a3656}} 
+\index{agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}!playPreloadedSrc@{playPreloadedSrc}}
+\index{playPreloadedSrc@{playPreloadedSrc}!agora::rtc::IMediaPlayerSource@{agora::rtc::IMediaPlayerSource}}
+\doxysubsubsection{\texorpdfstring{playPreloadedSrc()}{playPreloadedSrc()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Player\+Source\+::play\+Preloaded\+Src (\begin{DoxyParamCaption}\item[{const char $\ast$}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Play a pre-\/loaded media source 
+\begin{DoxyParams}{Parameters}
+{\em src} & Specific src. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

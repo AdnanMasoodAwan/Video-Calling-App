@@ -1,0 +1,63 @@
+\hypertarget{structagora_1_1_data_channel_config}{}\doxysection{agora\+::Data\+Channel\+Config Struct Reference}
+\label{structagora_1_1_data_channel_config}\index{agora::DataChannelConfig@{agora::DataChannelConfig}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Data\+Channel.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structagora_1_1_data_channel_config_a47301df44fb584f05e550ab5093435cb}{sync\+With\+Media}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1_data_channel_config_aea0c6333fa84a6fe4776cd0e818c8058}{ordered}}
+\item 
+int \mbox{\hyperlink{structagora_1_1_data_channel_config_ab77df4a26ea575a3e7ba6a4d49171720}{compression\+Length}}
+\item 
+\mbox{\Hypertarget{structagora_1_1_data_channel_config_afb7cf90d5e34c0eebc3a8cb88f460aad}\label{structagora_1_1_data_channel_config_afb7cf90d5e34c0eebc3a8cb88f460aad}} 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ int $>$ {\bfseries channel\+Id}
+\item 
+int32\+\_\+t \mbox{\hyperlink{structagora_1_1_data_channel_config_ac644efbcd01e683a644228988825b303}{priority}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of the \mbox{\hyperlink{structagora_1_1_data_channel_config}{Data\+Channel\+Config}} struct. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1_data_channel_config_a47301df44fb584f05e550ab5093435cb}\label{structagora_1_1_data_channel_config_a47301df44fb584f05e550ab5093435cb}} 
+\index{agora::DataChannelConfig@{agora::DataChannelConfig}!syncWithMedia@{syncWithMedia}}
+\index{syncWithMedia@{syncWithMedia}!agora::DataChannelConfig@{agora::DataChannelConfig}}
+\doxysubsubsection{\texorpdfstring{syncWithMedia}{syncWithMedia}}
+{\footnotesize\ttfamily bool agora\+::\+Data\+Channel\+Config\+::sync\+With\+Media}
+
+Whether this channel should sync with media stream\+:
+\begin{DoxyItemize}
+\item true\+: sync .
+\item false\+: not sync. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1_data_channel_config_aea0c6333fa84a6fe4776cd0e818c8058}\label{structagora_1_1_data_channel_config_aea0c6333fa84a6fe4776cd0e818c8058}} 
+\index{agora::DataChannelConfig@{agora::DataChannelConfig}!ordered@{ordered}}
+\index{ordered@{ordered}!agora::DataChannelConfig@{agora::DataChannelConfig}}
+\doxysubsubsection{\texorpdfstring{ordered}{ordered}}
+{\footnotesize\ttfamily bool agora\+::\+Data\+Channel\+Config\+::ordered}
+
+Whether this channel should ensure oredered message\+:
+\begin{DoxyItemize}
+\item true\+: orderd .
+\item false\+: not orderd. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1_data_channel_config_ab77df4a26ea575a3e7ba6a4d49171720}\label{structagora_1_1_data_channel_config_ab77df4a26ea575a3e7ba6a4d49171720}} 
+\index{agora::DataChannelConfig@{agora::DataChannelConfig}!compressionLength@{compressionLength}}
+\index{compressionLength@{compressionLength}!agora::DataChannelConfig@{agora::DataChannelConfig}}
+\doxysubsubsection{\texorpdfstring{compressionLength}{compressionLength}}
+{\footnotesize\ttfamily int agora\+::\+Data\+Channel\+Config\+::compression\+Length}
+
+Whether this channel should compress the data packet\+:
+\begin{DoxyItemize}
+\item $<$= 0\+: We dont compress the data packet
+\item $>$ 0\+: Once the packet length exceeds the compression\+Length, we compress it. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1_data_channel_config_ac644efbcd01e683a644228988825b303}\label{structagora_1_1_data_channel_config_ac644efbcd01e683a644228988825b303}} 
+\index{agora::DataChannelConfig@{agora::DataChannelConfig}!priority@{priority}}
+\index{priority@{priority}!agora::DataChannelConfig@{agora::DataChannelConfig}}
+\doxysubsubsection{\texorpdfstring{priority}{priority}}
+{\footnotesize\ttfamily int32\+\_\+t agora\+::\+Data\+Channel\+Config\+::priority}
+
+The priority 

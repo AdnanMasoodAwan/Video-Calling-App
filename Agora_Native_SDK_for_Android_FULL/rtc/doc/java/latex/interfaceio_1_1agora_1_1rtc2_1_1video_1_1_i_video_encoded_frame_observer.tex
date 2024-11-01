@@ -1,0 +1,26 @@
+\hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_encoded_frame_observer}{}\doxysection{io.\+agora.\+rtc2.\+video.\+I\+Video\+Encoded\+Frame\+Observer Interface Reference}
+\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_encoded_frame_observer}\index{io.agora.rtc2.video.IVideoEncodedFrameObserver@{io.agora.rtc2.video.IVideoEncodedFrameObserver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_encoded_frame_observer_ae77f173e39faaa71bf8021fab4314557}{on\+Encoded\+Video\+Frame\+Received}} (Byte\+Buffer buffer, \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_encoded_video_frame_info}{Encoded\+Video\+Frame\+Info}} info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_encoded_frame_observer}{I\+Video\+Encoded\+Frame\+Observer}} interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_encoded_frame_observer_ae77f173e39faaa71bf8021fab4314557}\label{interfaceio_1_1agora_1_1rtc2_1_1video_1_1_i_video_encoded_frame_observer_ae77f173e39faaa71bf8021fab4314557}} 
+\index{io.agora.rtc2.video.IVideoEncodedFrameObserver@{io.agora.rtc2.video.IVideoEncodedFrameObserver}!onEncodedVideoFrameReceived@{onEncodedVideoFrameReceived}}
+\index{onEncodedVideoFrameReceived@{onEncodedVideoFrameReceived}!io.agora.rtc2.video.IVideoEncodedFrameObserver@{io.agora.rtc2.video.IVideoEncodedFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onEncodedVideoFrameReceived()}{onEncodedVideoFrameReceived()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+video.\+I\+Video\+Encoded\+Frame\+Observer.\+on\+Encoded\+Video\+Frame\+Received (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_encoded_video_frame_info}{Encoded\+Video\+Frame\+Info}}}]{info }\end{DoxyParamCaption})}
+
+Occurs each time the S\+DK receives an encoded video image. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The encoded image. \\
+\hline
+{\em info} & The encoded video image information\+: \{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_encoded_video_frame_info}{Encoded\+Video\+Frame\+Info\}.  Whether or not to ignore the current video frame if the pre-\/processing fails\+:true\+: Do not ignore.false\+: Ignore the current video frame, and do not send it back to the S\+DK. }}\\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,105 @@
+\hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control}{}\doxysection{agora\+::rtc\+::I\+Extension\+Video\+Filter\+::Control Class Reference}
+\label{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control}\index{agora::rtc::IExtensionVideoFilter::Control@{agora::rtc::IExtensionVideoFilter::Control}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Extension\+Video\+Filter\+::Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Process\+Result \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_aa02bfb4e54edc2d30d27a5daba163cfd}{deliver\+Video\+Frame}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} $>$ frame)=0
+\begin{DoxyCompactList}\small\item\em Filter can invoke this function to deliver the processed frame to S\+DK if the Process Mode is designated as \char`\"{}k\+Async\char`\"{} by the filter via \char`\"{}get\+Process\+Mode\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_a3c4138bbe212ce7f23572989f8fd0fd2}\label{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_a3c4138bbe212ce7f23572989f8fd0fd2}} 
+virtual \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_memory_pool}{I\+Video\+Frame\+Memory\+Pool}} $>$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_a3c4138bbe212ce7f23572989f8fd0fd2}{get\+Memory\+Pool}} ()=0
+\begin{DoxyCompactList}\small\item\em Filter can invoke this function to get the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_memory_pool}{I\+Video\+Frame\+Memory\+Pool}} object if a new \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} data object is needed. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_aa048ec18e92f73e4383849460a312fab}{post\+Event}} (const char $\ast$key, const char $\ast$value)=0
+\begin{DoxyCompactList}\small\item\em Post an event and notify the end users. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_a5b5d1c04b73cc639f097e46d7803ee06}{print\+Log}} (commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL level, const char $\ast$format,...)=0
+\begin{DoxyCompactList}\small\item\em print log to the S\+DK. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_a2af57032427a577c22d80819435b3283}{disable\+Me}} (int error, const char $\ast$msg)=0
+\begin{DoxyCompactList}\small\item\em Ask S\+DK to disable the current filter if a fatal error is detected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control}{I\+Extension\+Video\+Filter\+::\+Control}} class.
+
+This class defines the interfaces that the extension filter can leverage to interact with the S\+DK. The \char`\"{}\+I\+Extension\+Video\+Filter\+::\+Control\char`\"{} object will be passed to the filter when S\+DK invoke the filter\textquotesingle{}s \char`\"{}start\char`\"{} interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_aa02bfb4e54edc2d30d27a5daba163cfd}\label{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_aa02bfb4e54edc2d30d27a5daba163cfd}} 
+\index{agora::rtc::IExtensionVideoFilter::Control@{agora::rtc::IExtensionVideoFilter::Control}!deliverVideoFrame@{deliverVideoFrame}}
+\index{deliverVideoFrame@{deliverVideoFrame}!agora::rtc::IExtensionVideoFilter::Control@{agora::rtc::IExtensionVideoFilter::Control}}
+\doxysubsubsection{\texorpdfstring{deliverVideoFrame()}{deliverVideoFrame()}}
+{\footnotesize\ttfamily virtual Process\+Result agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::\+Control\+::deliver\+Video\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} $>$}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Filter can invoke this function to deliver the processed frame to S\+DK if the Process Mode is designated as \char`\"{}k\+Async\char`\"{} by the filter via \char`\"{}get\+Process\+Mode\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & the processed video frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Process\+Result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_aa048ec18e92f73e4383849460a312fab}\label{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_aa048ec18e92f73e4383849460a312fab}} 
+\index{agora::rtc::IExtensionVideoFilter::Control@{agora::rtc::IExtensionVideoFilter::Control}!postEvent@{postEvent}}
+\index{postEvent@{postEvent}!agora::rtc::IExtensionVideoFilter::Control@{agora::rtc::IExtensionVideoFilter::Control}}
+\doxysubsubsection{\texorpdfstring{postEvent()}{postEvent()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::\+Control\+::post\+Event (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Post an event and notify the end users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \textquotesingle{}\textbackslash{}0\textquotesingle{} ended string that describes the key of the event \\
+\hline
+{\em value} & \textquotesingle{}\textbackslash{}0\textquotesingle{} ended string that describes the value of the event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_a5b5d1c04b73cc639f097e46d7803ee06}\label{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_a5b5d1c04b73cc639f097e46d7803ee06}} 
+\index{agora::rtc::IExtensionVideoFilter::Control@{agora::rtc::IExtensionVideoFilter::Control}!printLog@{printLog}}
+\index{printLog@{printLog}!agora::rtc::IExtensionVideoFilter::Control@{agora::rtc::IExtensionVideoFilter::Control}}
+\doxysubsubsection{\texorpdfstring{printLog()}{printLog()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::\+Control\+::print\+Log (\begin{DoxyParamCaption}\item[{commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL}]{level,  }\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+print log to the S\+DK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Log level agora\+::commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL \\
+\hline
+{\em format} & log formatter string \\
+\hline
+{\em ...} & variadic arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_a2af57032427a577c22d80819435b3283}\label{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control_a2af57032427a577c22d80819435b3283}} 
+\index{agora::rtc::IExtensionVideoFilter::Control@{agora::rtc::IExtensionVideoFilter::Control}!disableMe@{disableMe}}
+\index{disableMe@{disableMe}!agora::rtc::IExtensionVideoFilter::Control@{agora::rtc::IExtensionVideoFilter::Control}}
+\doxysubsubsection{\texorpdfstring{disableMe()}{disableMe()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::\+Control\+::disable\+Me (\begin{DoxyParamCaption}\item[{int}]{error,  }\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Ask S\+DK to disable the current filter if a fatal error is detected. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & error code \\
+\hline
+{\em msg} & error message \\
+\hline
+\end{DoxyParams}

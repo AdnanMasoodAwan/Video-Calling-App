@@ -1,0 +1,83 @@
+\hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_encoded_frame_observer}{}\doxysection{io.\+agora.\+rtc2.\+I\+Audio\+Encoded\+Frame\+Observer Interface Reference}
+\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_encoded_frame_observer}\index{io.agora.rtc2.IAudioEncodedFrameObserver@{io.agora.rtc2.IAudioEncodedFrameObserver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_encoded_frame_observer_ae50cf90d8cfb5751a5bff7f688ee79ba}{on\+Record\+Audio\+Encoded\+Frame}} (Byte\+Buffer buffer, int samples\+Per\+Channel, int channels, int samples\+Per\+Sec, int codec\+Type)
+\item 
+abstract void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_encoded_frame_observer_ad85754df761faa0482077c8fdf2bd391}{on\+Playback\+Audio\+Encoded\+Frame}} (Byte\+Buffer buffer, int samples\+Per\+Channel, int channels, int samples\+Per\+Sec, int codec\+Type)
+\item 
+abstract void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_encoded_frame_observer_acb05f2b074d9ab3cb1b17418ddb7d56d}{on\+Mixed\+Audio\+Encoded\+Frame}} (Byte\+Buffer buffer, int samples\+Per\+Channel, int channels, int samples\+Per\+Sec, int codec\+Type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_encoded_frame_observer_ae50cf90d8cfb5751a5bff7f688ee79ba}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_encoded_frame_observer_ae50cf90d8cfb5751a5bff7f688ee79ba}} 
+\index{io.agora.rtc2.IAudioEncodedFrameObserver@{io.agora.rtc2.IAudioEncodedFrameObserver}!onRecordAudioEncodedFrame@{onRecordAudioEncodedFrame}}
+\index{onRecordAudioEncodedFrame@{onRecordAudioEncodedFrame}!io.agora.rtc2.IAudioEncodedFrameObserver@{io.agora.rtc2.IAudioEncodedFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onRecordAudioEncodedFrame()}{onRecordAudioEncodedFrame()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtc2.\+I\+Audio\+Encoded\+Frame\+Observer.\+on\+Record\+Audio\+Encoded\+Frame (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{int}]{samples\+Per\+Channel,  }\item[{int}]{channels,  }\item[{int}]{samples\+Per\+Sec,  }\item[{int}]{codec\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Occurs when the recorded audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The audio frame payload. \\
+\hline
+{\em samples\+Per\+Channel} & The samples per channel. \\
+\hline
+{\em channels} & The number of audio channels. If the channel uses stereo, the data is interleaved.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em samples\+Per\+Sec} & The number of samples per channel per second in the audio frame. \\
+\hline
+{\em codec\+Type} & The codec type. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_encoded_frame_observer_ad85754df761faa0482077c8fdf2bd391}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_encoded_frame_observer_ad85754df761faa0482077c8fdf2bd391}} 
+\index{io.agora.rtc2.IAudioEncodedFrameObserver@{io.agora.rtc2.IAudioEncodedFrameObserver}!onPlaybackAudioEncodedFrame@{onPlaybackAudioEncodedFrame}}
+\index{onPlaybackAudioEncodedFrame@{onPlaybackAudioEncodedFrame}!io.agora.rtc2.IAudioEncodedFrameObserver@{io.agora.rtc2.IAudioEncodedFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onPlaybackAudioEncodedFrame()}{onPlaybackAudioEncodedFrame()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtc2.\+I\+Audio\+Encoded\+Frame\+Observer.\+on\+Playback\+Audio\+Encoded\+Frame (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{int}]{samples\+Per\+Channel,  }\item[{int}]{channels,  }\item[{int}]{samples\+Per\+Sec,  }\item[{int}]{codec\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Occurs when the playback audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The audio frame payload. \\
+\hline
+{\em samples\+Per\+Channel} & The samples per channel. \\
+\hline
+{\em channels} & The number of audio channels. If the channel uses stereo, the data is interleaved.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em samples\+Per\+Sec} & The number of samples per channel per second in the audio frame. \\
+\hline
+{\em codec\+Type} & The codec type. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_encoded_frame_observer_acb05f2b074d9ab3cb1b17418ddb7d56d}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_encoded_frame_observer_acb05f2b074d9ab3cb1b17418ddb7d56d}} 
+\index{io.agora.rtc2.IAudioEncodedFrameObserver@{io.agora.rtc2.IAudioEncodedFrameObserver}!onMixedAudioEncodedFrame@{onMixedAudioEncodedFrame}}
+\index{onMixedAudioEncodedFrame@{onMixedAudioEncodedFrame}!io.agora.rtc2.IAudioEncodedFrameObserver@{io.agora.rtc2.IAudioEncodedFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onMixedAudioEncodedFrame()}{onMixedAudioEncodedFrame()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtc2.\+I\+Audio\+Encoded\+Frame\+Observer.\+on\+Mixed\+Audio\+Encoded\+Frame (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{int}]{samples\+Per\+Channel,  }\item[{int}]{channels,  }\item[{int}]{samples\+Per\+Sec,  }\item[{int}]{codec\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Occurs when the mixed playback audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The audio frame payload. \\
+\hline
+{\em samples\+Per\+Channel} & The samples per channel. \\
+\hline
+{\em channels} & The number of audio channels. If the channel uses stereo, the data is interleaved.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em samples\+Per\+Sec} & The number of samples per channel per second in the audio frame. \\
+\hline
+{\em codec\+Type} & The codec type. \\
+\hline
+\end{DoxyParams}

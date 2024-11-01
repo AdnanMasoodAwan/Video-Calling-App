@@ -1,0 +1,44 @@
+\hypertarget{structagora_1_1rtc_1_1_data_stream_config}{}\doxysection{agora\+::rtc\+::Data\+Stream\+Config Struct Reference}
+\label{structagora_1_1rtc_1_1_data_stream_config}\index{agora::rtc::DataStreamConfig@{agora::rtc::DataStreamConfig}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_data_stream_config_a63c6017d54bc92bf01d11b6a8f0da04f}{sync\+With\+Audio}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_data_stream_config_ab7e187a05c8abea8da12a2383ce265f1}{ordered}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The configurations for the data stream. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_data_stream_config_a63c6017d54bc92bf01d11b6a8f0da04f}\label{structagora_1_1rtc_1_1_data_stream_config_a63c6017d54bc92bf01d11b6a8f0da04f}} 
+\index{agora::rtc::DataStreamConfig@{agora::rtc::DataStreamConfig}!syncWithAudio@{syncWithAudio}}
+\index{syncWithAudio@{syncWithAudio}!agora::rtc::DataStreamConfig@{agora::rtc::DataStreamConfig}}
+\doxysubsubsection{\texorpdfstring{syncWithAudio}{syncWithAudio}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Data\+Stream\+Config\+::sync\+With\+Audio}
+
+Whether to synchronize the data packet with the published audio packet.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Synchronize the data packet with the audio packet.
+\item {\ttfamily false}\+: Do not synchronize the data packet with the audio packet.
+\end{DoxyItemize}
+
+When you set the data packet to synchronize with the audio, then if the data packet delay is within the audio delay, the S\+DK triggers the {\ttfamily on\+Stream\+Message} callback when the synchronized audio packet is played out. Do not set this parameter as true if you need the receiver to receive the data packet immediately. Agora recommends that you set this parameter to {\ttfamily true} only when you need to implement specific functions, for example lyric synchronization. \mbox{\Hypertarget{structagora_1_1rtc_1_1_data_stream_config_ab7e187a05c8abea8da12a2383ce265f1}\label{structagora_1_1rtc_1_1_data_stream_config_ab7e187a05c8abea8da12a2383ce265f1}} 
+\index{agora::rtc::DataStreamConfig@{agora::rtc::DataStreamConfig}!ordered@{ordered}}
+\index{ordered@{ordered}!agora::rtc::DataStreamConfig@{agora::rtc::DataStreamConfig}}
+\doxysubsubsection{\texorpdfstring{ordered}{ordered}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Data\+Stream\+Config\+::ordered}
+
+Whether the S\+DK guarantees that the receiver receives the data in the sent order.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Guarantee that the receiver receives the data in the sent order.
+\item {\ttfamily false}\+: Do not guarantee that the receiver receives the data in the sent order.
+\end{DoxyItemize}
+
+Do not set this parameter as {\ttfamily true} if you need the receiver to receive the data packet immediately. 

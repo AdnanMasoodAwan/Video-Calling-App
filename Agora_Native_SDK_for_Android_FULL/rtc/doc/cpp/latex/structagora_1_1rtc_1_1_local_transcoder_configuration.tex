@@ -1,0 +1,52 @@
+\hypertarget{structagora_1_1rtc_1_1_local_transcoder_configuration}{}\doxysection{agora\+::rtc\+::Local\+Transcoder\+Configuration Struct Reference}
+\label{structagora_1_1rtc_1_1_local_transcoder_configuration}\index{agora::rtc::LocalTranscoderConfiguration@{agora::rtc::LocalTranscoderConfiguration}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_local_transcoder_configuration_a184d961ad1ce120575196d18b42097a8}{stream\+Count}}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream}{Transcoding\+Video\+Stream}} $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_local_transcoder_configuration_add5e4b1c585ab1001aa3ec48a5e2cf21}{video\+Input\+Streams}}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_video_encoder_configuration}{Video\+Encoder\+Configuration}} \mbox{\hyperlink{structagora_1_1rtc_1_1_local_transcoder_configuration_ac8623ed719848e1c63efd840ecad729c}{video\+Output\+Configuration}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_local_transcoder_configuration_ad0f7351109508306c0d33dc66a5685bf}{sync\+With\+Primary\+Camera}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The configuration of the video mixing on the local client. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_local_transcoder_configuration_a184d961ad1ce120575196d18b42097a8}\label{structagora_1_1rtc_1_1_local_transcoder_configuration_a184d961ad1ce120575196d18b42097a8}} 
+\index{agora::rtc::LocalTranscoderConfiguration@{agora::rtc::LocalTranscoderConfiguration}!streamCount@{streamCount}}
+\index{streamCount@{streamCount}!agora::rtc::LocalTranscoderConfiguration@{agora::rtc::LocalTranscoderConfiguration}}
+\doxysubsubsection{\texorpdfstring{streamCount}{streamCount}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+Local\+Transcoder\+Configuration\+::stream\+Count}
+
+The number of the video streams for the video mixing on the local client. \mbox{\Hypertarget{structagora_1_1rtc_1_1_local_transcoder_configuration_add5e4b1c585ab1001aa3ec48a5e2cf21}\label{structagora_1_1rtc_1_1_local_transcoder_configuration_add5e4b1c585ab1001aa3ec48a5e2cf21}} 
+\index{agora::rtc::LocalTranscoderConfiguration@{agora::rtc::LocalTranscoderConfiguration}!videoInputStreams@{videoInputStreams}}
+\index{videoInputStreams@{videoInputStreams}!agora::rtc::LocalTranscoderConfiguration@{agora::rtc::LocalTranscoderConfiguration}}
+\doxysubsubsection{\texorpdfstring{videoInputStreams}{videoInputStreams}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream}{Transcoding\+Video\+Stream}}$\ast$ agora\+::rtc\+::\+Local\+Transcoder\+Configuration\+::video\+Input\+Streams}
+
+The video streams for the video mixing on the local client. See \mbox{\hyperlink{structagora_1_1rtc_1_1_transcoding_video_stream}{Transcoding\+Video\+Stream}}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_local_transcoder_configuration_ac8623ed719848e1c63efd840ecad729c}\label{structagora_1_1rtc_1_1_local_transcoder_configuration_ac8623ed719848e1c63efd840ecad729c}} 
+\index{agora::rtc::LocalTranscoderConfiguration@{agora::rtc::LocalTranscoderConfiguration}!videoOutputConfiguration@{videoOutputConfiguration}}
+\index{videoOutputConfiguration@{videoOutputConfiguration}!agora::rtc::LocalTranscoderConfiguration@{agora::rtc::LocalTranscoderConfiguration}}
+\doxysubsubsection{\texorpdfstring{videoOutputConfiguration}{videoOutputConfiguration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_video_encoder_configuration}{Video\+Encoder\+Configuration}} agora\+::rtc\+::\+Local\+Transcoder\+Configuration\+::video\+Output\+Configuration}
+
+The encoding configuration of the mixed video stream after the video mixing on the local client. See \mbox{\hyperlink{structagora_1_1rtc_1_1_video_encoder_configuration}{Video\+Encoder\+Configuration}}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_local_transcoder_configuration_ad0f7351109508306c0d33dc66a5685bf}\label{structagora_1_1rtc_1_1_local_transcoder_configuration_ad0f7351109508306c0d33dc66a5685bf}} 
+\index{agora::rtc::LocalTranscoderConfiguration@{agora::rtc::LocalTranscoderConfiguration}!syncWithPrimaryCamera@{syncWithPrimaryCamera}}
+\index{syncWithPrimaryCamera@{syncWithPrimaryCamera}!agora::rtc::LocalTranscoderConfiguration@{agora::rtc::LocalTranscoderConfiguration}}
+\doxysubsubsection{\texorpdfstring{syncWithPrimaryCamera}{syncWithPrimaryCamera}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Local\+Transcoder\+Configuration\+::sync\+With\+Primary\+Camera}
+
+Whether to use the timestamp when the primary camera captures the video frame as the timestamp of the mixed video frame.
+\begin{DoxyItemize}
+\item true\+: (Default) Use the timestamp of the captured video frame as the timestamp of the mixed video frame.
+\item false\+: Do not use the timestamp of the captured video frame as the timestamp of the mixed video frame. Instead, use the timestamp when the mixed video frame is constructed. 
+\end{DoxyItemize}

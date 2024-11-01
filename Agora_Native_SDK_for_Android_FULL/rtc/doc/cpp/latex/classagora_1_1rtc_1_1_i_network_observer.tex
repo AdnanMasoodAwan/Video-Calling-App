@@ -1,0 +1,42 @@
+\hypertarget{classagora_1_1rtc_1_1_i_network_observer}{}\doxysection{agora\+::rtc\+::I\+Network\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_network_observer}\index{agora::rtc::INetworkObserver@{agora::rtc::INetworkObserver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_network_observer_a86a88e2e5afec47ebef26252b0ac70a2}{on\+Uplink\+Network\+Info\+Updated}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_uplink_network_info}{Uplink\+Network\+Info}} \&info)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_network_observer_a4d8f6fa3628c0d9b59be671de36851be}{on\+Downlink\+Network\+Info\+Updated}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_downlink_network_info}{Downlink\+Network\+Info}} \&info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_network_observer_a86a88e2e5afec47ebef26252b0ac70a2}\label{classagora_1_1rtc_1_1_i_network_observer_a86a88e2e5afec47ebef26252b0ac70a2}} 
+\index{agora::rtc::INetworkObserver@{agora::rtc::INetworkObserver}!onUplinkNetworkInfoUpdated@{onUplinkNetworkInfoUpdated}}
+\index{onUplinkNetworkInfoUpdated@{onUplinkNetworkInfoUpdated}!agora::rtc::INetworkObserver@{agora::rtc::INetworkObserver}}
+\doxysubsubsection{\texorpdfstring{onUplinkNetworkInfoUpdated()}{onUplinkNetworkInfoUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Network\+Observer\+::on\+Uplink\+Network\+Info\+Updated (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_uplink_network_info}{Uplink\+Network\+Info}} \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when downlink network info is updated.
+
+This callback is used for notifying user to adjust the send pace based on the target bitrate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & The uplink network info collections. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_network_observer_a4d8f6fa3628c0d9b59be671de36851be}\label{classagora_1_1rtc_1_1_i_network_observer_a4d8f6fa3628c0d9b59be671de36851be}} 
+\index{agora::rtc::INetworkObserver@{agora::rtc::INetworkObserver}!onDownlinkNetworkInfoUpdated@{onDownlinkNetworkInfoUpdated}}
+\index{onDownlinkNetworkInfoUpdated@{onDownlinkNetworkInfoUpdated}!agora::rtc::INetworkObserver@{agora::rtc::INetworkObserver}}
+\doxysubsubsection{\texorpdfstring{onDownlinkNetworkInfoUpdated()}{onDownlinkNetworkInfoUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Network\+Observer\+::on\+Downlink\+Network\+Info\+Updated (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_downlink_network_info}{Downlink\+Network\+Info}} \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when downlink network info is updated.
+
+This callback is used for notifying user to switch major/minor stream if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & The downlink network info collections. \\
+\hline
+\end{DoxyParams}

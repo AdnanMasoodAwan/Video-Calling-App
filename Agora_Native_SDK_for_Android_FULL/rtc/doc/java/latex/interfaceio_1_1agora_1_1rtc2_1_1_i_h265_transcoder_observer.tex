@@ -1,0 +1,84 @@
+\hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer}{}\doxysection{io.\+agora.\+rtc2.\+I\+H265\+Transcoder\+Observer Interface Reference}
+\label{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer}\index{io.agora.rtc2.IH265TranscoderObserver@{io.agora.rtc2.IH265TranscoderObserver}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer_1_1_h265_transcode_result}{H265\+Transcode\+Result}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer_adace9a0545cb24549775c8f3707080d6}{on\+Enable\+Transcode}} (int result)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer_ab1cbe047d189120701aca04f3d1adc89}{on\+Query\+Channel}} (int result, String origin\+Channel, String transcode\+Channel)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer_ac5422843b7f1c01ffa21c534d01d8e3a}{on\+Trigger\+Transcode}} (int result)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer}{I\+H265\+Transcoder\+Observer}} interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer_adace9a0545cb24549775c8f3707080d6}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer_adace9a0545cb24549775c8f3707080d6}} 
+\index{io.agora.rtc2.IH265TranscoderObserver@{io.agora.rtc2.IH265TranscoderObserver}!onEnableTranscode@{onEnableTranscode}}
+\index{onEnableTranscode@{onEnableTranscode}!io.agora.rtc2.IH265TranscoderObserver@{io.agora.rtc2.IH265TranscoderObserver}}
+\doxysubsubsection{\texorpdfstring{onEnableTranscode()}{onEnableTranscode()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+H265\+Transcoder\+Observer.\+on\+Enable\+Transcode (\begin{DoxyParamCaption}\item[{int}]{result }\end{DoxyParamCaption})}
+
+Use to notify the result of invoking enable\+Transcode interface. 
+\begin{DoxyParams}{Parameters}
+{\em result} & Result of invoking enable\+Transcode interface. There are some processing advice below of result.
+\begin{DoxyItemize}
+\item R\+E\+Q\+U\+E\+S\+T\+\_\+\+I\+N\+V\+A\+L\+ID\+: Channel or uid param have a mistake, you need to check them for correctness.
+\item U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED\+: Authentication failed, please check for correctness of token.
+\item T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+ED\+: The token has expired, you need to generate a new token.
+\item F\+O\+R\+B\+I\+D\+D\+EN\+: You need to contact agora staff to add the vid whitelist.
+\item N\+O\+T\+\_\+\+F\+O\+U\+ND\+: Indicates that the network may be faulty.
+\item T\+O\+O\+\_\+\+O\+F\+T\+EN\+: Request is too often, please request again later.
+\item S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR\+: The service has an internal error. A request can be made again. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer_ab1cbe047d189120701aca04f3d1adc89}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer_ab1cbe047d189120701aca04f3d1adc89}} 
+\index{io.agora.rtc2.IH265TranscoderObserver@{io.agora.rtc2.IH265TranscoderObserver}!onQueryChannel@{onQueryChannel}}
+\index{onQueryChannel@{onQueryChannel}!io.agora.rtc2.IH265TranscoderObserver@{io.agora.rtc2.IH265TranscoderObserver}}
+\doxysubsubsection{\texorpdfstring{onQueryChannel()}{onQueryChannel()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+H265\+Transcoder\+Observer.\+on\+Query\+Channel (\begin{DoxyParamCaption}\item[{int}]{result,  }\item[{String}]{origin\+Channel,  }\item[{String}]{transcode\+Channel }\end{DoxyParamCaption})}
+
+Use to notify the result of invoking query\+Channel interface. 
+\begin{DoxyParams}{Parameters}
+{\em result} & Result of invoking query\+Channel interface. There are some processing advice below of result.
+\begin{DoxyItemize}
+\item U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED\+: Authentication failed, please check for correctness of token.
+\item T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+ED\+: The token has expired, you need to generate a new token.
+\item N\+O\+T\+\_\+\+F\+O\+U\+ND\+: Indicates that the network may be faulty or the channel param may be is empty.
+\item T\+O\+O\+\_\+\+O\+F\+T\+EN\+: Request is too often, please request again later.
+\item S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR\+: The service has an internal error. A request can be made again.
+\end{DoxyItemize}\\
+\hline
+{\em origin\+Channel} & Origin channel id. \\
+\hline
+{\em transcode\+Channel} & Transcode channel id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer_ac5422843b7f1c01ffa21c534d01d8e3a}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_h265_transcoder_observer_ac5422843b7f1c01ffa21c534d01d8e3a}} 
+\index{io.agora.rtc2.IH265TranscoderObserver@{io.agora.rtc2.IH265TranscoderObserver}!onTriggerTranscode@{onTriggerTranscode}}
+\index{onTriggerTranscode@{onTriggerTranscode}!io.agora.rtc2.IH265TranscoderObserver@{io.agora.rtc2.IH265TranscoderObserver}}
+\doxysubsubsection{\texorpdfstring{onTriggerTranscode()}{onTriggerTranscode()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+H265\+Transcoder\+Observer.\+on\+Trigger\+Transcode (\begin{DoxyParamCaption}\item[{int}]{result }\end{DoxyParamCaption})}
+
+Use to notify the result of invoking trigger\+Transcode interface. 
+\begin{DoxyParams}{Parameters}
+{\em result} & Result of invoking trigger\+Transcode interface. There are some processing advice below of result.
+\begin{DoxyItemize}
+\item U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED\+: Authentication failed, please check for correctness of token.
+\item T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+ED\+: The token has expired, you need to generate a new token.
+\item N\+O\+T\+\_\+\+F\+O\+U\+ND\+: Indicates that the network may be faulty or the channel param may be is empty.
+\item C\+O\+N\+F\+L\+I\+C\+T\+ED\+: The request of trigger transcode is conflicted, please try again.
+\item T\+O\+O\+\_\+\+O\+F\+T\+EN\+: Request is too often, please request again later.
+\item S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR\+: The service has an internal error. A request can be made again.
+\item S\+E\+R\+V\+I\+C\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE\+: May be the number of transcode service is over the limit. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}

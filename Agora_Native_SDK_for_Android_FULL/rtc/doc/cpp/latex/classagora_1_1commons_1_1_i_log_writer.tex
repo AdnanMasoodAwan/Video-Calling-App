@@ -1,0 +1,32 @@
+\hypertarget{classagora_1_1commons_1_1_i_log_writer}{}\doxysection{agora\+::commons\+::I\+Log\+Writer Class Reference}
+\label{classagora_1_1commons_1_1_i_log_writer}\index{agora::commons::ILogWriter@{agora::commons::ILogWriter}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int32\+\_\+t \mbox{\hyperlink{classagora_1_1commons_1_1_i_log_writer_a27fee7fdfaccc8d08ba8164bd07775b8}{write\+Log}} (L\+O\+G\+\_\+\+L\+E\+V\+EL level, const char $\ast$message, uint16\+\_\+t length)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1commons_1_1_i_log_writer_a27fee7fdfaccc8d08ba8164bd07775b8}\label{classagora_1_1commons_1_1_i_log_writer_a27fee7fdfaccc8d08ba8164bd07775b8}} 
+\index{agora::commons::ILogWriter@{agora::commons::ILogWriter}!writeLog@{writeLog}}
+\index{writeLog@{writeLog}!agora::commons::ILogWriter@{agora::commons::ILogWriter}}
+\doxysubsubsection{\texorpdfstring{writeLog()}{writeLog()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t agora\+::commons\+::\+I\+Log\+Writer\+::write\+Log (\begin{DoxyParamCaption}\item[{L\+O\+G\+\_\+\+L\+E\+V\+EL}]{level,  }\item[{const char $\ast$}]{message,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+user defined log Write function 
+\begin{DoxyParams}{Parameters}
+{\em level} & log level \\
+\hline
+{\em message} & log message content \\
+\hline
+{\em length} & log message length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: success
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}

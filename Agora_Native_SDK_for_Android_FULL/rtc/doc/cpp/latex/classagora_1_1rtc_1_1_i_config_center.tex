@@ -1,0 +1,34 @@
+\hypertarget{classagora_1_1rtc_1_1_i_config_center}{}\doxysection{agora\+::rtc\+::I\+Config\+Center Class Reference}
+\label{classagora_1_1rtc_1_1_i_config_center}\index{agora::rtc::IConfigCenter@{agora::rtc::IConfigCenter}}
+Inheritance diagram for agora\+::rtc\+::I\+Config\+Center\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_config_center}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_config_center_a70a2ee3d1faafb0ed050e464dea53f8a}{Set\+Local\+Access\+Point}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_local_access_point_configuration}{Local\+Access\+Point\+Configuration}} \&config)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_config_center_a70a2ee3d1faafb0ed050e464dea53f8a}\label{classagora_1_1rtc_1_1_i_config_center_a70a2ee3d1faafb0ed050e464dea53f8a}} 
+\index{agora::rtc::IConfigCenter@{agora::rtc::IConfigCenter}!SetLocalAccessPoint@{SetLocalAccessPoint}}
+\index{SetLocalAccessPoint@{SetLocalAccessPoint}!agora::rtc::IConfigCenter@{agora::rtc::IConfigCenter}}
+\doxysubsubsection{\texorpdfstring{SetLocalAccessPoint()}{SetLocalAccessPoint()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Config\+Center\+::\+Set\+Local\+Access\+Point (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_local_access_point_configuration}{Local\+Access\+Point\+Configuration}} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set local access point addresses in local Ap mode(which also calls local proxy). Use this method before join channel. 
+\begin{DoxyParams}{Parameters}
+{\em config} & The \mbox{\hyperlink{structagora_1_1rtc_1_1_local_access_point_configuration}{Local\+Access\+Point\+Configuration}} class, See the definition of \mbox{\hyperlink{structagora_1_1rtc_1_1_local_access_point_configuration}{Local\+Access\+Point\+Configuration}} for details. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success
+\item $<$ 0\+: Failure 
+\end{DoxyItemize}
+\end{DoxyReturn}

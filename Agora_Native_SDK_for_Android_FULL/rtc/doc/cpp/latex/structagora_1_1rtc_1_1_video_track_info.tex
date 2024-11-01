@@ -1,0 +1,88 @@
+\hypertarget{structagora_1_1rtc_1_1_video_track_info}{}\doxysection{agora\+::rtc\+::Video\+Track\+Info Struct Reference}
+\label{structagora_1_1rtc_1_1_video_track_info}\index{agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info_a59f2f209b3b42a119f72d34299b2a551}{is\+Local}}
+\item 
+uid\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info_a2c08de53f8efaf73d13dba7058e32f55}{owner\+Uid}}
+\item 
+track\+\_\+id\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info_a2f06595fbc3fbe1a29bf2fe9841349fa}{track\+Id}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info_ac399791587116f2ebff4a5f9080669c8}{channel\+Id}}
+\item 
+V\+I\+D\+E\+O\+\_\+\+C\+O\+D\+E\+C\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info_a135f10aedbb66f80a72814e4b996eb70}{codec\+Type}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info_a66f05524ec26137a86b4f262cc87742a}{encoded\+Frame\+Only}}
+\item 
+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info_a3bb83cdf3b66d7f3bcfe94fd6cefda5d}{source\+Type}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info_a23e92a242f9b3de31f35da04eb457554}{observation\+Position}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of the \mbox{\hyperlink{structagora_1_1rtc_1_1_video_track_info}{Video\+Track\+Info}} struct, which contains information of the video track. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_track_info_a59f2f209b3b42a119f72d34299b2a551}\label{structagora_1_1rtc_1_1_video_track_info_a59f2f209b3b42a119f72d34299b2a551}} 
+\index{agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}!isLocal@{isLocal}}
+\index{isLocal@{isLocal}!agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}}
+\doxysubsubsection{\texorpdfstring{isLocal}{isLocal}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Video\+Track\+Info\+::is\+Local}
+
+Whether the video track is local or remote.
+\begin{DoxyItemize}
+\item true\+: The video track is local.
+\item false\+: The video track is remote. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_track_info_a2c08de53f8efaf73d13dba7058e32f55}\label{structagora_1_1rtc_1_1_video_track_info_a2c08de53f8efaf73d13dba7058e32f55}} 
+\index{agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}!ownerUid@{ownerUid}}
+\index{ownerUid@{ownerUid}!agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}}
+\doxysubsubsection{\texorpdfstring{ownerUid}{ownerUid}}
+{\footnotesize\ttfamily uid\+\_\+t agora\+::rtc\+::\+Video\+Track\+Info\+::owner\+Uid}
+
+ID of the user who publishes the video track. \mbox{\Hypertarget{structagora_1_1rtc_1_1_video_track_info_a2f06595fbc3fbe1a29bf2fe9841349fa}\label{structagora_1_1rtc_1_1_video_track_info_a2f06595fbc3fbe1a29bf2fe9841349fa}} 
+\index{agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}!trackId@{trackId}}
+\index{trackId@{trackId}!agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}}
+\doxysubsubsection{\texorpdfstring{trackId}{trackId}}
+{\footnotesize\ttfamily track\+\_\+id\+\_\+t agora\+::rtc\+::\+Video\+Track\+Info\+::track\+Id}
+
+ID of the video track. \mbox{\Hypertarget{structagora_1_1rtc_1_1_video_track_info_ac399791587116f2ebff4a5f9080669c8}\label{structagora_1_1rtc_1_1_video_track_info_ac399791587116f2ebff4a5f9080669c8}} 
+\index{agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}!channelId@{channelId}}
+\index{channelId@{channelId}!agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}}
+\doxysubsubsection{\texorpdfstring{channelId}{channelId}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+Video\+Track\+Info\+::channel\+Id}
+
+The channel ID of the video track. \mbox{\Hypertarget{structagora_1_1rtc_1_1_video_track_info_a135f10aedbb66f80a72814e4b996eb70}\label{structagora_1_1rtc_1_1_video_track_info_a135f10aedbb66f80a72814e4b996eb70}} 
+\index{agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}!codecType@{codecType}}
+\index{codecType@{codecType}!agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}}
+\doxysubsubsection{\texorpdfstring{codecType}{codecType}}
+{\footnotesize\ttfamily V\+I\+D\+E\+O\+\_\+\+C\+O\+D\+E\+C\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Video\+Track\+Info\+::codec\+Type}
+
+The video codec type\+: \#\+V\+I\+D\+E\+O\+\_\+\+C\+O\+D\+E\+C\+\_\+\+T\+Y\+PE. \mbox{\Hypertarget{structagora_1_1rtc_1_1_video_track_info_a66f05524ec26137a86b4f262cc87742a}\label{structagora_1_1rtc_1_1_video_track_info_a66f05524ec26137a86b4f262cc87742a}} 
+\index{agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}!encodedFrameOnly@{encodedFrameOnly}}
+\index{encodedFrameOnly@{encodedFrameOnly}!agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}}
+\doxysubsubsection{\texorpdfstring{encodedFrameOnly}{encodedFrameOnly}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Video\+Track\+Info\+::encoded\+Frame\+Only}
+
+Whether the video track contains encoded video frame only.
+\begin{DoxyItemize}
+\item true\+: The video track contains encoded video frame only.
+\item false\+: The video track does not contain encoded video frame only. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_video_track_info_a3bb83cdf3b66d7f3bcfe94fd6cefda5d}\label{structagora_1_1rtc_1_1_video_track_info_a3bb83cdf3b66d7f3bcfe94fd6cefda5d}} 
+\index{agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}!sourceType@{sourceType}}
+\index{sourceType@{sourceType}!agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}}
+\doxysubsubsection{\texorpdfstring{sourceType}{sourceType}}
+{\footnotesize\ttfamily V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Video\+Track\+Info\+::source\+Type}
+
+The video source type\+: \#\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE \mbox{\Hypertarget{structagora_1_1rtc_1_1_video_track_info_a23e92a242f9b3de31f35da04eb457554}\label{structagora_1_1rtc_1_1_video_track_info_a23e92a242f9b3de31f35da04eb457554}} 
+\index{agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}!observationPosition@{observationPosition}}
+\index{observationPosition@{observationPosition}!agora::rtc::VideoTrackInfo@{agora::rtc::VideoTrackInfo}}
+\doxysubsubsection{\texorpdfstring{observationPosition}{observationPosition}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+Video\+Track\+Info\+::observation\+Position}
+
+the frame position for the video observer\+: \#\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON 

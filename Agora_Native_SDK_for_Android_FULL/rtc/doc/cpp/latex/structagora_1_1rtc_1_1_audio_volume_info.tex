@@ -1,0 +1,63 @@
+\hypertarget{structagora_1_1rtc_1_1_audio_volume_info}{}\doxysection{agora\+::rtc\+::Audio\+Volume\+Info Struct Reference}
+\label{structagora_1_1rtc_1_1_audio_volume_info}\index{agora::rtc::AudioVolumeInfo@{agora::rtc::AudioVolumeInfo}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uid\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_volume_info_a580f7f137246602ad875fe5e8d1f4409}{uid}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_volume_info_a74fa062167879f52ad7ad3ba4853d405}{volume}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_volume_info_a50bbaac271d7bef5cd6d369b57364282}{vad}}
+\item 
+double \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_volume_info_a7e41b87a003ce4063f1f446e9d20424c}{voice\+Pitch}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The volume information of users. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_volume_info_a580f7f137246602ad875fe5e8d1f4409}\label{structagora_1_1rtc_1_1_audio_volume_info_a580f7f137246602ad875fe5e8d1f4409}} 
+\index{agora::rtc::AudioVolumeInfo@{agora::rtc::AudioVolumeInfo}!uid@{uid}}
+\index{uid@{uid}!agora::rtc::AudioVolumeInfo@{agora::rtc::AudioVolumeInfo}}
+\doxysubsubsection{\texorpdfstring{uid}{uid}}
+{\footnotesize\ttfamily uid\+\_\+t agora\+::rtc\+::\+Audio\+Volume\+Info\+::uid}
+
+User ID of the speaker.
+\begin{DoxyItemize}
+\item In the local user\textquotesingle{}s callback, {\ttfamily uid} = 0.
+\item In the remote users\textquotesingle{} callback, {\ttfamily uid} is the user ID of a remote user whose instantaneous volume is one of the three highest. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_volume_info_a74fa062167879f52ad7ad3ba4853d405}\label{structagora_1_1rtc_1_1_audio_volume_info_a74fa062167879f52ad7ad3ba4853d405}} 
+\index{agora::rtc::AudioVolumeInfo@{agora::rtc::AudioVolumeInfo}!volume@{volume}}
+\index{volume@{volume}!agora::rtc::AudioVolumeInfo@{agora::rtc::AudioVolumeInfo}}
+\doxysubsubsection{\texorpdfstring{volume}{volume}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+Audio\+Volume\+Info\+::volume}
+
+The volume of the user. The value ranges between 0 (the lowest volume) and 255 (the highest volume). If the user calls {\ttfamily start\+Audio\+Mixing}, the value of volume is the volume after audio mixing. \mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_volume_info_a50bbaac271d7bef5cd6d369b57364282}\label{structagora_1_1rtc_1_1_audio_volume_info_a50bbaac271d7bef5cd6d369b57364282}} 
+\index{agora::rtc::AudioVolumeInfo@{agora::rtc::AudioVolumeInfo}!vad@{vad}}
+\index{vad@{vad}!agora::rtc::AudioVolumeInfo@{agora::rtc::AudioVolumeInfo}}
+\doxysubsubsection{\texorpdfstring{vad}{vad}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+Audio\+Volume\+Info\+::vad}
+
+Voice activity status of the local user.
+\begin{DoxyItemize}
+\item 0\+: The local user is not speaking.
+\item 1\+: The local user is speaking. \begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+
+\item The {\ttfamily vad} parameter does not report the voice activity status of remote users. In a remote user\textquotesingle{}s callback, the value of {\ttfamily vad} is always 1.
+\item To use this parameter, you must set {\ttfamily report\+Vad} to true when calling {\ttfamily enable\+Audio\+Volume\+Indication}. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_volume_info_a7e41b87a003ce4063f1f446e9d20424c}\label{structagora_1_1rtc_1_1_audio_volume_info_a7e41b87a003ce4063f1f446e9d20424c}} 
+\index{agora::rtc::AudioVolumeInfo@{agora::rtc::AudioVolumeInfo}!voicePitch@{voicePitch}}
+\index{voicePitch@{voicePitch}!agora::rtc::AudioVolumeInfo@{agora::rtc::AudioVolumeInfo}}
+\doxysubsubsection{\texorpdfstring{voicePitch}{voicePitch}}
+{\footnotesize\ttfamily double agora\+::rtc\+::\+Audio\+Volume\+Info\+::voice\+Pitch}
+
+The voice pitch (Hz) of the local user. The value ranges between 0.\+0 and 4000.\+0. \begin{DoxyNote}{Note}
+The {\ttfamily voice\+Pitch} parameter does not report the voice pitch of remote users. In the remote users\textquotesingle{} callback, the value of {\ttfamily voice\+Pitch} is always 0.\+0. 
+\end{DoxyNote}

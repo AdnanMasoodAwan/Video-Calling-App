@@ -1,0 +1,52 @@
+\hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_custom_data_provider}{}\doxysection{io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Custom\+Data\+Provider Interface Reference}
+\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_custom_data_provider}\index{io.agora.mediaplayer.IMediaPlayerCustomDataProvider@{io.agora.mediaplayer.IMediaPlayerCustomDataProvider}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_custom_data_provider_aed1200962dbadfd57dc399fcac451c9f}{on\+Read\+Data}} (Byte\+Buffer buffer, int buffer\+Size)
+\begin{DoxyCompactList}\small\item\em The player requests to read the data callback, you need to fill the specified length of data into the buffer. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_custom_data_provider_acd9779aff1bb58c992e82b3f590ef32f}{on\+Seek}} (long offset, int whence)
+\begin{DoxyCompactList}\small\item\em The Player seek event callback, you need to operate the corresponding stream seek operation, You can refer to the definition of lseek() at \href{https://man7.org/linux/man-pages/man2/lseek.2.html}{\texttt{ https\+://man7.\+org/linux/man-\/pages/man2/lseek.\+2.\+html}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_custom_data_provider_aed1200962dbadfd57dc399fcac451c9f}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_custom_data_provider_aed1200962dbadfd57dc399fcac451c9f}} 
+\index{io.agora.mediaplayer.IMediaPlayerCustomDataProvider@{io.agora.mediaplayer.IMediaPlayerCustomDataProvider}!onReadData@{onReadData}}
+\index{onReadData@{onReadData}!io.agora.mediaplayer.IMediaPlayerCustomDataProvider@{io.agora.mediaplayer.IMediaPlayerCustomDataProvider}}
+\doxysubsubsection{\texorpdfstring{onReadData()}{onReadData()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Custom\+Data\+Provider.\+on\+Read\+Data (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})}
+
+
+
+The player requests to read the data callback, you need to fill the specified length of data into the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer pointer that you need to fill data. \\
+\hline
+{\em buf\+\_\+size} & the buffer\+Size need to fill of the buffer pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+you need return offset value if succeed. return 0 if failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_custom_data_provider_acd9779aff1bb58c992e82b3f590ef32f}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_custom_data_provider_acd9779aff1bb58c992e82b3f590ef32f}} 
+\index{io.agora.mediaplayer.IMediaPlayerCustomDataProvider@{io.agora.mediaplayer.IMediaPlayerCustomDataProvider}!onSeek@{onSeek}}
+\index{onSeek@{onSeek}!io.agora.mediaplayer.IMediaPlayerCustomDataProvider@{io.agora.mediaplayer.IMediaPlayerCustomDataProvider}}
+\doxysubsubsection{\texorpdfstring{onSeek()}{onSeek()}}
+{\footnotesize\ttfamily long io.\+agora.\+mediaplayer.\+I\+Media\+Player\+Custom\+Data\+Provider.\+on\+Seek (\begin{DoxyParamCaption}\item[{long}]{offset,  }\item[{int}]{whence }\end{DoxyParamCaption})}
+
+
+
+The Player seek event callback, you need to operate the corresponding stream seek operation, You can refer to the definition of lseek() at \href{https://man7.org/linux/man-pages/man2/lseek.2.html}{\texttt{ https\+://man7.\+org/linux/man-\/pages/man2/lseek.\+2.\+html}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & the value of seek offset. \\
+\hline
+{\em whence} & the postion of start seeking, the directive whence as follows\+: 0 -\/ S\+E\+E\+K\+\_\+\+S\+ET \+: The file offset is set to offset bytes. 1 -\/ S\+E\+E\+K\+\_\+\+C\+UR \+: The file offset is set to its current location plus offset bytes. 2 -\/ S\+E\+E\+K\+\_\+\+E\+ND \+: The file offset is set to the size of the file plus offset bytes. 65536 -\/ A\+V\+S\+E\+E\+K\+\_\+\+S\+I\+ZE \+: Optional. Passing this as the \char`\"{}whence\char`\"{} parameter to a seek function causes it to return the filesize without seeking anywhere. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whence == 65536, return filesize if you need. whence $>$= 0 \&\& whence $<$ 3 , return offset value if succeed. return -\/1 if failed. 
+\end{DoxyReturn}

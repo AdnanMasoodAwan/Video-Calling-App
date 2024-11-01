@@ -1,0 +1,52 @@
+\hypertarget{structagora_1_1rtc_1_1_encryption_config}{}\doxysection{agora\+::rtc\+::Encryption\+Config Struct Reference}
+\label{structagora_1_1rtc_1_1_encryption_config}\index{agora::rtc::EncryptionConfig@{agora::rtc::EncryptionConfig}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+M\+O\+DE \mbox{\hyperlink{structagora_1_1rtc_1_1_encryption_config_ad52b2cf9c771a97da7bdfa6537ac8a2a}{encryption\+Mode}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_encryption_config_a51409473d2893735e9cc21557e2fa395}{encryption\+Key}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_encryption_config_a84798c8311b7a8740fa16c284259aef2}{encryption\+Kdf\+Salt}} \mbox{[}32\mbox{]}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_encryption_config_a504430c08e7225ae176de12ab8fe2fc4}\label{structagora_1_1rtc_1_1_encryption_config_a504430c08e7225ae176de12ab8fe2fc4}} 
+bool {\bfseries datastream\+Encryption\+Enabled}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Built-\/in encryption configurations. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_encryption_config_ad52b2cf9c771a97da7bdfa6537ac8a2a}\label{structagora_1_1rtc_1_1_encryption_config_ad52b2cf9c771a97da7bdfa6537ac8a2a}} 
+\index{agora::rtc::EncryptionConfig@{agora::rtc::EncryptionConfig}!encryptionMode@{encryptionMode}}
+\index{encryptionMode@{encryptionMode}!agora::rtc::EncryptionConfig@{agora::rtc::EncryptionConfig}}
+\doxysubsubsection{\texorpdfstring{encryptionMode}{encryptionMode}}
+{\footnotesize\ttfamily E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+M\+O\+DE agora\+::rtc\+::\+Encryption\+Config\+::encryption\+Mode}
+
+The built-\/in encryption mode. See \#\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+M\+O\+DE. Agora recommends using {\ttfamily A\+E\+S\+\_\+128\+\_\+\+G\+C\+M2} or {\ttfamily A\+E\+S\+\_\+256\+\_\+\+G\+C\+M2} encrypted mode. These two modes support the use of salt for higher security. \mbox{\Hypertarget{structagora_1_1rtc_1_1_encryption_config_a51409473d2893735e9cc21557e2fa395}\label{structagora_1_1rtc_1_1_encryption_config_a51409473d2893735e9cc21557e2fa395}} 
+\index{agora::rtc::EncryptionConfig@{agora::rtc::EncryptionConfig}!encryptionKey@{encryptionKey}}
+\index{encryptionKey@{encryptionKey}!agora::rtc::EncryptionConfig@{agora::rtc::EncryptionConfig}}
+\doxysubsubsection{\texorpdfstring{encryptionKey}{encryptionKey}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+Encryption\+Config\+::encryption\+Key}
+
+Encryption key in string type with unlimited length. Agora recommends using a 32-\/byte key.
+
+\begin{DoxyNote}{Note}
+If you do not set an encryption key or set it as N\+U\+LL, you cannot use the built-\/in encryption, and the S\+DK returns \#\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT (-\/2). 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_encryption_config_a84798c8311b7a8740fa16c284259aef2}\label{structagora_1_1rtc_1_1_encryption_config_a84798c8311b7a8740fa16c284259aef2}} 
+\index{agora::rtc::EncryptionConfig@{agora::rtc::EncryptionConfig}!encryptionKdfSalt@{encryptionKdfSalt}}
+\index{encryptionKdfSalt@{encryptionKdfSalt}!agora::rtc::EncryptionConfig@{agora::rtc::EncryptionConfig}}
+\doxysubsubsection{\texorpdfstring{encryptionKdfSalt}{encryptionKdfSalt}}
+{\footnotesize\ttfamily uint8\+\_\+t agora\+::rtc\+::\+Encryption\+Config\+::encryption\+Kdf\+Salt\mbox{[}32\mbox{]}}
+
+Salt, 32 bytes in length. Agora recommends that you use Open\+S\+SL to generate salt on the server side.
+
+\begin{DoxyNote}{Note}
+This parameter takes effect only in {\ttfamily A\+E\+S\+\_\+128\+\_\+\+G\+C\+M2} or {\ttfamily A\+E\+S\+\_\+256\+\_\+\+G\+C\+M2} encrypted mode. In this case, ensure that this parameter is not 0. 
+\end{DoxyNote}

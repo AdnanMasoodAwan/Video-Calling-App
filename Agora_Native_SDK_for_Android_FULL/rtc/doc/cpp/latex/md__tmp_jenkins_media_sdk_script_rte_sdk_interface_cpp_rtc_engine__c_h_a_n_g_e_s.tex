@@ -1,0 +1,4711 @@
+Note\+: Please update this file for every Agora A\+PI change you do. Simply fill in your updates in the Working section below.
+
+\doxysection*{Agora High Level A\+P\+Is (Working) }
+
+\doxysection*{A\+PI (yyyy-\/mm-\/dd) }
+
+Purpose of this change
+
+\doxysubsection*{A\+PI file name \#1 }
+
+{\bfseries{Add\+:}} Short description
+\begin{DoxyItemize}
+\item Foo()
+\item Bar()
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}} Short description
+\begin{DoxyItemize}
+\item Changes Foo() to Foo1()
+\item Changes Bar() to Bar1()
+\end{DoxyItemize}
+
+{\bfseries{Deleted\+:}} Short description
+\begin{DoxyItemize}
+\item Deleted Foo()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/07-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item add -\/8(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE) as possible return value of int set\+Client\+Role(\+C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+P\+E role, const Client\+Role\+Options\& options)
+\item add -\/8(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE) as possible return value of int set\+Channel\+Profile(\+C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E profile)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/06-\/20) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} / \mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Remove\+:}}
+\begin{DoxyItemize}
+\item set\+Default\+Mute\+All\+Remote\+Video\+Streams
+\item set\+Default\+Mute\+All\+Remote\+Audio\+Streams
+\item on\+Local\+Video\+State\+Changed(const Rtc\+Connection\& connection, ...)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/04-\/29) }
+
+Add apis for Face\+Shape Beauty
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}},Agora\+Rtc\+Engine\+Kit.\+h,Rtc\+Engine.\+java,Rtc\+Engine\+Impl.\+java }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Face\+Shape\+Beauty\+Options(bool enabled, const Face\+Shape\+Beauty\+Options\& options);
+\item int get\+Face\+Shape\+Beauty\+Options(\+Face\+Shape\+Beauty\+Options\& options);
+\item int set\+Face\+Shape\+Area\+Options(const Face\+Shape\+Area\+Options\& options);
+\item int get\+Face\+Shape\+Area\+Options(int shape\+Area, Face\+Shape\+Area\+Options\& options);
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/5-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item delete start\+Echo\+Test()
+\item delete start\+Echo\+Test(int interval\+In\+Seconds)
+\item delete set\+Encryption\+Mode(const char$\ast$ encryption\+Mode)
+\item delete set\+Encryption\+Secret(const char$\ast$ secret)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/02-\/24) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add simulcast\+Dimensions to Local\+Video\+Stats
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2024-\/04-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} int set\+Camera\+Capturer\+Configuration(const Camera\+Capturer\+Configuration\& config)
+
+\doxysection*{A\+PI (2024-\/04-\/02) }
+
+Audio metadata
+
+\doxysubsection*{\mbox{\hyperlink{_n_g_i_agora_local_user_8h_source}{N\+G\+I\+Agora\+Local\+User.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Add \char`\"{}@technical preview\char`\"{} for audio metadata api
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/03-\/19) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Metadata
+\begin{DoxyItemize}
+\item add channel\+Id callback for Metadata
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/03-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item mark set\+Local\+Render\+Mode(media\+::base\+::\+R\+E\+N\+D\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+P\+E render\+Mode) as Deprecated
+\item mark set\+Local\+Video\+Mirror\+Mode(\+V\+I\+D\+E\+O\+\_\+\+M\+I\+R\+R\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+P\+E mirror\+Mode) as Deprecated
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2024-\/2-\/28) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item need\+Extension\+Context
+\item on\+Extension\+Event\+With\+Context
+\item on\+Extension\+Started\+With\+Context
+\item on\+Extension\+Stopped\+With\+Context
+\item on\+Extension\+Error\+With\+Context
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/02-\/27) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item add interface information
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/02-\/23) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item virtual int send\+Audio\+Metadata(const char$\ast$ metadata, size\+\_\+t length) = 0;
+\item virtual void on\+Audio\+Metadata\+Received(uid\+\_\+t uid, const char$\ast$ metadata, size\+\_\+t length)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/02-\/23) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add class register\+Face\+Info\+Observer
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{A\+DD\+:}}
+\begin{DoxyItemize}
+\item add publish\+Lip\+Sync\+Track
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/02-\/21) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item enum S\+T\+R\+E\+A\+M\+\_\+\+F\+A\+L\+L\+B\+A\+C\+K\+\_\+\+O\+P\+T\+I\+O\+NS add S\+T\+R\+E\+A\+M\+\_\+\+F\+A\+L\+L\+B\+A\+C\+K\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+L\+A\+Y\+E\+R\+\_\+1 $\sim$ S\+T\+R\+E\+A\+M\+\_\+\+F\+A\+L\+L\+B\+A\+C\+K\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+L\+A\+Y\+E\+R\+\_\+6
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2024-\/2-\/21) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} \doxysubsection*{Rtc\+Engine\+Ex.\+java }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Ex\+::enable\+Encryption\+Ex\+:(bool)enabled encryption\+Config\+:(\+Agora\+Encryption\+Config $\ast$\+\_\+\+Nonnull)config connection\+:(\+Agora\+Rtc\+Connection$\ast$ \+\_\+\+Nonnull)connection N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E(enable\+Encryption\+Ex(\+\_\+\+:encryption\+Config\+:connection\+:))
+\item public abstract int enable\+Encryption\+Ex(boolean enabled, Encryption\+Config config, Rtc\+Connection connection)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/02-\/19) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Remote\+Audio\+Stats.\+e2e\+Delay
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/09-\/20) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item add camera\+Id in Camera\+Capturer\+Configuration
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/12-\/14) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} Agora\+Rtc\+Engine\+Ex.\+h \doxysubsection*{Rtc\+Engine\+Ex.\+java }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Ex\+::get\+Call\+Id\+Ex(agora\+::util\+::\+A\+String\& call\+Id, const Rtc\+Connection\& connection)
+\item get\+Call\+Id\+Ex\+:(\+Agora\+Rtc\+Connection $\ast$ \+\_\+\+Nonnull)connection N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E(get\+Call\+Id\+Ex(\+\_\+\+:));
+\item public abstract String get\+Call\+Id\+Ex(\+Rtc\+Connection connection);
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/11-\/07) }
+
+\doxysubsection*{I\+Agora\+Rtc\+Engine\+Base.\+h }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Make I\+Rtc\+Engine\+Base\+::release to be a static member function
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/10-\/31) }
+
+I\+Agora\+Rtc\+Engine\+Base.\+h {\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Change R\+H\+Y\+T\+H\+M\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE error\+Code to R\+H\+Y\+T\+H\+M\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON reason\+Code.
+\item Change L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR error to L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+A\+S\+ON reason
+\item Change D\+I\+R\+E\+C\+T\+\_\+\+C\+D\+N\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+E\+R\+R\+OR error to D\+I\+R\+E\+C\+T\+\_\+\+C\+D\+N\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+R\+E\+A\+S\+ON reason
+\end{DoxyItemize}
+
+\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} {\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Change L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR error to L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+A\+S\+ON reason
+\end{DoxyItemize}
+
+I\+Agora\+Rtc\+Engine\+Ex\+S.\+h {\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Change L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR error to L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+A\+S\+ON reason
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/09-\/12) }
+
+\doxysubsection*{rtc\+\_\+engine\+\_\+i.\+h }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Remove Ref\+Counted\+Object from low level A\+P\+Is.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/08-\/03) }
+
+\doxysubsection*{I\+Agora\+Rtc\+Engine\+Base.\+h, Agora\+Rtc\+Engine\+Kit\+Base.\+h, Rtc\+Engine\+Base.\+java, rtc\+\_\+engine\+\_\+i.\+h }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item description of is\+Feature\+Available\+On\+Device
+\end{DoxyItemize}
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item virtual aosl\+\_\+ref\+\_\+t ref() = 0;
+\end{DoxyItemize}
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item virtual int notify\+Network\+Change(agora\+::commons\+::network\+::network\+\_\+info\+\_\+t\&\& network\+Info) = 0;
+\item virtual int report\+Recording\+Argus\+Event(uint32\+\_\+t$\ast$ event\+Ids, int64\+\_\+t$\ast$ value, int count, Recording\+Event\+Type event\+Type) = 0;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/07-\/31) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item enum Feature\+Type
+\item bool is\+Feature\+Available\+On\+Device(\+Feature\+Type type)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/07-\/10) }
+
+\doxysubsection*{I\+Agora\+Rtc\+Engine\+Base.\+h }
+
+{\bfseries{Modified}} Remove other warning.
+
+\doxysection*{A\+PI(2023-\/07-\/07) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item on\+Set\+Rtm\+Flag\+Result(int)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/07-\/6) }
+
+\mbox{\hyperlink{_i_agora_h265_transcoder_8h_source}{I\+Agora\+H265\+Transcoder.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified}} Remove some warning.
+
+\doxysection*{A\+PI(2023-\/06-\/02) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Ex\+::enable\+Content\+Inspect\+Ex(bool enabled, const media\+::\+Content\+Inspect\+Config \&config, const Rtc\+Connection\& connection)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/07-\/10) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+::preload\+Channel
+\item I\+Rtc\+Engine\+::preload\+Channel (for user\+Account)
+\item I\+Rtc\+Engine\+::update\+Preload\+Channel\+Token
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/05-\/16) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item Channel\+Media\+Options\+::publish\+Third\+Camera\+Track
+\item Channel\+Media\+Options\+::publish\+Fourth\+Camera\+Track
+\item Channel\+Media\+Options\+::publish\+Third\+Screen\+Track
+\item Channel\+Media\+Options\+::publish\+Fourth\+Screen\+Track
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/04-\/26) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted}}
+\begin{DoxyItemize}
+\item remove local ap configs, move to \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/05-\/16) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item Channel\+Media\+Options\+::parameters
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/04-\/20) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted}}
+\begin{DoxyItemize}
+\item create\+Remote\+Media\+Recorder(const char$\ast$ channel\+Id, uid\+\_\+t uid)
+\item create\+Local\+Media\+Recorder(const Rtc\+Connection\& connection) {\bfseries{Add}} create\+Media\+Recorder(const Recorder\+Stream\+Info\& options)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/10-\/10) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify}}
+\begin{DoxyItemize}
+\item move api preload\+Channel \& update\+Preload\+Channel\+Token \& to correct position
+\item modify preload\+Channel to preload\+Channel\+With\+User\+Account in class I\+Rtc\+Engine
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/04-\/10) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item remove deprecated tag of method on\+User\+Enable\+Video
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/04-\/04) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+: modify api comment}}
+\begin{DoxyItemize}
+\item query\+Screen\+Capture\+Capability()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/03-\/22) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item modidy query\+Codec\+Capability Codec\+Cap\+Info codec\+\_\+info to codec\+Info
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/03-\/22) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item mark enable\+Dual\+Stream\+Mode(bool enabled) as Deprecated
+\item mark enable\+Dual\+Stream\+Mode(bool enabled, const Simulcast\+Stream\+Config\& stream\+Config) as Deprecated
+\item mark enable\+Dual\+Stream\+Mode\+Ex(bool enabled, const Simulcast\+Stream\+Config\& stream\+Config, const Rtc\+Connection\& connection) as Deprecated
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/04-\/11) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item modidy publish\+Trancoded\+Video\+Track to publish\+Transcoded\+Video\+Track
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/03-\/21) }
+
+I\+Agora\+Rtc\+Engine\+Base.\+h \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} I\+Agora\+Rtc\+Engine\+S.\+h \mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} I\+Agora\+Rtc\+Engine\+Ex\+S.\+h I\+Agora\+Media\+Engine\+Base.\+h \mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} \doxysubsection*{I\+Agora\+Media\+Engine\+S.\+h }
+
+{\bfseries{Modified\+:}} \doxysubsection*{-\/ fix fuid\+: \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}, \mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}}, \mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add .h\+: I\+Agora\+Rtc\+Engine\+Base.\+h, I\+Agora\+Rtc\+Engine\+S.\+h, I\+Agora\+Rtc\+Engine\+Ex\+S.\+h, I\+Agora\+Media\+Engine\+Base.\+h, I\+Agora\+Media\+Engine\+S.\+h
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/08-\/09) }
+
+I\+Agora\+Rtc\+Engine\+S.\+h \doxysubsection*{I\+Agora\+Rtc\+Engine\+Ex\+S.\+h }
+
+{\bfseries{Modified\+:}} \doxysubsection*{-\/ modify A\+PI setup\+Remote\+Video \& setup\+Remote\+Video\+Ex }
+
+I\+Agora\+H265\+Transcoder\+S.\+h I\+Agora\+Media\+Engine\+S.\+h I\+Agora\+Rtc\+Engine\+Ex\+S.\+h \doxysubsection*{I\+Agora\+Rtc\+Engine\+S.\+h }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item modify A\+PI comment
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/11-\/20) }
+
+I\+Agora\+Rtc\+Engine\+S.\+h I\+Agora\+Rtc\+Engine\+Ex\+S.\+h I\+Agora\+H265\+Transcoder\+S.\+h I\+Agora\+Media\+Engine\+S.\+h I\+Agora\+Rtc\+Engine\+Ex\+S.\+h \doxysubsection*{I\+Agora\+Rtc\+Engine\+S.\+h }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item delete fuid A\+PI
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/03-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item modify doc of on\+Face\+Position\+Changed()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/03-\/28) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item change param name from \char`\"{}type\char`\"{} to \char`\"{}source\+Type\char`\"{}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/03-\/8) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add fix xcode warning
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/03-\/24) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item on\+Local\+Video\+State\+Changed()
+\item on\+Video\+Size\+Changed()
+\item on\+First\+Local\+Video\+Frame() add video\+Source\+Type
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/02-\/21) }
+
+\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add \+\_\+\+\_\+deprecated tag
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/02-\/17) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add \mbox{\hyperlink{_i_agora_h265_transcoder_8h_source}{I\+Agora\+H265\+Transcoder.\+h}} header file
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/02-\/16) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+::get\+Ntp\+Time\+In\+Ms
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/02-\/16) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Ex\+::set\+Parameters\+Ex(const Rtc\+Connection\& connection, const char$\ast$ parameters)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/02-\/16) }
+
+\doxysubsection*{I\+Agora\+Rtc\+Engine\+Ex\+S.\+h }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Ex\+S\+::set\+Parameters\+Ex(const Rtc\+Connection\+S\& connection\+S, const char$\ast$ parameters)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/02-\/17) }
+
+\mbox{[}F\+E\+AT\mbox{]} C\+S\+D-\/53336\+: Screen(\+Windows) info include source\+Display\+Id
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}} Screen\+Capture\+Source\+Info add source\+Display\+Id
+\begin{DoxyItemize}
+\item view\+\_\+t source\+Display\+Id
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/02-\/16) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified}}
+\begin{DoxyItemize}
+\item Add \textquotesingle{}Rectangle position\textquotesingle{} to struct Screen\+Capture\+Source\+Info
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/02-\/02) }
+
+remove past addition by mistake \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Deleted}}
+\begin{DoxyItemize}
+\item int enable\+Wireless\+Accelerate(bool enabled)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/04-\/03) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Deleted}}
+\begin{DoxyItemize}
+\item virtual int set\+Video\+Profile\+Ex(int width, int height, int frame\+Rate, int bitrate) = 0;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/02-\/01) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item struct Rtc\+Engine\+Context add auto\+Register\+Agora\+Extensions.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/01-\/17) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item add\+Video\+Frame\+Renderer
+\item remove\+Video\+Frame\+Renderer
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/02-\/14) }
+
+Support set video application scenarios
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Video\+Qo\+E\+Preference(\+V\+I\+D\+E\+O\+\_\+\+Q\+O\+E\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+Y\+P\+E qoe\+Preference)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/01-\/24) }
+
+Support set video application scenarios
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Video\+Scenario(\+V\+I\+D\+E\+O\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O scenario\+Type)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/1-\/31) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item create\+Local\+Media\+Recorder
+\item create\+Remote\+Media\+Recorder
+\item destroy\+Media\+Recorder
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2023-\/01-\/05) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item Refine description of register\+Extension \& enable\+Extension
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/12-\/26) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item P\+R\+O\+X\+Y\+\_\+\+T\+Y\+P\+E\+\_\+\+H\+T\+TP
+\item P\+R\+O\+X\+Y\+\_\+\+T\+Y\+P\+E\+\_\+\+H\+T\+T\+PS
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/12-\/1) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item adjust\+Recording\+Signal\+Volume\+Ex
+\item mute\+Recording\+Signal\+Ex
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/01-\/18) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item virtual int start\+Or\+Update\+Channel\+Media\+Relay(const Channel\+Media\+Relay\+Configuration\& configuration) {\bfseries{Modified\+:}}
+\item Deprecated virtual int start\+Channel\+Media\+Relay(const Channel\+Media\+Relay\+Configuration\& configuration)
+\item Deprecated virtual int update\+Channel\+Media\+Relay(const Channel\+Media\+Relay\+Configuration\& configuration)
+\item Deprecated virtual void on\+Channel\+Media\+Relay\+Event(int code)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/05-\/18) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Deprecated virtual void on\+Channel\+Media\+Relay\+Event(int code)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/02-\/22) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item supplemental on\+Channel\+Media\+Relay\+Event comments
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item virtual int start\+Or\+Update\+Channel\+Media\+Relay\+Ex(const Channel\+Media\+Relay\+Configuration\& configuration, const Rtc\+Connection\& connection) {\bfseries{Modified\+:}}
+\item Deprecated virtual int start\+Channel\+Media\+Relay\+Ex(const Channel\+Media\+Relay\+Configuration\& configuration, const Rtc\+Connection\& connection)
+\item Deprecated virtual int update\+Channel\+Media\+Relay\+Ex(const Channel\+Media\+Relay\+Configuration\& configuration, const Rtc\+Connection\& connection)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/10-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Deprecated virtual int start\+Channel\+Media\+Relay(const Channel\+Media\+Relay\+Configuration\& configuration)
+\item Deprecated virtual int update\+Channel\+Media\+Relay(const Channel\+Media\+Relay\+Configuration\& configuration)
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Deprecated virtual int start\+Channel\+Media\+Relay\+Ex(const Channel\+Media\+Relay\+Configuration\& configuration, const Rtc\+Connection\& connection)
+\item Deprecated virtual int update\+Channel\+Media\+Relay\+Ex(const Channel\+Media\+Relay\+Configuration\& configuration, const Rtc\+Connection\& connection)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/12-\/05) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Optiomize the Note of start\+Direct\+Cdn\+Streaming again
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/11-\/28) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Optiomize the Note of start\+Direct\+Cdn\+Streaming
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/09-\/28) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add Set\+A\+I\+N\+S\+Mode and annotation.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/12-\/08) }
+
+\mbox{[}F\+E\+AT\mbox{]} N\+M\+S-\/9295\+: provide A\+P\+Is for setting first video frame starting tick \& for optimizing first frame time consumption
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Video\+Rendering\+Tracing\+Result(uid\+\_\+t uid, M\+E\+D\+I\+A\+\_\+\+T\+R\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T current\+Event, Video\+Rendering\+Tracing\+Info tracing\+Info)
+\item I\+Rtc\+Engine\+::start\+Media\+Rendering\+Tracing()
+\item I\+Rtc\+Engine\+::enable\+Instant\+Media\+Rendering()
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Video\+Rendering\+Tracing\+Result(const Rtc\+Connection\& connection, uid\+\_\+t uid, M\+E\+D\+I\+A\+\_\+\+T\+R\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T current\+Event, Video\+Rendering\+Tracing\+Info tracing\+Info)
+\item I\+Rtc\+Engine\+Ex\+::start\+Media\+Rendering\+Tracing\+Ex(const Rtc\+Connection\& connection)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/10-\/31) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Update comments for get\+Screen\+Capture\+Sources.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/11-\/25) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item Add set\+Parameters.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/10-\/19) }
+
+Delete on\+Media\+Device\+Changed, use on\+Video\+Device\+State\+Changed instead it. \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted}}
+\begin{DoxyItemize}
+\item on\+Media\+Device\+Changed
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/10-\/18) }
+
+Delete fields in Remote\+Video\+Stats. \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted}}
+\begin{DoxyItemize}
+\item super\+Resolution\+Type
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/10-\/18) }
+
+Delete enable\+Remote\+Super\+Resolution api. \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted}}
+\begin{DoxyItemize}
+\item enable\+Remote\+Super\+Resolution
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/10-\/17) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item register\+Extension
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/10-\/12) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item start\+Primary\+Camera\+Capture change to start\+Camera\+Capture
+\item stop\+Primary\+Camera\+Capture change to stop\+Camera\+Capture
+\item start\+Primary\+Screen\+Capture change to start\+Screen\+Capture
+\item stop\+Secondary\+Screen\+Capture change to stop\+Screen\+Capture
+\end{DoxyItemize}
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Deleted start\+Secondary\+Camera\+Capture
+\item Deleted stop\+Secondary\+Camera\+Capture
+\item Deleted start\+Secondary\+Screen\+Capture
+\item Deleted stop\+Secondary\+Screen\+Capture
+\end{DoxyItemize}
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add on\+Local\+Video\+Transcoder\+Error
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/09-\/22) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Remove on\+Api\+Call\+Executed from I\+Rtc\+Engine\+Event\+Handler
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/09-\/21) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Modified}}
+\begin{DoxyItemize}
+\item Updated code comments
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/12-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Fix return value of start\+Rtmp\+Stream\+With\+Transcoding/start\+Rtmp\+Stream\+Without\+Transcoding
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/09-\/28) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item query\+Codec\+Capability()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/01-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item virtual int query\+Screen\+Capture\+Capability()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/01-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item virtual int set\+Screen\+Capture\+Scenario(\+S\+C\+R\+E\+E\+N\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+P\+E screen\+Scenario)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/11-\/01) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item virtual int set\+Camera\+Stabilization\+Mode(\+C\+A\+M\+E\+R\+A\+\_\+\+S\+T\+A\+B\+I\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+M\+O\+D\+E mode)
+\item virtual bool is\+Center\+Stage\+Supported()
+\item virtual int enable\+Center\+Stage(bool enabled)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/09-\/14) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item virtual int enable\+Multi\+Camera(bool enabled, const Camera\+Capturer\+Configuration\& config)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/10-\/18) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} remove\+Inject\+Stream\+Url add\+Inject\+Stream\+Url
+
+\doxysection*{A\+PI (2022-\/09-\/12) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+: adding memver variable}}
+\begin{DoxyItemize}
+\item add hw\+Encoder\+Accelerating in Local\+Video\+Stats
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/08-\/24) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item add parameter \textquotesingle{}const Client\+Role\+Options\& new\+Role\+Options\textquotesingle{} for on\+Client\+Role\+Changed()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/09-\/06) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Deleted clear\+Video\+Watermark()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/09-\/04) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Ex\+::adjust\+User\+Playback\+Signal\+Volume\+Ex()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/23) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item add mos\+Value in Remote\+Video\+Stats
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/23) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item remove the i\+OS and Android limitation for in ear monitor
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/09-\/21) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Ex\+::mute\+Local\+Audio\+Stream\+Ex
+\item I\+Rtc\+Engine\+Ex\+::mute\+Local\+Video\+Stream\+Ex
+\item I\+Rtc\+Engine\+Ex\+::mute\+All\+Remote\+Audio\+Streams\+Ex
+\item I\+Rtc\+Engine\+Ex\+::mute\+All\+Remote\+Video\+Streams\+Ex
+\item I\+Rtc\+Engine\+Ex\+::start\+Rtmp\+Stream\+Without\+Transcoding\+Ex
+\item I\+Rtc\+Engine\+Ex\+::start\+Rtmp\+Stream\+With\+Transcoding\+Ex
+\item I\+Rtc\+Engine\+Ex\+::update\+Rtmp\+Transcoding\+Ex
+\item I\+Rtc\+Engine\+Ex\+::stop\+Rtmp\+Stream\+Ex
+\item I\+Rtc\+Engine\+Ex\+::start\+Channel\+Media\+Relay\+Ex
+\item I\+Rtc\+Engine\+Ex\+::update\+Channel\+Media\+Relay\+Ex
+\item I\+Rtc\+Engine\+Ex\+::pause\+All\+Channel\+Media\+Relay\+Ex
+\item I\+Rtc\+Engine\+Ex\+::resume\+All\+Channel\+Media\+Relay\+Ex
+\item I\+Rtc\+Engine\+Ex\+::stop\+Channel\+Media\+Relay\+Ex
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/11) }
+
+Add audio effect interfaces \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Headphone\+E\+Q\+Preset(\+H\+E\+A\+D\+P\+H\+O\+N\+E\+\_\+\+E\+Q\+U\+A\+L\+I\+Z\+E\+R\+\_\+\+P\+R\+E\+S\+E\+T preset)
+\item int set\+Headphone\+E\+Q\+Parameters(float low\+\_\+gain, float high\+\_\+gain)
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item modify annotation in set\+Headphone\+E\+Q\+Parameters api
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/09-\/15) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item int set\+Headphone\+E\+Q\+Parameters(int low\+Gain, int high\+Gain)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/11) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item add V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE in on\+Video\+Size\+Changed
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item add V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE in on\+Video\+Size\+Changed
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/8-\/10) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item delete push\+Reverse\+Audio\+Frame()
+\item delete Audio\+Track\+Config struct
+\item delete Channel\+Media\+Options\+::publish\+Direct\+Custom\+Audio\+Track
+\item delete Channel\+Media\+Options\+::publish\+Custom\+Audio\+Track\+Enable\+Aec
+\item delete Channel\+Media\+Options\+::publish\+Custom\+Audio\+Track\+Aec
+\item delete enable\+Echo\+Cancellation\+External(bool enabled, int audio\+Source\+Delay)
+\item delete start\+Primary\+Custom\+Audio\+Track(const Audio\+Track\+Config\& config)
+\item delete stop\+Primary\+Custom\+Audio\+Track()
+\item delete start\+Secondary\+Custom\+Audio\+Track(const Audio\+Track\+Config\& config)
+\item delete stop\+Secondary\+Custom\+Audio\+Track()
+\end{DoxyItemize}
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item modify Channel\+Media\+Options\+::publish\+Custom\+Audio\+Source\+Id to Channel\+Media\+Options\+::publish\+Custom\+Audio\+Track\+Id
+\item modify enable\+Custom\+Audio\+Local\+Playback(int source\+Id, bool enabled) to enable\+Custom\+Audio\+Local\+Playback(track\+\_\+id\+\_\+t track\+Id, bool enabled
+\item modify adjust\+Custom\+Audio\+Publish\+Volume(int32\+\_\+t source\+Id, int volume) to adjust\+Custom\+Audio\+Publish\+Volume(track\+\_\+id\+\_\+t track\+Id, int volume)
+\item modify adjust\+Custom\+Audio\+Playout\+Volume(int32\+\_\+t source\+Id, int volume) to adjust\+Custom\+Audio\+Playout\+Volume(track\+\_\+id\+\_\+t track\+Id, int volume)
+\item modify push\+Audio\+Frame(M\+E\+D\+I\+A\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE type, I\+Audio\+Frame\+Observer\+::\+Audio\+Frame$\ast$ frame, bool wrap = false, rtc\+::track\+\_\+id\+\_\+t track\+Id = 0) to push\+Audio\+Frame(I\+Audio\+Frame\+Observer\+::\+Audio\+Frame$\ast$ frame, rtc\+::track\+\_\+id\+\_\+t track\+Id = 0)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add start\+Screen\+Capture for i\+OS screen capture
+\item Add stop\+Screen\+Capture for i\+OS screen capture
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/06-\/09) }
+
+\doxysubsection*{rtc\+\_\+engine\+\_\+impl.\+h }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int get\+Effect\+Duration(const char$\ast$ file\+Path)
+\item int set\+Effect\+Position(int sound\+Id, int pos)
+\item int get\+Effect\+Current\+Position(int sound\+Id) override
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/07-\/20) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item leave\+Channel\+Ex(const Rtc\+Connection\& connection, const Leave\+Channel\+Options\& options)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/16) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}} mark enum R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+E\+S\+T\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+R\+E\+F\+U\+S\+ED as Deprecated
+
+\doxysection*{A\+PI (2022-\/06-\/22) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item comments about on\+Error()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Deleted on\+Video\+Source\+Frame\+Size\+Changed
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Deleted on\+Video\+Source\+Frame\+Size\+Changed
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Deprecated void on\+First\+Local\+Video\+Frame(const Rtc\+Connection\& connection, int width, int height, int elapsed)
+\item Deprecated void on\+First\+Local\+Video\+Frame\+Published(const Rtc\+Connection\& connection, int elapsed)
+\item Deprecated void on\+Local\+Video\+State\+Changed(const Rtc\+Connection\& connection, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE state, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+A\+S\+ON error\+Code)
+\item Deprecated void on\+Local\+Video\+Stats(const Rtc\+Connection\& connection, const Local\+Video\+Stats\& stats)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/07-\/12) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item set \char`\"{}unload\+\_\+after\+\_\+use\char`\"{} false by default in load\+Extension\+Provider
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/07-\/04) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item add \char`\"{}unload\+\_\+after\+\_\+use\char`\"{} boolean flag in load\+Extension\+Provider
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/06-\/30) }
+
+\doxysubsection*{I\+Agora\+Rtc\+Engine.\+h.\+h }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add source type argument for local video related callbacks in I\+Rtc\+Engine\+Event\+Handler
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/06-\/22) }
+
+\doxysubsection*{I\+Agora\+Media\+Engine.\+h.\+h }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add enum A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+D\+U\+A\+L\+\_\+\+M\+O\+N\+O\+\_\+\+M\+O\+DE
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item virtual int set\+Audio\+Mixing\+Dual\+Mono\+Mode(media\+::\+A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+D\+U\+A\+L\+\_\+\+M\+O\+N\+O\+\_\+\+M\+O\+D\+E mode)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/06-\/19) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Mixing\+Position\+Changed
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/07-\/05) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item delete the argument source\+Type of enable\+Dual\+Stream\+Mode and set\+Dual\+Stream\+Mode
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/07-\/05) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item delete the argument source\+Type of enable\+Dual\+Stream\+Mode\+Ex and set\+Dual\+Stream\+Mode\+Ex
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/15) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item void on\+License\+Validation\+Failure(\+L\+I\+C\+E\+N\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+P\+E error)
+\item Add License in struct Rtc\+Engine\+Context
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}} void on\+License\+Validation\+Failure(const Rtc\+Connection\& connection, L\+I\+C\+E\+N\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+P\+E reason)
+
+\doxysection*{A\+PI (2022-\/05-\/27) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item modify annotation in Screen\+Capture api
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/30) }
+
+\doxysubsection*{rtc\+\_\+engine\+\_\+impl.\+h }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Local\+Voice\+Formant(double formant\+Ratio)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/06-\/16) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+: adding memver variable}}
+\begin{DoxyItemize}
+\item add dual\+Stream\+Enabled in Local\+Video\+Stats
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/06-\/10) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+
+{\bfseries{Modified\+:}} Add load\+Extension\+Provider for Android
+
+\doxysection*{A\+PI (2022-\/06-\/08) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{Modified\+:}} Update comments
+\begin{DoxyItemize}
+\item Screen\+Capture\+Configuration
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/05-\/27) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+: remove channel param}}
+\begin{DoxyItemize}
+\item remove channel from on\+Snapshot\+Taken
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item remote\+Uid -\/$>$ uid from take\+Snapshot
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/05-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} add source\+Type for set\+Advanced\+Audio\+Options \doxysection*{A\+PI (2022-\/05-\/31) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Dual\+Stream\+Mode(\+S\+I\+M\+U\+L\+C\+A\+S\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+D\+E mode)
+\item int set\+Dual\+Stream\+Mode(\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+P\+E source\+Type, S\+I\+M\+U\+L\+C\+A\+S\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+D\+E mode)
+\item set\+Dual\+Stream\+Mode(V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source\+Type, S\+I\+M\+U\+L\+C\+A\+S\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE mode, const Simulcast\+Stream\+Config\& stream\+Config) \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+\end{DoxyItemize}
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Dual\+Stream\+Mode\+Ex(V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source\+Type, S\+I\+M\+U\+L\+C\+A\+S\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE mode, const Simulcast\+Stream\+Config\& stream\+Config, const Rtc\+Connection\& connection)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/05-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} add remote\+Uid param
+\begin{DoxyItemize}
+\item int take\+Snapshot(uid\+\_\+t remote\+Uid, const char$\ast$ file\+Path) add enabled param
+\item int enable\+Content\+Inspect(bool enabled, const media\+::\+Content\+Inspect\+Config \&config)
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}} add remote\+Uid param
+\begin{DoxyItemize}
+\item void on\+Snapshot\+Taken(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, const char$\ast$ file\+Path, int width, int height, int err\+Code)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/05-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int start\+Screen\+Capture\+By\+Display\+Id(uint32\+\_\+t display\+Id, const Rectangle\& region\+Rect, const Screen\+Capture\+Parameters\& capture\+Params);
+\item int set\+Screen\+Capture\+Scenario(\+S\+C\+R\+E\+E\+N\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+P\+E screen\+Scenario);
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/05-\/06) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item void on\+Wl\+Acc\+Message(\+W\+L\+A\+C\+C\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+A\+S\+O\+N reason, W\+L\+A\+C\+C\+\_\+\+S\+U\+G\+G\+E\+S\+T\+\_\+\+A\+C\+T\+I\+O\+N action, const char$\ast$ wl\+Acc\+Msg)
+\item void on\+Wl\+Acc\+Stats(\+Wl\+Acc\+Stats current\+Stats, Wl\+Acc\+Stats average\+Stats)
+\item int enable\+Wireless\+Accelerate(bool enabled)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/05-\/05) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add \mbox{\hyperlink{classagora_1_1_optional}{Optional$<$bool$>$}} publish\+Screen\+Capture\+Video to Channel\+Media\+Options on Android and I\+OS
+\item add \mbox{\hyperlink{classagora_1_1_optional}{Optional$<$bool$>$}} publish\+Screen\+Capture\+Audio to Channel\+Media\+Options on Android and I\+OS {\bfseries{Modified\+:}}
+\item exclude Channel\+Media\+Options\+::publish\+Secondary\+Screen\+Track from Android and i\+OS
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/05-\/15) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add \mbox{\hyperlink{classagora_1_1_optional}{Optional$<$bool$>$}} enable\+Microphone
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/06-\/29) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item int start\+Audio\+Mixing(const char$\ast$ file\+Path, bool loopback, bool replace, int cycle, int start\+Pos) to int start\+Audio\+Mixing(const char$\ast$ file\+Path, bool loopback, int cycle, int start\+Pos)
+\item int start\+Audio\+Mixing(const char$\ast$ file\+Path, bool loopback, bool replace, int cycle) to int start\+Audio\+Mixing(const char$\ast$ file\+Path, bool loopback, bool replace, int cycle)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/04-\/28) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Delete\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Warning(int warn, const char$\ast$ msg)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/4-\/27) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item C\+A\+P\+T\+U\+R\+E\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+Y\+PE capture\+Brightness\+Level in Local\+Video\+Stats
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/04-\/24) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Channel\+Media\+Options\+::is\+Interactive\+Audience
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/08-\/17) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Change\+:}}
+\begin{DoxyItemize}
+\item Change some annotation of Channel\+Media\+Options、\+Direct\+Cdn\+Streaming\+Media\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/04-\/22) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} add apis for screen capture for mobile platform
+\begin{DoxyItemize}
+\item int start\+Screen\+Capture(const Screen\+Capture\+Parameters2\& capture\+Params)
+\item int update\+Screen\+Capture(const Screen\+Capture\+Parameters2\& capture\+Params)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/04-\/21) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item bool stop\+Preview for Leave\+Channel\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/04-\/21) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item change register\+Video\+Encoded\+Image\+Receiver(\+I\+Video\+Encoded\+Image\+Receiver$\ast$ video\+Receiver) to register\+Video\+Encoded\+Frame\+Observer(agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer$\ast$ encoded\+Observer)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/02-\/18) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item struct Channel\+Media\+Options\+::custom\+Video\+Track\+Id
+\item video\+\_\+track\+\_\+id\+\_\+t create\+Custom\+Video\+Track() = 0;
+\item video\+\_\+track\+\_\+id\+\_\+t create\+Custom\+Encoded\+Video\+Track() = 0;
+\item int destroy\+Custom\+Video\+Track(video\+\_\+track\+\_\+id\+\_\+t video\+\_\+track\+\_\+id) = 0; \doxysubsection*{-\/ int destroy\+Custom\+Encoded\+Video\+Track(video\+\_\+track\+\_\+id\+\_\+t video\+\_\+track\+\_\+id) = 0; }
+\end{DoxyItemize}
+
+{\bfseries{Remove\+:}}
+\begin{DoxyItemize}
+\item int push\+Direct\+Cdn\+Streaming\+Custom\+Video\+Frame(media\+::base\+::\+External\+Video\+Frame$\ast$ frame) = 0;
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item change param \char`\"{}const rtc\+::\+Rtc\+Connection\char`\"{} in push\+Video\+Frame to \char`\"{}unsigned int\char`\"{}
+\item change param \char`\"{}const rtc\+::\+Rtc\+Connection\char`\"{} in push\+Encoded\+Video\+Image to \char`\"{}unsigned int\char`\"{}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/04-\/17) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add \mbox{\hyperlink{classagora_1_1_optional}{Optional$<$bool$>$}} is\+Audio\+Filterable to Channel\+Media\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/04-\/14) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} replace publish\+Audio\+Track with publish\+Microphone\+Track
+
+\doxysection*{A\+PI (2022-\/04-\/15) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item set Rtc\+Engine\+Context.\+channel\+Profile default to C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+L\+I\+V\+E\+\_\+\+B\+R\+O\+A\+D\+C\+A\+S\+T\+I\+N\+G\+\_\+2.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/05-\/14) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Image\+Track\+Options\+::mirror\+Mode
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/03-\/31) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int64\+\_\+t get\+Current\+Monotonic\+Time\+In\+Ms()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/04-\/13) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}} Remove A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+H\+I\+G\+H\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON in comment
+
+\doxysection*{A\+PI (2022-\/04-\/13) }
+
+\mbox{[}N\+M\+S-\/1630\mbox{]}\+: Add start echo test with config.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int start\+Echo\+Test(const Echo\+Test\+Configuration\& config);
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/04-\/21) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+Update Camera\+Capturer\+Configuration {\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily bool follow\+Encode\+Dimension\+Ratio}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/04-\/11) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int enable\+Video\+Image\+Source(bool enable, const Image\+Track\+Options\& options)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/04-\/11) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int select\+Audio\+Track(int index)
+\item int get\+Audio\+Track\+Count()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/05-\/13) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+::enable\+Extension
+\item I\+Rtc\+Engine\+::set\+Extension\+Property
+\item I\+Rtc\+Engine\+::get\+Extension\+Property
+\item struct Extension\+Info
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/04-\/03) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item struct Advanced\+Audio\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/04-\/21) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Changes A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE to A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/03-\/31) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item int switch\+Channel(const char$\ast$ token, const char$\ast$ channel)
+\end{DoxyItemize}
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item virtual int set\+Lowlight\+Enhance\+Options
+\item virtual int set\+Video\+Denoiser\+Options
+\item virtual int set\+Color\+Enhance\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/11-\/27) }
+
+modify set\+External\+Video\+Source
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Modifed\+:}}
+\begin{DoxyItemize}
+\item add one more parameter opt for set\+External\+Video\+Source.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/03-\/05) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Q\+U\+A\+L\+I\+T\+Y\+\_\+\+A\+D\+A\+P\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+I\+ON quality\+\_\+adapt\+\_\+indication
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/03-\/04) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+: add device\+Name param}} virtual int enable\+Loopback\+Recording(bool enabled, const char$\ast$ device\+Name = N\+U\+LL)
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+: add device\+Name param}} virtual int enable\+Loopback\+Recording\+Ex(const Rtc\+Connection\& connection, bool enabled, const char$\ast$ device\+Name = N\+U\+LL)
+
+\doxysection*{A\+PI (2022-\/02-\/27) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Modify arguments name
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}} Modify arguments name
+
+\doxysection*{A\+PI (2022-\/03-\/04) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add fields in Remote\+Video\+Stats
+\begin{DoxyItemize}
+\item super\+Resolution\+Type
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/02-\/27) }
+
+\doxysubsection*{multiple head files }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item fix param warnings on xcode
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/02-\/14) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/02-\/11) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item virtual int get\+User\+Info\+By\+User\+Account\+Ex(const char$\ast$, rtc\+::\+User\+Info$\ast$, const Rtc\+Connection\&) = 0;
+\item virtual int get\+User\+Info\+By\+Uid\+Ex(uid\+\_\+t, rtc\+::\+User\+Info$\ast$, const Rtc\+Connection\&) = 0;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/02-\/10) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Delete the last two parameters of I\+Rtc\+Engine\+::get\+User\+Info\+By\+User\+Account
+\item Delete the last two parameters of I\+Rtc\+Engine\+::get\+User\+Info\+By\+Uid
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/02-\/25) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+$\ast$$\ast$add\+: I\+Video\+Device\+Manager $\ast$$\ast$
+\begin{DoxyItemize}
+\item virtual int number\+Of\+Capabilities(const char$\ast$ device\+Id\+U\+T\+F8) = 0;
+\item virtual int get\+Capability(const char$\ast$ device\+Id\+U\+T\+F8, const uint32\+\_\+t device\+Capability\+Number, Video\+Format\& capability) = 0;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/02-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+$\ast$$\ast$add\+: set\+Remote\+Video\+Subscription\+Options $\ast$$\ast$
+\begin{DoxyItemize}
+\item virtual int set\+Remote\+Video\+Subscription\+Options(uid\+\_\+t uid, const Video\+Subscription\+Options \&options) = 0;
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+$\ast$$\ast$add\+: set\+Remote\+Video\+Subscription\+Options\+Ex $\ast$$\ast$
+\begin{DoxyItemize}
+\item virtual int set\+Remote\+Video\+Subscription\+Options\+Ex(uid\+\_\+t uid, const Video\+Subscription\+Options\& options, const Rtc\+Connection\& connection) = 0;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/01-\/27) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item change Direct\+Cdn\+Stream\+Stats to Direct\+Cdn\+Streaming\+Stats
+\item on\+Direct\+Cdn\+Streaming\+State\+Changed
+\item on\+Direct\+Cdn\+Streaming\+Stats
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/09-\/24) }
+
+Add params for enable\+Virtual\+Background
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int enable\+Virtual\+Background(bool enabled, Virtual\+Background\+Source background\+Source, Segmentation\+Property seg\+Property)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/01-\/26) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item delete bool stop\+Preview from Leave\+Channel\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/01-\/25) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item struct Audio\+Options\+Advanced
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/01-\/20) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item virtual int set\+External\+Audio\+Source(bool enabled, int sample\+Rate, int channels, int source\+Number = 1, bool local\+Playback = false, bool publish = true) = 0;
+\item virtual int set\+External\+Audio\+Sink(int sample\+Rate, int channels) = 0;
+\item virtual int pull\+Audio\+Frame(media\+::\+I\+Audio\+Frame\+Observer\+::\+Audio\+Frame$\ast$ frame) = 0;
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} virtual int set\+External\+Audio\+Sink(int sample\+Rate, int channels) = 0;
+
+\doxysection*{A\+PI (2022-\/01-\/20) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+A\+V\+Sync\+Source(const char$\ast$ channel\+Id, uid\+\_\+t uid)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/04-\/01) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+$\ast$$\ast$\+Modify\+:
+\begin{DoxyItemize}
+\item int set\+External\+Audio\+Sink(int sample\+Rate, int channels) to int set\+External\+Audio\+Sink(bool enabled, int sample\+Rate, int channels)
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Rtc\+Engine\+Context.\+enable\+Audio\+Device
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/01-\/12) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add \mbox{\hyperlink{classagora_1_1_optional}{Optional$<$bool$>$}} start\+Preview to Channel\+Media\+Options
+\item add bool stop\+Preview to Leave\+Channel\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/01-\/29) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+$\ast$$\ast$add\+: enable\+Audio\+Volume\+Indication\+Ex $\ast$$\ast$
+\begin{DoxyItemize}
+\item virtual int enable\+Audio\+Volume\+Indication\+Ex(int interval, int smooth, bool report\+Vad, const Rtc\+Connection\& connection) = 0;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/01-\/10) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+$\ast$$\ast$\+Modify\+: volume range $\ast$$\ast$
+\begin{DoxyItemize}
+\item virtual int adjust\+User\+Playback\+Signal\+Volume(unsigned int uid, int volume) = 0;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/01-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item struct S\+I\+ZE for M\+AC
+\item struct Thumb\+Image\+Buffer
+\item enum Screen\+Capture\+Source\+Type
+\item struct Screen\+Capture\+Source\+Info
+\item class I\+Screen\+Capture\+Source\+List
+\item virtual I\+Screen\+Capture\+Source\+List$\ast$ get\+Screen\+Capture\+Sources(const S\+I\+Z\+E\& thumb\+Size, const S\+I\+Z\+E\& icon\+Size, const bool include\+Screen)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/01-\/05) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item change default Rtc\+Engine\+Context\+::audio\+Scenario from \textquotesingle{}A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+H\+I\+G\+H\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON\textquotesingle{} to \textquotesingle{}A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+D\+E\+F\+A\+U\+LT\textquotesingle{}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/01-\/05) }
+
+change api comment
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item int enable\+Virtual\+Background(bool enabled, Virtual\+Background\+Source background\+Source)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/12-\/28) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item virtual int set\+Advanced\+Audio\+Options(media\+::base\+::\+Advanced\+Audio\+Options \&options) = 0;
+\item \doxysection*{A\+PI(2021-\/12-\/27) }
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item virtual int set\+Local\+Voice\+Reverb\+Preset(\+A\+U\+D\+I\+O\+\_\+\+R\+E\+V\+E\+R\+B\+\_\+\+P\+R\+E\+S\+E\+T reverb\+Preset)
+\item virtual int set\+Local\+Voice\+Changer(\+V\+O\+I\+C\+E\+\_\+\+C\+H\+A\+N\+G\+E\+R\+\_\+\+P\+R\+E\+S\+E\+T voice\+Changer)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/12-\/20) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add bool use\+External\+Egl\+Context for Rtc\+Engine\+Context
+
+\doxysection*{A\+PI(2022-\/04-\/19) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+::set\+Subscribe\+Audio\+Blacklist
+\item I\+Rtc\+Engine\+::set\+Subscribe\+Audio\+Whitelist
+\item I\+Rtc\+Engine\+::set\+Subscribe\+Video\+Blacklist
+\item I\+Rtc\+Engine\+::set\+Subscribe\+Audio\+Blacklist
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Ex\+::set\+Subscribe\+Audio\+Blacklist\+Ex
+\item I\+Rtc\+Engine\+Ex\+::set\+Subscribe\+Audio\+Whitelist\+Ex
+\item I\+Rtc\+Engine\+Ex\+::set\+Subscribe\+Video\+Blacklist\+Ex
+\item I\+Rtc\+Engine\+Ex\+::set\+Subscribe\+Audio\+Blacklist\+Ex
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/11-\/17) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int get\+Audio\+Device\+Info(\+Device\+Info\& device\+Info)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/12-\/23) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int int enable\+Spatial\+Audio(bool enabled)
+\item int set\+Remote\+User\+Spatial\+Audio\+Params(uid\+\_\+t uid, const agora\+::\+Spatial\+Audio\+Params\& params)
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Remote\+User\+Spatial\+Audio\+Params\+Ex(uid\+\_\+t uid, const agora\+::\+Spatial\+Audio\+Params\& param, const Rtc\+Connection\& connection)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/12-\/10) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item virtual void on\+Client\+Role\+Change\+Failed(\+C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N reason, C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+P\+E current\+Role)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/12-\/03) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Add callback function on\+User\+State\+Changed() and enum R\+E\+M\+O\+T\+E\+\_\+\+U\+S\+E\+R\+\_\+\+S\+T\+A\+TE.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/12-\/1) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int start\+Rtmp\+Stream\+Without\+Transcoding(const char$\ast$ url)
+\item int start\+Rtmp\+Stream\+With\+Transcoding(const char$\ast$ url, const Live\+Transcoding\& transcoding)
+\item int update\+Rtmp\+Transcoding(const Live\+Transcoding\& transcoding)
+\item int stop\+Rtmp\+Stream(const char$\ast$ url)
+\item void on\+Rtmp\+Streaming\+Event(const char$\ast$ url, R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+E\+V\+E\+N\+T event\+Code)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/11-\/24) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modifed\+:}}
+\begin{DoxyItemize}
+\item Replace tab with spaces
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/11-\/23) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Direct\+External\+Audio\+Source(bool enable, bool local\+Playback = false)
+\item int push\+Direct\+Audio\+Frame(media\+::\+I\+Audio\+Frame\+Observer\+::\+Audio\+Frame$\ast$ frame)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/12-\/01) }
+
+Add publish\+Media\+Player\+Audio\+Track and publish\+Media\+Player\+Id field in Direct\+Cdn\+Streaming\+Media\+Options.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add {\ttfamily publish\+Media\+Player\+Id} and {\ttfamily publish\+Media\+Player\+Audio\+Track} field for struct {\ttfamily Direct\+Cdn\+Streaming\+Media\+Options}
+\begin{DoxyItemize}
+\item struct Direct\+Cdn\+Streaming\+Media\+Options\+::publish\+Media\+Player\+Audio\+Track
+\item struct Direct\+Cdn\+Streaming\+Media\+Options\+::publish\+Media\+Player\+Id
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/12-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add\+Publish\+Stream\+Url\+Ex
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/11-\/18) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item provider\+\_\+name -\/$>$ provider
+\item ext\+\_\+name -\/$>$ extension
+\item json\+\_\+value -\/$>$ value
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item remote\+Uid -\/$>$ uid
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/11-\/23) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add filed in Local\+Video\+Stats
+\begin{DoxyItemize}
+\item {\ttfamily int capture\+Frame\+Rate}
+\item {\ttfamily int regulated\+Capture\+Frame\+Rate}
+\item {\ttfamily int capture\+Frame\+Width}
+\item {\ttfamily int capture\+Frame\+Height}
+\item {\ttfamily int regulated\+Capture\+Frame\+Width}
+\item {\ttfamily int regulated\+Capture\+Frame\+Height}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/11-\/17) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modifed\+:}} add macro to switch parameters on different platform
+\begin{DoxyItemize}
+\item limit C\+A\+M\+E\+R\+A\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON camera\+Direction only on Android and I\+OS
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Audio\+Session\+Operation\+Restriction(\+A\+U\+D\+I\+O\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+R\+E\+S\+T\+R\+I\+C\+T\+I\+O\+N restriction)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/11-\/15) }
+
+Add enable\+Remote\+Super\+Resolution for Super Resolution
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int enable\+Remote\+Super\+Resolution(uid\+\_\+t user\+Id, bool enable) = 0;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/11-\/03) }
+
+\doxysubsection*{rtc\+\_\+engine\+\_\+i.\+h }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item virtual const char$\ast$ get\+Source\+Version() const = 0;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/03-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Local\+Video\+Stats.\+tx\+Packet\+Loss\+Rate
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2022-\/04-\/20) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+::set\+Ear\+Monitoring\+Audio\+Frame\+Parameters()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/11-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Audio\+Session\+Operation\+Restriction(\+A\+U\+D\+I\+O\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+R\+E\+S\+T\+R\+I\+C\+T\+I\+O\+N restriction)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/08-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int take\+Snapshot(media\+::\+Snap\+Shot\+Config \&config, media\+::\+I\+Snapshot\+Callback$\ast$ callback)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/08-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int Set\+Content\+Inspect(media\+::\+Content\+Inspect\+Config \&config) \doxysection*{A\+PI(2021-\/08-\/30) }
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int Set\+Content\+Inspect(media\+::\+Content\+Inspect\+Config \&config)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/10-\/27) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int adjust\+Custom\+Audio\+Publish\+Volume(int32\+\_\+t source\+Id, int volume)
+\item int adjust\+Custom\+Audio\+Playout\+Volume(int32\+\_\+t source\+Id, int volume)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/10-\/20) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+$\ast$\+Add\+:$\ast$$\ast$
+\begin{DoxyItemize}
+\item Add enable\+Echo\+Cancellation\+External() for I\+Rtc\+Engine
+\item Add publish\+Custom\+Audio\+Track\+Aec for Channel\+Media\+Options
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+$\ast$\+Add\+:$\ast$$\ast$
+\begin{DoxyItemize}
+\item Add push\+Capture\+Audio\+Frame()
+\item Add push\+Reverse\+Audio\+Frame()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/10-\/19) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+$\ast$\+Modified\+:$\ast$$\ast$
+\begin{DoxyItemize}
+\item virtual int start\+Audio\+Recording(const Audio\+Recording\+Configuration\& config) = 0;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/10-\/18) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} void on\+User\+Mute\+Audio(uid\+\_\+t uid, bool muted)
+
+\doxysection*{A\+PI(2021-\/10-\/15) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add int enable\+Dual\+Stream\+Mode\+Ex(V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source\+Type, bool enabled, const Simulcast\+Stream\+Config\& stream\+Config, const Rtc\+Connection\& connection)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/10-\/12) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+$\ast$\+Modified\+:$\ast$$\ast$
+\begin{DoxyItemize}
+\item format int set\+Local\+Voice\+Changer(\+V\+O\+I\+C\+E\+\_\+\+C\+H\+A\+N\+G\+E\+R\+\_\+\+P\+R\+E\+S\+E\+T voice\+Changer) docs
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/10-\/11) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Update for C++ 98 standard
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/10-\/09) }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item enum D\+I\+R\+E\+C\+T\+\_\+\+C\+D\+N\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+U\+N\+N\+I\+NG
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/08-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int Set\+Content\+Inspect(media\+::\+Content\+Inspect\+Config \&config) \doxysection*{A\+PI(2021-\/08-\/30) }
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} \doxysection*{-\/ int Set\+Content\+Inspect(media\+::\+Content\+Inspect\+Config \&config) }
+
+\doxysubsection*{\mbox{\hyperlink{_n_g_i_agora_rtmp_connection_8h_source}{N\+G\+I\+Agora\+Rtmp\+Connection.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item enum R\+T\+M\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+::\+R\+T\+M\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+\_\+\+B\+A\+D\+\_\+\+N\+A\+ME
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+ $\ast$\+Modified\+:$\ast$$\ast$
+\begin{DoxyItemize}
+\item Add enable\+Built\+In\+Media\+Encryption for Channel\+Media\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/09-\/23) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int enable\+Encryption\+Ex(const Rtc\+Connection\& connection, bool enabled, const Encryption\+Config\& config)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/09-\/03) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+$\ast$\+Modified\+:$\ast$$\ast$
+\begin{DoxyItemize}
+\item change a parameter for set\+External\+Video\+Source
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/09-\/24) }
+
+Add enable\+Virtual\+Background for Virtual Background Setting
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int enable\+Virtual\+Background(bool enabled, Virtual\+Background\+Source background\+Source)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/09-\/03) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+$\ast$\+Modified\+:$\ast$$\ast$
+\begin{DoxyItemize}
+\item add pause\+All\+Channel\+Media\+Relay
+\item add resume\+All\+Channel\+Media\+Relay
+\item add switch\+Channel
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/09-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int start\+Rhythm\+Player(const char$\ast$ sound1, const char$\ast$ sound2, const Agora\+Rhythm\+Player\+Config\& config)
+\item int stop\+Rhythm\+Palyer()
+\item int config\+Rhythm\+Player(\+Agora\+Rhythm\+Player\+Config\& config)
+\item publish\+Rhythm\+Player\+Track for Channel\+Media\+Options
+\item R\+H\+Y\+T\+H\+M\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE
+\item R\+H\+Y\+T\+H\+M\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE
+\item on\+Rhythm\+Player\+State\+Changed for I\+Rtc\+Engine\+Event\+Handler
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/09-\/02) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add thread priority option
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/09-\/01) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+$\ast$\+Modified\+:$\ast$$\ast$
+\begin{DoxyItemize}
+\item change the bad micro W\+E\+B\+R\+TC to {\bfseries{A\+N\+D\+R\+O\+ID}} \doxysection*{A\+PI (2021-\/08-\/12) }
+\end{DoxyItemize}
+
+Gets the N\+TP time.
+
+\doxysubsection*{rtc\+\_\+engine\+\_\+i.\+h }
+
+{\bfseries{Add\+:}} base\+::\+Ntp\+Time get\+Ntp\+Time()
+
+\doxysection*{A\+PI (2021-\/08-\/18) }
+
+Add set\+App\+Type
+
+\doxysubsection*{rtc\+\_\+engine\+\_\+i.\+h }
+
+{\bfseries{Add\+:}} Add int32\+\_\+t set\+App\+Type(\+A\+P\+P\+\_\+\+T\+Y\+P\+E app\+Type)
+
+\doxysection*{A\+PI (2021-\/08-\/18) }
+
+Add enum A\+P\+P\+\_\+\+T\+Y\+PE
+
+\doxysubsection*{rtc\+\_\+engine\+\_\+i.\+h }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item A\+P\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+V\+A\+L\+UE = -\/1
+\item A\+P\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+A\+T\+I\+VE = 0
+\item A\+P\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+C\+OS = 1
+\item A\+P\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+N\+I\+TY = 2
+\item A\+P\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+L\+E\+C\+T\+R\+ON = 3
+\item A\+P\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+U\+T\+T\+ER = 4
+\item A\+P\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+N\+R\+E\+AL = 5
+\item A\+P\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+X\+A\+M\+A\+R\+IN = 6
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/08-\/18) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item on\+Active\+Speaker modify comment info
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/01-\/19) }
+
+\doxysubsection*{\mbox{\hyperlink{_n_g_i_agora_audio_track_8h_source}{N\+G\+I\+Agora\+Audio\+Track.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Audio\+Track\+::\+Audio\+Filter\+Position\+::\+Pcm\+Source
+\item I\+Audio\+Track\+::\+Audio\+Filter\+Position\+::\+Pcm\+Source\+Sending
+\item I\+Audio\+Track\+::\+Audio\+Filter\+Position\+::\+Pcm\+Source\+Playback
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/09-\/03) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Delete\+:}}
+\begin{DoxyItemize}
+\item struct Rtc\+Engine\+Context\+Ex
+\item I\+Rtc\+Engine\+Ex\+::initialize()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/08-\/13) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Screen\+Capture\+Orientation(\+M\+E\+D\+I\+A\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+P\+E type, V\+I\+D\+E\+O\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+O\+N orientation)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/11-\/14) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+::enable\+Custom\+Audio\+Local\+Playback
+\end{DoxyItemize}
+
+\doxysubsection*{I\+Agora\+Media\+Engine.\+h.\+h }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Media\+Engine\+::enable\+Custom\+Audio\+Local\+Playback
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/08-\/11) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Deprecate set\+Encryption\+Mode and set\+Encryption\+Secret, correct description of enable\+Encryption
+\begin{DoxyItemize}
+\item set\+Encryption\+Mode
+\item set\+Encryption\+Secret
+\item enable\+Encryption
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/08-\/11) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add get\+Extension\+Property
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/08-\/05) }
+
+Add set\+Audio\+Mixing\+Pitch
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add int set\+Audio\+Mixing\+Pitch(int pitch)
+
+\doxysection*{A\+PI (2021-\/11-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Remote\+Video\+Stats.\+total\+Active\+Time
+\item Remote\+Video\+Stats.\+publish\+Duration
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/02-\/15) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Remote\+Audio\+Stats
+\item Remote\+Video\+Stats.\+rx\+Video\+Bytes
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/08-\/04) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Add {\ttfamily M\+E\+D\+I\+A\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE type} parameter in set\+Beauty\+Effect\+Options
+\item Add {\ttfamily M\+E\+D\+I\+A\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE type} parameter in set\+Extension\+Property
+\item Add {\ttfamily M\+E\+D\+I\+A\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE type} parameter in get\+Extension\+Property
+\item Add {\ttfamily M\+E\+D\+I\+A\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE type} parameter in enable\+Extension
+\end{DoxyItemize}
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add {\ttfamily int set\+Extension\+Provider\+Property(const char$\ast$ provider\+\_\+name, const char$\ast$ key, const char$\ast$ json\+\_\+value)}
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Delete\+:}}
+\begin{DoxyItemize}
+\item Remove M\+E\+D\+I\+A\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE
+\end{DoxyItemize}
+
+A\+PI (2022-\/03-\/03) \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Extension\+Event()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Extension\+Started()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Extension\+Stopped()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Extension\+Error()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/07-\/29) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Channel\+Media\+Options\+::audience\+Latency\+Level
+\item int set\+Client\+Role(\+C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+P\+E role, const Client\+Role\+Options\& options)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/07-\/22) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add token to Channel\+Media\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/07-\/20) }
+
+Add set\+Beauty\+Effect\+Options for Beauty Parameter Setting
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int set\+Beauty\+Effect\+Options(bool enabled, const Beauty\+Options\& options)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/05-\/14) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Move int set\+Camera\+Capturer\+Configuration(const Camera\+Capturer\+Configuration\& config) out of M\+I\+C\+RO A\+N\+D\+R\+O\+ID
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/07-\/05) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add publish\+Custom\+Audio\+Track\+Enable\+Aec for Channel\+Media\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/09-\/23) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Ex\+::set\+Remote\+Video\+Stream\+Type\+Ex()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/06-\/28) }
+
+Change extension loading mechanism
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item extension provider list from the Rtc\+Engine\+Context
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item load\+Extension\+Provider for loading extension binary explicitly (for Windows\&Linux)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/06-\/03) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item remove I\+Audio\+Device\+Manager
+\item remove I\+Audio\+Device\+Collection
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/09-\/22) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int start\+Audio\+Mixing(const char$\ast$ file\+Path, bool loopback, bool replace, int cycle, int start\+Pos)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/09-\/10) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Join\+Channel\+Success
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Rejoin\+Channel\+Success
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/05-\/22) }
+
+Modify note of set\+Client\+Role
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item note of set\+Client\+Role
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/05-\/17) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item int enable\+Extension(const char$\ast$ provider\+\_\+name, const char$\ast$ extension\+\_\+name, bool enable)
+\item int set\+Extension\+Property(const char$\ast$ provider\+\_\+name, const char$\ast$ extension\+\_\+name, const char$\ast$ key, const char$\ast$ json\+\_\+value)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/08-\/16) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Delete\+:}}
+\begin{DoxyItemize}
+\item I\+Media\+Engine\+::push\+Primary\+Audio\+Frame()
+\item I\+Media\+Engine\+::push\+Secondary\+Audio\+Frame()
+\item I\+Media\+Engine\+::set\+External\+Video\+Config\+Ex()
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item I\+Media\+Engine\+::push\+Video\+Frame(base\+::\+External\+Video\+Frame$\ast$ frame, rtc\+::conn\+\_\+id\+\_\+t connection\+Id = rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to push\+Video\+Frame(base\+::\+External\+Video\+Frame$\ast$ frame) and push\+Video\+Frame(base\+::\+External\+Video\+Frame$\ast$ frame, const rtc\+::\+Rtc\+Connection\& connection)
+\item I\+Media\+Engine\+::push\+Encoded\+Video\+Image(const uint8\+\_\+t$\ast$ image\+Buffer, size\+\_\+t length, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_video_frame_info}{agora\+::rtc\+::\+Encoded\+Video\+Frame\+Info}}\& video\+Encoded\+Frame\+Info, rtc\+::conn\+\_\+id\+\_\+t connection\+Id = rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to push\+Encoded\+Video\+Image(const uint8\+\_\+t$\ast$ image\+Buffer, size\+\_\+t length, const agora\+::rtc\+::\+Encoded\+Video\+Frame\+Info\& video\+Encoded\+Frame\+Info) and push\+Encoded\+Video\+Image(const uint8\+\_\+t$\ast$ image\+Buffer, size\+\_\+t length, const agora\+::rtc\+::\+Encoded\+Video\+Frame\+Info\& video\+Encoded\+Frame\+Info, const rtc\+::\+Rtc\+Connection\& connection)
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Event\+Handler\+::event\+Handler\+Type()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Extension\+Event()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Extension\+Started()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Extension\+Stopped()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Extension\+Error()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+Account\+Updated()
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Stream\+Message(uid\+\_\+t user\+Id, int stream\+Id, const char$\ast$ data, size\+\_\+t length) to on\+Stream\+Message(uid\+\_\+t user\+Id, int stream\+Id, const char$\ast$ data, size\+\_\+t length, uint64\+\_\+t sent\+Ts)
+\item I\+Rtc\+Engine\+::update\+Channel\+Media\+Options(const Channel\+Media\+Options\& options, conn\+\_\+id\+\_\+t connection\+Id = agora\+::rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to update\+Channel\+Media\+Options(const Channel\+Media\+Options\& options)
+\item I\+Rtc\+Engine\+::set\+Video\+Encoder\+Configuration(const Video\+Encoder\+Configuration\& config, conn\+\_\+id\+\_\+t connection\+Id = D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to set\+Video\+Encoder\+Configuration(const Video\+Encoder\+Configuration\& config)
+\item I\+Rtc\+Engine\+::setup\+Remote\+Video(const Video\+Canvas\& canvas, conn\+\_\+id\+\_\+t connection\+Id = D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to setup\+Remote\+Video(const Video\+Canvas\& canvas)
+\item I\+Rtc\+Engine\+::mute\+Remote\+Audio\+Stream(uid\+\_\+t uid, bool mute, conn\+\_\+id\+\_\+t connection\+Id = D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to mute\+Remote\+Audio\+Stream(uid\+\_\+t uid, bool mute)
+\item I\+Rtc\+Engine\+::mute\+Remote\+Video\+Stream(uid\+\_\+t uid, bool mute, conn\+\_\+id\+\_\+t connection\+Id = D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to mute\+Remote\+Video\+Stream(uid\+\_\+t uid, bool mute)
+\item I\+Rtc\+Engine\+::set\+Remote\+Voice\+Position(uid\+\_\+t uid, double pan, double gain, conn\+\_\+id\+\_\+t connection\+Id = D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to set\+Remote\+Voice\+Position(uid\+\_\+t uid, double pan, double gain)
+\item I\+Rtc\+Engine\+::set\+Remote\+Render\+Mode(uid\+\_\+t uid, media\+::base\+::\+R\+E\+N\+D\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE render\+Mode, V\+I\+D\+E\+O\+\_\+\+M\+I\+R\+R\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE mirror\+Mode, conn\+\_\+id\+\_\+t connection\+Id = D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to set\+Remote\+Render\+Mode(uid\+\_\+t uid, media\+::base\+::\+R\+E\+N\+D\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+P\+E render\+Mode, V\+I\+D\+E\+O\+\_\+\+M\+I\+R\+R\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+P\+E mirror\+Mode, V\+I\+D\+E\+O\+\_\+\+M\+I\+R\+R\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+P\+E mirror\+Mode)
+\item I\+Rtc\+Engine\+::get\+Connection\+State(conn\+\_\+id\+\_\+t connection\+Id = 0) to get\+Connection\+State()
+\item I\+Rtc\+Engine\+::create\+Data\+Stream(int$\ast$ stream\+Id, bool reliable, bool ordered, conn\+\_\+id\+\_\+t connection\+Id = agora\+::rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to create\+Data\+Stream(int$\ast$ stream\+Id, bool reliable, bool ordered)
+\item I\+Rtc\+Engine\+::create\+Data\+Stream(int$\ast$ stream\+Id, Data\+Stream\+Config\& config, conn\+\_\+id\+\_\+t connection\+Id = agora\+::rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to create\+Data\+Stream(int$\ast$ stream\+Id, Data\+Stream\+Config\& config)
+\item I\+Rtc\+Engine\+::send\+Stream\+Message(int stream\+Id, const char$\ast$ data, size\+\_\+t length, conn\+\_\+id\+\_\+t connection\+Id = agora\+::rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to send\+Stream\+Message(int stream\+Id, const char$\ast$ data, size\+\_\+t length)
+\item I\+Rtc\+Engine\+::add\+Video\+Watermark(const char$\ast$ watermark\+Url, const Watermark\+Options\& options, conn\+\_\+id\+\_\+t connection\+Id = agora\+::rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to add\+Video\+Watermark(const char$\ast$ watermark\+Url, const Watermark\+Options\& options)
+\item I\+Rtc\+Engine\+::clear\+Video\+Watermark(conn\+\_\+id\+\_\+t connection\+Id = agora\+::rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to clear\+Video\+Watermark()
+\item I\+Rtc\+Engine\+::send\+Custom\+Report\+Message(const char$\ast$ id, const char$\ast$ category, const char$\ast$ event, const char$\ast$ label, int value, conn\+\_\+id\+\_\+t connection\+Id = agora\+::rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to send\+Custom\+Report\+Message(const char$\ast$ id, const char$\ast$ category, const char$\ast$ event, const char$\ast$ label, int value)
+\item I\+Rtc\+Engine\+::join\+Channel\+With\+User\+Account\+Ex(const char$\ast$ token, const char$\ast$ channel\+Id, const char$\ast$ user\+Account, const Channel\+Media\+Options\& options, I\+Rtc\+Engine\+Event\+Handler$\ast$ event\+Handler, conn\+\_\+id\+\_\+t$\ast$ connection\+Id = 0) to join\+Channel\+With\+User\+Account\+Ex(const char$\ast$ token, const char$\ast$ channel\+Id, const char$\ast$ user\+Account, const Channel\+Media\+Options\& options, I\+Rtc\+Engine\+Event\+Handler$\ast$ event\+Handler)
+\item I\+Rtc\+Engine\+::get\+User\+Info\+By\+User\+Account(const char$\ast$ user\+Account, rtc\+::\+User\+Info$\ast$ user\+Info, conn\+\_\+id\+\_\+t connection\+Id = agora\+::rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to get\+User\+Info\+By\+User\+Account(const char$\ast$ user\+Account, rtc\+::\+User\+Info$\ast$ user\+Info, const char$\ast$ channel\+Id = N\+U\+LL, const char$\ast$ local\+User\+Account = N\+U\+LL)
+\item I\+Rtc\+Engine\+::get\+User\+Info\+By\+Uid(uid\+\_\+t uid, rtc\+::\+User\+Info$\ast$ user\+Info, conn\+\_\+id\+\_\+t connection\+Id = agora\+::rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID) to get\+User\+Info\+By\+Uid(uid\+\_\+t uid, rtc\+::\+User\+Info$\ast$ user\+Info, const char$\ast$ channel\+Id = N\+U\+LL, const char$\ast$ local\+User\+Account = N\+U\+LL)
+\end{DoxyItemize}
+
+{\bfseries{Delete\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Remote\+Audio\+Mixing\+Begin()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Remote\+Audio\+Mixing\+End()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Refresh\+Recording\+Service\+Status()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Media\+Engine\+Load\+Success()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Media\+Engine\+Start\+Call\+Success()
+\item I\+Rtc\+Engine\+Event\+Handler\+::on\+Stream\+Injected\+Status()
+\item I\+Rtc\+Engine\+Event\+Handler\+::set\+Remote\+Render\+Mode()
+\item Rtc\+Engine\+Context.\+event\+Handler\+Ex
+\item I\+Rtc\+Engine\+::join\+Channel\+Ex()
+\item I\+Rtc\+Engine\+::leave\+Channel\+Ex()
+\item I\+Rtc\+Engine\+::set\+Remote\+Render\+Mode(uid\+\_\+t uid, media\+::base\+::\+R\+E\+N\+D\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE render\+Mode, conn\+\_\+id\+\_\+t connection\+Id = D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID)
+\item I\+Rtc\+Engine\+::enable\+Loopback\+Recording(conn\+\_\+id\+\_\+t connection\+Id, bool enabled)
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item struct Rtc\+Connection
+\item struct Rtc\+Engine\+Context\+Ex
+\item I\+Rtc\+Engine\+Ex\+::join\+Channel\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::leave\+Channel\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::update\+Channel\+Media\+Options\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::set\+Video\+Encoder\+Configuration\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::setup\+Remote\+Video\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::mute\+Remote\+Audio\+Stream\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::mute\+Remote\+Video\+Stream\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::set\+Remote\+Voice\+Position\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::set\+Remote\+Render\+Mode\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::enable\+Loopback\+Recording\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::get\+Connection\+State\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::create\+Data\+Stream\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::create\+Data\+Stream\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::send\+Stream\+Message\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::add\+Video\+Watermark\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::clear\+Video\+Watermark\+Ex()
+\item I\+Rtc\+Engine\+Ex\+::send\+Custom\+Report\+Message\+Ex()
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Audio\+Quality(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, int quality, unsigned short delay, unsigned short lost) to on\+Audio\+Quality(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, int quality, unsigned short delay, unsigned short lost)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Audio\+Volume\+Indication(conn\+\_\+id\+\_\+t conn\+Id, const Audio\+Volume\+Info$\ast$ speakers, unsigned int speaker\+Number, int total\+Volume) to on\+Audio\+Volume\+Indication(const Rtc\+Connection\& connection, const Audio\+Volume\+Info$\ast$ speakers, unsigned int speaker\+Number, int total\+Volume)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Leave\+Channel(conn\+\_\+id\+\_\+t conn\+Id, const Rtc\+Stats\& stats) to on\+Leave\+Channel(const Rtc\+Connection\& connection, const Rtc\+Stats\& stats)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Rtc\+Stats(conn\+\_\+id\+\_\+t conn\+Id, const Rtc\+Stats\& stats) to on\+Rtc\+Stats(const Rtc\+Connection\& connection, const Rtc\+Stats\& stats)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Network\+Quality(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, int tx\+Quality, int rx\+Quality) to on\+Network\+Quality(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, int tx\+Quality, int rx\+Quality)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Intra\+Request\+Received(conn\+\_\+id\+\_\+t conn\+Id) to on\+Intra\+Request\+Received(const Rtc\+Connection\& connection)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+First\+Local\+Video\+Frame(conn\+\_\+id\+\_\+t conn\+Id, int width, int height, int elapsed) to on\+First\+Local\+Video\+Frame(const Rtc\+Connection\& connection, int width, int height, int elapsed)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+First\+Local\+Video\+Frame\+Published(conn\+\_\+id\+\_\+t conn\+Id, int elapsed) to on\+First\+Local\+Video\+Frame\+Published(const Rtc\+Connection\& connection, int elapsed)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Video\+Source\+Frame\+Size\+Changed(conn\+\_\+id\+\_\+t conn\+Id, V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+P\+E source\+Type, int width, int height) to on\+Video\+Source\+Frame\+Size\+Changed(const Rtc\+Connection\& connection, V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+P\+E source\+Type, int width, int height)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+First\+Remote\+Video\+Decoded(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, int width, int height, int elapsed) to on\+First\+Remote\+Video\+Decoded(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, int width, int height, int elapsed)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Video\+Size\+Changed(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, int width, int height, int rotation) to on\+Video\+Size\+Changed(const Rtc\+Connection\& connection, uid\+\_\+t uid, int width, int height, int rotation)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Local\+Video\+State\+Changed(conn\+\_\+id\+\_\+t conn\+Id, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E state, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+A\+S\+O\+N error\+Code) to on\+Local\+Video\+State\+Changed(const Rtc\+Connection\& connection, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E state, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+A\+S\+O\+N error\+Code)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Remote\+Video\+State\+Changed(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+T\+E state, R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+O\+N reason, int elapsed) to on\+Remote\+Video\+State\+Changed(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+T\+E state, R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+O\+N reason, int elapsed)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+First\+Remote\+Video\+Frame(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, int width, int height, int elapsed) to on\+First\+Remote\+Video\+Frame(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, int width, int height, int elapsed)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+User\+Joined(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, int elapsed) to on\+User\+Joined(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, int elapsed)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+User\+Offline(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, U\+S\+E\+R\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+P\+E reason) to on\+User\+Offline(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, U\+S\+E\+R\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+P\+E reason)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+User\+Mute\+Video(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, bool muted) to on\+User\+Mute\+Video(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, bool muted)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+User\+Enable\+Video(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, bool enabled) to on\+User\+Enable\+Video(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, bool enabled)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+User\+Enable\+Local\+Video(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, bool enabled) to on\+User\+Enable\+Local\+Video(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, bool enabled)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Local\+Audio\+Stats(conn\+\_\+id\+\_\+t conn\+Id, const Local\+Audio\+Stats\& stats) to on\+Local\+Audio\+Stats(const Rtc\+Connection\& connection, const Local\+Audio\+Stats\& stats)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Remote\+Audio\+Stats(conn\+\_\+id\+\_\+t conn\+Id, const Remote\+Audio\+Stats\& stats) to on\+Remote\+Audio\+Stats(const Rtc\+Connection\& connection, const Remote\+Audio\+Stats\& stats)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Local\+Video\+Stats(conn\+\_\+id\+\_\+t conn\+Id, const Local\+Video\+Stats\& stats) to on\+Local\+Video\+Stats(const Rtc\+Connection\& connection, const Local\+Video\+Stats\& stats)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Remote\+Video\+Stats(conn\+\_\+id\+\_\+t conn\+Id, const Remote\+Video\+Stats\& stats) to on\+Remote\+Video\+Stats(const Rtc\+Connection\& connection, const Remote\+Video\+Stats\& stats)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Connection\+Lost(conn\+\_\+id\+\_\+t conn\+Id) to on\+Connection\+Lost(const Rtc\+Connection\& connection)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Connection\+Interrupted(conn\+\_\+id\+\_\+t conn\+Id) to on\+Connection\+Interrupted(const Rtc\+Connection\& connection)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Connection\+Banned(conn\+\_\+id\+\_\+t conn\+Id) to on\+Connection\+Banned(const Rtc\+Connection\& connection)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Stream\+Message(uid\+\_\+t uid, int stream\+Id, const char$\ast$ data, size\+\_\+t length, uint64\+\_\+t sent\+Ts) to on\+Stream\+Message(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, int stream\+Id, const char$\ast$ data, size\+\_\+t length, uint64\+\_\+t sent\+Ts)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Stream\+Message\+Error(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, int stream\+Id, int code, int missed, int cached) to on\+Stream\+Message\+Error(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, int stream\+Id, int code, int missed, int cached)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Request\+Token(conn\+\_\+id\+\_\+t conn\+Id) to on\+Request\+Token(const Rtc\+Connection\& connection)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Token\+Privilege\+Will\+Expire(conn\+\_\+id\+\_\+t conn\+Id, const char$\ast$ token) to on\+Token\+Privilege\+Will\+Expire(const Rtc\+Connection\& connection, const char$\ast$ token)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+First\+Local\+Audio\+Frame\+Published(conn\+\_\+id\+\_\+t conn\+Id, int elapsed) to on\+First\+Local\+Audio\+Frame\+Published(const Rtc\+Connection\& connection, int elapsed)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Local\+Audio\+State\+Changed(conn\+\_\+id\+\_\+t conn\+Id, L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E state, L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+O\+R error) to on\+Local\+Audio\+State\+Changed(const Rtc\+Connection\& connection, L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E state, L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+O\+R error)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Remote\+Audio\+State\+Changed(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E state, R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+O\+N reason, int elapsed) to on\+Remote\+Audio\+State\+Changed(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E state, R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+O\+N reason, int elapsed)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Active\+Speaker(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid) to on\+Active\+Speaker(const Rtc\+Connection\& connection, uid\+\_\+t uid)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Client\+Role\+Changed(conn\+\_\+id\+\_\+t conn\+Id, C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+P\+E old\+Role, C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+P\+E new\+Role) to on\+Client\+Role\+Changed(const Rtc\+Connection\& connection, C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+P\+E old\+Role, C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+P\+E new\+Role)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Remote\+Audio\+Transport\+Stats(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, unsigned short delay, unsigned short lost, unsigned short rx\+K\+Bit\+Rate) to on\+Remote\+Audio\+Transport\+Stats(const Rtc\+Connection\& connection, uid\+\_\+t uid, unsigned short delay, unsigned short lost, unsigned short rx\+K\+Bit\+Rate)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Remote\+Video\+Transport\+Stats(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, unsigned short delay, unsigned short lost, unsigned short rx\+K\+Bit\+Rate) to on\+Remote\+Video\+Transport\+Stats(const Rtc\+Connection\& connection, uid\+\_\+t uid, unsigned short delay, unsigned short lost, unsigned short rx\+K\+Bit\+Rate)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Connection\+State\+Changed(conn\+\_\+id\+\_\+t conn\+Id, C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+P\+E state, C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+P\+E reason) to on\+Connection\+State\+Changed(const Rtc\+Connection\& connection, C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+P\+E state, C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+P\+E reason)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Network\+Type\+Changed(conn\+\_\+id\+\_\+t conn\+Id, N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+Y\+P\+E type) to on\+Network\+Type\+Changed(const Rtc\+Connection\& connection, N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+Y\+P\+E type)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Encryption\+Error(conn\+\_\+id\+\_\+t conn\+Id, E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+P\+E error\+Type) to on\+Encryption\+Error(const Rtc\+Connection\& connection, E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+P\+E error\+Type)
+\item I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+User\+Account\+Updated(uid\+\_\+t uid, const char$\ast$ user\+Account) to on\+User\+Account\+Updated(const Rtc\+Connection\& connection, uid\+\_\+t remote\+Uid, const char$\ast$ user\+Account)
+\end{DoxyItemize}
+
+{\bfseries{Delete\+:}}
+\begin{DoxyItemize}
+\item on\+Join\+Channel\+Success()
+\item on\+Rejoin\+Channel\+Success()
+\item on\+Warning()
+\item on\+Error()
+\item on\+Audio\+Quality()
+\item on\+Audio\+Device\+State\+Changed()
+\item on\+Audio\+Mixing\+Finished()
+\item on\+Remote\+Audio\+Mixing\+End()
+\item on\+Audio\+Effect\+Finished()
+\item on\+Video\+Device\+State\+Changed()
+\item on\+Media\+Device\+Changed()
+\item on\+Bandwidth\+Estimation\+Updated()
+\item on\+Lastmile\+Quality()
+\item on\+Api\+Call\+Executed()
+\item on\+Camera\+Ready()
+\item on\+Camera\+Focus\+Area\+Changed()
+\item on\+Camera\+Exposure\+Area\+Changed()
+\item on\+Video\+Stopped()
+\item on\+Audio\+Mixing\+State\+Changed()
+\item on\+Refresh\+Recording\+Service\+Status()
+\item on\+Stream\+Message(conn\+\_\+id\+\_\+t conn\+Id, uid\+\_\+t uid, int stream\+Id, const char$\ast$ data, size\+\_\+t length)
+\item on\+Media\+Engine\+Load\+Success()
+\item on\+Media\+Engine\+Start\+Call\+Success()
+\item on\+Audio\+Device\+Volume\+Changed()
+\item on\+Rtmp\+Streaming\+State\+Changed()
+\item on\+Stream\+Published()
+\item on\+Stream\+Unpublished()
+\item on\+Transcoding\+Updated()
+\item on\+Stream\+Injected\+Status()
+\item on\+Audio\+Routing\+Changed()
+\item on\+Channel\+Media\+Relay\+State\+Changed()
+\item on\+Channel\+Media\+Relay\+Event()
+\item on\+Local\+Publish\+Fallback\+To\+Audio\+Only()
+\item on\+Remote\+Subscribe\+Fallback\+To\+Audio\+Only()
+\item on\+Audio\+Transport\+Quality()
+\item on\+Video\+Transport\+Quality()
+\item on\+Recap()
+\item on\+Customized\+Sei()
+\item on\+Extension\+Event()
+\item on\+Extension\+Started()
+\item on\+Extension\+Stopped()
+\item on\+Extension\+Error()
+\item on\+Internal\+Engine\+Status()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/05-\/10) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int push\+Direct\+Cdn\+Streaming\+Custom\+Video\+Frame(media\+::base\+::\+External\+Video\+Frame$\ast$ frame)
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item int start\+Direct\+Cdn\+Streaming(\+I\+Direct\+Cdn\+Streaming\+Event\+Handler$\ast$ event\+Handler, const char$\ast$ publish\+Url, const Direct\+Cdn\+Streaming\+Media\+Options\& options)
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+
+
+\doxysection*{A\+PI (2021-\/05-\/06) }
+
+
+\begin{DoxyEnumerate}
+\item Add switches for c++11 features.
+\item Change display\+Id from view\+\_\+t to uint32\+\_\+t.
+\end{DoxyEnumerate}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item struct Screen\+Capture\+Configuration -\/$>$ uint32\+\_\+t display\+Id
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+
+
+\doxysection*{A\+PI (2020-\/05-\/05) }
+
+Support R/W recording audio frame observer.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Move out definition of R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE
+
+\DoxyHorRuler{0}
+
+
+\doxysection*{A\+PI (2021-\/05-\/06) }
+
+delete on\+Remote\+Video\+Stream\+Info\+Updated.
+
+\doxysubsection*{I\+Agora\+Rtc\+Engine }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item on\+Remote\+Video\+Stream\+Info\+Updated()
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+
+
+\doxysection*{A\+PI (2020-\/04-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} only for ios
+\begin{DoxyItemize}
+\item bool is\+Camera\+Auto\+Exposure\+Face\+Mode\+Supported()
+\item int set\+Camera\+Auto\+Exposure\+Face\+Mode\+Enabled(bool enabled)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/11-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item on\+First\+Remote\+Audio\+Frame(uid\+\_\+t user\+Id, int elapsed)
+\item on\+First\+Remote\+Audio\+Decoded(uid\+\_\+t user\+Id, int elapsed)
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item on\+First\+Remote\+Audio\+Frame(const Rtc\+Connection\& connection, uid\+\_\+t user\+Id, int elapsed)
+\item on\+First\+Remote\+Audio\+Decoded(const Rtc\+Connection\& connection, uid\+\_\+t user\+Id, int elapsed)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/04-\/25) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+Adding Code Comments {\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+O\+F\+F\+L\+I\+NE is not 100\% guaranteed. When the remote user leaves, use on\+User\+Offline to make a business decision
+\item R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+O\+F\+F\+L\+I\+NE is not 100\% guaranteed. When the remote user leaves, use on\+User\+Offline to make a business decision
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/05-\/31) }
+
+Add face detect for android.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item enable\+Face\+Detection(boolean enable)
+\item bool is\+Face\+Detect\+Supported
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/04-\/22) }
+
+Add enable\+Sound\+Position\+Indication and set\+Remote\+Voice\+Position
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add int enable\+Sound\+Position\+Indication(bool enabled) Add int set\+Remote\+Voice\+Position(uid\+\_\+t uid, double pan, double gain, conn\+\_\+id\+\_\+t connection\+Id)
+
+\doxysection*{A\+PI (2021-\/04-\/21) }
+
+Support rtmp.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item set\+Direct\+Cdn\+Streaming\+Audio\+Configuration()
+\item set\+Direct\+Cdn\+Streaming\+Video\+Configuration()
+\item start\+Direct\+Cdn\+Streaming()
+\item stop\+Direct\+Cdn\+Streaming()
+\item update\+Direct\+Cdn\+Streaming\+Media\+Options()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/04-\/20) }
+
+Add high level api for audio spectrum.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item enable\+Audio\+Spectrum\+Monitor(int interval\+In\+MS = 100)
+\item disable\+Audio\+Spectrum\+Monitor()
+\item register\+Audio\+Spectrum\+Observer(agora\+::media\+::\+I\+Audio\+Spectrum\+Observer $\ast$ observer)
+\item unregister\+Audio\+Spectrum\+Observer(agora\+::media\+::\+I\+Audio\+Spectrum\+Observer $\ast$ observer)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/04-\/07) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{add\+:}}
+\begin{DoxyItemize}
+\item register\+Encoded\+Audio\+Frame(\+Audio\+Encoded\+Frame\+Observer\+Config, I\+Audio\+Encoded\+Frame\+Observer)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/04-\/19) }
+
+Add audio effect interfaces \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add set\+Voice\+Beautifier\+Preset, set\+Audio\+Effect\+Preset, set\+Voice\+Conversion\+Preset, set\+Audio\+Effect\+Parameters, set\+Voice\+Beautifier\+Parameter and set\+Voice\+Conversion\+Parameters in I\+Rtc\+Engine for audio effect.
+
+\doxysection*{A\+PI (2020-\/04-\/16) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add bool is\+Camera\+Zoom\+Supported()
+\item Add bool is\+Camera\+Torch\+Supported()
+\item Add bool is\+Camera\+Focus\+Supported()
+\item Add bool is\+Camera\+Auto\+Focus\+Face\+Mode\+Supported()
+\item Add int set\+Camera\+Zoom\+Factor(float factor)
+\item Add float get\+Camera\+Max\+Zoom\+Factor()
+\item Add int set\+Camera\+Focus\+Position\+In\+Preview(float position\+X, float position\+Y)
+\item Add int set\+Camera\+Torch\+On(bool is\+On)
+\item Add int set\+Camera\+Auto\+Focus\+Face\+Mode\+Enabled(bool enabled)
+\item Add bool is\+Camera\+Exposure\+Position\+Supported()
+\item Add int set\+Camera\+Exposure\+Position(float position\+Xin\+View, float position\+Yin\+View)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/04-\/01) }
+
+Add set\+External\+Audio\+Sink and pull\+Audio\+Frame
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add bool enable\+Audio\+Device for Rtc\+Engine\+Context Add set\+External\+Audio\+Sink(int sample\+Rate, int channels) Add pull\+Audio\+Frame(media\+::\+I\+Audio\+Frame\+Observer\+::\+Audio\+Frame$\ast$ frame)
+
+\doxysection*{A\+PI (2020-\/04-\/01) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} change annotation for on\+Rejoin\+Channel\+Success elapsed
+\begin{DoxyItemize}
+\item \char`\"{}@param elapsed The time elapsed (ms) from the local user calling \`{}join\+Channel\`{} until this event occurs.\char`\"{} to \char`\"{}@paramelapsed Time elapsed (ms) from starting to reconnect until this callback is triggered.\char`\"{}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/03-\/26) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} change annotation for enable\+Audio\+Volume\+Indication
+
+\doxysection*{A\+PI (2020-\/03-\/25) }
+
+Add set\+External\+Audio\+Sink and pull\+Audio\+Frame
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add bool enable\+Audio\+Device for Rtc\+Engine\+Context Add set\+External\+Audio\+Sink(int sample\+Rate, int channels) Add pull\+Audio\+Frame(media\+::\+I\+Audio\+Frame\+Observer\+::\+Audio\+Frame$\ast$ frame)
+
+\doxysection*{A\+PI (2020-\/03-\/25) }
+
+Add create\+Data\+Stream with config
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add create\+Data\+Stream()
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Add\+:}} Add on\+Stream\+Message with sent\+Ts
+
+\doxysection*{A\+PI (2021-\/04-\/29) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Add callback on\+Face\+Position\+Changed(int image\+Width, int image\+Height, const Rectangle$\ast$ vec\+Rectangle, const int$\ast$ vec\+Distance, int num\+Faces)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/03-\/23) }
+
+rtc\+\_\+engine\+\_\+i.\+h \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+\doxysection*{A\+PI (2020-\/03-\/19) }
+
+modify to adapt c++ 11
+
+\doxysection*{A\+PI (2020-\/03-\/10) }
+
+Add remote video A/V sync offset
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Add {\ttfamily av\+Sync\+Time\+Ms} field for struct {\ttfamily Remote\+Video\+Stats}
+
+\doxysection*{A\+PI (2020-\/03-\/22) }
+
+Add api Start\+Echo\+Test(int)
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add api Start\+Echo\+Test(int) -\/\`{}\+Start\+Echo\+Test(int)
+
+\doxysection*{A\+PI (2021-\/02-\/22) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Add stop\+All\+Effect in Leave\+Channel\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/02-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+Fix \char`\"{}warning\+: unused parameter\char`\"{}
+
+\doxysection*{A\+PI (2021-\/02-\/02) }
+
+Modify I\+Network\+Observer.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Add more callback to I\+Network\+Observer
+\begin{DoxyItemize}
+\item Changes add on\+Downlink\+Network\+Info\+Updated
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/01-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item fix a bug in Channel\+Media\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/01-\/07) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Remove\+:}}
+\begin{DoxyItemize}
+\item enum A\+U\+D\+I\+O\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE
+\end{DoxyItemize}
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item add start\+Audio\+Recording() for I\+Rtc\+Engine
+\end{DoxyItemize}
+
+A\+PI (2021-\/01-\/03)
+
+\doxysection*{A\+PI (2020-\/12-\/28) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item on\+Audio\+Subscribe\+State\+Changed()
+\item on\+Video\+Subscribe\+State\+Changed()
+\item on\+Audio\+Publish\+State\+Changed()
+\item on\+Video\+Publish\+State\+Changed()
+\end{DoxyItemize}
+
+{\bfseries{Remove\+:}} Remove useless callbacks.
+
+\doxysection*{A\+PI (2020-\/11-\/26) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}} Remove function in I\+Metadata\+Observer.
+\begin{DoxyItemize}
+\item get\+Metadata\+Source\+Type() {\bfseries{Modified\+:}} Modify on\+Ready\+To\+Send\+Metadata signature.
+\item bool on\+Ready\+To\+Send\+Metadata(\+Metadata \&metadata) -\/$>$ bool on\+Ready\+To\+Send\+Metadata(\+Metadata \&metadata, V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+P\+E source\+\_\+type)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/11-\/27) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} change agora\+::base\+::\+Optional to \mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}
+
+\doxysection*{A\+PI (2020-\/12-\/24) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add functions for I\+Rtc\+Engine\+:
+\begin{DoxyItemize}
+\item adjust\+User\+Playback\+Signal\+Volume(uid\+\_\+t uid, int volume)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/12-\/23) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}} Remove function in I\+Rtc\+Engine.
+\begin{DoxyItemize}
+\item enable\+External\+Audio\+Source\+Local\+Playback()
+\end{DoxyItemize}
+
+{\bfseries{Add\+:}} Add functions for I\+Rtc\+Engine\+:
+\begin{DoxyItemize}
+\item start\+Primary\+Custom\+Audio\+Track()
+\item stop\+Primary\+Custom\+Audio\+Track()
+\item start\+Secondary\+Custom\+Audio\+Track()
+\item stop\+Secondary\+Custom\+Audio\+Track()
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add functions for I\+Media\+Engine\+:
+\begin{DoxyItemize}
+\item push\+Primary\+Audio\+Frame()
+\item push\+Secondary\+Audio\+Frame()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/12-\/8) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} add audio\+Delay\+Ms in Channel\+Media\+Options
+
+\doxysection*{A\+PI (2020-\/11-\/27) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} change agora\+::base\+::\+Optional to \mbox{\hyperlink{classagora_1_1_optional}{agora\+::\+Optional}}
+
+\doxysection*{A\+PI (2022-\/10-\/20) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item add the description of the cross channel relay return value
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/11-\/23) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} I\+Media\+Player\+Source -\/$>$ I\+Media\+Player
+
+\doxysection*{A\+PI (2020-\/11-\/22) }
+
+Rename R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+T\+Y\+PE.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Changes Rename all R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+T\+Y\+P\+E/\+R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+H\+I\+G\+H/\+R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+L\+OW to V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+T\+Y\+P\+E/\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+H\+I\+G\+H/\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+L\+OW.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/10-\/12) }
+
+Add function to set camera capture config
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item function set\+Camera\+Capturer\+Configuration(const Camera\+Capturer\+Configuration\& config)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/09-\/27) }
+
+Add Mirror Mode in set\+Local\+Render\+Mode / set\+Remote\+Render\+Mode
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Add mirror mode parameter in the following function call
+\begin{DoxyItemize}
+\item set\+Local\+Render\+Mode
+\item set\+Remote\+Render\+Mode Deprecate set\+Local\+Video\+Mirror\+Mode Deprecate old set\+Local\+Render\+Mode Deprecate old set\+Remote\+Render\+Mode
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/09-\/23) }
+
+Add Frame Process Mode for Video Frame Observer
+
+\doxysection*{A\+PI (2020-\/11-\/26) }
+
+Support Media Relay service
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item start\+Channel\+Media\+Relay
+\item update\+Channel\+Media\+Relay
+\item stop\+Channel\+Media\+Relay
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/11-\/09) }
+
+Add event callback
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily void on\+First\+Local\+Video\+Frame\+Published(int elapsed)}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/10-\/20) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add function in I\+Video\+Frame\+Observer
+\begin{DoxyItemize}
+\item get\+Video\+Frame\+Process\+Mode
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/09-\/22) }
+
+Support audio frame dump
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item start\+Audio\+Frame\+Dump()
+\item stop\+Audio\+Frame\+Dump()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/09-\/16) }
+
+Update enable\+Dual\+Stream\+Mode A\+PI
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily int enable\+Dual\+Stream\+Mode(\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+P\+E source\+Type, bool enabled)}
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily int enable\+Dual\+Stream\+Mode(bool enabled, const Simulcast\+Stream\+Config\& stream\+Config)} to {\ttfamily int enable\+Dual\+Stream\+Mode(\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+P\+E source\+Type, bool enabled, const Simulcast\+Stream\+Config\& stream\+Config)}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/09-\/11) }
+
+Delete enum N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+Y\+PE and add callback on\+Network\+Type\+Changed
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Deleted enum N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+Y\+PE
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/08-\/30) }
+
+add remote video frame loss rate
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Add {\ttfamily frame\+Loss\+Rate} field for struct {\ttfamily Remote\+Video\+Stats}
+
+\doxysection*{A\+PI (2020-\/08-\/14) }
+
+Support get video source type
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+::enable\+Encryption
+\end{DoxyItemize}
+
+A\+PI (2020-\/09-\/10)
+
+\doxysection*{A\+PI (2020-\/08-\/11) }
+
+Support leave channel with options, options determines whether to do something when leave the channel.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} When Leave\+Channel\+Options\+::stop\+Audio\+Mixing = false, after leave the channel is still playing and mixing the music file.
+\begin{DoxyItemize}
+\item struct Leave\+Channel\+Options.
+\item leave\+Channel(const Leave\+Channel\+Options\& options)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/08-\/11) }
+
+Support adjust loopback recording volume.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item adjust\+Loopback\+Recording\+Volume()
+\item get\+Loopback\+Recording\+Volume()
+\end{DoxyItemize}
+
+A\+PI (2020-\/08-\/02)
+
+\doxysection*{A\+PI (2020-\/08-\/03) }
+
+Modify data stream.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Modify data stream apis
+\begin{DoxyItemize}
+\item Changes\+: add input args connection\+Id for create\+Data\+Stream.
+\item Changes\+: add input args connection\+Id for send\+Stream\+Message.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/07-\/31) }
+
+Make release() pure virtual in I\+Media\+Engine.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Make release() pure virtual in I\+Media\+Engine.
+
+\doxysection*{A\+PI (2020-\/07-\/07) }
+
+Modify Channel\+Media\+Options.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Rename pcm\+Data\+Only of Channel\+Media\+Options.
+\begin{DoxyItemize}
+\item Changes\+: Rename pcm\+Data\+Only of Channel\+Media\+Options to enable\+Audio\+Recording\+Or\+Playout.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/07-\/06) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}} Change include dir.
+
+\doxysection*{A\+PI (2020-\/07-\/01) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}} Remove string U\+ID.
+
+\doxysection*{A\+PI (2020-\/06-\/27) }
+
+Make include path correct
+
+\doxysection*{A\+PI (2020-\/07-\/03) }
+
+Refine audio effect A\+PI
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item int play\+All\+Effects(double pitch, double pan, int gain) to int play\+All\+Effects(int loop\+Count, double pitch, double pan, int gain, bool publish = false)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/06-\/22) }
+
+Modify Channel\+Media\+Options.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Add pcm\+Data\+Only to Channel\+Media\+Options.
+\begin{DoxyItemize}
+\item Changes\+: Add member pcm\+Data\+Only for Channel\+Media\+Options.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/06-\/22) }
+
+Add A\+PI
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Extend enable\+Dual\+Stream\+Mode
+\begin{DoxyItemize}
+\item {\ttfamily int enable\+Dual\+Stream\+Mode(bool enabled, const Simulcast\+Stream\+Config\& stream\+Config)}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/06-\/21) }
+
+Refine audio effect interface
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item get\+Effects\+Volume()
+\item set\+Effects\+Volume()
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item preload\+Effect(int sound\+Id, const char$\ast$ file\+Path)
+\item play\+Effect(int sound\+Id, int loop\+Count, double pitch, double pan, int gain, bool publish = false)
+\item play\+Effect(int sound\+Id, const char$\ast$ file\+Path, int loop\+Count, double pitch, double pan, int gain, bool publish = false)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/06-\/17) }
+
+Refine Channel\+Media\+Options
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Refine Channel\+Media\+Options
+\begin{DoxyItemize}
+\item {\ttfamily bool publish\+Camera\+Track} to {\ttfamily base\+::\+Optional$<$bool$>$ publish\+Camera\+Track}
+\item {\ttfamily bool publish\+Audio\+Track} to {\ttfamily base\+::\+Optional$<$bool$>$ publish\+Audio\+Track}
+\item {\ttfamily bool publish\+Screen\+Track} to {\ttfamily base\+::\+Optional$<$bool$>$ publish\+Screen\+Track}
+\item {\ttfamily bool publish\+Custom\+Audio\+Track} to {\ttfamily base\+::\+Optional$<$bool$>$ publish\+Custom\+Audio\+Track}
+\item {\ttfamily bool publish\+Custom\+Video\+Track} to {\ttfamily base\+::\+Optional$<$bool$>$ publish\+Custom\+Video\+Track}
+\item {\ttfamily bool publish\+Encoded\+Video\+Track} to {\ttfamily base\+::\+Optional$<$bool$>$ publish\+Encoded\+Video\+Track}
+\item {\ttfamily bool publish\+Media\+Player\+Audio\+Track} to {\ttfamily base\+::\+Optional$<$bool$>$ publish\+Media\+Player\+Audio\+Track}
+\item {\ttfamily bool publish\+Media\+Player\+Video\+Track} to {\ttfamily base\+::\+Optional$<$bool$>$ publish\+Media\+Player\+Video\+Track}
+\item {\ttfamily bool auto\+Subscribe\+Audio} to {\ttfamily base\+::\+Optional$<$bool$>$ auto\+Subscribe\+Audio}
+\item {\ttfamily bool auto\+Subscribe\+Video} to {\ttfamily base\+::\+Optional$<$bool$>$ auto\+Subscribe\+Video}
+\item {\ttfamily bool publish\+Media\+Player\+Id} to {\ttfamily base\+::\+Optional$<$bool$>$ publish\+Media\+Player\+Id}
+\item {\ttfamily bool client\+Role\+Type} to {\ttfamily base\+::\+Optional$<$C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE$>$ client\+Role\+Type}
+\item {\ttfamily bool default\+Video\+Stream\+Type} to {\ttfamily base\+::\+Optional$<$R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+T\+Y\+PE$>$ default\+Video\+Stream\+Type}
+\item {\ttfamily bool channel\+Profile} to {\ttfamily base\+::\+Optional$<$C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE$>$ channel\+Profile}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/06-\/16) }
+
+Modify Channel\+Media\+Options.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Add pcm\+Data\+Only to Channel\+Media\+Options.
+\begin{DoxyItemize}
+\item Changes\+: Add member pcm\+Data\+Only for Channel\+Media\+Options.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/06-\/16) }
+
+Add interface to audio mixing volume
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item adjust\+Audio\+Mixing\+Publish\+Volume()
+\item get\+Audio\+Mixing\+Publish\+Volume()
+\item adjust\+Audio\+Mixing\+Playout\+Volume()
+\item get\+Audio\+Mixing\+Playout\+Volume()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/06-\/16) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add enable\+Loopback\+Recording(conn\+\_\+id\+\_\+t connection\+Id, bool enabled), for supporting to send audio pcm data got from loopback device by a specific connection.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/06-\/09) }
+
+Modify the callback on\+Bandwidth\+Estimation\+Updated
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Modify the declaration of on\+Bandwidth\+Estimation\+Updated
+\begin{DoxyItemize}
+\item Changes \char`\"{}virtual void on\+Bandwidth\+Estimation\+Updated(int target\+Bitrate\+Bps)\char`\"{} to \char`\"{}virtual void on\+Bandwidth\+Estimation\+Updated(const Network\+Info\& info)\char`\"{}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/06-\/03) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item create\+Media\+Player()
+\item destroy\+Media\+Player(agora\+\_\+refptr$<$\+I\+Media\+Player\+Source$>$ media\+\_\+player)
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}} Audio effect interface
+
+preload\+Effect(int sound\+Id, const char$\ast$ file\+Path) -\/$>$ preload\+Effect(int\& sound\+Id, const char$\ast$ file\+Path, int loop\+Count) play\+Effect(int\& sound\+Id, const char$\ast$ file\+Path, int loop\+Count, double pitch, double pan, int gain, bool publish) -\/$>$ play\+Effect(int sound\+Id, const char$\ast$ file\+Path, int loop\+Count, double pitch, double pan, int gain, bool publish = false) get\+Effects\+Volume() -\/$>$ get\+Volume\+Of\+Effect(int sound\+Id)
+
+Add a new function play\+Effect(int sound\+Id, double pitch, double pan, int gain, bool publish). It should be used with preload\+Effect(). Add play\+All\+Effects(double pitch, double pan, int gain). Add unload\+All\+Effects().
+
+Remove set\+Effects\+Volume(int volume)
+
+\doxysection*{A\+PI (2020-\/06-\/01) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item enable\+Local\+Video\+Filter(const char$\ast$, const char$\ast$, agora\+\_\+refptr$<$\+I\+Video\+Filter$>$, int)
+\item enable\+Remote\+Video\+Filter(const char$\ast$, const char$\ast$, agora\+\_\+refptr$<$\+I\+Video\+Filter$>$, int)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/05-\/29) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Move definition of type A\+R\+E\+A\+\_\+\+C\+O\+DE from \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} to \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/05-\/25) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add A\+R\+E\+A\+\_\+\+C\+O\+DE type define
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/05-\/20) }
+
+\doxysubsection*{I\+Agora\+Media\+Player.\+h }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Refine the A\+P\+Is\textquotesingle{} order of I\+Media\+Player.
+\item Remove \textquotesingle{}const\textquotesingle{} from the parameter of on\+Position\+Changed() in I\+Media\+Player\+Observer since unnecessary.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/05-\/14) }
+
+Deprecated set\+Audio\+Profile(\+A\+U\+D\+I\+O\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E, A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+P\+E), add set\+Audio\+Profile(\+A\+U\+D\+I\+O\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E)
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item set\+Audio\+Profile(\+A\+U\+D\+I\+O\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E)
+\end{DoxyItemize}
+
+{\bfseries{Deprecate\+:}}
+\begin{DoxyItemize}
+\item set\+Audio\+Profile(\+A\+U\+D\+I\+O\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E, A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+P\+E)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/05-\/13) }
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item A\+PI annotations for Encoded\+Video\+Frame\+Info\+::frames\+Per\+Second
+\end{DoxyItemize}
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+
+\doxysection*{A\+PI (2020-\/05-\/12) }
+
+{\bfseries{Add\+:}} \doxysubsection*{I\+Agora\+Media\+Player.\+h }
+
+Add relative log and unregister A\+PI in player. set\+Log\+File() set\+Log\+Filter() unregister\+Video\+Frame\+Observer() unregister\+Audio\+Frame\+Observer()
+
+\doxysection*{A\+PI (2020-\/05-\/12) }
+
+Move lastmile and connection state enum to \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}} Delete lastmile and connection state enum
+\begin{DoxyItemize}
+\item Deleted enum L\+A\+S\+T\+M\+I\+L\+E\+\_\+\+P\+R\+O\+B\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+S\+T\+A\+TE
+\item Deleted struct Lastmile\+Probe\+One\+Way\+Result
+\item Deleted struct Lastmile\+Probe\+Result
+\item Deleted struct Lastmile\+Probe\+Config
+\item Deleted enum C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE
+\item Deleted enum A\+U\+D\+I\+O\+\_\+\+R\+E\+V\+E\+R\+B\+\_\+\+P\+R\+E\+S\+ET
+\item Deleted enum V\+O\+I\+C\+E\+\_\+\+C\+H\+A\+N\+G\+E\+R\+\_\+\+P\+R\+E\+S\+ET
+\item Deleted struct Screen\+Capture\+Parameters
+\item Deleted struct Video\+Canvas
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/05-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+
+Add A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE audio\+Scenario for Rtc\+Engine\+Context
+
+\doxysection*{A\+PI (2020-\/05-\/08) }
+
+Some structures are consistent with the definition in the old S\+DK, resulting in conflicts when the new and old S\+DK are used at the same time. Therefore, change the above the structures to agora\+::media\+::base namespace
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Audio\+Pcm\+Frame
+\item R\+E\+N\+D\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE
+\item I\+Video\+Frame\+Observer
+\item I\+Audio\+Frame\+Observer
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}} }
+
+{\bfseries{Add\+:}} Move defines to agora\+::media\+::base namespace
+\begin{DoxyItemize}
+\item Audio\+Pcm\+Frame
+\item R\+E\+N\+D\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE
+\item I\+Video\+Frame\+Observer
+\item I\+Audio\+Frame\+Observer
+\item typedef void$\ast$ view\+\_\+t;
+\item typedef const char$\ast$ user\+\_\+id\+\_\+t;
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Needed changes to namespace agora\+::media\+::base
+
+\doxysubsection*{I\+Agora\+Media\+Player.\+h }
+
+{\bfseries{Modified\+:}} Needed changes to namespace agora\+::media\+::base
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Needed changes to namespace agora\+::media\+::base
+
+\doxysection*{A\+PI (2020-\/05-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Move L\+O\+G\+\_\+\+L\+E\+V\+EL from \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} to \mbox{\hyperlink{_i_agora_log_8h_source}{I\+Agora\+Log.\+h}}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI(2021-\/11-\/14) }
+
+Remove some dead code
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item push\+Primary\+Audio\+Frame()
+\item push\+Secondary\+Audio\+Frame()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/05-\/06) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{Added\+:}}
+\begin{DoxyItemize}
+\item Add interface set\+Log\+Level(\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/04-\/29) }
+
+{\bfseries{Modified\+:}}
+
+A\+PI annotations in the \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} file.
+
+\doxysection*{A\+PI (2020-\/04-\/29) }
+
+Refine Local\+Video\+Stats and Remote\+Video\+Stats
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add fields in Local\+Video\+Stats
+\begin{DoxyItemize}
+\item encoder\+Output\+Frame\+Rate
+\item renderer\+Output\+Frame\+Rate
+\item target\+Frame\+Rate
+\end{DoxyItemize}
+
+Add fields in Remote\+Video\+Stats
+\begin{DoxyItemize}
+\item decoder\+Output\+Frame\+Rate
+\item renderer\+Output\+Frame\+Rate
+\item packet\+Loss\+Rate
+\item total\+Frozen\+Time
+\item frozen\+Rate
+\end{DoxyItemize}
+
+{\bfseries{Deleted\+:}} Remove fields in Remote\+Video\+Stats
+\begin{DoxyItemize}
+\item user\+Id
+\item received\+Frame\+Rate
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/04-\/30) }
+
+Modify comments of C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE default setting.
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Modified\+:}} Short description
+\begin{DoxyItemize}
+\item Changes the comment of C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE default setting from C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+ON to C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+L\+I\+V\+E\+\_\+\+B\+R\+O\+A\+D\+C\+A\+S\+T\+I\+NG.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/04-\/28) }
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add enum C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+O\+N\+\_\+1v1 for C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add field channel\+Profile for Rtc\+Engine\+Context
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/04-\/27) }
+
+\mbox{\hyperlink{_agora_ref_ptr_8h_source}{Agora\+Ref\+Ptr.\+h}} {\bfseries{Add\+:}} Add interface Has\+One\+Ref
+
+\doxysection*{A\+PI (2020-\/04-\/22) }
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Modified\+:}} Initialize member variable for Rtc\+Stats and Remote\+Audio\+Stats.
+
+\doxysection*{A\+PI (2020-\/04-\/20) }
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Modified\+:}} Change default value of \mbox{\hyperlink{structagora_1_1rtc_1_1_video_format}{agora\+::rtc\+::\+Video\+Format}} from 0, 0, 0 to 640(width), 480(height), 15(fps)
+
+\doxysection*{A\+PI (2020-\/04-\/16) }
+
+Fix a typo
+
+\doxysubsection*{\mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}} }
+
+{\bfseries{Modified\+:}} Change P\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+R\+C\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+U\+N\+D\+E\+R\+F\+L\+OW to P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+S\+R\+C\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+U\+N\+D\+E\+R\+F\+L\+OW.
+
+\doxysection*{A\+PI (2020-\/04-\/17) }
+
+Add Log Levels
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Add\+:}} Add enum L\+O\+G\+\_\+\+L\+E\+V\+EL for logging severities.
+
+\doxysection*{A\+PI (2020-\/04-\/13) }
+
+Add internal states
+
+\doxysubsection*{\mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}} }
+
+{\bfseries{Modified\+:}} Add internal states for Media Player Source.
+
+\doxysection*{A\+PI (2020-\/04-\/10) }
+
+Add field in struct Local\+Audio\+Stats
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Move Local\+Audio\+Stats to \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} add internal\+Codec in struct Local\+Audio\+Stats
+\begin{DoxyItemize}
+\item struct Local\+Audio\+Stats
+\item internal\+Codec
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/04-\/10) }
+
+Refine code comments
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Refine code comment for on\+Remote\+Audio\+Stats
+
+\doxysection*{A\+PI (2020-\/04-\/10) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\item class I\+Metadata\+Observer
+\item class I\+Rtc\+Engine
+\begin{DoxyItemize}
+\item A\+PI register\+Media\+Metadata\+Observer()
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/04-\/10) }
+
+\doxysubsection*{\mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}} }
+
+{\bfseries{Modified\+:}}
+
+
+\begin{DoxyItemize}
+\item Refine the enum names of M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+TE and add some internal ones.
+\end{DoxyItemize}
+
+\doxysubsection*{I\+Agora\+Media\+Player.\+h }
+
+{\bfseries{Modified\+:}}
+
+
+\begin{DoxyItemize}
+\item Change one parameter\textquotesingle{}s type of get\+Stream\+Count() and get\+Stream\+Info() from int to int64\+\_\+t to get aligned with the other A\+P\+Is.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/04-\/10) }
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Modified A\+U\+D\+I\+O\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE
+\item Modified A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE
+\end{DoxyItemize}
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Deleted A\+U\+D\+I\+O\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+I\+OT
+\item Deleted A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+I\+OT
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/04-\/10) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Added\+:}} Support sending custom event to argus
+
+
+\begin{DoxyItemize}
+\item I\+Rtc\+Engine\+::send\+Custom\+Report\+Message()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/03-\/27) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Modified the comment of on\+Lastmile\+Quality
+\item Modified the comment of start\+Lastmile\+Probe\+Test
+\end{DoxyItemize}
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Deleted enable\+Lastmile\+Test()
+\item Deleted disable\+Lastmile\+Test()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/03-\/18) }
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Replace F\+E\+A\+T\+U\+R\+E\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+UT with F\+E\+A\+T\+U\+R\+E\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+U\+T\+\_\+\+S\+U\+P\+P\+O\+RT
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/03-\/16) }
+
+add field in struct Media\+Stream\+Info
+
+\doxysubsection*{\mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}} }
+
+{\bfseries{Add\+:}} add audio\+Bits\+Per\+Sample in struct Media\+Stream\+Info
+\begin{DoxyItemize}
+\item struct Media\+Stream\+Info
+\item audio\+Bits\+Per\+Sample
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/03-\/12) }
+
+\doxysubsection*{\mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Some comments in struct Packet\+Options
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/03-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item update\+Channel\+Media\+Options provider default connection\+Id param is agora\+::rtc\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+ID
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/03-\/09) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Modified the comment of member available\+Bandwidth for struct Lastmile\+Probe\+One\+Way\+Result
+\item Modified the comment of member expected\+Uplink\+Bitrate for struct Lastmile\+Probe\+Config
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/03-\/05) }
+
+\doxysubsection*{\mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item payload\+\_\+type and ssrc fields in struct Packet\+Options
+\end{DoxyItemize}
+
+A\+PI (2020-\/03-\/03)
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Change field name of sample\+Count in Encoded\+Audio\+Frame\+Info to samples\+Per\+Channel
+\end{DoxyItemize}
+
+A\+PI (2020-\/02-\/26)
+
+\doxysection*{A\+PI (2020-\/02-\/27) }
+
+Changes for warning
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Add warning W\+A\+R\+N\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+U\+N\+R\+E\+C\+O\+V\+E\+R\+A\+B\+LE;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/21) }
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item struct Remote\+Audio\+Stats
+\item L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+O\+R\+::\+L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+B\+U\+SY
+\item L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+O\+R\+::\+L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+F\+A\+I\+L\+U\+RE
+\item Rtc\+Stats\+::tx\+Audio\+Bytes
+\item Rtc\+Stats\+::tx\+Video\+Bytes
+\item Rtc\+Stats\+::rx\+Audio\+Bytes
+\item Rtc\+Stats\+::rx\+Video\+Bytes
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Changes L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+F\+A\+I\+L\+U\+RE = 3 to L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+F\+A\+I\+L\+U\+RE = 5
+\item Changes R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE to R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+TE
+\item Changes R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+A\+S\+ON to R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+ON
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item on\+Local\+Audio\+Stats()
+\item on\+Remote\+Audio\+Stats()
+\end{DoxyItemize}
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Changes on\+First\+Local\+Audio\+Frame to on\+First\+Local\+Audio\+Frame\+Published
+\item Changes on\+Local\+Audio\+State\+Changed(\+L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E) to on\+Local\+Audio\+State\+Changed(\+L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E, L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+O\+R)
+\item Changes on\+Remote\+Audio\+State\+Changed(uid\+\_\+t, R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E) to on\+Remote\+Audio\+State\+Changed(uid\+\_\+t, R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E, R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+O\+N, int)
+\end{DoxyItemize}
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item Deleted on\+Remote\+Audio\+Stats()
+\item Deleted on\+User\+Mute\+Audio()
+\item Deleted on\+Microphone\+Enabled
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/20) }
+
+Support lastmile probe test
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\begin{DoxyItemize}
+\item class I\+Rtc\+Engine
+\begin{DoxyItemize}
+\item add A\+PI start\+Lastmile\+Probe\+Test
+\item add A\+PI stop\+Lastmile\+Probe\+Test
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/19) }
+
+\doxysubsection*{Modified\+: }
+
+Modified A\+PI annotations in the following files\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}}
+\item \mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/18) }
+
+\doxysubsection*{Modified\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}}
+\begin{DoxyItemize}
+\item struct {\ttfamily Rtc\+Stats}, rename field {\ttfamily cid} into {\ttfamily connection\+Id}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/15) }
+
+A\+PI changes for unifying the definition of connection state and adding the A\+PI for getting connection state.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} Add the A\+PI for getting the connection state.
+\begin{DoxyItemize}
+\item C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE I\+Rtc\+Engine\+::get\+Connection\+State(conn\+\_\+id\+\_\+t connection\+Id)
+\end{DoxyItemize}
+
+{\bfseries{Deleted\+:}} Delete the definition of enum C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE.
+\begin{DoxyItemize}
+\item Deleted enum C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}} }
+
+{\bfseries{Add\+:}} Add the definition for connection state.
+\begin{DoxyItemize}
+\item enum C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/15) }
+
+\doxysubsection*{Modified\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\begin{DoxyItemize}
+\item Modified the comment of member publish\+Media\+Player\+Audio\+Track for struct Channel\+Media\+Options
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/12) }
+
+\doxysubsection*{Modified\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}}
+\begin{DoxyItemize}
+\item remove is\+Screen\+Capture and sync\+With\+Audio in track info
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/12) }
+
+\doxysubsection*{Modified\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}}
+\begin{DoxyItemize}
+\item Add P\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+R\+C\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+U\+N\+D\+E\+R\+F\+L\+OW
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/12) }
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\begin{DoxyItemize}
+\item A\+U\+D\+I\+O\+\_\+\+R\+E\+V\+E\+R\+B\+\_\+\+P\+R\+E\+S\+ET definition
+\item V\+O\+I\+C\+E\+\_\+\+C\+H\+A\+N\+G\+E\+R\+\_\+\+P\+R\+E\+S\+ET definition
+\item class I\+Rtc\+Engine
+\begin{DoxyItemize}
+\item A\+PI set\+Local\+Voice\+Reverb\+Preset()
+\item A\+PI set\+Local\+Voice\+Changer()
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/11) }
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_parameter_8h_source}{I\+Agora\+Parameter.\+h}}
+\begin{DoxyItemize}
+\item Add K\+E\+Y\+\_\+\+R\+T\+C\+\_\+\+V\+I\+D\+E\+O\+\_\+\+R\+E\+S\+E\+ND and K\+E\+Y\+\_\+\+R\+T\+C\+\_\+\+A\+U\+D\+I\+O\+\_\+\+R\+E\+S\+E\+ND
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/25) }
+
+\doxysubsection*{Remove\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\begin{DoxyItemize}
+\item remove I\+Rtc\+Engine\+Parameter as is chanage name to I\+Agora\+Parameter
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/13) }
+
+\doxysubsection*{Modified\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_agora_ref_ptr_8h_source}{Agora\+Ref\+Ptr.\+h}}
+\begin{DoxyItemize}
+\item Refine Agora shared pointer, re-\/struct code
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/17) }
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}}
+\begin{DoxyItemize}
+\item Add H\+E\+A\+A\+C2
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/10) }
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\begin{DoxyItemize}
+\item class I\+Rtc\+Engine
+\begin{DoxyItemize}
+\item A\+PI set\+Log\+File\+Size()
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/02-\/06) }
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\begin{DoxyItemize}
+\item Add member publish\+Media\+Player\+Audio\+Track for struct Channel\+Media\+Options
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+A\+PI (2020-\/02-\/05)
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_agora_ref_ptr_8h_source}{Agora\+Ref\+Ptr.\+h}}
+\begin{DoxyItemize}
+\item Add member function reset() for class agora\+\_\+refptr
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/01-\/19) }
+
+\doxysubsection*{Modified\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}}
+\begin{DoxyItemize}
+\item Move enum C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE to \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/01-\/15) }
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\begin{DoxyItemize}
+\item class I\+Rtc\+Engine
+\begin{DoxyItemize}
+\item A\+PI start\+Screen\+Capture()
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/01-\/13) }
+
+\doxysubsection*{Modified\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}}
+\begin{DoxyItemize}
+\item Rename P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N\+\_\+\+C\+O\+M\+P\+L\+E\+TE of M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+TE to P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N\+\_\+\+C\+O\+M\+P\+L\+E\+T\+ED
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/01-\/09) }
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item I\+Agora\+Media\+Player.\+h
+\begin{DoxyItemize}
+\item class I\+Media\+Player
+\begin{DoxyItemize}
+\item A\+PI initialize()
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2020-\/01-\/08) }
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item I\+Agora\+Media\+Player.\+h
+\begin{DoxyItemize}
+\item Add the following class
+\begin{DoxyItemize}
+\item class I\+Media\+Player
+\item class I\+Media\+Player\+Observer
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item \mbox{\hyperlink{_agora_base_8h_source}{Agora\+Base.\+h}}
+\begin{DoxyItemize}
+\item Add the following class
+\begin{DoxyItemize}
+\item class I\+Video\+Frame\+Observer
+\item class I\+Audio\+Frame\+Observer
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2019-\/12-\/25) }
+
+\doxysubsection*{Modified\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\begin{DoxyItemize}
+\item change A\+PI enable\+In\+Ear\+Monitoring()
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2019-\/12-\/15) }
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\begin{DoxyItemize}
+\item add A\+PI enable\+In\+Ear\+Monitoring()
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysubsection*{Modified\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}}
+\begin{DoxyItemize}
+\item Delete unused class Audio\+Frame
+\item Move External\+Video\+Frame from \mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}}
+\item Move V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+F\+O\+R\+M\+AT definition out from class External\+Video\+Frame.
+\item Move Video\+Frame out from class I\+Video\+Frame\+Observer.
+\end{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}}
+\begin{DoxyItemize}
+\item Move External\+Video\+Frame from this file to \mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}}
+\item Delete the following class
+\begin{DoxyItemize}
+\item class I\+Video\+Frame
+\item class I\+External\+Video\+Render\+Callback
+\item class I\+External\+Video\+Render
+\item class I\+External\+Video\+Render\+Factory
+\end{DoxyItemize}
+\item Delete method register\+Video\+Render\+Factory() in class I\+Media\+Engine
+\end{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\begin{DoxyItemize}
+\item all platform supports set\+In\+Ear\+Monitoring\+Volume()
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysubsection*{Deleted\+: }
+
+
+\begin{DoxyItemize}
+\item Delete class M\+E\+D\+I\+A\+\_\+\+E\+N\+G\+I\+N\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE in \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\item Delete A\+PI set\+Playback\+Device\+Volume in interface I\+Rtc\+Engine
+\item Delete A\+PI set\+Video\+Profile in interface I\+Rtc\+Engine
+\item Delete class Rtc\+Engine\+Parameters in \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2019-\/11-\/25) }
+
+\doxysubsection*{Add\+: }
+
+\doxysubsection*{Modified\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}}
+\begin{DoxyItemize}
+\item Delete unused class Audio\+Frame
+\item Move External\+Video\+Frame from \mbox{\hyperlink{_i_agora_media_engine_8h_source}{I\+Agora\+Media\+Engine.\+h}}
+\item Move V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+F\+O\+R\+M\+AT definition out from class External\+Video\+Frame.
+\item Move Video\+Frame out from class I\+Video\+Frame\+Observer.
+\end{DoxyItemize}
+\item I\+Agora\+Media\+Engine
+\begin{DoxyItemize}
+\item Move External\+Video\+Frame from this file to \mbox{\hyperlink{_agora_media_base_8h_source}{Agora\+Media\+Base.\+h}}
+\item Delete the following class
+\begin{DoxyItemize}
+\item class I\+Video\+Frame
+\item class I\+External\+Video\+Render\+Callback
+\item class I\+External\+Video\+Render
+\item class I\+External\+Video\+Render\+Factory
+\end{DoxyItemize}
+\item Delete method register\+Video\+Render\+Factory() in class I\+Media\+Engine
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysubsection*{Deleted\+: }
+
+
+\begin{DoxyItemize}
+\item I\+Agora\+Live\+Engine.\+h
+\item I\+Agora\+Live\+Publisher.\+h
+\item I\+Agora\+Live\+Subscriber.\+h
+\item I\+Agora\+Signaling\+Engine.\+h
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/03-\/22) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} \doxysection*{-\/ enable\+In\+Ear\+Monitoring(bool enabled, bool include\+Audio\+Filter) to enable\+In\+Ear\+Monitoring(bool enabled, int include\+Audio\+Filters) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}} moidfy enable\+Audio\+Volume\+Indication support vad
+
+\doxysection*{A\+PI(2021-\/09-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+$\ast$\+Modified\+:$\ast$$\ast$
+\begin{DoxyItemize}
+\item add A\+PI set\+Local\+Publish\+Fallback\+Option(\+S\+T\+R\+E\+A\+M\+\_\+\+F\+A\+L\+L\+B\+A\+C\+K\+\_\+\+O\+P\+T\+I\+O\+N\+S option)
+\item add A\+PI set\+Remote\+Subscribe\+Fallback\+Option(\+S\+T\+R\+E\+A\+M\+\_\+\+F\+A\+L\+L\+B\+A\+C\+K\+\_\+\+O\+P\+T\+I\+O\+N\+S option) \doxysection*{A\+PI (2021-\/11-\/18) }
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} virtual int set\+Cloud\+Proxy(\+C\+L\+O\+U\+D\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+T\+Y\+P\+E proxy\+Type) = 0; \doxysection*{A\+PI (2021-\/09-\/29) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}} virtual int set\+Local\+Access\+Point(const Local\+Access\+Point\+Configuration\& config) = 0;
+
+\doxysection*{A\+PI (2021-\/09-\/15) }
+
+\doxysubsection*{$\ast$$\ast$\+Add\+:$\ast$$\ast$ }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} -\/add A\+PI enable\+Fish\+Correction(bool enabled, const Fish\+Correction\+Params\& params)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/16) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Add Advanced\+Config\+Info in Local\+Access\+Point\+Configuration;
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/03-\/22) }
+
+\doxysubsection*{$\ast$$\ast$\+Add\+:$\ast$$\ast$ }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} -\/remove k \doxysection*{A\+PI (2022-\/03-\/11) }
+\end{DoxyItemize}
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item virtual void on\+Proxy\+Connected(const char$\ast$ channel, uid\+\_\+t uid, P\+R\+O\+X\+Y\+\_\+\+T\+Y\+P\+E proxy\+Type, const char$\ast$ local\+Proxy\+Ip, int elapsed)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/04-\/06) }
+
+Modify I\+Rtc\+Engine.
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}} Rename adjust\+Loopback\+Recording\+Volume of I\+Rtc\+Engine.
+\begin{DoxyItemize}
+\item Changes\+: Rename adjust\+Loopback\+Recording\+Volume of I\+Rtc\+Engine to adjust\+Loopback\+Signal\+Volume.
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/08-\/22) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} \doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} }
+
+{\bfseries{Modified\+:}} Modify comment for mute\+All\+Remote\+Video\+Streams. Cancel deprecated for on\+User\+Mute\+Video.
+
+\doxysection*{A\+PI (2022-\/04-\/27) }
+
+\doxysubsection*{$\ast$$\ast$\+Add\+:$\ast$$\ast$ }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} -\/add A\+PI set\+Audio\+Scenario(\+A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+P\+E scenario)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/05-\/16) }
+
+\doxysubsection*{$\ast$$\ast$\+Add\+:$\ast$$\ast$ }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{Modified\+:}} Screen\+Capture\+Source\+Info pointer to N\+S\+Number to Number
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/5-\/21) }
+
+\doxysubsection*{$\ast$$\ast$\+Add\+:$\ast$$\ast$ }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{Add\+:}} virtual int get\+Network\+Type() = 0
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/06-\/29) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Delete\+:}}
+\begin{DoxyItemize}
+\item delete enable\+Fish\+Correction
+\end{DoxyItemize}
+
+\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}} remove deprecated A\+PI and callback of C\+DN stream
+
+\doxysubsection*{$\ast$$\ast$\+Deleted\+:$\ast$$\ast$ }
+
+add\+Publish\+Stream\+Url\+Ex
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+
+\doxysubsection*{$\ast$$\ast$\+Deleted\+:$\ast$$\ast$ }
+
+add\+Publish\+Stream\+Url remove\+Publish\+Stream\+Url set\+Live\+Transcoding on\+Stream\+Unpublished on\+Stream\+Published
+
+\doxysection*{A\+PI (2022-\/08-\/29) }
+
+\doxysubsection*{$\ast$$\ast$\+Add\+:$\ast$$\ast$ }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{Modified\+:}} add minimize\+Window field in Screen\+Capture\+Source\+Info
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/09-\/23) }
+
+\doxysubsection*{$\ast$$\ast$\+Modified\+:$\ast$$\ast$ }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_n_g_i_agora_local_user_8h_source}{N\+G\+I\+Agora\+Local\+User.\+h}},\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}},\mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}},Agora\+Rtc\+Engine\+Kit.\+h,Agora\+Rtc\+Engine\+Kit\+Ex.\+h,Rtc\+Engine.\+java,Rtc\+Engine\+Ex.\+java,Rtc\+Engine\+Impl.\+java {\bfseries{Modified\+:}} set\+Subscribe(audio,video)(Black,white)list api to block,allow
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/09-\/14) }
+
+\doxysubsection*{$\ast$$\ast$\+Add\+:$\ast$$\ast$ }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{Modified\+:}} add domain\+Limit field in Rtc\+Engine\+Context
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2022-\/10-\/24) }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{Modified\+:}} S\+T\+R\+E\+A\+M\+\_\+\+F\+A\+L\+L\+B\+A\+C\+K\+\_\+\+O\+P\+T\+I\+O\+NS default value change to Low(1).
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2021-\/09-\/25) }
+
+\doxysubsection*{Add\+: }
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}
+\begin{DoxyItemize}
+\item virtual int set\+High\+Priority\+User\+List(uid\+\_\+t$\ast$ uid\+List, int uid\+Num, S\+T\+R\+E\+A\+M\+\_\+\+F\+A\+L\+L\+B\+A\+C\+K\+\_\+\+O\+P\+T\+I\+O\+N\+S option) = 0;
+\end{DoxyItemize}
+\item \mbox{\hyperlink{_i_agora_rtc_engine_ex_8h_source}{I\+Agora\+Rtc\+Engine\+Ex.\+h}}
+\begin{DoxyItemize}
+\item virtual int set\+High\+Priority\+User\+List\+Ex(uid\+\_\+t$\ast$ uid\+List, int uid\+Num, S\+T\+R\+E\+A\+M\+\_\+\+F\+A\+L\+L\+B\+A\+C\+K\+\_\+\+O\+P\+T\+I\+O\+NS option, const Rtc\+Connection\& connection) = 0;
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/01-\/19) }
+
+\doxysubsection*{I\+Agora\+Rtc\+Engine.\+h.\+h }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item enum M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE add A\+U\+D\+I\+O\+\_\+\+V\+I\+R\+T\+U\+A\+L\+\_\+\+P\+L\+A\+Y\+O\+U\+T\+\_\+\+D\+E\+V\+I\+CE and A\+U\+D\+I\+O\+\_\+\+V\+I\+R\+T\+U\+A\+L\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+D\+E\+V\+I\+CE
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/01-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add}}
+\begin{DoxyItemize}
+\item virtual int query\+Screen\+Capture\+Capability()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/01-\/30) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item virtual int set\+Screen\+Capture\+Scenario(\+S\+C\+R\+E\+E\+N\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+P\+E screen\+Scenario)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/03-\/02) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modified\+:}}
+\begin{DoxyItemize}
+\item Add int e2e\+Delay for Remote\+Video\+Stats struct
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/03-\/28) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}/\+Rtc\+Engine.java/\+Agora\+Rtc\+Engine\+Kit.\+h }
+
+{\bfseries{Add\+:}} get\+Ntp\+Wall\+Time\+In\+Ms
+
+\doxysection*{A\+PI (2023-\/03-\/31) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}}/\+Rtc\+Engine.java/\+Agora\+Rtc\+Engine\+Kit.\+h }
+
+{\bfseries{Deleted\+:}} get\+Ntp\+Time\+In\+Ms
+
+\doxysection*{A\+PI (2023-\/03-\/31) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{A\+DD\+:}} set\+Route\+In\+Communication\+Mode
+
+\doxysection*{A\+PI (2023-\/06-\/12) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{A\+DD\+:}} publish\+Mixed\+Audio\+Track
+
+\doxysection*{A\+PI (2023-\/07-\/03) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item int query\+Device\+Score
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/07-\/04) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add bool is\+Camera\+Exposure\+Supported()
+\item Add int set\+Camera\+Exposure\+Factor(float factor)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/08-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add void on\+Video\+Layout\+Info(uid\+\_\+t uid, int width, int height, int layout\+Number,const Video\+Layout$\ast$ layoutlist)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/09-\/21) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+:}}
+\begin{DoxyItemize}
+\item rename void on\+Transcoded\+Stream\+Layout\+Info(uid\+\_\+t uid, int width, int height, int layout\+Count,const Video\+Layout$\ast$ layoutlist)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/01-\/02) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add int write\+Log(commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L level, const char$\ast$ fmt, ...)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/02-\/23) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Add\+:}}
+\begin{DoxyItemize}
+\item Add int set\+Audio\+Mixing\+Playback\+Speed(int speed)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/03-\/07) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{A\+DD\+:}}
+\begin{DoxyItemize}
+\item virtual int query\+Camera\+Focal\+Length\+Capability()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/03-\/13) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{Modify\+:}} struct Camera\+Capturer\+Configuration
+
+\doxysection*{A\+PI (2023-\/11-\/09) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{A\+DD\+:}}
+\begin{DoxyItemize}
+\item virtual void on\+Camera\+Capturer\+Configuration\+Changed(int direction, int focal\+Length\+Type, int width, int height, int frame\+Rate)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/03-\/20) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{Delete\+: delete duplicate code}}
+\begin{DoxyItemize}
+\item virtual int query\+Camera\+Focal\+Length\+Capability()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/04-\/03) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Modify\+: rename api}}
+\begin{DoxyItemize}
+\item Modified\+: virtual bool is\+Camera\+Center\+Stage\+Supported()
+\item Modified\+: virtual int enable\+Camera\+Center\+Stage(bool enabled)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/04-\/08) }
+
+\doxysubsection*{\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} }
+
+{\bfseries{Deleted\+:}}
+\begin{DoxyItemize}
+\item virtual void on\+Camera\+Capturer\+Configuration\+Changed()
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2023-\/04-\/29) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{A\+DD\+:}}
+\begin{DoxyItemize}
+\item virtual int enable\+Voice\+A\+I\+Tuner(bool enabled, V\+O\+I\+C\+E\+\_\+\+A\+I\+\_\+\+T\+U\+N\+E\+R\+\_\+\+T\+Y\+P\+E type)
+\end{DoxyItemize}
+
+\doxysection*{A\+PI (2024-\/06-\/11) }
+
+\mbox{\hyperlink{_i_agora_rtc_engine_8h_source}{I\+Agora\+Rtc\+Engine.\+h}} {\bfseries{Modify\+:}} struct Camera\+Capturer\+Configuration 

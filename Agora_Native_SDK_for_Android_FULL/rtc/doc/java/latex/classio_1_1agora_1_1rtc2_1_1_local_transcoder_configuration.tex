@@ -1,0 +1,45 @@
+\hypertarget{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration}{}\doxysection{io.\+agora.\+rtc2.\+Local\+Transcoder\+Configuration Class Reference}
+\label{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration}\index{io.agora.rtc2.LocalTranscoderConfiguration@{io.agora.rtc2.LocalTranscoderConfiguration}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_1_1_transcoding_video_stream}{Transcoding\+Video\+Stream}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_1_1_transcoding_video_stream}{Transcoding\+Video\+Stream}} $>$ \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_aa11b72faf48d0335882473cf8904b36c}{transcoding\+Video\+Streams}}
+\item 
+boolean \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_af24a89d52e755fd1a1dac6a4027e7dca}{sync\+With\+Primary\+Camera}}
+\item 
+\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_video_encoder_configuration}{Video\+Encoder\+Configuration}} \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_a46645d56e2bf42ffb8169d64a93e7201}{video\+Output\+Configuration}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The configuration of the video mixing on the local client. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_aa11b72faf48d0335882473cf8904b36c}\label{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_aa11b72faf48d0335882473cf8904b36c}} 
+\index{io.agora.rtc2.LocalTranscoderConfiguration@{io.agora.rtc2.LocalTranscoderConfiguration}!transcodingVideoStreams@{transcodingVideoStreams}}
+\index{transcodingVideoStreams@{transcodingVideoStreams}!io.agora.rtc2.LocalTranscoderConfiguration@{io.agora.rtc2.LocalTranscoderConfiguration}}
+\doxysubsubsection{\texorpdfstring{transcodingVideoStreams}{transcodingVideoStreams}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_1_1_transcoding_video_stream}{Transcoding\+Video\+Stream}}$>$ io.\+agora.\+rtc2.\+Local\+Transcoder\+Configuration.\+transcoding\+Video\+Streams}
+
+The video streams for the video mixing on the local client. See \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_1_1_transcoding_video_stream}{Transcoding\+Video\+Stream}}. \mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_af24a89d52e755fd1a1dac6a4027e7dca}\label{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_af24a89d52e755fd1a1dac6a4027e7dca}} 
+\index{io.agora.rtc2.LocalTranscoderConfiguration@{io.agora.rtc2.LocalTranscoderConfiguration}!syncWithPrimaryCamera@{syncWithPrimaryCamera}}
+\index{syncWithPrimaryCamera@{syncWithPrimaryCamera}!io.agora.rtc2.LocalTranscoderConfiguration@{io.agora.rtc2.LocalTranscoderConfiguration}}
+\doxysubsubsection{\texorpdfstring{syncWithPrimaryCamera}{syncWithPrimaryCamera}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+Local\+Transcoder\+Configuration.\+sync\+With\+Primary\+Camera}
+
+Whether to use the timestamp when the primary camera captures the video frame as the timestamp of the mixed video frame.
+\begin{DoxyItemize}
+\item true\+: (Default) Use the timestamp of the captured video frame as the timestamp of the mixed video frame.
+\item false\+: Do not use the timestamp of the captured video frame as the timestamp of the mixed video frame. Instead, use the timestamp when the mixed video frame is constructed. 
+\end{DoxyItemize}\mbox{\Hypertarget{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_a46645d56e2bf42ffb8169d64a93e7201}\label{classio_1_1agora_1_1rtc2_1_1_local_transcoder_configuration_a46645d56e2bf42ffb8169d64a93e7201}} 
+\index{io.agora.rtc2.LocalTranscoderConfiguration@{io.agora.rtc2.LocalTranscoderConfiguration}!videoOutputConfiguration@{videoOutputConfiguration}}
+\index{videoOutputConfiguration@{videoOutputConfiguration}!io.agora.rtc2.LocalTranscoderConfiguration@{io.agora.rtc2.LocalTranscoderConfiguration}}
+\doxysubsubsection{\texorpdfstring{videoOutputConfiguration}{videoOutputConfiguration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_video_encoder_configuration}{Video\+Encoder\+Configuration}} io.\+agora.\+rtc2.\+Local\+Transcoder\+Configuration.\+video\+Output\+Configuration}
+
+The encoding configuration of the mixed video stream after the video mixing on the local client. See Video\+Encoder\+Configuration. 

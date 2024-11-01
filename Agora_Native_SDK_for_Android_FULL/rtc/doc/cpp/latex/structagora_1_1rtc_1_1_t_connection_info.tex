@@ -1,0 +1,62 @@
+\hypertarget{structagora_1_1rtc_1_1_t_connection_info}{}\doxysection{agora\+::rtc\+::T\+Connection\+Info Struct Reference}
+\label{structagora_1_1rtc_1_1_t_connection_info}\index{agora::rtc::TConnectionInfo@{agora::rtc::TConnectionInfo}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Rtc\+Connection.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+conn\+\_\+id\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info_a3fcbc4ad183cf0aea51b8d9bcaf679f6}{id}}
+\item 
+\mbox{\hyperlink{classagora_1_1util_1_1_copyable_auto_ptr}{util\+::\+A\+String}} \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info_acc3403b49fe9c96a21da0a47934cc497}{channel\+Id}}
+\item 
+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info_aa83a6cc55e47bf0c18cf0a4f8bbc2061}{state}}
+\item 
+\mbox{\hyperlink{classagora_1_1util_1_1_copyable_auto_ptr}{util\+::\+A\+String}} \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info_a70abbd97aa295044720363b645c2ed95}{local\+User\+Id}}
+\item 
+uid\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_t_connection_info_aa1ea6155bbcf82ef1fd393fee342d634}{internal\+Uid}}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_t_connection_info_a88aa170ec85bdb8a1de4dc1a0635b7c8}\label{structagora_1_1rtc_1_1_t_connection_info_a88aa170ec85bdb8a1de4dc1a0635b7c8}} 
+int {\bfseries proxy\+Type}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_t_connection_info_a1856899f7be9534a978b1cf719391f9c}\label{structagora_1_1rtc_1_1_t_connection_info_a1856899f7be9534a978b1cf719391f9c}} 
+\mbox{\hyperlink{classagora_1_1util_1_1_copyable_auto_ptr}{util\+::\+A\+String}} {\bfseries connection\+Ip}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The information of an R\+TC Connection. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_t_connection_info_a3fcbc4ad183cf0aea51b8d9bcaf679f6}\label{structagora_1_1rtc_1_1_t_connection_info_a3fcbc4ad183cf0aea51b8d9bcaf679f6}} 
+\index{agora::rtc::TConnectionInfo@{agora::rtc::TConnectionInfo}!id@{id}}
+\index{id@{id}!agora::rtc::TConnectionInfo@{agora::rtc::TConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily conn\+\_\+id\+\_\+t agora\+::rtc\+::\+T\+Connection\+Info\+::id}
+
+The ID of the R\+TC Connection. \mbox{\Hypertarget{structagora_1_1rtc_1_1_t_connection_info_acc3403b49fe9c96a21da0a47934cc497}\label{structagora_1_1rtc_1_1_t_connection_info_acc3403b49fe9c96a21da0a47934cc497}} 
+\index{agora::rtc::TConnectionInfo@{agora::rtc::TConnectionInfo}!channelId@{channelId}}
+\index{channelId@{channelId}!agora::rtc::TConnectionInfo@{agora::rtc::TConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{channelId}{channelId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1util_1_1_copyable_auto_ptr}{util\+::\+A\+String}} agora\+::rtc\+::\+T\+Connection\+Info\+::channel\+Id}
+
+The ID of the channel. If you have not called \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a2872f80606fa399892ba60fe66014e13}{connect}}, this member is {\ttfamily N\+U\+LL}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_t_connection_info_aa83a6cc55e47bf0c18cf0a4f8bbc2061}\label{structagora_1_1rtc_1_1_t_connection_info_aa83a6cc55e47bf0c18cf0a4f8bbc2061}} 
+\index{agora::rtc::TConnectionInfo@{agora::rtc::TConnectionInfo}!state@{state}}
+\index{state@{state}!agora::rtc::TConnectionInfo@{agora::rtc::TConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+T\+Connection\+Info\+::state}
+
+The connection state\+: \#\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE. \mbox{\Hypertarget{structagora_1_1rtc_1_1_t_connection_info_a70abbd97aa295044720363b645c2ed95}\label{structagora_1_1rtc_1_1_t_connection_info_a70abbd97aa295044720363b645c2ed95}} 
+\index{agora::rtc::TConnectionInfo@{agora::rtc::TConnectionInfo}!localUserId@{localUserId}}
+\index{localUserId@{localUserId}!agora::rtc::TConnectionInfo@{agora::rtc::TConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{localUserId}{localUserId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1util_1_1_copyable_auto_ptr}{util\+::\+A\+String}} agora\+::rtc\+::\+T\+Connection\+Info\+::local\+User\+Id}
+
+The ID of the local user. \mbox{\Hypertarget{structagora_1_1rtc_1_1_t_connection_info_aa1ea6155bbcf82ef1fd393fee342d634}\label{structagora_1_1rtc_1_1_t_connection_info_aa1ea6155bbcf82ef1fd393fee342d634}} 
+\index{agora::rtc::TConnectionInfo@{agora::rtc::TConnectionInfo}!internalUid@{internalUid}}
+\index{internalUid@{internalUid}!agora::rtc::TConnectionInfo@{agora::rtc::TConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{internalUid}{internalUid}}
+{\footnotesize\ttfamily uid\+\_\+t agora\+::rtc\+::\+T\+Connection\+Info\+::internal\+Uid}
+
+Internal use only. 

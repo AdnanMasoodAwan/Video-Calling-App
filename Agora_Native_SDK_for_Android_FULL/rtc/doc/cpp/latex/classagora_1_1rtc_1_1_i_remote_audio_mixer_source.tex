@@ -1,0 +1,56 @@
+\hypertarget{classagora_1_1rtc_1_1_i_remote_audio_mixer_source}{}\doxysection{agora\+::rtc\+::I\+Remote\+Audio\+Mixer\+Source Class Reference}
+\label{classagora_1_1rtc_1_1_i_remote_audio_mixer_source}\index{agora::rtc::IRemoteAudioMixerSource@{agora::rtc::IRemoteAudioMixerSource}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Remote\+Audio\+Mixer\+Source.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Remote\+Audio\+Mixer\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_remote_audio_mixer_source}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_mixer_source_afbb3871ab39f5a2fd1ecf39b66b0302a}{add\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{I\+Remote\+Audio\+Track}} $>$ track, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_mixer_source_a8a64e5c8c48270c8054d42e1425a9838}{remove\+Audio\+Track}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{I\+Remote\+Audio\+Track}} $>$ track, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_mixer_source_a4461e2c7ac8ac2a6f9e246eeded4bdb1}{get\+Mix\+Delay}} () const =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_mixer_source}{I\+Remote\+Audio\+Mixer\+Source}} class abstracts a multi-\/in-\/single-\/out audio source which receives audio streams from multiple remote audio tracks and generate mixed audio stream in user defined output format. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_mixer_source_afbb3871ab39f5a2fd1ecf39b66b0302a}\label{classagora_1_1rtc_1_1_i_remote_audio_mixer_source_afbb3871ab39f5a2fd1ecf39b66b0302a}} 
+\index{agora::rtc::IRemoteAudioMixerSource@{agora::rtc::IRemoteAudioMixerSource}!addAudioTrack@{addAudioTrack}}
+\index{addAudioTrack@{addAudioTrack}!agora::rtc::IRemoteAudioMixerSource@{agora::rtc::IRemoteAudioMixerSource}}
+\doxysubsubsection{\texorpdfstring{addAudioTrack()}{addAudioTrack()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Audio\+Mixer\+Source\+::add\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{I\+Remote\+Audio\+Track}} $>$}]{track,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Add a audio track for mixing. Automatically starts mixing if add audio track 
+\begin{DoxyParams}{Parameters}
+{\em track} & The instance of the audio track that you want mixer to receive its audio stream. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_mixer_source_a8a64e5c8c48270c8054d42e1425a9838}\label{classagora_1_1rtc_1_1_i_remote_audio_mixer_source_a8a64e5c8c48270c8054d42e1425a9838}} 
+\index{agora::rtc::IRemoteAudioMixerSource@{agora::rtc::IRemoteAudioMixerSource}!removeAudioTrack@{removeAudioTrack}}
+\index{removeAudioTrack@{removeAudioTrack}!agora::rtc::IRemoteAudioMixerSource@{agora::rtc::IRemoteAudioMixerSource}}
+\doxysubsubsection{\texorpdfstring{removeAudioTrack()}{removeAudioTrack()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Audio\+Mixer\+Source\+::remove\+Audio\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{I\+Remote\+Audio\+Track}} $>$}]{track,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Remove a audio track for mixing. Automatically stops the mixed stream if all audio tracks are removed 
+\begin{DoxyParams}{Parameters}
+{\em track} & The instance of the audio track that you want to remove from the mixer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_mixer_source_a4461e2c7ac8ac2a6f9e246eeded4bdb1}\label{classagora_1_1rtc_1_1_i_remote_audio_mixer_source_a4461e2c7ac8ac2a6f9e246eeded4bdb1}} 
+\index{agora::rtc::IRemoteAudioMixerSource@{agora::rtc::IRemoteAudioMixerSource}!getMixDelay@{getMixDelay}}
+\index{getMixDelay@{getMixDelay}!agora::rtc::IRemoteAudioMixerSource@{agora::rtc::IRemoteAudioMixerSource}}
+\doxysubsubsection{\texorpdfstring{getMixDelay()}{getMixDelay()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Audio\+Mixer\+Source\+::get\+Mix\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the delay time for mix. 

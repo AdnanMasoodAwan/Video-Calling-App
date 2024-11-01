@@ -1,0 +1,107 @@
+\hypertarget{classio_1_1agora_1_1rtm_1_1_error_info}{}\doxysection{io.\+agora.\+rtm.\+Error\+Info Class Reference}
+\label{classio_1_1agora_1_1rtm_1_1_error_info}\index{io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_a98cc1e85247f604016b9221f71d5808c}{Error\+Info}} (\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} error\+Code)
+\item 
+\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_a5d2fb2953b229d35a4e9ece9fb13d8ef}{Error\+Info}} (\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} error\+Code, String reason)
+\item 
+\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_a669305628ae0a0a18def77b15708a91e}{Error\+Info}} (\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} error\+Code, String reason, String operation)
+\item 
+\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_a0e9ce0573b5236ad8332fb97239924cc}{get\+Error\+Code}} ()
+\item 
+String \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_ae225b5b17c3767cd7537c03fded87fd5}{get\+Error\+Reason}} ()
+\item 
+String \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_aab794ac4d6970cd3e30c87e2320afaaa}{get\+Operation}} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_error_info_ab73790b5729495f7cc0d5665e5d8c5f3}\label{classio_1_1agora_1_1rtm_1_1_error_info_ab73790b5729495f7cc0d5665e5d8c5f3}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The warning or error code and description. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_error_info_a98cc1e85247f604016b9221f71d5808c}\label{classio_1_1agora_1_1rtm_1_1_error_info_a98cc1e85247f604016b9221f71d5808c}} 
+\index{io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}!ErrorInfo@{ErrorInfo}}
+\index{ErrorInfo@{ErrorInfo}!io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}}
+\doxysubsubsection{\texorpdfstring{ErrorInfo()}{ErrorInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily io.\+agora.\+rtm.\+Error\+Info.\+Error\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}}}]{error\+Code }\end{DoxyParamCaption})}
+
+Constructs a new instance of Rtm\+Error\+Code with the specified error\+Code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Code} & The error code of \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info}{Error\+Info}}(which is saved for later retrieval by the \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_a0e9ce0573b5236ad8332fb97239924cc}{get\+Error\+Code()}} method) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_error_info_a5d2fb2953b229d35a4e9ece9fb13d8ef}\label{classio_1_1agora_1_1rtm_1_1_error_info_a5d2fb2953b229d35a4e9ece9fb13d8ef}} 
+\index{io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}!ErrorInfo@{ErrorInfo}}
+\index{ErrorInfo@{ErrorInfo}!io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}}
+\doxysubsubsection{\texorpdfstring{ErrorInfo()}{ErrorInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily io.\+agora.\+rtm.\+Error\+Info.\+Error\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}}}]{error\+Code,  }\item[{String}]{reason }\end{DoxyParamCaption})}
+
+Constructs a new instance of Rtm\+Error\+Code with the specified error\+Code and specified reason detail.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Code} & The error code of \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info}{Error\+Info}} (which is saved for later retrieval by the \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_a0e9ce0573b5236ad8332fb97239924cc}{get\+Error\+Code()}} method) \\
+\hline
+{\em reason} & A string describing the reason for operation operation failure(which is saved for later retrieval by the \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_ae225b5b17c3767cd7537c03fded87fd5}{get\+Error\+Reason()}} method) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_error_info_a669305628ae0a0a18def77b15708a91e}\label{classio_1_1agora_1_1rtm_1_1_error_info_a669305628ae0a0a18def77b15708a91e}} 
+\index{io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}!ErrorInfo@{ErrorInfo}}
+\index{ErrorInfo@{ErrorInfo}!io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}}
+\doxysubsubsection{\texorpdfstring{ErrorInfo()}{ErrorInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily io.\+agora.\+rtm.\+Error\+Info.\+Error\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}}}]{error\+Code,  }\item[{String}]{reason,  }\item[{String}]{operation }\end{DoxyParamCaption})}
+
+Constructs a new instance of Rtm\+Error\+Code with the specified error\+Code, specified reason detail and specified operation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Code} & The error code of \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info}{Error\+Info}} (which is saved for later retrieval by the \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_a0e9ce0573b5236ad8332fb97239924cc}{get\+Error\+Code()}} method) \\
+\hline
+{\em reason} & A string describing the reason for operation failure(which is saved for later retrieval by the \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_ae225b5b17c3767cd7537c03fded87fd5}{get\+Error\+Reason()}} method) \\
+\hline
+{\em operation} & Current operation(which is saved for later retrieval by the \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_error_info_aab794ac4d6970cd3e30c87e2320afaaa}{get\+Operation()}} method) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_error_info_a0e9ce0573b5236ad8332fb97239924cc}\label{classio_1_1agora_1_1rtm_1_1_error_info_a0e9ce0573b5236ad8332fb97239924cc}} 
+\index{io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}!getErrorCode@{getErrorCode}}
+\index{getErrorCode@{getErrorCode}!io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}}
+\doxysubsubsection{\texorpdfstring{getErrorCode()}{getErrorCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} io.\+agora.\+rtm.\+Error\+Info.\+get\+Error\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieves the warning or error code.
+
+\begin{DoxyReturn}{Returns}
+The warning or error code. See \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Constants.\+Rtm\+Error\+Code}} for a list of warning or error codes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_error_info_ae225b5b17c3767cd7537c03fded87fd5}\label{classio_1_1agora_1_1rtm_1_1_error_info_ae225b5b17c3767cd7537c03fded87fd5}} 
+\index{io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}!getErrorReason@{getErrorReason}}
+\index{getErrorReason@{getErrorReason}!io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}}
+\doxysubsubsection{\texorpdfstring{getErrorReason()}{getErrorReason()}}
+{\footnotesize\ttfamily String io.\+agora.\+rtm.\+Error\+Info.\+get\+Error\+Reason (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieves the warning or error reason.
+
+\begin{DoxyReturn}{Returns}
+The warning or error reason. See \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Constants.\+Rtm\+Error\+Code}} for a list of warning or error codes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_error_info_aab794ac4d6970cd3e30c87e2320afaaa}\label{classio_1_1agora_1_1rtm_1_1_error_info_aab794ac4d6970cd3e30c87e2320afaaa}} 
+\index{io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}!getOperation@{getOperation}}
+\index{getOperation@{getOperation}!io.agora.rtm.ErrorInfo@{io.agora.rtm.ErrorInfo}}
+\doxysubsubsection{\texorpdfstring{getOperation()}{getOperation()}}
+{\footnotesize\ttfamily String io.\+agora.\+rtm.\+Error\+Info.\+get\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieves current operation.
+
+\begin{DoxyReturn}{Returns}
+current operation. 
+\end{DoxyReturn}

@@ -1,0 +1,176 @@
+[
+  {
+    "name": "full-sdk",
+    "components": [
+      "all.so"
+    ],
+    "type": "all-in-one",
+    "excluded": "false"
+  },
+  {
+    "name": "full-rtc-basic",
+    "components": [
+      "libagora-rtc-sdk.so",
+      "libaosl.so",
+      "libagora-fdkaac.so",
+      "libagora-ffmpeg.so",
+      "libagora-soundtouch.so"
+    ],
+    "type": "basic",
+    "excluded": "false"
+  },
+  {
+    "name": "ains",
+    "components": [
+      "libagora_ai_noise_suppression_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "ains-ll",
+    "components": [
+      "libagora_ai_noise_suppression_ll_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "audio-beauty",
+    "components": [
+      "libagora_audio_beauty_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "clear-vision",
+    "components": [
+      "libagora_clear_vision_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "full-content-inspect",
+    "components": [
+      "libagora_content_inspect_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "screen-capture",
+    "components": [
+      "libagora_screen_capture_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "full-virtual-background",
+    "components": [
+      "libagora_segmentation_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "spatial-audio",
+    "components": [
+      "libagora_spatial_audio_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "full-screen-sharing",
+    "components": [
+      "AgoraScreenShareExtension.aar"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "aiaec",
+    "components": [
+      "libagora_ai_echo_cancellation_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "aiaec-ll",
+    "components": [
+      "libagora_ai_echo_cancellation_ll_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "full-vqa",
+    "components": [
+      "libagora_video_quality_analyzer_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "full-face-detect",
+    "components": [
+      "libagora_face_detection_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "full-face-capture",
+    "components": [
+      "libagora_face_capture_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "full-voice-drive",
+    "components": [
+      "libagora_lip_sync_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "full-video-codec-enc",
+    "components": [
+      "libagora_video_encoder_extension.so",
+      "libvideo_enc.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "full-video-codec-dec",
+    "components": [
+      "libagora_video_decoder_extension.so",
+      "libvideo_dec.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "full-video-av1-codec-enc",
+    "components": [
+      "libagora_video_av1_encoder_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  },
+  {
+    "name": "full-video-av1-codec-dec",
+    "components": [
+      "libagora_video_av1_decoder_extension.so"
+    ],
+    "type": "extension",
+    "excluded": "false"
+  }
+]

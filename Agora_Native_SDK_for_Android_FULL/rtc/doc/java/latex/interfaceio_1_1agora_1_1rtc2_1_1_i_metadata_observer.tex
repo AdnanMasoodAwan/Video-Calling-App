@@ -1,0 +1,94 @@
+\hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer}{}\doxysection{io.\+agora.\+rtc2.\+I\+Metadata\+Observer Interface Reference}
+\label{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer}\index{io.agora.rtc2.IMetadataObserver@{io.agora.rtc2.IMetadataObserver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a7c56f037df6e7076e32391b32e6e46cd}{get\+Max\+Metadata\+Size}} ()
+\item 
+abstract byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a660593e73c17923b7536bcff26382caa}{on\+Ready\+To\+Send\+Metadata}} (long time\+Stamp\+Ms, int source\+Type)
+\item 
+abstract void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a279cb256119fe657114db93c3b0ffdf7}{on\+Metadata\+Received}} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_metadata}{Agora\+Metadata}} metadata)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_aa5659fd8aba1a08610bed45dbf4d281b}{U\+N\+K\+N\+O\+W\+N\+\_\+\+M\+E\+T\+A\+D\+A\+TA}} = -\/1
+\item 
+static final int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a4a063c708a21a1f4ec85f518c200a232}{V\+I\+D\+E\+O\+\_\+\+M\+E\+T\+A\+D\+A\+TA}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer}{I\+Metadata\+Observer}}.
+
+\begin{DoxyNote}{Note}
+Implement all the callbacks in this class in the critical thread. We recommend avoiding any time-\/consuming operation in the critical thread. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a7c56f037df6e7076e32391b32e6e46cd}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a7c56f037df6e7076e32391b32e6e46cd}} 
+\index{io.agora.rtc2.IMetadataObserver@{io.agora.rtc2.IMetadataObserver}!getMaxMetadataSize@{getMaxMetadataSize}}
+\index{getMaxMetadataSize@{getMaxMetadataSize}!io.agora.rtc2.IMetadataObserver@{io.agora.rtc2.IMetadataObserver}}
+\doxysubsubsection{\texorpdfstring{getMaxMetadataSize()}{getMaxMetadataSize()}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+rtc2.\+I\+Metadata\+Observer.\+get\+Max\+Metadata\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Occurs when the S\+DK requests the maximum size of the metadata.
+
+The Metadata struct contains the following parameters\+:
+\begin{DoxyItemize}
+\item {\ttfamily uid}\+: ID of the user who sends the metadata. \begin{DoxyNote}{Note}
+When sending the metadata, ignore this parameter. When receiving the metadata, use this parameter to determine who sends the metadata.
+\end{DoxyNote}
+
+\item {\ttfamily size}\+: The metadata size.
+\item {\ttfamily buffer}\+: The metadata buffer.
+\item {\ttfamily time\+Stamp\+Ms}\+: The N\+TP timestamp (ms) that the metadata sends. \begin{DoxyNote}{Note}
+If the metadata receiver is audience, this parameter does not work. The S\+DK triggers this callback after you successfully call the \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_a537716f1117501cdfa7ceb221dbaafb9}{register\+Media\+Metadata\+Observer}} method. You need to specify the maximum size of the metadata in the return value of this callback.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The maximum size of the buffer of the metadata that you want to use. The highest value is 1024 bytes. Ensure that you set the return value. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a660593e73c17923b7536bcff26382caa}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a660593e73c17923b7536bcff26382caa}} 
+\index{io.agora.rtc2.IMetadataObserver@{io.agora.rtc2.IMetadataObserver}!onReadyToSendMetadata@{onReadyToSendMetadata}}
+\index{onReadyToSendMetadata@{onReadyToSendMetadata}!io.agora.rtc2.IMetadataObserver@{io.agora.rtc2.IMetadataObserver}}
+\doxysubsubsection{\texorpdfstring{onReadyToSendMetadata()}{onReadyToSendMetadata()}}
+{\footnotesize\ttfamily abstract byte \mbox{[}$\,$\mbox{]} io.\+agora.\+rtc2.\+I\+Metadata\+Observer.\+on\+Ready\+To\+Send\+Metadata (\begin{DoxyParamCaption}\item[{long}]{time\+Stamp\+Ms,  }\item[{int}]{source\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Occurs when the S\+DK is ready to receive and send metadata.
+
+You need to specify the metadata in the return value of this callback.
+
+\begin{DoxyNote}{Note}
+Ensure that the size of the metadata does not exceed the value set in the \{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a7c56f037df6e7076e32391b32e6e46cd}{get\+Max\+Metadata\+Size\} callback.  time\+Stamp\+Ms The N\+TP timestamp (ms) that the metadata sends.  source\+Type  Constants\#\+Video\+Source\+Type Video\+Source\+Type\}  The metadata that you want to send in the format of byte\mbox{[}\mbox{]}. Ensure that you set the return value. }}
+\end{DoxyNote}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a279cb256119fe657114db93c3b0ffdf7}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a279cb256119fe657114db93c3b0ffdf7}} 
+\index{io.agora.rtc2.IMetadataObserver@{io.agora.rtc2.IMetadataObserver}!onMetadataReceived@{onMetadataReceived}}
+\index{onMetadataReceived@{onMetadataReceived}!io.agora.rtc2.IMetadataObserver@{io.agora.rtc2.IMetadataObserver}}
+\doxysubsubsection{\texorpdfstring{onMetadataReceived()}{onMetadataReceived()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtc2.\+I\+Metadata\+Observer.\+on\+Metadata\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1video_1_1_agora_metadata}{Agora\+Metadata}}}]{metadata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Occurs when the local user receives the metadata.
+
+
+\begin{DoxyParams}{Parameters}
+{\em metadata} & The metadata. See Agora\+Metadata. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_aa5659fd8aba1a08610bed45dbf4d281b}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_aa5659fd8aba1a08610bed45dbf4d281b}} 
+\index{io.agora.rtc2.IMetadataObserver@{io.agora.rtc2.IMetadataObserver}!UNKNOWN\_METADATA@{UNKNOWN\_METADATA}}
+\index{UNKNOWN\_METADATA@{UNKNOWN\_METADATA}!io.agora.rtc2.IMetadataObserver@{io.agora.rtc2.IMetadataObserver}}
+\doxysubsubsection{\texorpdfstring{UNKNOWN\_METADATA}{UNKNOWN\_METADATA}}
+{\footnotesize\ttfamily final int io.\+agora.\+rtc2.\+I\+Metadata\+Observer.\+U\+N\+K\+N\+O\+W\+N\+\_\+\+M\+E\+T\+A\+D\+A\+TA = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+(Not supported) The metadata type is unknown. \mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a4a063c708a21a1f4ec85f518c200a232}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_metadata_observer_a4a063c708a21a1f4ec85f518c200a232}} 
+\index{io.agora.rtc2.IMetadataObserver@{io.agora.rtc2.IMetadataObserver}!VIDEO\_METADATA@{VIDEO\_METADATA}}
+\index{VIDEO\_METADATA@{VIDEO\_METADATA}!io.agora.rtc2.IMetadataObserver@{io.agora.rtc2.IMetadataObserver}}
+\doxysubsubsection{\texorpdfstring{VIDEO\_METADATA}{VIDEO\_METADATA}}
+{\footnotesize\ttfamily final int io.\+agora.\+rtc2.\+I\+Metadata\+Observer.\+V\+I\+D\+E\+O\+\_\+\+M\+E\+T\+A\+D\+A\+TA = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+The metadata type is video. 

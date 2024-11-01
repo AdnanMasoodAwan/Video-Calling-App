@@ -1,0 +1,213 @@
+\hypertarget{structagora_1_1media_1_1base_1_1_video_frame}{}\doxysection{agora\+::media\+::base\+::Video\+Frame Struct Reference}
+\label{structagora_1_1media_1_1base_1_1_video_frame}\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+F\+O\+R\+M\+AT \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_a6169ab36387da0393ccded09537bc192}{type}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_af2a46d461743b8963afdc6364847f132}{width}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_ae46cfa9be45689655f95a873c6160ee0}{height}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_ace4696b077b02bb29920c665f41727f7}{y\+Stride}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_a1b0323a19dbf8520771b2ad3ecf41d54}{u\+Stride}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_a61cdb19ceecb291edc8bc92c280a2b31}{v\+Stride}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_ac6a40f331e3df3ca3cdb0fec738d9eb4}{y\+Buffer}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_af402b28334e4ed778166c31f89891727}{u\+Buffer}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_aaef3ff5d9e4e9379d150714e52bf6e98}{v\+Buffer}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_a43355876e9500ea4b3f2e805b73494dd}{rotation}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_af55fb911029c93dd2f408608c9736a66}{render\+Time\+Ms}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_aa28a65ccc77e5674717aa5c0e310c234}{avsync\+\_\+type}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_abe8407355a76057a47a13fd3047075fe}{metadata\+\_\+buffer}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_ab4fd0d4279509b6913c52e2739e6be60}{metadata\+\_\+size}}
+\item 
+void $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_ac88b98ccd3d13d1afaa675af778a1295}{shared\+Context}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_abafb77f77ce854609bb797f7c86aebcd}{texture\+Id}}
+\item 
+void $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_aab0bc93133113aee8564bfbb740e6d50}{d3d11\+Texture2d}}
+\item 
+float \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_a684096507a85c3fb76a7962d2dd2cb36}{matrix}} \mbox{[}16\mbox{]}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_a9cb7fec804d4a4cd073b108d021eb325}{alpha\+Buffer}}
+\item 
+A\+L\+P\+H\+A\+\_\+\+S\+T\+I\+T\+C\+H\+\_\+\+M\+O\+DE \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_af987f0aab1e602dbb64ef5e7eb4f6130}{alpha\+Stitch\+Mode}}
+\item 
+void $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_ab85193b0cd24b40ddbc4989c9a1bc0a5}{pixel\+Buffer}}
+\item 
+\mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_video_frame_meta_info}{I\+Video\+Frame\+Meta\+Info}} $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_af3d4bf399b28999c4ff169c8c06d2d69}{meta\+Info}}
+\item 
+\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_hdr10_metadata_info}{Hdr10\+Metadata\+Info}} \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_a587de977db5bae54485be5473dc770ca}{hdr10\+Metadata\+Info}}
+\item 
+\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_color_space}{Color\+Space}} \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame_a2a52d4272bfb7efcef4cfdccda8bae46}{color\+Space}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of the \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}} struct. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_a6169ab36387da0393ccded09537bc192}\label{structagora_1_1media_1_1base_1_1_video_frame_a6169ab36387da0393ccded09537bc192}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!type@{type}}
+\index{type@{type}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+F\+O\+R\+M\+AT agora\+::media\+::base\+::\+Video\+Frame\+::type}
+
+The video pixel format\+: \#\+V\+I\+D\+E\+O\+\_\+\+P\+I\+X\+E\+L\+\_\+\+F\+O\+R\+M\+AT. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_af2a46d461743b8963afdc6364847f132}\label{structagora_1_1media_1_1base_1_1_video_frame_af2a46d461743b8963afdc6364847f132}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!width@{width}}
+\index{width@{width}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int agora\+::media\+::base\+::\+Video\+Frame\+::width}
+
+The width of the video frame. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_ae46cfa9be45689655f95a873c6160ee0}\label{structagora_1_1media_1_1base_1_1_video_frame_ae46cfa9be45689655f95a873c6160ee0}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!height@{height}}
+\index{height@{height}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int agora\+::media\+::base\+::\+Video\+Frame\+::height}
+
+The height of the video frame. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_ace4696b077b02bb29920c665f41727f7}\label{structagora_1_1media_1_1base_1_1_video_frame_ace4696b077b02bb29920c665f41727f7}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!yStride@{yStride}}
+\index{yStride@{yStride}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{yStride}{yStride}}
+{\footnotesize\ttfamily int agora\+::media\+::base\+::\+Video\+Frame\+::y\+Stride}
+
+The line span of Y buffer in the Y\+UV data. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_a1b0323a19dbf8520771b2ad3ecf41d54}\label{structagora_1_1media_1_1base_1_1_video_frame_a1b0323a19dbf8520771b2ad3ecf41d54}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!uStride@{uStride}}
+\index{uStride@{uStride}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{uStride}{uStride}}
+{\footnotesize\ttfamily int agora\+::media\+::base\+::\+Video\+Frame\+::u\+Stride}
+
+The line span of U buffer in the Y\+UV data. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_a61cdb19ceecb291edc8bc92c280a2b31}\label{structagora_1_1media_1_1base_1_1_video_frame_a61cdb19ceecb291edc8bc92c280a2b31}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!vStride@{vStride}}
+\index{vStride@{vStride}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{vStride}{vStride}}
+{\footnotesize\ttfamily int agora\+::media\+::base\+::\+Video\+Frame\+::v\+Stride}
+
+The line span of V buffer in the Y\+UV data. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_ac6a40f331e3df3ca3cdb0fec738d9eb4}\label{structagora_1_1media_1_1base_1_1_video_frame_ac6a40f331e3df3ca3cdb0fec738d9eb4}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!yBuffer@{yBuffer}}
+\index{yBuffer@{yBuffer}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{yBuffer}{yBuffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ agora\+::media\+::base\+::\+Video\+Frame\+::y\+Buffer}
+
+The pointer to the Y buffer in the Y\+UV data. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_af402b28334e4ed778166c31f89891727}\label{structagora_1_1media_1_1base_1_1_video_frame_af402b28334e4ed778166c31f89891727}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!uBuffer@{uBuffer}}
+\index{uBuffer@{uBuffer}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{uBuffer}{uBuffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ agora\+::media\+::base\+::\+Video\+Frame\+::u\+Buffer}
+
+The pointer to the U buffer in the Y\+UV data. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_aaef3ff5d9e4e9379d150714e52bf6e98}\label{structagora_1_1media_1_1base_1_1_video_frame_aaef3ff5d9e4e9379d150714e52bf6e98}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!vBuffer@{vBuffer}}
+\index{vBuffer@{vBuffer}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{vBuffer}{vBuffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ agora\+::media\+::base\+::\+Video\+Frame\+::v\+Buffer}
+
+The pointer to the V buffer in the Y\+UV data. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_a43355876e9500ea4b3f2e805b73494dd}\label{structagora_1_1media_1_1base_1_1_video_frame_a43355876e9500ea4b3f2e805b73494dd}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!rotation@{rotation}}
+\index{rotation@{rotation}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily int agora\+::media\+::base\+::\+Video\+Frame\+::rotation}
+
+The clockwise rotation information of this frame. You can set it as 0, 90, 180 or 270. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_af55fb911029c93dd2f408608c9736a66}\label{structagora_1_1media_1_1base_1_1_video_frame_af55fb911029c93dd2f408608c9736a66}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!renderTimeMs@{renderTimeMs}}
+\index{renderTimeMs@{renderTimeMs}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{renderTimeMs}{renderTimeMs}}
+{\footnotesize\ttfamily int64\+\_\+t agora\+::media\+::base\+::\+Video\+Frame\+::render\+Time\+Ms}
+
+The timestamp to render the video stream. Use this parameter for audio-\/video synchronization when rendering the video.
+
+\begin{DoxyNote}{Note}
+This parameter is for rendering the video, not capturing the video. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_aa28a65ccc77e5674717aa5c0e310c234}\label{structagora_1_1media_1_1base_1_1_video_frame_aa28a65ccc77e5674717aa5c0e310c234}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!avsync\_type@{avsync\_type}}
+\index{avsync\_type@{avsync\_type}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{avsync\_type}{avsync\_type}}
+{\footnotesize\ttfamily int agora\+::media\+::base\+::\+Video\+Frame\+::avsync\+\_\+type}
+
+The type of audio-\/video synchronization. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_abe8407355a76057a47a13fd3047075fe}\label{structagora_1_1media_1_1base_1_1_video_frame_abe8407355a76057a47a13fd3047075fe}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!metadata\_buffer@{metadata\_buffer}}
+\index{metadata\_buffer@{metadata\_buffer}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{metadata\_buffer}{metadata\_buffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ agora\+::media\+::base\+::\+Video\+Frame\+::metadata\+\_\+buffer}
+
+\mbox{[}Texture related parameter\mbox{]} The Meta\+Data buffer. The default value is N\+U\+LL \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_ab4fd0d4279509b6913c52e2739e6be60}\label{structagora_1_1media_1_1base_1_1_video_frame_ab4fd0d4279509b6913c52e2739e6be60}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!metadata\_size@{metadata\_size}}
+\index{metadata\_size@{metadata\_size}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{metadata\_size}{metadata\_size}}
+{\footnotesize\ttfamily int agora\+::media\+::base\+::\+Video\+Frame\+::metadata\+\_\+size}
+
+\mbox{[}Texture related parameter\mbox{]} The Meta\+Data size. The default value is 0 \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_ac88b98ccd3d13d1afaa675af778a1295}\label{structagora_1_1media_1_1base_1_1_video_frame_ac88b98ccd3d13d1afaa675af778a1295}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!sharedContext@{sharedContext}}
+\index{sharedContext@{sharedContext}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{sharedContext}{sharedContext}}
+{\footnotesize\ttfamily void$\ast$ agora\+::media\+::base\+::\+Video\+Frame\+::shared\+Context}
+
+\mbox{[}Texture related parameter\mbox{]}, egl context. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_abafb77f77ce854609bb797f7c86aebcd}\label{structagora_1_1media_1_1base_1_1_video_frame_abafb77f77ce854609bb797f7c86aebcd}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!textureId@{textureId}}
+\index{textureId@{textureId}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{textureId}{textureId}}
+{\footnotesize\ttfamily int agora\+::media\+::base\+::\+Video\+Frame\+::texture\+Id}
+
+\mbox{[}Texture related parameter\mbox{]}, Texture ID used by the video frame. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_aab0bc93133113aee8564bfbb740e6d50}\label{structagora_1_1media_1_1base_1_1_video_frame_aab0bc93133113aee8564bfbb740e6d50}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!d3d11Texture2d@{d3d11Texture2d}}
+\index{d3d11Texture2d@{d3d11Texture2d}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{d3d11Texture2d}{d3d11Texture2d}}
+{\footnotesize\ttfamily void$\ast$ agora\+::media\+::base\+::\+Video\+Frame\+::d3d11\+Texture2d}
+
+\mbox{[}Texture related parameter\mbox{]} The pointer of I\+D3\+D11\+Texture2D used by the video frame,for Windows only. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_a684096507a85c3fb76a7962d2dd2cb36}\label{structagora_1_1media_1_1base_1_1_video_frame_a684096507a85c3fb76a7962d2dd2cb36}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!matrix@{matrix}}
+\index{matrix@{matrix}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{matrix}{matrix}}
+{\footnotesize\ttfamily float agora\+::media\+::base\+::\+Video\+Frame\+::matrix\mbox{[}16\mbox{]}}
+
+\mbox{[}Texture related parameter\mbox{]}, Incoming 4 {$\times$} 4 transformational matrix. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_a9cb7fec804d4a4cd073b108d021eb325}\label{structagora_1_1media_1_1base_1_1_video_frame_a9cb7fec804d4a4cd073b108d021eb325}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!alphaBuffer@{alphaBuffer}}
+\index{alphaBuffer@{alphaBuffer}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{alphaBuffer}{alphaBuffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ agora\+::media\+::base\+::\+Video\+Frame\+::alpha\+Buffer}
+
+Indicates the alpha channel of current frame, which is consistent with the dimension of the video frame. The value range of each pixel is \mbox{[}0,255\mbox{]}, where 0 represents the background; 255 represents the foreground. The default value is N\+U\+LL. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_af987f0aab1e602dbb64ef5e7eb4f6130}\label{structagora_1_1media_1_1base_1_1_video_frame_af987f0aab1e602dbb64ef5e7eb4f6130}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!alphaStitchMode@{alphaStitchMode}}
+\index{alphaStitchMode@{alphaStitchMode}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{alphaStitchMode}{alphaStitchMode}}
+{\footnotesize\ttfamily A\+L\+P\+H\+A\+\_\+\+S\+T\+I\+T\+C\+H\+\_\+\+M\+O\+DE agora\+::media\+::base\+::\+Video\+Frame\+::alpha\+Stitch\+Mode}
+
+The relative position between alphabuffer and the frame. 0\+: Normal frame; 1\+: Alphabuffer is above the frame; 2\+: Alphabuffer is below the frame; 3\+: Alphabuffer is on the left of frame; 4\+: Alphabuffer is on the right of frame; The default value is 0. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_ab85193b0cd24b40ddbc4989c9a1bc0a5}\label{structagora_1_1media_1_1base_1_1_video_frame_ab85193b0cd24b40ddbc4989c9a1bc0a5}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!pixelBuffer@{pixelBuffer}}
+\index{pixelBuffer@{pixelBuffer}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{pixelBuffer}{pixelBuffer}}
+{\footnotesize\ttfamily void$\ast$ agora\+::media\+::base\+::\+Video\+Frame\+::pixel\+Buffer}
+
+The type of C\+V\+Pixel\+Buffer\+Ref, for i\+OS and mac\+OS only. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_af3d4bf399b28999c4ff169c8c06d2d69}\label{structagora_1_1media_1_1base_1_1_video_frame_af3d4bf399b28999c4ff169c8c06d2d69}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!metaInfo@{metaInfo}}
+\index{metaInfo@{metaInfo}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{metaInfo}{metaInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_video_frame_meta_info}{I\+Video\+Frame\+Meta\+Info}}$\ast$ agora\+::media\+::base\+::\+Video\+Frame\+::meta\+Info}
+
+The pointer to \mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_video_frame_meta_info}{I\+Video\+Frame\+Meta\+Info}}, which is the interface to get metainfo contents from \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{Video\+Frame}}. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_a587de977db5bae54485be5473dc770ca}\label{structagora_1_1media_1_1base_1_1_video_frame_a587de977db5bae54485be5473dc770ca}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!hdr10MetadataInfo@{hdr10MetadataInfo}}
+\index{hdr10MetadataInfo@{hdr10MetadataInfo}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{hdr10MetadataInfo}{hdr10MetadataInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_hdr10_metadata_info}{Hdr10\+Metadata\+Info}} agora\+::media\+::base\+::\+Video\+Frame\+::hdr10\+Metadata\+Info}
+
+metadata info used for hdr video data \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_video_frame_a2a52d4272bfb7efcef4cfdccda8bae46}\label{structagora_1_1media_1_1base_1_1_video_frame_a2a52d4272bfb7efcef4cfdccda8bae46}} 
+\index{agora::media::base::VideoFrame@{agora::media::base::VideoFrame}!colorSpace@{colorSpace}}
+\index{colorSpace@{colorSpace}!agora::media::base::VideoFrame@{agora::media::base::VideoFrame}}
+\doxysubsubsection{\texorpdfstring{colorSpace}{colorSpace}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_color_space}{Color\+Space}} agora\+::media\+::base\+::\+Video\+Frame\+::color\+Space}
+
+The \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_color_space}{Color\+Space}} of the video frame 

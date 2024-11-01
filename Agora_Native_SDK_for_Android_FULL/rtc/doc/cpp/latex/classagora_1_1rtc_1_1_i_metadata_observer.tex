@@ -1,0 +1,122 @@
+\hypertarget{classagora_1_1rtc_1_1_i_metadata_observer}{}\doxysection{agora\+::rtc\+::I\+Metadata\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_metadata_observer}\index{agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata}{Metadata}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_metadata_observer_a50ad8779d161456fc709d947b8c7c544}{M\+E\+T\+A\+D\+A\+T\+A\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_metadata_observer_a50ad8779d161456fc709d947b8c7c544aa1aeb6420f7529b37bbbaf289b05dcae}{U\+N\+K\+N\+O\+W\+N\+\_\+\+M\+E\+T\+A\+D\+A\+TA}} = -\/1, 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_metadata_observer_a50ad8779d161456fc709d947b8c7c544ac515f52b415263973aa59effc2fab944}{V\+I\+D\+E\+O\+\_\+\+M\+E\+T\+A\+D\+A\+TA}} = 0
+ \}
+\item 
+enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_metadata_observer_aa4297438e6cdde7a9faec3e137dedfe0}{M\+A\+X\+\_\+\+M\+E\+T\+A\+D\+A\+T\+A\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+Y\+PE}} \{ {\bfseries I\+N\+V\+A\+L\+I\+D\+\_\+\+M\+E\+T\+A\+D\+A\+T\+A\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+N\+\_\+\+B\+Y\+TE} = -\/1, 
+{\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+T\+A\+D\+A\+T\+A\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+N\+\_\+\+B\+Y\+TE} = 512, 
+{\bfseries M\+A\+X\+\_\+\+M\+E\+T\+A\+D\+A\+T\+A\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+N\+\_\+\+B\+Y\+TE} = 1024
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_metadata_observer_aa1d7b729f373d985a5bbdd855c4e85d5}{get\+Max\+Metadata\+Size}} ()
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_metadata_observer_afc9b177f803cc0f0bb18b36c51be84f0}{on\+Ready\+To\+Send\+Metadata}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata}{Metadata}} \&metadata, V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source\+\_\+type)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_metadata_observer_a890f087351519bdeba5f17e824158d03}{on\+Metadata\+Received}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata}{Metadata}} \&metadata)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definition of \mbox{\hyperlink{classagora_1_1rtc_1_1_i_metadata_observer}{I\+Metadata\+Observer}} 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_metadata_observer_a50ad8779d161456fc709d947b8c7c544}\label{classagora_1_1rtc_1_1_i_metadata_observer_a50ad8779d161456fc709d947b8c7c544}} 
+\index{agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}!METADATA\_TYPE@{METADATA\_TYPE}}
+\index{METADATA\_TYPE@{METADATA\_TYPE}!agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}}
+\doxysubsubsection{\texorpdfstring{METADATA\_TYPE}{METADATA\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_metadata_observer_a50ad8779d161456fc709d947b8c7c544}{agora\+::rtc\+::\+I\+Metadata\+Observer\+::\+M\+E\+T\+A\+D\+A\+T\+A\+\_\+\+T\+Y\+PE}}}
+
+The metadata type.
+
+\begin{DoxyNote}{Note}
+We only support video metadata for now. 
+\end{DoxyNote}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNKNOWN\_METADATA@{UNKNOWN\_METADATA}!agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}}\index{agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}!UNKNOWN\_METADATA@{UNKNOWN\_METADATA}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_metadata_observer_a50ad8779d161456fc709d947b8c7c544aa1aeb6420f7529b37bbbaf289b05dcae}\label{classagora_1_1rtc_1_1_i_metadata_observer_a50ad8779d161456fc709d947b8c7c544aa1aeb6420f7529b37bbbaf289b05dcae}} 
+U\+N\+K\+N\+O\+W\+N\+\_\+\+M\+E\+T\+A\+D\+A\+TA&-\/1\+: (Not supported) Unknown. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VIDEO\_METADATA@{VIDEO\_METADATA}!agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}}\index{agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}!VIDEO\_METADATA@{VIDEO\_METADATA}}}\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_metadata_observer_a50ad8779d161456fc709d947b8c7c544ac515f52b415263973aa59effc2fab944}\label{classagora_1_1rtc_1_1_i_metadata_observer_a50ad8779d161456fc709d947b8c7c544ac515f52b415263973aa59effc2fab944}} 
+V\+I\+D\+E\+O\+\_\+\+M\+E\+T\+A\+D\+A\+TA&0\+: (Supported) Video metadata. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_metadata_observer_aa4297438e6cdde7a9faec3e137dedfe0}\label{classagora_1_1rtc_1_1_i_metadata_observer_aa4297438e6cdde7a9faec3e137dedfe0}} 
+\index{agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}!MAX\_METADATA\_SIZE\_TYPE@{MAX\_METADATA\_SIZE\_TYPE}}
+\index{MAX\_METADATA\_SIZE\_TYPE@{MAX\_METADATA\_SIZE\_TYPE}!agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}}
+\doxysubsubsection{\texorpdfstring{MAX\_METADATA\_SIZE\_TYPE}{MAX\_METADATA\_SIZE\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classagora_1_1rtc_1_1_i_metadata_observer_aa4297438e6cdde7a9faec3e137dedfe0}{agora\+::rtc\+::\+I\+Metadata\+Observer\+::\+M\+A\+X\+\_\+\+M\+E\+T\+A\+D\+A\+T\+A\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+Y\+PE}}}
+
+The maximum metadata size. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_metadata_observer_aa1d7b729f373d985a5bbdd855c4e85d5}\label{classagora_1_1rtc_1_1_i_metadata_observer_aa1d7b729f373d985a5bbdd855c4e85d5}} 
+\index{agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}!getMaxMetadataSize@{getMaxMetadataSize}}
+\index{getMaxMetadataSize@{getMaxMetadataSize}!agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}}
+\doxysubsubsection{\texorpdfstring{getMaxMetadataSize()}{getMaxMetadataSize()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Metadata\+Observer\+::get\+Max\+Metadata\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the S\+DK requests the maximum size of the metadata.
+
+After successfully complete the registration by calling {\ttfamily register\+Media\+Metadata\+Observer}, the S\+DK triggers this callback once every video frame is sent. You need to specify the maximum size of the metadata in the return value of this callback.
+
+\begin{DoxyReturn}{Returns}
+The maximum size of the buffer of the metadata that you want to use. The highest value is 1024 bytes. Ensure that you set the return value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_metadata_observer_afc9b177f803cc0f0bb18b36c51be84f0}\label{classagora_1_1rtc_1_1_i_metadata_observer_afc9b177f803cc0f0bb18b36c51be84f0}} 
+\index{agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}!onReadyToSendMetadata@{onReadyToSendMetadata}}
+\index{onReadyToSendMetadata@{onReadyToSendMetadata}!agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}}
+\doxysubsubsection{\texorpdfstring{onReadyToSendMetadata()}{onReadyToSendMetadata()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Metadata\+Observer\+::on\+Ready\+To\+Send\+Metadata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata}{Metadata}} \&}]{metadata,  }\item[{V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE}]{source\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the local user receives the metadata.
+
+\begin{DoxyNote}{Note}
+Ensure that the size of the metadata does not exceed the value set in the {\ttfamily get\+Max\+Metadata\+Size} callback.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em metadata} & The metadata that the user wants to send. For details, see \mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata}{Metadata}}. \\
+\hline
+{\em source\+\_\+type} & The video data type\+: \#\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: Send.
+\item false\+: Do not send. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_metadata_observer_a890f087351519bdeba5f17e824158d03}\label{classagora_1_1rtc_1_1_i_metadata_observer_a890f087351519bdeba5f17e824158d03}} 
+\index{agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}!onMetadataReceived@{onMetadataReceived}}
+\index{onMetadataReceived@{onMetadataReceived}!agora::rtc::IMetadataObserver@{agora::rtc::IMetadataObserver}}
+\doxysubsubsection{\texorpdfstring{onMetadataReceived()}{onMetadataReceived()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Metadata\+Observer\+::on\+Metadata\+Received (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata}{Metadata}} \&}]{metadata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the local user receives the metadata.
+
+
+\begin{DoxyParams}{Parameters}
+{\em metadata} & The metadata received. See \mbox{\hyperlink{structagora_1_1rtc_1_1_i_metadata_observer_1_1_metadata}{Metadata}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If the receiver is audience, the receiver cannot get the N\+TP timestamp (ms) that the metadata sends. 
+\end{DoxyNote}

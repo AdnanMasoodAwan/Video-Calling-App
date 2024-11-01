@@ -1,0 +1,205 @@
+\hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter}{}\doxysection{agora\+::rtc\+::I\+Extension\+Video\+Filter Class Reference}
+\label{classagora_1_1rtc_1_1_i_extension_video_filter}\index{agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Extension\+Video\+Filter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classagora_1_1rtc_1_1_i_extension_video_filter}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control}{Control}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_aa187e84d0209376f502044a007e62e1a}\label{classagora_1_1rtc_1_1_i_extension_video_filter_aa187e84d0209376f502044a007e62e1a}} 
+enum {\bfseries Process\+Mode} \{ {\bfseries k\+Sync}, 
+{\bfseries k\+Async}
+ \}
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_acd051db7e29fd23adbf1e15221bc65b9}\label{classagora_1_1rtc_1_1_i_extension_video_filter_acd051db7e29fd23adbf1e15221bc65b9}} 
+enum {\bfseries Process\+Result} \{ {\bfseries k\+Success}, 
+{\bfseries k\+Bypass}, 
+{\bfseries k\+Drop}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_ae64e51d4322682aefa0348b292e97ea0}{get\+Process\+Mode}} (Process\+Mode \&mode, bool \&independent\+\_\+thread)=0
+\begin{DoxyCompactList}\small\item\em S\+DK will invoke this A\+PI first to get the filter\textquotesingle{}s requested process mode Process\+Mode. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_ac2448e986cb723f9727648ecdbc3296b}{start}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control}{Control}} $>$ control)=0
+\begin{DoxyCompactList}\small\item\em S\+DK will invoke this A\+PI before feeding video frame data to the filter. Filter can perform its initialization/preparation job in this step. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_abe27cf4f837796d3ff7d635d7517eee8}{stop}} ()=0
+\begin{DoxyCompactList}\small\item\em S\+DK will invoke this A\+PI when the data stream is about to stop. Filter can perform cleanup jobs in this step. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_a2fc38cde045e9d8ca6fe86e4ab7a8f62}{get\+Video\+Format\+Wanted}} (Video\+Frame\+Data\+::\+Type \&type, Raw\+Pixel\+Buffer\+::\+Format \&format)=0
+\begin{DoxyCompactList}\small\item\em S\+DK will invoke this A\+PI every time before sending data to the filter. Filter can desigante the type Video\+Frame\+Info\+::\+Type and format Mem\+Pixel\+Buffer\+::\+Format of the next frame. S\+DK will then try to perform type / format conversion before sending data to the filter. \end{DoxyCompactList}\item 
+virtual Process\+Result \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_a8fc893bbf1ed0901560e48eef48d1f6f}{pend\+Video\+Frame}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} $>$ frame)
+\begin{DoxyCompactList}\small\item\em S\+DK will invoke this A\+PI to send video frame to the filter if process mode is \char`\"{}\+Async\char`\"{}. Filter invokes control\textquotesingle{}s \char`\"{}deliver\+Frame\char`\"{} to send back the frame after processing. \end{DoxyCompactList}\item 
+virtual Process\+Result \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_a711c51bbd42600d14c772a1109bdb8db}{adapt\+Video\+Frame}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} $>$ in, \mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} $>$ \&out)
+\begin{DoxyCompactList}\small\item\em S\+DK will invoke this A\+PI to send video frame to the filter if process mode is \char`\"{}\+Sync\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_acc7fa138d8d19599a44107d3cf988301}\label{classagora_1_1rtc_1_1_i_extension_video_filter_acc7fa138d8d19599a44107d3cf988301}} 
+virtual bool {\bfseries get\+Rotation\+Applied} ()
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_a320b131b8dd85ead06555a5f036a7405}{is\+Extension\+Filter}} ()
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_a07cf2b3f8af6057f51b0125e598780a5}{adapt\+Video\+Frame}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{media\+::base\+::\+Video\+Frame}} \&captured\+Frame, \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{media\+::base\+::\+Video\+Frame}} \&adapted\+Frame)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter}{I\+Extension\+Video\+Filter}} class.
+
+This class defines the interfaces that a external video extension provider can implement so as to be loaded by S\+DK as an \char`\"{}3rd party extension\char`\"{} for video pre-\/ or post-\/ processing. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_ae64e51d4322682aefa0348b292e97ea0}\label{classagora_1_1rtc_1_1_i_extension_video_filter_ae64e51d4322682aefa0348b292e97ea0}} 
+\index{agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}!getProcessMode@{getProcessMode}}
+\index{getProcessMode@{getProcessMode}!agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}}
+\doxysubsubsection{\texorpdfstring{getProcessMode()}{getProcessMode()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::get\+Process\+Mode (\begin{DoxyParamCaption}\item[{Process\+Mode \&}]{mode,  }\item[{bool \&}]{independent\+\_\+thread }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+S\+DK will invoke this A\+PI first to get the filter\textquotesingle{}s requested process mode Process\+Mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & \mbox{[}out\mbox{]} filter assign its desired the process mode Process\+Mode \\
+\hline
+{\em independent\+\_\+thread} & deprecated. S\+DK will ignore this parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If the filter implementation is not thread sensitive, we recommend to set the boolean to \char`\"{}false\char`\"{} to reduce thread context switching. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_ac2448e986cb723f9727648ecdbc3296b}\label{classagora_1_1rtc_1_1_i_extension_video_filter_ac2448e986cb723f9727648ecdbc3296b}} 
+\index{agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}!start@{start}}
+\index{start@{start}!agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_extension_video_filter_1_1_control}{Control}} $>$}]{control }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+S\+DK will invoke this A\+PI before feeding video frame data to the filter. Filter can perform its initialization/preparation job in this step. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em control} & object to I\+Extension\+Filter\+::\+Control that pass to the filter which can be used for future interaction with the S\+DK \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_abe27cf4f837796d3ff7d635d7517eee8}\label{classagora_1_1rtc_1_1_i_extension_video_filter_abe27cf4f837796d3ff7d635d7517eee8}} 
+\index{agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}!stop@{stop}}
+\index{stop@{stop}!agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+S\+DK will invoke this A\+PI when the data stream is about to stop. Filter can perform cleanup jobs in this step. 
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_a2fc38cde045e9d8ca6fe86e4ab7a8f62}\label{classagora_1_1rtc_1_1_i_extension_video_filter_a2fc38cde045e9d8ca6fe86e4ab7a8f62}} 
+\index{agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}!getVideoFormatWanted@{getVideoFormatWanted}}
+\index{getVideoFormatWanted@{getVideoFormatWanted}!agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}}
+\doxysubsubsection{\texorpdfstring{getVideoFormatWanted()}{getVideoFormatWanted()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::get\+Video\+Format\+Wanted (\begin{DoxyParamCaption}\item[{Video\+Frame\+Data\+::\+Type \&}]{type,  }\item[{Raw\+Pixel\+Buffer\+::\+Format \&}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+S\+DK will invoke this A\+PI every time before sending data to the filter. Filter can desigante the type Video\+Frame\+Info\+::\+Type and format Mem\+Pixel\+Buffer\+::\+Format of the next frame. S\+DK will then try to perform type / format conversion before sending data to the filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & requested type of the next frame \\
+\hline
+{\em format} & requested formant of the next frame \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_a8fc893bbf1ed0901560e48eef48d1f6f}\label{classagora_1_1rtc_1_1_i_extension_video_filter_a8fc893bbf1ed0901560e48eef48d1f6f}} 
+\index{agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}!pendVideoFrame@{pendVideoFrame}}
+\index{pendVideoFrame@{pendVideoFrame}!agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}}
+\doxysubsubsection{\texorpdfstring{pendVideoFrame()}{pendVideoFrame()}}
+{\footnotesize\ttfamily virtual Process\+Result agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::pend\+Video\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} $>$}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+S\+DK will invoke this A\+PI to send video frame to the filter if process mode is \char`\"{}\+Async\char`\"{}. Filter invokes control\textquotesingle{}s \char`\"{}deliver\+Frame\char`\"{} to send back the frame after processing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & frame pending for processing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_a711c51bbd42600d14c772a1109bdb8db}\label{classagora_1_1rtc_1_1_i_extension_video_filter_a711c51bbd42600d14c772a1109bdb8db}} 
+\index{agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}!adaptVideoFrame@{adaptVideoFrame}}
+\index{adaptVideoFrame@{adaptVideoFrame}!agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}}
+\doxysubsubsection{\texorpdfstring{adaptVideoFrame()}{adaptVideoFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual Process\+Result agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::adapt\+Video\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} $>$}]{in,  }\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame}{I\+Video\+Frame}} $>$ \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+S\+DK will invoke this A\+PI to send video frame to the filter if process mode is \char`\"{}\+Sync\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & frame pending for processing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_a320b131b8dd85ead06555a5f036a7405}\label{classagora_1_1rtc_1_1_i_extension_video_filter_a320b131b8dd85ead06555a5f036a7405}} 
+\index{agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}!isExtensionFilter@{isExtensionFilter}}
+\index{isExtensionFilter@{isExtensionFilter}!agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}}
+\doxysubsubsection{\texorpdfstring{isExtensionFilter()}{isExtensionFilter()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::is\+Extension\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function indicates if the filter is implemented by third-\/party providers. \begin{DoxyNote}{Note}
+Do not override this function. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: The filter is implemented by third-\/party providers.
+\item {\ttfamily false}\+: otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_filter_a423710003ed46e4571e477df95090c4f}{agora\+::rtc\+::\+I\+Video\+Filter}}.
+
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_extension_video_filter_a07cf2b3f8af6057f51b0125e598780a5}\label{classagora_1_1rtc_1_1_i_extension_video_filter_a07cf2b3f8af6057f51b0125e598780a5}} 
+\index{agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}!adaptVideoFrame@{adaptVideoFrame}}
+\index{adaptVideoFrame@{adaptVideoFrame}!agora::rtc::IExtensionVideoFilter@{agora::rtc::IExtensionVideoFilter}}
+\doxysubsubsection{\texorpdfstring{adaptVideoFrame()}{adaptVideoFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Extension\+Video\+Filter\+::adapt\+Video\+Frame (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{media\+::base\+::\+Video\+Frame}} \&}]{captured\+Frame,  }\item[{\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_video_frame}{media\+::base\+::\+Video\+Frame}} \&}]{adapted\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Adapts the video frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em captured\+Frame} & The reference to the captured video frame that you want to adapt. \\
+\hline
+{\em adapted\+Frame} & The reference to the adapted video frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure, if, for example, the {\ttfamily I\+Videofilter} object drops the video frame. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_filter_base_acbefe549175d0eaaa0eac47082849769}{agora\+::rtc\+::\+I\+Video\+Filter\+Base}}.
+

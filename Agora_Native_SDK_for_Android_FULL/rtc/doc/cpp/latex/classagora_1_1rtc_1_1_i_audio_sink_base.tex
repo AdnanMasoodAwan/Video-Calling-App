@@ -1,0 +1,43 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_sink_base}{}\doxysection{agora\+::rtc\+::I\+Audio\+Sink\+Base Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_sink_base}\index{agora::rtc::IAudioSinkBase@{agora::rtc::IAudioSinkBase}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Audio\+Sink\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_audio_sink_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_sink_base_aab576aa7d1a4c3a04538e8d06d816fec}{on\+Audio\+Frame}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{media\+::base\+::\+Audio\+Pcm\+Frame}} \&audio\+Frame)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_sink_base}{I\+Audio\+Sink\+Base}}} class is the base class for the audio sink. You can use this class to implement your own sink and add the sink to an audio track. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_sink_base_aab576aa7d1a4c3a04538e8d06d816fec}\label{classagora_1_1rtc_1_1_i_audio_sink_base_aab576aa7d1a4c3a04538e8d06d816fec}} 
+\index{agora::rtc::IAudioSinkBase@{agora::rtc::IAudioSinkBase}!onAudioFrame@{onAudioFrame}}
+\index{onAudioFrame@{onAudioFrame}!agora::rtc::IAudioSinkBase@{agora::rtc::IAudioSinkBase}}
+\doxysubsubsection{\texorpdfstring{onAudioFrame()}{onAudioFrame()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Audio\+Sink\+Base\+::on\+Audio\+Frame (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{media\+::base\+::\+Audio\+Pcm\+Frame}} \&}]{audio\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the audio frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audioframe} & \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{Audio\+Pcm\+Frame}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

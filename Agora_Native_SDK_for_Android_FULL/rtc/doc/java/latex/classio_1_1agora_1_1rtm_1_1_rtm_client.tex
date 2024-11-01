@@ -1,0 +1,378 @@
+\hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client}{}\doxysection{io.\+agora.\+rtm.\+Rtm\+Client Class Reference}
+\label{classio_1_1agora_1_1rtm_1_1_rtm_client}\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_a7e8e7e47cebbc2490072a6d35c348c24}{add\+Event\+Listener}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener}{Rtm\+Event\+Listener}} listener)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_aba2d42f4db148ebfd2caad697efb7354}{remove\+Event\+Listener}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener}{Rtm\+Event\+Listener}} listener)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_abfdf18b22ad6ceb9bccdd8b2946e0fed}{login}} (String token, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_aae95eb4d917f592d5392c4a7505e0569}{logout}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_storage}{Rtm\+Storage}} \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_ad928aaebedc515a8c17a9c5c801d4204}{get\+Storage}} ()
+\item 
+abstract \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_lock}{Rtm\+Lock}} \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_a0b757916eb7d5a6b4675142b222a91ff}{get\+Lock}} ()
+\item 
+abstract \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_presence}{Rtm\+Presence}} \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_a6fe224a1246ade9fe68fc2261c889c4b}{get\+Presence}} ()
+\item 
+abstract String \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_a54265612c98aea8c3ee6ca0871dcd829}{get\+Error\+Reason}} (\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} error\+Code)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_a9a6d33282509384165709107d7a89353}{renew\+Token}} (String token, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_af963fb8321f27183b1fcaf4a389a1afb}{publish}} (String channel\+Name, String message, \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_publish_options}{Publish\+Options}} options, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_a4426ba3d769172c9219beb7d1e0cd131}{publish}} (String channel\+Name, byte\mbox{[}$\,$\mbox{]} message, \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_publish_options}{Publish\+Options}} options, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_a89cb377eb221e730240e9781657b51df}{subscribe}} (String channel\+Name, \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_subscribe_options}{Subscribe\+Options}} options, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_a82c51e2290104598eaf1c06534b4153b}{unsubscribe}} (String channel\+Name, \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$ result\+Callback)
+\item 
+abstract \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_a36b177c81f5553e428224c346d7e4e11}{set\+Parameters}} (String parameters)
+\item 
+abstract \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel}{Stream\+Channel}} \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_ad2684c00608332df16d17831f250e01b}{create\+Stream\+Channel}} (String channel\+Name)  throws Exception
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static synchronized \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client}{Rtm\+Client}} \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_acc9c03431d692f0d74a42f5160419451}{create}} (\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_config}{Rtm\+Config}} config)  throws Exception 
+\item 
+static synchronized \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client}{Rtm\+Client}} \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_af6af37bfa625135ceadaa5989a5dfebd}{get\+Instance}} ()
+\item 
+static synchronized void \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_a8137be827632d11419fa478a6ee6c954}{release}} ()
+\item 
+static String \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client_a36a7f5472f8e4bb888a3e9d27ecebedc}{get\+Version}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_ad5d5c0017e9ca06303597f023c0859c2}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_ad5d5c0017e9ca06303597f023c0859c2}} 
+abstract \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} {\bfseries initialize} (\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_config}{Rtm\+Config}} config)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_aea9148fd6a143b0c928465bfe2517707}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_aea9148fd6a143b0c928465bfe2517707}} 
+abstract \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} {\bfseries release\+Client} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client}{Rtm\+Client}} class.
+
+This class provides the main methods that can be invoked by your app.
+
+\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client}{Rtm\+Client}} is the basic interface class of the Agora R\+TM S\+DK. Creating an \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client}{Rtm\+Client}} object and then calling the methods of this object enables you to use Agora R\+TM S\+DK\textquotesingle{}s functionality. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_acc9c03431d692f0d74a42f5160419451}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_acc9c03431d692f0d74a42f5160419451}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!create@{create}}
+\index{create@{create}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static synchronized \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client}{Rtm\+Client}} io.\+agora.\+rtm.\+Rtm\+Client.\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_config}{Rtm\+Config}}}]{config }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Create rtm client instance.
+
+\begin{DoxyReturn}{Returns}
+If the method call succeeds, will return
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RtmClient }
+\end{DoxyCode}
+ instance, if the method call fails, will throw an exception.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em If} & error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_af6af37bfa625135ceadaa5989a5dfebd}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_af6af37bfa625135ceadaa5989a5dfebd}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static synchronized \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client}{Rtm\+Client}} io.\+agora.\+rtm.\+Rtm\+Client.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get rtm client instance.
+
+\begin{DoxyReturn}{Returns}
+The instance of \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client}{Rtm\+Client}} \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_client}{Rtm\+Client}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_a8137be827632d11419fa478a6ee6c954}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_a8137be827632d11419fa478a6ee6c954}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!release@{release}}
+\index{release@{release}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily static synchronized void io.\+agora.\+rtm.\+Rtm\+Client.\+release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Release the rtm client instance. \mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_a36a7f5472f8e4bb888a3e9d27ecebedc}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_a36a7f5472f8e4bb888a3e9d27ecebedc}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!getVersion@{getVersion}}
+\index{getVersion@{getVersion}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{getVersion()}{getVersion()}}
+{\footnotesize\ttfamily static String io.\+agora.\+rtm.\+Rtm\+Client.\+get\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the version info of the Agora R\+TM S\+DK.
+
+\begin{DoxyReturn}{Returns}
+The version info of the Agora R\+TM S\+DK. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_a7e8e7e47cebbc2490072a6d35c348c24}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_a7e8e7e47cebbc2490072a6d35c348c24}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!addEventListener@{addEventListener}}
+\index{addEventListener@{addEventListener}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{addEventListener()}{addEventListener()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Client.\+add\+Event\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener}{Rtm\+Event\+Listener}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Adds an event listener for receiving rtm events.
+
+Note\+: The listener must implement the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener}{Rtm\+Event\+Listener}} interface or use \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener}{Rtm\+Event\+Listener}} default implements if do not care about some event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener}{Rtm\+Event\+Listener}} object to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_aba2d42f4db148ebfd2caad697efb7354}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_aba2d42f4db148ebfd2caad697efb7354}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!removeEventListener@{removeEventListener}}
+\index{removeEventListener@{removeEventListener}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{removeEventListener()}{removeEventListener()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Client.\+remove\+Event\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener}{Rtm\+Event\+Listener}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Remove the specified event listener.
+
+Note\+: By removing the event listener, the listener will no longer receive notifications from rtm client.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The event specified listener object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_abfdf18b22ad6ceb9bccdd8b2946e0fed}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_abfdf18b22ad6ceb9bccdd8b2946e0fed}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!login@{login}}
+\index{login@{login}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Client.\+login (\begin{DoxyParamCaption}\item[{String}]{token,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Login the Agora R\+TM service.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & Token used to login R\+TM service. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_aae95eb4d917f592d5392c4a7505e0569}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_aae95eb4d917f592d5392c4a7505e0569}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!logout@{logout}}
+\index{logout@{logout}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{logout()}{logout()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Client.\+logout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Logout the Agora R\+TM service.
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_ad928aaebedc515a8c17a9c5c801d4204}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_ad928aaebedc515a8c17a9c5c801d4204}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!getStorage@{getStorage}}
+\index{getStorage@{getStorage}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{getStorage()}{getStorage()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_storage}{Rtm\+Storage}} io.\+agora.\+rtm.\+Rtm\+Client.\+get\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the storage instance.
+
+\begin{DoxyReturn}{Returns}
+The instance of \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_storage}{Rtm\+Storage}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_a0b757916eb7d5a6b4675142b222a91ff}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_a0b757916eb7d5a6b4675142b222a91ff}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!getLock@{getLock}}
+\index{getLock@{getLock}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{getLock()}{getLock()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_lock}{Rtm\+Lock}} io.\+agora.\+rtm.\+Rtm\+Client.\+get\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the lock instance.
+
+\begin{DoxyReturn}{Returns}
+The instance of \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_lock}{Rtm\+Lock}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_a6fe224a1246ade9fe68fc2261c889c4b}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_a6fe224a1246ade9fe68fc2261c889c4b}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!getPresence@{getPresence}}
+\index{getPresence@{getPresence}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{getPresence()}{getPresence()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_presence}{Rtm\+Presence}} io.\+agora.\+rtm.\+Rtm\+Client.\+get\+Presence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the presence instance.
+
+\begin{DoxyReturn}{Returns}
+The instance of \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_rtm_presence}{Rtm\+Presence}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_a54265612c98aea8c3ee6ca0871dcd829}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_a54265612c98aea8c3ee6ca0871dcd829}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!getErrorReason@{getErrorReason}}
+\index{getErrorReason@{getErrorReason}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{getErrorReason()}{getErrorReason()}}
+{\footnotesize\ttfamily abstract String io.\+agora.\+rtm.\+Rtm\+Client.\+get\+Error\+Reason (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}}}]{error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Convert error code to error string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Code} & Received error code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The error reason 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_a9a6d33282509384165709107d7a89353}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_a9a6d33282509384165709107d7a89353}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!renewToken@{renewToken}}
+\index{renewToken@{renewToken}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{renewToken()}{renewToken()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Client.\+renew\+Token (\begin{DoxyParamCaption}\item[{String}]{token,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Renews the token. Once a token is enabled and used, it expires after a certain period of time. You should generate a new token on your server, call this method to renew it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The new token \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_af963fb8321f27183b1fcaf4a389a1afb}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_af963fb8321f27183b1fcaf4a389a1afb}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!publish@{publish}}
+\index{publish@{publish}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{publish()}{publish()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Client.\+publish (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{String}]{message,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_publish_options}{Publish\+Options}}}]{options,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Publish a string message in the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em message} & The content of the string message. \\
+\hline
+{\em options} & The options of the message. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_a4426ba3d769172c9219beb7d1e0cd131}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_a4426ba3d769172c9219beb7d1e0cd131}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!publish@{publish}}
+\index{publish@{publish}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{publish()}{publish()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Client.\+publish (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{message,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_publish_options}{Publish\+Options}}}]{options,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Publish a binary message in the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em message} & The content of the string message. \\
+\hline
+{\em options} & The options of the message. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_a89cb377eb221e730240e9781657b51df}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_a89cb377eb221e730240e9781657b51df}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Client.\+subscribe (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_subscribe_options}{Subscribe\+Options}}}]{options,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Subscribe a channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em options} & The options of subscribe the channel. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_a82c51e2290104598eaf1c06534b4153b}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_a82c51e2290104598eaf1c06534b4153b}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!unsubscribe@{unsubscribe}}
+\index{unsubscribe@{unsubscribe}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{unsubscribe()}{unsubscribe()}}
+{\footnotesize\ttfamily abstract void io.\+agora.\+rtm.\+Rtm\+Client.\+unsubscribe (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}}$<$ Void $>$}]{result\+Callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Unsubscribe a channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+{\em result\+Callback} & A \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback}{Result\+Callback}} object.
+\begin{DoxyItemize}
+\item Success\+: will receives the \mbox{\hyperlink{}{Result\+Callback\#on\+Success(\+Object)}} callback.
+\item Failure\+: will receives the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_result_callback_a1f9145a3eb119e32cfc0afa938062396}{Result\+Callback\#on\+Failure(\+Error\+Info)}} callback. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_a36b177c81f5553e428224c346d7e4e11}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_a36b177c81f5553e428224c346d7e4e11}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!setParameters@{setParameters}}
+\index{setParameters@{setParameters}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{setParameters()}{setParameters()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_error_code}{Rtm\+Error\+Code}} io.\+agora.\+rtm.\+Rtm\+Client.\+set\+Parameters (\begin{DoxyParamCaption}\item[{String}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Set parameters of the sdk or engine
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & The parameters in json format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RtmErrorCode }
+\end{DoxyCode}
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1rtm_1_1_rtm_client_ad2684c00608332df16d17831f250e01b}\label{classio_1_1agora_1_1rtm_1_1_rtm_client_ad2684c00608332df16d17831f250e01b}} 
+\index{io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}!createStreamChannel@{createStreamChannel}}
+\index{createStreamChannel@{createStreamChannel}!io.agora.rtm.RtmClient@{io.agora.rtm.RtmClient}}
+\doxysubsubsection{\texorpdfstring{createStreamChannel()}{createStreamChannel()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_stream_channel}{Stream\+Channel}} io.\+agora.\+rtm.\+Rtm\+Client.\+create\+Stream\+Channel (\begin{DoxyParamCaption}\item[{String}]{channel\+Name }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Create a stream channel instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The Name of the channel.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the method call succeeds, will return
+\begin{DoxyCode}{0}
+\DoxyCodeLine{StreamChannel }
+\end{DoxyCode}
+ instance, if the method call fails, will throw an exception.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em If} & error occurs \\
+\hline
+\end{DoxyExceptions}

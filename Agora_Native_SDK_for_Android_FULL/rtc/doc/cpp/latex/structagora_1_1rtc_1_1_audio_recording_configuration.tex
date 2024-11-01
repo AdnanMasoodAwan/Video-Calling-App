@@ -1,0 +1,99 @@
+\hypertarget{structagora_1_1rtc_1_1_audio_recording_configuration}{}\doxysection{agora\+::rtc\+::Audio\+Recording\+Configuration Struct Reference}
+\label{structagora_1_1rtc_1_1_audio_recording_configuration}\index{agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_recording_configuration_aadfc6154b7d0128e58c0ef57d05c85b5}\label{structagora_1_1rtc_1_1_audio_recording_configuration_aadfc6154b7d0128e58c0ef57d05c85b5}} 
+{\bfseries Audio\+Recording\+Configuration} (const char $\ast$file\+\_\+path, int sample\+\_\+rate, A\+U\+D\+I\+O\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE quality\+\_\+type, int channel)
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_recording_configuration_a0b11563807a453106de1da067daa3193}\label{structagora_1_1rtc_1_1_audio_recording_configuration_a0b11563807a453106de1da067daa3193}} 
+{\bfseries Audio\+Recording\+Configuration} (const char $\ast$file\+\_\+path, bool enc, int sample\+\_\+rate, A\+U\+D\+I\+O\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+T\+Y\+PE type, A\+U\+D\+I\+O\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE quality\+\_\+type, int channel)
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_recording_configuration_a614225a2ad83c2d4bb5d7b7c8bda12b6}\label{structagora_1_1rtc_1_1_audio_recording_configuration_a614225a2ad83c2d4bb5d7b7c8bda12b6}} 
+{\bfseries Audio\+Recording\+Configuration} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_recording_configuration}{Audio\+Recording\+Configuration}} \&rhs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_recording_configuration_a22575a56db6fd84caabfff661025c9f4}{file\+Path}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_recording_configuration_abb018c8de2a9a57518558e64ec48125e}{encode}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_recording_configuration_acdaf3d0c9930411ddfa146ec5e8f0bcc}{sample\+Rate}}
+\item 
+A\+U\+D\+I\+O\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_recording_configuration_aa39ffde13b64b77e465a6f0a6ef59a4b}{file\+Recording\+Type}}
+\item 
+A\+U\+D\+I\+O\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_recording_configuration_ad7d1b9c582dd364b8bb7a99ebd2232e6}{quality}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_recording_configuration_a5eef713c0f7fc93f95bebf941ac2718b}{recording\+Channel}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Recording configuration. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_recording_configuration_a22575a56db6fd84caabfff661025c9f4}\label{structagora_1_1rtc_1_1_audio_recording_configuration_a22575a56db6fd84caabfff661025c9f4}} 
+\index{agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}!filePath@{filePath}}
+\index{filePath@{filePath}!agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}}
+\doxysubsubsection{\texorpdfstring{filePath}{filePath}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+Audio\+Recording\+Configuration\+::file\+Path}
+
+The absolute path (including the filename extensions) of the recording file. For example\+: {\ttfamily C\+:\textbackslash{}music\textbackslash{}audio.\+mp4}. \begin{DoxyNote}{Note}
+Ensure that the directory for the log files exists and is writable. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_recording_configuration_abb018c8de2a9a57518558e64ec48125e}\label{structagora_1_1rtc_1_1_audio_recording_configuration_abb018c8de2a9a57518558e64ec48125e}} 
+\index{agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}!encode@{encode}}
+\index{encode@{encode}!agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}}
+\doxysubsubsection{\texorpdfstring{encode}{encode}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Audio\+Recording\+Configuration\+::encode}
+
+Whether to encode the audio data\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Encode audio data in A\+AC.
+\item {\ttfamily false}\+: (Default) Do not encode audio data, but save the recorded audio data directly. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_recording_configuration_acdaf3d0c9930411ddfa146ec5e8f0bcc}\label{structagora_1_1rtc_1_1_audio_recording_configuration_acdaf3d0c9930411ddfa146ec5e8f0bcc}} 
+\index{agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}!sampleRate@{sampleRate}}
+\index{sampleRate@{sampleRate}!agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}}
+\doxysubsubsection{\texorpdfstring{sampleRate}{sampleRate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Audio\+Recording\+Configuration\+::sample\+Rate}
+
+Recording sample rate (Hz).
+\begin{DoxyItemize}
+\item 16000
+\item (Default) 32000
+\item 44100
+\item 48000 \begin{DoxyNote}{Note}
+If you set this parameter to 44100 or 48000, Agora recommends recording W\+AV files, or A\+AC files with quality to be {\ttfamily A\+U\+D\+I\+O\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+M\+E\+D\+I\+UM} or {\ttfamily A\+U\+D\+I\+O\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+H\+I\+GH} for better recording quality. 
+\end{DoxyNote}
+
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_recording_configuration_aa39ffde13b64b77e465a6f0a6ef59a4b}\label{structagora_1_1rtc_1_1_audio_recording_configuration_aa39ffde13b64b77e465a6f0a6ef59a4b}} 
+\index{agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}!fileRecordingType@{fileRecordingType}}
+\index{fileRecordingType@{fileRecordingType}!agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}}
+\doxysubsubsection{\texorpdfstring{fileRecordingType}{fileRecordingType}}
+{\footnotesize\ttfamily A\+U\+D\+I\+O\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Audio\+Recording\+Configuration\+::file\+Recording\+Type}
+
+The recording content. See {\ttfamily A\+U\+D\+I\+O\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+T\+Y\+PE}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_recording_configuration_ad7d1b9c582dd364b8bb7a99ebd2232e6}\label{structagora_1_1rtc_1_1_audio_recording_configuration_ad7d1b9c582dd364b8bb7a99ebd2232e6}} 
+\index{agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}!quality@{quality}}
+\index{quality@{quality}!agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}}
+\doxysubsubsection{\texorpdfstring{quality}{quality}}
+{\footnotesize\ttfamily A\+U\+D\+I\+O\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Audio\+Recording\+Configuration\+::quality}
+
+Recording quality. See {\ttfamily A\+U\+D\+I\+O\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE}. \begin{DoxyNote}{Note}
+This parameter applies to A\+AC files only. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_audio_recording_configuration_a5eef713c0f7fc93f95bebf941ac2718b}\label{structagora_1_1rtc_1_1_audio_recording_configuration_a5eef713c0f7fc93f95bebf941ac2718b}} 
+\index{agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}!recordingChannel@{recordingChannel}}
+\index{recordingChannel@{recordingChannel}!agora::rtc::AudioRecordingConfiguration@{agora::rtc::AudioRecordingConfiguration}}
+\doxysubsubsection{\texorpdfstring{recordingChannel}{recordingChannel}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Audio\+Recording\+Configuration\+::recording\+Channel}
+
+Recording channel. The following values are supported\+:
+\begin{DoxyItemize}
+\item (Default) 1
+\item 2 
+\end{DoxyItemize}

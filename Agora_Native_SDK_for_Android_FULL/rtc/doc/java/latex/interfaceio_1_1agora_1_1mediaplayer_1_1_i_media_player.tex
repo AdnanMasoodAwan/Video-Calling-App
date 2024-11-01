@@ -1,0 +1,974 @@
+\hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player}{}\doxysection{io.\+agora.\+mediaplayer.\+I\+Media\+Player Interface Reference}
+\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player}\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+Inheritance diagram for io.\+agora.\+mediaplayer.\+I\+Media\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a0220740bfbafb43195e8536475de349f}{get\+Media\+Player\+Id}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a8d476bd955a5a25c552215066a22feb1}{open}} (Uri uri, long start\+Pos)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a17d627406558715c2cd06ee71b587432}{open}} (String url, long start\+Pos)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a8feb20e7cd0f569f2451aaf2c70d2422}{open\+With\+Media\+Source}} (\mbox{\hyperlink{classio_1_1agora_1_1mediaplayer_1_1data_1_1_media_player_source}{Media\+Player\+Source}} source)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a35dfcfdc6cadf741bddb4c8fd068a4be}{play}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a36ceefe13443e3a4bac9e6d4223d8fb6}{pause}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a96cfc3d9200e98724eb03476530e6025}{stop}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab13425b03bc85976ff277750485517ed}{resume}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a16450aef1b0ea88abe554c35d112a6e9}{seek}} (long new\+Pos)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab17c9dbb96d64de084397d36ac6087e5}{set\+Audio\+Pitch}} (int pitch)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_acac05945b0a5844d741c409f383d9eba}{mute}} (boolean muted)
+\begin{DoxyCompactList}\small\item\em Turn mute on or off. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a365a0f64d2798de72898c9df1bd43695}{get\+Mute}} ()
+\begin{DoxyCompactList}\small\item\em Get mute state. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a73edc580de06fdbc6390ff01041ccd52}{adjust\+Playout\+Volume}} (int volume)
+\begin{DoxyCompactList}\small\item\em Adjust playback volume. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a43a4a4b758bf058bc520dd9be90c2266}{get\+Playout\+Volume}} ()
+\begin{DoxyCompactList}\small\item\em Get the current playback volume. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a37c8a3301ed6566e90a620a35e225a7a}{get\+Play\+Position}} ()
+\item 
+long \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a78be2e738d7c458ca49332ead63cfbd4}{get\+Duration}} ()
+\begin{DoxyCompactList}\small\item\em Get media duration. \end{DoxyCompactList}\item 
+Constants.\+Media\+Player\+State \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ad056c286d21e25a2fce2c4366f89be4e}{get\+State}} ()
+\begin{DoxyCompactList}\small\item\em Get player state. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a30a1826581d0601e9412ebe550b10675}{get\+Stream\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of streams in the media. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_adaf0d07e6b9cbb137b5200e772ca2960}{set\+View}} (View video\+View)
+\begin{DoxyCompactList}\small\item\em Set video rendering view. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a544f0d651cb8a527e79a6ec06d5b1faa}{set\+Render\+Mode}} (int mode)
+\begin{DoxyCompactList}\small\item\em Set video display mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a591a95e9b6809389b54431d3a6ff60af}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a591a95e9b6809389b54431d3a6ff60af}} 
+\mbox{\hyperlink{classio_1_1agora_1_1mediaplayer_1_1data_1_1_media_stream_info}{Media\+Stream\+Info}} {\bfseries get\+Stream\+Info} (int index)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aca0b9a1194cc2deced426da7d224dcbf}{set\+Loop\+Count}} (int loop\+Count)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab5db207de74fe4db97df71e106c39673}{set\+Playback\+Speed}} (int speed)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a1970a14e6ade9dbd2d90a98ff95ec9c2}{select\+Audio\+Track}} (int index)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a4bfb9c48624deff2870fbac32b6a0a1f}{select\+Multi\+Audio\+Track}} (int playout\+Track\+Index, int publish\+Track\+Index)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a3efe90d1d32eb32e4dc62d5d20d83839}{set\+Player\+Option}} (String key, int value)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab1e57491b900f849778f98d3e116cfc2}{set\+Player\+Option\+String}} (String key, String value)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_afa15aa236644ccee137da4f61509fae8}{take\+Screenshot}} (String filename)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_acf4fca2eb27b9d383d46360f846820cd}{select\+Internal\+Subtitle}} (int index)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aafc71406711332a6d64a5ac2b38d0a31}{set\+External\+Subtitle}} (String url)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a68a2bc92b2f0dbcb91ab1728a8e7e35c}{adjust\+Publish\+Signal\+Volume}} (int volume)
+\begin{DoxyCompactList}\small\item\em adjust publish signal volume \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a1a7a3d718a92ec5b7df1473e8b6fd3b5}{get\+Publish\+Signal\+Volume}} ()
+\begin{DoxyCompactList}\small\item\em get publish signal volume \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ae38ff4b5ee5a2582e9e6e04087c14433}{get\+Play\+Src}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aeb4637d26df2f6c8ce5c56e3ab6d5bf8}{switch\+Src}} (String src, boolean sync\+Pts)
+\begin{DoxyCompactList}\small\item\em switch to another play source \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ad4635aae425badaf12d42162dbd9732c}{preload\+Src}} (String src, long start\+Pos)
+\begin{DoxyCompactList}\small\item\em preload another play source \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a61e14cf182848ed533dd92bedfbe5604}{play\+Preloaded\+Src}} (String src)
+\begin{DoxyCompactList}\small\item\em play the preloaded source \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_acebd1ca5d03dc435d1bfbab6665290b1}{unload\+Src}} (String src)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a7b0e840af73b95213d42e155c20a5e0e}{destroy}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a6af7f2ea9f2776553790547f7502cfdc}{register\+Player\+Observer}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_observer}{I\+Media\+Player\+Observer}} player\+Observer)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a5abeb9a3912f887d510d2d13ec375330}{un\+Register\+Player\+Observer}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_observer}{I\+Media\+Player\+Observer}} player\+Observer)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_acb1b52a72ca3d0c9373885ebed458b37}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_acb1b52a72ca3d0c9373885ebed458b37}} 
+int {\bfseries register\+Audio\+Frame\+Observer} (\mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_audio_frame_observer}{I\+Media\+Player\+Audio\+Frame\+Observer}} audio\+Frame\+Observer, int mode)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_adc668e3e6df11928992bec7301d1f126}{register\+Media\+Player\+Audio\+Spectrum\+Observer}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer}{I\+Audio\+Spectrum\+Observer}} observer, int interval\+In\+MS)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_adedb23ba72e07a06c5c66d5349d39351}{unregister\+Media\+Player\+Audio\+Spectrum\+Observer}} (\mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer}{I\+Audio\+Spectrum\+Observer}} observer)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a6c8b23525ecfcfc066ab693ba09dd44e}{set\+Audio\+Dual\+Mono\+Mode}} (int mode)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a5d38e0457ec5bfb9a3705b664f099b82}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a5d38e0457ec5bfb9a3705b664f099b82}} 
+int {\bfseries register\+Video\+Frame\+Observer} (\mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_video_frame_observer}{I\+Media\+Player\+Video\+Frame\+Observer}} video\+Frame\+Observer)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a9d9933dc04c28037a0e941a5ed0fa61a}{open\+With\+Agora\+C\+D\+N\+Src}} (String src, long start\+Pos)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aec985d367b9aa7abcda948a3f006b60a}{get\+Agora\+C\+D\+N\+Line\+Count}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aa14aeb7f107b37cf69c8f4f3d09d64a1}{switch\+Agora\+C\+D\+N\+Line\+By\+Index}} (int index)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a4370eec4cae4e1f3076f421cb3a33e92}{get\+Current\+Agora\+C\+D\+N\+Index}} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aeea244765c2e03c0455e2db9bd941de7}{enable\+Auto\+Switch\+Agora\+C\+DN}} (boolean enable)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a63264a09e531562f8be50dd6524bec46}{renew\+Agora\+C\+D\+N\+Src\+Token}} (String token, long ts)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ad4bf2afe404d0ae0316fcfc6efe115fe}{switch\+Agora\+C\+D\+N\+Src}} (String src, boolean sync\+Pts)
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a9ef467b5596fb186a570bfb5bc60fbc1}{set\+Spatial\+Audio\+Params}} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_spatial_audio_params}{Spatial\+Audio\+Params}} params)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a0220740bfbafb43195e8536475de349f}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a0220740bfbafb43195e8536475de349f}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!getMediaPlayerId@{getMediaPlayerId}}
+\index{getMediaPlayerId@{getMediaPlayerId}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{getMediaPlayerId()}{getMediaPlayerId()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+get\+Media\+Player\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get unique source id of the media player. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item $>$= 0\+: The source id of this media player.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a8d476bd955a5a25c552215066a22feb1}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a8d476bd955a5a25c552215066a22feb1}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!open@{open}}
+\index{open@{open}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+open (\begin{DoxyParamCaption}\item[{Uri}]{uri,  }\item[{long}]{start\+Pos }\end{DoxyParamCaption})}
+
+Opens a media file with a specified U\+RL. 
+\begin{DoxyParams}{Parameters}
+{\em uri} & The uri of the media file that you want to play. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a17d627406558715c2cd06ee71b587432}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a17d627406558715c2cd06ee71b587432}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!open@{open}}
+\index{open@{open}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+open (\begin{DoxyParamCaption}\item[{String}]{url,  }\item[{long}]{start\+Pos }\end{DoxyParamCaption})}
+
+Opens a media file with a andorid U\+RI. 
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL of the media file that you want to play. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a1343b2784c28e3376d6295892cd5ea72}{io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a8feb20e7cd0f569f2451aaf2c70d2422}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a8feb20e7cd0f569f2451aaf2c70d2422}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!openWithMediaSource@{openWithMediaSource}}
+\index{openWithMediaSource@{openWithMediaSource}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{openWithMediaSource()}{openWithMediaSource()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+open\+With\+Media\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1mediaplayer_1_1data_1_1_media_player_source}{Media\+Player\+Source}}}]{source }\end{DoxyParamCaption})}
+
+Opens a media file with a media file source. 
+\begin{DoxyParams}{Parameters}
+{\em source} & Media file source that you want to play, see {\ttfamily Media\+Source} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a35dfcfdc6cadf741bddb4c8fd068a4be}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a35dfcfdc6cadf741bddb4c8fd068a4be}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!play@{play}}
+\index{play@{play}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Plays the media file. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a36ceefe13443e3a4bac9e6d4223d8fb6}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a36ceefe13443e3a4bac9e6d4223d8fb6}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!pause@{pause}}
+\index{pause@{pause}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Pauses playing the media file. \mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a96cfc3d9200e98724eb03476530e6025}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a96cfc3d9200e98724eb03476530e6025}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!stop@{stop}}
+\index{stop@{stop}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stops playing the current media file. 
+
+Implemented in \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a1908d845c34b464a3531cc02ccc85b8d}{io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab13425b03bc85976ff277750485517ed}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab13425b03bc85976ff277750485517ed}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!resume@{resume}}
+\index{resume@{resume}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resumes playing the media file. \mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a16450aef1b0ea88abe554c35d112a6e9}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a16450aef1b0ea88abe554c35d112a6e9}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!seek@{seek}}
+\index{seek@{seek}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{seek()}{seek()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+seek (\begin{DoxyParamCaption}\item[{long}]{new\+Pos }\end{DoxyParamCaption})}
+
+Sets the current playback position of the media file. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Pos} & The new playback position (ms). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab17c9dbb96d64de084397d36ac6087e5}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab17c9dbb96d64de084397d36ac6087e5}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!setAudioPitch@{setAudioPitch}}
+\index{setAudioPitch@{setAudioPitch}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setAudioPitch()}{setAudioPitch()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+set\+Audio\+Pitch (\begin{DoxyParamCaption}\item[{int}]{pitch }\end{DoxyParamCaption})}
+
+Sets the pitch of the current media file. 
+\begin{DoxyParams}{Parameters}
+{\em pitch} & Sets the pitch of the local music file by chromatic scale. The default value is 0, which means keeping the original pitch. The value ranges from -\/12 to 12, and the pitch value between consecutive values is a chromatic value. The greater the absolute value of this parameter, the higher or lower the pitch of the local music file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_acac05945b0a5844d741c409f383d9eba}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_acac05945b0a5844d741c409f383d9eba}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!mute@{mute}}
+\index{mute@{mute}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{mute()}{mute()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+mute (\begin{DoxyParamCaption}\item[{boolean}]{muted }\end{DoxyParamCaption})}
+
+
+
+Turn mute on or off. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em muted} & Whether to mute on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int $<$= 0 On behalf of an error, the value corresponds to one of Media\+Player\+Reason 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a365a0f64d2798de72898c9df1bd43695}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a365a0f64d2798de72898c9df1bd43695}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!getMute@{getMute}}
+\index{getMute@{getMute}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{getMute()}{getMute()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+get\+Mute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get mute state. 
+
+\begin{DoxyReturn}{Returns}
+Whether media player is mute on 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a73edc580de06fdbc6390ff01041ccd52}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a73edc580de06fdbc6390ff01041ccd52}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!adjustPlayoutVolume@{adjustPlayoutVolume}}
+\index{adjustPlayoutVolume@{adjustPlayoutVolume}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{adjustPlayoutVolume()}{adjustPlayoutVolume()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+adjust\+Playout\+Volume (\begin{DoxyParamCaption}\item[{int}]{volume }\end{DoxyParamCaption})}
+
+
+
+Adjust playback volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume value to be adjusted The volume can be adjusted from 0 to 400\+: 0\+: mute; 100\+: original volume; 400\+: Up to 4 times the original volume (with built-\/in overflow protection). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int $<$= 0 On behalf of an error, the value corresponds to one of Media\+Player\+Reason 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a43a4a4b758bf058bc520dd9be90c2266}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a43a4a4b758bf058bc520dd9be90c2266}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!getPlayoutVolume@{getPlayoutVolume}}
+\index{getPlayoutVolume@{getPlayoutVolume}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{getPlayoutVolume()}{getPlayoutVolume()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+get\+Playout\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current playback volume. 
+
+\begin{DoxyReturn}{Returns}
+int $<$= 0 On behalf of an error, the value corresponds to one of Media\+Player\+Reason 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em volume} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a37c8a3301ed6566e90a620a35e225a7a}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a37c8a3301ed6566e90a620a35e225a7a}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!getPlayPosition@{getPlayPosition}}
+\index{getPlayPosition@{getPlayPosition}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{getPlayPosition()}{getPlayPosition()}}
+{\footnotesize\ttfamily long io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+get\+Play\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the current playback position of the media file. \begin{DoxyReturn}{Returns}
+int $<$= 0 On behalf of an error, the value corresponds to one of Media\+Player\+Reason 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a78be2e738d7c458ca49332ead63cfbd4}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a78be2e738d7c458ca49332ead63cfbd4}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!getDuration@{getDuration}}
+\index{getDuration@{getDuration}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{getDuration()}{getDuration()}}
+{\footnotesize\ttfamily long io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+get\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get media duration. 
+
+\begin{DoxyReturn}{Returns}
+int $<$= 0 On behalf of an error, the value corresponds to one of Media\+Player\+Reason 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em duration} & Duration in seconds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ad056c286d21e25a2fce2c4366f89be4e}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ad056c286d21e25a2fce2c4366f89be4e}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!getState@{getState}}
+\index{getState@{getState}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily Constants.\+Media\+Player\+State io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get player state. 
+
+\begin{DoxyReturn}{Returns}
+Media\+Player\+State 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a30a1826581d0601e9412ebe550b10675}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a30a1826581d0601e9412ebe550b10675}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!getStreamCount@{getStreamCount}}
+\index{getStreamCount@{getStreamCount}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{getStreamCount()}{getStreamCount()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+get\+Stream\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of streams in the media. 
+
+\begin{DoxyReturn}{Returns}
+int $<$= 0 On behalf of an error, the value corresponds to one of Media\+Player\+Reason 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em count} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_adaf0d07e6b9cbb137b5200e772ca2960}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_adaf0d07e6b9cbb137b5200e772ca2960}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!setView@{setView}}
+\index{setView@{setView}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setView()}{setView()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+set\+View (\begin{DoxyParamCaption}\item[{View}]{video\+View }\end{DoxyParamCaption})}
+
+
+
+Set video rendering view. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+View} & view object, windows platform is H\+W\+ND \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int $<$= 0 On behalf of an error, the value corresponds to one of Media\+Player\+Reason 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a544f0d651cb8a527e79a6ec06d5b1faa}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a544f0d651cb8a527e79a6ec06d5b1faa}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!setRenderMode@{setRenderMode}}
+\index{setRenderMode@{setRenderMode}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setRenderMode()}{setRenderMode()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+set\+Render\+Mode (\begin{DoxyParamCaption}\item[{int}]{mode }\end{DoxyParamCaption})}
+
+
+
+Set video display mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Video display mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int $<$ 0 on behalf of an error, the value corresponds to one of Media\+Player\+Reason 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aca0b9a1194cc2deced426da7d224dcbf}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aca0b9a1194cc2deced426da7d224dcbf}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!setLoopCount@{setLoopCount}}
+\index{setLoopCount@{setLoopCount}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setLoopCount()}{setLoopCount()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+set\+Loop\+Count (\begin{DoxyParamCaption}\item[{int}]{loop\+Count }\end{DoxyParamCaption})}
+
+Sets whether to loop the media file for playback. 
+\begin{DoxyParams}{Parameters}
+{\em loop\+Count} & the number of times looping the media file.
+\begin{DoxyItemize}
+\item 0\+: Play the audio effect once.
+\item 1\+: Play the audio effect twice.
+\item -\/1\+: Play the audio effect in a loop indefinitely, until stop\+Effect() or \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a96cfc3d9200e98724eb03476530e6025}{stop()}} is called. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab5db207de74fe4db97df71e106c39673}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab5db207de74fe4db97df71e106c39673}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!setPlaybackSpeed@{setPlaybackSpeed}}
+\index{setPlaybackSpeed@{setPlaybackSpeed}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setPlaybackSpeed()}{setPlaybackSpeed()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+set\+Playback\+Speed (\begin{DoxyParamCaption}\item[{int}]{speed }\end{DoxyParamCaption})}
+
+Change playback speed 
+\begin{DoxyParams}{Parameters}
+{\em speed} & the enum of playback speed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a1970a14e6ade9dbd2d90a98ff95ec9c2}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a1970a14e6ade9dbd2d90a98ff95ec9c2}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!selectAudioTrack@{selectAudioTrack}}
+\index{selectAudioTrack@{selectAudioTrack}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{selectAudioTrack()}{selectAudioTrack()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+select\+Audio\+Track (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Select playback audio track of the media file 
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the audio track in media file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a4bfb9c48624deff2870fbac32b6a0a1f}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a4bfb9c48624deff2870fbac32b6a0a1f}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!selectMultiAudioTrack@{selectMultiAudioTrack}}
+\index{selectMultiAudioTrack@{selectMultiAudioTrack}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{selectMultiAudioTrack()}{selectMultiAudioTrack()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+select\+Multi\+Audio\+Track (\begin{DoxyParamCaption}\item[{int}]{playout\+Track\+Index,  }\item[{int}]{publish\+Track\+Index }\end{DoxyParamCaption})}
+
+Selects multi audio track of the media file for playback or publish to channel. 
+\begin{DoxyParams}{Parameters}
+{\em playout\+Track\+Index} & The index of the audio track in media file for local playback. \\
+\hline
+{\em publish\+Track\+Index} & The index of the audio track in the media file published to the remote.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You can obtain the stream\+Index of the audio track by calling get\+Stream\+Info.. If you want to use select\+Multi\+Audio\+Track, you need to open the media file with open\+With\+Media\+Source and set enable\+Multi\+Audio\+Track to true.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. See \mbox{\hyperlink{}{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON}}.
+\item -\/2\+: Invalid argument. Argument must be greater than or equal to zero.
+\item -\/8\+: Invalid State.\+You must open the media file with open\+With\+Media\+Source and set enable\+Multi\+Audio\+Track to true 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a3efe90d1d32eb32e4dc62d5d20d83839}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a3efe90d1d32eb32e4dc62d5d20d83839}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!setPlayerOption@{setPlayerOption}}
+\index{setPlayerOption@{setPlayerOption}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setPlayerOption()}{setPlayerOption()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+set\+Player\+Option (\begin{DoxyParamCaption}\item[{String}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+change player option before play a file 
+\begin{DoxyParams}{Parameters}
+{\em key} & the key of the option param \\
+\hline
+{\em value} & the value of option param \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab1e57491b900f849778f98d3e116cfc2}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ab1e57491b900f849778f98d3e116cfc2}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!setPlayerOptionString@{setPlayerOptionString}}
+\index{setPlayerOptionString@{setPlayerOptionString}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setPlayerOptionString()}{setPlayerOptionString()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+set\+Player\+Option\+String (\begin{DoxyParamCaption}\item[{String}]{key,  }\item[{String}]{value }\end{DoxyParamCaption})}
+
+change player option before play a file 
+\begin{DoxyParams}{Parameters}
+{\em key} & the key of the option param \\
+\hline
+{\em value} & the value of option param \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_afa15aa236644ccee137da4f61509fae8}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_afa15aa236644ccee137da4f61509fae8}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!takeScreenshot@{takeScreenshot}}
+\index{takeScreenshot@{takeScreenshot}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{takeScreenshot()}{takeScreenshot()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+take\+Screenshot (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})}
+
+take screenshot while playing video 
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename of screenshot file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_acf4fca2eb27b9d383d46360f846820cd}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_acf4fca2eb27b9d383d46360f846820cd}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!selectInternalSubtitle@{selectInternalSubtitle}}
+\index{selectInternalSubtitle@{selectInternalSubtitle}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{selectInternalSubtitle()}{selectInternalSubtitle()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+select\+Internal\+Subtitle (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+select internal subtitles in video 
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the internal subtitles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aafc71406711332a6d64a5ac2b38d0a31}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aafc71406711332a6d64a5ac2b38d0a31}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!setExternalSubtitle@{setExternalSubtitle}}
+\index{setExternalSubtitle@{setExternalSubtitle}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setExternalSubtitle()}{setExternalSubtitle()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+set\+External\+Subtitle (\begin{DoxyParamCaption}\item[{String}]{url }\end{DoxyParamCaption})}
+
+set an external subtitle for video 
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL of the subtitle file that you want to load. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a68a2bc92b2f0dbcb91ab1728a8e7e35c}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a68a2bc92b2f0dbcb91ab1728a8e7e35c}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!adjustPublishSignalVolume@{adjustPublishSignalVolume}}
+\index{adjustPublishSignalVolume@{adjustPublishSignalVolume}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{adjustPublishSignalVolume()}{adjustPublishSignalVolume()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+adjust\+Publish\+Signal\+Volume (\begin{DoxyParamCaption}\item[{int}]{volume }\end{DoxyParamCaption})}
+
+
+
+adjust publish signal volume 
+
+\begin{DoxyReturn}{Returns}
+int $<$ 0 on behalf of an error, the value corresponds to one of M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a1a7a3d718a92ec5b7df1473e8b6fd3b5}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a1a7a3d718a92ec5b7df1473e8b6fd3b5}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!getPublishSignalVolume@{getPublishSignalVolume}}
+\index{getPublishSignalVolume@{getPublishSignalVolume}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{getPublishSignalVolume()}{getPublishSignalVolume()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+get\+Publish\+Signal\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get publish signal volume 
+
+\begin{DoxyReturn}{Returns}
+int $<$ 0 on behalf of an error, the value corresponds to one of M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ae38ff4b5ee5a2582e9e6e04087c14433}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ae38ff4b5ee5a2582e9e6e04087c14433}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!getPlaySrc@{getPlaySrc}}
+\index{getPlaySrc@{getPlaySrc}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{getPlaySrc()}{getPlaySrc()}}
+{\footnotesize\ttfamily String io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+get\+Play\+Src (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the url of the current play media file for publishing.
+
+\begin{DoxyReturn}{Returns}
+the current play media file for publishing. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_af3e3f9bec20134445a680dd2e91fa241}{io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aeb4637d26df2f6c8ce5c56e3ab6d5bf8}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aeb4637d26df2f6c8ce5c56e3ab6d5bf8}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!switchSrc@{switchSrc}}
+\index{switchSrc@{switchSrc}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{switchSrc()}{switchSrc()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+switch\+Src (\begin{DoxyParamCaption}\item[{String}]{src,  }\item[{boolean}]{sync\+Pts }\end{DoxyParamCaption})}
+
+
+
+switch to another play source 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & The U\+RL of the source \\
+\hline
+{\em sync\+Pts} & whether to sync pts for the other source\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int $<$ 0 on behalf of an error, the value corresponds to one of M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ad4635aae425badaf12d42162dbd9732c}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ad4635aae425badaf12d42162dbd9732c}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!preloadSrc@{preloadSrc}}
+\index{preloadSrc@{preloadSrc}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{preloadSrc()}{preloadSrc()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+preload\+Src (\begin{DoxyParamCaption}\item[{String}]{src,  }\item[{long}]{start\+Pos }\end{DoxyParamCaption})}
+
+
+
+preload another play source 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & The U\+RL of the source \\
+\hline
+{\em start\+Pos} & play pos of the preload source\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int $<$ 0 on behalf of an error, the value corresponds to one of M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a61e14cf182848ed533dd92bedfbe5604}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a61e14cf182848ed533dd92bedfbe5604}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!playPreloadedSrc@{playPreloadedSrc}}
+\index{playPreloadedSrc@{playPreloadedSrc}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{playPreloadedSrc()}{playPreloadedSrc()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+play\+Preloaded\+Src (\begin{DoxyParamCaption}\item[{String}]{src }\end{DoxyParamCaption})}
+
+
+
+play the preloaded source 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & The U\+RL of the source\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int $<$ 0 on behalf of an error, the value corresponds to one of M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+R\+E\+A\+S\+ON 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_acebd1ca5d03dc435d1bfbab6665290b1}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_acebd1ca5d03dc435d1bfbab6665290b1}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!unloadSrc@{unloadSrc}}
+\index{unloadSrc@{unloadSrc}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{unloadSrc()}{unloadSrc()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+unload\+Src (\begin{DoxyParamCaption}\item[{String}]{src }\end{DoxyParamCaption})}
+
+Unload a preloaded media source 
+\begin{DoxyParams}{Parameters}
+{\em src} & Specific src. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a7b0e840af73b95213d42e155c20a5e0e}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a7b0e840af73b95213d42e155c20a5e0e}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!destroy@{destroy}}
+\index{destroy@{destroy}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{interfaceio_1_1agora_1_1musiccontentcenter_1_1_i_agora_music_player_a517b16cb2a82ba4029f83a65bbbb33d0}{io.\+agora.\+musiccontentcenter.\+I\+Agora\+Music\+Player}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a6af7f2ea9f2776553790547f7502cfdc}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a6af7f2ea9f2776553790547f7502cfdc}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!registerPlayerObserver@{registerPlayerObserver}}
+\index{registerPlayerObserver@{registerPlayerObserver}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{registerPlayerObserver()}{registerPlayerObserver()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+register\+Player\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_observer}{I\+Media\+Player\+Observer}}}]{player\+Observer }\end{DoxyParamCaption})}
+
+Registers a media player observer.
+
+Once the media player observer is registered, you can use the observer to monitor the state change of the media player. 
+\begin{DoxyParams}{Parameters}
+{\em player\+Observer} & The pointer to the \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_observer}{I\+Media\+Player\+Observer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a5abeb9a3912f887d510d2d13ec375330}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a5abeb9a3912f887d510d2d13ec375330}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!unRegisterPlayerObserver@{unRegisterPlayerObserver}}
+\index{unRegisterPlayerObserver@{unRegisterPlayerObserver}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{unRegisterPlayerObserver()}{unRegisterPlayerObserver()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+un\+Register\+Player\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_observer}{I\+Media\+Player\+Observer}}}]{player\+Observer }\end{DoxyParamCaption})}
+
+Releases the media player observer. 
+\begin{DoxyParams}{Parameters}
+{\em player\+Observer} & The pointer to the \mbox{\hyperlink{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_observer}{I\+Media\+Player\+Observer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_adc668e3e6df11928992bec7301d1f126}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_adc668e3e6df11928992bec7301d1f126}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!registerMediaPlayerAudioSpectrumObserver@{registerMediaPlayerAudioSpectrumObserver}}
+\index{registerMediaPlayerAudioSpectrumObserver@{registerMediaPlayerAudioSpectrumObserver}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{registerMediaPlayerAudioSpectrumObserver()}{registerMediaPlayerAudioSpectrumObserver()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+register\+Media\+Player\+Audio\+Spectrum\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer}{I\+Audio\+Spectrum\+Observer}}}]{observer,  }\item[{int}]{interval\+In\+MS }\end{DoxyParamCaption})}
+
+Registers the audio frame spectrum observer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{}{I\+Audio\+Spectrum\+Observer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_adedb23ba72e07a06c5c66d5349d39351}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_adedb23ba72e07a06c5c66d5349d39351}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!unregisterMediaPlayerAudioSpectrumObserver@{unregisterMediaPlayerAudioSpectrumObserver}}
+\index{unregisterMediaPlayerAudioSpectrumObserver@{unregisterMediaPlayerAudioSpectrumObserver}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{unregisterMediaPlayerAudioSpectrumObserver()}{unregisterMediaPlayerAudioSpectrumObserver()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+unregister\+Media\+Player\+Audio\+Spectrum\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer}{I\+Audio\+Spectrum\+Observer}}}]{observer }\end{DoxyParamCaption})}
+
+Releases the audio frame spectrum observer. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the \mbox{\hyperlink{}{I\+Audio\+Spectrum\+Observer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a6c8b23525ecfcfc066ab693ba09dd44e}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a6c8b23525ecfcfc066ab693ba09dd44e}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!setAudioDualMonoMode@{setAudioDualMonoMode}}
+\index{setAudioDualMonoMode@{setAudioDualMonoMode}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setAudioDualMonoMode()}{setAudioDualMonoMode()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+set\+Audio\+Dual\+Mono\+Mode (\begin{DoxyParamCaption}\item[{int}]{mode }\end{DoxyParamCaption})}
+
+Set dual-\/mono output mode of the music file. 
+\begin{DoxyParams}{Parameters}
+{\em mode} & See \mbox{\hyperlink{enumio_1_1agora_1_1mediaplayer_1_1_constants_1_1_audio_dual_mono_mode}{Audio\+Dual\+Mono\+Mode}}. Default in A\+U\+D\+I\+O\+\_\+\+D\+U\+A\+L\+\_\+\+M\+O\+N\+O\+\_\+\+S\+T\+E\+R\+EO \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a9d9933dc04c28037a0e941a5ed0fa61a}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a9d9933dc04c28037a0e941a5ed0fa61a}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!openWithAgoraCDNSrc@{openWithAgoraCDNSrc}}
+\index{openWithAgoraCDNSrc@{openWithAgoraCDNSrc}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{openWithAgoraCDNSrc()}{openWithAgoraCDNSrc()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+open\+With\+Agora\+C\+D\+N\+Src (\begin{DoxyParamCaption}\item[{String}]{src,  }\item[{long}]{start\+Pos }\end{DoxyParamCaption})}
+
+Open the Agora C\+DN media source. 
+\begin{DoxyParams}{Parameters}
+{\em src} & The src of the media file that you want to play. \\
+\hline
+{\em start\+Pos} & The playback position (ms). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aec985d367b9aa7abcda948a3f006b60a}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aec985d367b9aa7abcda948a3f006b60a}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!getAgoraCDNLineCount@{getAgoraCDNLineCount}}
+\index{getAgoraCDNLineCount@{getAgoraCDNLineCount}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{getAgoraCDNLineCount()}{getAgoraCDNLineCount()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+get\+Agora\+C\+D\+N\+Line\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the number of Agora C\+DN lines. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item $>$ 0\+: number of C\+DN.
+\item $<$= 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aa14aeb7f107b37cf69c8f4f3d09d64a1}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aa14aeb7f107b37cf69c8f4f3d09d64a1}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!switchAgoraCDNLineByIndex@{switchAgoraCDNLineByIndex}}
+\index{switchAgoraCDNLineByIndex@{switchAgoraCDNLineByIndex}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{switchAgoraCDNLineByIndex()}{switchAgoraCDNLineByIndex()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+switch\+Agora\+C\+D\+N\+Line\+By\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Switch Agora C\+DN lines. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Specific C\+DN line index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a4370eec4cae4e1f3076f421cb3a33e92}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a4370eec4cae4e1f3076f421cb3a33e92}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!getCurrentAgoraCDNIndex@{getCurrentAgoraCDNIndex}}
+\index{getCurrentAgoraCDNIndex@{getCurrentAgoraCDNIndex}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{getCurrentAgoraCDNIndex()}{getCurrentAgoraCDNIndex()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+get\+Current\+Agora\+C\+D\+N\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the line of the current C\+DN. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item $>$= 0\+: Specific line.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aeea244765c2e03c0455e2db9bd941de7}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_aeea244765c2e03c0455e2db9bd941de7}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!enableAutoSwitchAgoraCDN@{enableAutoSwitchAgoraCDN}}
+\index{enableAutoSwitchAgoraCDN@{enableAutoSwitchAgoraCDN}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{enableAutoSwitchAgoraCDN()}{enableAutoSwitchAgoraCDN()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+enable\+Auto\+Switch\+Agora\+C\+DN (\begin{DoxyParamCaption}\item[{boolean}]{enable }\end{DoxyParamCaption})}
+
+Enable automatic C\+DN line switching. 
+\begin{DoxyParams}{Parameters}
+{\em enable} & Whether enable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a63264a09e531562f8be50dd6524bec46}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a63264a09e531562f8be50dd6524bec46}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!renewAgoraCDNSrcToken@{renewAgoraCDNSrcToken}}
+\index{renewAgoraCDNSrcToken@{renewAgoraCDNSrcToken}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{renewAgoraCDNSrcToken()}{renewAgoraCDNSrcToken()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+renew\+Agora\+C\+D\+N\+Src\+Token (\begin{DoxyParamCaption}\item[{String}]{token,  }\item[{long}]{ts }\end{DoxyParamCaption})}
+
+Update the C\+DN source token and timestamp. 
+\begin{DoxyParams}{Parameters}
+{\em token} & token. \\
+\hline
+{\em ts} & ts. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ad4bf2afe404d0ae0316fcfc6efe115fe}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_ad4bf2afe404d0ae0316fcfc6efe115fe}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!switchAgoraCDNSrc@{switchAgoraCDNSrc}}
+\index{switchAgoraCDNSrc@{switchAgoraCDNSrc}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{switchAgoraCDNSrc()}{switchAgoraCDNSrc()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+switch\+Agora\+C\+D\+N\+Src (\begin{DoxyParamCaption}\item[{String}]{src,  }\item[{boolean}]{sync\+Pts }\end{DoxyParamCaption})}
+
+Switch the C\+DN source. 
+\begin{DoxyParams}{Parameters}
+{\em src} & Specific src. \\
+\hline
+{\em sync\+Pts} & Live streaming must be set to false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a9ef467b5596fb186a570bfb5bc60fbc1}\label{interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player_a9ef467b5596fb186a570bfb5bc60fbc1}} 
+\index{io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}!setSpatialAudioParams@{setSpatialAudioParams}}
+\index{setSpatialAudioParams@{setSpatialAudioParams}!io.agora.mediaplayer.IMediaPlayer@{io.agora.mediaplayer.IMediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setSpatialAudioParams()}{setSpatialAudioParams()}}
+{\footnotesize\ttfamily int io.\+agora.\+mediaplayer.\+I\+Media\+Player.\+set\+Spatial\+Audio\+Params (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_spatial_audio_params}{Spatial\+Audio\+Params}}}]{params }\end{DoxyParamCaption})}
+
+Set spatial audio params for the music file. It can be called after the media player was created.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & See \mbox{\hyperlink{}{Spatial\+Audio\+Params}}. If it\textquotesingle{}s not set, then the spatial audio will be disabled; or it will be enabled. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

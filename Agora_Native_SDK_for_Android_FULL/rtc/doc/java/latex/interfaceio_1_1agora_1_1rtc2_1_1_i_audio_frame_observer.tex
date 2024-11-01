@@ -1,0 +1,272 @@
+\hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer}{}\doxysection{io.\+agora.\+rtc2.\+I\+Audio\+Frame\+Observer Interface Reference}
+\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer}\index{io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a1ee188710b22855bd828a9449fd838d4}{on\+Record\+Audio\+Frame}} (String channel\+Id, int type, int samples\+Per\+Channel, int bytes\+Per\+Sample, int channels, int samples\+Per\+Sec, Byte\+Buffer buffer, long render\+Time\+Ms, int avsync\+\_\+type)
+\item 
+abstract boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_ab35053c29e69caef0ebd833fac21784f}{on\+Playback\+Audio\+Frame}} (String channel\+Id, int type, int samples\+Per\+Channel, int bytes\+Per\+Sample, int channels, int samples\+Per\+Sec, Byte\+Buffer buffer, long render\+Time\+Ms, int avsync\+\_\+type)
+\item 
+abstract boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a2bf1588c6b321f063611356f6f0b8e20}{on\+Mixed\+Audio\+Frame}} (String channel\+Id, int type, int samples\+Per\+Channel, int bytes\+Per\+Sample, int channels, int samples\+Per\+Sec, Byte\+Buffer buffer, long render\+Time\+Ms, int avsync\+\_\+type)
+\item 
+abstract boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_aca30e6f2a70dbf4e84a577296450ed0a}{on\+Ear\+Monitoring\+Audio\+Frame}} (int type, int samples\+Per\+Channel, int bytes\+Per\+Sample, int channels, int samples\+Per\+Sec, Byte\+Buffer buffer, long render\+Time\+Ms, int avsync\+\_\+type)
+\item 
+abstract boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a174b65dc476a5bd07d298bf3224d7754}{on\+Playback\+Audio\+Frame\+Before\+Mixing}} (String channel\+Id, int uid, int type, int samples\+Per\+Channel, int bytes\+Per\+Sample, int channels, int samples\+Per\+Sec, Byte\+Buffer buffer, long render\+Time\+Ms, int avsync\+\_\+type, int rtp\+Timestamp)
+\item 
+abstract int \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a8fefe6e674b4d77226693e569036e6ef}{get\+Observed\+Audio\+Frame\+Position}} ()
+\item 
+abstract \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{Audio\+Params}} \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a9e62f7b9c5cf201cd75ea2f0b2417b43}{get\+Record\+Audio\+Params}} ()
+\item 
+abstract \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{Audio\+Params}} \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_ae9850f39cd04cee8419eb469e9318b8f}{get\+Playback\+Audio\+Params}} ()
+\item 
+abstract \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{Audio\+Params}} \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a5fa3838fcba7216a10777e86503f6646}{get\+Mixed\+Audio\+Params}} ()
+\item 
+abstract \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{Audio\+Params}} \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_ad2dfd3f50aff650e92d74d48c761245c}{get\+Ear\+Monitoring\+Audio\+Params}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer}{I\+Audio\+Frame\+Observer}} interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a1ee188710b22855bd828a9449fd838d4}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a1ee188710b22855bd828a9449fd838d4}} 
+\index{io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}!onRecordAudioFrame@{onRecordAudioFrame}}
+\index{onRecordAudioFrame@{onRecordAudioFrame}!io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onRecordAudioFrame()}{onRecordAudioFrame()}}
+{\footnotesize\ttfamily abstract boolean io.\+agora.\+rtc2.\+I\+Audio\+Frame\+Observer.\+on\+Record\+Audio\+Frame (\begin{DoxyParamCaption}\item[{String}]{channel\+Id,  }\item[{int}]{type,  }\item[{int}]{samples\+Per\+Channel,  }\item[{int}]{bytes\+Per\+Sample,  }\item[{int}]{channels,  }\item[{int}]{samples\+Per\+Sec,  }\item[{Byte\+Buffer}]{buffer,  }\item[{long}]{render\+Time\+Ms,  }\item[{int}]{avsync\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Occurs when the recorded audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name \\
+\hline
+{\em type} & The audio frame type. \\
+\hline
+{\em samples\+Per\+Channel} & The samples per channel. \\
+\hline
+{\em bytes\+Per\+Sample} & The number of bytes per audio sample. For example, each P\+CM audio sample usually takes up 16 bits (2 bytes). \\
+\hline
+{\em channels} & The number of audio channels. If the channel uses stereo, the data is interleaved.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em samples\+Per\+Sec} & The number of samples per channel per second in the audio frame. \\
+\hline
+{\em buffer} & The audio frame payload. \\
+\hline
+{\em render\+Time\+Ms} & The render timestamp in ms. \\
+\hline
+{\em avsync\+\_\+type} & The audio/video sync type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The recorded audio frame is valid and is encoded and sent.
+\item false\+: The recorded audio frame is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_ab35053c29e69caef0ebd833fac21784f}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_ab35053c29e69caef0ebd833fac21784f}} 
+\index{io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}!onPlaybackAudioFrame@{onPlaybackAudioFrame}}
+\index{onPlaybackAudioFrame@{onPlaybackAudioFrame}!io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onPlaybackAudioFrame()}{onPlaybackAudioFrame()}}
+{\footnotesize\ttfamily abstract boolean io.\+agora.\+rtc2.\+I\+Audio\+Frame\+Observer.\+on\+Playback\+Audio\+Frame (\begin{DoxyParamCaption}\item[{String}]{channel\+Id,  }\item[{int}]{type,  }\item[{int}]{samples\+Per\+Channel,  }\item[{int}]{bytes\+Per\+Sample,  }\item[{int}]{channels,  }\item[{int}]{samples\+Per\+Sec,  }\item[{Byte\+Buffer}]{buffer,  }\item[{long}]{render\+Time\+Ms,  }\item[{int}]{avsync\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Occurs when the playback audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name \\
+\hline
+{\em type} & The audio frame type. \\
+\hline
+{\em samples\+Per\+Channel} & The samples per channel. \\
+\hline
+{\em bytes\+Per\+Sample} & The number of bytes per audio sample. For example, each P\+CM audio sample usually takes up 16 bits (2 bytes). \\
+\hline
+{\em channels} & The number of audio channels. If the channel uses stereo, the data is interleaved.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em samples\+Per\+Sec} & The number of samples per channel per second in the audio frame. \\
+\hline
+{\em buffer} & The audio frame payload. \\
+\hline
+{\em render\+Time\+Ms} & The render timestamp in ms. \\
+\hline
+{\em avsync\+\_\+type} & The audio/video sync type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The playback audio frame is valid and is encoded and sent.
+\item false\+: The playback audio frame is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a2bf1588c6b321f063611356f6f0b8e20}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a2bf1588c6b321f063611356f6f0b8e20}} 
+\index{io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}!onMixedAudioFrame@{onMixedAudioFrame}}
+\index{onMixedAudioFrame@{onMixedAudioFrame}!io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onMixedAudioFrame()}{onMixedAudioFrame()}}
+{\footnotesize\ttfamily abstract boolean io.\+agora.\+rtc2.\+I\+Audio\+Frame\+Observer.\+on\+Mixed\+Audio\+Frame (\begin{DoxyParamCaption}\item[{String}]{channel\+Id,  }\item[{int}]{type,  }\item[{int}]{samples\+Per\+Channel,  }\item[{int}]{bytes\+Per\+Sample,  }\item[{int}]{channels,  }\item[{int}]{samples\+Per\+Sec,  }\item[{Byte\+Buffer}]{buffer,  }\item[{long}]{render\+Time\+Ms,  }\item[{int}]{avsync\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Occurs when the mixed playback audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel name \\
+\hline
+{\em type} & The audio frame type. \\
+\hline
+{\em samples\+Per\+Channel} & The samples per channel. \\
+\hline
+{\em bytes\+Per\+Sample} & The number of bytes per audio sample. For example, each P\+CM audio sample usually takes up 16 bits (2 bytes). \\
+\hline
+{\em channels} & The number of audio channels. If the channel uses stereo, the data is interleaved.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em samples\+Per\+Sec} & The number of samples per channel per second in the audio frame. \\
+\hline
+{\em buffer} & The audio frame payload. \\
+\hline
+{\em render\+Time\+Ms} & The render timestamp in ms. \\
+\hline
+{\em avsync\+\_\+type} & The audio/video sync type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The mixed audio data is valid and is encoded and sent.
+\item false\+: The mixed audio data is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_aca30e6f2a70dbf4e84a577296450ed0a}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_aca30e6f2a70dbf4e84a577296450ed0a}} 
+\index{io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}!onEarMonitoringAudioFrame@{onEarMonitoringAudioFrame}}
+\index{onEarMonitoringAudioFrame@{onEarMonitoringAudioFrame}!io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onEarMonitoringAudioFrame()}{onEarMonitoringAudioFrame()}}
+{\footnotesize\ttfamily abstract boolean io.\+agora.\+rtc2.\+I\+Audio\+Frame\+Observer.\+on\+Ear\+Monitoring\+Audio\+Frame (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{int}]{samples\+Per\+Channel,  }\item[{int}]{bytes\+Per\+Sample,  }\item[{int}]{channels,  }\item[{int}]{samples\+Per\+Sec,  }\item[{Byte\+Buffer}]{buffer,  }\item[{long}]{render\+Time\+Ms,  }\item[{int}]{avsync\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Occurs when the ear monitoring audio frame is received. 
+\begin{DoxyParams}{Parameters}
+{\em type} & The audio frame type. \\
+\hline
+{\em samples\+Per\+Channel} & The samples per channel. \\
+\hline
+{\em bytes\+Per\+Sample} & The number of bytes per audio sample. For example, each P\+CM audio sample usually takes up 16 bits (2 bytes). \\
+\hline
+{\em channels} & The number of audio channels. If the channel uses stereo, the data is interleaved.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em samples\+Per\+Sec} & The number of samples per channel per second in the audio frame. \\
+\hline
+{\em buffer} & The audio frame payload. \\
+\hline
+{\em render\+Time\+Ms} & The render timestamp in ms. \\
+\hline
+{\em avsync\+\_\+type} & The audio/video sync type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The ear monitoring audio frame is valid and is encoded and sent.
+\item false\+: The ear monitoring audio frame is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a174b65dc476a5bd07d298bf3224d7754}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a174b65dc476a5bd07d298bf3224d7754}} 
+\index{io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}!onPlaybackAudioFrameBeforeMixing@{onPlaybackAudioFrameBeforeMixing}}
+\index{onPlaybackAudioFrameBeforeMixing@{onPlaybackAudioFrameBeforeMixing}!io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onPlaybackAudioFrameBeforeMixing()}{onPlaybackAudioFrameBeforeMixing()}}
+{\footnotesize\ttfamily abstract boolean io.\+agora.\+rtc2.\+I\+Audio\+Frame\+Observer.\+on\+Playback\+Audio\+Frame\+Before\+Mixing (\begin{DoxyParamCaption}\item[{String}]{channel\+Id,  }\item[{int}]{uid,  }\item[{int}]{type,  }\item[{int}]{samples\+Per\+Channel,  }\item[{int}]{bytes\+Per\+Sample,  }\item[{int}]{channels,  }\item[{int}]{samples\+Per\+Sec,  }\item[{Byte\+Buffer}]{buffer,  }\item[{long}]{render\+Time\+Ms,  }\item[{int}]{avsync\+\_\+type,  }\item[{int}]{rtp\+Timestamp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Occurs when the playback audio frame before mixing is received. 
+\begin{DoxyParams}{Parameters}
+{\em uid} & The user Id. \\
+\hline
+{\em type} & The audio frame type. \\
+\hline
+{\em samples\+Per\+Channel} & The samples per channel. \\
+\hline
+{\em bytes\+Per\+Sample} & The number of bytes per audio sample. For example, each P\+CM audio sample usually takes up 16 bits (2 bytes). \\
+\hline
+{\em channels} & The number of audio channels. If the channel uses stereo, the data is interleaved.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em samples\+Per\+Sec} & The number of samples per channel per second in the audio frame. \\
+\hline
+{\em buffer} & The audio frame payload. \\
+\hline
+{\em render\+Time\+Ms} & The render timestamp in ms. \\
+\hline
+{\em avsync\+\_\+type} & The audio/video sync type. \\
+\hline
+{\em rtp\+Timestamp} & R\+TP timestamp of the first sample in the frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true\+: The playback audio frame before mixing is valid and is encoded and sent.
+\item false\+: The playback audio frame before mixing is invalid and is not encoded or sent. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a8fefe6e674b4d77226693e569036e6ef}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a8fefe6e674b4d77226693e569036e6ef}} 
+\index{io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}!getObservedAudioFramePosition@{getObservedAudioFramePosition}}
+\index{getObservedAudioFramePosition@{getObservedAudioFramePosition}!io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getObservedAudioFramePosition()}{getObservedAudioFramePosition()}}
+{\footnotesize\ttfamily abstract int io.\+agora.\+rtc2.\+I\+Audio\+Frame\+Observer.\+get\+Observed\+Audio\+Frame\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Sets the audio observation positions.
+
+After you successfully register the audio observer, the S\+DK uses the \{\mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a8fefe6e674b4d77226693e569036e6ef}{get\+Observed\+Audio\+Frame\+Position\} callback to determine at each specific audio-\/frame processing node whether to trigger the following callbacks\+: on\+Record\+Frame on\+Record\+Frame\} on\+Playback\+Frame on\+Playback\+Frame\} on\+Playback\+Frame\+Before\+Mixing on\+Playback\+Frame\+Before\+Mixing\} or \{ on\+Playback\+Frame\+Before\+Mixing\+Ex on\+Playback\+Frame\+Before\+Mixing\+Ex\} on\+Mixed\+Frame on\+Mixed\+Frame\} You can set the positions that you want to observe by modifying the return value of  get\+Observed\+Audio\+Frame\+Position get\+Observed\+Audio\+Frame\+Position\} according to your scenario. To observe multiple positions, use {\ttfamily $\vert$} (the OR operator).The default return value of  get\+Observed\+Audio\+Frame\+Position get\+Observed\+Audio\+Frame\+Position\} is {\ttfamily P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+L\+A\+Y\+B\+A\+CK (0x01)} and {\ttfamily P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+R\+E\+C\+O\+RD (0x01 $<$$<$ 1)}.To conserve system resources, you can reduce the number of frame positions that you want to observe.  The bit mask that controls the audio observation positions\+:{\ttfamily P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+L\+A\+Y\+B\+A\+CK (0x01)}\+: The position for observing the playback audio of all remote users after mixing, which enables the S\+DK to trigger the  on\+Playback\+Frame on\+Playback\+Frame\} callback.{\ttfamily P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+R\+E\+C\+O\+RD (0x01 $<$$<$ 1)}\+: The position for observing the recorded audio of the local user, which enables the S\+DK to trigger the  on\+Record\+Frame on\+Record\+Frame\} callback.{\ttfamily P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+M\+I\+X\+ED (0x01 $<$$<$ 2)}\+: The position for observing the mixed audio of the local user and all remote users, which enables the S\+DK to trigger the  on\+Mixed\+Frame on\+Mixed\+Frame\} callback.{\ttfamily P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+M\+I\+X\+I\+NG (0x01 $<$$<$ 3)}\+: The position for observing the audio of a single remote user before mixing, which enables the S\+DK to trigger the  on\+Playback\+Frame\+Before\+Mixing on\+Playback\+Frame\+Before\+Mixing\} or  on\+Playback\+Frame\+Before\+Mixing\+Ex on\+Playback\+Frame\+Before\+Mixing\+Ex\} callback. }}\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a9e62f7b9c5cf201cd75ea2f0b2417b43}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a9e62f7b9c5cf201cd75ea2f0b2417b43}} 
+\index{io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}!getRecordAudioParams@{getRecordAudioParams}}
+\index{getRecordAudioParams@{getRecordAudioParams}!io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getRecordAudioParams()}{getRecordAudioParams()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{Audio\+Params}} io.\+agora.\+rtc2.\+I\+Audio\+Frame\+Observer.\+get\+Record\+Audio\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Sets the audio recording format for the \mbox{\hyperlink{}{on\+Record\+Frame}} callback.
+
+Register the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a9e62f7b9c5cf201cd75ea2f0b2417b43}{get\+Record\+Audio\+Params}} callback when calling the \{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_a7ca9abd0f13dd5cdbbad54dc1fa23786}{register\+Audio\+Frame\+Observer\} method. After you successfully register the audio observer, the S\+DK triggers this callback each time it receives an audio frame. You can set the audio recording format in the return value of this callback.  The S\+DK calculates the sample interval according to the {\ttfamily Audio\+Params} you set in the return value of this callback and triggers the  on\+Record\+Frame on\+Record\+Frame\} callback at the calculated sample interval. Sample interval (seconds) = {\ttfamily sample\+Per\+Call}/({\ttfamily sample\+Rate} × {\ttfamily channel\+Cnt}). Ensure that the value of sample interval is equal to or greater than 0.\+01.  Sets the audio format. See  io.\+agora.\+rtc.\+audio.\+Audio\+Params Audio\+Params\}. }}\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_ae9850f39cd04cee8419eb469e9318b8f}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_ae9850f39cd04cee8419eb469e9318b8f}} 
+\index{io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}!getPlaybackAudioParams@{getPlaybackAudioParams}}
+\index{getPlaybackAudioParams@{getPlaybackAudioParams}!io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getPlaybackAudioParams()}{getPlaybackAudioParams()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{Audio\+Params}} io.\+agora.\+rtc2.\+I\+Audio\+Frame\+Observer.\+get\+Playback\+Audio\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Sets the audio playback format for the \mbox{\hyperlink{}{on\+Playback\+Frame}} callback.
+
+Register the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_ae9850f39cd04cee8419eb469e9318b8f}{get\+Playback\+Audio\+Params}} callback when calling the \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_a7ca9abd0f13dd5cdbbad54dc1fa23786}{register\+Audio\+Frame\+Observer}} method. After you successfully register the audio observer, the S\+DK triggers this callback each time it receives an audio frame. You can set the audio playback format in the return value of this callback.
+
+\begin{DoxyNote}{Note}
+The S\+DK calculates the sample interval according to the {\ttfamily Audio\+Params} you set in the return value of this callback and triggers the \mbox{\hyperlink{}{on\+Playback\+Frame}} callback at the calculated sample interval.
+\end{DoxyNote}
+Sample interval (seconds) = {\ttfamily sample\+Per\+Call}/({\ttfamily sample\+Rate} × {\ttfamily channel\+Cnt}). Ensure that the value of sample interval is equal to or greater than 0.\+01.
+
+\begin{DoxyReturn}{Returns}
+Sets the audio format. See \mbox{\hyperlink{}{Audio\+Params}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a5fa3838fcba7216a10777e86503f6646}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a5fa3838fcba7216a10777e86503f6646}} 
+\index{io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}!getMixedAudioParams@{getMixedAudioParams}}
+\index{getMixedAudioParams@{getMixedAudioParams}!io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getMixedAudioParams()}{getMixedAudioParams()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{Audio\+Params}} io.\+agora.\+rtc2.\+I\+Audio\+Frame\+Observer.\+get\+Mixed\+Audio\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Sets the audio mixing format for the \mbox{\hyperlink{}{on\+Mixed\+Frame}} callback.
+
+Register the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a5fa3838fcba7216a10777e86503f6646}{get\+Mixed\+Audio\+Params}} callback when calling the \{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_a7ca9abd0f13dd5cdbbad54dc1fa23786}{register\+Audio\+Frame\+Observer\} method. After you successfully register the audio observer, the S\+DK triggers this callback each time it receives an audio frame. You can set the audio mixing format in the return value of this callback.  The S\+DK calculates the sample interval according to the {\ttfamily Audio\+Params} you set in the return value of this callback and triggers the  on\+Mixed\+Frame on\+Mixed\+Frame\} callback at the calculated sample interval. Sample interval (seconds) = {\ttfamily sample\+Per\+Call}/({\ttfamily sample\+Rate} × {\ttfamily channel\+Cnt}). Ensure that the value of sample interval is equal to or greater than 0.\+01.  Sets the audio format. See  io.\+agora.\+rtc.\+audio.\+Audio\+Params Audio\+Params\}. }}\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_ad2dfd3f50aff650e92d74d48c761245c}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_ad2dfd3f50aff650e92d74d48c761245c}} 
+\index{io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}!getEarMonitoringAudioParams@{getEarMonitoringAudioParams}}
+\index{getEarMonitoringAudioParams@{getEarMonitoringAudioParams}!io.agora.rtc2.IAudioFrameObserver@{io.agora.rtc2.IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{getEarMonitoringAudioParams()}{getEarMonitoringAudioParams()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_params}{Audio\+Params}} io.\+agora.\+rtc2.\+I\+Audio\+Frame\+Observer.\+get\+Ear\+Monitoring\+Audio\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Sets the audio ear monitoring format for the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_aca30e6f2a70dbf4e84a577296450ed0a}{on\+Ear\+Monitoring\+Audio\+Frame}} callback.
+
+Register the \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_audio_frame_observer_a5fa3838fcba7216a10777e86503f6646}{get\+Mixed\+Audio\+Params}} callback when calling the \{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_a7ca9abd0f13dd5cdbbad54dc1fa23786}{register\+Audio\+Frame\+Observer\} method. After you successfully register the audio observer, the S\+DK triggers this callback each time it receives an audio frame. You can set the audio ear monitoring format in the return value of this callback.  The S\+DK calculates the sample interval according to the {\ttfamily Audio\+Params} you set in the return value of this callback and triggers the  on\+Ear\+Monitoring\+Audio\+Frame on\+Ear\+Monitoring\+Audio\+Frame\} callback at the calculated sample interval. Sample interval (seconds) = {\ttfamily sample\+Per\+Call}/({\ttfamily sample\+Rate} × {\ttfamily channel\+Cnt}). Ensure that the value of sample interval is equal to or greater than 0.\+01.  Sets the audio format. See  io.\+agora.\+rtc.\+audio.\+Audio\+Params Audio\+Params\}. }}

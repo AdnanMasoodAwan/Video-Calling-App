@@ -1,0 +1,49 @@
+\hypertarget{structagora_1_1rtc_1_1_simulcast_stream_config}{}\doxysection{agora\+::rtc\+::Simulcast\+Stream\+Config Struct Reference}
+\label{structagora_1_1rtc_1_1_simulcast_stream_config}\index{agora::rtc::SimulcastStreamConfig@{agora::rtc::SimulcastStreamConfig}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_simulcast_stream_config_a20db72ce6602d1c78add6c3e6d323461}\label{structagora_1_1rtc_1_1_simulcast_stream_config_a20db72ce6602d1c78add6c3e6d323461}} 
+{\bfseries Simulcast\+Stream\+Config} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_stream_config}{Simulcast\+Stream\+Config}} \&other)
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_simulcast_stream_config_a0b2c0f681a50b409f02150ab4dbcea67}\label{structagora_1_1rtc_1_1_simulcast_stream_config_a0b2c0f681a50b409f02150ab4dbcea67}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_stream_config}{Simulcast\+Stream\+Config}} \&rhs) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_video_dimensions}{Video\+Dimensions}} \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_stream_config_aed0edb719e55c84d9cb8d92a8611caf9}{dimensions}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_stream_config_a03a7b732b21f98ae923b80ff0dbe69c2}{k\+Bitrate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_stream_config_ad9a0a09db25407d72054480c5a204a29}{framerate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The configuration of the low-\/quality video stream. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_simulcast_stream_config_aed0edb719e55c84d9cb8d92a8611caf9}\label{structagora_1_1rtc_1_1_simulcast_stream_config_aed0edb719e55c84d9cb8d92a8611caf9}} 
+\index{agora::rtc::SimulcastStreamConfig@{agora::rtc::SimulcastStreamConfig}!dimensions@{dimensions}}
+\index{dimensions@{dimensions}!agora::rtc::SimulcastStreamConfig@{agora::rtc::SimulcastStreamConfig}}
+\doxysubsubsection{\texorpdfstring{dimensions}{dimensions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_video_dimensions}{Video\+Dimensions}} agora\+::rtc\+::\+Simulcast\+Stream\+Config\+::dimensions}
+
+The video frame dimension\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_video_dimensions}{Video\+Dimensions}}. The default value is 160 × 120. \mbox{\Hypertarget{structagora_1_1rtc_1_1_simulcast_stream_config_a03a7b732b21f98ae923b80ff0dbe69c2}\label{structagora_1_1rtc_1_1_simulcast_stream_config_a03a7b732b21f98ae923b80ff0dbe69c2}} 
+\index{agora::rtc::SimulcastStreamConfig@{agora::rtc::SimulcastStreamConfig}!kBitrate@{kBitrate}}
+\index{kBitrate@{kBitrate}!agora::rtc::SimulcastStreamConfig@{agora::rtc::SimulcastStreamConfig}}
+\doxysubsubsection{\texorpdfstring{kBitrate}{kBitrate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Simulcast\+Stream\+Config\+::k\+Bitrate}
+
+The video bitrate (Kbps), represented by an instantaneous value. The default value of the log level is 5. \mbox{\Hypertarget{structagora_1_1rtc_1_1_simulcast_stream_config_ad9a0a09db25407d72054480c5a204a29}\label{structagora_1_1rtc_1_1_simulcast_stream_config_ad9a0a09db25407d72054480c5a204a29}} 
+\index{agora::rtc::SimulcastStreamConfig@{agora::rtc::SimulcastStreamConfig}!framerate@{framerate}}
+\index{framerate@{framerate}!agora::rtc::SimulcastStreamConfig@{agora::rtc::SimulcastStreamConfig}}
+\doxysubsubsection{\texorpdfstring{framerate}{framerate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Simulcast\+Stream\+Config\+::framerate}
+
+The capture frame rate (fps) of the local video. The default value is 5. 

@@ -1,0 +1,150 @@
+\hypertarget{structagora_1_1rtc_1_1_rtc_engine_context}{}\doxysection{agora\+::rtc\+::Rtc\+Engine\+Context Struct Reference}
+\label{structagora_1_1rtc_1_1_rtc_engine_context}\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler}{I\+Rtc\+Engine\+Event\+Handler}} $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a2af55b45880c4b0e03815154191dfb68}{event\+Handler}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a912df896fff64c9d9f9e7a50fb63afce}{app\+Id}}
+\item 
+void $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_aa9be15669134534917de2b1682098e37}{context}}
+\item 
+C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a59c8d76415b1fd8e16b05617d1de711b}{channel\+Profile}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_ac869b7957bc0feec81ed0ac622aa2942}{license}}
+\item 
+A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a042693a6c6c1b6cd596a3e17cc8ad553}{audio\+Scenario}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a0921ebb3c9227b8409077cafe5f8ac45}{area\+Code}}
+\item 
+\mbox{\hyperlink{structagora_1_1commons_1_1_log_config}{commons\+::\+Log\+Config}} \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a32a5382b0bb213edfe85aa231ca2bd6c}{log\+Config}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+T\+Y\+PE $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_aeaa6a3618ec0fc6d03293f4268c1d65d}{thread\+Priority}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_adce7711c43c038923cf57631e2599bf0}{use\+External\+Egl\+Context}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a99a4847084120dd152cd920aac6e8313}{domain\+Limit}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_aa881a3b056a62480d89d285c5a8cd8cb}{auto\+Register\+Agora\+Extensions}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The context of \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine}{I\+Rtc\+Engine}}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a2af55b45880c4b0e03815154191dfb68}\label{structagora_1_1rtc_1_1_rtc_engine_context_a2af55b45880c4b0e03815154191dfb68}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!eventHandler@{eventHandler}}
+\index{eventHandler@{eventHandler}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{eventHandler}{eventHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler}{I\+Rtc\+Engine\+Event\+Handler}}$\ast$ agora\+::rtc\+::\+Rtc\+Engine\+Context\+::event\+Handler}
+
+The event handler for \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine}{I\+Rtc\+Engine}}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a912df896fff64c9d9f9e7a50fb63afce}\label{structagora_1_1rtc_1_1_rtc_engine_context_a912df896fff64c9d9f9e7a50fb63afce}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!appId@{appId}}
+\index{appId@{appId}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{appId}{appId}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+Rtc\+Engine\+Context\+::app\+Id}
+
+The App ID issued by Agora for your project. Only users in apps with the same App ID can join the same channel and communicate with each other. An App ID can only be used to create one {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine}{I\+Rtc\+Engine}}} instance. To change your App ID, call release to destroy the current \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine}{I\+Rtc\+Engine}} instance, and then create a new one. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_aa9be15669134534917de2b1682098e37}\label{structagora_1_1rtc_1_1_rtc_engine_context_aa9be15669134534917de2b1682098e37}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!context@{context}}
+\index{context@{context}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily void$\ast$ agora\+::rtc\+::\+Rtc\+Engine\+Context\+::context}
+
+
+\begin{DoxyItemize}
+\item For Android, it is the context of Activity or Application.
+\item For Windows, it is the window handle of app. Once set, this parameter enables you to plug or unplug the video devices while they are powered. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a59c8d76415b1fd8e16b05617d1de711b}\label{structagora_1_1rtc_1_1_rtc_engine_context_a59c8d76415b1fd8e16b05617d1de711b}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!channelProfile@{channelProfile}}
+\index{channelProfile@{channelProfile}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{channelProfile}{channelProfile}}
+{\footnotesize\ttfamily C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Rtc\+Engine\+Context\+::channel\+Profile}
+
+The channel profile. See \#\+C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_ac869b7957bc0feec81ed0ac622aa2942}\label{structagora_1_1rtc_1_1_rtc_engine_context_ac869b7957bc0feec81ed0ac622aa2942}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!license@{license}}
+\index{license@{license}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{license}{license}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+Rtc\+Engine\+Context\+::license}
+
+The license used for verification when connectting channel. Charge according to the license \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a042693a6c6c1b6cd596a3e17cc8ad553}\label{structagora_1_1rtc_1_1_rtc_engine_context_a042693a6c6c1b6cd596a3e17cc8ad553}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!audioScenario@{audioScenario}}
+\index{audioScenario@{audioScenario}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{audioScenario}{audioScenario}}
+{\footnotesize\ttfamily A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Rtc\+Engine\+Context\+::audio\+Scenario}
+
+The audio application scenario. See \#\+A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE.
+
+\begin{DoxyNote}{Note}
+Agora recommends the following scenarios\+:
+\begin{DoxyItemize}
+\item {\ttfamily A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+D\+E\+F\+A\+U\+L\+T(0)}
+\item {\ttfamily A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+G\+A\+M\+E\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G(3)} 
+\end{DoxyItemize}
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a0921ebb3c9227b8409077cafe5f8ac45}\label{structagora_1_1rtc_1_1_rtc_engine_context_a0921ebb3c9227b8409077cafe5f8ac45}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!areaCode@{areaCode}}
+\index{areaCode@{areaCode}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{areaCode}{areaCode}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+Rtc\+Engine\+Context\+::area\+Code}
+
+The region for connection. This is an advanced feature and applies to scenarios that have regional restrictions.
+
+For the regions that Agora supports, see \#\+A\+R\+E\+A\+\_\+\+C\+O\+DE. The area codes support bitwise operation.
+
+After specifying the region, the app integrated with the Agora S\+DK connects to the Agora servers within that region. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a32a5382b0bb213edfe85aa231ca2bd6c}\label{structagora_1_1rtc_1_1_rtc_engine_context_a32a5382b0bb213edfe85aa231ca2bd6c}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!logConfig@{logConfig}}
+\index{logConfig@{logConfig}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{logConfig}{logConfig}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1commons_1_1_log_config}{commons\+::\+Log\+Config}} agora\+::rtc\+::\+Rtc\+Engine\+Context\+::log\+Config}
+
+The log files that the S\+DK outputs. See Log\+Config.
+
+By default, the S\+DK generates five S\+DK log files and five A\+PI call log files with the following rules\+:
+\begin{DoxyItemize}
+\item The S\+DK log files are\+: {\ttfamily agorasdk.\+log}, {\ttfamily agorasdk.\+1.\+log}, {\ttfamily agorasdk.\+2.\+log}, {\ttfamily agorasdk.\+3.\+log}, and {\ttfamily agorasdk.\+4.\+log}.
+\item The A\+PI call log files are\+: {\ttfamily agoraapi.\+log}, {\ttfamily agoraapi.\+1.\+log}, {\ttfamily agoraapi.\+2.\+log}, {\ttfamily agoraapi.\+3.\+log}, and {\ttfamily agoraapi.\+4.\+log}.
+\item The default size for each S\+DK log file is 1,024 KB; the default size for each A\+PI call log file is 2,048 KB. These log files are encoded in U\+T\+F-\/8.
+\item The S\+DK writes the latest logs in {\ttfamily agorasdk.\+log} or {\ttfamily agoraapi.\+log}.
+\item When {\ttfamily agorasdk.\+log} is full, the S\+DK processes the log files in the following order\+:
+\begin{DoxyItemize}
+\item Delete the {\ttfamily agorasdk.\+4.\+log} file (if any).
+\item Rename {\ttfamily agorasdk.\+3.\+log} to {\ttfamily agorasdk.\+4.\+log}.
+\item Rename {\ttfamily agorasdk.\+2.\+log} to {\ttfamily agorasdk.\+3.\+log}.
+\item Rename {\ttfamily agorasdk.\+1.\+log} to {\ttfamily agorasdk.\+2.\+log}.
+\item Create a new {\ttfamily agorasdk.\+log} file. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_aeaa6a3618ec0fc6d03293f4268c1d65d}\label{structagora_1_1rtc_1_1_rtc_engine_context_aeaa6a3618ec0fc6d03293f4268c1d65d}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!threadPriority@{threadPriority}}
+\index{threadPriority@{threadPriority}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{threadPriority}{threadPriority}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+T\+Y\+PE$>$ agora\+::rtc\+::\+Rtc\+Engine\+Context\+::thread\+Priority}
+
+Thread priority for S\+DK common threads \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_adce7711c43c038923cf57631e2599bf0}\label{structagora_1_1rtc_1_1_rtc_engine_context_adce7711c43c038923cf57631e2599bf0}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!useExternalEglContext@{useExternalEglContext}}
+\index{useExternalEglContext@{useExternalEglContext}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{useExternalEglContext}{useExternalEglContext}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Engine\+Context\+::use\+External\+Egl\+Context}
+
+Whether to use egl context in the current thread as sdk‘s root egl context, which is shared by all egl related modules. eg. camera capture, video renderer.
+
+\begin{DoxyNote}{Note}
+This property applies to Android only. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a99a4847084120dd152cd920aac6e8313}\label{structagora_1_1rtc_1_1_rtc_engine_context_a99a4847084120dd152cd920aac6e8313}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!domainLimit@{domainLimit}}
+\index{domainLimit@{domainLimit}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{domainLimit}{domainLimit}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Engine\+Context\+::domain\+Limit}
+
+Determines whether to enable domain limit -\/true\+: only connect to servers which already parsed by D\+NS -\/false\+: (Default) connect to servers with no limit \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_aa881a3b056a62480d89d285c5a8cd8cb}\label{structagora_1_1rtc_1_1_rtc_engine_context_aa881a3b056a62480d89d285c5a8cd8cb}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!autoRegisterAgoraExtensions@{autoRegisterAgoraExtensions}}
+\index{autoRegisterAgoraExtensions@{autoRegisterAgoraExtensions}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{autoRegisterAgoraExtensions}{autoRegisterAgoraExtensions}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Engine\+Context\+::auto\+Register\+Agora\+Extensions}
+
+Whether to automatically register Agora extensions when initializing Rtc\+Engine. -\/true\+: (Default) Automatically register Agora extensions. -\/false\+: Do not automatically register Agora extensions. The user calls Enable\+Extension to manually register an Agora extension. 

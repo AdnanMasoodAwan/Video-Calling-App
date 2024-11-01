@@ -1,0 +1,175 @@
+\hypertarget{structagora_1_1rtc_1_1_remote_video_stats}{}\doxysection{agora\+::rtc\+::Remote\+Video\+Stats Struct Reference}
+\label{structagora_1_1rtc_1_1_remote_video_stats}\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uid\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_ab7f35b279fca097d201912038399c442}{uid}}
+\item 
+int delay \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a0a0f8269be3dfe782aa5d0cf7dc074f0}{\+\_\+\+\_\+deprecated}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a491db76d9c18a39a7e8afadd3e2b5456}{e2e\+Delay}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a7f76b67276e62a32b50386047a11c410}{width}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_ace438b036daa0abd01148d54c942e5a3}{height}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_aad8f76a8724b2abe94055db44b930098}{received\+Bitrate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a8a224c26b416cb58e3dc9682bc00d351}{decoder\+Input\+Frame\+Rate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a21776c26b256d836a90944c1051c9322}{decoder\+Output\+Frame\+Rate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a500d2a8457bf877794c219d194ec09b0}{renderer\+Output\+Frame\+Rate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_aec39801ed9fc1712d89e9a66b9b76bdb}{frame\+Loss\+Rate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a5d7c1702105f3e6eb40fca913da9b388}{packet\+Loss\+Rate}}
+\item 
+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a014a748c6a3db421bc6eaa71b296537a}{rx\+Stream\+Type}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_ad8b2816c6f3bff11358f41cf8cf708ff}{total\+Frozen\+Time}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a663b987ded60fe1b061602672e57c52e}{frozen\+Rate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a0462d049d437240e6d2fef105386d2c4}{av\+Sync\+Time\+Ms}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a37988d611a05c65e6196def8f17dc50b}{total\+Active\+Time}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a676efb1f95dcb83df05fcd5ebb82a9b8}{publish\+Duration}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a13638888565a2df83f5b7083b69964a8}{mos\+Value}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_ae4faa6734f05f943b541da2767628452}{rx\+Video\+Bytes}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The statistics of the remote video stream. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_ab7f35b279fca097d201912038399c442}\label{structagora_1_1rtc_1_1_remote_video_stats_ab7f35b279fca097d201912038399c442}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!uid@{uid}}
+\index{uid@{uid}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{uid}{uid}}
+{\footnotesize\ttfamily uid\+\_\+t agora\+::rtc\+::\+Remote\+Video\+Stats\+::uid}
+
+ID of the remote user sending the video stream. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a0a0f8269be3dfe782aa5d0cf7dc074f0}\label{structagora_1_1rtc_1_1_remote_video_stats_a0a0f8269be3dfe782aa5d0cf7dc074f0}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!\_\_deprecated@{\_\_deprecated}}
+\index{\_\_deprecated@{\_\_deprecated}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated}{\_\_deprecated}}
+{\footnotesize\ttfamily int delay agora\+::rtc\+::\+Remote\+Video\+Stats\+::\+\_\+\+\_\+deprecated}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000015}{Deprecated}}]Time delay (ms).\end{DoxyRefDesc}
+
+
+In scenarios where audio and video is synchronized, you can use the value of {\ttfamily network\+Transport\+Delay} and {\ttfamily jitter\+Buffer\+Delay} in {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_audio_stats}{Remote\+Audio\+Stats}}} to know the delay statistics of the remote video. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a491db76d9c18a39a7e8afadd3e2b5456}\label{structagora_1_1rtc_1_1_remote_video_stats_a491db76d9c18a39a7e8afadd3e2b5456}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!e2eDelay@{e2eDelay}}
+\index{e2eDelay@{e2eDelay}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{e2eDelay}{e2eDelay}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::e2e\+Delay}
+
+End-\/to-\/end delay from video capturer to video renderer. Hardware capture or render delay is excluded. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a7f76b67276e62a32b50386047a11c410}\label{structagora_1_1rtc_1_1_remote_video_stats_a7f76b67276e62a32b50386047a11c410}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!width@{width}}
+\index{width@{width}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::width}
+
+The width (pixels) of the video stream. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_ace438b036daa0abd01148d54c942e5a3}\label{structagora_1_1rtc_1_1_remote_video_stats_ace438b036daa0abd01148d54c942e5a3}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!height@{height}}
+\index{height@{height}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::height}
+
+The height (pixels) of the video stream. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_aad8f76a8724b2abe94055db44b930098}\label{structagora_1_1rtc_1_1_remote_video_stats_aad8f76a8724b2abe94055db44b930098}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!receivedBitrate@{receivedBitrate}}
+\index{receivedBitrate@{receivedBitrate}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{receivedBitrate}{receivedBitrate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::received\+Bitrate}
+
+Bitrate (Kbps) received since the last count. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a8a224c26b416cb58e3dc9682bc00d351}\label{structagora_1_1rtc_1_1_remote_video_stats_a8a224c26b416cb58e3dc9682bc00d351}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!decoderInputFrameRate@{decoderInputFrameRate}}
+\index{decoderInputFrameRate@{decoderInputFrameRate}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{decoderInputFrameRate}{decoderInputFrameRate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::decoder\+Input\+Frame\+Rate}
+
+The decoder input frame rate (fps) of the remote video. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a21776c26b256d836a90944c1051c9322}\label{structagora_1_1rtc_1_1_remote_video_stats_a21776c26b256d836a90944c1051c9322}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!decoderOutputFrameRate@{decoderOutputFrameRate}}
+\index{decoderOutputFrameRate@{decoderOutputFrameRate}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{decoderOutputFrameRate}{decoderOutputFrameRate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::decoder\+Output\+Frame\+Rate}
+
+The decoder output frame rate (fps) of the remote video. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a500d2a8457bf877794c219d194ec09b0}\label{structagora_1_1rtc_1_1_remote_video_stats_a500d2a8457bf877794c219d194ec09b0}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!rendererOutputFrameRate@{rendererOutputFrameRate}}
+\index{rendererOutputFrameRate@{rendererOutputFrameRate}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{rendererOutputFrameRate}{rendererOutputFrameRate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::renderer\+Output\+Frame\+Rate}
+
+The render output frame rate (fps) of the remote video. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_aec39801ed9fc1712d89e9a66b9b76bdb}\label{structagora_1_1rtc_1_1_remote_video_stats_aec39801ed9fc1712d89e9a66b9b76bdb}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!frameLossRate@{frameLossRate}}
+\index{frameLossRate@{frameLossRate}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{frameLossRate}{frameLossRate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::frame\+Loss\+Rate}
+
+The video frame loss rate (\%) of the remote video stream in the reported interval. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a5d7c1702105f3e6eb40fca913da9b388}\label{structagora_1_1rtc_1_1_remote_video_stats_a5d7c1702105f3e6eb40fca913da9b388}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!packetLossRate@{packetLossRate}}
+\index{packetLossRate@{packetLossRate}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{packetLossRate}{packetLossRate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::packet\+Loss\+Rate}
+
+Packet loss rate (\%) of the remote video stream after using the anti-\/packet-\/loss method. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a014a748c6a3db421bc6eaa71b296537a}\label{structagora_1_1rtc_1_1_remote_video_stats_a014a748c6a3db421bc6eaa71b296537a}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!rxStreamType@{rxStreamType}}
+\index{rxStreamType@{rxStreamType}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{rxStreamType}{rxStreamType}}
+{\footnotesize\ttfamily V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Remote\+Video\+Stats\+::rx\+Stream\+Type}
+
+The type of the remote video stream\+: \#\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+T\+Y\+PE. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_ad8b2816c6f3bff11358f41cf8cf708ff}\label{structagora_1_1rtc_1_1_remote_video_stats_ad8b2816c6f3bff11358f41cf8cf708ff}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!totalFrozenTime@{totalFrozenTime}}
+\index{totalFrozenTime@{totalFrozenTime}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{totalFrozenTime}{totalFrozenTime}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::total\+Frozen\+Time}
+
+The total freeze time (ms) of the remote video stream after the remote user joins the channel. In a video session where the frame rate is set to no less than 5 fps, video freeze occurs when the time interval between two adjacent renderable video frames is more than 500 ms. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a663b987ded60fe1b061602672e57c52e}\label{structagora_1_1rtc_1_1_remote_video_stats_a663b987ded60fe1b061602672e57c52e}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!frozenRate@{frozenRate}}
+\index{frozenRate@{frozenRate}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{frozenRate}{frozenRate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::frozen\+Rate}
+
+The total video freeze time as a percentage (\%) of the total time when the video is available. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a0462d049d437240e6d2fef105386d2c4}\label{structagora_1_1rtc_1_1_remote_video_stats_a0462d049d437240e6d2fef105386d2c4}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!avSyncTimeMs@{avSyncTimeMs}}
+\index{avSyncTimeMs@{avSyncTimeMs}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{avSyncTimeMs}{avSyncTimeMs}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::av\+Sync\+Time\+Ms}
+
+The offset (ms) between audio and video stream. A positive value indicates the audio leads the video, and a negative value indicates the audio lags the video. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a37988d611a05c65e6196def8f17dc50b}\label{structagora_1_1rtc_1_1_remote_video_stats_a37988d611a05c65e6196def8f17dc50b}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!totalActiveTime@{totalActiveTime}}
+\index{totalActiveTime@{totalActiveTime}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{totalActiveTime}{totalActiveTime}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::total\+Active\+Time}
+
+The total time (ms) when the remote user neither stops sending the audio stream nor disables the audio module after joining the channel. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a676efb1f95dcb83df05fcd5ebb82a9b8}\label{structagora_1_1rtc_1_1_remote_video_stats_a676efb1f95dcb83df05fcd5ebb82a9b8}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!publishDuration@{publishDuration}}
+\index{publishDuration@{publishDuration}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{publishDuration}{publishDuration}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::publish\+Duration}
+
+The total publish duration (ms) of the remote audio stream. \mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_a13638888565a2df83f5b7083b69964a8}\label{structagora_1_1rtc_1_1_remote_video_stats_a13638888565a2df83f5b7083b69964a8}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!mosValue@{mosValue}}
+\index{mosValue@{mosValue}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{mosValue}{mosValue}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Remote\+Video\+Stats\+::mos\+Value}
+
+The quality of the remote video stream in the reported interval. The quality is determined by the Agora real-\/time video M\+OS (Mean Opinion Score) measurement method. The return value range is \mbox{[}0, 500\mbox{]}. Dividing the return value by 100 gets the M\+OS score, which ranges from 0 to 5. The higher the score, the better the video quality. \begin{DoxyNote}{Note}
+For textured video data, this parameter always returns 0. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_remote_video_stats_ae4faa6734f05f943b541da2767628452}\label{structagora_1_1rtc_1_1_remote_video_stats_ae4faa6734f05f943b541da2767628452}} 
+\index{agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}!rxVideoBytes@{rxVideoBytes}}
+\index{rxVideoBytes@{rxVideoBytes}!agora::rtc::RemoteVideoStats@{agora::rtc::RemoteVideoStats}}
+\doxysubsubsection{\texorpdfstring{rxVideoBytes}{rxVideoBytes}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+Remote\+Video\+Stats\+::rx\+Video\+Bytes}
+
+The total number of video bytes received (bytes), inluding the F\+EC bytes, represented by an aggregate value. 

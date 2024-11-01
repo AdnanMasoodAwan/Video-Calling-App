@@ -1,0 +1,65 @@
+\hypertarget{classagora_1_1rtc_1_1_i_media_control_packet_sender}{}\doxysection{agora\+::rtc\+::I\+Media\+Control\+Packet\+Sender Class Reference}
+\label{classagora_1_1rtc_1_1_i_media_control_packet_sender}\index{agora::rtc::IMediaControlPacketSender@{agora::rtc::IMediaControlPacketSender}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Media\+Node.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_sender_a3050a1ddbf0155a65c19312c1ba4e445}{send\+Peer\+Media\+Control\+Packet}} (media\+::base\+::user\+\_\+id\+\_\+t user\+Id, const uint8\+\_\+t $\ast$packet, size\+\_\+t length, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_sender_af3afc3281c3e738ced551fca8ab4099b}{send\+Broadcast\+Media\+Control\+Packet}} (const uint8\+\_\+t $\ast$packet, size\+\_\+t length, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_sender}{I\+Media\+Control\+Packet\+Sender}}} class.
+
+You can get the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_sender}{I\+Media\+Control\+Packet\+Sender}}} class object from a video track or audio track, and then send media control packets directly. The media control packets are R\+T\+C\+P/\+U\+DP packets that contain media control payload. If the track is disabled, the packets will be automatically discarded. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_control_packet_sender_a3050a1ddbf0155a65c19312c1ba4e445}\label{classagora_1_1rtc_1_1_i_media_control_packet_sender_a3050a1ddbf0155a65c19312c1ba4e445}} 
+\index{agora::rtc::IMediaControlPacketSender@{agora::rtc::IMediaControlPacketSender}!sendPeerMediaControlPacket@{sendPeerMediaControlPacket}}
+\index{sendPeerMediaControlPacket@{sendPeerMediaControlPacket}!agora::rtc::IMediaControlPacketSender@{agora::rtc::IMediaControlPacketSender}}
+\doxysubsubsection{\texorpdfstring{sendPeerMediaControlPacket()}{sendPeerMediaControlPacket()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Control\+Packet\+Sender\+::send\+Peer\+Media\+Control\+Packet (\begin{DoxyParamCaption}\item[{media\+::base\+::user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{const uint8\+\_\+t $\ast$}]{packet,  }\item[{size\+\_\+t}]{length,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends the media control packet to a specified user. Currently, we only support sending packets through video tracks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of the user to send the packet to. \\
+\hline
+{\em packet} & The pointer to the packet. \\
+\hline
+{\em length} & The packet size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_control_packet_sender_af3afc3281c3e738ced551fca8ab4099b}\label{classagora_1_1rtc_1_1_i_media_control_packet_sender_af3afc3281c3e738ced551fca8ab4099b}} 
+\index{agora::rtc::IMediaControlPacketSender@{agora::rtc::IMediaControlPacketSender}!sendBroadcastMediaControlPacket@{sendBroadcastMediaControlPacket}}
+\index{sendBroadcastMediaControlPacket@{sendBroadcastMediaControlPacket}!agora::rtc::IMediaControlPacketSender@{agora::rtc::IMediaControlPacketSender}}
+\doxysubsubsection{\texorpdfstring{sendBroadcastMediaControlPacket()}{sendBroadcastMediaControlPacket()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Control\+Packet\+Sender\+::send\+Broadcast\+Media\+Control\+Packet (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{packet,  }\item[{size\+\_\+t}]{length,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends the media transport control packet to all users. Currently, we only support sending packets through video tracks. 
+\begin{DoxyParams}{Parameters}
+{\em packet} & The pointer to the packet. \\
+\hline
+{\em length} & The packet size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

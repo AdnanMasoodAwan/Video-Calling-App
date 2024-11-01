@@ -1,0 +1,96 @@
+\hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer}{}\doxysection{io.\+agora.\+base.\+Video\+Frame.\+Texture\+Buffer Interface Reference}
+\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer}\index{io.agora.base.VideoFrame.TextureBuffer@{io.agora.base.VideoFrame.TextureBuffer}}
+Inheritance diagram for io.\+agora.\+base.\+Video\+Frame.\+Texture\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_1_1_context_type}{Context\+Type}}
+\item 
+enum \mbox{\hyperlink{enumio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_1_1_type}{Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a2cc90ef55f5f288d5dc911c2423dc6c0}\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a2cc90ef55f5f288d5dc911c2423dc6c0}} 
+\mbox{\hyperlink{enumio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_1_1_type}{Type}} {\bfseries get\+Type} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a6ba9c5f5b12076dbe0de0fc85424e03d}{get\+Texture\+Id}} ()
+\item 
+Matrix \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_aed49ca148b1a1d4bfc2339fb25631801}{get\+Transform\+Matrix}} ()
+\item 
+Egl\+Base.\+Context \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_ab5f83480d469934e19d919565a045f70}{get\+Egl\+Base\+Context}} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_aa4a7aecae792838e8979d415ae8ee369}\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_aa4a7aecae792838e8979d415ae8ee369}} 
+Object {\bfseries get\+Source\+Texture\+Pool} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a378c5a1cfaf1250a1d8ed4f24bc3e7bc}\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a378c5a1cfaf1250a1d8ed4f24bc3e7bc}} 
+long {\bfseries get\+Native\+Egl\+Context} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_ad8bed7b9ac93956cc32f4083145fc033}\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_ad8bed7b9ac93956cc32f4083145fc033}} 
+int {\bfseries get\+Egl\+Context\+Type} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a792f81d1c48ac8574a1594797f5bf40d}\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a792f81d1c48ac8574a1594797f5bf40d}} 
+float\mbox{[}$\,$\mbox{]} {\bfseries get\+Transform\+Matrix\+Array} ()
+\item 
+int \mbox{\hyperlink{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_ab6799dee9357358d7bd2c17f1e6f0f75}{get\+Sequence}} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a3fa71b7be9f34d5f8157bce7cf86e76a}\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a3fa71b7be9f34d5f8157bce7cf86e76a}} 
+long {\bfseries get\+Fence\+Object} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a493566785434c1dd7639af6983cab453}\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a493566785434c1dd7639af6983cab453}} 
+boolean {\bfseries is10\+Bit\+Texture} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for buffers that are stored as a single texture, either in O\+ES or R\+GB format. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a6ba9c5f5b12076dbe0de0fc85424e03d}\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_a6ba9c5f5b12076dbe0de0fc85424e03d}} 
+\index{io.agora.base.VideoFrame.TextureBuffer@{io.agora.base.VideoFrame.TextureBuffer}!getTextureId@{getTextureId}}
+\index{getTextureId@{getTextureId}!io.agora.base.VideoFrame.TextureBuffer@{io.agora.base.VideoFrame.TextureBuffer}}
+\doxysubsubsection{\texorpdfstring{getTextureId()}{getTextureId()}}
+{\footnotesize\ttfamily int io.\+agora.\+base.\+Video\+Frame.\+Texture\+Buffer.\+get\+Texture\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+texture id 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_a529164da2e1ad01e850f3138402a564f}{io.\+agora.\+base.\+Texture\+Buffer}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_aed49ca148b1a1d4bfc2339fb25631801}\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_aed49ca148b1a1d4bfc2339fb25631801}} 
+\index{io.agora.base.VideoFrame.TextureBuffer@{io.agora.base.VideoFrame.TextureBuffer}!getTransformMatrix@{getTransformMatrix}}
+\index{getTransformMatrix@{getTransformMatrix}!io.agora.base.VideoFrame.TextureBuffer@{io.agora.base.VideoFrame.TextureBuffer}}
+\doxysubsubsection{\texorpdfstring{getTransformMatrix()}{getTransformMatrix()}}
+{\footnotesize\ttfamily Matrix io.\+agora.\+base.\+Video\+Frame.\+Texture\+Buffer.\+get\+Transform\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the transform matrix associated with the frame. This transform matrix maps 2D homogeneous coordinates of the form (s, t, 1) with s and t in the inclusive range \mbox{[}0, 1\mbox{]} to the coordinate that should be used to sample that location from the buffer. 
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_afcefd3ab72ed1170e68973d729c5c0f6}{io.\+agora.\+base.\+Texture\+Buffer}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_ab5f83480d469934e19d919565a045f70}\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_ab5f83480d469934e19d919565a045f70}} 
+\index{io.agora.base.VideoFrame.TextureBuffer@{io.agora.base.VideoFrame.TextureBuffer}!getEglBaseContext@{getEglBaseContext}}
+\index{getEglBaseContext@{getEglBaseContext}!io.agora.base.VideoFrame.TextureBuffer@{io.agora.base.VideoFrame.TextureBuffer}}
+\doxysubsubsection{\texorpdfstring{getEglBaseContext()}{getEglBaseContext()}}
+{\footnotesize\ttfamily Egl\+Base.\+Context io.\+agora.\+base.\+Video\+Frame.\+Texture\+Buffer.\+get\+Egl\+Base\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the wrapped eglcontext \mbox{\hyperlink{}{Egl\+Base.\+Context}} 
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_a340c98bbedc6e1628ebb9ceb18da3214}{io.\+agora.\+base.\+Texture\+Buffer}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_ab6799dee9357358d7bd2c17f1e6f0f75}\label{interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_ab6799dee9357358d7bd2c17f1e6f0f75}} 
+\index{io.agora.base.VideoFrame.TextureBuffer@{io.agora.base.VideoFrame.TextureBuffer}!getSequence@{getSequence}}
+\index{getSequence@{getSequence}!io.agora.base.VideoFrame.TextureBuffer@{io.agora.base.VideoFrame.TextureBuffer}}
+\doxysubsubsection{\texorpdfstring{getSequence()}{getSequence()}}
+{\footnotesize\ttfamily int io.\+agora.\+base.\+Video\+Frame.\+Texture\+Buffer.\+get\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sequence number managed by texture buffer creator. 
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_adf0aef647918aa4669b25f120317da72}{io.\+agora.\+base.\+Texture\+Buffer}}.
+

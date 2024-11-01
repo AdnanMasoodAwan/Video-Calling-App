@@ -1,0 +1,112 @@
+\hypertarget{classagora_1_1rtc_1_1_i_camera_capture_observer}{}\doxysection{agora\+::rtc\+::I\+Camera\+Capture\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_camera_capture_observer}\index{agora::rtc::ICameraCaptureObserver@{agora::rtc::ICameraCaptureObserver}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Camera\+Capturer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capture_observer_a04d46f97d29097837e902343fb9a0f1d}{on\+Camera\+Focus\+Area\+Changed}} (int image\+Width, int image\+Height, int x, int y)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capture_observer_a8a8a51a289f9b0c6cbab4f2401fbebde}{on\+Face\+Position\+Changed}} (int image\+Width, int image\+Height, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} $\ast$vec\+Rectangle, const int $\ast$vec\+Distance, int num\+Faces)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capture_observer_af777c748f4337dc3be0a50f794d1b93e}{on\+Camera\+Exposure\+Area\+Changed}} (int x, int y, int width, int height)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capture_observer_a683009137d7a6fade97f0326f1356cdb}\label{classagora_1_1rtc_1_1_i_camera_capture_observer_a683009137d7a6fade97f0326f1356cdb}} 
+virtual void {\bfseries on\+Camera\+State\+Changed} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_a93a8e50f5a615c09c27e0ced76505cd5}{I\+Camera\+Capturer\+::\+C\+A\+M\+E\+R\+A\+\_\+\+S\+T\+A\+TE}} state, \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capturer_ac50709d2a30b07afd1299f885ac14316}{I\+Camera\+Capturer\+::\+C\+A\+M\+E\+R\+A\+\_\+\+S\+O\+U\+R\+CE}} source)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_camera_capture_observer}{I\+Camera\+Capture\+Observer}} class, which handles camera capture events. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capture_observer_a04d46f97d29097837e902343fb9a0f1d}\label{classagora_1_1rtc_1_1_i_camera_capture_observer_a04d46f97d29097837e902343fb9a0f1d}} 
+\index{agora::rtc::ICameraCaptureObserver@{agora::rtc::ICameraCaptureObserver}!onCameraFocusAreaChanged@{onCameraFocusAreaChanged}}
+\index{onCameraFocusAreaChanged@{onCameraFocusAreaChanged}!agora::rtc::ICameraCaptureObserver@{agora::rtc::ICameraCaptureObserver}}
+\doxysubsubsection{\texorpdfstring{onCameraFocusAreaChanged()}{onCameraFocusAreaChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Camera\+Capture\+Observer\+::on\+Camera\+Focus\+Area\+Changed (\begin{DoxyParamCaption}\item[{int}]{image\+Width,  }\item[{int}]{image\+Height,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the camera focus area changes.
+
+\begin{DoxyNote}{Note}
+The S\+DK triggers this callback when the local user changes the camera focus position by calling the set\+Camera\+Focus method.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Width} & Width of the changed camera focus area. \\
+\hline
+{\em image\+Height} & Height of the changed camera focus area. \\
+\hline
+{\em x} & x coordinate of the changed camera focus area. \\
+\hline
+{\em y} & y coordinate of the changed camera focus area. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capture_observer_a8a8a51a289f9b0c6cbab4f2401fbebde}\label{classagora_1_1rtc_1_1_i_camera_capture_observer_a8a8a51a289f9b0c6cbab4f2401fbebde}} 
+\index{agora::rtc::ICameraCaptureObserver@{agora::rtc::ICameraCaptureObserver}!onFacePositionChanged@{onFacePositionChanged}}
+\index{onFacePositionChanged@{onFacePositionChanged}!agora::rtc::ICameraCaptureObserver@{agora::rtc::ICameraCaptureObserver}}
+\doxysubsubsection{\texorpdfstring{onFacePositionChanged()}{onFacePositionChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Camera\+Capture\+Observer\+::on\+Face\+Position\+Changed (\begin{DoxyParamCaption}\item[{int}]{image\+Width,  }\item[{int}]{image\+Height,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} $\ast$}]{vec\+Rectangle,  }\item[{const int $\ast$}]{vec\+Distance,  }\item[{int}]{num\+Faces }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the face detection result of the local user. Applies to Android and i\+OS only.
+
+Once you enable face detection by calling set\+Camera\+Face\+Detection (true), you can get the following information on the local user in real-\/time\+:
+\begin{DoxyItemize}
+\item The width and height of the local video.
+\item The position of the human face in the local video.
+\item The distance between the human face and the device screen. This value is based on the fitting calculation of the local video size and the position of the human face.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item If the S\+DK does not detect a face, it reduces the frequency of this callback to reduce power consumption on the local device.
+\item The S\+DK stops triggering this callback when a human face is in close proximity to the screen.
+\item On Android, the distance value reported in this callback may be slightly different from the actual distance. Therefore, Agora does not recommend using it for accurate calculation.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Width} & The width (px) of the local video. \\
+\hline
+{\em image\+Height} & The height (px) of the local video. \\
+\hline
+{\em vec\+Rectangle} & A \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} array of length \textquotesingle{}num\+Faces\textquotesingle{}, which represents the position and size of the human face on the local video：
+\begin{DoxyItemize}
+\item {\ttfamily x}\+: The x coordinate (px) of the human face in the local video. Taking the top left corner of the captured video as the origin, the x coordinate represents the relative lateral displacement of the top left corner of the human face to the origin.
+\item {\ttfamily y}\+: The y coordinate (px) of the human face in the local video. Taking the top left corner of the captured video as the origin, the y coordinate represents the relative longitudinal displacement of the top left corner of the human face to the origin.
+\item {\ttfamily width}\+: The width (px) of the human face in the captured video.
+\item {\ttfamily height}\+: The height (px) of the human face in the captured video. 
+\end{DoxyItemize}\\
+\hline
+{\em vec\+Distance} & An int array of length \textquotesingle{}num\+Faces\textquotesingle{}, which represents distance (cm) between the human face and the screen. \\
+\hline
+{\em num\+Faces} & The number of faces detected. If the value is 0, it means that no human face is detected. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_camera_capture_observer_af777c748f4337dc3be0a50f794d1b93e}\label{classagora_1_1rtc_1_1_i_camera_capture_observer_af777c748f4337dc3be0a50f794d1b93e}} 
+\index{agora::rtc::ICameraCaptureObserver@{agora::rtc::ICameraCaptureObserver}!onCameraExposureAreaChanged@{onCameraExposureAreaChanged}}
+\index{onCameraExposureAreaChanged@{onCameraExposureAreaChanged}!agora::rtc::ICameraCaptureObserver@{agora::rtc::ICameraCaptureObserver}}
+\doxysubsubsection{\texorpdfstring{onCameraExposureAreaChanged()}{onCameraExposureAreaChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Camera\+Capture\+Observer\+::on\+Camera\+Exposure\+Area\+Changed (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the camera exposure area changes.
+
+The S\+DK triggers this callback when the local user changes the camera exposure position by calling the set\+Camera\+Exposure\+Position method.
+
+\begin{DoxyNote}{Note}
+This callback is for Android and i\+OS only.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the changed camera exposure area. \\
+\hline
+{\em y} & y coordinate of the changed camera exposure area. \\
+\hline
+{\em width} & Width of the changed camera exposure area. \\
+\hline
+{\em height} & Height of the changed camera exposure area. \\
+\hline
+\end{DoxyParams}

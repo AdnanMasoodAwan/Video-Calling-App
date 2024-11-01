@@ -1,0 +1,138 @@
+\hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration}{}\doxysection{agora\+::rtc\+::Rtc\+Connection\+Configuration Struct Reference}
+\label{structagora_1_1rtc_1_1_rtc_connection_configuration}\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Rtc\+Connection.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_a097a93f5e347da5d75fba637a8b7bc22}{auto\+Subscribe\+Audio}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_af51576e1597295e78ddb3c5791bc77f9}{auto\+Subscribe\+Video}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_aa3ea2c4b174467cf59ece15135b5d2e3}{enable\+Audio\+Recording\+Or\+Playout}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_a59ee9f28f2de2760d7283deb92cb07f0}{max\+Send\+Bitrate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_a93b797bf53509466231ea7b2c0e23bcb}{min\+Port}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_a75a493336fafec9a3c6154849b902266}{max\+Port}}
+\item 
+C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_a28cf5adb666a392acb11d41c27fec89e}{client\+Role\+Type}}
+\item 
+C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_a85190e23f6513b6cea508a002628f6ca}{channel\+Profile}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_aaaf12587b42d0106210012ddd1654d5f}{audio\+Recv\+Encoded\+Frame}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_a14c241c934ef847fa65249153eb7bbab}{audio\+Recv\+Media\+Packet}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_a963c085c9dc971179fd0100e4e299182}{video\+Recv\+Media\+Packet}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_a99950586908bb69c48e5b9c341274a05}{is\+Interactive\+Audience}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection_configuration_a3801655ef36be71daa551ab206e5111f}{is\+Data\+Channel\+Only}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configurations for an R\+TC connection.
+
+Set these configurations when calling \mbox{\hyperlink{classagora_1_1base_1_1_i_agora_service_a326cda8c926bcb6da5f3a2c512a9ae90}{create\+Rtc\+Connection}}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_a097a93f5e347da5d75fba637a8b7bc22}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_a097a93f5e347da5d75fba637a8b7bc22}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!autoSubscribeAudio@{autoSubscribeAudio}}
+\index{autoSubscribeAudio@{autoSubscribeAudio}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{autoSubscribeAudio}{autoSubscribeAudio}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::auto\+Subscribe\+Audio}
+
+Whether to subscribe to all audio tracks automatically.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: (Default) Subscribe to all audio tracks automatically.
+\item {\ttfamily false}\+: Do not subscribe to any audio track automatically. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_af51576e1597295e78ddb3c5791bc77f9}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_af51576e1597295e78ddb3c5791bc77f9}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!autoSubscribeVideo@{autoSubscribeVideo}}
+\index{autoSubscribeVideo@{autoSubscribeVideo}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{autoSubscribeVideo}{autoSubscribeVideo}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::auto\+Subscribe\+Video}
+
+Whether to subscribe to all video tracks automatically.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: (Default) Subscribe to all video tracks automatically.
+\item {\ttfamily false}\+: Do not subscribe to any video track automatically. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_aa3ea2c4b174467cf59ece15135b5d2e3}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_aa3ea2c4b174467cf59ece15135b5d2e3}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!enableAudioRecordingOrPlayout@{enableAudioRecordingOrPlayout}}
+\index{enableAudioRecordingOrPlayout@{enableAudioRecordingOrPlayout}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{enableAudioRecordingOrPlayout}{enableAudioRecordingOrPlayout}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::enable\+Audio\+Recording\+Or\+Playout}
+
+Whether to enable audio recording or playout.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Enables audio recording or playout. Use this option when you publish and mix audio tracks, or subscribe to one or multiple audio tracks and play audio.
+\item {\ttfamily false}\+: Disables audio recording or playout. Use this option when you publish external audio frames without audio mixing, or you do not need audio devices to play audio. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_a59ee9f28f2de2760d7283deb92cb07f0}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_a59ee9f28f2de2760d7283deb92cb07f0}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!maxSendBitrate@{maxSendBitrate}}
+\index{maxSendBitrate@{maxSendBitrate}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{maxSendBitrate}{maxSendBitrate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::max\+Send\+Bitrate}
+
+The maximum sending bitrate. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_a93b797bf53509466231ea7b2c0e23bcb}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_a93b797bf53509466231ea7b2c0e23bcb}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!minPort@{minPort}}
+\index{minPort@{minPort}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{minPort}{minPort}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::min\+Port}
+
+The minimum port. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_a75a493336fafec9a3c6154849b902266}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_a75a493336fafec9a3c6154849b902266}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!maxPort@{maxPort}}
+\index{maxPort@{maxPort}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{maxPort}{maxPort}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::max\+Port}
+
+The maximum port. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_a28cf5adb666a392acb11d41c27fec89e}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_a28cf5adb666a392acb11d41c27fec89e}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!clientRoleType@{clientRoleType}}
+\index{clientRoleType@{clientRoleType}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{clientRoleType}{clientRoleType}}
+{\footnotesize\ttfamily C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::client\+Role\+Type}
+
+The user role. For details, see \#\+C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE. The default user role is {\ttfamily C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+A\+U\+D\+I\+E\+N\+CE}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_a85190e23f6513b6cea508a002628f6ca}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_a85190e23f6513b6cea508a002628f6ca}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!channelProfile@{channelProfile}}
+\index{channelProfile@{channelProfile}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{channelProfile}{channelProfile}}
+{\footnotesize\ttfamily C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::channel\+Profile}
+
+The channel profile. For details, see \#\+C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE. The default channel profile is {\ttfamily C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+L\+I\+V\+E\+\_\+\+B\+R\+O\+A\+D\+C\+A\+S\+T\+I\+NG}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_aaaf12587b42d0106210012ddd1654d5f}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_aaaf12587b42d0106210012ddd1654d5f}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!audioRecvEncodedFrame@{audioRecvEncodedFrame}}
+\index{audioRecvEncodedFrame@{audioRecvEncodedFrame}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{audioRecvEncodedFrame}{audioRecvEncodedFrame}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::audio\+Recv\+Encoded\+Frame}
+
+Determines whether to receive audio encoded frame or not. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_a14c241c934ef847fa65249153eb7bbab}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_a14c241c934ef847fa65249153eb7bbab}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!audioRecvMediaPacket@{audioRecvMediaPacket}}
+\index{audioRecvMediaPacket@{audioRecvMediaPacket}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{audioRecvMediaPacket}{audioRecvMediaPacket}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::audio\+Recv\+Media\+Packet}
+
+Determines whether to receive audio media packet or not. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_a963c085c9dc971179fd0100e4e299182}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_a963c085c9dc971179fd0100e4e299182}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!videoRecvMediaPacket@{videoRecvMediaPacket}}
+\index{videoRecvMediaPacket@{videoRecvMediaPacket}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{videoRecvMediaPacket}{videoRecvMediaPacket}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::video\+Recv\+Media\+Packet}
+
+Determines whether to receive video media packet or not. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_a99950586908bb69c48e5b9c341274a05}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_a99950586908bb69c48e5b9c341274a05}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!isInteractiveAudience@{isInteractiveAudience}}
+\index{isInteractiveAudience@{isInteractiveAudience}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{isInteractiveAudience}{isInteractiveAudience}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::is\+Interactive\+Audience}
+
+This mode is only used for audience. In PK mode, client might join one channel as broadcaster, and join another channel as interactive audience to achieve low lentancy and smooth video from remote user.
+\begin{DoxyItemize}
+\item true\+: Enable low lentancy and smooth video when joining as an audience.
+\item false\+: (Default) Use default settings for audience role. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_connection_configuration_a3801655ef36be71daa551ab206e5111f}\label{structagora_1_1rtc_1_1_rtc_connection_configuration_a3801655ef36be71daa551ab206e5111f}} 
+\index{agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}!isDataChannelOnly@{isDataChannelOnly}}
+\index{isDataChannelOnly@{isDataChannelOnly}!agora::rtc::RtcConnectionConfiguration@{agora::rtc::RtcConnectionConfiguration}}
+\doxysubsubsection{\texorpdfstring{isDataChannelOnly}{isDataChannelOnly}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Connection\+Configuration\+::is\+Data\+Channel\+Only}
+
+Indicates data channel only. 

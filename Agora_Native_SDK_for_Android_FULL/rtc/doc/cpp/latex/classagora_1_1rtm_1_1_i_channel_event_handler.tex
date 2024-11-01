@@ -1,0 +1,191 @@
+\hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler}{}\doxysection{agora\+::rtm\+::I\+Channel\+Event\+Handler Class Reference}
+\label{classagora_1_1rtm_1_1_i_channel_event_handler}\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtm\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_a361966f42e09627268734e43b1f7edb2}{on\+Join\+Success}} ()
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_aee257d37a2fe9a0dedde08a38d4fd356}{on\+Join\+Failure}} (J\+O\+I\+N\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+E\+RR error\+Code)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_acd127e2282aaf719241f3527c8252070}{on\+Leave}} (L\+E\+A\+V\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+E\+RR error\+Code)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_aabe8e78b46553645640479b862f2cae2}{on\+Message\+Received}} (const char $\ast$user\+Id, const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} $\ast$message)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_a26e19cde998d9ad9efb2505526d7427c}{on\+Send\+Message\+State}} (int64\+\_\+t message\+Id, C\+H\+A\+N\+N\+E\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+T\+A\+TE state)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_a4ba5dd414b2164d5a3693032b64c64e3}{on\+Send\+Message\+Result}} (long long message\+Id, C\+H\+A\+N\+N\+E\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+E\+R\+R\+\_\+\+C\+O\+DE state)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_a57a5d0e1a084c75e3c0ace3a99090fbd}{on\+Member\+Joined}} (\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_member}{I\+Channel\+Member}} $\ast$member)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_ae657b3507830a8162dc3a046dae2e60b}{on\+Member\+Left}} (\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_member}{I\+Channel\+Member}} $\ast$member)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_a8f8e15e2f58886f92ecf4742159ad21e}{on\+Members\+Gotten}} (\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_member}{I\+Channel\+Member}} $\ast$$\ast$members, int user\+Count)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_a18d91586fe31c44a22c525e364e7cdb5}{on\+Attributes\+Updated}} (const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} $\ast$attributes)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_a915cbddd029d7cfa6ef4d55c9b1d9ead}{on\+Update\+Attributes\+Response}} (int64\+\_\+t request\+Id, R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+C\+O\+DE res\+Code)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_afa059cea82a3dfcccd19b785541982b1}{on\+Attributes\+Deleted}} (const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} $\ast$attributes)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler_afa6ee111be8c393b069cf225c230c37f}{on\+Delete\+Attributes\+Response}} (int64\+\_\+t request\+Id, R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+C\+O\+DE res\+Code)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_event_handler}{I\+Channel\+Event\+Handler}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_a361966f42e09627268734e43b1f7edb2}\label{classagora_1_1rtm_1_1_i_channel_event_handler_a361966f42e09627268734e43b1f7edb2}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onJoinSuccess@{onJoinSuccess}}
+\index{onJoinSuccess@{onJoinSuccess}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onJoinSuccess()}{onJoinSuccess()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Join\+Success (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user successfully joins a channel. \mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_aee257d37a2fe9a0dedde08a38d4fd356}\label{classagora_1_1rtm_1_1_i_channel_event_handler_aee257d37a2fe9a0dedde08a38d4fd356}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onJoinFailure@{onJoinFailure}}
+\index{onJoinFailure@{onJoinFailure}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onJoinFailure()}{onJoinFailure()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Join\+Failure (\begin{DoxyParamCaption}\item[{J\+O\+I\+N\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+E\+RR}]{error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user fails to join a channel. 
+\begin{DoxyParams}{Parameters}
+{\em error\+Code} & The error code\+: \#\+J\+O\+I\+N\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+E\+RR. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_acd127e2282aaf719241f3527c8252070}\label{classagora_1_1rtm_1_1_i_channel_event_handler_acd127e2282aaf719241f3527c8252070}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onLeave@{onLeave}}
+\index{onLeave@{onLeave}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLeave()}{onLeave()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Leave (\begin{DoxyParamCaption}\item[{L\+E\+A\+V\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+E\+RR}]{error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user leaves a channel. 
+\begin{DoxyParams}{Parameters}
+{\em error\+Code} & The error code. See \#\+L\+E\+A\+V\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+E\+RR. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_aabe8e78b46553645640479b862f2cae2}\label{classagora_1_1rtm_1_1_i_channel_event_handler_aabe8e78b46553645640479b862f2cae2}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onMessageReceived@{onMessageReceived}}
+\index{onMessageReceived@{onMessageReceived}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onMessageReceived()}{onMessageReceived()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Message\+Received (\begin{DoxyParamCaption}\item[{const char $\ast$}]{user\+Id,  }\item[{const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}} $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user receives a channel message. 
+\begin{DoxyParams}{Parameters}
+{\em message} & The pointer to the messsage\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_message}{I\+Message}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_a26e19cde998d9ad9efb2505526d7427c}\label{classagora_1_1rtm_1_1_i_channel_event_handler_a26e19cde998d9ad9efb2505526d7427c}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onSendMessageState@{onSendMessageState}}
+\index{onSendMessageState@{onSendMessageState}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onSendMessageState()}{onSendMessageState()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Send\+Message\+State (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{message\+Id,  }\item[{C\+H\+A\+N\+N\+E\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+T\+A\+TE}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the state of the message sent by the local user. 
+\begin{DoxyParams}{Parameters}
+{\em message\+Id} & ID of the message. \\
+\hline
+{\em state} & The state of the message\+: \#\+C\+H\+A\+N\+N\+E\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_a4ba5dd414b2164d5a3693032b64c64e3}\label{classagora_1_1rtm_1_1_i_channel_event_handler_a4ba5dd414b2164d5a3693032b64c64e3}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onSendMessageResult@{onSendMessageResult}}
+\index{onSendMessageResult@{onSendMessageResult}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onSendMessageResult()}{onSendMessageResult()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Send\+Message\+Result (\begin{DoxyParamCaption}\item[{long long}]{message\+Id,  }\item[{C\+H\+A\+N\+N\+E\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+E\+R\+R\+\_\+\+C\+O\+DE}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the result of the \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_a51caea048fc98a7d4f7a7e0f1fd1fc38}{send\+Message}} method call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+Id} & The ID of the sent channel message. \\
+\hline
+{\em state} & The error codes. See \#\+C\+H\+A\+N\+N\+E\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+E\+R\+R\+\_\+\+C\+O\+DE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_a57a5d0e1a084c75e3c0ace3a99090fbd}\label{classagora_1_1rtm_1_1_i_channel_event_handler_a57a5d0e1a084c75e3c0ace3a99090fbd}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onMemberJoined@{onMemberJoined}}
+\index{onMemberJoined@{onMemberJoined}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onMemberJoined()}{onMemberJoined()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Member\+Joined (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_member}{I\+Channel\+Member}} $\ast$}]{member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when another member joins the channel. 
+\begin{DoxyParams}{Parameters}
+{\em member} & The pointer to the member who joins the channel\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_member}{I\+Channel\+Member}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_ae657b3507830a8162dc3a046dae2e60b}\label{classagora_1_1rtm_1_1_i_channel_event_handler_ae657b3507830a8162dc3a046dae2e60b}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onMemberLeft@{onMemberLeft}}
+\index{onMemberLeft@{onMemberLeft}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onMemberLeft()}{onMemberLeft()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Member\+Left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_member}{I\+Channel\+Member}} $\ast$}]{member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the other member leaves the channel. 
+\begin{DoxyParams}{Parameters}
+{\em member} & The pointer to the member who leaves the channel\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_member}{I\+Channel\+Member}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_a8f8e15e2f58886f92ecf4742159ad21e}\label{classagora_1_1rtm_1_1_i_channel_event_handler_a8f8e15e2f58886f92ecf4742159ad21e}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onMembersGotten@{onMembersGotten}}
+\index{onMembersGotten@{onMembersGotten}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onMembersGotten()}{onMembersGotten()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Members\+Gotten (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_member}{I\+Channel\+Member}} $\ast$$\ast$}]{members,  }\item[{int}]{user\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports all the members in the channel. 
+\begin{DoxyParams}{Parameters}
+{\em members} & The pointer to each member in the channel\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_member}{I\+Channel\+Member}}. \\
+\hline
+{\em user\+Count} & The number of users in the channel. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_a18d91586fe31c44a22c525e364e7cdb5}\label{classagora_1_1rtm_1_1_i_channel_event_handler_a18d91586fe31c44a22c525e364e7cdb5}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onAttributesUpdated@{onAttributesUpdated}}
+\index{onAttributesUpdated@{onAttributesUpdated}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAttributesUpdated()}{onAttributesUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Attributes\+Updated (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} $\ast$}]{attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the channel attributes are updated. 
+\begin{DoxyParams}{Parameters}
+{\em attributes} & The pointer to the current channel attributes\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_a915cbddd029d7cfa6ef4d55c9b1d9ead}\label{classagora_1_1rtm_1_1_i_channel_event_handler_a915cbddd029d7cfa6ef4d55c9b1d9ead}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onUpdateAttributesResponse@{onUpdateAttributesResponse}}
+\index{onUpdateAttributesResponse@{onUpdateAttributesResponse}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUpdateAttributesResponse()}{onUpdateAttributesResponse()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Update\+Attributes\+Response (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{request\+Id,  }\item[{R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+C\+O\+DE}]{res\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user calls update\+Attributes(). 
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & ID of the current attribute update request. \\
+\hline
+{\em res\+Code} & The response code\+: \#\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+C\+O\+DE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_afa059cea82a3dfcccd19b785541982b1}\label{classagora_1_1rtm_1_1_i_channel_event_handler_afa059cea82a3dfcccd19b785541982b1}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onAttributesDeleted@{onAttributesDeleted}}
+\index{onAttributesDeleted@{onAttributesDeleted}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAttributesDeleted()}{onAttributesDeleted()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Attributes\+Deleted (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}} $\ast$}]{attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the channel attributes are deleted. 
+\begin{DoxyParams}{Parameters}
+{\em attributes} & The pointer to the channel attributes that you want to remove\+: \mbox{\hyperlink{classagora_1_1rtm_1_1_i_channel_attributes}{I\+Channel\+Attributes}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtm_1_1_i_channel_event_handler_afa6ee111be8c393b069cf225c230c37f}\label{classagora_1_1rtm_1_1_i_channel_event_handler_afa6ee111be8c393b069cf225c230c37f}} 
+\index{agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}!onDeleteAttributesResponse@{onDeleteAttributesResponse}}
+\index{onDeleteAttributesResponse@{onDeleteAttributesResponse}!agora::rtm::IChannelEventHandler@{agora::rtm::IChannelEventHandler}}
+\doxysubsubsection{\texorpdfstring{onDeleteAttributesResponse()}{onDeleteAttributesResponse()}}
+{\footnotesize\ttfamily virtual void agora\+::rtm\+::\+I\+Channel\+Event\+Handler\+::on\+Delete\+Attributes\+Response (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{request\+Id,  }\item[{R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+C\+O\+DE}]{res\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user calls delete\+Attributes(). 
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & ID of the current attribute delete request. \\
+\hline
+{\em res\+Code} & The response code\+: \#\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+C\+O\+DE. \\
+\hline
+\end{DoxyParams}

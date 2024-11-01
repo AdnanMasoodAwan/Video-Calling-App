@@ -1,0 +1,76 @@
+\hypertarget{structagora_1_1rtc_1_1_screen_capture_configuration}{}\doxysection{agora\+::rtc\+::Screen\+Capture\+Configuration Struct Reference}
+\label{structagora_1_1rtc_1_1_screen_capture_configuration}\index{agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_configuration_ae6ba0a2ed395a308a1484164a652c64a}{is\+Capture\+Window}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_configuration_a7df32b7182cbb4986257a37931a6a164}{display\+Id}}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_configuration_a0084a26d06a1974d93cdca0b6f770a9b}{screen\+Rect}}
+\item 
+view\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_configuration_a66099444451a666e447bb7ea1cc5952e}{window\+Id}}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters}{Screen\+Capture\+Parameters}} \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_configuration_adc434155c595892d213fb7632281bec7}{params}}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_configuration_ae95129d95d124dddc1a265a90f41fb11}{region\+Rect}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The configuration of the captured screen. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_configuration_ae6ba0a2ed395a308a1484164a652c64a}\label{structagora_1_1rtc_1_1_screen_capture_configuration_ae6ba0a2ed395a308a1484164a652c64a}} 
+\index{agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}!isCaptureWindow@{isCaptureWindow}}
+\index{isCaptureWindow@{isCaptureWindow}!agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}}
+\doxysubsubsection{\texorpdfstring{isCaptureWindow}{isCaptureWindow}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Screen\+Capture\+Configuration\+::is\+Capture\+Window}
+
+Whether to capture the window on the screen\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Capture the window.
+\item {\ttfamily false}\+: (Default) Capture the screen, not the window. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_configuration_a7df32b7182cbb4986257a37931a6a164}\label{structagora_1_1rtc_1_1_screen_capture_configuration_a7df32b7182cbb4986257a37931a6a164}} 
+\index{agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}!displayId@{displayId}}
+\index{displayId@{displayId}!agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}}
+\doxysubsubsection{\texorpdfstring{displayId}{displayId}}
+{\footnotesize\ttfamily uint32\+\_\+t agora\+::rtc\+::\+Screen\+Capture\+Configuration\+::display\+Id}
+
+(mac\+OS only) The display ID of the screen. \mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_configuration_a0084a26d06a1974d93cdca0b6f770a9b}\label{structagora_1_1rtc_1_1_screen_capture_configuration_a0084a26d06a1974d93cdca0b6f770a9b}} 
+\index{agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}!screenRect@{screenRect}}
+\index{screenRect@{screenRect}!agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}}
+\doxysubsubsection{\texorpdfstring{screenRect}{screenRect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} agora\+::rtc\+::\+Screen\+Capture\+Configuration\+::screen\+Rect}
+
+(Windows only) The relative position of the shared screen to the virtual screen. \begin{DoxyNote}{Note}
+This parameter takes effect only when you want to capture the screen on Windows. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_configuration_a66099444451a666e447bb7ea1cc5952e}\label{structagora_1_1rtc_1_1_screen_capture_configuration_a66099444451a666e447bb7ea1cc5952e}} 
+\index{agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}!windowId@{windowId}}
+\index{windowId@{windowId}!agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}}
+\doxysubsubsection{\texorpdfstring{windowId}{windowId}}
+{\footnotesize\ttfamily view\+\_\+t agora\+::rtc\+::\+Screen\+Capture\+Configuration\+::window\+Id}
+
+(For Windows and mac\+OS only) The window ID. \begin{DoxyNote}{Note}
+This parameter takes effect only when you want to capture the window. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_configuration_adc434155c595892d213fb7632281bec7}\label{structagora_1_1rtc_1_1_screen_capture_configuration_adc434155c595892d213fb7632281bec7}} 
+\index{agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}!params@{params}}
+\index{params@{params}!agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters}{Screen\+Capture\+Parameters}} agora\+::rtc\+::\+Screen\+Capture\+Configuration\+::params}
+
+(For Windows and mac\+OS only) The screen capture configuration. For details, see \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters}{Screen\+Capture\+Parameters}}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_configuration_ae95129d95d124dddc1a265a90f41fb11}\label{structagora_1_1rtc_1_1_screen_capture_configuration_ae95129d95d124dddc1a265a90f41fb11}} 
+\index{agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}!regionRect@{regionRect}}
+\index{regionRect@{regionRect}!agora::rtc::ScreenCaptureConfiguration@{agora::rtc::ScreenCaptureConfiguration}}
+\doxysubsubsection{\texorpdfstring{regionRect}{regionRect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} agora\+::rtc\+::\+Screen\+Capture\+Configuration\+::region\+Rect}
+
+(For Windows and mac\+OS only) The relative position of the shared region to the whole screen. For details, see \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}}.
+
+If you do not set this parameter, the S\+DK shares the whole screen. If the region you set exceeds the boundary of the screen, only the region within in the screen is shared. If you set width or height in \mbox{\hyperlink{structagora_1_1rtc_1_1_rectangle}{Rectangle}} as 0, the whole screen is shared. 

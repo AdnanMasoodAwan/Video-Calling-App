@@ -1,0 +1,84 @@
+\hypertarget{classio_1_1agora_1_1base_1_1_texture_buffer_helper}{}\doxysection{io.\+agora.\+base.\+Texture\+Buffer\+Helper Class Reference}
+\label{classio_1_1agora_1_1base_1_1_texture_buffer_helper}\index{io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Handler \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a13f7225a135a0c49e6bfa6dc5a01acba}{get\+Handler}} ()
+\item 
+Egl\+Base \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a2669da7998005d06c55020d89766c4d0}{get\+Egl\+Base}} ()
+\item 
+Video\+Frame.\+Texture\+Buffer \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper_ac1e1cfc09654f5a4e3d44b136375a8be}{wrap\+Texture\+Buffer}} (int width, int height, Video\+Frame.\+Texture\+Buffer.\+Type type, int id, Matrix transform\+Matrix)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a7e7c02103e59e09f4d9f1a35aab39bf3}\label{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a7e7c02103e59e09f4d9f1a35aab39bf3}} 
+Video\+Frame.\+Texture\+Buffer {\bfseries wrap\+Texture\+Buffer} (int width, int height, Video\+Frame.\+Texture\+Buffer.\+Type type, int id, long fence\+Object, Matrix transform\+Matrix)
+\item 
+int \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper_acee535b0eed317f911e1baa2f2ccd369}{convert\+To\+R\+G\+BA}} (\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer}{Texture\+Buffer}} buffer, int rotation)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_texture_buffer_helper_aebe0c461bd0622f82f76e8e088269291}\label{classio_1_1agora_1_1base_1_1_texture_buffer_helper_aebe0c461bd0622f82f76e8e088269291}} 
+Byte\+Buffer {\bfseries parse\+Alpha\+Data} (\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer}{Texture\+Buffer}} buffer, int rotation, boolean mirror)
+\item 
+boolean \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a888edb89d163768907bda379bc763821}{is\+Texture\+In\+Use}} ()
+\item 
+void \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper_ad4084a1a770c78f7cc25af6544e2bc45}{dispose}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper}{Texture\+Buffer\+Helper}} \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a9473150f9a7e2c42630e30e3ec903372}{create}} (final String thread\+Name, final Egl\+Base.\+Context shared\+Context)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a9473150f9a7e2c42630e30e3ec903372}\label{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a9473150f9a7e2c42630e30e3ec903372}} 
+\index{io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}!create@{create}}
+\index{create@{create}!io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper}{Texture\+Buffer\+Helper}} io.\+agora.\+base.\+Texture\+Buffer\+Helper.\+create (\begin{DoxyParamCaption}\item[{final String}]{thread\+Name,  }\item[{final Egl\+Base.\+Context}]{shared\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Construct a new \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper}{Texture\+Buffer\+Helper}} sharing Open\+GL resources with $\vert$shared\+Context$\vert$. A dedicated thread and handler is created for handling \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer}{Texture\+Buffer}}. May return null if E\+GL fails to initialize a pixel buffer surface and make it current. \mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a13f7225a135a0c49e6bfa6dc5a01acba}\label{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a13f7225a135a0c49e6bfa6dc5a01acba}} 
+\index{io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}!getHandler@{getHandler}}
+\index{getHandler@{getHandler}!io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}}
+\doxysubsubsection{\texorpdfstring{getHandler()}{getHandler()}}
+{\footnotesize\ttfamily Handler io.\+agora.\+base.\+Texture\+Buffer\+Helper.\+get\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the handler. This handler is valid until \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper_ad4084a1a770c78f7cc25af6544e2bc45}{dispose()}} is called. \mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a2669da7998005d06c55020d89766c4d0}\label{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a2669da7998005d06c55020d89766c4d0}} 
+\index{io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}!getEglBase@{getEglBase}}
+\index{getEglBase@{getEglBase}!io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}}
+\doxysubsubsection{\texorpdfstring{getEglBase()}{getEglBase()}}
+{\footnotesize\ttfamily Egl\+Base io.\+agora.\+base.\+Texture\+Buffer\+Helper.\+get\+Egl\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the Egl\+Base instance. This Egl\+Base instance is valid until \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper_ad4084a1a770c78f7cc25af6544e2bc45}{dispose()}} is called. \mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_texture_buffer_helper_ac1e1cfc09654f5a4e3d44b136375a8be}\label{classio_1_1agora_1_1base_1_1_texture_buffer_helper_ac1e1cfc09654f5a4e3d44b136375a8be}} 
+\index{io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}!wrapTextureBuffer@{wrapTextureBuffer}}
+\index{wrapTextureBuffer@{wrapTextureBuffer}!io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}}
+\doxysubsubsection{\texorpdfstring{wrapTextureBuffer()}{wrapTextureBuffer()}}
+{\footnotesize\ttfamily Video\+Frame.\+Texture\+Buffer io.\+agora.\+base.\+Texture\+Buffer\+Helper.\+wrap\+Texture\+Buffer (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{Video\+Frame.\+Texture\+Buffer.\+Type}]{type,  }\item[{int}]{id,  }\item[{Matrix}]{transform\+Matrix }\end{DoxyParamCaption})}
+
+This can only be called from the $\vert$handler$\vert$ thread. \mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_texture_buffer_helper_acee535b0eed317f911e1baa2f2ccd369}\label{classio_1_1agora_1_1base_1_1_texture_buffer_helper_acee535b0eed317f911e1baa2f2ccd369}} 
+\index{io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}!convertToRGBA@{convertToRGBA}}
+\index{convertToRGBA@{convertToRGBA}!io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}}
+\doxysubsubsection{\texorpdfstring{convertToRGBA()}{convertToRGBA()}}
+{\footnotesize\ttfamily int io.\+agora.\+base.\+Texture\+Buffer\+Helper.\+convert\+To\+R\+G\+BA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer}{Texture\+Buffer}}}]{buffer,  }\item[{int}]{rotation }\end{DoxyParamCaption})}
+
+This can only be called from the $\vert$handler$\vert$ thread. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer}{Texture\+Buffer}} with type of O\+ES \\
+\hline
+{\em rotation} & The angle of texture buffer should be rotated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Texture id with R\+G\+BA format converted from O\+ES buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a888edb89d163768907bda379bc763821}\label{classio_1_1agora_1_1base_1_1_texture_buffer_helper_a888edb89d163768907bda379bc763821}} 
+\index{io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}!isTextureInUse@{isTextureInUse}}
+\index{isTextureInUse@{isTextureInUse}!io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}}
+\doxysubsubsection{\texorpdfstring{isTextureInUse()}{isTextureInUse()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+base.\+Texture\+Buffer\+Helper.\+is\+Texture\+In\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This can only be called from the $\vert$handler$\vert$ thread. \mbox{\Hypertarget{classio_1_1agora_1_1base_1_1_texture_buffer_helper_ad4084a1a770c78f7cc25af6544e2bc45}\label{classio_1_1agora_1_1base_1_1_texture_buffer_helper_ad4084a1a770c78f7cc25af6544e2bc45}} 
+\index{io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}!dispose@{dispose}}
+\index{dispose@{dispose}!io.agora.base.TextureBufferHelper@{io.agora.base.TextureBufferHelper}}
+\doxysubsubsection{\texorpdfstring{dispose()}{dispose()}}
+{\footnotesize\ttfamily void io.\+agora.\+base.\+Texture\+Buffer\+Helper.\+dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Call \mbox{\hyperlink{classio_1_1agora_1_1base_1_1_texture_buffer_helper_ad4084a1a770c78f7cc25af6544e2bc45}{dispose()}} to stop receiving frames. Open\+GL resources are released and the handler is stopped when the texture frame has been released. 

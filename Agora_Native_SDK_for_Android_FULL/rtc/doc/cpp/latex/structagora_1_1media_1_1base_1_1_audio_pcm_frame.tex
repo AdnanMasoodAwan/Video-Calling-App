@@ -1,0 +1,100 @@
+\hypertarget{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{}\doxysection{agora\+::media\+::base\+::Audio\+Pcm\+Frame Struct Reference}
+\label{structagora_1_1media_1_1base_1_1_audio_pcm_frame}\index{agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_audio_pcm_frame_a9cc27875e583343fe8f9b578fbb7ef41}\label{structagora_1_1media_1_1base_1_1_audio_pcm_frame_a9cc27875e583343fe8f9b578fbb7ef41}} 
+\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{Audio\+Pcm\+Frame}} \& {\bfseries operator=} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{Audio\+Pcm\+Frame}} \&src)
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_audio_pcm_frame_afbf255f0f407c7b960d96e9abc1f1e7b}\label{structagora_1_1media_1_1base_1_1_audio_pcm_frame_afbf255f0f407c7b960d96e9abc1f1e7b}} 
+{\bfseries Audio\+Pcm\+Frame} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{Audio\+Pcm\+Frame}} \&src)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame_af7d1298efa6e07c0172ea4e781b849b8}{O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+E\+N\+U\+M\+\_\+\+S\+I\+Z\+E\+\_\+T}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame_ae7dd986676d6314dc4c2a478ac752a03}{capture\+\_\+timestamp}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame_ace69fdfe191713949ee4147a3c814e87}{samples\+\_\+per\+\_\+channel\+\_\+}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame_aad73266b7820acedb27f4ccaa05f5619}{sample\+\_\+rate\+\_\+hz\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame_ab937bed9d37df5df1c476de0ec971908}{num\+\_\+channels\+\_\+}}
+\item 
+rtc\+::\+B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+A\+M\+P\+LE \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame_a5a07eb6b3695e360e6f970a6e4644020}{bytes\+\_\+per\+\_\+sample}}
+\item 
+int16\+\_\+t \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame_aeab434caff2bab21af7e7c56c49835f5}{data\+\_\+}} \mbox{[}k\+Max\+Data\+Size\+Samples\mbox{]}
+\item 
+bool \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame_a2680983d62d81ca8a23fcc12e95c2337}{is\+\_\+stereo\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The detailed information of the incoming audio frame in the P\+CM format. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_audio_pcm_frame_af7d1298efa6e07c0172ea4e781b849b8}\label{structagora_1_1media_1_1base_1_1_audio_pcm_frame_af7d1298efa6e07c0172ea4e781b849b8}} 
+\index{agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}!OPTIONAL\_ENUM\_SIZE\_T@{OPTIONAL\_ENUM\_SIZE\_T}}
+\index{OPTIONAL\_ENUM\_SIZE\_T@{OPTIONAL\_ENUM\_SIZE\_T}!agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}}
+\doxysubsubsection{\texorpdfstring{OPTIONAL\_ENUM\_SIZE\_T}{OPTIONAL\_ENUM\_SIZE\_T}}
+{\footnotesize\ttfamily agora\+::media\+::base\+::\+Audio\+Pcm\+Frame\+::\+O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+E\+N\+U\+M\+\_\+\+S\+I\+Z\+E\+\_\+T}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    }
+\DoxyCodeLine{    kMaxDataSizeSamples = 3840,}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    kMaxDataSizeBytes = kMaxDataSizeSamples * \textcolor{keyword}{sizeof}(int16\_t),}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+The buffer size of the P\+CM audio frame. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_audio_pcm_frame_ae7dd986676d6314dc4c2a478ac752a03}\label{structagora_1_1media_1_1base_1_1_audio_pcm_frame_ae7dd986676d6314dc4c2a478ac752a03}} 
+\index{agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}!capture\_timestamp@{capture\_timestamp}}
+\index{capture\_timestamp@{capture\_timestamp}!agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}}
+\doxysubsubsection{\texorpdfstring{capture\_timestamp}{capture\_timestamp}}
+{\footnotesize\ttfamily int64\+\_\+t agora\+::media\+::base\+::\+Audio\+Pcm\+Frame\+::capture\+\_\+timestamp}
+
+The timestamp (ms) of the audio frame. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_audio_pcm_frame_ace69fdfe191713949ee4147a3c814e87}\label{structagora_1_1media_1_1base_1_1_audio_pcm_frame_ace69fdfe191713949ee4147a3c814e87}} 
+\index{agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}!samples\_per\_channel\_@{samples\_per\_channel\_}}
+\index{samples\_per\_channel\_@{samples\_per\_channel\_}!agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}}
+\doxysubsubsection{\texorpdfstring{samples\_per\_channel\_}{samples\_per\_channel\_}}
+{\footnotesize\ttfamily size\+\_\+t agora\+::media\+::base\+::\+Audio\+Pcm\+Frame\+::samples\+\_\+per\+\_\+channel\+\_\+}
+
+The number of samples per channel. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_audio_pcm_frame_aad73266b7820acedb27f4ccaa05f5619}\label{structagora_1_1media_1_1base_1_1_audio_pcm_frame_aad73266b7820acedb27f4ccaa05f5619}} 
+\index{agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}!sample\_rate\_hz\_@{sample\_rate\_hz\_}}
+\index{sample\_rate\_hz\_@{sample\_rate\_hz\_}!agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}}
+\doxysubsubsection{\texorpdfstring{sample\_rate\_hz\_}{sample\_rate\_hz\_}}
+{\footnotesize\ttfamily int agora\+::media\+::base\+::\+Audio\+Pcm\+Frame\+::sample\+\_\+rate\+\_\+hz\+\_\+}
+
+The sample rate (Hz) of the audio data. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_audio_pcm_frame_ab937bed9d37df5df1c476de0ec971908}\label{structagora_1_1media_1_1base_1_1_audio_pcm_frame_ab937bed9d37df5df1c476de0ec971908}} 
+\index{agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}!num\_channels\_@{num\_channels\_}}
+\index{num\_channels\_@{num\_channels\_}!agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}}
+\doxysubsubsection{\texorpdfstring{num\_channels\_}{num\_channels\_}}
+{\footnotesize\ttfamily size\+\_\+t agora\+::media\+::base\+::\+Audio\+Pcm\+Frame\+::num\+\_\+channels\+\_\+}
+
+The channel number. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_audio_pcm_frame_a5a07eb6b3695e360e6f970a6e4644020}\label{structagora_1_1media_1_1base_1_1_audio_pcm_frame_a5a07eb6b3695e360e6f970a6e4644020}} 
+\index{agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}!bytes\_per\_sample@{bytes\_per\_sample}}
+\index{bytes\_per\_sample@{bytes\_per\_sample}!agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}}
+\doxysubsubsection{\texorpdfstring{bytes\_per\_sample}{bytes\_per\_sample}}
+{\footnotesize\ttfamily rtc\+::\+B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+A\+M\+P\+LE agora\+::media\+::base\+::\+Audio\+Pcm\+Frame\+::bytes\+\_\+per\+\_\+sample}
+
+The number of bytes per sample. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_audio_pcm_frame_aeab434caff2bab21af7e7c56c49835f5}\label{structagora_1_1media_1_1base_1_1_audio_pcm_frame_aeab434caff2bab21af7e7c56c49835f5}} 
+\index{agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}!data\_@{data\_}}
+\index{data\_@{data\_}!agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}}
+\doxysubsubsection{\texorpdfstring{data\_}{data\_}}
+{\footnotesize\ttfamily int16\+\_\+t agora\+::media\+::base\+::\+Audio\+Pcm\+Frame\+::data\+\_\+\mbox{[}k\+Max\+Data\+Size\+Samples\mbox{]}}
+
+The audio frame data. \mbox{\Hypertarget{structagora_1_1media_1_1base_1_1_audio_pcm_frame_a2680983d62d81ca8a23fcc12e95c2337}\label{structagora_1_1media_1_1base_1_1_audio_pcm_frame_a2680983d62d81ca8a23fcc12e95c2337}} 
+\index{agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}!is\_stereo\_@{is\_stereo\_}}
+\index{is\_stereo\_@{is\_stereo\_}!agora::media::base::AudioPcmFrame@{agora::media::base::AudioPcmFrame}}
+\doxysubsubsection{\texorpdfstring{is\_stereo\_}{is\_stereo\_}}
+{\footnotesize\ttfamily bool agora\+::media\+::base\+::\+Audio\+Pcm\+Frame\+::is\+\_\+stereo\+\_\+}
+
+@technical preview data\+\_\+\mbox{[}k\+Max\+Data\+Size\+Samples\mbox{]} is real stereo data 

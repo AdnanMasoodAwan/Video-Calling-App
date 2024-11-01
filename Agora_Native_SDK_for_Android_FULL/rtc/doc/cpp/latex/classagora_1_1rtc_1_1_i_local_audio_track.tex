@@ -1,0 +1,270 @@
+\hypertarget{classagora_1_1rtc_1_1_i_local_audio_track}{}\doxysection{agora\+::rtc\+::I\+Local\+Audio\+Track Class Reference}
+\label{classagora_1_1rtc_1_1_i_local_audio_track}\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Audio\+Track.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Local\+Audio\+Track\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classagora_1_1rtc_1_1_i_local_audio_track}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats}{Local\+Audio\+Track\+Stats}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a6903e270c18fc5db08f49405f1749a5a}{set\+Enabled}} (bool enable, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a103aa5dd48b949e735101e0c2825376a}{is\+Enabled}} () const =0
+\item 
+virtual L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_aca03d4f431b5318472e2b1769cb09c17}{get\+State}} ()=0
+\item 
+virtual \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats}{Local\+Audio\+Track\+Stats}} \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_aeb53201b4e4648dd714db4b1d4c66696}{Get\+Stats}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a1068bd00b29242e1071e6905fa1ed509}{adjust\+Publish\+Volume}} (int volume, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a0ef5208b317ed83239dd35e03ed050ad}{get\+Publish\+Volume}} (int $\ast$volume)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a787c463278c27ac38f12af04750f5db2}{enable\+Local\+Playback}} (bool enable, bool sync=true, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_aac6996453ca667dac97eed202f0e6a5c}{enable\+Ear\+Monitor}} (bool enable, int include\+Audio\+Filters, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a528bc3edf7748aae47376a92dc88e454}{register\+Track\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_observer}{I\+Local\+Audio\+Track\+Observer}} $\ast$observer, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_af7f57fc5395131edba87263703a9bb86}{unregister\+Track\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_observer}{I\+Local\+Audio\+Track\+Observer}} $\ast$observer)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a8eb0784cae2069bba415f9a98345a82c}{set\+Max\+Buffered\+Audio\+Frame\+Number}} (int number)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_a8e1c4f96b49e21c972e15344642453ec}{Clear\+Sender\+Buffer}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}}} is the basic class for local audio tracks, providing main methods of local audio tracks.
+
+You can create a local audio track by calling one of the following methods\+:
+\begin{DoxyItemize}
+\item {\ttfamily create\+Local\+Audio\+Track}
+\item {\ttfamily create\+Custom\+Audio\+Track}
+\item {\ttfamily create\+Media\+Player\+Audio\+Track} You can also use the A\+P\+Is in the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_n_g_audio_device_manager}{I\+Audio\+Device\+Manager}} class if multiple recording devices are available in the system.
+\end{DoxyItemize}
+
+After creating local audio tracks, you can publish one or more local audio tracks by calling \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a5e5cc962971f99f07a692d82ac02ff1d}{publish\+Audio}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_a6903e270c18fc5db08f49405f1749a5a}\label{classagora_1_1rtc_1_1_i_local_audio_track_a6903e270c18fc5db08f49405f1749a5a}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::set\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enable,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enables or disables the local audio track.
+
+Once the local audio is enabled, the S\+DK allows for local audio capturing, processing, and encoding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & Whether to enable the audio track\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Enable the local audio track.
+\item {\ttfamily false}\+: Disable the local audio track. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_a103aa5dd48b949e735101e0c2825376a}\label{classagora_1_1rtc_1_1_i_local_audio_track_a103aa5dd48b949e735101e0c2825376a}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!isEnabled@{isEnabled}}
+\index{isEnabled@{isEnabled}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{isEnabled()}{isEnabled()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::is\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets whether the local audio track is enabled. \begin{DoxyReturn}{Returns}
+Whether the local audio track is enabled\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: The local track is enabled.
+\item {\ttfamily false}\+: The local track is disabled. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_aca03d4f431b5318472e2b1769cb09c17}\label{classagora_1_1rtc_1_1_i_local_audio_track_aca03d4f431b5318472e2b1769cb09c17}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!getState@{getState}}
+\index{getState@{getState}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily virtual L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the state of the local audio. \begin{DoxyReturn}{Returns}
+The state of the local audio\+: \#\+L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE\+: Success. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_aeb53201b4e4648dd714db4b1d4c66696}\label{classagora_1_1rtc_1_1_i_local_audio_track_aeb53201b4e4648dd714db4b1d4c66696}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!GetStats@{GetStats}}
+\index{GetStats@{GetStats}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{GetStats()}{GetStats()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats}{Local\+Audio\+Track\+Stats}} agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Get\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the statistics of the local audio track\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats}{Local\+Audio\+Track\+Stats}}. \begin{DoxyReturn}{Returns}
+The statistics of the local audio\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_audio_track_1_1_local_audio_track_stats}{Local\+Audio\+Track\+Stats}}\+: Success. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_a1068bd00b29242e1071e6905fa1ed509}\label{classagora_1_1rtc_1_1_i_local_audio_track_a1068bd00b29242e1071e6905fa1ed509}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!adjustPublishVolume@{adjustPublishVolume}}
+\index{adjustPublishVolume@{adjustPublishVolume}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{adjustPublishVolume()}{adjustPublishVolume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::adjust\+Publish\+Volume (\begin{DoxyParamCaption}\item[{int}]{volume,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adjusts the audio volume for publishing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume for publishing. The value ranges between 0 and 100 (default). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_a0ef5208b317ed83239dd35e03ed050ad}\label{classagora_1_1rtc_1_1_i_local_audio_track_a0ef5208b317ed83239dd35e03ed050ad}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!getPublishVolume@{getPublishVolume}}
+\index{getPublishVolume@{getPublishVolume}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{getPublishVolume()}{getPublishVolume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::get\+Publish\+Volume (\begin{DoxyParamCaption}\item[{int $\ast$}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the current volume for publishing. 
+\begin{DoxyParams}{Parameters}
+{\em volume} & A pointer to the publishing volume. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_a787c463278c27ac38f12af04750f5db2}\label{classagora_1_1rtc_1_1_i_local_audio_track_a787c463278c27ac38f12af04750f5db2}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!enableLocalPlayback@{enableLocalPlayback}}
+\index{enableLocalPlayback@{enableLocalPlayback}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{enableLocalPlayback()}{enableLocalPlayback()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::enable\+Local\+Playback (\begin{DoxyParamCaption}\item[{bool}]{enable,  }\item[{bool}]{sync = {\ttfamily true},  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enables or disables local playback. 
+\begin{DoxyParams}{Parameters}
+{\em enable} & Whether to enable local playback\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Enable local playback.
+\item {\ttfamily false}\+: Disable local playback. 
+\end{DoxyItemize}\\
+\hline
+{\em sync} & Whether to destroy local playback synchronously\+:
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Destroy local playback synchronously.
+\item {\ttfamily false}\+: Destroy local playback asynchronously. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_aac6996453ca667dac97eed202f0e6a5c}\label{classagora_1_1rtc_1_1_i_local_audio_track_aac6996453ca667dac97eed202f0e6a5c}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!enableEarMonitor@{enableEarMonitor}}
+\index{enableEarMonitor@{enableEarMonitor}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{enableEarMonitor()}{enableEarMonitor()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::enable\+Ear\+Monitor (\begin{DoxyParamCaption}\item[{bool}]{enable,  }\item[{int}]{include\+Audio\+Filters,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enables in-\/ear monitoring (for Android and i\+OS only).
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Determines whether to enable in-\/ear monitoring.
+\begin{DoxyItemize}
+\item true\+: Enable.
+\item false\+: (Default) Disable. 
+\end{DoxyItemize}\\
+\hline
+{\em include\+Audio\+Filters} & The type of the ear monitoring\+: \#\+E\+A\+R\+\_\+\+M\+O\+N\+I\+T\+O\+R\+I\+N\+G\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+T\+Y\+PE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_a528bc3edf7748aae47376a92dc88e454}\label{classagora_1_1rtc_1_1_i_local_audio_track_a528bc3edf7748aae47376a92dc88e454}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!registerTrackObserver@{registerTrackObserver}}
+\index{registerTrackObserver@{registerTrackObserver}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{registerTrackObserver()}{registerTrackObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::register\+Track\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_observer}{I\+Local\+Audio\+Track\+Observer}} $\ast$}]{observer,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Register an local audio track observer
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & A pointer to the local audio track observer\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_observer}{I\+Local\+Audio\+Track\+Observer}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_af7f57fc5395131edba87263703a9bb86}\label{classagora_1_1rtc_1_1_i_local_audio_track_af7f57fc5395131edba87263703a9bb86}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!unregisterTrackObserver@{unregisterTrackObserver}}
+\index{unregisterTrackObserver@{unregisterTrackObserver}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{unregisterTrackObserver()}{unregisterTrackObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::unregister\+Track\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_observer}{I\+Local\+Audio\+Track\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the local audio track observer
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & A pointer to the local audio track observer\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track_observer}{I\+Local\+Audio\+Track\+Observer}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_a8eb0784cae2069bba415f9a98345a82c}\label{classagora_1_1rtc_1_1_i_local_audio_track_a8eb0784cae2069bba415f9a98345a82c}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!setMaxBufferedAudioFrameNumber@{setMaxBufferedAudioFrameNumber}}
+\index{setMaxBufferedAudioFrameNumber@{setMaxBufferedAudioFrameNumber}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{setMaxBufferedAudioFrameNumber()}{setMaxBufferedAudioFrameNumber()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::set\+Max\+Buffered\+Audio\+Frame\+Number (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+set Max buffered audio frame number
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & \+: the buffer number set，unit is 10ms \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_audio_track_a8e1c4f96b49e21c972e15344642453ec}\label{classagora_1_1rtc_1_1_i_local_audio_track_a8e1c4f96b49e21c972e15344642453ec}} 
+\index{agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}!ClearSenderBuffer@{ClearSenderBuffer}}
+\index{ClearSenderBuffer@{ClearSenderBuffer}!agora::rtc::ILocalAudioTrack@{agora::rtc::ILocalAudioTrack}}
+\doxysubsubsection{\texorpdfstring{ClearSenderBuffer()}{ClearSenderBuffer()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+Audio\+Track\+::\+Clear\+Sender\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+clear sender buffer
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item $>$= 0\+: Frame number in sender buffer.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

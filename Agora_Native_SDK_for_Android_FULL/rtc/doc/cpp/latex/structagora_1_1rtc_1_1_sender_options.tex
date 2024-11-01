@@ -1,0 +1,100 @@
+\hypertarget{structagora_1_1rtc_1_1_sender_options}{}\doxysection{agora\+::rtc\+::Sender\+Options Struct Reference}
+\label{structagora_1_1rtc_1_1_sender_options}\index{agora::rtc::SenderOptions@{agora::rtc::SenderOptions}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\+Cc\+Mode \mbox{\hyperlink{structagora_1_1rtc_1_1_sender_options_ab74359144eb2ccbcfe8ddec463f433aa}{cc\+Mode}}
+\item 
+V\+I\+D\+E\+O\+\_\+\+C\+O\+D\+E\+C\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_sender_options_a9251cf9e7d8a0b03dbbdc8d57596cb9b}{codec\+Type}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_sender_options_ac27280c3ce449e488f98154660337a25}{target\+Bitrate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The configuration for creating a local video track with an encoded image sender. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_sender_options_ab74359144eb2ccbcfe8ddec463f433aa}\label{structagora_1_1rtc_1_1_sender_options_ab74359144eb2ccbcfe8ddec463f433aa}} 
+\index{agora::rtc::SenderOptions@{agora::rtc::SenderOptions}!ccMode@{ccMode}}
+\index{ccMode@{ccMode}!agora::rtc::SenderOptions@{agora::rtc::SenderOptions}}
+\doxysubsubsection{\texorpdfstring{ccMode}{ccMode}}
+{\footnotesize\ttfamily T\+Cc\+Mode agora\+::rtc\+::\+Sender\+Options\+::cc\+Mode}
+
+Whether to enable CC mode. See \#\+T\+Cc\+Mode. \mbox{\Hypertarget{structagora_1_1rtc_1_1_sender_options_a9251cf9e7d8a0b03dbbdc8d57596cb9b}\label{structagora_1_1rtc_1_1_sender_options_a9251cf9e7d8a0b03dbbdc8d57596cb9b}} 
+\index{agora::rtc::SenderOptions@{agora::rtc::SenderOptions}!codecType@{codecType}}
+\index{codecType@{codecType}!agora::rtc::SenderOptions@{agora::rtc::SenderOptions}}
+\doxysubsubsection{\texorpdfstring{codecType}{codecType}}
+{\footnotesize\ttfamily V\+I\+D\+E\+O\+\_\+\+C\+O\+D\+E\+C\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Sender\+Options\+::codec\+Type}
+
+The codec type used for the encoded images\+: V\+I\+D\+E\+O\+\_\+\+C\+O\+D\+E\+C\+\_\+\+T\+Y\+PE. \mbox{\Hypertarget{structagora_1_1rtc_1_1_sender_options_ac27280c3ce449e488f98154660337a25}\label{structagora_1_1rtc_1_1_sender_options_ac27280c3ce449e488f98154660337a25}} 
+\index{agora::rtc::SenderOptions@{agora::rtc::SenderOptions}!targetBitrate@{targetBitrate}}
+\index{targetBitrate@{targetBitrate}!agora::rtc::SenderOptions@{agora::rtc::SenderOptions}}
+\doxysubsubsection{\texorpdfstring{targetBitrate}{targetBitrate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Sender\+Options\+::target\+Bitrate}
+
+Target bitrate (Kbps) for video encoding.
+
+Choose one of the following options\+:
+
+
+\begin{DoxyItemize}
+\item S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+B\+I\+T\+R\+A\+TE\+: (Recommended) Standard bitrate.
+\begin{DoxyItemize}
+\item Communication profile\+: The encoding bitrate equals the base bitrate.
+\item Live-\/broadcast profile\+: The encoding bitrate is twice the base bitrate.
+\end{DoxyItemize}
+\item C\+O\+M\+P\+A\+T\+I\+B\+L\+E\+\_\+\+B\+I\+T\+R\+A\+TE\+: Compatible bitrate. The bitrate stays the same regardless of the profile.
+\end{DoxyItemize}
+
+The Communication profile prioritizes smoothness, while the Live Broadcast profile prioritizes video quality (requiring a higher bitrate). Agora recommends setting the bitrate mode as S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+B\+I\+T\+R\+A\+TE or simply to address this difference.
+
+The following table lists the recommended video encoder configurations, where the base bitrate applies to the communication profile. Set your bitrate based on this table. If the bitrate you set is beyond the proper range, the S\+DK automatically sets it to within the range.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Resolution }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Frame Rate (fps) }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Base Bitrate (Kbps, for Communication) }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Live Bitrate (Kbps, for Live Broadcast)  }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Resolution }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Frame Rate (fps) }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Base Bitrate (Kbps, for Communication) }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Live Bitrate (Kbps, for Live Broadcast)  }\\\cline{1-4}
+\endhead
+160 {$\times$} 120 &15 &65 &130  \\\cline{1-4}
+120 {$\times$} 120 &15 &50 &100  \\\cline{1-4}
+320 {$\times$} 180 &15 &140 &280  \\\cline{1-4}
+180 {$\times$} 180 &15 &100 &200  \\\cline{1-4}
+240 {$\times$} 180 &15 &120 &240  \\\cline{1-4}
+320 {$\times$} 240 &15 &200 &400  \\\cline{1-4}
+240 {$\times$} 240 &15 &140 &280  \\\cline{1-4}
+424 {$\times$} 240 &15 &220 &440  \\\cline{1-4}
+640 {$\times$} 360 &15 &400 &800  \\\cline{1-4}
+360 {$\times$} 360 &15 &260 &520  \\\cline{1-4}
+640 {$\times$} 360 &30 &600 &1200  \\\cline{1-4}
+360 {$\times$} 360 &30 &400 &800  \\\cline{1-4}
+480 {$\times$} 360 &15 &320 &640  \\\cline{1-4}
+480 {$\times$} 360 &30 &490 &980  \\\cline{1-4}
+640 {$\times$} 480 &15 &500 &1000  \\\cline{1-4}
+480 {$\times$} 480 &15 &400 &800  \\\cline{1-4}
+640 {$\times$} 480 &30 &750 &1500  \\\cline{1-4}
+480 {$\times$} 480 &30 &600 &1200  \\\cline{1-4}
+848 {$\times$} 480 &15 &610 &1220  \\\cline{1-4}
+848 {$\times$} 480 &30 &930 &1860  \\\cline{1-4}
+640 {$\times$} 480 &10 &400 &800  \\\cline{1-4}
+1280 {$\times$} 720 &15 &1130 &2260  \\\cline{1-4}
+1280 {$\times$} 720 &30 &1710 &3420  \\\cline{1-4}
+960 {$\times$} 720 &15 &910 &1820  \\\cline{1-4}
+960 {$\times$} 720 &30 &1380 &2760  \\\cline{1-4}
+1920 {$\times$} 1080 &15 &2080 &4160  \\\cline{1-4}
+1920 {$\times$} 1080 &30 &3150 &6300  \\\cline{1-4}
+1920 {$\times$} 1080 &60 &4780 &6500  \\\cline{1-4}
+2560 {$\times$} 1440 &30 &4850 &6500  \\\cline{1-4}
+2560 {$\times$} 1440 &60 &6500 &6500  \\\cline{1-4}
+3840 {$\times$} 2160 &30 &6500 &6500  \\\cline{1-4}
+3840 {$\times$} 2160 &60 &6500 &6500  \\\cline{1-4}
+\end{longtabu}

@@ -1,0 +1,32 @@
+\hypertarget{structagora_1_1internal_1_1_optional_storage_base}{}\doxysection{agora\+::internal\+::Optional\+Storage\+Base$<$ T $>$ Struct Template Reference}
+\label{structagora_1_1internal_1_1_optional_storage_base}\index{agora::internal::OptionalStorageBase$<$ T $>$@{agora::internal::OptionalStorageBase$<$ T $>$}}
+Inheritance diagram for agora\+::internal\+::Optional\+Storage\+Base$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structagora_1_1internal_1_1_optional_storage_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1internal_1_1_optional_storage_base_a31903e2585a016d6af73e3ef64149171}\label{structagora_1_1internal_1_1_optional_storage_base_a31903e2585a016d6af73e3ef64149171}} 
+C\+O\+N\+S\+T\+E\+X\+PR {\bfseries Optional\+Storage\+Base} (\mbox{\hyperlink{structagora_1_1in__place__t}{in\+\_\+place\+\_\+t}}, const T \&\+\_\+value)
+\item 
+\mbox{\Hypertarget{structagora_1_1internal_1_1_optional_storage_base_a71414363525e1ef5d245e140c5d1a9a8}\label{structagora_1_1internal_1_1_optional_storage_base_a71414363525e1ef5d245e140c5d1a9a8}} 
+void {\bfseries Init} (const T \&\+\_\+value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1internal_1_1_optional_storage_base_a95b39edb90c7d90fa15cdb28f078546d}\label{structagora_1_1internal_1_1_optional_storage_base_a95b39edb90c7d90fa15cdb28f078546d}} 
+bool {\bfseries is\+\_\+populated\+\_\+}
+\item 
+\mbox{\Hypertarget{structagora_1_1internal_1_1_optional_storage_base_a581a0fc125b4827eaba640ef445e8677}\label{structagora_1_1internal_1_1_optional_storage_base_a581a0fc125b4827eaba640ef445e8677}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>char {\bfseries empty\_}\\
+\>T {\bfseries value\_}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}

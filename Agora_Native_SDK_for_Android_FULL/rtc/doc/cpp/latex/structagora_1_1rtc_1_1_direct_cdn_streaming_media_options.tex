@@ -1,0 +1,104 @@
+\hypertarget{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options}{}\doxysection{agora\+::rtc\+::Direct\+Cdn\+Streaming\+Media\+Options Struct Reference}
+\label{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options}\index{agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a688cb27c0d9ec1c557c7e43a82bfea0f}\label{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a688cb27c0d9ec1c557c7e43a82bfea0f}} 
+void {\bfseries Set\+All} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options}{Direct\+Cdn\+Streaming\+Media\+Options}} \&change)
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_ac237453173ec073c76f820866ce6f7b9}\label{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_ac237453173ec073c76f820866ce6f7b9}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options}{Direct\+Cdn\+Streaming\+Media\+Options}} \&o) const
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a54e59edc5793c09f7ca74506f63389e6}\label{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a54e59edc5793c09f7ca74506f63389e6}} 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options}{Direct\+Cdn\+Streaming\+Media\+Options}} \& {\bfseries operator=} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options}{Direct\+Cdn\+Streaming\+Media\+Options}} \&replace)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a682c32857d6a300e32095e9a6d1a3eb6}{publish\+Camera\+Track}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_af6539ad41ed0c19ea31916f2f33deee0}{publish\+Microphone\+Track}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_aeac7a232ac72f81dc42c38da78cb3ada}{publish\+Custom\+Audio\+Track}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a1e1bcdcdd0b77e49e2a9f97ec327232d}{publish\+Custom\+Video\+Track}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ bool $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a16fbd69974fbb87ecc1f4e3bb4dbaa96}{publish\+Media\+Player\+Audio\+Track}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ int $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a60f776d4ec72839e1188c662e06eb242}{publish\+Media\+Player\+Id}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ video\+\_\+track\+\_\+id\+\_\+t $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_afb4eda09d3e6e2c81aa08225a6c275e8}{custom\+Video\+Track\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The channel media options. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a682c32857d6a300e32095e9a6d1a3eb6}\label{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a682c32857d6a300e32095e9a6d1a3eb6}} 
+\index{agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}!publishCameraTrack@{publishCameraTrack}}
+\index{publishCameraTrack@{publishCameraTrack}!agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}}
+\doxysubsubsection{\texorpdfstring{publishCameraTrack}{publishCameraTrack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::rtc\+::\+Direct\+Cdn\+Streaming\+Media\+Options\+::publish\+Camera\+Track}
+
+Determines whether to publish the video of the camera track.
+\begin{DoxyItemize}
+\item true\+: Publish the video track of the camera capturer.
+\item false\+: (Default) Do not publish the video track of the camera capturer. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_af6539ad41ed0c19ea31916f2f33deee0}\label{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_af6539ad41ed0c19ea31916f2f33deee0}} 
+\index{agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}!publishMicrophoneTrack@{publishMicrophoneTrack}}
+\index{publishMicrophoneTrack@{publishMicrophoneTrack}!agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}}
+\doxysubsubsection{\texorpdfstring{publishMicrophoneTrack}{publishMicrophoneTrack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::rtc\+::\+Direct\+Cdn\+Streaming\+Media\+Options\+::publish\+Microphone\+Track}
+
+Determines whether to publish the recorded audio.
+\begin{DoxyItemize}
+\item true\+: Publish the recorded audio.
+\item false\+: (Default) Do not publish the recorded audio. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_aeac7a232ac72f81dc42c38da78cb3ada}\label{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_aeac7a232ac72f81dc42c38da78cb3ada}} 
+\index{agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}!publishCustomAudioTrack@{publishCustomAudioTrack}}
+\index{publishCustomAudioTrack@{publishCustomAudioTrack}!agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}}
+\doxysubsubsection{\texorpdfstring{publishCustomAudioTrack}{publishCustomAudioTrack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::rtc\+::\+Direct\+Cdn\+Streaming\+Media\+Options\+::publish\+Custom\+Audio\+Track}
+
+Determines whether to publish the audio of the custom audio track.
+\begin{DoxyItemize}
+\item true\+: Publish the audio of the custom audio track.
+\item false\+: (Default) Do not publish the audio of the custom audio track. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a1e1bcdcdd0b77e49e2a9f97ec327232d}\label{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a1e1bcdcdd0b77e49e2a9f97ec327232d}} 
+\index{agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}!publishCustomVideoTrack@{publishCustomVideoTrack}}
+\index{publishCustomVideoTrack@{publishCustomVideoTrack}!agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}}
+\doxysubsubsection{\texorpdfstring{publishCustomVideoTrack}{publishCustomVideoTrack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::rtc\+::\+Direct\+Cdn\+Streaming\+Media\+Options\+::publish\+Custom\+Video\+Track}
+
+Determines whether to publish the video of the custom video track.
+\begin{DoxyItemize}
+\item true\+: Publish the video of the custom video track.
+\item false\+: (Default) Do not publish the video of the custom video track. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a16fbd69974fbb87ecc1f4e3bb4dbaa96}\label{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a16fbd69974fbb87ecc1f4e3bb4dbaa96}} 
+\index{agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}!publishMediaPlayerAudioTrack@{publishMediaPlayerAudioTrack}}
+\index{publishMediaPlayerAudioTrack@{publishMediaPlayerAudioTrack}!agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}}
+\doxysubsubsection{\texorpdfstring{publishMediaPlayerAudioTrack}{publishMediaPlayerAudioTrack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$bool$>$ agora\+::rtc\+::\+Direct\+Cdn\+Streaming\+Media\+Options\+::publish\+Media\+Player\+Audio\+Track}
+
+Determines whether to publish the audio track of media player source.
+\begin{DoxyItemize}
+\item true\+: Publish the audio track of media player source.
+\item false\+: (Default) Do not publish the audio track of media player source. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a60f776d4ec72839e1188c662e06eb242}\label{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_a60f776d4ec72839e1188c662e06eb242}} 
+\index{agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}!publishMediaPlayerId@{publishMediaPlayerId}}
+\index{publishMediaPlayerId@{publishMediaPlayerId}!agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}}
+\doxysubsubsection{\texorpdfstring{publishMediaPlayerId}{publishMediaPlayerId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$int$>$ agora\+::rtc\+::\+Direct\+Cdn\+Streaming\+Media\+Options\+::publish\+Media\+Player\+Id}
+
+Determines which media player source should be published. You can get the Media\+Player\+Id after calling get\+Media\+Player\+Id() of Agora\+Media\+Player. \mbox{\Hypertarget{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_afb4eda09d3e6e2c81aa08225a6c275e8}\label{structagora_1_1rtc_1_1_direct_cdn_streaming_media_options_afb4eda09d3e6e2c81aa08225a6c275e8}} 
+\index{agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}!customVideoTrackId@{customVideoTrackId}}
+\index{customVideoTrackId@{customVideoTrackId}!agora::rtc::DirectCdnStreamingMediaOptions@{agora::rtc::DirectCdnStreamingMediaOptions}}
+\doxysubsubsection{\texorpdfstring{customVideoTrackId}{customVideoTrackId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$video\+\_\+track\+\_\+id\+\_\+t$>$ agora\+::rtc\+::\+Direct\+Cdn\+Streaming\+Media\+Options\+::custom\+Video\+Track\+Id}
+
+The custom video track id which will used to publish. You can get the Video\+Track\+Id after calling create\+Custom\+Video\+Track() of \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine}{I\+Rtc\+Engine}}. 

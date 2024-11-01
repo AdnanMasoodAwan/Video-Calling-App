@@ -1,0 +1,102 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{}\doxysection{agora\+::rtc\+::I\+Audio\+Device\+Manager\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_device_manager_observer}\index{agora::rtc::IAudioDeviceManagerObserver@{agora::rtc::IAudioDeviceManagerObserver}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Audio\+Device\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a375f35a0d539c71308af749c7951afb9}{on\+Device\+State\+Changed}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a586a68a5d35b4540e67d1dad6347d46c}{on\+Audio\+Device\+State\+Changed}} (const char $\ast$device\+Id, int device\+Type, int device\+State)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a91ac72b8994251d6a181b7c46c6ae6cf}{on\+Volume\+Indication}} (int device\+Type, int volume)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a08bf0851da201d25fb69e5d82d317fff}{on\+Routing\+Changed}} (Audio\+Route route)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer_af7d8ad81dec2598ea1e1cfc1ec597f81}{on\+Audio\+Device\+Volume\+Changed}} (int device\+Type, int volume, bool muted)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_device_manager_observer}{I\+Audio\+Device\+Manager\+Observer}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a375f35a0d539c71308af749c7951afb9}\label{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a375f35a0d539c71308af749c7951afb9}} 
+\index{agora::rtc::IAudioDeviceManagerObserver@{agora::rtc::IAudioDeviceManagerObserver}!onDeviceStateChanged@{onDeviceStateChanged}}
+\index{onDeviceStateChanged@{onDeviceStateChanged}!agora::rtc::IAudioDeviceManagerObserver@{agora::rtc::IAudioDeviceManagerObserver}}
+\doxysubsubsection{\texorpdfstring{onDeviceStateChanged()}{onDeviceStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Device\+Manager\+Observer\+::on\+Device\+State\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the device state changes, for example, when a device is added or removed.
+
+To get the current information of the connected audio devices, call get\+Number\+Of\+Playout\+Devices. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a586a68a5d35b4540e67d1dad6347d46c}\label{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a586a68a5d35b4540e67d1dad6347d46c}} 
+\index{agora::rtc::IAudioDeviceManagerObserver@{agora::rtc::IAudioDeviceManagerObserver}!onAudioDeviceStateChanged@{onAudioDeviceStateChanged}}
+\index{onAudioDeviceStateChanged@{onAudioDeviceStateChanged}!agora::rtc::IAudioDeviceManagerObserver@{agora::rtc::IAudioDeviceManagerObserver}}
+\doxysubsubsection{\texorpdfstring{onAudioDeviceStateChanged()}{onAudioDeviceStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Device\+Manager\+Observer\+::on\+Audio\+Device\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{device\+Id,  }\item[{int}]{device\+Type,  }\item[{int}]{device\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the device state changes, for example, when a device is added or removed or default device change.
+
+\begin{DoxyNote}{Note}
+This method applies to Windows only now.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & Pointer to the device ID. \\
+\hline
+{\em device\+Type} & Device type\+: \#\+M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em device\+State} & Device state\+: \#\+M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE.. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a91ac72b8994251d6a181b7c46c6ae6cf}\label{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a91ac72b8994251d6a181b7c46c6ae6cf}} 
+\index{agora::rtc::IAudioDeviceManagerObserver@{agora::rtc::IAudioDeviceManagerObserver}!onVolumeIndication@{onVolumeIndication}}
+\index{onVolumeIndication@{onVolumeIndication}!agora::rtc::IAudioDeviceManagerObserver@{agora::rtc::IAudioDeviceManagerObserver}}
+\doxysubsubsection{\texorpdfstring{onVolumeIndication()}{onVolumeIndication()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Device\+Manager\+Observer\+::on\+Volume\+Indication (\begin{DoxyParamCaption}\item[{int}]{device\+Type,  }\item[{int}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Indicates incoming volume. This can be used to test microphone or speaker.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Type} & Device type\+: \#\+M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em volume} & volume between 0 (lowest volume) to 255 (highest volume). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a08bf0851da201d25fb69e5d82d317fff}\label{classagora_1_1rtc_1_1_i_audio_device_manager_observer_a08bf0851da201d25fb69e5d82d317fff}} 
+\index{agora::rtc::IAudioDeviceManagerObserver@{agora::rtc::IAudioDeviceManagerObserver}!onRoutingChanged@{onRoutingChanged}}
+\index{onRoutingChanged@{onRoutingChanged}!agora::rtc::IAudioDeviceManagerObserver@{agora::rtc::IAudioDeviceManagerObserver}}
+\doxysubsubsection{\texorpdfstring{onRoutingChanged()}{onRoutingChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Device\+Manager\+Observer\+::on\+Routing\+Changed (\begin{DoxyParamCaption}\item[{Audio\+Route}]{route }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the audio route changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em route} & The current audio route. See \#\+Audio\+Route. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_device_manager_observer_af7d8ad81dec2598ea1e1cfc1ec597f81}\label{classagora_1_1rtc_1_1_i_audio_device_manager_observer_af7d8ad81dec2598ea1e1cfc1ec597f81}} 
+\index{agora::rtc::IAudioDeviceManagerObserver@{agora::rtc::IAudioDeviceManagerObserver}!onAudioDeviceVolumeChanged@{onAudioDeviceVolumeChanged}}
+\index{onAudioDeviceVolumeChanged@{onAudioDeviceVolumeChanged}!agora::rtc::IAudioDeviceManagerObserver@{agora::rtc::IAudioDeviceManagerObserver}}
+\doxysubsubsection{\texorpdfstring{onAudioDeviceVolumeChanged()}{onAudioDeviceVolumeChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Device\+Manager\+Observer\+::on\+Audio\+Device\+Volume\+Changed (\begin{DoxyParamCaption}\item[{int}]{device\+Type,  }\item[{int}]{volume,  }\item[{bool}]{muted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the audio device volume changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Type} & The device type, see \#\+M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em volume} & The volume of the audio device. \\
+\hline
+{\em muted} & Whether the audio device is muted\+:
+\begin{DoxyItemize}
+\item true\+: The audio device is muted.
+\item false\+: The audio device is not muted. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}

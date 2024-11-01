@@ -1,0 +1,114 @@
+\hypertarget{classagora_1_1rtc_1_1_i_media_relay_service}{}\doxysection{agora\+::rtc\+::I\+Media\+Relay\+Service Class Reference}
+\label{classagora_1_1rtc_1_1_i_media_relay_service}\index{agora::rtc::IMediaRelayService@{agora::rtc::IMediaRelayService}}
+Inheritance diagram for agora\+::rtc\+::I\+Media\+Relay\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_media_relay_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_relay_service_aa2a0612927ea378f38a5d01c88646be4}{start\+Or\+Update\+Channel\+Media\+Relay}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_relay_configuration}{Channel\+Media\+Relay\+Configuration}} \&configuration)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_relay_service_a876b478ae3a98384ea587826970ffd05}{stop\+Channel\+Media\+Relay}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_relay_service_a9e41fa88e8c035f90dbe47824f475744}{pause\+All\+Channel\+Media\+Relay}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_relay_service_a5ba7ca338ec397529837524e3e038985}{resume\+All\+Channel\+Media\+Relay}} (aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_relay_service_a60430987a790b81ac3dbcf4797e9d8dc}\label{classagora_1_1rtc_1_1_i_media_relay_service_a60430987a790b81ac3dbcf4797e9d8dc}} 
+virtual void {\bfseries register\+Event\+Handler} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_relay_observer}{I\+Media\+Relay\+Observer}} $\ast$event\+Observer, void($\ast$safe\+Deleter)(\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_relay_observer}{I\+Media\+Relay\+Observer}} $\ast$)=N\+U\+LL)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_relay_service_a7d13cfe63ed1001e20879860eb068ab8}\label{classagora_1_1rtc_1_1_i_media_relay_service_a7d13cfe63ed1001e20879860eb068ab8}} 
+virtual void {\bfseries unregister\+Event\+Handler} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_relay_observer}{I\+Media\+Relay\+Observer}} $\ast$event\+Observer)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_relay_service_aa2a0612927ea378f38a5d01c88646be4}\label{classagora_1_1rtc_1_1_i_media_relay_service_aa2a0612927ea378f38a5d01c88646be4}} 
+\index{agora::rtc::IMediaRelayService@{agora::rtc::IMediaRelayService}!startOrUpdateChannelMediaRelay@{startOrUpdateChannelMediaRelay}}
+\index{startOrUpdateChannelMediaRelay@{startOrUpdateChannelMediaRelay}!agora::rtc::IMediaRelayService@{agora::rtc::IMediaRelayService}}
+\doxysubsubsection{\texorpdfstring{startOrUpdateChannelMediaRelay()}{startOrUpdateChannelMediaRelay()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Relay\+Service\+::start\+Or\+Update\+Channel\+Media\+Relay (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_relay_configuration}{Channel\+Media\+Relay\+Configuration}} \&}]{configuration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Starts or update to relay media streams across channels.
+
+\begin{DoxySince}{Since}
+v4.\+2.\+0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em configuration} & The configuration of the media stream relay\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_relay_configuration}{Channel\+Media\+Relay\+Configuration}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item -\/1(E\+R\+R\+\_\+\+F\+A\+I\+L\+ED)\+: A general error occurs (no specified reason).
+\item -\/2(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT)\+: The argument is invalid.
+\item -\/5(E\+R\+R\+\_\+\+R\+E\+F\+U\+S\+ED)\+: The request is rejected. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_relay_service_a876b478ae3a98384ea587826970ffd05}\label{classagora_1_1rtc_1_1_i_media_relay_service_a876b478ae3a98384ea587826970ffd05}} 
+\index{agora::rtc::IMediaRelayService@{agora::rtc::IMediaRelayService}!stopChannelMediaRelay@{stopChannelMediaRelay}}
+\index{stopChannelMediaRelay@{stopChannelMediaRelay}!agora::rtc::IMediaRelayService@{agora::rtc::IMediaRelayService}}
+\doxysubsubsection{\texorpdfstring{stopChannelMediaRelay()}{stopChannelMediaRelay()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Relay\+Service\+::stop\+Channel\+Media\+Relay (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops the media stream relay.
+
+Once the relay stops, the host quits all the destination channels.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item -\/1(E\+R\+R\+\_\+\+F\+A\+I\+L\+ED)\+: A general error occurs (no specified reason).
+\item -\/2(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT)\+: The argument is invalid.
+\item -\/5(E\+R\+R\+\_\+\+R\+E\+F\+U\+S\+ED)\+: The request is rejected. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_relay_service_a9e41fa88e8c035f90dbe47824f475744}\label{classagora_1_1rtc_1_1_i_media_relay_service_a9e41fa88e8c035f90dbe47824f475744}} 
+\index{agora::rtc::IMediaRelayService@{agora::rtc::IMediaRelayService}!pauseAllChannelMediaRelay@{pauseAllChannelMediaRelay}}
+\index{pauseAllChannelMediaRelay@{pauseAllChannelMediaRelay}!agora::rtc::IMediaRelayService@{agora::rtc::IMediaRelayService}}
+\doxysubsubsection{\texorpdfstring{pauseAllChannelMediaRelay()}{pauseAllChannelMediaRelay()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Relay\+Service\+::pause\+All\+Channel\+Media\+Relay (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+pause the channels for media stream relay. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item -\/1(E\+R\+R\+\_\+\+F\+A\+I\+L\+ED)\+: A general error occurs (no specified reason).
+\item -\/2(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT)\+: The argument is invalid.
+\item -\/5(E\+R\+R\+\_\+\+R\+E\+F\+U\+S\+ED)\+: The request is rejected. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_media_relay_service_a5ba7ca338ec397529837524e3e038985}\label{classagora_1_1rtc_1_1_i_media_relay_service_a5ba7ca338ec397529837524e3e038985}} 
+\index{agora::rtc::IMediaRelayService@{agora::rtc::IMediaRelayService}!resumeAllChannelMediaRelay@{resumeAllChannelMediaRelay}}
+\index{resumeAllChannelMediaRelay@{resumeAllChannelMediaRelay}!agora::rtc::IMediaRelayService@{agora::rtc::IMediaRelayService}}
+\doxysubsubsection{\texorpdfstring{resumeAllChannelMediaRelay()}{resumeAllChannelMediaRelay()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Media\+Relay\+Service\+::resume\+All\+Channel\+Media\+Relay (\begin{DoxyParamCaption}\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+resume the channels for media stream relay. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item -\/1(E\+R\+R\+\_\+\+F\+A\+I\+L\+ED)\+: A general error occurs (no specified reason).
+\item -\/2(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT)\+: The argument is invalid.
+\item -\/5(E\+R\+R\+\_\+\+R\+E\+F\+U\+S\+ED)\+: The request is rejected. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}

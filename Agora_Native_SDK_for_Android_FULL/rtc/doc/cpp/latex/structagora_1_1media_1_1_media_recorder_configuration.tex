@@ -1,0 +1,72 @@
+\hypertarget{structagora_1_1media_1_1_media_recorder_configuration}{}\doxysection{agora\+::media\+::Media\+Recorder\+Configuration Struct Reference}
+\label{structagora_1_1media_1_1_media_recorder_configuration}\index{agora::media::MediaRecorderConfiguration@{agora::media::MediaRecorderConfiguration}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1_media_recorder_configuration_ac55585f051c63a06da9f65953597b798}\label{structagora_1_1media_1_1_media_recorder_configuration_ac55585f051c63a06da9f65953597b798}} 
+{\bfseries Media\+Recorder\+Configuration} (const char $\ast$path, Media\+Recorder\+Container\+Format format, Media\+Recorder\+Stream\+Type type, int duration, int interval)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1media_1_1_media_recorder_configuration_a046fa9f69cf60b1f1da636230b5158e6}{storage\+Path}}
+\item 
+Media\+Recorder\+Container\+Format \mbox{\hyperlink{structagora_1_1media_1_1_media_recorder_configuration_a41065dc90c638682ed57203c4fd2c3c5}{container\+Format}}
+\item 
+Media\+Recorder\+Stream\+Type \mbox{\hyperlink{structagora_1_1media_1_1_media_recorder_configuration_a310c6173a09e8d44047f1589a8a1533d}{stream\+Type}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1_media_recorder_configuration_a32e733f02645d2557c9888d3e5fc1fd7}{max\+Duration\+Ms}}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1_media_recorder_configuration_acaaf1cb0af2a0301c8bb419c54a58f44}{recorder\+Info\+Update\+Interval}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configurations for the local audio and video recording.
+
+\begin{DoxySince}{Since}
+v3.\+5.\+2 
+\end{DoxySince}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1media_1_1_media_recorder_configuration_a046fa9f69cf60b1f1da636230b5158e6}\label{structagora_1_1media_1_1_media_recorder_configuration_a046fa9f69cf60b1f1da636230b5158e6}} 
+\index{agora::media::MediaRecorderConfiguration@{agora::media::MediaRecorderConfiguration}!storagePath@{storagePath}}
+\index{storagePath@{storagePath}!agora::media::MediaRecorderConfiguration@{agora::media::MediaRecorderConfiguration}}
+\doxysubsubsection{\texorpdfstring{storagePath}{storagePath}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::media\+::\+Media\+Recorder\+Configuration\+::storage\+Path}
+
+The absolute path (including the filename extensions) of the recording file. For example, {\ttfamily C\+:\textbackslash{}Users\textbackslash{}$<$user\+\_\+name$>$\textbackslash{}App\+Data\textbackslash{}Local\textbackslash{}Agora\textbackslash{}$<$process\+\_\+name$>$\textbackslash{}example.\+mp4} on Windows, {\ttfamily /\+App Sandbox/\+Library/\+Caches/example.\+mp4} on i\+OS, {\ttfamily /\+Library/\+Logs/example.mp4} on mac\+OS, and {\ttfamily /storage/emulated/0/\+Android/data/$<$package name$>$/files/example.mp4} on Android.
+
+\begin{DoxyNote}{Note}
+Ensure that the specified path exists and is writable. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1media_1_1_media_recorder_configuration_a41065dc90c638682ed57203c4fd2c3c5}\label{structagora_1_1media_1_1_media_recorder_configuration_a41065dc90c638682ed57203c4fd2c3c5}} 
+\index{agora::media::MediaRecorderConfiguration@{agora::media::MediaRecorderConfiguration}!containerFormat@{containerFormat}}
+\index{containerFormat@{containerFormat}!agora::media::MediaRecorderConfiguration@{agora::media::MediaRecorderConfiguration}}
+\doxysubsubsection{\texorpdfstring{containerFormat}{containerFormat}}
+{\footnotesize\ttfamily Media\+Recorder\+Container\+Format agora\+::media\+::\+Media\+Recorder\+Configuration\+::container\+Format}
+
+The format of the recording file. See Media\+Recorder\+Container\+Format. \mbox{\Hypertarget{structagora_1_1media_1_1_media_recorder_configuration_a310c6173a09e8d44047f1589a8a1533d}\label{structagora_1_1media_1_1_media_recorder_configuration_a310c6173a09e8d44047f1589a8a1533d}} 
+\index{agora::media::MediaRecorderConfiguration@{agora::media::MediaRecorderConfiguration}!streamType@{streamType}}
+\index{streamType@{streamType}!agora::media::MediaRecorderConfiguration@{agora::media::MediaRecorderConfiguration}}
+\doxysubsubsection{\texorpdfstring{streamType}{streamType}}
+{\footnotesize\ttfamily Media\+Recorder\+Stream\+Type agora\+::media\+::\+Media\+Recorder\+Configuration\+::stream\+Type}
+
+The recording content. See Media\+Recorder\+Stream\+Type. \mbox{\Hypertarget{structagora_1_1media_1_1_media_recorder_configuration_a32e733f02645d2557c9888d3e5fc1fd7}\label{structagora_1_1media_1_1_media_recorder_configuration_a32e733f02645d2557c9888d3e5fc1fd7}} 
+\index{agora::media::MediaRecorderConfiguration@{agora::media::MediaRecorderConfiguration}!maxDurationMs@{maxDurationMs}}
+\index{maxDurationMs@{maxDurationMs}!agora::media::MediaRecorderConfiguration@{agora::media::MediaRecorderConfiguration}}
+\doxysubsubsection{\texorpdfstring{maxDurationMs}{maxDurationMs}}
+{\footnotesize\ttfamily int agora\+::media\+::\+Media\+Recorder\+Configuration\+::max\+Duration\+Ms}
+
+The maximum recording duration, in milliseconds. The default value is 120000. \mbox{\Hypertarget{structagora_1_1media_1_1_media_recorder_configuration_acaaf1cb0af2a0301c8bb419c54a58f44}\label{structagora_1_1media_1_1_media_recorder_configuration_acaaf1cb0af2a0301c8bb419c54a58f44}} 
+\index{agora::media::MediaRecorderConfiguration@{agora::media::MediaRecorderConfiguration}!recorderInfoUpdateInterval@{recorderInfoUpdateInterval}}
+\index{recorderInfoUpdateInterval@{recorderInfoUpdateInterval}!agora::media::MediaRecorderConfiguration@{agora::media::MediaRecorderConfiguration}}
+\doxysubsubsection{\texorpdfstring{recorderInfoUpdateInterval}{recorderInfoUpdateInterval}}
+{\footnotesize\ttfamily int agora\+::media\+::\+Media\+Recorder\+Configuration\+::recorder\+Info\+Update\+Interval}
+
+The interval (ms) of updating the recording information. The value range is \mbox{[}1000,10000\mbox{]}. Based on the set value of {\ttfamily recorder\+Info\+Update\+Interval}, the S\+DK triggers the \mbox{\hyperlink{classagora_1_1media_1_1_i_media_recorder_observer_aead58f033f1805246a1f4b7b94cb5666}{on\+Recorder\+Info\+Updated}} callback to report the updated recording information. 

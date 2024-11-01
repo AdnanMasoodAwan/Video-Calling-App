@@ -1,0 +1,83 @@
+\hypertarget{classagora_1_1rtc_1_1_i_h265_transcoder_observer}{}\doxysection{agora\+::rtc\+::I\+H265\+Transcoder\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_h265_transcoder_observer}\index{agora::rtc::IH265TranscoderObserver@{agora::rtc::IH265TranscoderObserver}}
+
+
+{\ttfamily \#include $<$I\+Agora\+H265\+Transcoder.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_h265_transcoder_observer_a98db19ebce3c9501963d13b3cb41ecd9}{on\+Enable\+Transcode}} (H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+LT result)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_h265_transcoder_observer_a97fa298ea348768538366f140a668b26}{on\+Query\+Channel}} (H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+LT result, const char $\ast$origin\+Channel, const char $\ast$transcode\+Channel)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_h265_transcoder_observer_a5a66b8249f9a366d46eed97b77fc6b11}{on\+Trigger\+Transcode}} (H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+LT result)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_h265_transcoder_observer}{I\+H265\+Transcoder\+Observer}} class 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_h265_transcoder_observer_a98db19ebce3c9501963d13b3cb41ecd9}\label{classagora_1_1rtc_1_1_i_h265_transcoder_observer_a98db19ebce3c9501963d13b3cb41ecd9}} 
+\index{agora::rtc::IH265TranscoderObserver@{agora::rtc::IH265TranscoderObserver}!onEnableTranscode@{onEnableTranscode}}
+\index{onEnableTranscode@{onEnableTranscode}!agora::rtc::IH265TranscoderObserver@{agora::rtc::IH265TranscoderObserver}}
+\doxysubsubsection{\texorpdfstring{onEnableTranscode()}{onEnableTranscode()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+H265\+Transcoder\+Observer\+::on\+Enable\+Transcode (\begin{DoxyParamCaption}\item[{H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+LT}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Use to notify the result of invoking enable\+Transcode interface. 
+\begin{DoxyParams}{Parameters}
+{\em result} & Result of invoking enable\+Transcode interface. There are some processing advice below of result.
+\begin{DoxyItemize}
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+I\+N\+V\+A\+L\+ID\+: Channel or uid param have a mistake, you need to check them for correctness.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED\+: Authentication failed, please check for correctness of token.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+ED\+: The token has expired, you need to generate a new token.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN\+: You need to contact agora staff to add the vid whitelist.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND\+: Indicates that the network may be faulty.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+T\+O\+O\+\_\+\+O\+F\+T\+EN\+: Request is too often, please request again later.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR\+: The service has an internal error. A request can be made again. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_h265_transcoder_observer_a97fa298ea348768538366f140a668b26}\label{classagora_1_1rtc_1_1_i_h265_transcoder_observer_a97fa298ea348768538366f140a668b26}} 
+\index{agora::rtc::IH265TranscoderObserver@{agora::rtc::IH265TranscoderObserver}!onQueryChannel@{onQueryChannel}}
+\index{onQueryChannel@{onQueryChannel}!agora::rtc::IH265TranscoderObserver@{agora::rtc::IH265TranscoderObserver}}
+\doxysubsubsection{\texorpdfstring{onQueryChannel()}{onQueryChannel()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+H265\+Transcoder\+Observer\+::on\+Query\+Channel (\begin{DoxyParamCaption}\item[{H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+LT}]{result,  }\item[{const char $\ast$}]{origin\+Channel,  }\item[{const char $\ast$}]{transcode\+Channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Use to notify the result of invoking query\+Channel interface. 
+\begin{DoxyParams}{Parameters}
+{\em result} & Result of invoking query\+Channel interface. There are some processing advice below of result.
+\begin{DoxyItemize}
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED\+: Authentication failed, please check for correctness of token.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+ED\+: The token has expired, you need to generate a new token.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND\+: Indicates that the network may be faulty or the channel param may be is empty.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+T\+O\+O\+\_\+\+O\+F\+T\+EN\+: Request is too often, please request again later.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR\+: The service has an internal error. A request can be made again.
+\end{DoxyItemize}\\
+\hline
+{\em origin\+Channel} & Origin channel id \\
+\hline
+{\em transcode\+Channel} & Transcode channel id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_h265_transcoder_observer_a5a66b8249f9a366d46eed97b77fc6b11}\label{classagora_1_1rtc_1_1_i_h265_transcoder_observer_a5a66b8249f9a366d46eed97b77fc6b11}} 
+\index{agora::rtc::IH265TranscoderObserver@{agora::rtc::IH265TranscoderObserver}!onTriggerTranscode@{onTriggerTranscode}}
+\index{onTriggerTranscode@{onTriggerTranscode}!agora::rtc::IH265TranscoderObserver@{agora::rtc::IH265TranscoderObserver}}
+\doxysubsubsection{\texorpdfstring{onTriggerTranscode()}{onTriggerTranscode()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+H265\+Transcoder\+Observer\+::on\+Trigger\+Transcode (\begin{DoxyParamCaption}\item[{H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+LT}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Use to notify the result of invoking trigger\+Transcode interface. 
+\begin{DoxyParams}{Parameters}
+{\em result} & Result of invoking trigger\+Transcode interface. There are some processing advice below of result.
+\begin{DoxyItemize}
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED\+: Authentication failed, please check for correctness of token.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+ED\+: The token has expired, you need to generate a new token.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND\+: Indicates that the network may be faulty or the channel param may be is empty.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+C\+O\+N\+F\+L\+I\+C\+T\+ED\+: The request of trigger transcode is conflicted, please try again.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+T\+O\+O\+\_\+\+O\+F\+T\+EN\+: Request is too often, please request again later
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR\+: The service has an internal error. A request can be made again.
+\item H265\+\_\+\+T\+R\+A\+N\+S\+C\+O\+D\+E\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE\+: May be the number of transcode service is over the limit. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,154 @@
+\hypertarget{classagora_1_1rtc_1_1_i_local_video_track}{}\doxysection{agora\+::rtc\+::I\+Local\+Video\+Track Class Reference}
+\label{classagora_1_1rtc_1_1_i_local_video_track}\index{agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Video\+Track.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Local\+Video\+Track\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classagora_1_1rtc_1_1_i_local_video_track}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track_ae3eb9f4a2a3b91cfe963ad0779991878}{set\+Enabled}} (bool enable, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track_a0c5423ecd9dcde4fda0ac56d329f456d}{set\+Video\+Encoder\+Configuration}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_encoder_configuration}{Video\+Encoder\+Configuration}} \&config, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track_ae9f954672d4b7a99e645459ce4c1083a}{set\+Simulcast\+Stream\+Mode}} (S\+I\+M\+U\+L\+C\+A\+S\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE mode, const \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_config_internal}{Simulcast\+Config\+Internal}} \&config, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track_a36640f215f62a7fa34ba9cae81497468}{get\+State}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track_a1aa1259d42007c44273b3e0a0369efe1}{get\+Statistics}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_local_video_track_stats}{Local\+Video\+Track\+Stats}} \&stats)=0
+\item 
+virtual Video\+Track\+Type \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track_a596814302f4b579a91d547d5ee9f1597}{get\+Type}} () O\+P\+T\+I\+O\+N\+A\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}}} is the basic class for local video tracks, providing the main methods of local video tracks. You can create a local video track by calling one of the following methods\+:
+\begin{DoxyItemize}
+\item {\ttfamily create\+Camera\+Video\+Track}
+\item {\ttfamily create\+Screen\+Video\+Track}
+\item {\ttfamily create\+Mixed\+Video\+Track}
+\item {\ttfamily create\+Custom\+Video\+Track}
+\item {\ttfamily create\+Media\+Player\+Video\+Track}
+\end{DoxyItemize}
+
+After creating local video tracks, you can publish one or more local video tracks by calling \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a40690b61671aa9e6ceef1e7347fd3e38}{publish\+Video}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_video_track_ae3eb9f4a2a3b91cfe963ad0779991878}\label{classagora_1_1rtc_1_1_i_local_video_track_ae3eb9f4a2a3b91cfe963ad0779991878}} 
+\index{agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+Video\+Track\+::set\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enable,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enables or disables the local video track.
+
+Once the local video track is enabled, the S\+DK allows for local video capturing, processing, and encoding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & Determines whether to enable the local video track.
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Enable the local video track.
+\item {\ttfamily false}\+: Disable the local video track. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_video_track_a0c5423ecd9dcde4fda0ac56d329f456d}\label{classagora_1_1rtc_1_1_i_local_video_track_a0c5423ecd9dcde4fda0ac56d329f456d}} 
+\index{agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}!setVideoEncoderConfiguration@{setVideoEncoderConfiguration}}
+\index{setVideoEncoderConfiguration@{setVideoEncoderConfiguration}!agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}}
+\doxysubsubsection{\texorpdfstring{setVideoEncoderConfiguration()}{setVideoEncoderConfiguration()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+Video\+Track\+::set\+Video\+Encoder\+Configuration (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_encoder_configuration}{Video\+Encoder\+Configuration}} \&}]{config,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the video encoder configuration.
+
+Each video encoder configuration corresponds to a set of video parameters, including the resolution, frame rate, bitrate, and video orientation.
+
+The configurations specified in this method are the maximum values under ideal network conditions. If the video engine cannot render the video using the specified parameters due to poor network conditions, the configurations further down the list are considered until a successful configuration is found.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & The reference to the video encoder configuration. See \mbox{\hyperlink{structagora_1_1rtc_1_1_video_encoder_configuration}{Video\+Encoder\+Configuration}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_video_track_ae9f954672d4b7a99e645459ce4c1083a}\label{classagora_1_1rtc_1_1_i_local_video_track_ae9f954672d4b7a99e645459ce4c1083a}} 
+\index{agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}!setSimulcastStreamMode@{setSimulcastStreamMode}}
+\index{setSimulcastStreamMode@{setSimulcastStreamMode}!agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}}
+\doxysubsubsection{\texorpdfstring{setSimulcastStreamMode()}{setSimulcastStreamMode()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+Video\+Track\+::set\+Simulcast\+Stream\+Mode (\begin{DoxyParamCaption}\item[{S\+I\+M\+U\+L\+C\+A\+S\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE}]{mode,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_config_internal}{Simulcast\+Config\+Internal}} \&}]{config,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set simulcast stream mode, enable, disable or auto enable
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Determines simulcast stream mode. See S\+I\+M\+U\+L\+C\+A\+S\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE. \\
+\hline
+{\em config} & The reference to the configurations for the simulcast stream mode. See \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_stream_config}{Simulcast\+Stream\+Config}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_video_track_a36640f215f62a7fa34ba9cae81497468}\label{classagora_1_1rtc_1_1_i_local_video_track_a36640f215f62a7fa34ba9cae81497468}} 
+\index{agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}!getState@{getState}}
+\index{getState@{getState}!agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily virtual L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE agora\+::rtc\+::\+I\+Local\+Video\+Track\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the state of the local video stream.
+
+\begin{DoxyReturn}{Returns}
+The current state of the local video stream. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_video_track_a1aa1259d42007c44273b3e0a0369efe1}\label{classagora_1_1rtc_1_1_i_local_video_track_a1aa1259d42007c44273b3e0a0369efe1}} 
+\index{agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}!getStatistics@{getStatistics}}
+\index{getStatistics@{getStatistics}!agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}}
+\doxysubsubsection{\texorpdfstring{getStatistics()}{getStatistics()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Local\+Video\+Track\+::get\+Statistics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_local_video_track_stats}{Local\+Video\+Track\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the statistics of the local video track.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em stats} & The reference to the statistics of the local video track. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_video_track_a596814302f4b579a91d547d5ee9f1597}\label{classagora_1_1rtc_1_1_i_local_video_track_a596814302f4b579a91d547d5ee9f1597}} 
+\index{agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}!getType@{getType}}
+\index{getType@{getType}!agora::rtc::ILocalVideoTrack@{agora::rtc::ILocalVideoTrack}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual Video\+Track\+Type agora\+::rtc\+::\+I\+Local\+Video\+Track\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the track type of the video track \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Video\+Track\+Type 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_track_a7b7a35053b6b3aea7ad9cec08a6f0033}{agora\+::rtc\+::\+I\+Video\+Track}}.
+

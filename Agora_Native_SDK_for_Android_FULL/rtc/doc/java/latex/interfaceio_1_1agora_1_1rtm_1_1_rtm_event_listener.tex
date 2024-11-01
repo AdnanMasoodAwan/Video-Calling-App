@@ -1,0 +1,141 @@
+\hypertarget{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener}{}\doxysection{io.\+agora.\+rtm.\+Rtm\+Event\+Listener Interface Reference}
+\label{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener}\index{io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+default void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a420f69d0f1f4818b96ffe573d5ccd89e}{on\+Link\+State\+Event}} (\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_link_state_event}{Link\+State\+Event}} event)
+\item 
+default void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a03dfcd96faa841432a2e93d94123777a}{on\+Message\+Event}} (\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_message_event}{Message\+Event}} event)
+\item 
+default void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a904d6657cb3b614bde94a16cfe4fc8f5}{on\+Presence\+Event}} (\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_presence_event}{Presence\+Event}} event)
+\item 
+default void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a7d2bfbd42ef2e3716f2974be14f68224}{on\+Topic\+Event}} (\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_topic_event}{Topic\+Event}} event)
+\item 
+default void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a36669c2e6f1e02645a6faf5433ff2588}{on\+Lock\+Event}} (\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_lock_event}{Lock\+Event}} event)
+\item 
+default void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_af614694abce03fbb42336a527348970c}{on\+Storage\+Event}} (\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_storage_event}{Storage\+Event}} event)
+\item 
+default void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a67b9ea9e93de348d848e6c73e43181db}{on\+Connection\+State\+Changed}} (String channel\+Name, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_connection_state}{Rtm\+Connection\+State}} state, \mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_connection_change_reason}{Rtm\+Connection\+Change\+Reason}} reason)
+\item 
+default void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a0277140162ae643c74d1add3b0b733a8}{on\+Token\+Privilege\+Will\+Expire}} (String channel\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener}{Rtm\+Event\+Listener}} class.
+
+The S\+DK uses this class to send callback event notifications to the app, and the app inherits the methods in this class to retrieve these event notifications.
+
+All methods in this class have their default (empty) implementations, and the app can inherit only some of the required events instead of all. In the callback methods, the app should avoid time-\/consuming tasks or calling blocking A\+P\+Is, otherwise the S\+DK may not work properly. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a420f69d0f1f4818b96ffe573d5ccd89e}\label{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a420f69d0f1f4818b96ffe573d5ccd89e}} 
+\index{io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}!onLinkStateEvent@{onLinkStateEvent}}
+\index{onLinkStateEvent@{onLinkStateEvent}!io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}}
+\doxysubsubsection{\texorpdfstring{onLinkStateEvent()}{onLinkStateEvent()}}
+{\footnotesize\ttfamily default void io.\+agora.\+rtm.\+Rtm\+Event\+Listener.\+on\+Link\+State\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_link_state_event}{Link\+State\+Event}}}]{event }\end{DoxyParamCaption})}
+
+Occurs when link state change
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & details of link state event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a03dfcd96faa841432a2e93d94123777a}\label{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a03dfcd96faa841432a2e93d94123777a}} 
+\index{io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}!onMessageEvent@{onMessageEvent}}
+\index{onMessageEvent@{onMessageEvent}!io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}}
+\doxysubsubsection{\texorpdfstring{onMessageEvent()}{onMessageEvent()}}
+{\footnotesize\ttfamily default void io.\+agora.\+rtm.\+Rtm\+Event\+Listener.\+on\+Message\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_message_event}{Message\+Event}}}]{event }\end{DoxyParamCaption})}
+
+Occurs when receive a message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & details of message event. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a904d6657cb3b614bde94a16cfe4fc8f5}\label{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a904d6657cb3b614bde94a16cfe4fc8f5}} 
+\index{io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}!onPresenceEvent@{onPresenceEvent}}
+\index{onPresenceEvent@{onPresenceEvent}!io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}}
+\doxysubsubsection{\texorpdfstring{onPresenceEvent()}{onPresenceEvent()}}
+{\footnotesize\ttfamily default void io.\+agora.\+rtm.\+Rtm\+Event\+Listener.\+on\+Presence\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_presence_event}{Presence\+Event}}}]{event }\end{DoxyParamCaption})}
+
+Occurs when remote user presence changed
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & details of presence event. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a7d2bfbd42ef2e3716f2974be14f68224}\label{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a7d2bfbd42ef2e3716f2974be14f68224}} 
+\index{io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}!onTopicEvent@{onTopicEvent}}
+\index{onTopicEvent@{onTopicEvent}!io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}}
+\doxysubsubsection{\texorpdfstring{onTopicEvent()}{onTopicEvent()}}
+{\footnotesize\ttfamily default void io.\+agora.\+rtm.\+Rtm\+Event\+Listener.\+on\+Topic\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_topic_event}{Topic\+Event}}}]{event }\end{DoxyParamCaption})}
+
+Occurs when remote user join/leave topic or when user first join this channel, got snapshot of topics in this channel
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & details of topic event. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a36669c2e6f1e02645a6faf5433ff2588}\label{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a36669c2e6f1e02645a6faf5433ff2588}} 
+\index{io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}!onLockEvent@{onLockEvent}}
+\index{onLockEvent@{onLockEvent}!io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}}
+\doxysubsubsection{\texorpdfstring{onLockEvent()}{onLockEvent()}}
+{\footnotesize\ttfamily default void io.\+agora.\+rtm.\+Rtm\+Event\+Listener.\+on\+Lock\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_lock_event}{Lock\+Event}}}]{event }\end{DoxyParamCaption})}
+
+Occurs when lock state changed
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & details of lock event. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_af614694abce03fbb42336a527348970c}\label{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_af614694abce03fbb42336a527348970c}} 
+\index{io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}!onStorageEvent@{onStorageEvent}}
+\index{onStorageEvent@{onStorageEvent}!io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}}
+\doxysubsubsection{\texorpdfstring{onStorageEvent()}{onStorageEvent()}}
+{\footnotesize\ttfamily default void io.\+agora.\+rtm.\+Rtm\+Event\+Listener.\+on\+Storage\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_storage_event}{Storage\+Event}}}]{event }\end{DoxyParamCaption})}
+
+Occurs when receive storage event
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & details of storage event. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a67b9ea9e93de348d848e6c73e43181db}\label{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a67b9ea9e93de348d848e6c73e43181db}} 
+\index{io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}!onConnectionStateChanged@{onConnectionStateChanged}}
+\index{onConnectionStateChanged@{onConnectionStateChanged}!io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}}
+\doxysubsubsection{\texorpdfstring{onConnectionStateChanged()}{onConnectionStateChanged()}}
+{\footnotesize\ttfamily default void io.\+agora.\+rtm.\+Rtm\+Event\+Listener.\+on\+Connection\+State\+Changed (\begin{DoxyParamCaption}\item[{String}]{channel\+Name,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_connection_state}{Rtm\+Connection\+State}}}]{state,  }\item[{\mbox{\hyperlink{enumio_1_1agora_1_1rtm_1_1_rtm_constants_1_1_rtm_connection_change_reason}{Rtm\+Connection\+Change\+Reason}}}]{reason }\end{DoxyParamCaption})}
+
+Occurs when the connection state changes between rtm sdk and agora server. \begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000038}{Deprecated}}]This callback is deprecated. Use \mbox{\hyperlink{classio_1_1agora_1_1rtm_1_1_link_state_event}{Link\+State\+Event}} instead.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The Name of the channel. \\
+\hline
+{\em state} & The new connection state. \\
+\hline
+{\em reason} & The reason for the connection state change. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a0277140162ae643c74d1add3b0b733a8}\label{interfaceio_1_1agora_1_1rtm_1_1_rtm_event_listener_a0277140162ae643c74d1add3b0b733a8}} 
+\index{io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}!onTokenPrivilegeWillExpire@{onTokenPrivilegeWillExpire}}
+\index{onTokenPrivilegeWillExpire@{onTokenPrivilegeWillExpire}!io.agora.rtm.RtmEventListener@{io.agora.rtm.RtmEventListener}}
+\doxysubsubsection{\texorpdfstring{onTokenPrivilegeWillExpire()}{onTokenPrivilegeWillExpire()}}
+{\footnotesize\ttfamily default void io.\+agora.\+rtm.\+Rtm\+Event\+Listener.\+on\+Token\+Privilege\+Will\+Expire (\begin{DoxyParamCaption}\item[{String}]{channel\+Name }\end{DoxyParamCaption})}
+
+Occurs when token will expire in 30 seconds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & The name of the channel. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,27 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver}{}\doxysection{agora\+::rtc\+::I\+Audio\+Encoded\+Frame\+Receiver Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver}\index{agora::rtc::IAudioEncodedFrameReceiver@{agora::rtc::IAudioEncodedFrameReceiver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver_a17a9fcb2a892feea4fe8692d162c6c3e}{on\+Encoded\+Audio\+Frame\+Received}} (const uint8\+\_\+t $\ast$packet, size\+\_\+t length, const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_encoded_frame_info}{media\+::base\+::\+Audio\+Encoded\+Frame\+Info}} \&info)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver_a17a9fcb2a892feea4fe8692d162c6c3e}\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver_a17a9fcb2a892feea4fe8692d162c6c3e}} 
+\index{agora::rtc::IAudioEncodedFrameReceiver@{agora::rtc::IAudioEncodedFrameReceiver}!onEncodedAudioFrameReceived@{onEncodedAudioFrameReceived}}
+\index{onEncodedAudioFrameReceived@{onEncodedAudioFrameReceived}!agora::rtc::IAudioEncodedFrameReceiver@{agora::rtc::IAudioEncodedFrameReceiver}}
+\doxysubsubsection{\texorpdfstring{onEncodedAudioFrameReceived()}{onEncodedAudioFrameReceived()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Audio\+Encoded\+Frame\+Receiver\+::on\+Encoded\+Audio\+Frame\+Received (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{packet,  }\item[{size\+\_\+t}]{length,  }\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_encoded_frame_info}{media\+::base\+::\+Audio\+Encoded\+Frame\+Info}} \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when the track receives an audio encodeed frame packet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & The pointer to the audio packet. \\
+\hline
+{\em length} & The length of the packet. \\
+\hline
+{\em info} & The packet info. \\
+\hline
+\end{DoxyParams}

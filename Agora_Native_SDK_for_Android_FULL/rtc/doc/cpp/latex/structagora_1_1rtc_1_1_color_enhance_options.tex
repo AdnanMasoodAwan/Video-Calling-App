@@ -1,0 +1,43 @@
+\hypertarget{structagora_1_1rtc_1_1_color_enhance_options}{}\doxysection{agora\+::rtc\+::Color\+Enhance\+Options Struct Reference}
+\label{structagora_1_1rtc_1_1_color_enhance_options}\index{agora::rtc::ColorEnhanceOptions@{agora::rtc::ColorEnhanceOptions}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_color_enhance_options_abe05558e41887271ea6b58de9857d5c1}\label{structagora_1_1rtc_1_1_color_enhance_options_abe05558e41887271ea6b58de9857d5c1}} 
+{\bfseries Color\+Enhance\+Options} (float stength, float skin\+Protect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{structagora_1_1rtc_1_1_color_enhance_options_a6f78147f7da3498a2514ca5d4e647ac6}{strength\+Level}}
+\item 
+float \mbox{\hyperlink{structagora_1_1rtc_1_1_color_enhance_options_ade05896630270afca092caeffc2e0278}{skin\+Protect\+Level}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The color enhancement options.
+
+\begin{DoxySince}{Since}
+v4.\+0.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_color_enhance_options_a6f78147f7da3498a2514ca5d4e647ac6}\label{structagora_1_1rtc_1_1_color_enhance_options_a6f78147f7da3498a2514ca5d4e647ac6}} 
+\index{agora::rtc::ColorEnhanceOptions@{agora::rtc::ColorEnhanceOptions}!strengthLevel@{strengthLevel}}
+\index{strengthLevel@{strengthLevel}!agora::rtc::ColorEnhanceOptions@{agora::rtc::ColorEnhanceOptions}}
+\doxysubsubsection{\texorpdfstring{strengthLevel}{strengthLevel}}
+{\footnotesize\ttfamily float agora\+::rtc\+::\+Color\+Enhance\+Options\+::strength\+Level}
+
+The level of color enhancement. The value range is \mbox{[}0.\+0,1.\+0\mbox{]}. {\ttfamily 0.\+0} is the default value, which means no color enhancement is applied to the video. The higher the value, the higher the level of color enhancement. \mbox{\Hypertarget{structagora_1_1rtc_1_1_color_enhance_options_ade05896630270afca092caeffc2e0278}\label{structagora_1_1rtc_1_1_color_enhance_options_ade05896630270afca092caeffc2e0278}} 
+\index{agora::rtc::ColorEnhanceOptions@{agora::rtc::ColorEnhanceOptions}!skinProtectLevel@{skinProtectLevel}}
+\index{skinProtectLevel@{skinProtectLevel}!agora::rtc::ColorEnhanceOptions@{agora::rtc::ColorEnhanceOptions}}
+\doxysubsubsection{\texorpdfstring{skinProtectLevel}{skinProtectLevel}}
+{\footnotesize\ttfamily float agora\+::rtc\+::\+Color\+Enhance\+Options\+::skin\+Protect\+Level}
+
+The level of skin tone protection. The value range is \mbox{[}0.\+0,1.\+0\mbox{]}. {\ttfamily 0.\+0} means no skin tone protection. The higher the value, the higher the level of skin tone protection. The default value is {\ttfamily 1.\+0}. When the level of color enhancement is higher, the portrait skin tone can be significantly distorted, so you need to set the level of skin tone protection; when the level of skin tone protection is higher, the color enhancement effect can be slightly reduced. Therefore, to get the best color enhancement effect, Agora recommends that you adjust {\ttfamily strength\+Level} and {\ttfamily skin\+Protect\+Level} to get the most appropriate values. 

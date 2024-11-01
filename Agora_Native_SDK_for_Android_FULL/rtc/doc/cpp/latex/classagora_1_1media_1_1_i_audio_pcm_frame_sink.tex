@@ -1,0 +1,30 @@
+\hypertarget{classagora_1_1media_1_1_i_audio_pcm_frame_sink}{}\doxysection{agora\+::media\+::I\+Audio\+Pcm\+Frame\+Sink Class Reference}
+\label{classagora_1_1media_1_1_i_audio_pcm_frame_sink}\index{agora::media::IAudioPcmFrameSink@{agora::media::IAudioPcmFrameSink}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_pcm_frame_sink_abdd8e8cca34f7b0cf892ceca48c33a4e}{on\+Frame}} (\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{agora\+::media\+::base\+::\+Audio\+Pcm\+Frame}} $\ast$frame)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The audio frame observer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1media_1_1_i_audio_pcm_frame_sink_abdd8e8cca34f7b0cf892ceca48c33a4e}\label{classagora_1_1media_1_1_i_audio_pcm_frame_sink_abdd8e8cca34f7b0cf892ceca48c33a4e}} 
+\index{agora::media::IAudioPcmFrameSink@{agora::media::IAudioPcmFrameSink}!onFrame@{onFrame}}
+\index{onFrame@{onFrame}!agora::media::IAudioPcmFrameSink@{agora::media::IAudioPcmFrameSink}}
+\doxysubsubsection{\texorpdfstring{onFrame()}{onFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::media\+::\+I\+Audio\+Pcm\+Frame\+Sink\+::on\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{agora\+::media\+::base\+::\+Audio\+Pcm\+Frame}} $\ast$}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when each time the player receives an audio frame.
+
+After registering the audio frame observer, the callback occurs when each time the player receives an audio frame, reporting the detailed information of the audio frame. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & The detailed information of the audio frame. See \mbox{\hyperlink{}{Audio\+Pcm\+Frame}}. \\
+\hline
+\end{DoxyParams}

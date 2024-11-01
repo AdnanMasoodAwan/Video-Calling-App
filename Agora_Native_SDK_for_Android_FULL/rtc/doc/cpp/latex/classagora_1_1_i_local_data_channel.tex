@@ -1,0 +1,75 @@
+\hypertarget{classagora_1_1_i_local_data_channel}{}\doxysection{agora\+::I\+Local\+Data\+Channel Class Reference}
+\label{classagora_1_1_i_local_data_channel}\index{agora::ILocalDataChannel@{agora::ILocalDataChannel}}
+Inheritance diagram for agora\+::I\+Local\+Data\+Channel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1_i_local_data_channel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1_i_local_data_channel_ab4612ff3d5a7f7ae27525543c3a14cc9}{send\+Data\+Packet}} (const char $\ast$packet, size\+\_\+t length, uint64\+\_\+t capture\+\_\+time\+\_\+ms, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1_i_local_data_channel_a8869ae5f48fd4f3f0132bf4c5b09e91b}{set\+Meta\+Data}} (const char $\ast$meta\+Data, size\+\_\+t length, aosl\+\_\+ref\+\_\+t ares=A\+O\+S\+L\+\_\+\+R\+E\+F\+\_\+\+I\+N\+V\+A\+L\+ID)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ int $>$ \mbox{\hyperlink{classagora_1_1_i_local_data_channel_afd5f6541d0c9fab817b220718017139e}{configured\+Channel\+Id}} () const =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1_i_local_data_channel_ab4612ff3d5a7f7ae27525543c3a14cc9}\label{classagora_1_1_i_local_data_channel_ab4612ff3d5a7f7ae27525543c3a14cc9}} 
+\index{agora::ILocalDataChannel@{agora::ILocalDataChannel}!sendDataPacket@{sendDataPacket}}
+\index{sendDataPacket@{sendDataPacket}!agora::ILocalDataChannel@{agora::ILocalDataChannel}}
+\doxysubsubsection{\texorpdfstring{sendDataPacket()}{sendDataPacket()}}
+{\footnotesize\ttfamily virtual int agora\+::\+I\+Local\+Data\+Channel\+::send\+Data\+Packet (\begin{DoxyParamCaption}\item[{const char $\ast$}]{packet,  }\item[{size\+\_\+t}]{length,  }\item[{uint64\+\_\+t}]{capture\+\_\+time\+\_\+ms,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Send data packet to this data channel after publishing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em packet} & packet buffer pointer. \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & packet buffer length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1_i_local_data_channel_a8869ae5f48fd4f3f0132bf4c5b09e91b}\label{classagora_1_1_i_local_data_channel_a8869ae5f48fd4f3f0132bf4c5b09e91b}} 
+\index{agora::ILocalDataChannel@{agora::ILocalDataChannel}!setMetaData@{setMetaData}}
+\index{setMetaData@{setMetaData}!agora::ILocalDataChannel@{agora::ILocalDataChannel}}
+\doxysubsubsection{\texorpdfstring{setMetaData()}{setMetaData()}}
+{\footnotesize\ttfamily virtual int agora\+::\+I\+Local\+Data\+Channel\+::set\+Meta\+Data (\begin{DoxyParamCaption}\item[{const char $\ast$}]{meta\+Data,  }\item[{size\+\_\+t}]{length,  }\item[{aosl\+\_\+ref\+\_\+t}]{ares = {\ttfamily AOSL\+\_\+REF\+\_\+INVALID} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Send meta data to this data channel before publishing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em meta\+Data} & meta data pointer. \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & meta data length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+····
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1_i_local_data_channel_afd5f6541d0c9fab817b220718017139e}\label{classagora_1_1_i_local_data_channel_afd5f6541d0c9fab817b220718017139e}} 
+\index{agora::ILocalDataChannel@{agora::ILocalDataChannel}!configuredChannelId@{configuredChannelId}}
+\index{configuredChannelId@{configuredChannelId}!agora::ILocalDataChannel@{agora::ILocalDataChannel}}
+\doxysubsubsection{\texorpdfstring{configuredChannelId()}{configuredChannelId()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$int$>$ agora\+::\+I\+Local\+Data\+Channel\+::configured\+Channel\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+return configured channel id
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

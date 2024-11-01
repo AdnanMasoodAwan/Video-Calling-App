@@ -1,0 +1,52 @@
+\hypertarget{structagora_1_1rtc_1_1_extension_context}{}\doxysection{agora\+::rtc\+::Extension\+Context Struct Reference}
+\label{structagora_1_1rtc_1_1_extension_context}\index{agora::rtc::ExtensionContext@{agora::rtc::ExtensionContext}}
+
+
+{\ttfamily \#include $<$Agora\+Media\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_extension_context_a44784d0b4d25ad2fd732c3fa0be27da3}{is\+Valid}}
+\item 
+uid\+\_\+t \mbox{\hyperlink{structagora_1_1rtc_1_1_extension_context_a3742f317526d20bd90ad1b38665c0edf}{uid}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_extension_context_a3f48b744f5d4d6822ab6d360e2528124}{provider\+Name}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_extension_context_ab2bc38c6c6d61c6be22335c35dd61354}{extension\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of extension context types. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_extension_context_a44784d0b4d25ad2fd732c3fa0be27da3}\label{structagora_1_1rtc_1_1_extension_context_a44784d0b4d25ad2fd732c3fa0be27da3}} 
+\index{agora::rtc::ExtensionContext@{agora::rtc::ExtensionContext}!isValid@{isValid}}
+\index{isValid@{isValid}!agora::rtc::ExtensionContext@{agora::rtc::ExtensionContext}}
+\doxysubsubsection{\texorpdfstring{isValid}{isValid}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Extension\+Context\+::is\+Valid}
+
+Whether the uid is valid.
+\begin{DoxyItemize}
+\item true\+: The uid is valid.
+\item false\+: The uid is invalid. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_extension_context_a3742f317526d20bd90ad1b38665c0edf}\label{structagora_1_1rtc_1_1_extension_context_a3742f317526d20bd90ad1b38665c0edf}} 
+\index{agora::rtc::ExtensionContext@{agora::rtc::ExtensionContext}!uid@{uid}}
+\index{uid@{uid}!agora::rtc::ExtensionContext@{agora::rtc::ExtensionContext}}
+\doxysubsubsection{\texorpdfstring{uid}{uid}}
+{\footnotesize\ttfamily uid\+\_\+t agora\+::rtc\+::\+Extension\+Context\+::uid}
+
+The ID of the user. A uid of 0 indicates the local user, and a uid greater than 0 represents a remote user. \mbox{\Hypertarget{structagora_1_1rtc_1_1_extension_context_a3f48b744f5d4d6822ab6d360e2528124}\label{structagora_1_1rtc_1_1_extension_context_a3f48b744f5d4d6822ab6d360e2528124}} 
+\index{agora::rtc::ExtensionContext@{agora::rtc::ExtensionContext}!providerName@{providerName}}
+\index{providerName@{providerName}!agora::rtc::ExtensionContext@{agora::rtc::ExtensionContext}}
+\doxysubsubsection{\texorpdfstring{providerName}{providerName}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+Extension\+Context\+::provider\+Name}
+
+The provider name of the current extension. \mbox{\Hypertarget{structagora_1_1rtc_1_1_extension_context_ab2bc38c6c6d61c6be22335c35dd61354}\label{structagora_1_1rtc_1_1_extension_context_ab2bc38c6c6d61c6be22335c35dd61354}} 
+\index{agora::rtc::ExtensionContext@{agora::rtc::ExtensionContext}!extensionName@{extensionName}}
+\index{extensionName@{extensionName}!agora::rtc::ExtensionContext@{agora::rtc::ExtensionContext}}
+\doxysubsubsection{\texorpdfstring{extensionName}{extensionName}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+Extension\+Context\+::extension\+Name}
+
+The extension name of the current extension. 

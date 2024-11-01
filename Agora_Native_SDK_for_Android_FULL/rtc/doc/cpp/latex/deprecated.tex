@@ -1,0 +1,136 @@
+
+\begin{DoxyRefList}
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a566a23231286f5286fdb137966093e9f}{agora\+::rtc\+::I\+Rtc\+Engine\+::resume\+Audio}} () \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000028}%
+\Hypertarget{deprecated__deprecated000028}%
+Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a996401c7ba33c6ec59527c5d109f548f}{enable\+Audio()}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac5d532fe92a0d6c424e87e694225b6e9}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+Connection\+Interrupted}} () \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000020}%
+\Hypertarget{deprecated__deprecated000020}%
+Use {\ttfamily on\+Connection\+State\+Changed} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a96abb5e2fef0afc0a80e87388ebdaa5e}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+Connection\+Banned}} () \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000021}%
+\Hypertarget{deprecated__deprecated000021}%
+Use {\ttfamily on\+Connection\+State\+Changed} instead.  
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a599399089441b7daa560e9c410e8a7ba}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+First\+Remote\+Audio\+Decoded}} (uid\+\_\+t uid, int elapsed) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000022}%
+\Hypertarget{deprecated__deprecated000022}%
+Use {\ttfamily on\+Remote\+Audio\+State\+Changed} instead. The S\+DK triggers this callback under one of the following circumstances\+:
+\begin{DoxyItemize}
+\item The remote user joins the channel and sends the audio stream for the first time.
+\item The remote user\textquotesingle{}s audio is offline and then goes online to re-\/send audio. It means the local user cannot receive audio in 15 seconds. Reasons for such an interruption include\+:
+\begin{DoxyItemize}
+\item The remote user leaves channel.
+\item The remote user drops offline.
+\item The remote user calls mute\+Local\+Audio\+Stream to stop sending the audio stream.
+\item The remote user calls disable\+Audio to disable audio.  
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a160165e2d77abe9b35d1a2e638e2ced7}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+First\+Remote\+Audio\+Frame}} (uid\+\_\+t uid, int elapsed) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000023}%
+\Hypertarget{deprecated__deprecated000023}%
+Use {\ttfamily on\+Remote\+Audio\+State\+Changed} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2aee5d99c0de8fa2f5cd71f5aa5f7128}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+Remote\+Audio\+Transport\+Stats}} (uid\+\_\+t uid, unsigned short delay, unsigned short lost, unsigned short rx\+K\+Bit\+Rate) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000024}%
+\Hypertarget{deprecated__deprecated000024}%
+Use {\ttfamily on\+Remote\+Audio\+Stats} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aae6eb5cba66f6314ee806bc9be253ff6}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+Remote\+Video\+Transport\+Stats}} (uid\+\_\+t uid, unsigned short delay, unsigned short lost, unsigned short rx\+K\+Bit\+Rate) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000025}%
+\Hypertarget{deprecated__deprecated000025}%
+Use {\ttfamily on\+Remote\+Video\+Stats} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a7c9aef3f4c8f9cb62e5ae3c4aa7ed81a}{agora\+::rtc\+::I\+Rtc\+Engine\+::set\+Audio\+Profile}} (A\+U\+D\+I\+O\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE profile, A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE scenario) \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000026}%
+\Hypertarget{deprecated__deprecated000026}%
+This method is deprecated. You can use the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_afe8ac8023a1ef976fc983213308b80f3}{set\+Audio\+Profile}} method instead. To set the audio scenario, call the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ac71db65e66942e4e0a0550e95c16890f}{initialize}} method and pass value in the {\ttfamily audio\+Scenario} member in the \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context}{Rtc\+Engine\+Context}} struct. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a7729c859bb2ae7f565ab7a57cf7b6158}{agora\+::rtc\+::I\+Rtc\+Engine\+::pause\+Audio}} () \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000027}%
+\Hypertarget{deprecated__deprecated000027}%
+Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a1929f01411e983ed776275fe8e8ad45e}{disable\+Audio()}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a595a28e6f0d3390aa4340ed13a80c234}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+Video\+Stopped}} () \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000019}%
+\Hypertarget{deprecated__deprecated000019}%
+Use {\ttfamily L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+E\+D(0)} in the on\+Local\+Video\+State\+Changed callback instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a5ac70d12ca9b204410c02a9cc1159606}{agora\+::rtc\+::I\+Rtc\+Engine\+::enable\+Web\+Sdk\+Interoperability}} (bool enabled) \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000029}%
+\Hypertarget{deprecated__deprecated000029}%
+The Agora NG S\+DK enables the interoperablity with the Web S\+DK. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_a67becd6ce31e41d4a93ccb62aa312e9a}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Audio\+Quality}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, uid\+\_\+t remote\+Uid, int quality, unsigned short delay, unsigned short lost) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000030}%
+\Hypertarget{deprecated__deprecated000030}%
+This callback is deprecated. Use on\+Remote\+Audio\+Stats instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_a9edf8a9b801b7392f860a6c8e06a07ee}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Connection\+Interrupted}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000031}%
+\Hypertarget{deprecated__deprecated000031}%
+Use {\ttfamily on\+Connection\+State\+Changed} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_a20856ca641afb1bffb4c7c3ec2c533ac}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+First\+Remote\+Audio\+Frame}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, uid\+\_\+t user\+Id, int elapsed) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000032}%
+\Hypertarget{deprecated__deprecated000032}%
+Use {\ttfamily on\+Remote\+Audio\+State\+Changed} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_a45a7a2a31b5942a9432745f7da267c92}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+First\+Remote\+Audio\+Decoded}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, uid\+\_\+t uid, int elapsed) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000033}%
+\Hypertarget{deprecated__deprecated000033}%
+Use {\ttfamily on\+Remote\+Audio\+State\+Changed} instead. The S\+DK triggers this callback under one of the following circumstances\+:
+\begin{DoxyItemize}
+\item The remote user joins the channel and sends the audio stream for the first time.
+\item The remote user\textquotesingle{}s audio is offline and then goes online to re-\/send audio. It means the local user cannot receive audio in 15 seconds. Reasons for such an interruption include\+:
+\begin{DoxyItemize}
+\item The remote user leaves channel.
+\item The remote user drops offline.
+\item The remote user calls mute\+Local\+Audio\+Stream to stop sending the audio stream.
+\item The remote user calls disable\+Audio to disable audio.  
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_a6bf3c2c89cf1b5e5f4cc082d9c09a68c}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Remote\+Audio\+Transport\+Stats}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, uid\+\_\+t remote\+Uid, unsigned short delay, unsigned short lost, unsigned short rx\+K\+Bit\+Rate) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000034}%
+\Hypertarget{deprecated__deprecated000034}%
+Use {\ttfamily on\+Remote\+Audio\+Stats} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_ab6d8edb58bfb322cf7e3da01c496202b}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Remote\+Video\+Transport\+Stats}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, uid\+\_\+t remote\+Uid, unsigned short delay, unsigned short lost, unsigned short rx\+K\+Bit\+Rate) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000035}%
+\Hypertarget{deprecated__deprecated000035}%
+Use {\ttfamily on\+Remote\+Video\+Stats} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_a4d7a88053b9874b7fbd2ab6d8ecc034b}{agora\+::rtc\+::I\+Rtc\+Engine\+Ex\+::enable\+Dual\+Stream\+Mode\+Ex}} (bool enabled, const \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_stream_config}{Simulcast\+Stream\+Config}} \&stream\+Config, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0]\label{deprecated__deprecated000036}%
+\Hypertarget{deprecated__deprecated000036}%
+v4.\+2.\+0. This method is deprecated. Use set\+Dual\+Stream\+Mode\+Ex instead 
+\item[" ]\label{deprecated__deprecated000010}%
+\Hypertarget{deprecated__deprecated000010}%
+This reason is deprecated.  
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_local_user_observer_acc2f17a624d23169b8f7c8ad9d79c564}{agora\+::rtc\+::I\+Rtmp\+Local\+User\+Observer\+::on\+Audio\+Track\+Publish\+Start}} (agora\+\_\+refptr$<$ rtc\+::\+I\+Local\+Audio\+Track $>$ audio\+Track)=0]\label{deprecated__deprecated000002}%
+\Hypertarget{deprecated__deprecated000002}%
+This method will not be called back  
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_local_user_observer_a103b9453229d7db20c0729cf8fba2c56}{agora\+::rtc\+::I\+Rtmp\+Local\+User\+Observer\+::on\+Audio\+Track\+Unpublished}} (agora\+\_\+refptr$<$ rtc\+::\+I\+Local\+Audio\+Track $>$ audio\+Track)=0]\label{deprecated__deprecated000003}%
+\Hypertarget{deprecated__deprecated000003}%
+This method will not be called back  
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_local_user_observer_acd7ba7f8ca3580d6b135a3f612fc2b86}{agora\+::rtc\+::I\+Rtmp\+Local\+User\+Observer\+::on\+Video\+Track\+Publish\+Start}} (agora\+\_\+refptr$<$ rtc\+::\+I\+Local\+Video\+Track $>$ video\+Track)=0]\label{deprecated__deprecated000004}%
+\Hypertarget{deprecated__deprecated000004}%
+This method will not be called back  
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtmp_local_user_observer_a04844e1b6d441410ac606b6deedcd29d}{agora\+::rtc\+::I\+Rtmp\+Local\+User\+Observer\+::on\+Video\+Track\+Unpublished}} (agora\+\_\+refptr$<$ rtc\+::\+I\+Local\+Video\+Track $>$ video\+Track)=0]\label{deprecated__deprecated000005}%
+\Hypertarget{deprecated__deprecated000005}%
+This method will not be called back  
+\item[" ]\label{deprecated__deprecated000006}%
+\Hypertarget{deprecated__deprecated000006}%
+This profile is deprecated. 
+
+\label{deprecated__deprecated000007}%
+\Hypertarget{deprecated__deprecated000007}%
+This profile is deprecated. 
+
+\label{deprecated__deprecated000008}%
+\Hypertarget{deprecated__deprecated000008}%
+This profile is deprecated. 
+
+\label{deprecated__deprecated000009}%
+\Hypertarget{deprecated__deprecated000009}%
+This member is deprecated.  
+\item[Member \mbox{\hyperlink{structagora_1_1base_1_1_agora_service_configuration_a2ea3127135604842eb40bd1c785d22a2}{agora\+::base\+::Agora\+Service\+Configuration\+::\+\_\+\+\_\+deprecated}} ]\label{deprecated__deprecated000001}%
+\Hypertarget{deprecated__deprecated000001}%
+Thread priority for S\+DK common threads  
+\item[" ]\label{deprecated__deprecated000011}%
+\Hypertarget{deprecated__deprecated000011}%
+This reason is deprecated. 
+
+\label{deprecated__deprecated000012}%
+\Hypertarget{deprecated__deprecated000012}%
+ Content inspect type moderation 
+
+\label{deprecated__deprecated000013}%
+\Hypertarget{deprecated__deprecated000013}%
+ 3\+: This mode is deprecated.  
+\item[Member \mbox{\hyperlink{classagora_1_1media_1_1_i_media_engine_a9d8ffc684390f54f2258ddad1a8b69c8}{agora\+::media\+::I\+Media\+Engine\+::set\+External\+Audio\+Source}} (bool enabled, int sample\+Rate, int channels, bool local\+Playback=false, bool publish=true) \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000014}%
+\Hypertarget{deprecated__deprecated000014}%
+This method is deprecated. Use \mbox{\hyperlink{classagora_1_1media_1_1_i_media_engine_adb9b0203cf06756db5357ea806058ab0}{create\+Custom\+Audio\+Track(rtc\+::\+A\+U\+D\+I\+O\+\_\+\+T\+R\+A\+C\+K\+\_\+\+T\+Y\+P\+E track\+Type, const rtc\+::\+Audio\+Track\+Config\& config)}} instead. 
+\item[Member \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a0a0f8269be3dfe782aa5d0cf7dc074f0}{agora\+::rtc\+::Remote\+Video\+Stats\+::\+\_\+\+\_\+deprecated}} ]\label{deprecated__deprecated000015}%
+\Hypertarget{deprecated__deprecated000015}%
+Time delay (ms). 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ab612312f6b4f72e1a036ef7683b8d324}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Quality}} (uid\+\_\+t uid, int quality, unsigned short delay, unsigned short lost) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000016}%
+\Hypertarget{deprecated__deprecated000016}%
+This callback is deprecated. Use on\+Remote\+Audio\+Stats instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a844b1585ecc0c86471d7dd5a462eaaf3}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Mixing\+Finished}} () \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000017}%
+\Hypertarget{deprecated__deprecated000017}%
+This method is deprecated, use on\+Audio\+Mixing\+State\+Changed instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a630b63e8df71ab9f19a96b425fce7c94}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+Camera\+Ready}} () \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000018}%
+\Hypertarget{deprecated__deprecated000018}%
+Use {\ttfamily L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+A\+P\+T\+U\+R\+I\+N\+G(1)} in on\+Local\+Video\+State\+Changed instead. This callback indicates that the camera has been successfully turned on and you can start to capture video. 
+\end{DoxyRefList}

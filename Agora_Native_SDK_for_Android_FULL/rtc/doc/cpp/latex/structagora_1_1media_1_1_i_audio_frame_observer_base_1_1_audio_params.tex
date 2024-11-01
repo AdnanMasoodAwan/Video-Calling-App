@@ -1,0 +1,46 @@
+\hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}{}\doxysection{agora\+::media\+::I\+Audio\+Frame\+Observer\+Base\+::Audio\+Params Struct Reference}
+\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params}\index{agora::media::IAudioFrameObserverBase::AudioParams@{agora::media::IAudioFrameObserverBase::AudioParams}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_aa69dfb0f58e24d685db8a7eb4f2e3375}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_aa69dfb0f58e24d685db8a7eb4f2e3375}} 
+{\bfseries Audio\+Params} (int samplerate, int channel, rtc\+::\+R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE type, int samples\+Per\+Call)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_a7242f1619148fce5be00a22d9d50ae3f}{sample\+\_\+rate}}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_ad6462a2db8f24270d400db3f9bf3e60f}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_ad6462a2db8f24270d400db3f9bf3e60f}} 
+int {\bfseries channels}
+\item 
+\mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_ad7fd9792b4c3c64d48d84dbb89fff7d4}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_ad7fd9792b4c3c64d48d84dbb89fff7d4}} 
+rtc\+::\+R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE {\bfseries mode}
+\item 
+int \mbox{\hyperlink{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_a5472c413e05754679e256cbc17312be1}{samples\+\_\+per\+\_\+call}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_a7242f1619148fce5be00a22d9d50ae3f}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_a7242f1619148fce5be00a22d9d50ae3f}} 
+\index{agora::media::IAudioFrameObserverBase::AudioParams@{agora::media::IAudioFrameObserverBase::AudioParams}!sample\_rate@{sample\_rate}}
+\index{sample\_rate@{sample\_rate}!agora::media::IAudioFrameObserverBase::AudioParams@{agora::media::IAudioFrameObserverBase::AudioParams}}
+\doxysubsubsection{\texorpdfstring{sample\_rate}{sample\_rate}}
+{\footnotesize\ttfamily int agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Params\+::sample\+\_\+rate}
+
+The audio sample rate (Hz), which can be set as one of the following values\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily 8000}
+\item {\ttfamily 16000} (Default)
+\item {\ttfamily 32000}
+\item {\ttfamily 44100}
+\item {\ttfamily 48000} 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_a5472c413e05754679e256cbc17312be1}\label{structagora_1_1media_1_1_i_audio_frame_observer_base_1_1_audio_params_a5472c413e05754679e256cbc17312be1}} 
+\index{agora::media::IAudioFrameObserverBase::AudioParams@{agora::media::IAudioFrameObserverBase::AudioParams}!samples\_per\_call@{samples\_per\_call}}
+\index{samples\_per\_call@{samples\_per\_call}!agora::media::IAudioFrameObserverBase::AudioParams@{agora::media::IAudioFrameObserverBase::AudioParams}}
+\doxysubsubsection{\texorpdfstring{samples\_per\_call}{samples\_per\_call}}
+{\footnotesize\ttfamily int agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base\+::\+Audio\+Params\+::samples\+\_\+per\+\_\+call}
+
+The number of samples. For example, set it as 1024 for R\+T\+MP or R\+T\+M\+PS streaming. 

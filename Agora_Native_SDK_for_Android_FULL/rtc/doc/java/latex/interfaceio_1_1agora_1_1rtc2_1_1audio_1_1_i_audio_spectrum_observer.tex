@@ -1,0 +1,36 @@
+\hypertarget{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer}{}\doxysection{io.\+agora.\+rtc2.\+audio.\+I\+Audio\+Spectrum\+Observer Interface Reference}
+\label{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer}\index{io.agora.rtc2.audio.IAudioSpectrumObserver@{io.agora.rtc2.audio.IAudioSpectrumObserver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer_a22dc1ca1c565907e66575e713e16d816}{on\+Local\+Audio\+Spectrum}} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_spectrum_info}{Audio\+Spectrum\+Info}} data)
+\item 
+boolean \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer_a4c6bf9fe7980158a5bca8e9eac029e4e}{on\+Remote\+Audio\+Spectrum}} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_user_audio_spectrum_info}{User\+Audio\+Spectrum\+Info}}\mbox{[}$\,$\mbox{]} user\+Audio\+Spectrum\+Infos, int spectrum\+Number)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer}{I\+Audio\+Spectrum\+Observer}} interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer_a22dc1ca1c565907e66575e713e16d816}\label{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer_a22dc1ca1c565907e66575e713e16d816}} 
+\index{io.agora.rtc2.audio.IAudioSpectrumObserver@{io.agora.rtc2.audio.IAudioSpectrumObserver}!onLocalAudioSpectrum@{onLocalAudioSpectrum}}
+\index{onLocalAudioSpectrum@{onLocalAudioSpectrum}!io.agora.rtc2.audio.IAudioSpectrumObserver@{io.agora.rtc2.audio.IAudioSpectrumObserver}}
+\doxysubsubsection{\texorpdfstring{onLocalAudioSpectrum()}{onLocalAudioSpectrum()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+audio.\+I\+Audio\+Spectrum\+Observer.\+on\+Local\+Audio\+Spectrum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_spectrum_info}{Audio\+Spectrum\+Info}}}]{data }\end{DoxyParamCaption})}
+
+Reports the audio spectrum of audio recording.
+
+This callback reports the audio spectrum data of the audio recording at the moment in the channel.
+
+You can set the time interval of this callback using \{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_a8fcc7517dd6f95be50d1f273d3f56c32}{\}.  data The audio spectrum data of audio recording.true\+: Processed.false\+: Not processed. }}\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer_a4c6bf9fe7980158a5bca8e9eac029e4e}\label{interfaceio_1_1agora_1_1rtc2_1_1audio_1_1_i_audio_spectrum_observer_a4c6bf9fe7980158a5bca8e9eac029e4e}} 
+\index{io.agora.rtc2.audio.IAudioSpectrumObserver@{io.agora.rtc2.audio.IAudioSpectrumObserver}!onRemoteAudioSpectrum@{onRemoteAudioSpectrum}}
+\index{onRemoteAudioSpectrum@{onRemoteAudioSpectrum}!io.agora.rtc2.audio.IAudioSpectrumObserver@{io.agora.rtc2.audio.IAudioSpectrumObserver}}
+\doxysubsubsection{\texorpdfstring{onRemoteAudioSpectrum()}{onRemoteAudioSpectrum()}}
+{\footnotesize\ttfamily boolean io.\+agora.\+rtc2.\+audio.\+I\+Audio\+Spectrum\+Observer.\+on\+Remote\+Audio\+Spectrum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1audio_1_1_user_audio_spectrum_info}{User\+Audio\+Spectrum\+Info}}\mbox{[}$\,$\mbox{]}}]{user\+Audio\+Spectrum\+Infos,  }\item[{int}]{spectrum\+Number }\end{DoxyParamCaption})}
+
+Reports the audio spectrum of remote user.
+
+This callback reports the I\+Ds and audio spectrum data of the loudest speakers at the moment in the channel.
+
+You can set the time interval of this callback using \{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_a8fcc7517dd6f95be50d1f273d3f56c32}{\}..  user\+Audio\+Spectrum\+Infos The pointer to  agora\+::media\+::\+Audio\+Spectrum\+Info \char`\"{}\+Audio\+Spectrum\+Info\char`\"{}, which is an array containing the user ID and audio spectrum data for each speaker.This array contains the following members\+:{\ttfamily uid}, which is the U\+ID of each remote speaker{\ttfamily audio\+Spectrum\+Data}, which reports the audio spectrum of each remote speaker.{\ttfamily spectrum\+Data\+Length}, the length of audio spectrum data.  spectrum\+Number The array length of the audio\+Spectrum\+Info\+List.true\+: Processed.false\+: Not processed. }}

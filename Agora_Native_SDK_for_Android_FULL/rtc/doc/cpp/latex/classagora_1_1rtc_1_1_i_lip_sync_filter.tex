@@ -1,0 +1,55 @@
+\hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter}{}\doxysection{agora\+::rtc\+::I\+Lip\+Sync\+Filter Class Reference}
+\label{classagora_1_1rtc_1_1_i_lip_sync_filter}\index{agora::rtc::ILipSyncFilter@{agora::rtc::ILipSyncFilter}}
+Inheritance diagram for agora\+::rtc\+::I\+Lip\+Sync\+Filter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_lip_sync_filter}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control}{Control}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter_ab28883753d96914433da7f28edc2d253}\label{classagora_1_1rtc_1_1_i_lip_sync_filter_ab28883753d96914433da7f28edc2d253}} 
+enum {\bfseries Process\+Result} \{ {\bfseries k\+Success}, 
+{\bfseries k\+Bypass}, 
+{\bfseries k\+Drop}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter_a6f82103e3b78bee5c83a49cf3fa89be7}\label{classagora_1_1rtc_1_1_i_lip_sync_filter_a6f82103e3b78bee5c83a49cf3fa89be7}} 
+virtual int {\bfseries start} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+::agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control}{Control}} $>$ control)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter_ab12c625f12c1f6a3a38363991e2a861a}\label{classagora_1_1rtc_1_1_i_lip_sync_filter_ab12c625f12c1f6a3a38363991e2a861a}} 
+virtual int {\bfseries stop} ()=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter_adeb859d8931b5c1ff0542e32d78f3c18}\label{classagora_1_1rtc_1_1_i_lip_sync_filter_adeb859d8931b5c1ff0542e32d78f3c18}} 
+virtual int {\bfseries set\+Property} (const char $\ast$key, const void $\ast$buf, size\+\_\+t buf\+\_\+size)
+\item 
+virtual Process\+Result \mbox{\hyperlink{classagora_1_1rtc_1_1_i_lip_sync_filter_a3ae216b744da492f4c52008e407dee2a}{convert\+Audio\+Frame\+To\+Face\+Info}} (const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{agora\+::media\+::base\+::\+Audio\+Pcm\+Frame}} \&in\+Audio\+Frame, char $\ast$out\+Face\+Info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter_a3ae216b744da492f4c52008e407dee2a}\label{classagora_1_1rtc_1_1_i_lip_sync_filter_a3ae216b744da492f4c52008e407dee2a}} 
+\index{agora::rtc::ILipSyncFilter@{agora::rtc::ILipSyncFilter}!convertAudioFrameToFaceInfo@{convertAudioFrameToFaceInfo}}
+\index{convertAudioFrameToFaceInfo@{convertAudioFrameToFaceInfo}!agora::rtc::ILipSyncFilter@{agora::rtc::ILipSyncFilter}}
+\doxysubsubsection{\texorpdfstring{convertAudioFrameToFaceInfo()}{convertAudioFrameToFaceInfo()}}
+{\footnotesize\ttfamily virtual Process\+Result agora\+::rtc\+::\+I\+Lip\+Sync\+Filter\+::convert\+Audio\+Frame\+To\+Face\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{agora\+::media\+::base\+::\+Audio\+Pcm\+Frame}} \&}]{in\+Audio\+Frame,  }\item[{char $\ast$}]{out\+Face\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Convert the audio frame to face info. 
+\begin{DoxyParams}{Parameters}
+{\em in\+Audio\+Frame} & The reference to the audio frame that you want to convert. \\
+\hline
+{\em out\+Face\+Info} & The reference to the face info. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Process\+Result 
+\end{DoxyReturn}

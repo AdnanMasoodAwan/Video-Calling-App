@@ -1,0 +1,109 @@
+\hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control}{}\doxysection{agora\+::rtc\+::I\+Lip\+Sync\+Filter\+::Control Class Reference}
+\label{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control}\index{agora::rtc::ILipSyncFilter::Control@{agora::rtc::ILipSyncFilter::Control}}
+Inheritance diagram for agora\+::rtc\+::I\+Lip\+Sync\+Filter\+::Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a3930a8753d6b6fcbb4d17cb5cfa47efb}{post\+Event}} (const char $\ast$key, const char $\ast$value)=0
+\begin{DoxyCompactList}\small\item\em Post an event and notify the end users. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a4f404c2e649c7af0844798f11145c34c}{print\+Log}} (commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL level, const char $\ast$format,...)=0
+\begin{DoxyCompactList}\small\item\em print log to the S\+DK. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a12e8372548682a7cf79fe07aace3395a}{disable\+Me}} (int error, const char $\ast$msg)=0
+\begin{DoxyCompactList}\small\item\em Ask S\+DK to disable the current filter if a fatal error is detected. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a135e26d483ece1f52659cda7fa26b421}{Report\+Counter}} (int32\+\_\+t counter\+\_\+id, int32\+\_\+t value)=0
+\begin{DoxyCompactList}\small\item\em report counter to the S\+DK. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_ade7098bd99d406f7d171ece41d66025a}{Get\+Stats}} (int32\+\_\+t counter\+\_\+id)=0
+\begin{DoxyCompactList}\small\item\em get stats to the S\+DK. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a3930a8753d6b6fcbb4d17cb5cfa47efb}\label{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a3930a8753d6b6fcbb4d17cb5cfa47efb}} 
+\index{agora::rtc::ILipSyncFilter::Control@{agora::rtc::ILipSyncFilter::Control}!postEvent@{postEvent}}
+\index{postEvent@{postEvent}!agora::rtc::ILipSyncFilter::Control@{agora::rtc::ILipSyncFilter::Control}}
+\doxysubsubsection{\texorpdfstring{postEvent()}{postEvent()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Lip\+Sync\+Filter\+::\+Control\+::post\+Event (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Post an event and notify the end users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \textquotesingle{}\textbackslash{}0\textquotesingle{} ended string that describes the key of the event \\
+\hline
+{\em value} & \textquotesingle{}\textbackslash{}0\textquotesingle{} ended string that describes the value of the event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a4f404c2e649c7af0844798f11145c34c}\label{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a4f404c2e649c7af0844798f11145c34c}} 
+\index{agora::rtc::ILipSyncFilter::Control@{agora::rtc::ILipSyncFilter::Control}!printLog@{printLog}}
+\index{printLog@{printLog}!agora::rtc::ILipSyncFilter::Control@{agora::rtc::ILipSyncFilter::Control}}
+\doxysubsubsection{\texorpdfstring{printLog()}{printLog()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Lip\+Sync\+Filter\+::\+Control\+::print\+Log (\begin{DoxyParamCaption}\item[{commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL}]{level,  }\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+print log to the S\+DK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Log level agora\+::commons\+::\+L\+O\+G\+\_\+\+L\+E\+V\+EL \\
+\hline
+{\em format} & log formatter string \\
+\hline
+{\em ...} & variadic arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a12e8372548682a7cf79fe07aace3395a}\label{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a12e8372548682a7cf79fe07aace3395a}} 
+\index{agora::rtc::ILipSyncFilter::Control@{agora::rtc::ILipSyncFilter::Control}!disableMe@{disableMe}}
+\index{disableMe@{disableMe}!agora::rtc::ILipSyncFilter::Control@{agora::rtc::ILipSyncFilter::Control}}
+\doxysubsubsection{\texorpdfstring{disableMe()}{disableMe()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Lip\+Sync\+Filter\+::\+Control\+::disable\+Me (\begin{DoxyParamCaption}\item[{int}]{error,  }\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Ask S\+DK to disable the current filter if a fatal error is detected. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & error code \\
+\hline
+{\em msg} & error message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a135e26d483ece1f52659cda7fa26b421}\label{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_a135e26d483ece1f52659cda7fa26b421}} 
+\index{agora::rtc::ILipSyncFilter::Control@{agora::rtc::ILipSyncFilter::Control}!ReportCounter@{ReportCounter}}
+\index{ReportCounter@{ReportCounter}!agora::rtc::ILipSyncFilter::Control@{agora::rtc::ILipSyncFilter::Control}}
+\doxysubsubsection{\texorpdfstring{ReportCounter()}{ReportCounter()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Lip\+Sync\+Filter\+::\+Control\+::\+Report\+Counter (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{counter\+\_\+id,  }\item[{int32\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+report counter to the S\+DK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em counter\+\_\+id} & counter id \\
+\hline
+{\em value} & counter value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_ade7098bd99d406f7d171ece41d66025a}\label{classagora_1_1rtc_1_1_i_lip_sync_filter_1_1_control_ade7098bd99d406f7d171ece41d66025a}} 
+\index{agora::rtc::ILipSyncFilter::Control@{agora::rtc::ILipSyncFilter::Control}!GetStats@{GetStats}}
+\index{GetStats@{GetStats}!agora::rtc::ILipSyncFilter::Control@{agora::rtc::ILipSyncFilter::Control}}
+\doxysubsubsection{\texorpdfstring{GetStats()}{GetStats()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Lip\+Sync\+Filter\+::\+Control\+::\+Get\+Stats (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{counter\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get stats to the S\+DK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em counter\+\_\+id} & counter id \\
+\hline
+\end{DoxyParams}
